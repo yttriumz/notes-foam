@@ -2,12 +2,16 @@
 
 Refer to the community guides for some good practices:
 
-- [https://opensuse.github.io/openSUSE-docs-revamped-temp/best_of_post/]
-- [https://opensuse.github.io/openSUSE-docs-revamped-temp/safety_usability/]
+- https://opensuse.github.io/openSUSE-docs-revamped-temp/best_of_post/
+- https://opensuse.github.io/openSUSE-docs-revamped-temp/safety_usability/
 
 ## Change hostname
 
-Change the hostname by `sudo hostnamectl hostname SOME_HOSTNAME`.
+Change the hostname by the following commands:
+
+```bash
+sudo hostnamectl hostname SOME_HOSTNAME
+```
 
 ## Network settings
 
@@ -17,7 +21,12 @@ Change the hostname by `sudo hostnamectl hostname SOME_HOSTNAME`.
 
 ## System update
 
-Run `sudo zypper refresh` then `sudo zypper dist-upgrade` to update the system.
+Run following commands:
+
+```bash
+sudo zypper refresh
+sudo zypper dist-upgrad
+```
 
 ## Package repository
 
@@ -42,11 +51,19 @@ sudo zypper install code
 
 #### CUDA
 
-Add *CUDA* repo (refer the [the post]( https://www.reddit.com/r/openSUSE/comments/gaihe9/cuda_on_tumbleweed/ )) by `zypper addrepo -p 100 http://developer.download.nvidia.com/compute/cuda/repos/opensuse15/x86_64/cuda-opensuse15.repo`.
+Add *CUDA* repo (refer the [the post]( https://www.reddit.com/r/openSUSE/comments/gaihe9/cuda_on_tumbleweed/ )) by the following commands:
+
+```bash
+zypper addrepo -p 100 http://developer.download.nvidia.com/compute/cuda/repos/opensuse15/x86_64/cuda-opensuse15.repo
+```
 
 #### M17N (Multilingualization)
 
-Add *M17N* repo by `zypper addrepo https://download.opensuse.org/repositories/M17N/openSUSE_Tumbleweed/M17N.repo`.
+Add *M17N* repo by the following commands:
+
+```bash
+zypper addrepo https://download.opensuse.org/repositories/M17N/openSUSE_Tumbleweed/M17N.repo
+```
 
 #### Flatpaks
 
