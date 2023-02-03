@@ -1,16 +1,19 @@
 # Tweak openSUSE Tumbleweed
 
-We can refer to [the community doc]( https://opensuse.github.io/openSUSE-docs-revamped-temp/best_of_post/ ) for some good practices.
+Refer to the community guides for some good practices:
+
+- https://opensuse.github.io/openSUSE-docs-revamped-temp/best_of_post/
+- https://opensuse.github.io/openSUSE-docs-revamped-temp/safety_usability/
 
 ## Change hostname
 
-We can change the hostname by `sudo hostnamectl hostname SOME_HOSTNAME`.
+Change the hostname by `sudo hostnamectl hostname SOME_HOSTNAME`.
 
 ## Network settings
 
 ### WiFi
 
-- eduroam: refer to [the ITSC guide]( https://itsc.hkust.edu.hk/services/general-it-services/wifi/wi-fi-services/configuration-eduroam ).
+- eduroam: refer to [the HKUST ITSC guide]( https://itsc.hkust.edu.hk/services/general-it-services/wifi/wi-fi-services/configuration-eduroam ).
 
 ## System update
 
@@ -18,11 +21,13 @@ Run `sudo zypper refresh` then `sudo zypper dist-upgrade` to update the system.
 
 ## Package repository
 
+Refer to [the wiki]( https://en.opensuse.org/Package_repositories ) to learn more.
+
 ### Add repo
 
 #### Packman and NVidia
 
-Open *YaST Software Repositories* and select *Add* >> *Community Repositories*.  After this *YaST Software* will automatically select some NVidia drivers to install. Do **not** install them because they will cause problems. See [[placeholder]].
+Open *YaST Software Repositories* and select *Add* >> *Community Repositories*.  After this *YaST Software* will automatically select some NVidia drivers to install. Do **not** install them because they will cause problems. See [Graphics section](#graphics).
 
 #### VSCode
 
@@ -43,6 +48,15 @@ Add *CUDA* repo (refer the [the post]( https://www.reddit.com/r/openSUSE/comment
 
 Add *M17N* repo by `zypper addrepo https://download.opensuse.org/repositories/M17N/openSUSE_Tumbleweed/M17N.repo`.
 
+#### Flatpaks
+
+Add *Flatpaks* by the following commands (refer to [the community guide]( https://opensuse.github.io/openSUSE-docs-revamped-temp/best_of_post/#setup-your-tumbleweed-for-flatpaks )):
+
+```bash
+sudo zypper in flatpak
+flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
+```
+
 ### Check repo
 
 Use *YaST* or `zypper repos -P` to check repos.
@@ -59,7 +73,11 @@ Install Rust. Then install starship by `cargo install starship --locked`. See [[
 
 ### wezterm
 
-Use *YaST* to install. See [[wezterm]] for configuration.
+Use *YaST* to install the stable version. Refer to [the official doc]( https://wezfurlong.org/wezterm/install/linux.html#installing-on-fedora-and-rpm-based-systems ) for the night version. See [[wezterm]] for configuration.
+
+## Graphics
+
+
 
 ## Development environment
 
