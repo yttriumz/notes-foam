@@ -106,9 +106,11 @@ See [[dev_env]].
 
 ## Codecs
 
-Refer to [the wiki]( https://en.opensuse.org/SDB:Firefox_MP4/H.264_Video_Support ) to enable firefox to play HTML5 videos.
+Refer to [the wiki]( https://en.opensuse.org/SDB:Firefox_MP4/H.264_Video_Support ) to enable firefox to play HTML5 videos. Also, refer to the following pages for more:
 
-Also refer to [the wiki page]( https://en.opensuse.org/SDB:Installing_codecs_from_Packman_repositories ), [the community guide]( https://opensuse.github.io/openSUSE-docs-revamped-temp/codecs/ ), and [the post]( https://www.reddit.com/r/openSUSE/comments/u0myze/some_youtube_videos_dont_play_on_firefox/ ).
+- [the wiki]( https://en.opensuse.org/SDB:Installing_codecs_from_Packman_repositories )
+- [the community guide]( https://opensuse.github.io/openSUSE-docs-revamped-temp/codecs/ )
+- [the Reddit post]( https://www.reddit.com/r/openSUSE/comments/u0myze/some_youtube_videos_dont_play_on_firefox/ )
 
 ## KDE
 
