@@ -2,6 +2,8 @@
   "cSpell.words": [
     "bootloader",
     "eduroam",
+    "flatpak",
+    "Flatpaks",
     "ITSC",
     "multilingualization",
     "wezterm"
@@ -9,6 +11,7 @@
   "editor.minimap.enabled": false,
   "MarkdownPaste.path": "${workspaceFolder}/attachments",
   "markdownlint.config": {
+    "MD034": false,
     "MD053": false
   },
   "prettier.singleQuote": false,
