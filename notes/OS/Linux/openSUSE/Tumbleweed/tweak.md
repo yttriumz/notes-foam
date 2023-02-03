@@ -2,8 +2,8 @@
 
 Refer to the community guides for some good practices:
 
-- https://opensuse.github.io/openSUSE-docs-revamped-temp/best_of_post/
-- https://opensuse.github.io/openSUSE-docs-revamped-temp/safety_usability/
+- [https://opensuse.github.io/openSUSE-docs-revamped-temp/best_of_post/]
+- [https://opensuse.github.io/openSUSE-docs-revamped-temp/safety_usability/]
 
 ## Change hostname
 
@@ -31,7 +31,7 @@ Open *YaST Software Repositories* and select *Add* >> *Community Repositories*. 
 
 #### VSCode
 
-Add *VSCode* repo (and install VSCode) by the following commands (refer to [the wiki]( https://en.opensuse.org/Visual_Studio_Code#Install )):
+Add *VSCode* repo (and install VSCode) (refer to [the wiki]( https://en.opensuse.org/Visual_Studio_Code#Install )) by the following commands:
 
 ```bash
 sudo rpm --import https://packages.microsoft.com/keys/microsoft.asc
@@ -50,7 +50,7 @@ Add *M17N* repo by `zypper addrepo https://download.opensuse.org/repositories/M1
 
 #### Flatpaks
 
-Add *Flatpaks* by the following commands (refer to [the community guide]( https://opensuse.github.io/openSUSE-docs-revamped-temp/best_of_post/#setup-your-tumbleweed-for-flatpaks )):
+Add *Flatpaks* (refer to [the community guide]( https://opensuse.github.io/openSUSE-docs-revamped-temp/best_of_post/#setup-your-tumbleweed-for-flatpaks )) by the following commands:
 
 ```bash
 sudo zypper in flatpak
@@ -76,8 +76,6 @@ Install Rust. Then install starship by `cargo install starship --locked`. See [[
 Use *YaST* to install the stable version. Refer to [the official doc]( https://wezfurlong.org/wezterm/install/linux.html#installing-on-fedora-and-rpm-based-systems ) for the night version. See [[wezterm]] for configuration.
 
 ## Graphics
-
-
 
 ## Development environment
 

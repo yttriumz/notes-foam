@@ -6,7 +6,7 @@ Download the ISO image from [the official site]( https://get.opensuse.org/tumble
 
 ## During installation
 
-We can refer to [the official Leap startup guide]( https://doc.opensuse.org/documentation/leap/startup/html/book-startup/art-opensuse-installquick.html#sec-opensuse-installquick-install ) and [the community guide]( https://opensuse.github.io/openSUSE-docs-revamped-temp/yast_installer/ ). Below are a few notable points.
+Refer to [the official Leap startup guide]( https://doc.opensuse.org/documentation/leap/startup/html/book-startup/art-opensuse-installquick.html#sec-opensuse-installquick-install ) and [the community guide]( https://opensuse.github.io/openSUSE-docs-revamped-temp/yast_installer/ ). Below are a few notable points.
 
 ### Network settings
 
@@ -14,12 +14,12 @@ We can refer to [the official Leap startup guide]( https://doc.opensuse.org/docu
 
 ### Disk
 
-We can refer to [the community guide]( https://opensuse.github.io/openSUSE-docs-revamped-temp/yast_installer/#about-partition-schemes ). Below is my configuration:
+Refer to [the community guide]( https://opensuse.github.io/openSUSE-docs-revamped-temp/yast_installer/#about-partition-schemes ). Below is my configuration:
 
 - Use the bootloader from Windows which will be `/boot/efi`.
-- A separate partition for `/`.
-- A separate partition for `/home`.
-- A separate partition for `swap` which size supports hibernation.
+- A new separate partition for `/`.
+- A new separate partition for `/home`.
+- A new separate partition for `swap` which size supports hibernation.
 
 ### Installation settings
 
