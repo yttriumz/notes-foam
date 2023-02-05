@@ -25,8 +25,10 @@ Run the following commands:
 
 ```bash
 sudo zypper refresh
-sudo zypper dist-upgrad
+sudo zypper dist-upgraded # optionally add "--no-recommends"
 ```
+
+An option `--no-recommends` can be added referring to [the Reddit post]( https://www.reddit.com/r/openSUSE/comments/10rnrnu/zypper_keeps_installing_kde_games_on_update_how/ ) and [the blog]( https://linuxkamarada.com/en/2021/04/07/what-are-recommended-packages-and-how-to-install-them-on-opensuse/ ).
 
 ## Package repository
 
