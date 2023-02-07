@@ -38,7 +38,9 @@ Refer to [the wiki]( https://en.opensuse.org/Package_repositories ) for more.
 
 #### Packman and NVidia
 
-Open *YaST Software Repositories* and select *Add* >> *Community Repositories*.  After this *YaST Software* will automatically select some NVidia drivers to install. Do **not** install them because they will cause problems. See [Graphics section](#graphics).
+Open *YaST Software Repositories* and select *Add* >> *Community Repositories*.
+
+Note that after this, *YaST Software* may automatically select some NVidia drivers to install. Do **not** install them because they will cause problems. See [Graphics section](#graphics).
 
 #### VSCode
 
@@ -100,6 +102,26 @@ Use *YaST* or `zypper modifyrepo -p` to set repo priority.
 
 ## Graphics
 
+Refer to the following pages:
+
+- https://opensuse.github.io/openSUSE-docs-revamped-temp/hybrid_graphics/
+- https://en.opensuse.org/SDB:NVIDIA_drivers
+- https://en.opensuse.org/SDB:NVIDIA_troubleshooting
+- https://en.opensuse.org/SDB:NVIDIA_SUSE_Prime
+- https://www.bwsl.wang/script/129.html
+
+## Codecs
+
+Refer to [the wiki]( https://en.opensuse.org/SDB:Firefox_MP4/H.264_Video_Support ) to enable firefox to play HTML5 videos. For my machine I just installed the following packages from the *Packman* repository:
+
+- `libavcodec56`, `libavcodec57`, `libavcodec58`, `libavformat56`, `libavformat57`, `libavformat58`, `libavdevice56`, `libavdevice57`, `libavdevice58`
+
+Refer to the following pages for more:
+
+- https://en.opensuse.org/SDB:Installing_codecs_from_Packman_repositories
+- https://opensuse.github.io/openSUSE-docs-revamped-temp/codecs/
+- https://www.reddit.com/r/openSUSE/comments/u0myze/some_youtube_videos_dont_play_on_firefox/
+
 ## Fingerprint
 
 ## Bluetooth
@@ -107,14 +129,6 @@ Use *YaST* or `zypper modifyrepo -p` to set repo priority.
 See [[cross-distro/bluetooth]].
 
 ## Font
-
-## Codecs
-
-Refer to [the wiki]( https://en.opensuse.org/SDB:Firefox_MP4/H.264_Video_Support ) to enable firefox to play HTML5 videos. Also, refer to the following pages for more:
-
-- [the wiki]( https://en.opensuse.org/SDB:Installing_codecs_from_Packman_repositories )
-- [the community guide]( https://opensuse.github.io/openSUSE-docs-revamped-temp/codecs/ )
-- [the Reddit post]( https://www.reddit.com/r/openSUSE/comments/u0myze/some_youtube_videos_dont_play_on_firefox/ )
 
 ## KDE
 
