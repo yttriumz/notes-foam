@@ -11,3 +11,7 @@ Some references:
 - https://forums.opensuse.org/t/kwallet-and-kmail-whats-gpg-whats-blowfish-why-a-blank-password/113770
 
 ## KWallet and VSCode
+
+Some references:
+
+- https://github.com/microsoft/vscode/issues/104319
