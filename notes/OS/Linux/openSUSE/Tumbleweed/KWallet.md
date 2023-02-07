@@ -14,4 +14,5 @@ Some references:
 
 Some references:
 
+- https://code.visualstudio.com/docs/editor/settings-sync#_linux
 - https://github.com/microsoft/vscode/issues/104319
