@@ -102,6 +102,8 @@ Use *YaST* or `zypper modifyrepo -p` to set repo priority.
 
 ## Graphics
 
+### Install driver and prime-select
+
 Refer to the following pages:
 
 - https://opensuse.github.io/openSUSE-docs-revamped-temp/hybrid_graphics/
@@ -109,6 +111,20 @@ Refer to the following pages:
 - https://en.opensuse.org/SDB:NVIDIA_troubleshooting
 - https://en.opensuse.org/SDB:NVIDIA_SUSE_Prime
 - https://www.bwsl.wang/script/129.html
+
+### Make applications running on NVidia card
+
+Use `__NV_PRIME_RENDER_OFFLOAD=1 __VK_LAYER_NV_optimus=NVIDIA_only __GLX_VENDOR_LIBRARY_NAME=nvidia APP_COMMAND`.
+
+Refer to the following pages:
+
+- https://wiki.archlinux.org/title/PRIME#Configure_applications_to_render_using_GPU
+- https://askubuntu.com/questions/1364762/prime-run-command-not-found
+- https://www.youtube.com/watch?v=aPi8NfDyDMU
+
+### Benchmark
+
+Refer to [Arch wiki]( https://wiki.archlinux.org/title/benchmarking#Graphics ).
 
 ## Codecs
 
