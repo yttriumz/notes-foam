@@ -1,6 +1,12 @@
 # Git Operations
 
-## Configure user
+## Configuration
+
+### Show configs
+
+Use `git config --list --show-origin --show-scope`.
+
+### Configure user
 
 Set the user name and email by the following commands:
 
