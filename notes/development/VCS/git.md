@@ -15,6 +15,10 @@ git config --global user.name "YOUR_NAME"
 git config --global user.email "YOUR_EMAIL"
 ```
 
+### Automatic transformation (Windows)
+
+Use `git config --global core.autocrlf false` or edit the `gitconfig` file directly.
+
 ## Add SSH key to GitHub
 
 1. Generate a key. See [[SSH#Generate SSH key]].
