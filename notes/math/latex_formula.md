@@ -75,8 +75,11 @@ $$
 
 ## Calculus
 
+<!-- FIXME -->
+<!-- Liquid Exception: Liquid syntax error (line 79): Variable '{{\rm d}' was not properly terminated with regexp: /\}\}/ in notes/math/latex_formula.md -->
+
 $$
-\left. \frac{{\rm d}u}{{\rm d}x} \right|_{x = 0} \quad and \quad
+\left. \frac{ {\rm d}u}{ {\rm d}x} \right|_{x = 0} \quad and \quad
 \int_0^1 (x^2) \,{\rm d}x \quad and \quad
 \frac{\partial x}{\partial y}
 $$

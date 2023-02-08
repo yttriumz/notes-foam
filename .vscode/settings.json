@@ -9,10 +9,11 @@
     "wezterm"
   ],
   "editor.minimap.enabled": false,
-  "MarkdownPaste.path": "${workspaceFolder}/attachments",
   "markdownlint.config": {
     "MD034": false,
     "MD053": false
   },
+  // "MarkdownPaste.path": "${fileWorkspaceFolder}/attachments",
+  "MarkdownPaste.path": "${fileDirname}/attachments",
   "prettier.singleQuote": false,
 }
