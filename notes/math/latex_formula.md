@@ -1,5 +1,9 @@
 # LaTeX Formula
 
+Refer to the following posts:
+
+- https://hackmd.io/@CynthiaChuang/Basic-LaTeX-Commands
+
 ## Elementary arithmetic
 
 $$
