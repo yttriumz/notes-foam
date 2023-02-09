@@ -1,9 +1,10 @@
 # Tweak openSUSE Tumbleweed
 
-Refer to the community guides for some good practices:
+Refer to the following pages:
 
 - https://opensuse.github.io/openSUSE-docs-revamped-temp/best_of_post/
 - https://opensuse.github.io/openSUSE-docs-revamped-temp/safety_usability/
+- https://averagelinuxuser.com/after-installing-opensuse/
 
 ## Change hostname
 
@@ -146,12 +147,28 @@ See [[cross-distro/bluetooth]].
 
 ## Font
 
-## KDE
+## Locale
+
+Refer to [Arch wiki]( https://wiki.archlinux.org/title/Locale ).
+
+Change the system lock screen time format to 24H by adding `LC_TIME=C.UTF-8` to `/etc/locale.conf`.
+
+Alternatively, refer to these posts:
+
+- https://askubuntu.com/questions/783184/how-to-display-kde-lock-screen-time-in-24-hour-format
+- https://forum.manjaro.org/t/changing-the-lock-screen-clock-theme/114424
+- https://www.reddit.com/r/kde/comments/kxr9qz/change_time_format_in_kde_lock_screen/
+
+## KDE Plasma
 
 ### Widget
 
 - [Event Calendar]( https://store.kde.org/p/998901 )
 - [Prime Render Switch and Status]( https://store.kde.org/p/1425330 )
+
+### Change Task Switcher
+
+Open *System Settings* >> *Window Management* >> *Task Switcher* >> Select *Thumbnails*.
 
 ## Development environment
 
