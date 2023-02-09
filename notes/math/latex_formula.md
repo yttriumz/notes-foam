@@ -93,8 +93,6 @@ $$
 
 ## Calculus
 
-[[notes_foam_private/inbox#Latex]]
-
 {% raw %}
 $$
 \left. \frac{{\rm d}u}{{\rm d}x} \right|_{x = 0} \quad and \quad
