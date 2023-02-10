@@ -81,11 +81,11 @@ flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flat
 
 ### Check repo
 
-Use *YaST* or `zypper repos -P` to check repos.
+Use *YaST* or `zypper repos -P`.
 
 ### Set priority
 
-Use *YaST* or `zypper modifyrepo -p` to set repo priority.
+Use *YaST* or `zypper modifyrepo -p`.
 
 ## Shell and terminal
 
@@ -141,11 +141,31 @@ Refer to the following pages for more:
 
 ## Fingerprint
 
+Refer to [the wiki]( https://en.opensuse.org/SDB:Using_fingerprint_authentication ) for more.
+
+1. Install `fprintd` and `fprintd-pam`.
+2. Add the following config to `/etc/pam.d/sddm`:
+
+   ```text
+   #%PAM-1.0
+   auth    [success=1 new_authtok_reqd=1 default=ignore]   pam_unix.so try_first_pass likeauth nullok
+   auth    sufficient      pam_fprintd.so
+   ```
+
+3. Add the following config to `/etc/pam.d/kde` (create the file if there is no such file):
+
+   ```text
+   auth 			sufficient  	pam_unix.so try_first_pass likeauth nullok
+   auth 			sufficient  	pam_fprintd.so
+   ```
+
 ## Bluetooth
 
 See [[cross-distro/bluetooth]].
 
 ## Font
+
+<!-- TODO -->
 
 ## Locale
 
@@ -167,6 +187,12 @@ Refer to the following pages:
 
 - https://rime.im/download/
 - https://github.com/fcitx/fcitx-rime
+
+## Grub2 theme
+
+1. Go to https://k1ng.dev/distro-grub-themes/preview and download a theme.
+2. Unpack it and place the theme folder under `/boot/grub2/themes/`.
+3. Use *YaST* to choose the `.txt` file.
 
 ## KDE Plasma
 
