@@ -9,5 +9,5 @@ Refer to the following posts:
 
 1. Pair to Linux.
 2. Pair to Windows. Go to registry and export `HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\services\BTHPORT\Parameters\Keys`.
-3. Pair to Linux. Change the `[LinkKey]` section of `/var/lib/bluetooth/<ADAPTOR_MAC_ADDRESS>/<DEVICE_MAC_ADDRESS>/info`.
+3. On Linux, change the `[LinkKey]` section of `/var/lib/bluetooth/<ADAPTOR_MAC_ADDRESS>/<DEVICE_MAC_ADDRESS>/info`.
 4. Reboot or `sudo systemctl restart bluetooth`.
