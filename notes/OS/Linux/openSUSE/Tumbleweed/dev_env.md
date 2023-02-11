@@ -32,12 +32,16 @@ Refer to [the official guide]( https://doc.rust-lang.org/book/ch01-01-installati
 
 ## Java
 
+Install `java-17-openjdk-devel` and `java-17-openjdk-src`.
+
 Refer to the following pages:
 
 - https://en.opensuse.org/SDB:Installing_Java
 - https://www.simplified.guide/java/jdk-install-suse
 
 ## Scala
+
+[Installing Java](#java) can be performed before installing Scala.
 
 The following env vars can be added to `.bash_profile` before installing `coursier`:
 
