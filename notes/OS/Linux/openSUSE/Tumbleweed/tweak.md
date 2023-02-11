@@ -101,6 +101,29 @@ Use *YaST* or `zypper modifyrepo -p`.
 1. Use *YaST* to install the stable version. Refer to [the official doc]( https://wezfurlong.org/wezterm/install/linux.html#installing-on-fedora-and-rpm-based-systems ) for the night version.
 2. See [[wezterm]] for configuration.
 
+### Alias
+
+1. Add the following to `.bash_aliases`.
+
+   ```bash
+   alias et='exit'
+   alias rm='rm -i'
+   alias trash='gio trash'
+   alias zlu='zypper list-updates'
+   alias zref='sudo zypper refresh'
+   alias zse='zypper search'
+   alias 'z?'='zypper help'
+   ```
+
+2. Add the following to `.bashrc`.
+
+   ```bash
+   # custom aliases
+   if [ -f ~/.bash_aliases ]; then
+      . ~/.bash_aliases
+   fi
+   ```
+
 ## Graphics
 
 ### Install driver and prime-select
