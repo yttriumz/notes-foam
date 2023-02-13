@@ -58,6 +58,10 @@ Refer to [the community guide]( https://opensuse.github.io/openSUSE-docs-revampe
 
 Refer to [the post]( https://linuxhint.com/installing-google-chrome-opensuse/ ).
 
+#### Some repo ref
+
+![repos](attachments/Screenshot%202023-02-13%20151118.png)
+
 ### Check repo
 
 Use *YaST* or `zypper repos -P`.
