@@ -77,3 +77,7 @@ Use *YaST* or `zypper modifyrepo -p`.
 Use `zypper packages --unneeded`.
 
 Refer to [the post]( https://www.reddit.com/r/openSUSE/comments/9gtcga/how_to_remove_unneeded_dependencies_after_zypper/ ).
+
+### Installation History
+
+The history can be found in `/var/log/zypp/history`. Root permission might be needed.
