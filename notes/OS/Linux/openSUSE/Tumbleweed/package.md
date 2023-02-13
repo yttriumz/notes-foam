@@ -54,6 +54,10 @@ flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flat
 
 Refer to [the community guide]( https://opensuse.github.io/openSUSE-docs-revamped-temp/best_of_post/#setup-your-tumbleweed-for-flatpaks ) for more.
 
+#### Chrome
+
+Refer to [the post]( https://linuxhint.com/installing-google-chrome-opensuse/ ).
+
 ### Check repo
 
 Use *YaST* or `zypper repos -P`.
