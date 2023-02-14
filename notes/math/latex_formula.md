@@ -17,6 +17,7 @@
 Refer to the following posts:
 
 - https://hackmd.io/@CynthiaChuang/Basic-LaTeX-Commands
+- https://www.scijournal.org/articles/dots-symbols-in-latex
 
 ## Elementary arithmetic
 

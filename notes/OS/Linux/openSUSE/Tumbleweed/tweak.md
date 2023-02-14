@@ -76,7 +76,9 @@ See [[package]].
 
 ### Install driver and prime-select
 
-Refer to the following pages:
+On my machine, I installed `x11-video-nvidiaG05` and `suse-prime`. `nvidia-driver-G06-kmp-default` does not work. But it might work later or on other machines.
+
+Refer to the following pages for more:
 
 - https://opensuse.github.io/openSUSE-docs-revamped-temp/hybrid_graphics/
 - https://en.opensuse.org/SDB:NVIDIA_drivers
