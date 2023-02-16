@@ -2,6 +2,8 @@
 
 Save the following to `Documents\\PowerShell\\.mytheme.omp.json`:
 
+{% raw %}
+
 ```json
 {
   "$schema": "https://raw.githubusercontent.com/JanDeDobbeleer/oh-my-posh/main/themes/schema.json",
@@ -125,6 +127,8 @@ Save the following to `Documents\\PowerShell\\.mytheme.omp.json`:
   "version": 2
 }
 ```
+
+{% endraw %}
 
 Save the following to `Documents\\PowerShell\\profile.ps1`:
 
