@@ -6,6 +6,7 @@
     "Flatpaks",
     "ITSC",
     "multilingualization",
+    "rustup",
     "wezterm"
   ],
   "editor.minimap.enabled": false,
