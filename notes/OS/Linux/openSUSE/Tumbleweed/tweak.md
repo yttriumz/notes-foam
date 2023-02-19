@@ -60,7 +60,7 @@ See [[package]].
    alias rm='rm -i'
    alias trash='gio trash'
    # zypper related
-   alias suz='sudo zypper'
+   alias sdz='sudo zypper'
    alias z='zypper'
    # alias zlu='zypper list-updates'
    # alias zref='sudo zypper refresh'
