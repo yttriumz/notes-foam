@@ -54,13 +54,19 @@ See [[package]].
 1. Add the following to `.bash_aliases`.
 
    ```bash
+   alias du='du --human-readable'
    alias et='exit'
+   alias mysd='sudo --preserve-env env "PATH=$PATH"'
    alias rm='rm -i'
    alias trash='gio trash'
-   alias zlu='zypper list-updates'
-   alias zref='sudo zypper refresh'
-   alias zse='zypper search'
-   alias 'z?'='zypper help'
+   # zypper related
+   alias suz='sudo zypper'
+   alias z='zypper'
+   # alias zlu='zypper list-updates'
+   # alias zref='sudo zypper refresh'
+   alias zse='zypper search --details'
+   alias zsei='zypper search --details --installed-only'
+   # alias 'z?'='zypper help'
    ```
 
 2. Add the following to `.bashrc`.
