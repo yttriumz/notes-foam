@@ -66,6 +66,13 @@ Refer to the following pages:
 - [![Multiple Roots in a Workspace](https://img.youtube.com/vi/alNInbRuQ_Y/0.jpg)](https://www.youtube.com/watch?v=alNInbRuQ_Y)
 - Use `console` in `sbt`: https://www.baeldung.com/scala/repl
 
+## Android
+
+Refer to the following pages:
+
+- https://developer.android.com/studio/install#linux
+- https://tutorialforlinux.com/2019/05/08/how-to-install-android-studio-on-opensuse-15-gnulinux-easy-guide/2/
+
 ## Flutter
 
 Refer to [the official doc]( https://docs.flutter.dev/get-started/install/linux ).

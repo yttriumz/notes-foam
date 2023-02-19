@@ -1,5 +1,57 @@
 # Tweak Win11 on Surface Pro 8
 
+## System Settings
+
+### Task Manager
+
+- Disable useless auto-starts
+
+### Settings
+
+1. Rename device
+2. Power & battery: 2, 5, 5, 10
+3. Multitasking:
+   - `Alt + Tab`: open windows only
+4. Date & time:
+   - Change timezone
+   - Additional calendar
+5. Language & region:
+   - Change regional format
+6. Themes:
+   - Desktop icon settings
+7. Start:
+   - Turn off showing recently opened files
+8. Taskbar settings
+   - Hide useless items
+   - Align left
+   - Show taskbar notification icons
+
+### Control Panel
+
+1. Enable hibernation according to [the official doc]( https://support.microsoft.com/en-us/windows/shut-down-sleep-or-hibernate-your-pc-2941d165-7d0a-a5e8-c5ad-8c972e8e6eff )
+2. Change mouse settings
+
+### Start Menu
+
+- Remove useless apps
+
+### File Explorer
+
+1. Remove folders from quick access
+2. Create program file folders
+3. Change folder options
+   - Open file explorer on *This PC*
+   - Show *hidden files*, *empty drives* and *file extensions*
+4. Change user folder locations
+
+### Edge
+
+- Disable SmartScreen
+
+### Accounts
+
+Remember to sign out of obsolete devices.
+
 ## Software
 
 ### MS store
@@ -17,6 +69,7 @@
 ### Standalone
 
 - Uninstall Tool
+- Install Microsoft Visual C++ Redistributable from [the official page](https://learn.microsoft.com/en-us/cpp/windows/latest-supported-vc-redist?view=msvc-170).
 - [Traffic Monitor]( https://github.com/zhongyang219/TrafficMonitor )
 - [VSCode]( https://code.visualstudio.com/#alt-downloads )
 - [Git]( https://gitforwindows.org/ )
