@@ -1,5 +1,7 @@
 # Oh My Posh Config
 
+## My Config
+
 Save the following to `Documents\\PowerShell\\.mytheme.omp.json`:
 
 {% raw %}
