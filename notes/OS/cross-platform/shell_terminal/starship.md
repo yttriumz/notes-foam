@@ -6,6 +6,9 @@ Refer to [the official doc]( https://starship.rs/config/ ).
 
 Save the following to `~/.config/starship.toml`:
 
+<details>
+<summary>content</summary>
+
 ```toml
 # Get editor completions based on the config schema
 "$schema" = 'https://starship.rs/config-schema.json'
@@ -137,3 +140,5 @@ format = "via [ Node.js $version](bold green) "
 detect_files = ["package.json", ".node-version"]
 detect_folders = ["node_modules"]
 ```
+
+</details>

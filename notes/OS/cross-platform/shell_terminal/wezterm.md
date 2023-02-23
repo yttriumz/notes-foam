@@ -6,7 +6,12 @@ Also, refer to the following post:
 
 - https://www.sharpwriting.net/project/configuring-wezterm/
 
+## My Config
+
 Save the following to `~/.config/wezterm/wezterm.lua`:
+
+<details>
+<summary>content</summary>
 
 ```lua
 local wezterm = require 'wezterm'
@@ -48,6 +53,8 @@ return {
   },
 }
 ```
+
+</details>
 
 ## Default Keybinding
 
