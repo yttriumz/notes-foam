@@ -70,8 +70,6 @@ Refer to the following pages:
 
 `python3` is already installed.
 
-- [ ] is it installed alongside `opi`?
-
 ## Rust
 
 I installed it under `$HOME/.rust` by adding the following to `.bash_profile` before installation:

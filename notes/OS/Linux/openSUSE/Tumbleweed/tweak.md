@@ -98,7 +98,7 @@ Refer to the following pages for more:
 
 ### Make applications running on NVidia card
 
-Use `__NV_PRIME_RENDER_OFFLOAD=1 __VK_LAYER_NV_optimus=NVIDIA_only __GLX_VENDOR_LIBRARY_NAME=nvidia APP_COMMAND`.
+Use `__NV_PRIME_RENDER_OFFLOAD=1 __VK_LAYER_NV_optimus=NVIDIA_only __GLX_VENDOR_LIBRARY_NAME=nvidia SOME_APP_COMMAND`.
 
 Refer to the following pages:
 
@@ -141,6 +141,12 @@ Refer to [the wiki]( https://en.opensuse.org/SDB:Using_fingerprint_authenticatio
    auth 			sufficient  	pam_unix.so try_first_pass likeauth nullok
    auth 			sufficient  	pam_fprintd.so
    ```
+
+## IR Camera
+
+[ ] set up facial auth
+
+Refer to [the wiki]( https://en.opensuse.org/SDB:Facial_authentication ).
 
 ## Bluetooth
 
