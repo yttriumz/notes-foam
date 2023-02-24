@@ -14,7 +14,6 @@
   ],
   "editor.minimap.enabled": false,
   "markdownlint.config": {
-    "MD034": false,
     "MD053": false
   },
   // "MarkdownPaste.path": "${fileWorkspaceFolder}/attachments",
