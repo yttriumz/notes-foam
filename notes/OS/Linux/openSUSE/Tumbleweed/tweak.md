@@ -121,6 +121,7 @@ Refer to the following pages for more:
 - https://en.opensuse.org/SDB:Installing_codecs_from_Packman_repositories
 - https://opensuse.github.io/openSUSE-docs-revamped-temp/codecs/
 - https://www.reddit.com/r/openSUSE/comments/u0myze/some_youtube_videos_dont_play_on_firefox/
+- [openSUSE Simplifies Codec Installation](https://news.opensuse.org/2023/01/24/opensuse-simplifies-codec-install/)
 
 ## Fingerprint
 
