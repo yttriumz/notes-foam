@@ -17,7 +17,7 @@ Open *Window Management* >> *Window Behavior* >> *Advanced*.
 
 At the time of writing (*Tumbleweed 20230211, KDE Plasma 5.26.5, Firefox 109.0.1*), there is a bug that Firefox does not follow the behavior.
 
-Refer to the following pages:
+References:
 
 - https://askubuntu.com/questions/1445505/firefox-108-0-jumps-to-different-desktop
 - https://www.reddit.com/r/kde/comments/zm6gag/prevent_a_browser_window_from_changing_virtual/

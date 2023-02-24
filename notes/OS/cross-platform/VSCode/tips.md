@@ -6,7 +6,7 @@ You can use `(lib[a-z]*[0-9][0-9])` (note the parentheses here) to match `libavc
 
 Wrap them with backtick `` ` `` using `` `$1` `` in the replace field.
 
-Refer to the following:
+References:
 
 - https://dev.to/rfornal/vs-code-search-and-replace-regex-mn2
 - https://www.youtube.com/watch?v=xMhKstbdr3k

@@ -1,6 +1,6 @@
 # frp
 
-Refer to the following pages:
+References:
 
 - https://github.com/fatedier/frp
 - [安装](https://gofrp.org/docs/setup/)
@@ -9,7 +9,7 @@ Refer to the following pages:
 
 ## SSH
 
-Refer to the following pages:
+References:
 
 - [通过 SSH 访问内网机器](https://gofrp.org/docs/examples/ssh/)
 - [proxy name [ssh] is already in use](https://github.com/fatedier/frp/issues/458#issuecomment-711144139)

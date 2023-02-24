@@ -34,7 +34,7 @@
 </head>
 ```
 
-Refer to the following pages:
+References:
 
 - https://zhuanlan.zhihu.com/p/36302775
 - https://stackoverflow.com/questions/26275645/how-to-support-latex-in-github-pages

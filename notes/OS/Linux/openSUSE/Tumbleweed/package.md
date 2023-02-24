@@ -65,7 +65,7 @@ sudo zypper refresh
 sudo zypper install google-chrome-stable
 ```
 
-Refer to the following pages:
+References:
 
 - https://www.google.com/linuxrepositories/
 - https://linuxhint.com/installing-google-chrome-opensuse/
