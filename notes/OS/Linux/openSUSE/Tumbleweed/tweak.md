@@ -1,6 +1,6 @@
 # Tweak openSUSE Tumbleweed on ThinkPad P1 Gen2
 
-Refer to the following pages:
+References:
 
 - https://opensuse.github.io/openSUSE-docs-revamped-temp/best_of_post/
 - https://opensuse.github.io/openSUSE-docs-revamped-temp/safety_usability/
@@ -88,7 +88,7 @@ See [[package]].
 
 On my machine, I installed `x11-video-nvidiaG05` and `suse-prime`. `nvidia-driver-G06-kmp-default` does not work. But it might work later or on other machines.
 
-Refer to the following pages for more:
+References for more:
 
 - https://opensuse.github.io/openSUSE-docs-revamped-temp/hybrid_graphics/
 - https://en.opensuse.org/SDB:NVIDIA_drivers
@@ -100,7 +100,7 @@ Refer to the following pages for more:
 
 Use `__NV_PRIME_RENDER_OFFLOAD=1 __VK_LAYER_NV_optimus=NVIDIA_only __GLX_VENDOR_LIBRARY_NAME=nvidia SOME_APP_COMMAND`.
 
-Refer to the following pages:
+References:
 
 - https://wiki.archlinux.org/title/PRIME#Configure_applications_to_render_using_GPU
 - https://askubuntu.com/questions/1364762/prime-run-command-not-found
@@ -116,7 +116,7 @@ Refer to [the wiki]( https://en.opensuse.org/SDB:Firefox_MP4/H.264_Video_Support
 
 - `libavcodec56`, `libavcodec57`, `libavcodec58`, `libavformat56`, `libavformat57`, `libavformat58`, `libavdevice56`, `libavdevice57`, `libavdevice58`
 
-Refer to the following pages for more:
+References for more:
 
 - https://en.opensuse.org/SDB:Installing_codecs_from_Packman_repositories
 - https://opensuse.github.io/openSUSE-docs-revamped-temp/codecs/
@@ -173,7 +173,7 @@ Alternatively, refer to these posts:
 
 <!-- TODO -->
 
-Refer to the following pages:
+References:
 
 - https://rime.im/download/
 - https://github.com/fcitx/fcitx-rime

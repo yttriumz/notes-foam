@@ -32,7 +32,7 @@ sudo zypper install -t pattern devel_basis
 
 ## Android
 
-Refer to the following pages:
+References:
 
 - https://developer.android.com/studio/install#linux
 - https://tutorialforlinux.com/2019/05/08/how-to-install-android-studio-on-opensuse-15-gnulinux-easy-guide/2/
@@ -61,7 +61,7 @@ Use the following commands:
 sudo zypper install java-17-openjdk-devel java-17-openjdk-src
 ```
 
-Refer to the following pages:
+References:
 
 - https://en.opensuse.org/SDB:Installing_Java
 - https://www.simplified.guide/java/jdk-install-suse
@@ -93,7 +93,7 @@ I installed it under `$HOME/.coursier` by adding the following to `.bash_profile
 export COURSIER_BIN_DIR=$HOME/.coursier/bin
 ```
 
-Refer to the following pages:
+References:
 
 - https://get-coursier.io/docs/cli-installation
 - https://get-coursier.io/docs/cli-install#installation-directory

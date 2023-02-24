@@ -1,6 +1,6 @@
 # Cross-platform File Transfer
 
-Refer to the following pages:
+References:
 
 - https://zhuanlan.zhihu.com/p/35555134
 

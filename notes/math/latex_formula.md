@@ -14,7 +14,7 @@
 
 # $\LaTeX$ Formula
 
-Refer to the following posts:
+References:
 
 - https://hackmd.io/@CynthiaChuang/Basic-LaTeX-Commands
 - https://www.scijournal.org/articles/dots-symbols-in-latex
