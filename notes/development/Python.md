@@ -2,6 +2,10 @@
 
 ## Environment
 
+### Virtual Environment
+
+- [how to activate venv]( https://docs.python.org/3/library/venv.html#how-venvs-work )
+
 ### pip packages
 
 - [`black[jupyter]`](https://black.readthedocs.io/en/stable/getting_started.html#installation) for formatting
