@@ -13,11 +13,11 @@ Open *System Settings* >> *Window Management* >> *Task Switcher* >> Select *Thum
 
 Open *Window Management* >> *Window Behavior* >> *Advanced*.
 
-### Note
+**Note**:
 
 - ~~At the time of writing (*Tumbleweed 20230211, KDE Plasma 5.26.5, Firefox 109.0.1*), there is a bug that Firefox does not follow the behavior.~~
 
-  **Update**: At the time of updating (*Tumbleweed 20230224*, *KDE Plasma 5.27.1*, *Firefox 109.0.1*), the bug is already gone.
+  **Update**: At the time of updating (*Tumbleweed 20230224*, *KDE Plasma 5.27.1*, *Firefox 109.0.1*), the bug is already fixed.
 
   References:
 
