@@ -15,5 +15,5 @@ The simplest method: create a wallet in KWallet and use a blank password.
 
 Some references:
 
-- https://code.visualstudio.com/docs/editor/settings-sync#_linux
-- https://github.com/microsoft/vscode/issues/104319
+- [Settings Sync#Troubleshooting keychain issues](https://code.visualstudio.com/docs/editor/settings-sync#_linux)
+- [KDE WALLET](https://github.com/microsoft/vscode/issues/104319)
