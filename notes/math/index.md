@@ -2,7 +2,7 @@
 type: index
 ---
 
-# Math Index
+# Math
 
 - [[latex_issue]]
 - [[latex_formula]]

@@ -2,7 +2,7 @@
 type: index
 ---
 
-# Remote Development Index
+# Remote Development
 
 - [[SSH]]
 - [[frp]]

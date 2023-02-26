@@ -2,7 +2,7 @@
 type: index
 ---
 
-# Operating System Index
+# Operating System
 
 - [[cross-platform/index]]
 - [[Linux/index]]

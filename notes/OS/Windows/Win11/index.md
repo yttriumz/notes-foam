@@ -2,7 +2,7 @@
 type: index
 ---
 
-# Windows 11 Index
+# Windows 11
 
 - [[Win11/tweak]]
 - [[Win11/dev_env]]

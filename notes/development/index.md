@@ -2,7 +2,7 @@
 type: index
 ---
 
-# Development Index
+# Development
 
 - [[Python]]
 - [[ML]]

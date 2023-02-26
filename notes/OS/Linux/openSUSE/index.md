@@ -2,7 +2,7 @@
 type: index
 ---
 
-# openSUSE Index
+# openSUSE
 
 - [[Tumbleweed/index]]
 

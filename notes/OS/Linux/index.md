@@ -2,7 +2,7 @@
 type: index
 ---
 
-# Linux Index
+# Linux
 
 - [[cross-distro/index]]
 - [[openSUSE/index]]

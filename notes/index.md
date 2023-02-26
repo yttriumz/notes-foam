@@ -2,7 +2,7 @@
 type: index
 ---
 
-# Notes Index
+# Notes
 
 - [[math/index]]
 - [[OS/index]]

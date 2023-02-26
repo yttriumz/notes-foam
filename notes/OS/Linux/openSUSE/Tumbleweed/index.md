@@ -2,7 +2,7 @@
 type: index
 ---
 
-# Tumbleweed Index
+# Tumbleweed
 
 - [[Tumbleweed/installation]]
 - [[Tumbleweed/tweak]]

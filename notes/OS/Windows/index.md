@@ -2,7 +2,7 @@
 type: index
 ---
 
-# Windows Index
+# Windows
 
 - [[Win11/index]]
 

@@ -2,7 +2,7 @@
 type: index
 ---
 
-# Cross-distribution Index
+# Cross-distribution
 
 - [[KDE]]
 - [[KWallet]]

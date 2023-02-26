@@ -2,7 +2,7 @@
 type: index
 ---
 
-# Shell and Terminal Index
+# Shell and Terminal
 
 - [[bash]]
 - [[ohmyposh]]

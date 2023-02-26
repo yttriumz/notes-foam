@@ -2,7 +2,7 @@
 type: index
 ---
 
-# Version Control System Index
+# Version Control System
 
 - [[git]]
 

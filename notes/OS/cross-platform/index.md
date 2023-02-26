@@ -2,7 +2,7 @@
 type: index
 ---
 
-# Cross-platform Index
+# Cross-platform
 
 - [[shell_terminal/index]]
 - [[remote/index]]
