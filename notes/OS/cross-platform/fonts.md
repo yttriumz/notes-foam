@@ -1,8 +1,14 @@
 # Fonts
 
+## Test Fonts
+
+- <https://www.programmingfonts.org/>
+
 ## Mono
 
-- [Cascadia Code](https://github.com/microsoft/cascadia-code/releases)
+- Cascadia Code
+  - [original](https://github.com/microsoft/cascadia-code/releases)
+  - [nerd font (CaskaydiaCove)](https://github.com/ryanoasis/nerd-fonts/releases)
 - [MesloLGS Nerd Font](https://github.com/ryanoasis/nerd-fonts/releases)
 
 ## Non-mono
@@ -14,4 +20,4 @@
 ## Chinese
 
 - Noto Sans CJK
-  - `zypper install google-noto-sans-sc-fonts-full google-noto-sans-sc-mono-fonts`
+  - openSUSE: `zypper install google-noto-sans-sc-fonts-full google-noto-sans-sc-mono-fonts`
