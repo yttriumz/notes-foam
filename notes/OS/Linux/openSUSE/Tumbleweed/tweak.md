@@ -1,4 +1,4 @@
-# Tweak openSUSE Tumbleweed on ThinkPad P1 Gen2
+# openSUSE Tumbleweed Tweak
 
 References:
 
@@ -31,7 +31,7 @@ sudo zypper dist-upgraded # optionally add "--no-recommends"
 
 **Note**:
 
-- An option `--no-recommends` can be added referring to [the Reddit post]( https://www.reddit.com/r/openSUSE/comments/10rnrnu/zypper_keeps_installing_kde_games_on_update_how/ ) and [the blog]( https://linuxkamarada.com/en/2021/04/07/what-are-recommended-packages-and-how-to-install-them-on-opensuse/ ).
+- An option `--no-recommends` can be added to only install required packages referring to [the Reddit post]( https://www.reddit.com/r/openSUSE/comments/10rnrnu/zypper_keeps_installing_kde_games_on_update_how/ ) and [the blog]( https://linuxkamarada.com/en/2021/04/07/what-are-recommended-packages-and-how-to-install-them-on-opensuse/ ).
 
 References:
 
@@ -103,7 +103,9 @@ See [[packages]].
 
 ### Install driver and prime-select
 
-On my machine, I installed `x11-video-nvidiaG05` and `suse-prime`. `nvidia-driver-G06-kmp-default` does not work. But it might work later or on other machines.
+On my machine (*ThinkPad P1 Gen2 with T2000*), I installed `x11-video-nvidiaG05` and `suse-prime`.
+
+**Note**: `nvidia-driver-G06-kmp-default` does not work. But it might work later or on other machines.
 
 References for more:
 
@@ -147,10 +149,11 @@ References for more:
 
 ## Fingerprint
 
-Refer to [the wiki]( https://en.opensuse.org/SDB:Using_fingerprint_authentication ) for more.
+1. Check whether the device is supported from [the official page]( https://fprint.freedesktop.org/supported-devices.html ). Unsupported devices can be found [here]( https://gitlab.freedesktop.org/libfprint/wiki/-/wikis/Unsupported%20Devices ).
 
-1. Install `fprintd` and `fprintd-pam`.
-2. Add the following config to `/etc/pam.d/sddm`:
+   USB Device info can be checked via `lsusb` or *Info Center* >> *Devices* >> *USB Devices*.
+2. Install `fprintd` and `fprintd-pam`.
+3. Add the following config to `/etc/pam.d/sddm`:
 
    ```text
    #%PAM-1.0
@@ -160,12 +163,16 @@ Refer to [the wiki]( https://en.opensuse.org/SDB:Using_fingerprint_authenticatio
 
    **NOTE**: you may have to re-config `/etc/pam.d/sddm` after system updates. Refer to [the official wiki](https://en.opensuse.org/SDB:Facial_authentication#Known_issues).
 
-3. Add the following config to `/etc/pam.d/kde` (create the file if there is no such file):
+4. Add the following config to `/etc/pam.d/kde` (create the file if there is no such file):
 
    ```text
    auth 			sufficient  	pam_unix.so try_first_pass likeauth nullok
    auth 			sufficient  	pam_fprintd.so
    ```
+
+References:
+
+- https://en.opensuse.org/SDB:Using_fingerprint_authentication
 
 ## IR camera
 
