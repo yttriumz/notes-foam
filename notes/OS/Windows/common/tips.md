@@ -1,4 +1,4 @@
-# Windows 11 Usage Tips
+# Windows Usage Tips
 
 ## Remove recent files from WordPad
 

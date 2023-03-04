@@ -1,4 +1,4 @@
-# Development Environment
+# Windows Development Environment
 
 ## MSYS2
 
