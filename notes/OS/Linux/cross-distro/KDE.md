@@ -17,7 +17,7 @@ Open *Window Management* >> *Window Behavior* >> *Advanced*.
 
 - ~~At the time of writing (*Tumbleweed 20230211, KDE Plasma 5.26.5, Firefox 109.0.1*), there is a bug that Firefox does not follow the behavior.~~
 
-  **Update**: At the time of updating (*Tumbleweed 20230224*, *KDE Plasma 5.27.1*, *Firefox 109.0.1*), the bug is already fixed.
+  **Update**: At the time of updating (*Tumbleweed 20230224, KDE Plasma 5.27.1, Firefox 109.0.1*), the bug is already fixed.
 
   References:
 
@@ -28,3 +28,7 @@ Open *Window Management* >> *Window Behavior* >> *Advanced*.
 ## Hide Window Border
 
 Refer to [the post]( https://medium.com/@CodyReichert/how-to-hide-title-bars-in-kde-plasma-5-348e0df4087f ).
+
+## Baloo
+
+At the time of writing (*Tumbleweed 20230225, Baloo 5.103.0*), `baloo_file` constantly writes to my disk. Thus, I disabled it by `balooctl disable`.
