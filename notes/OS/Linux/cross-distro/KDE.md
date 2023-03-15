@@ -7,7 +7,7 @@
 
 ## Change Task Switcher
 
-Open *System Settings* >> *Window Management* >> *Task Switcher* >> Select *Thumbnails*.
+Open *System Settings* >> *Window Management* >> *Task Switcher* >> Select *Thumbnails Grid*.
 
 ## Virtual Desktop Behavior
 

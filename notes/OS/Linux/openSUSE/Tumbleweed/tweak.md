@@ -244,7 +244,7 @@ References:
 ## Swappiness
 
 - Check the current swappiness by `cat /proc/sys/vm/swappiness`.
-- Change the swappiness permanently by adding the following content to `/etc/sysctl.conf`:
+- Change the swappiness permanently by adding the following content to `/etc/sysctl.conf` (reboot may be required for the setting to take effect):
 
   ```text
   vm.swappiness=YOU_DESIRED_VALUE
