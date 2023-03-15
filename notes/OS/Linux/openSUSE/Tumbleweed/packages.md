@@ -6,7 +6,7 @@
             - [Packman and NVidia](#packman-and-nvidia)
             - [Flatpaks](#flatpaks)
             - [VSCode](#vscode)
-            - [container](#container)
+            - [containers](#containers)
             - [NVIDIA Container Toolkit](#nvidia-container-toolkit)
             - [CUDA](#cuda)
             - [M17N (Multilingualization)](#m17n-multilingualization)
@@ -66,7 +66,7 @@ sudo zypper install code
 
 Refer to [the wiki]( https://en.opensuse.org/Visual_Studio_Code#Install ) for more.
 
-#### container
+#### containers
 
 Add *Virtualization:containers* repo by the following commands:
 
@@ -80,23 +80,38 @@ References:
 
 #### NVIDIA Container Toolkit
 
-Add *NVIDIA Container Toolkit* repo by the following commands:
+1. Add *NVIDIA Container Toolkit* repo by the following commands:
 
-```bash
-sudo zypper addrepo https://nvidia.github.io/libnvidia-container/opensuse-leap15.1/libnvidia-container.repo
-# The following one is the same
-sudo zypper addrepo https://nvidia.github.io/libnvidia-container/sles15.1/libnvidia-container.repo
-```
+    ```bash
+    sudo zypper addrepo https://nvidia.github.io/libnvidia-container/opensuse-leap15.1/libnvidia-container.repo
+    # The following one is the same
+    sudo zypper addrepo https://nvidia.github.io/libnvidia-container/sles15.1/libnvidia-container.repo
+    ```
 
-Install NVIDIA Container Toolkit by the following commands:
+2. Install NVIDIA Container Toolkit by the following commands:
 
-```bash
-sudo zypper install nvidia-container-toolkit
-```
+    ```bash
+    sudo zypper install nvidia-container-toolkit
+    ```
+
+3. Config docker by the following commands:
+
+   ```bash
+   sudo nvidia-ctk runtime configure --runtime=docker
+   ```
+
+4. Verify installation by the following commands:
+
+   ```bash
+   docker run --rm --runtime=nvidia --gpus all nvidia/cuda:11.6.2-base-ubuntu20.04 nvidia-smi
+   ```
 
 References:
 
+- https://github.com/NVIDIA/nvidia-docker
 - https://docs.nvidia.com/datacenter/cloud-native/container-toolkit/install-guide.html
+- [package info details](https://github.com/NVIDIA/nvidia-docker/issues/1268#issuecomment-632692949)
+- [How to use with Docker 19.03 / nvidia-container-toolkit?](https://github.com/NVIDIA/k8s-device-plugin/issues/168#issuecomment-625981223)
 
 #### CUDA
 
@@ -150,7 +165,7 @@ Use *YaST* or `zypper modifyrepo -p`.
 
 Use `zypper packages --unneeded` to check.
 
-Use `zypper packages --unneeded | grep ^i|cut -d '|' -f3|xargs zypper rm --clean-deps --no-confirm` to uninstall referring to [the post]( https://forums.opensuse.org/t/cleanup-of-distribution-upgrades/152148 ).
+Use `zypper packages --unneeded | grep ^i | cut -d '|' -f3 | xargs sudo zypper rm --clean-deps --no-confirm` to uninstall referring to [the post]( https://forums.opensuse.org/t/cleanup-of-distribution-upgrades/152148 ).
 
 ### Installation History
 
