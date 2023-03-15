@@ -1,9 +1,39 @@
 # openSUSE Tumbleweed Tweak
 
+- [openSUSE Tumbleweed Tweak](#opensuse-tumbleweed-tweak)
+   - [Change hostname](#change-hostname)
+   - [Network settings](#network-settings)
+      - [WiFi](#wifi)
+   - [System update](#system-update)
+   - [Package management](#package-management)
+   - [Shell and terminal](#shell-and-terminal)
+      - [Bash](#bash)
+         - [Alias](#alias)
+      - [starship](#starship)
+      - [wezterm](#wezterm)
+   - [Graphics](#graphics)
+      - [Install driver and prime-select](#install-driver-and-prime-select)
+      - [If graphics driver or graphical desktop does not work](#if-graphics-driver-or-graphical-desktop-does-not-work)
+      - [Make applications running on NVidia card](#make-applications-running-on-nvidia-card)
+      - [Benchmark](#benchmark)
+   - [Codecs](#codecs)
+   - [Fingerprint](#fingerprint)
+   - [IR camera](#ir-camera)
+   - [Bluetooth](#bluetooth)
+   - [Font](#font)
+   - [Locale](#locale)
+   - [Input method](#input-method)
+      - [Rime](#rime)
+   - [Swappiness](#swappiness)
+   - [Grub2 theme](#grub2-theme)
+   - [KDE config](#kde-config)
+   - [Development environment](#development-environment)
+
 References:
 
 - https://opensuse.github.io/openSUSE-docs-revamped-temp/best_of_post/
 - https://opensuse.github.io/openSUSE-docs-revamped-temp/safety_usability/
+- https://averagelinuxuser.com/after-installing-opensuse/
 - https://averagelinuxuser.com/after-installing-opensuse/
 
 ## Change hostname
@@ -210,6 +240,15 @@ References:
 
 - https://rime.im/download/
 - https://github.com/fcitx/fcitx-rime
+
+## Swappiness
+
+- Check the current swappiness by `cat /proc/sys/vm/swappiness`.
+- Change the swappiness permanently by adding the following content to `/etc/sysctl.conf`:
+
+  ```text
+  vm.swappiness=YOU_DESIRED_VALUE
+  ```
 
 ## Grub2 theme
 

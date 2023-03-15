@@ -18,6 +18,10 @@
         - [Unused Packages](#unused-packages)
         - [Installation History](#installation-history)
         - [Package Dependency](#package-dependency)
+    - [Lock](#lock)
+        - [Lock packages](#lock-packages)
+        - [Lock patterns](#lock-patterns)
+        - [List locks](#list-locks)
     - [Become a Packager](#become-a-packager)
 
 ## Repository
@@ -156,6 +160,18 @@ The history can be found in `/var/log/zypp/history`. Root permission might be ne
 
 - Use `zypper info --requires SOME_PACKAGE` to check `SOME_PACKAGE`'s dependency.
 - Use `zypper search --requires SOME_PACKAGE` to obtain packages that needs `SOME_PACKAGE`.
+
+## Lock
+
+### Lock packages
+
+- *YaST* can be used.
+
+### Lock patterns
+
+### List locks
+
+Use `zypper locks`.
 
 ## Become a Packager
 
