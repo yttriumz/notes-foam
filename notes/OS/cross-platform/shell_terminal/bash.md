@@ -18,7 +18,15 @@
    fi
    ```
 
-## Auto-completion for Alias
+### Alias expansion
+
+Press `alt`-`ctrl`-`e`.
+
+References:
+
+- [Print terminal alias command as well as executing it](https://stackoverflow.com/a/22612852)
+
+### Auto-completion for aliases
 
 Refer to [complete-alias](https://github.com/cykerway/complete-alias) for more.
 

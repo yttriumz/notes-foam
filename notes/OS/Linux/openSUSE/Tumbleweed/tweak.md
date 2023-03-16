@@ -34,7 +34,6 @@ References:
 - https://opensuse.github.io/openSUSE-docs-revamped-temp/best_of_post/
 - https://opensuse.github.io/openSUSE-docs-revamped-temp/safety_usability/
 - https://averagelinuxuser.com/after-installing-opensuse/
-- https://averagelinuxuser.com/after-installing-opensuse/
 
 ## Change hostname
 
@@ -82,12 +81,16 @@ See [[packages]].
 
    ```bash
    # misc
+   alias clash='~/.clash/cfw'
    alias du='du --human-readable'
    alias et='exit'
    alias frp='~/.frp/frpc --config ~/.frp/frpc.ini'
    alias rm='rm -i'
-   alias sdenv='sudo --preserve-env env "PATH=$PATH"'
    alias trash='gio trash'
+
+   # sudo related
+   alias asudo='sudo ' # able to use aliases
+   alias esudo='sudo --preserve-env env "PATH=$PATH"' # able to use user pathes
 
    # flatpak related
    alias fpk='flatpak'
@@ -116,6 +119,13 @@ See [[packages]].
    ```
 
 3. configure auto-completion for aliases. See [[bash#Auto-completion for Alias]].
+
+References:
+
+- `sudo`
+  - [Command not found when using sudo](https://stackoverflow.com/questions/12996397/command-not-found-when-using-sudo)
+  - [Why does `sudo env "PATH=$PATH"` do anything at all?](https://superuser.com/questions/1551566/why-does-sudo-env-path-path-do-anything-at-all)
+  - [Aliases not available when using sudo](https://askubuntu.com/questions/22037/aliases-not-available-when-using-sudo)
 
 ### starship
 
