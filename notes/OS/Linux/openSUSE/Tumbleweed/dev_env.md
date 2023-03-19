@@ -79,26 +79,66 @@ sudo zypper install -t pattern devel_basis
 
 ## Android
 
+1. Download the package from [the official site](https://developer.android.com/studio).
+2. Extract and move the package to `/opt`.
+3. Run `/opt/android-studio/bin/studio.sh`.
+4. Install `cmdline-tools` from the studio. Go to *File >> Settings >> Appearance & Behavior >> System Settings >> Android SDK >> SDK Tools*.
+5. Add the following to `~/.bash_profile`:
+
+   ```bash
+   # Android environment
+   export ANDROID_HOME="$HOME/Android/Sdk"
+   export PATH="$PATH:$ANDROID_HOME/tools:$ANDROID_HOME/tools/bin:$ANDROID_HOME/platform-tools"
+   ```
+
 References:
 
 - https://developer.android.com/studio/install#linux
+- https://developer.android.com/codelabs/basic-android-kotlin-compose-install-android-studio#6
 - https://tutorialforlinux.com/2019/05/08/how-to-install-android-studio-on-opensuse-15-gnulinux-easy-guide/2/
+- https://developer.android.com/studio/command-line
+- https://developer.android.com/studio/command-line/variables#envar
+- https://developer.android.com/studio/run/emulator-acceleration?utm_source=android-studio#vm-linux
 
 ## C_Cpp
 
-Install some packages by the following commands:
+[ ] todo
 
-```bash
-sudo zypper install clang-devel
-```
+1. Install some packages by the following commands:
+
+   ```bash
+   sudo zypper install clang
+   ```
 
 ## Flutter
 
-Refer to [the official doc]( https://docs.flutter.dev/get-started/install/linux ). I installed it under `$HOME/.flutter`
+1. Make sure the following packages exist:
+
+   ```text
+   clang
+   ninja
+   gtk3-devel
+   ```
+
+2. Refer to [the official doc]( https://docs.flutter.dev/get-started/install/linux ). I installed it under `$HOME/.flutter`.
+3. Add the following to `~/.bash_profile`:
+
+   ```bash
+   # Flutter environment
+   export PATH="$PATH:$HOME/.flutter/bin"
+   ```
+
+4. Use `flutter doctor` to check installation.
 
 ## Go
 
-Refer to [the official doc]( https://go.dev/doc/install ). I installed it under `$HOME/.go`
+1. Refer to [the official doc]( https://go.dev/doc/install ). I installed it under `$HOME/.go`.
+2. Add the following to `~/.bash_profile`:
+
+   ```bash
+   # Go environment
+   export PATH="$PATH:$HOME/.go/bin"
+   ```
 
 ## Java
 
@@ -119,15 +159,17 @@ References:
 
 ## Rust
 
-I installed it under `$HOME/.rust` by adding the following to `.bash_profile` before installation:
+1. I installed it under `$HOME/.rust` by adding the following to `.bash_profile` before installation:
 
-```bash
-# Rust environment
-export RUSTUP_HOME=$HOME/.rust/.rustup
-export CARGO_HOME=$HOME/.rust/.cargo
-```
+   ```bash
+   # Rust environment
+   export RUSTUP_HOME=$HOME/.rust/.rustup
+   export CARGO_HOME=$HOME/.rust/.cargo
+   ```
 
-Refer to [the official guide]( https://doc.rust-lang.org/book/ch01-01-installation.html ).
+References:
+
+- https://doc.rust-lang.org/book/ch01-01-installation.html
 
 ## Scala
 
