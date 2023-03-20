@@ -81,15 +81,17 @@ sudo zypper install -t pattern devel_basis
 
 1. Download the package from [the official site](https://developer.android.com/studio).
 2. Extract and move the package to `/opt`.
-3. Run `/opt/android-studio/bin/studio.sh`.
-4. Install `cmdline-tools` from the studio. Go to *File >> Settings >> Appearance & Behavior >> System Settings >> Android SDK >> SDK Tools*.
-5. Add the following to `~/.bash_profile`:
+3. Add the following to `~/.bash_profile`:
 
    ```bash
    # Android environment
    export ANDROID_HOME="$HOME/Android/Sdk"
    export PATH="$PATH:$ANDROID_HOME/tools:$ANDROID_HOME/tools/bin:$ANDROID_HOME/platform-tools"
    ```
+
+4. Run `/opt/android-studio/bin/studio.sh`.
+5. Install `cmdline-tools` from the studio. Go to *File >> Settings >> Appearance & Behavior >> System Settings >> Android SDK >> SDK Tools*.
+6. On the welcome page, press `ctrl`+`shift`+`a` and search "device". Create AVD using *Virtual Device Manager*.
 
 References:
 
@@ -115,7 +117,7 @@ References:
 1. Make sure the following packages exist:
 
    ```text
-   clang
+   clang-devel
    ninja
    gtk3-devel
    ```

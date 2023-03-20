@@ -9,6 +9,7 @@ type: index
 
 ## Interesting Posts
 
+- [Ways to Use ‘find’ Command to Search Directories More Efficiently](https://www.tecmint.com/find-directory-in-linux/)
 - [What does `/opt` mean in Linux?](https://www.baeldung.com/linux/opt-directory)
 - [XDG Base Directory Specification](https://specifications.freedesktop.org/basedir-spec/basedir-spec-latest.html)
 
