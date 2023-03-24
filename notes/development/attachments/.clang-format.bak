@@ -1,0 +1,58 @@
+# https://www.zhihu.com/question/382876454/answer/1110531292
+BasedOnStyle: LLVM
+
+# Allow double brackets such as std::vector<std::vector<int>>.
+Standard: Cpp11
+
+# Indent 4 spaces at a time.
+IndentWidth: 4
+
+SortIncludes: false
+
+# Keep lines under 128 columns long.
+ColumnLimit: 128
+
+# Always break before braces
+BreakBeforeBraces: Custom
+BraceWrapping:
+  AfterClass: false
+  AfterControlStatement: true
+  AfterEnum: true
+  AfterFunction: true
+  AfterNamespace: true
+  AfterStruct: false
+  AfterUnion: false
+  BeforeCatch: true
+  BeforeElse: true
+  IndentBraces: false
+  SplitEmptyFunction: false
+  SplitEmptyRecord: false
+  SplitEmptyNamespace: false
+
+  # Keeps extern "C" blocks unindented.
+  AfterExternBlock: false
+
+# Indent case labels.
+IndentCaseLabels: true
+
+# Left-align pointers and references
+PointerAlignment: Left
+
+# Align things as much as possible.
+AlignOperands: true
+AlignConsecutiveAssignments: true
+
+# Use 2 space negative offset for access modifiers
+AccessModifierOffset: -2
+
+# TODO(jmadill): Decide if we want this on. Doesn't have an "all or none" mode.
+AllowShortCaseLabelsOnASingleLine: false
+
+# Useful for spacing out functions in classes
+KeepEmptyLinesAtTheStartOfBlocks: true
+
+# Indent nested PP directives.
+IndentPPDirectives: AfterHash
+
+# Include blocks style
+IncludeBlocks: Preserve
