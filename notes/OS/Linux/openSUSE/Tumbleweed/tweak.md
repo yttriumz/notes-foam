@@ -1,6 +1,6 @@
-# openSUSE Tumbleweed Tweak
+# Tweak openSUSE Tumbleweed on ThinkPad P1 Gen2
 
-- [openSUSE Tumbleweed Tweak](#opensuse-tumbleweed-tweak)
+- [Tweak openSUSE Tumbleweed on ThinkPad P1 Gen2](#tweak-opensuse-tumbleweed-on-thinkpad-p1-gen2)
    - [Change hostname](#change-hostname)
    - [Network settings](#network-settings)
       - [WiFi](#wifi)
