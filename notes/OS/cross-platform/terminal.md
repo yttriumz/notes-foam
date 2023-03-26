@@ -1,17 +1,17 @@
-# Wezterm Config
+# Terminal Related
 
-Refer to [the official doc]( https://wezfurlong.org/wezterm/config/files.html ).
+## Wezterm
 
-Also, refer to the following post:
+References:
 
+- [the official doc]( https://wezfurlong.org/wezterm/config/files.html )
 - https://www.sharpwriting.net/project/configuring-wezterm/
 
-## My Config
+### My Config
 
 Save the following to `~/.config/wezterm/wezterm.lua`:
 
 <details>
-<summary>content</summary>
 
 ```lua
 local wezterm = require 'wezterm'
@@ -56,6 +56,6 @@ return {
 
 </details>
 
-## Default Keybinding
+### Default Keybinding
 
 Refer to [the official doc](https://wezfurlong.org/wezterm/config/default-keys.html).

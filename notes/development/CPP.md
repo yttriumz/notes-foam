@@ -1,5 +1,17 @@
 # C++
 
+- [C++](#c)
+    - [`.clang-format`](#clang-format)
+        - [ANGLE](#angle)
+        - [Chromium](#chromium)
+    - [VSCode Config](#vscode-config)
+        - [Simple Config](#simple-config)
+            - [Extensions](#extensions)
+            - [`settings.json`](#settingsjson)
+            - [`launch.json`](#launchjson)
+            - [`tasks.json`](#tasksjson)
+            - [`compile_flags.txt`](#compile_flagstxt)
+
 ## `.clang-format`
 
 ### ANGLE

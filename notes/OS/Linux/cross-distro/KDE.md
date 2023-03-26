@@ -5,13 +5,19 @@
 - [Event Calendar]( https://store.kde.org/p/998901 )
 - [Prime Render Switch and Status]( https://store.kde.org/p/1425330 )
 
+## Recent files when right-clicking Firefox
+
+Open *System Settings* >> *Workspace Behavior* >> *Recent Files*.
+
+- https://www.reddit.com/r/kde/comments/ef17uq/dont_show_recent_documents_when_rightclicking_app/
+
 ## Change Task Switcher
 
 Open *System Settings* >> *Window Management* >> *Task Switcher* >> Select *Thumbnails Grid*.
 
 ## Virtual Desktop Behavior
 
-Open *Window Management* >> *Window Behavior* >> *Advanced*.
+Open *System Settings* >> *Window Management* >> *Window Behavior* >> *Advanced*.
 
 **Note**:
 

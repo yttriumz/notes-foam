@@ -130,7 +130,7 @@ References:
    export PATH="$PATH:$HOME/.flutter/bin"
    ```
 
-4. Use `flutter doctor` to check installation.
+4. Use `flutter doctor` to validate the installation.
 
 ## Go
 

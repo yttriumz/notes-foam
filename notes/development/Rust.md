@@ -1,5 +1,19 @@
 # Rust
 
+## VSCode Config
+
+<!-- <details>
+<summary>json</summary> -->
+
+```json
+"[rust]": {
+    "editor.formatOnSave": true,
+},
+"rust-analyzer.check.command": "clippy",
+```
+
+<!-- </details> -->
+
 ## Rust with Flutter
 
 See [[Flutter#Flutter with Rust]]

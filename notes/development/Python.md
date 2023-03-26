@@ -1,5 +1,30 @@
 # Python
 
+## VSCode Config
+
+<!-- <details>
+<summary>json</summary> -->
+
+```json
+"[python]": {
+    "editor.formatOnType": true
+},
+"python.analysis.autoImportCompletions": true,
+"python.analysis.inlayHints.functionReturnTypes": true,
+"python.analysis.inlayHints.pytestParameters": true,
+"python.analysis.inlayHints.variableTypes": true,
+// "python.defaultInterpreterPath": "${workspaceFolder}/.venv/bin/python",
+// "python.defaultInterpreterPath": "${workspaceFolder}\\.venv\\Scripts\\python.exe",
+"python.formatting.provider": "black",
+"python.formatting.blackArgs": [
+    "--line-length",
+    "80"
+],
+"python.linting.mypyEnabled": true,
+```
+
+<!-- </details> -->
+
 ## Environment
 
 ### Virtual Environment
