@@ -59,7 +59,7 @@ References:
 
 ### Rootless mode (more secure)
 
-[ ] todo
+- [ ] todo
 
 References:
 
@@ -104,7 +104,7 @@ References:
 
 ## C_Cpp
 
-[ ] todo
+- [ ] todo
 
 1. Install some packages by the following commands:
 
