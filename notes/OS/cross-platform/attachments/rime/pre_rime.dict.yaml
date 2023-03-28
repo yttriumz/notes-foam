@@ -1,0 +1,2525 @@
+name: self_learning
+version: "1"
+sort: by_weight
+
+...
+# Win10微软拼音自学习
+俺把	an ba	1
+俺不太想	an bu tai xiang	1
+俺不想	an bu xiang	1
+俺比你	an bi ni	1
+俺不知	an bu zhi	1
+俺吃饭的时候	an chi fan de shi hou	1
+俺差点	an cha dian	1
+俺待会	an dai hui	1
+俺到了	an dao le	1
+俺到家了	an dao jia le	1
+俺待会准备去	an dai hui zhun bei qu	1
+俺到屋了	an dao wu le	1
+俺到屋啦	an dao wu la	1
+爱关机	ai guan ji	1
+俺刚要	an gang yao	1
+俺搞完啦	an gao wan la	1
+俺给你	an gei ni	1
+俺跟你一起	an gen ni yi qi	1
+俺还记得	an hai ji de	1
+俺发	an fa	1
+俺怀疑	an huai yi	1
+俺还以为	an hai yi wei	1
+俺好啦	an hao la	1
+俺好辣	an hao la	1
+俺好久	an hao jiu	1
+俺还想吃	an hai xiang chi	1
+俺好	an hao	1
+爱抚一下	ai fu yi xia	1
+俺还在	an hai zai	1
+俺好想	an hao xiang	1
+俺发错了	an fa cuo le	1
+俺还是	an hai shi	1
+俺回来了	an hui lai le	1
+俺回来啦	an hui lai la	1
+俺好想你	an hao xiang ni	1
+俺好担心	an hao dan xin	1
+俺今天	an jin tian	1
+俺就知道	an jiu zhi dao	1
+俺就想	an jiu xiang	1
+安静一点	an jing yi dian	1
+俺可都记得	an ke dou ji de	1
+俺可以	an ke yi	1
+俺可舍不得	an ke she bu de	1
+俺可以学	an ke yi xue	1
+俺看到	an kan dao	1
+俺看看	an kan kan	1
+爱如怒火	ai ru nu huo	1
+俺明天	an ming tian	1
+俺没有	an mei you	1
+俺没问过	an mei wen guo	1
+俺马上去	an ma shang qu	1
+俺嘛	an ma	1
+俺马上	an ma shang	1
+俺屁股	an pi gu	1
+安排一期	an pai yi qi	1
+暗骑士	an qi shi	1
+俺去倒杯水	an qu dao bei shui	1
+俺去洗澡了	an qu xi zao le	1
+俺去哩	an qu li	1
+俺起来了	an qi lai le	1
+俺去了	an qu le	1
+俺去洗澡	an qu xi zao	1
+俺去吃饭	an qu chi fan	1
+俺去医院	an qu yi yuan	1
+俺上次	an shang ci	1
+按时长	an shi chang	1
+俺啥时候	an sha shi hou	1
+俺睡着了	an shui zhao le	1
+俺说的是之前	an shuo de shi zhi qian	1
+俺停到	an ting dao	1
+俺突然想到	an tu ran xiang dao	1
+俺下课了	an xia ke le	1
+俺想跟	an xiang gen	1
+俺想吃	an xiang chi	1
+俺洗完	an xi wan	1
+俺想帮你	an xiang bang ni	1
+俺洗完了	an xi wan le	1
+俺喜欢这个	an xi huan zhe ge	1
+俺想你	an xiang ni	1
+俺喜欢你	an xi huan ni	1
+俺现在去	an xian zai qu	1
+俺想跟你	an xiang gen ni	1
+俺喜欢	an xi huan	1
+俺想亲亲	an xiang qin qin	1
+俺洗完啦	an xi wan la	1
+俺有时候	an you shi hou	1
+俺也打了	an ye da le	1
+俺也洗完了	an ye xi wan le	1
+俺以为	an yi wei	1
+俺也好像	an ye hao xiang	1
+俺也一样	an ye yi yang	1
+俺又回来了	an you hui lai le	1
+俺也想吃	an ye xiang chi	1
+俺也不知道	an ye bu zhi dao	1
+俺也发现了	an ye fa xian le	1
+俺也去吃饭	an ye qu chi fan	1
+俺也好想	an ye hao xiang	1
+俺也去有	an ye qu you	1
+熬夜冠军	ao ye guan jun	1
+俺要去	an yao qu	1
+俺要跟你一起	an yao gen ni yi qi	1
+俺也好像你	an ye hao xiang ni	1
+俺也不清楚	an ye bu qing chu	1
+俺也好想你	an ye hao xiang ni	1
+熬夜看	ao ye kan	1
+俺也想	an ye xiang	1
+俺也想你	an ye xiang ni	1
+俺要跟你	an yao gen ni	1
+俺要去洗了	an yao qu xi le	1
+俺也去	an ye qu	1
+俺有点困	an you dian kun	1
+俺知道一下	an zhi dao yi xia	1
+俺怎么	an zen me	1
+俺遵命	an zun ming	1
+俺准备去	an zhun bei qu	1
+俺准备去洗	an zhun bei qu xi	1
+俺再给你	an zai gei ni	1
+俺准备	an zhun bei	1
+俺咋	an za	1
+俺这又	an zhe you	1
+俺支持	an zhi chi	1
+啊这	a zhe	1
+俺在看	an zai kan	1
+别熬了	bie ao le	1
+版本号为	ban ben hao wei	1
+宝宝睡得	bao bao shui de	1
+宝宝你不是	bao bao ni bu shi	1
+宝宝辛苦了	bao bao xin ku le	1
+宝贝加油	bao bei jia you	1
+宝贝你啥时候下班	bao bei ni sha shi hou xia ban	1
+不冰冷	bu bing leng	1
+绷不住了	beng bu zhu le	1
+避避邪	bi bi xie	1
+比被	bi bei	1
+表白当然呀	biao bai dang ran ya	1
+抱抱宝宝	bao bao bao bao	1
+拔除了	ba chu le	1
+保持节奏	bao chi jie zou	1
+变成方	bian cheng fang	1
+背刺了	bei ci le	1
+表层的	biao ceng de	1
+保持到现在	bao chi dao xian zai	1
+别的同学	bie de tong xue	1
+别的原因	bie de yuan yin	1
+别冻着了	bie dong zhe le	1
+补丁之后	bu ding zhi hou	1
+蹦得住	beng de zhu	1
+不都这	bu dou zhe	1
+绷得住	beng de zhu	1
+不得好似	bu dei hao si	1
+弊登	bi deng	1
+捕到	bu dao	1
+不都快	bu dou kuai	1
+白大腿	bai da tui	1
+不跟俺	bu gen an	1
+不过路上还是	bu guo lu shang hai shi	1
+别管这	bie guan zhe	1
+办公室政治	ban gong shi zheng zhi	1
+不过我知道	bu guo wo zhi dao	1
+不过主要是	bu guo zhu yao shi	1
+不过谁知道	bu guo shui zhi dao	1
+不管什么事	bu guan shen me shi	1
+不光大人	bu guang da ren	1
+别尬黑	bie ga hei	1
+憋尬黑	bie ga hei	1
+并未发现	bing wei fa xian	1
+不会还在	bu hui hai zai	1
+被附身的	bei fu shen de	1
+不防小人	bu fang xiao ren	1
+保护自己的	bao hu zi ji de	1
+不和人	bu he ren	1
+被和使用	bei he shi yong	1
+白花力气	bai hua li qi	1
+不会去做	bu hui qu zuo	1
+不会下来	bu hui xia lai	1
+不会饿死	bu hui e si	1
+把我传送过来	ba wo chuan song guo lai	1
+把我干死了	ba wo gan si le	1
+百合打法	bai he da fa	1
+不幻想了	bu huan xiang le	1
+不会要从	bu hui yao cong	1
+不会又要	bu hui you yao	1
+并翻译	bing fan yi	1
+不负责了	bu fu ze le	1
+北方同学	bei fang tong xue	1
+不回寝室	bu hui qin shi	1
+百花齐放了	bai hua qi fang le	1
+白京	bai jing	1
+憋几个与	bie ji ge yu	1
+不就像	bu jiu xiang	1
+不就跟着	bu jiu gen zhe	1
+白甲	bai jia	1
+边健身边	bian jian shen bian	1
+笔记本的话	bi ji ben de hua	1
+比较偏爱	bi jiao pian ai	1
+不空行	bu kong hang	1
+不如问问他	bu ru wen wen ta	1
+不能用来	bu neng yong lai	1
+布里克	bu li ke	1
+不理你的	bu li ni de	1
+不能补	bu neng bu	1
+不然怎么说	bu ran zen me shuo	1
+不能说了	bu neng shuo le	1
+病人的是	bing ren de shi	1
+不容易谁	bu rong yi shui	1
+不然学了	bu ran xue le	1
+帮女性	bang nv xing	1
+帮你搓	bang ni cuo	1
+不能处	bu neng chu	1
+北面的羽绒服	bei mian de yu rong fu	1
+被骂死了	bei ma si le	1
+表面看	biao mian kan	1
+补眉毛	bu mei mao	1
+不排外	bu pai wai	1
+不偏激	bu pian ji	1
+扒去了	ba qu le	1
+不说也行	bu shuo ye xing	1
+不上课的吗	bu shang ke de ma	1
+不是特别急	bu shi te bie ji	1
+不是用眉笔	bu shi yong mei bi	1
+不是很像	bu shi hen xiang	1
+不是很有意思	bu shi hen you yi si	1
+不随碟	bu sui die	1
+不是开源的	bu shi kai yuan de	1
+别伤心了	bie shang xin le	1
+不是因该下班	bu shi yin gai xia ban	1
+不帅的	bu shuai de	1
+不是万能	bu shi wan neng	1
+背诵全文	bei song quan wen	1
+爆头效果	bao tou xiao guo	1
+不通情达理	bu tong qing da li	1
+别太慌了	bie tai huang le	1
+便讨厌了	bian tao yan le	1
+不透肉	bu tou rou	1
+必须知道	bi xu zhi dao	1
+不晓得为么司	bu xiao de wei me si	1
+不想给她	bu xiang gei ta	1
+陛下何故	bi xia he gu	1
+白想了	bai xiang le	1
+不想再找我	bu xiang zai zhao wo	1
+不想摸了	bu xiang mo le	1
+不想个裸	bu xiang ge luo	1
+八仙筒	ba xian tong	1
+表现不明显	biao xian bu ming xian	1
+不要被骗了	bu yao bei pian le	1
+不要男妈妈	bu yao nan ma ma	1
+变异之后	bian yi zhi hou	1
+不要不识抬举	bu yao bu shi tai ju	1
+不要今晚	bu yao jin wan	1
+不要掉东西	bu yao diao dong xi	1
+变硬了	bian ying le	1
+不要有好大的压力	bu yao you hao da de ya li	1
+抱一台	bao yi tai	1
+比一般的电脑	bi yi ban de dian nao	1
+不用关机	bu yong guan ji	1
+不用养	bu yong yang	1
+不用登陆	bu yong deng lu	1
+备孕中	bei yun zhong	1
+标准写法	biao zhun xie fa	1
+脖子不舒服	bo zi bu shu fu	1
+炳忠	bing zhong	1
+婊子配狗	biao zi pei gou	1
+比早上	bi zao shang	1
+不早点休息	bu zao dian xiu xi	1
+不吱个什么	bu zhi ge shen me	1
+布置个	bu zhi ge	1
+不遭	bu zao	1
+不知了	bu zhi le	1
+波子汽水	bo zi qi shui	1
+产不出	chan bu chu	1
+才不写	cai bu xie	1
+川宝	chuan bao	1
+穿芭蕾	chuan ba lei	1
+从窗台	cong chuang tai	1
+出彩的	chu cai de	1
+出差几天	chu chai ji tian	1
+吵到他	chao dao ta	1
+插电用	cha dian yong	1
+唇钉	chun ding	1
+臣等	chen deng	1
+才丢的	cai diu de	1
+才第一次	cai di yi ci	1
+穿打底裤	chuan da di ku	1
+测的多少	ce de duo shao	1
+存档吗	cun dang ma	1
+充电玩手机	chong dian wan shou ji	1
+差馆	chai guan	1
+柴狗	chai gou	1
+唱歌音调	chang ge yin diao	1
+成富婆	cheng fu po	1
+重复购买	chong fu gou mai	1
+充分体现了	chong fen ti xian le	1
+错误记忆	cuo wu ji yi	1
+除非你要	chu fei ni yao	1
+重开一个	chong kai yi ge	1
+查看时间	cha kan shi jian	1
+从聊天	cong liao tian	1
+出来的几个	chu lai de ji ge	1
+冲浪了	chong lang le	1
+查理周刊	cha li zhou kan	1
+从来没有认为过	cong lai mei you ren wei guo	1
+从来是	cong lai shi	1
+苍凉眼睛	cang liang yan jing	1
+陈履安	chen lv an	1
+承认自己	cheng ren zi ji	1
+吃了好多薯条	chi le hao duo shu tiao	1
+豺狼人	chai lang ren	1
+吃肉又	chi rou you	1
+处男作	chu nan zuo	1
+臭美眉	chou mei mei	1
+臭妹妹	chou mei mei	1
+出门看电影	chu men kan dian ying	1
+从没加过	cong mei jia guo	1
+触摸谁呢	chu mo shui ne	1
+触摸了	chu mo le	1
+出毛病了吗	chu mao bing le ma	1
+穿破了	chuan po le	1
+穿墙术	chuan qiang shu	1
+超琦	chao qi	1
+超申	chao shen	1
+曾是我	ceng shi wo	1
+船上的那个	chuan shang de na ge	1
+村视频	cun shi pin	1
+存视频	cun shi pin	1
+川蜀	chuan shu	1
+床上谁	chuang shang shui	1
+糙似拟	cao si ni	1
+传送回去	chuan song hui qu	1
+陈市集	chen shi ji	1
+测试游戏	ce shi you xi	1
+创死	chuang si	1
+撤硕	che shuo	1
+吹透	chui tou	1
+传统艺能	chuan tong yi neng	1
+臭甜甜	chou tian tian	1
+重填了	chong tian le	1
+衬托出来	chen tuo chu lai	1
+传统文字	chuan tong wen zi	1
+扯闲话	che xian hua	1
+出现这样的	chu xian zhe yang de	1
+才向你	cai xiang ni	1
+呈现给你	cheng xian gei ni	1
+曹译文	cao yi wen	1
+沧月奥特曼	cang yue ao te man	1
+赤牙	chi ya	1
+缠腰上	chan yao shang	1
+参与建造	can yu jian zao	1
+操作经过	cao zuo jing guo	1
+穿着外套	chuan zhe wai tao	1
+吹在	chui zai	1
+初中吧	chu zhong ba	1
+穿再多	chuan zai duo	1
+纯真就好	chun zhen jiu hao	1
+趁着疫情	chen zhe yi qing	1
+趁这两天	chen zhe liang tian	1
+吃这么早	chi zhe me zao	1
+穿这么好	chuan zhe me hao	1
+此作弊	ci zuo bi	1
+大部分反对	da bu fen fan dui	1
+对比看	dui bi kan	1
+都不用写了	dou bu yong xie le	1
+都不想用了	dou bu xiang yong le	1
+都不例外	dou bu li wai	1
+都被人家	dou bei ren jia	1
+多次尝试	duo ci chang shi	1
+电池坏了	dian chi huai le	1
+点惨	dian can	1
+冬促	dong cu	1
+都存着呢	dou cun zhe ne	1
+点成果	dian cheng guo	1
+调出世界	diao chu shi jie	1
+掉出世界	diao chu shi jie	1
+调查完毕	diao cha wan bi	1
+的导数	de dao shu	1
+登电脑	deng dian nao	1
+等电脑	deng dian nao	1
+懂的都懂	dong de dou dong	1
+钓到了	diao dao le	1
+打都打完了	da dou da wan le	1
+多多注意	duo duo zhu yi	1
+等等党	deng deng dang	1
+痘痘的	dou dou de	1
+到底喜不喜欢	dao di xi bu xi huan	1
+丢到美国	diu dao mei guo	1
+得到回复	de dao hui fu	1
+都打水漂	dou da shui piao	1
+断到底	duan dao di	1
+断掉底	duan diao di	1
+挡道了	dang dao le	1
+到地下	dao di xia	1
+掉到坑里	diao dao keng li	1
+单独入睡	dan du ru shui	1
+第二针的	di er zhen de	1
+答个话	da ge hua	1
+得过且过	dei guo qie guo	1
+带个空瓶子	dai ge kong ping zi	1
+的狗子	de gou zi	1
+打工人	da gong ren	1
+打工人的	da gong ren de	1
+戴个口罩	dai ge kou zhao	1
+打给我不是	da gei wo bu shi	1
+戴好口罩	dai hao kou zhao	1
+到后头	dao hou tou	1
+都会承认	dou hui cheng ren	1
+定会真	ding hui zhen	1
+都会这样卡	dou hui zhe yang ka	1
+大呜啊还能	da wu a hai neng	1
+带会员	dai hui yuan	1
+到屋里了	dao wu li le	1
+到屋里	dao wu li	1
+电话找你	dian hua zhao ni	1
+巅峰抢购	dian feng qiang gou	1
+的孩	de hai	1
+懂完了	dong wan le	1
+都很到位	dou hen dao wei	1
+对还有	dui hai you	1
+待会去吃饭	dai hui qu chi fan	1
+都翻译	dou fan yi	1
+等会就买	deng hui jiu mai	1
+待会先睡	dai hui xian shui	1
+到屋了	dao wu le	1
+大家帮助	da jia bang zhu	1
+定居深圳	ding ju shen zhen	1
+多讲点	duo jiang dian	1
+到教室了	dao jiao shi le	1
+对抗生成网络	dui kang sheng cheng wang luo	1
+打卡了没有	da ka le mei you	1
+打卡了吗	da ka le ma	1
+的矿	de kuang	1
+打扰俺	da rao an	1
+电脑价格	dian nao jia ge	1
+得了	de liao	1
+袋里面	dai li mian	1
+到了中年	dao le zhong nian	1
+电脑里头	dian nao li tou	1
+电脑系统崩溃了	dian nao xi tong beng kui le	1
+动你东西	dong ni dong xi	1
+到里	dao li	1
+的那个群里	de na ge qun li	1
+逗乐了	dou le le	1
+打两个电话	da liang ge dian hua	1
+断了就	duan le jiu	1
+得了	dei le	1
+打了这个	da le zhe ge	1
+当流浪者	dang liu lang zhe	1
+大楼放	da lou fang	1
+都入了	dou ru le	1
+当然只爱	dang ran zhi ai	1
+电力恢复了	dian li hui fu le	1
+登陆了吗	deng lu le ma	1
+都冒	dou mao	1
+对面是谁	dui mian shi shui	1
+杜姆杜穆	du mu du mu	1
+弹幕一朵	dan mu yi duo	1
+但没有回应	dan mei you hui ying	1
+大木大木	da mu da mu	1
+都没有以前	dou mei you yi qian	1
+代码用	dai ma yong	1
+电麻了	dian ma le	1
+多排尿	duo pai niao	1
+到寝室了吗	dao qin shi le ma	1
+地区差异	di qu cha yi	1
+但是现在有	dan shi xian zai you	1
+但是现在有另一个	dan shi xian zai you ling yi ge	1
+打死了个	da si le ge	1
+当时好像	dang shi hao xiang	1
+但是有个好消息	dan shi you ge hao xiao xi	1
+带伞了不	dai san le bu	1
+的搜索结果	de sou suo jie guo	1
+都随便买	dou sui bian mai	1
+但是还没	dan shi hai mei	1
+但是还有	dan shi hai you	1
+都说在	dou shuo zai	1
+典式	dian shi	1
+但是有点	dan shi you dian	1
+都说透	dou shuo tou	1
+当时想的	dang shi xiang de	1
+到时要注意	dao shi yao zhu yi	1
+但是我看到你了	dan shi wo kan dao ni le	1
+但是早忘了	dan shi zao wang le	1
+但是他说	dan shi ta shuo	1
+得手了	de shou le	1
+带头支持	dai tou zhi chi	1
+动态也发不了	dong tai ye fa bu liao	1
+大甜甜	da tian tian	1
+大堂哥	da tang ge	1
+地图文件	di tu wen jian	1
+点涂	dian tu	1
+带学	dai xue	1
+都笑醒	dou xiao xing	1
+大行李箱	da xing li xiang	1
+都想买了	dou xiang mai le	1
+东西都有	dong xi dou you	1
+多一起	duo yi qi	1
+的一份子	de yi fen zi	1
+第一开发师	di yi kai fa shi	1
+地狱伞兵	di yu san bing	1
+多有氛围	duo you fen wei	1
+都有一样的	dou you yi yang de	1
+地狱里	di yu li	1
+肚子吗	du zi ma	1
+的指甲	de zhi jia	1
+肚子和	du zi he	1
+顶针背后的事	ding zhen bei hou de shi	1
+打折卖	da zhe mai	1
+待在哪	dai zai na	1
+胆子这么大	dan zi zhe me da	1
+等着俺	deng zhe an	1
+肚子痛不	du zi tong bu	1
+肚子叫起来了	du zi jiao qi lai le	1
+当渣男	dang zha nan	1
+当渣女	dang zha nv	1
+独自睡觉	du zi shui jiao	1
+的追星室友	de zhui xing shi you	1
+丁真	ding zhen	1
+典中典	dian zhong dian	1
+的占用	de zhan yong	1
+嗯嗯	e e	1
+耳朵冻掉了	er duo dong diao le	1
+嗯嗯晓得	en en xiao de	1
+呃呃呃呃	e e e e	1
+二六日报	er liu ri bao	1
+二流日报	er liu ri bao	1
+恶魔鱼	e mo yu	1
+而且不简单	er qie bu jian dan	1
+而且又有	er qie you you	1
+二手也	er shou ye	1
+恶意圈地	e yi quan di	1
+鬼病	gui bing	1
+胳臂肘	ge bei zhou	1
+关闭游戏	guan bi you xi	1
+该不该笑	gai bu gai xiao	1
+隔壁那家	ge bi na jia	1
+高出声音	gao chu sheng yin	1
+改成我的	gai cheng wo de	1
+干脆等你	gan cui deng ni	1
+搞出一些	gao chu yi xie	1
+工地都不用去的	gong di dou bu yong qu de	1
+高大了	gao da le	1
+高等交易	gao deng jiao yi	1
+挂到一半	gua dao yi ban	1
+给大爹	gei da die	1
+鬼大	gui da	1
+挂的是	gua de shi	1
+裹个毯子	guo ge tan zi	1
+刚刚做完	gang gang zuo wan	1
+更高清	geng gao qing	1
+刚刚在路上	gang gang zai lu shang	1
+高跟孩	gao gen hai	1
+改革计数器	gai ge ji shu qi	1
+盖革计数器	gai ge ji shu qi	1
+割割	ge ge	1
+刚刚去拿快递	gang gang qu na kuai di	1
+拱拱	gong gong	1
+攻防课	gong fang ke	1
+给很多人	gei hen duo ren	1
+跟我呢	gen wo ne	1
+光换	guang huan	1
+跟纹身	gen wen shen	1
+尬黑	ga hei	1
+光环无线	guang huan wu xian	1
+官网上的	guan wang shang de	1
+规划到哪里	gui hua dao na li	1
+狗汉奸	gou han jian	1
+苟罕见	gou han jian	1
+国风游戏	guo feng you xi	1
+挂号的	gua hao de	1
+干净重启	gan jing chong qi	1
+感觉睡得	gan jue shui de	1
+感觉不舒服	gan jue bu shu fu	1
+感觉靠谱	gan jue kao pu	1
+攻击吗	gong ji ma	1
+搞金融的	gao jin rong de	1
+感觉有的	gan jue you de	1
+感觉这比赛	gan jue zhe bi sai	1
+过几天再说	guo ji tian zai shuo	1
+感觉比钻石	gan jue bi zuan shi	1
+感觉之前	gan jue zhi qian	1
+给讲讲	gei jiang jiang	1
+工具大师	gong ju da shi	1
+刚考完一个	gang kao wan yi ge	1
+观看历史	guan kan li shi	1
+该能	gai neng	1
+干了哪些	gan le na xie	1
+跟你打电话	gen ni da dian hua	1
+过凌晨	guo ling chen	1
+跟你弟	gen ni di	1
+过了那个	guo le na ge	1
+拱你	gong ni	1
+咖喱宝贝	ga li bao bei	1
+给宁	gei ning	1
+过了那	guo le na	1
+高丽棒子	gao li bang zi	1
+跟你对着干	gen ni dui zhe gan	1
+更容易了	geng rong yi le	1
+高两份	gao liang fen	1
+个裸	ge luo	1
+蝈蝻	guo nan	1
+功能最	gong neng zui	1
+功能没坏	gong neng mei huai	1
+跟你一起吃	gen ni yi qi chi	1
+咖喱宝宝	ga li bao bao	1
+挂了号	gua le hao	1
+鬼面兽	gui mian shou	1
+刚碰到	gang peng dao	1
+该破防	gai po fang	1
+感情方面	gan qing fang mian	1
+跟谁睡	gen shui shui	1
+鬼山	gui shan	1
+敢扫	gan sao	1
+公司给	gong si gei	1
+告示板	gao shi ban	1
+跟室友一起的	gen shi you yi qi de	1
+高头的	gao tou de	1
+关台	guan tai	1
+改天找你	gai tian zhao ni	1
+逛淘宝了	guang tao bao le	1
+跟他分手	gen ta fen shou	1
+归羡慕	gui xian mu	1
+刚想给你发	gang xiang gei ni fa	1
+狗虚伪的	gou xu wei de	1
+更新个	geng xin ge	1
+钢协雄心	gang xie xiong xin	1
+更性感	geng xing gan	1
+搞压榨	gao ya zha	1
+够用就好	gou yong jiu hao	1
+跟一在一起	gen yi zai yi qi	1
+高压吃	gao ya chi	1
+搞牙齿	gao ya chi	1
+刚准备说	gang zhun bei shuo	1
+工作咋样	gong zuo za yang	1
+贵族小队	gui zu xiao dui	1
+管这类	guan zhe lei	1
+胡埃厄	hu ai e	1
+我把除了所有	wo ba chu le suo you	1
+发布在了	fa bu zai le	1
+我本想的	wo ben xiang de	1
+还不会骑	hai bu hui qi	1
+话不好听	hua bu hao ting	1
+话不说	hua bu shuo	1
+我必须要用	wo bi xu yao yong	1
+好宝宝晚安	hao bao bao wan an	1
+网暴	wang bao	1
+好宝贝加油	hao bao bei jia you	1
+好宝宝好宝宝	hao bao bao hao bao bao	1
+我白京	wo bai jing	1
+王炳忠	wang bing zhong	1
+会不会一脚	hui bu hui yi jiao	1
+好宝宝我去吃饭	hao bao bao wo qu chi fan	1
+我不大可能	wo bu da ke neng	1
+我不会干	wo bu hui gan	1
+还比若	hai bi ruo	1
+我版本号	wo ban ben hao	1
+外表看着	wai biao kan zhe	1
+我不好所	wo bu hao suo	1
+我帮你建	wo bang ni jian	1
+会不会作为	hui bu hui zuo wei	1
+我不存	wo bu cun	1
+我不好说卧槽	wo bu hao shuo wo cao	1
+我不好输欧	wo bu hao shu ou	1
+我标的白	wo biao de bai	1
+我猜你是	wo cai ni shi	1
+玩错了	wan cuo le	1
+非充分	fei chong fen	1
+很常规	hen chang gui	1
+喂成个	wei cheng ge	1
+付出的时间	fu chu de shi jian	1
+我出生的地方	wo chu sheng de di fang	1
+讽刺呢	feng ci ne	1
+讽刺的话	feng ci de hua	1
+画成这样	hua cheng zhe yang	1
+武昌火车站	wu chang huo che zhan	1
+我传送过去	wo chuan song guo qu	1
+我重开了	wo chong kai le	1
+我吃惊	wo chi jing	1
+我的外套	wo de wai tao	1
+舞蹈生	wu dao sheng	1
+我的好凶的	wo de hao xiong de	1
+我电池	wo dian chi	1
+玩得好好	wan de hao hao	1
+我当时选了	wo dang shi xuan le	1
+我待会去	wo dai hui qu	1
+武大的	wu da de	1
+我到屋里	wo dao wu li	1
+我都快是	wo dou kuai shi	1
+我的生活是一个巨大的	wo de sheng huo shi yi ge ju da de	1
+我都喜欢用	wo dou xi huan yong	1
+我都不会消气	wo dou bu hui xiao qi	1
+坏道修复	huai dao xiu fu	1
+五点半之前	wu dian ban zhi qian	1
+好斗人	hao dou ren	1
+很多这样的	hen duo zhe yang de	1
+挖到一个	wa dao yi ge	1
+我得再	wo dei zai	1
+闻到过	wen dao guo	1
+舞蹈去	wu dao qu	1
+很多说	hen duo shuo	1
+发达之路	fa da zhi lu	1
+武大校花	wu da xiao hua	1
+我都湿了	wo dou shi le	1
+我到五	wo dao wu	1
+蚝爹油	hao die you	1
+我到屋	wo dao wu	1
+红迪	hong di	1
+我到屋了	wo dao wu le	1
+韦厄斯	wei e si	1
+黄冈的	huang gang de	1
+还给捉住	hai gei zhuo zhu	1
+五个视频	wu ge shi pin	1
+黄冈中学	huang gang zhong xue	1
+黄冈太大了	huang gang tai da le	1
+我国区	wo guo qu	1
+还跟我说过	hai gen wo shuo guo	1
+我感觉我的	wo gan jue wo de	1
+无瓜	wu gua	1
+我刚到了	wo gang dao le	1
+还跟同学	hai gen tong xue	1
+发给俺	fa gei an	1
+换个教师	huan ge jiao shi	1
+后关	hou guan	1
+法国这么	fa guo zhe me	1
+忘跟你说了	wang gen ni shuo le	1
+魏国作出重大贡献	wei guo zuo chu zhong da gong xian	1
+无法安装更新	wu fa an zhuang geng xin	1
+换回来的	huan hui lai de	1
+无非就	wu fei jiu	1
+我还在上	wo hai zai shang	1
+火狐使用	huo hu shi yong	1
+我好头疼	wo hao tou teng	1
+误会过	wu hui guo	1
+我发非你也	wo fa fei ni ye	1
+王凤霞	wang feng xia	1
+我很爱国	wo hen ai guo	1
+我和父母的关系	wo he fu mu de guan xi	1
+回复这份邮件	hui fu zhe fen you jian	1
+狠狠打	hen hen da	1
+好好搞一把	hao hao gao yi ba	1
+汪海林	wang hai lin	1
+我反思	wo fan si	1
+玩玩点啊弄	wan wan dian a nong	1
+黑后的	hei hou de	1
+我问的就是	wo wen de jiu shi	1
+我还没冲浪	wo hai mei chong lang	1
+五和苏	wu he su	1
+还为啥	hai wei sha	1
+我好爱	wo hao ai	1
+我发了什么	wo fa le shen me	1
+我挖到	wo wa dao	1
+我还拿去	wo hai na qu	1
+我佛了	wo fo le	1
+呜呜呜呜呜呜	wu wu wu wu wu wu	1
+哈哈哈哈哈哈哈哈哈哈	ha ha ha ha ha ha ha ha ha ha	1
+服务器端口	fu wu qi duan kou	1
+无法兼容的	wu fa jian rong de	1
+维护社会	wei hu she hui	1
+反复碾压	fan fu nian ya	1
+我悔过	wo hui guo	1
+服务你	fu wu ni	1
+我怀疑我	wo huai yi wo	1
+往文件里	wang wen jian li	1
+武汉肺炎	wu han fei yan	1
+文化盛行	wen hua sheng xing	1
+哈哈哈哈哈哈	ha ha ha ha ha ha	1
+哈哈哈哈哈哈哈哈	ha ha ha ha ha ha ha ha	1
+付费功能	fu fei gong neng	1
+外接设备	wai jie she bei	1
+合计吗	he ji ma	1
+我觉得是这样	wo jue de shi zhe yang	1
+防君子	fang jun zi	1
+吴家欣	wu jia xin	1
+好几次呢	hao ji ci ne	1
+我今天也	wo jin tian ye	1
+副警长	fu jing zhang	1
+放假在家里	fang jia zai jia li	1
+很久没上微信	hen jiu mei shang wei xin	1
+我就是演员	wo jiu shi yan yuan	1
+冯佳丽	feng jia li	1
+飞机的感觉	fei ji de gan jue	1
+我就洗	wo jiu xi	1
+好惊悚	hao jing song	1
+我就是不想做	wo jiu shi bu xiang zuo	1
+我就是打算	wo jiu shi da suan	1
+我基地	wo ji di	1
+我就想到你	wo jiu xiang dao ni	1
+我看有的说	wo kan you de shuo	1
+黑客流	hei ke liu	1
+我看上啥	wo kan shang sha	1
+胡可浩	hu ke hao	1
+我开始也以为	wo kai shi ye yi wei	1
+合口味的	he kou wei de	1
+我看半天	wo kan ban tian	1
+我矿洞	wo kuang dong	1
+我看到的好像	wo kan dao de hao xiang	1
+好裤裆	hao ku dang	1
+我康康	wo kang kang	1
+还开着吗	hai kai zhe ma	1
+我看香港	wo kan xiang gang	1
+王鹿鹿	wang lu lu	1
+我老看到	wo lao kan dao	1
+屋里热水器	wu li re shui qi	1
+福利姬	fu li ji	1
+崴了脚	wai le jiao	1
+坏女孩多	huai nv hai duo	1
+我人都	wo ren dou	1
+网络断开了	wang luo duan kai le	1
+还能下	hai neng xia	1
+获利的	huo li de	1
+很难分清	hen nan fen qing	1
+屋里停水了	wu li ting shui le	1
+还能见到	hai neng jian dao	1
+很难操作	hen nan cao zuo	1
+我了然	wo liao ran	1
+无路可走了	wu lu ke zou le	1
+发了封邮件	fa le feng you jian	1
+花了几个月	hua le ji ge yue	1
+花了时间	hua le shi jian	1
+闻你	wen ni	1
+糊哩	hu li	1
+换了机子	huan le ji zi	1
+哈人类	ha ren lei	1
+还能失踪	hai neng shi zong	1
+轰入	hong ru	1
+发了的话	fa le de hua	1
+和你的规划	he ni de gui hua	1
+往哪个方向	wang na ge fang xiang	1
+我那个条	wo na ge tiao	1
+我老想你	wo lao xiang ni	1
+花了全	hua le quan	1
+还能涂出个花	hai neng tu chu ge hua	1
+伍六七	wu liu qi	1
+还冒得	hai mao de	1
+我每次看	wo mei ci kan	1
+我每次说	wo mei ci shuo	1
+还没拿出来	hai mei na chu lai	1
+洪魔	hong mo	1
+为么不	wei me bu	1
+好妹	hao mei	1
+我妈好了	wo ma hao le	1
+我马上去洗	wo ma shang qu xi	1
+为么司	wei me si	1
+我麻了	wo ma le	1
+后面这一点	hou mian zhe yi dian	1
+我妈还在洗	wo ma hai zai xi	1
+为么裸	wei me luo	1
+黑命贵	hei ming gui	1
+还没造	hai mei zao	1
+附魔名称	fu mo ming cheng	1
+还没体验过	hai mei ti yan guo	1
+还冒看	hai mao kan	1
+为么斯	wei me si	1
+黑猫白猫	hei mao bai mao	1
+我妈跟我一起	wo ma gen wo yi qi	1
+物品不掉落	wu pin bu diao luo	1
+黑袍纠察队	hei pao jiu cha dui	1
+我其实挺怕	wo qi shi ting pa	1
+坏起来了	huai qi lai le	1
+我气懵了	wo qi meng le	1
+好齐全	hao qi quan	1
+我去看的时候	wo qu kan de shi hou	1
+我去吃发	wo qu chi fa	1
+我劝你回来	wo quan ni hui lai	1
+我去医院	wo qu yi yuan	1
+我去洗啦	wo qu xi la	1
+我去吃饭哩	wo qu chi fan li	1
+获取系统信息	huo qu xi tong xin xi	1
+舞蛆	wu qu	1
+还是比较自由	hai shi bi jiao zi you	1
+防水的写	fang shui de xie	1
+翻书翻出来的	fan shu fan chu lai de	1
+网上坏人	wang shang huai ren	1
+还是找的	hai shi zhao de	1
+饭熟	fan shou	1
+火石镇	huo shi zhen	1
+还是每次	hai shi mei ci	1
+我所有软件	wo suo you ruan jian	1
+玩耍玩耍	wan shua wan shua	1
+还是干啥	hai shi gan sha	1
+为什么那么	wei shen me na me	1
+很松胯	hen song kua	1
+我舒适	wo shu shi	1
+防晒喷雾与	fang shai pen wu yu	1
+后睡着	hou shui zhao	1
+未使用的	wei shi yong de	1
+我试的	wo shi de	1
+晚上做耳鸣	wan shang zuo er ming	1
+我试一哈	wo shi yi ha	1
+我是认为	wo shi ren wei	1
+玩生存	wan sheng cun	1
+为社么	wei she me	1
+我是但是	wo shi dan shi	1
+分手出发	fen shou chu fa	1
+黑神话	hei shen hua	1
+为啥好好	wei sha hao hao	1
+和上面的	he shang mian de	1
+辐射过高	fu she guo gao	1
+喝少了	he shao le	1
+我上网课	wo shang wang ke	1
+会事	hui shi	1
+分手也是	fen shou ye shi	1
+无同情	wu tong qing	1
+发条评论	fa tiao ping lun	1
+我听不到了	wo ting bu dao le	1
+我提交了一份	wo ti jiao le yi fen	1
+问题绝对	wen ti jue dui	1
+还痛不	hai tong bu	1
+回趟学校	hui tang xue xiao	1
+胡同的	hu tong de	1
+发图的人	fa tu de ren	1
+好汀	hao ting	1
+我太想	wo tai xiang	1
+花坛上	hua tan shang	1
+我听不到你	wo ting bu dao ni	1
+我现有的	wo xian you de	1
+好像提到了	hao xiang ti dao le	1
+我想找怕	wo xiang zhao pa	1
+我喜欢的是	wo xi huan de shi	1
+反省是	fan xing shi	1
+好像也没	hao xiang ye mei	1
+好像是这个意思	hao xiang shi zhe ge yi si	1
+副学位	fu xue wei	1
+我校死后	wo xiao si hou	1
+很喜庆的	hen xi qing de	1
+我想被你	wo xiang bei ni	1
+我想跟你一起吃	wo xiang gen ni yi qi chi	1
+很想舔	hen xiang tian	1
+发现电脑	fa xian dian nao	1
+我喜欢谁	wo xi huan shui	1
+我现在去吃饭	wo xian zai qu chi fan	1
+红星视频	hong xing shi pin	1
+夫西地酸	fu xi di suan	1
+好像是她	hao xiang shi ta	1
+我已经使用了	wo yi jing shi yong le	1
+还有点水平	hai you dian shui ping	1
+我也炸了	wo ye zha le	1
+还一推	hai yi tui	1
+我以为他们	wo yi wei ta men	1
+很有需求	hen you xu qiu	1
+发邮件说	fa you jian shuo	1
+我也遇到了	wo ye yu dao le	1
+我也没发	wo ye mei fa	1
+我也去洗	wo ye qu xi	1
+我有时候觉得	wo you shi hou jue de	1
+我以后带着你	wo yi hou dai zhe ni	1
+我有一个月	wo you yi ge yue	1
+我预料到了	wo yu liao dao le	1
+我一边痛	wo yi bian tong	1
+我也出现这个	wo ye chu xian zhe ge	1
+我也想死你了	wo ye xiang si ni le	1
+还有另一项	hai you ling yi xiang	1
+还要进	hai yao jin	1
+我也洗完了	wo ye xi wan le	1
+花一天	hua yi tian	1
+我要问你	wo yao wen ni	1
+会有更好的	hui you geng hao de	1
+我一直都是免费	wo yi zhi dou shi mian fei	1
+我也没啥经验	wo ye mei sha jing yan	1
+我游戏更新了	wo you xi geng xin le	1
+还以为是他家	hai yi wei shi ta jia	1
+无冤无仇的	wu yuan wu chou de	1
+我有点奇怪	wo you dian qi guai	1
+翻译上	fan yi shang	1
+翻译功能	fan yi gong neng	1
+翻译哪些	fan yi na xie	1
+翻译效果	fan yi xiao guo	1
+翻译花了多少钱	fan yi hua le duo shao qian	1
+怀疑被	huai yi bei	1
+我又担心	wo you dan xin	1
+我也亲亲你	wo ye qin qin ni	1
+我在知乎上	wo zai zhi hu shang	1
+我这条评论	wo zhe tiao ping lun	1
+我之前谢谢	wo zhi qian xie xie	1
+无主之地二	wu zhu zhi di er	1
+核子公爵	he zi gong jue	1
+黄州的	huang zhou de	1
+黄州的吗	huang zhou de ma	1
+还整上	hai zheng shang	1
+我主动给的	wo zhu dong gei de	1
+我站在路边	wo zhan zai lu bian	1
+我真有点	wo zhen you dian	1
+我昨天不就说	wo zuo tian bu jiu shuo	1
+或者不说做错	huo zhe bu shuo zuo cuo	1
+我准备去洗脸	wo zhun bei qu xi lian	1
+我这还算好	wo zhe hai suan hao	1
+好走的	hao zou de	1
+我只糙	wo zhi cao	1
+或者下午	huo zhe xia wu	1
+我咋可能	wo za ke neng	1
+文字工作	wen zi gong zuo	1
+我治你	wo zhi ni	1
+我最佩服	wo zui pei fu	1
+或者老师	huo zhe lao shi	1
+我咋没看到你	wo za mei kan dao ni	1
+我早就是	wo zao jiu shi	1
+问住了	wen zhu le	1
+我咋跟你	wo za gen ni	1
+孩子出生	hai zi chu sheng	1
+非洲医院	fei zhou yi yuan	1
+飞猪上	fei zhu shang	1
+黄州的水	huang zhou de shui	1
+袜子店	wa zi dian	1
+和主机	he zhu ji	1
+文字工作就	wen zi gong zuo jiu	1
+我尊卑	wo zun bei	1
+我追到	wo zhui dao	1
+我在看一个	wo zai kan yi ge	1
+酒啊后	jiu a hou	1
+就报完名	jiu bao wan ming	1
+就不比	jiu bu bi	1
+家暴完	jia bao wan	1
+脚变硬了	jiao bian ying le	1
+击毙偏差	ji bi pian cha	1
+姜伯约	jiang bo yue	1
+进不去呢	jin bu qu ne	1
+就不尴尬	jiu bu gan ga	1
+检查发现	jian cha fa xian	1
+检查系统完整性	jian cha xi tong wan zheng xing	1
+激长时间	ji chang shi jian	1
+几长	ji chang	1
+就传上去了	jiu chuan shang qu le	1
+锯齿锅炉	ju chi guo lu	1
+击穿空气	ji chuan kong qi	1
+九点半的	jiu dian ban de	1
+京东换新	jing dong huan xin	1
+记得打卡	ji de da ka	1
+记得坐标	ji de zuo biao	1
+简单太多	jian dan tai duo	1
+降低士气	jiang di shi qi	1
+鉴定为	jian ding wei	1
+经典回顾	jing dian hui gu	1
+金刚川	jin gang chuan	1
+几个朋友了	ji ge peng you le	1
+经过再三考虑	jing guo zai san kao lv	1
+结果遇到	jie guo yu dao	1
+结果搞错了	jie guo gao cuo le	1
+就更好看	jiu geng hao kan	1
+几个程序员	ji ge cheng xu yuan	1
+就感觉是	jiu gan jue shi	1
+结构方块	jie gou fang kuai	1
+劲夫	jin fu	1
+今晚要跟	jin wan yao gen	1
+教我用	jiao wo yong	1
+寄分手信	ji fen shou xin	1
+解结	jie jie	1
+解决办法了	jie jue ban fa le	1
+舅舅那	jiu jiu na	1
+就进服	jiu jin fu	1
+金库当	jin ku dang	1
+就看那几个	jiu kan na ji ge	1
+就看黄片	jiu kan huang pian	1
+就靠你啦	jiu kao ni la	1
+肌肉强化	ji rou qiang hua	1
+纪念如	ji nian ru	1
+今年好多	jin nian hao duo	1
+家里人聊天	jia li ren liao tian	1
+纪念视频	ji nian shi pin	1
+叫你弟	jiao ni di	1
+煎年糕	jian nian gao	1
+就尼玛离谱	jiu ni ma li pu	1
+就离谱	jiu li pu	1
+竟然还有个人	jing ran hai you ge ren	1
+基努李维斯	ji nu li wei si	1
+借了你	jie le ni	1
+记录拼啊	ji lu pin a	1
+街溜子	jie liu zi	1
+加了个啥	jia le ge sha	1
+焦虑死了	jiao lv si le	1
+基米罗	ji mi luo	1
+机密了	ji mi le	1
+集美们	ji mei men	1
+既没看懂视频	ji mei kan dong shi pin	1
+建模比赛	jian mo bi sai	1
+揭秘公司	jie mi gong si	1
+居民区里	ju min qu li	1
+见面跟你说	jian mian gen ni shuo	1
+禁评	jin ping	1
+机器型号	ji qi xing hao	1
+就去洗	jiu qu xi	1
+剪切文件	jian qie wen jian	1
+精髓了	jing sui le	1
+就是不好看	jiu shi bu hao kan	1
+角色互换	jue se hu huan	1
+就是这么个意思	jiu shi zhe me ge yi si	1
+蕉叔	jiao shu	1
+卷死	juan si	1
+接受失败	jie shou shi bai	1
+就是坐车	jiu shi zuo che	1
+即使桑晨	ji shi sang chen	1
+今天发布	jin tian fa bu	1
+接头的	jie tou de	1
+今天别忘了	jin tian bie wang le	1
+今天才看到	jin tian cai kan dao	1
+今天肚子	jin tian du zi	1
+今天肚子还疼吗	jin tian du zi hai teng ma	1
+就他那个	jiu ta na ge	1
+借他的	jie ta de	1
+今天好热	jin tian hao re	1
+监听端口	jian ting duan kou	1
+今天有点事	jin tian you dian shi	1
+今天廿五	jin tian nian wu	1
+家庭网络	jia ting wang luo	1
+进行解密	jin xing jie mi	1
+急性阑尾	ji xing lan wei	1
+教训一下	jiao xun yi xia	1
+建议改成	jian yi gai cheng	1
+军用特工	jun yong te gong	1
+军用科技	jun yong ke ji	1
+假有	jia you	1
+据以和	ju yi he	1
+就运行	jiu yun xing	1
+检验版	jian yan ban	1
+精液中	jing ye zhong	1
+基岩版	ji yan ban	1
+禁欲几天	jin yu ji tian	1
+基因交流	ji yin jiao liu	1
+讲座课	jiang zuo ke	1
+接着上课	jie zhe shang ke	1
+建造机	jian zao ji	1
+加罪	jia zui	1
+接着穿	jie zhe chuan	1
+就这速度	jiu zhe su du	1
+建筑不太会	jian zhu bu tai hui	1
+建筑当	jian zhu dang	1
+接种了	jie zhong le	1
+接种疫苗	jie zhong yi miao	1
+可爱干净	ke ai gan jing	1
+烤不到	kao bu dao	1
+可比这	ke bi zhe	1
+可不能去	ke bu neng qu	1
+卡到手了吗	ka dao shou le ma	1
+康到了	kang dao le	1
+看懂评论	kan dong ping lun	1
+看到我的消息	kan dao wo de xiao xi	1
+拷东西	kao dong xi	1
+肯定灵	ken ding ling	1
+看到帅的	kan dao shuai de	1
+矿洞里	kuang dong li	1
+看的我	kan de wo	1
+看到那个回答	kan dao na ge hui da	1
+开个盒	kai ge he	1
+看过一个视频	kan guo yi ge shi pin	1
+客观来讲	ke guan lai jiang	1
+开关有啥用	kai guan you sha yong	1
+开关是	kai guan shi	1
+扣分的原因	kou fen de yuan yin	1
+考完就考完了	kao wan jiu kao wan le	1
+狂完了	kuang wan le	1
+括弧笑	kuo hu xiao	1
+空文件里	kong wen jian li	1
+快进到	kuai jin dao	1
+课件还没发我	ke jian hai mei fa wo	1
+开扣	kai kou	1
+亏款单	kui kuan dan	1
+克扣一下啊	ke kou yi xia a	1
+克扣一下	ke kou yi xia	1
+可能考虑	ke neng kao lv	1
+可能放弃	ke neng fang qi	1
+考虑一哈	kao lv yi ha	1
+看了奥	kan le ao	1
+开了加速器	kai le jia su qi	1
+开累了	kai lei le	1
+库里的	ku li de	1
+快落	kuai luo	1
+扣烂	kou lan	1
+看来大家都是	kan lai da jia dou shi	1
+看宁	kan ning	1
+可能没法	ke neng mei fa	1
+看哩	kan li	1
+看麻了	kan ma le	1
+开蚂蚁	kai ma yi	1
+恐怕还	kong pa hai	1
+考棚节	kao peng jie	1
+考棚街	kao peng jie	1
+开启骷髅头	kai qi ku lou tou	1
+考试还不是	kao shi hai bu shi	1
+开始穿	kai shi chuan	1
+开头也	kai tou ye	1
+可痛苦了	ke tong ku le	1
+磕头了	ke tou le	1
+卡西欧的	ka xi ou de	1
+可以一看	ke yi yi kan	1
+可以再看看	ke yi zai kan kan	1
+可以承受	ke yi cheng shou	1
+可以看到你	ke yi kan dao ni	1
+可远观	ke yuan guan	1
+可以回复一下	ke yi hui fu yi xia	1
+口罩了	kou zhao le	1
+跨坐在	kua zuo zai	1
+看着你睡着	kan zhe ni shui zhao	1
+卡在地里	ka zai di li	1
+老爱你	lao ai ni	1
+那俺也去	na an ye qu	1
+你啊难道	ni a nan dao	1
+那俺去	na an qu	1
+能不能来个	neng bu neng lai ge	1
+那必是	na bi shi	1
+你不信问	ni bu xin wen	1
+你帮俺	ni bang an	1
+能不能联系	neng bu neng lian xi	1
+能不能有	neng bu neng you	1
+路边发的	lu bian fa de	1
+老弊登	lao bi deng	1
+能不能也	neng bu neng ye	1
+能不囊	neng bu nang	1
+你别劝	ni bie quan	1
+你把口罩	ni ba kou zhao	1
+难绷	nan beng	1
+你不要当	ni bu yao dang	1
+你把蓝牙打开	ni ba lan ya da kai	1
+内存出错	nei cun chu cuo	1
+能参考一下	neng can kao yi xia	1
+昵称也换不了	ni cheng ye huan bu liao	1
+李诚儒	li cheng ru	1
+你触摸	ni chu mo	1
+哪吃的	na chi de	1
+你触摸谁呢	ni chu mo shui ne	1
+你触摸谁	ni chu mo shui	1
+能处	neng chu	1
+你处理的	ni chu li de	1
+你的帮助	ni de bang zhu	1
+你担心这个	ni dan xin zhe ge	1
+男的还是女的了	nan de hai shi nv de le	1
+你的责任	ni de ze ren	1
+裸东西	luo dong xi	1
+老打哈欠	lao da ha qian	1
+你打得开	ni da de kai	1
+你的原因	ni de yuan yin	1
+你待会要不要先睡	ni dai hui yao bu yao xian shui	1
+闹得有点不愉快	nao de you dian bu yu kuai	1
+难道故意	nan dao gu yi	1
+年度歌单	nian du ge dan	1
+你弟这	ni di zhe	1
+老大你	lao da ni	1
+你的意思了	ni de yi si le	1
+另当别论了	ling dang bie lun le	1
+脑袋想	nao dai xiang	1
+你的箱子里	ni de xiang zi li	1
+你到寝室了吗	ni dao qin shi le ma	1
+你都出	ni dou chu	1
+尿道里	niao dao li	1
+你对建筑有啥要求	ni dui jian zhu you sha yao qiu	1
+领地系统	ling di xi tong	1
+你的脸蛋	ni de lian dan	1
+你都发来	ni dou fa lai	1
+尿道结石	niao dao jie shi	1
+奶蛋肉	nai dan rou	1
+人个	ren ge	1
+入个群	ru ge qun	1
+那搞一波	na gao yi bo	1
+如果只是要个	ru guo zhi shi yao ge	1
+你更要	ni geng yao	1
+拿给谁看	na gei shui kan	1
+你给啥	ni gei sha	1
+轮个回	lun ge hui	1
+那个标语	na ge biao yu	1
+奶沟	nai gou	1
+那个资源包	na ge zi yuan bao	1
+你规划到	ni gui hua dao	1
+来管一下	lai guan yi xia	1
+你更新过	ni geng xin guo	1
+另附上	ling fu shang	1
+你发图了吗	ni fa tu le ma	1
+然后泥	ran hou ni	1
+人玩的	ren wan de	1
+能否与	neng fou yu	1
+你复习就好了	ni fu xi jiu hao le	1
+然后设置	ran hou she zhi	1
+你发歌	ni fa ge	1
+如何劈郭嘉	ru he pi guo jia	1
+你会安装	ni hui an zhuang	1
+内味了	nei wei le	1
+然后就以为四	ran hou jiu yi wei si	1
+你发来不就好了	ni fa lai bu jiu hao le	1
+荣获第一	rong huo di yi	1
+礼物了吗	li wu le ma	1
+乐文壮	le wen zhuang	1
+那我一直都在	na wo yi zhi dou zai	1
+能好一点	neng hao yi dian	1
+如何联系	ru he lian xi	1
+能否引进	neng fou yin jin	1
+那我不气了	na wo bu qi le	1
+那我不晓得	na wo bu xiao de	1
+然后扭了	ran hou niu le	1
+流汗黄豆	liu han huang dou	1
+流汗了	liu han le	1
+让后交钱	rang hou jiao qian	1
+那我推荐	na wo tui jian	1
+那我得去找	na wo dei qu zhao	1
+楼房有	lou fang you	1
+牛蛙牛蛙	niu wa niu wa	1
+你坏宝宝	ni huai bao bao	1
+那我去洗澡了	na wo qu xi zao le	1
+灵魂所在	ling hun suo zai	1
+那我属于是	na wo shu yu shi	1
+然后倒个水	ran hou dao ge shui	1
+能和她	neng he ta	1
+你还要俺	ni hai yao an	1
+你回个消息	ni hui ge xiao xi	1
+拉黑之后	la hei zhi hou	1
+那今天也	na jin tian ye	1
+连接数目	lian jie shu mu	1
+里居然	li ju ran	1
+乐景	le jing	1
+你就别问了	ni jiu bie wen le	1
+连接断开	lian jie duan kai	1
+练几遍	lian ji bian	1
+你教师	ni jiao shi	1
+锐炬	rui ju	1
+邻居报警	lin ju bao jing	1
+联机打	lian ji da	1
+南京交通	nan jing jiao tong	1
+然间	ran jian	1
+女觉得	nv jue de	1
+你看我空间	ni kan wo kong jian	1
+连考试	lian kao shi	1
+你可以先做了	ni ke yi xian zuo le	1
+那夸张	na kua zhang	1
+你开学之前	ni kai xue zhi qian	1
+你看零零	ni kan ling ling	1
+你可以拿了	ni ke yi na le	1
+那课件	na ke jian	1
+拉跨	la kua	1
+烂裤裆	lan ku dang	1
+女口	nv kou	1
+你看之前	ni kan zhi qian	1
+你看到啥	ni kan dao sha	1
+内裤都不穿	nei ku dou bu chuan	1
+你可以这么说	ni ke yi zhe me shuo	1
+仍然无法完成更新	reng ran wu fa wan cheng geng xin	1
+老难受了	lao nan shou le	1
+让肉	rang rou	1
+那你可以帮帮我	na ni ke yi bang bang wo	1
+内容来的	nei rong lai de	1
+连你电脑	lian ni dian nao	1
+你如果真心	ni ru guo zhen xin	1
+捏人的时候	nie ren de shi hou	1
+你能教我	ni neng jiao wo	1
+那你觉得呢	na ni jue de ne	1
+容量为么司	rong liang wei me si	1
+莉莉周	li li zhou	1
+你年以内	ni nian yi nei	1
+力量哥	li liang ge	1
+了然了	liao ran le	1
+理了发	li le fa	1
+让宁	rang ning	1
+你那个文件	ni na ge wen jian	1
+你能相信	ni neng xiang xin	1
+牛年快乐	niu nian kuai le	1
+能让她	neng rang ta	1
+弄能	nong neng	1
+你那颗	ni na ke	1
+拿捏了	na nie le	1
+那你去问问	na ni qu wen wen	1
+那你占	na ni zhan	1
+你如果理我	ni ru guo li wo	1
+牛奶日期	niu nai ri qi	1
+令人不解	ling ren bu jie	1
+你老可爱	ni lao ke ai	1
+蝻人	nan ren	1
+那你笑啥	na ni xiao sha	1
+那你提醒俺	na ni ti xing an	1
+男妈妈	nan ma ma	1
+宁们	ning men	1
+那么斑	na me ban	1
+那么大吧	na me da ba	1
+你没了解	ni mei liao jie	1
+你们吃了吗	ni men chi le ma	1
+那明早说	na ming zao shuo	1
+那么请问	na me qing wen	1
+你妈隔壁	ni ma ge bi	1
+拟妈	ni ma	1
+那么好看的	na me hao kan de	1
+女菩萨	nv pu sa	1
+能陪衣服	neng pei yi fu	1
+你去问了	ni qu wen le	1
+燃起来了	ran qi lai le	1
+你欠俺	ni qian an	1
+入群了之后	ru qun le zhi hou	1
+你去挖	ni qu wa	1
+你其他的	ni qi ta de	1
+你上次发那个	ni shang ci fa na ge	1
+你是咋想的	ni shi za xiang de	1
+那睡觉觉	na shui jiao jiao	1
+老烧	lao shao	1
+人生的低谷	ren sheng de di gu	1
+那算是个	na suan shi ge	1
+你身边的人	ni shen bian de ren	1
+你是图个啥	ni shi tu ge sha	1
+你是不是有时候	ni shi bu shi you shi hou	1
+你收得到	ni shou de dao	1
+肉上面	rou shang mian	1
+李尚则	li shang ze	1
+你说为啥	ni shuo wei sha	1
+你啥时候吃	ni sha shi hou chi	1
+老色皮	lao se pi	1
+老色批	lao se pi	1
+你试一哈	ni shi yi ha	1
+能睡他	neng shui ta	1
+你睡觉觉	ni shui jiao jiao	1
+两三次了	liang san ci le	1
+临时游戏	lin shi you xi	1
+你说那种	ni shuo na zhong	1
+你啥时候西	ni sha shi hou xi	1
+你是大美女	ni shi da mei nv	1
+软色情	ruan se qing	1
+瑞士学者	rui shi xue zhe	1
+类似的情形	lei si de qing xing	1
+路上又下雨	lu shang you xia yu	1
+你是不是看成了	ni shi bu shi kan cheng le	1
+里头有个	li tou you ge	1
+那挺烦的	na ting fan de	1
+那条评论了	na tiao ping lun le	1
+里头有	li tou you	1
+两天就	liang tian jiu	1
+那天那件事	na tian na jian shi	1
+蓝天准系统	lan tian zhun xi tong	1
+你听得到我	ni ting de dao wo	1
+肉体的接触	rou ti de jie chu	1
+里头有冒呗	li tou you mao bei	1
+能推断	neng tui duan	1
+你同学有	ni tong xue you	1
+人形的	ren xing de	1
+老显示器	lao xian shi qi	1
+宁县看看	ning xian kan kan	1
+逆行射精	ni xing she jing	1
+你先考了	ni xian kao le	1
+你洗完澡了	ni xi wan zao le	1
+老性感	lao xing gan	1
+老乡你看	lao xiang ni kan	1
+老想你了	lao xiang ni le	1
+你想跟	ni xiang gen	1
+那些约炮	na xie yue pao	1
+你想养	ni xiang yang	1
+老想了	lao xiang le	1
+你洗了吗	ni xi le ma	1
+连续数字	lian xu shu zi	1
+逆袭了没有	ni xi le mei you	1
+愣一下	leng yi xia	1
+宁一说	ning yi shuo	1
+日语行	ri yu xing	1
+哪一问	na yi wen	1
+你要睡觉吗	ni yao shui jiao ma	1
+女友要过	nv you yao guo	1
+你应如此	ni ying ru ci	1
+你要不要睡觉	ni yao bu yao shui jiao	1
+你一个人的	ni yi ge ren de	1
+你一个人的人	ni yi ge ren de ren	1
+落于窠臼	luo yu ke jiu	1
+女友了	nv you le	1
+你有了解过	ni you liao jie guo	1
+男友身上	nan you shen shang	1
+你要不要先睡	ni yao bu yao xian shui	1
+你要用就用	ni yao yong jiu yong	1
+你有问过	ni you wen guo	1
+容易让人	rong yi rang ren	1
+你要用的话	ni yao yong de hua	1
+能有这	neng you zhe	1
+你愿意的话	ni yuan yi de hua	1
+你以后要	ni yi hou yao	1
+你要是当渣女的话	ni yao shi dang zha nv de hua	1
+留一间	liu yi jian	1
+旅游软件	lv you ruan jian	1
+你因该	ni yin gai	1
+你有看什么	ni you kan shen me	1
+陆战队说	lu zhan dui shuo	1
+你这番话	ni zhe fan hua	1
+入职国企	ru zhi guo qi	1
+楼主咋办的	lou zhu za ban de	1
+你最后说啥	ni zui hou shuo sha	1
+你在我旁边	ni zai wo pang bian	1
+你坐我腿上	ni zuo wo tui shang	1
+你之后要是	ni zhi hou yao shi	1
+你自卑	ni zi bei	1
+你之前看的	ni zhi qian kan de	1
+那罪	na zui	1
+你煮的	ni zhu de	1
+拎着东西	lin zhe dong xi	1
+你在一起	ni zai yi qi	1
+你咋莫	ni za mo	1
+那这也	na zhe ye	1
+你在写啥	ni zai xie sha	1
+男主持人	nan zhu chi ren	1
+捏着玩	nie zhe wan	1
+你早点睡觉觉	ni zao dian shui jiao jiao	1
+你住建筑	ni zhu jian zhu	1
+逆战我这	ni zhan wo zhe	1
+你这是有	ni zhe shi you	1
+拿着奶茶	na zhe nai cha	1
+懒子	lan zi	1
+你在说啥呀	ni zai shuo sha ya	1
+没被嘴臭	mei bei zui chou	1
+没绑定手机	mei bang ding shou ji	1
+磨半天	mo ban tian	1
+没被甩	mei bei shuai	1
+冒呗	mao bei	1
+每次更新前	mei ci geng xin qian	1
+没吃这玩意	mei chi zhe wan yi	1
+脉冲发生器	mai chong fa sheng qi	1
+没查看邮件	mei cha kan you jian	1
+盲猜	mang cai	1
+麻城方言	ma cheng fang yan	1
+没测准	mei ce zhun	1
+冒得时间	mao de shi jian	1
+么东西	me dong xi	1
+麻大了	ma da le	1
+没电话来	mei dian hua lai	1
+每个作业	mei ge zuo ye	1
+妈个巴子	ma ge ba zi	1
+冒鼓包	mao gu bao	1
+每个人都要做	mei ge ren dou yao zuo	1
+没搞完你	mei gao wan ni	1
+每个视频	mei ge shi pin	1
+哞菇	mou gu	1
+没更新的软件	mei geng xin de ruan jian	1
+没跟你说过吗	mei gen ni shuo guo ma	1
+冒发现	mao fa xian	1
+毛玩过	mao wan guo	1
+没法忍	mei fa ren	1
+模糊测试	mo hu ce shi	1
+们回家了	men hui jia le	1
+没法找到	mei fa zhao dao	1
+没问题之后	mei wen ti zhi hou	1
+没发现过	mei fa xian guo	1
+米卫兵	mi wei bing	1
+摸会	mo hui	1
+免费翻译	mian fei fan yi	1
+么回事	me hui shi	1
+毛见过	mao jian guo	1
+毛觉得	mao jue de	1
+没假的	mei jia de	1
+冒看到	mao kan dao	1
+没看视频	mei kan shi pin	1
+咩块	mie kuai	1
+毛看懂	mao kan dong	1
+没开采的	mei kai cai de	1
+冒看	mao kan	1
+毛看过	mao kan guo	1
+冒看过	mao kan guo	1
+弥留之国	mi liu zhi guo	1
+没你的支持	mei ni de zhi chi	1
+没两百年	mei liang bai nian	1
+买来是	mai lai shi	1
+莫裸	mo luo	1
+么裸	me luo	1
+买来戴	mai lai dai	1
+慕了	mu le	1
+慕名前来	mu ming qian lai	1
+猫猫视频	mao mao shi pin	1
+买哦住	mai o zhu	1
+没拍出来	mei pai chu lai	1
+没缺点	mei que dian	1
+没圈地	mei quan di	1
+母亲大人	mu qin da ren	1
+猛亲	meng qin	1
+么司标准来	me si biao zhun lai	1
+么斯意思	me si yi si	1
+马上去洗	ma shang qu xi	1
+没啥经验	mei sha jing yan	1
+马上也去	ma shang ye qu	1
+马上去吃	ma shang qu chi	1
+麦斯外	mai si wai	1
+买丝袜	mai si wa	1
+莫伸手	mo shen shou	1
+冒试过	mao shi guo	1
+马上到屋里	ma shang dao wu li	1
+没填错	mei tian cuo	1
+没拖鞋	mei tuo xie	1
+马头社	ma tou she	1
+每天打电话	mei tian da dian hua	1
+没脱衣服	mei tuo yi fu	1
+美团咋	mei tuan za	1
+每天只花	mei tian zhi hua	1
+每天不知道	mei tian bu zhi dao	1
+没图呀	mei tu ya	1
+买小了点	mai xiao le dian	1
+毛选么司	mao xuan me si	1
+冒想到	mao xiang dao	1
+莫下了	mo xia le	1
+么样装	me yang zhuang	1
+没有死的	mei you si de	1
+冒用过	mao yong guo	1
+妹有	mei you	1
+美颜效果	mei yan xiao guo	1
+没有存备份	mei you cun bei fen	1
+没有光影	mei you guang ying	1
+没有不满意	mei you bu man yi	1
+么样联机	me yang lian ji	1
+么样搞	me yang gao	1
+没有秀恩爱	mei you xiu en ai	1
+没有尝试	mei you chang shi	1
+没有出路	mei you chu lu	1
+没有肉体的接触	mei you rou ti de jie chu	1
+没有灵魂	mei you ling hun	1
+每种格式	mei zhong ge shi	1
+冒找	mao zhao	1
+没作业了	mei zuo ye le	1
+密藏钥匙	mi zang yao shi	1
+没怎么见	mei zen me jian	1
+明早说	ming zao shuo	1
+名字刻在石头上	ming zi ke zai shi tou shang	1
+苗族人	miao zu ren	1
+冒找到	mao zhao dao	1
+哦我好像知道	o wo hao xiang zhi dao	1
+欧路电脑版	ou lu dian nao ban	1
+欧陆词典	ou lu ci dian	1
+欧阳皓	ou yang hao	1
+骗不出来	pian bu chu lai	1
+排不排外	pai bu pai wai	1
+频闭	pin bi	1
+屏蔽过	ping bi guo	1
+拍成电影了	pai cheng dian ying le	1
+排出来了	pai chu lai le	1
+怕都	pa dou	1
+破的防	po de fang	1
+啪的一下	pa de yi xia	1
+怕带宽	pa dai kuan	1
+拍的招牌	pai de zhao pai	1
+跑的时间	pao de shi jian	1
+拍给俺	pai gei an	1
+骗过了	pian guo le	1
+苹果丝	ping guo si	1
+培根日记	pei gen ri ji	1
+破防破防	po fang po fang	1
+跑还来不及	pao hai lai bu ji	1
+皮肤瘙痒	pi fu sao yang	1
+迫害的	po hai de	1
+喷雾不	pen wu bu	1
+平均相对残差	ping jun xiang dui can cha	1
+跑酷党	pao ku dang	1
+评论一哈	ping lun yi ha	1
+霹雳的	pi li de	1
+破裂的	po lie de	1
+皮灵力高偷	pi ling li gao tou	1
+霹雳霹雳	pi li pi li	1
+派蒙	pai meng	1
+辟邪	pi xie	1
+怕要等到	pa yao deng dao	1
+派衣服	pai yi fu	1
+皮炎子	pi yan zi	1
+平整了	ping zheng le	1
+配置一个	pei zhi yi ge	1
+区别就在	qu bie jiu zai	1
+轻薄本	qing bao ben	1
+全部更新	quan bu geng xin	1
+清北的	qing bei de	1
+起床前	qi chuang qian	1
+秋促	qiu cu	1
+去吃饭的路上	qu chi fan de lu shang	1
+清晨焊机	qing chen han ji	1
+去吃饭额	qu chi fan e	1
+请吃个饭	qing chi ge fan	1
+驱动安装	qu dong an zhuang	1
+轻电	qing dian	1
+去大地方	qu da di fang	1
+缺点呢	que dian ne	1
+敲代码的同时	qiao dai ma de tong shi	1
+起点作用	qi dian zuo yong	1
+驱动的问题	qu dong de wen ti	1
+全放家里	quan fang jia li	1
+群文件里的	qun wen jian li de	1
+千万不要去	qian wan bu yao qu	1
+请问是什么	qing wen shi shen me	1
+清华同学	qing hua tong xue	1
+秋裤了	qiu ku le	1
+情况不错	qing kuang bu cuo	1
+前两个了	qian liang ge le	1
+亲昵的	qin ni de	1
+起立了	qi li le	1
+亲昵一下	qin ni yi xia	1
+去了医院	qu le yi yuan	1
+巧裸	qiao luo	1
+清理到	qing li dao	1
+前任把我	qian ren ba wo	1
+气懵了	qi meng le	1
+亲密的关系	qin mi de guan xi	1
+去哦去吃饭	qu o qu chi fan	1
+请求帮助	qing qiu bang zhu	1
+球球了	qiu qiu le	1
+请求分析	qing qiu fen xi	1
+亲亲宝宝	qin qin bao bao	1
+情趣蛋	qing qu dan	1
+亲亲好宝宝	qin qin hao bao bao	1
+去搜的	qu sou de	1
+确实是有	que shi shi you	1
+其实想法的	qi shi xiang fa de	1
+其实想到了	qi shi xiang dao le	1
+全身都	quan shen dou	1
+寝室里头	qin shi li tou	1
+去抬头纹	qu tai tou wen	1
+其它一些资料	qi ta yi xie zi liao	1
+骑小电驴	qi xiao dian lv	1
+前些时间	qian xie shi jian	1
+枪械服	qiang xie fu	1
+驱雨	qu yu	1
+全在学校	quan zai xue xiao	1
+亲自删了	qin zi shan le	1
+前专利的	qian zhuan li de	1
+亲着我	qin zhe wo	1
+请转湖	qing zhuan hu	1
+青砖湖	qing zhuan hu	1
+说俺	shuo an	1
+试半天	shi ban tian	1
+随便都能	sui bian dou neng	1
+是不是最近有	shi bu shi zui jin you	1
+鼠标平滑	shu biao ping hua	1
+是不是现在	shi bu shi xian zai	1
+是不是拿来	shi bu shi na lai	1
+说不出个	shuo bu chu ge	1
+是不是规定	shi bu shi gui ding	1
+睡不着看	shui bu zhao kan	1
+上不上得了	shang bu shang de liao	1
+手柄连不上你去	shou bing lian bu shang ni qu	1
+是不是装的	shi bu shi zhuang de	1
+是不是都要	shi bu shi dou yao	1
+鼠标停到	shu biao ting dao	1
+识别保护出来	shi bie bao hu chu lai	1
+删除所有的软件	shan chu suo you de ruan jian	1
+少差	shao cha	1
+四川机长	si chuan ji zhang	1
+上次就这么	shang ci jiu zhe me	1
+生存着	sheng cun zhe	1
+社畜们	she chu men	1
+上撤硕	shang che shuo	1
+适当休息	shi dang xiu xi	1
+舌钉	she ding	1
+商店里的	shang dian li de	1
+帅到我来	shuai dao wo lai	1
+所得	suo dei	1
+扫地大妈	sao di da ma	1
+数度并	shu du bing	1
+搜个么司	sou ge me si	1
+说过几次	shuo guo ji ci	1
+士官长合集	shi guan zhang he ji	1
+试给	shi gei	1
+是个啥意思	shi ge sha yi si	1
+生个活	sheng ge huo	1
+啥干啥的	sha gan sha de	1
+帅怪龙	shuai guai long	1
+啥感想	sha gan xiang	1
+帅哥比较喜欢	shuai ge bi jiao xi huan	1
+宋广	song guang	1
+送光	song guang	1
+睡过的	shui guo de	1
+舒服就好	shu fu jiu hao	1
+睡完午觉了	shui wan wu jiao le	1
+适合在一起	shi he zai yi qi	1
+双方不可能	shuang fang bu ke neng	1
+啥玩意的	sha wan yi de	1
+馊味	sou wei	1
+上海房价	shang hai fang jia	1
+生活就是一个巨大的谎言	sheng huo jiu shi yi ge ju da de huang yan	1
+死亡颜色	si wang yan se	1
+稍微早点	shao wei zao dian	1
+上海土著	shang hai tu zhu	1
+缩放倍率	suo fang bei lv	1
+上午是	shang wu shi	1
+杀疯了	sha feng le	1
+烧完美好	shao wan mei hao	1
+试哈子	shi ha zi	1
+生活周刊	sheng huo zhou kan	1
+售后应该	shou hou ying gai	1
+生灰	sheng hui	1
+十号裤裆	shi hao ku dang	1
+啥猴子	sha hou zi	1
+世界抓人	shi jie zhua ren	1
+时间定了	shi jian ding le	1
+世界上最遥远的距离	shi jie shang zui yao yuan de ju li	1
+帅杰克	shuai jie ke	1
+手机打卡了	shou ji da ka le	1
+书记界面	shu ji jie mian	1
+手机没带	shou ji mei dai	1
+肾就	shen jiu	1
+谁进去	shui jin qu	1
+手脚架	shou jiao jia	1
+收经验	shou jing yan	1
+世界好可怕	shi jie hao ke pa	1
+神狙	shen ju	1
+啥可以	sha ke yi	1
+搜考完了	sou kao wan le	1
+上课用的	shang ke yong de	1
+森纳	sen na	1
+虽然没吵过架	sui ran mei chao guo jia	1
+搜了一圈	sou le yi quan	1
+算了不管了	suan le bu guan le	1
+送你一朵	song ni yi duo	1
+锁了锁了	suo le suo le	1
+神奈川冲	shen nai chuan chong	1
+色孽	se nie	1
+沙拉词典	sha la ci dian	1
+收容失效	shou rong shi xiao	1
+三年工人	san nian gong ren	1
+死了几次	si le ji ci	1
+色连衣裙	se lian yi qun	1
+伞了	san le	1
+说明广大人民	shuo ming guang da ren min	1
+什么目的	shen me mu di	1
+说么司	shuo me si	1
+什么时候扫	shen me shi hou sao	1
+神秘死亡	shen mi si wang	1
+说没说到	shuo mei shuo dao	1
+驷马了	si ma le	1
+似麻了	si ma le	1
+失眠吧	shi mian ba	1
+扫描的那篇	sao miao de na pian	1
+水木年华呀	shui mu nian hua ya	1
+视频有人问	shi pin you ren wen	1
+食品工厂	shi pin gong chang	1
+视频看了冒	shi pin kan le mao	1
+水平很高	shui ping hen gao	1
+烧批	shao pi	1
+失陪一下	shi pei yi xia	1
+适配一下	shi pei yi xia	1
+缩起来了	suo qi lai le	1
+社区去	she qu qu	1
+申请系统看看	shen qing xi tong kan kan	1
+申请系统	shen qing xi tong	1
+申请成功了	shen qing cheng gong le	1
+事情的时候	shi qing de shi hou	1
+身上那件	shen shang na jian	1
+世俗的欲望	shi su de yu wang	1
+啥时候吃	sha shi hou chi	1
+数数清楚	shu shu qing chu	1
+身上还	shen shang hai	1
+属是有点	shu shi you dian	1
+啥时候起来的	sha shi hou qi lai de	1
+属实有点	shu shi you dian	1
+叔叔呢	shu shu ne	1
+是啥味道	shi sha wei dao	1
+手上没	shou shang mei	1
+杀死猪人	sha si zhu ren	1
+是社么	shi she me	1
+生是种花人	sheng shi zhong hua ren	1
+死是种花鬼	si shi zhong hua gui	1
+随堂测验	sui tang ce yan	1
+上吐了	shang tu le	1
+石头现在	shi tou xian zai	1
+石头在	shi tou zai	1
+斯托特	si tuo te	1
+上头的	shang tou de	1
+实体店不一定有	shi ti dian bu yi ding you	1
+实体店里	shi ti dian li	1
+送芯片	song xin pian	1
+随喜赞叹	sui xi zan tan	1
+谁先来的	shui xian lai de	1
+伤心啥	shang xin sha	1
+使用第三方	shi yong di san fang	1
+所有软件	suo you ruan jian	1
+扫一眼眼睛	sao yi yan yan jing	1
+啥也不想吃	sha ye bu xiang chi	1
+啥也别想	sha ye bie xiang	1
+神友	shen you	1
+是有呀	shi you ya	1
+啥样的人	sha yang de ren	1
+属于是	shu yu shi	1
+是直的	shi zhi de	1
+谁指使的	shui zhi shi de	1
+四周是	si zhou shi	1
+说这个的	shuo zhe ge de	1
+挺不简单	ting bu jian dan	1
+舔脖子	tian bo zi	1
+挑半天	tiao ban tian	1
+腿被	tui bei	1
+提不起精神的	ti bu qi jing shen de	1
+特别关照	te bie guan zhao	1
+特别硬核	te bie ying he	1
+听不懂的人	ting bu dong de ren	1
+特别关乎	te bie guan hu	1
+同步显示	tong bu xian shi	1
+听不到你了	ting bu dao ni le	1
+他参加	ta can jia	1
+跳动性别对立	tiao dong xing bie dui li	1
+痛得厉害	tong de li hai	1
+挺多东西	ting duo dong xi	1
+头都是昏的	tou dou shi hun de	1
+跳的舞	tiao de wu	1
+挑电脑	tiao dian nao	1
+太多次数	tai duo ci shu	1
+太懂了	tai dong le	1
+太嗯了	tai en le	1
+提供的最新	ti gong de zui xin	1
+他干啥了	ta gan sha le	1
+托格	tuo ge	1
+提过很多次	ti guo hen duo ci	1
+偷国	tou guo	1
+弹钢琴的	tan gang qin de	1
+头发的话	tou fa de hua	1
+他放的	ta fang de	1
+他问啥	ta wen sha	1
+偷货	tou huo	1
+太哈人类	tai ha ren lei	1
+填反了	tian fan le	1
+太哈人了	tai ha ren le	1
+太哈人	tai ha ren	1
+台湾的同学	tai wan de tong xue	1
+台湾考的	tai wan kao de	1
+头问津	tou wen jin	1
+退货的话	tui huo de hua	1
+托福的资料	tuo fu de zi liao	1
+托福的	tuo fu de	1
+提交了一个	ti jiao le yi ge	1
+提交给他们	ti jiao gei ta men	1
+太鸡巴	tai ji ba	1
+田径大学	tian jing da xue	1
+头盔下面	tou kui xia mian	1
+痛苦面具	tong ku mian ju	1
+挺酷眩	ting ku xuan	1
+挺老了	ting lao le	1
+它能够在床上	ta neng gou zai chuang shang	1
+舔你了	tian ni le	1
+他留在那	ta liu zai na	1
+挺凉的	ting liang de	1
+突然看到的	tu ran kan dao de	1
+突然问这	tu ran wen zhe	1
+突然天亮	tu ran tian liang	1
+舔你一下	tian ni yi xia	1
+弹力但	tan li dan	1
+突然说起	tu ran shuo qi	1
+太拉了	tai la le	1
+特里斯	te li si	1
+突然下	tu ran xia	1
+童年女神了	tong nian nv shen le	1
+题目好难	ti mu hao nan	1
+他妈个逼	ta ma ge bi	1
+痛麻了	tong ma le	1
+她没和你	ta mei he ni	1
+台哦东	tai o dong	1
+套皮	tao pi	1
+提起这件事	ti qi zhe jian shi	1
+吐去了	tu qu le	1
+提前一点到	ti qian yi dian dao	1
+天气暖喝了	tian qi nun he le	1
+她身上的	ta shen shang de	1
+他是咋想的	ta shi za xiang de	1
+同时发送了	tong shi fa song le	1
+提升士气	ti sheng shi qi	1
+太烧了	tai shao le	1
+透她	tou ta	1
+铜头皮带	tong tou pi dai	1
+谈谈交通	tan tan jiao tong	1
+同学问我怎么做	tong xue wen wo zen me zuo	1
+太行	tai xing	1
+疼惜你	teng xi ni	1
+挺性感	ting xing gan	1
+图形性能	tu xing xing neng	1
+他要这么说	ta yao zhe me shuo	1
+头有点冷	tou you dian leng	1
+同一内容	tong yi nei rong	1
+他要是知道	ta yao shi zhi dao	1
+托运的	tuo yun de	1
+体验一哈	ti yan yi ha	1
+他应该直接给你们	ta ying gai zhi jie gei ni men	1
+体液交换	ti ye jiao huan	1
+退一万步讲	tui yi wan bu jiang	1
+兔友	tu you	1
+帖子中	tie zi zhong	1
+调整到一个合适的	tiao zheng dao yi ge he shi de	1
+太自由啦	tai zi you la	1
+他嘴里	ta zui li	1
+体重身高	ti zhong shen gao	1
+他主页	ta zhu ye	1
+下不哈来	xia bu ha lai	1
+性别对立呢	xing bie dui li ne	1
+性别对立的	xing bie dui li de	1
+香宝宝	xiang bao bao	1
+先把几个	xian ba ji ge	1
+性别对立	xing bie dui li	1
+西边的风	xi bian de feng	1
+邪不压正	xie bu ya zheng	1
+下次你说	xia ci ni shuo	1
+小吵闹	xiao chao nao	1
+相册的时候	xiang ce de shi hou	1
+下次让我	xia ci rang wo	1
+下次先发我	xia ci xian fa wo	1
+兄弟你是	xiong di ni shi	1
+想打两关	xiang da liang guan	1
+想当就当	xiang dang jiu dang	1
+仙笛侠萧	xian di xia xiao	1
+想到一句话	xiang dao yi ju hua	1
+下到一半	xia dao yi ban	1
+醒的呀	xing de ya	1
+小岛就是	xiao dao jiu shi	1
+学的进去	xue de jin qu	1
+新的活力	xin de huo li	1
+香港新增	xiang gang xin zeng	1
+小哥还	xiao ge hai	1
+新冠	xin guan	1
+修复工具后	xiu fu gong ju hou	1
+希望人	xi wang ren	1
+学文章	xue wen zhang	1
+小方向	xiao fang xiang	1
+下哈来的	xia ha lai de	1
+洗完就睡	xi wan jiu shui	1
+选我帮	xuan wo bang	1
+漩涡帮	xuan wo bang	1
+希望能落实	xi wang neng luo shi	1
+心肺停止	xin fei ting zhi	1
+讯闻	xun wen	1
+喜欢小恐龙	xi huan xiao kong long	1
+星舞未来	xing wu wei lai	1
+希望是这样	xi wang shi zhe yang	1
+西环邨	xi huan cun	1
+下哈莱	xia ha lai	1
+下好大雨	xia hao da yu	1
+喜欢干	xi huan gan	1
+下哈莱了	xia ha lai le	1
+想狠狠	xiang hen hen	1
+学姐这么	xue jie zhe me	1
+小建筑群	xiao jian zhu qun	1
+下届合金	xia jie he jin	1
+香蕉公社	xiang jiao gong she	1
+小康是	xiao kang shi	1
+下课再	xia ke zai	1
+心瑞了	xin rui le	1
+下了点雨	xia le dian yu	1
+夏诺雅	xia nuo ya	1
+嘻了	xi le	1
+心里有你	xin li you ni	1
+心里冷	xin li leng	1
+下落到	xia luo dao	1
+效率也很低	xiao lv ye hen di	1
+星盟的人	xing meng de ren	1
+选么司	xuan me si	1
+羡慕死我了	xian mu si wo le	1
+新美国人	xin mei guo ren	1
+下面这	xia mian zhe	1
+学明白了	xue ming bai le	1
+想破头	xiang po tou	1
+心情整太差	xin qing zheng tai cha	1
+需求的话	xu qiu de hua	1
+想圈	xiang quan	1
+先烧	xian shao	1
+细诉	xi su	1
+新史低	xin shi di	1
+现实比	xian shi bi	1
+先睡嘛	xian shui ma	1
+消失诅咒	xiao shi zu zhou	1
+新说唱	xin shuo chang	1
+系统为	xi tong wei	1
+系统版本号	xi tong ban ben hao	1
+系统完整性	xi tong wan zheng xing	1
+系统完整性问题	xi tong wan zheng xing wen ti	1
+下头的	xia tou de	1
+想她们俩	xiang ta men lia	1
+心态不好了	xin tai bu hao le	1
+想舔了	xiang tian le	1
+星条人	xing tiao ren	1
+星条	xing tiao	1
+系统大小	xi tong da xiao	1
+系统跟软件	xi tong gen ruan jian	1
+学校有些	xue xiao you xie	1
+小学就	xiao xue jiu	1
+想晓得	xiang xiao de	1
+小须须	xiao xu xu	1
+先降	xian xiang	1
+笑嘻了	xiao xi le	1
+想想还是算了	xiang xiang hai shi suan le	1
+新写的	xin xie de	1
+学校的枕头	xue xiao de zhen tou	1
+休闲玩一玩	xiu xian wan yi wan	1
+学校的电话	xue xiao de dian hua	1
+先要看看	xian yao kan kan	1
+学一波	xue yi bo	1
+向右侧头	xiang you ce tou	1
+小指甲	xiao zhi jia	1
+洗澡都在想你	xi zao dou zai xiang ni	1
+洗澡到一半	xi zao dao yi ban	1
+笑着笑着	xiao zhe xiao zhe	1
+现在选啥	xian zai xuan sha	1
+已安装的	yi an zhuang de	1
+一爱护	yi ai hu	1
+遗爱湖	yi ai hu	1
+一边低	yi bian di	1
+一本加	yi ben jia	1
+有背心	you bei xin	1
+要不我来买	yao bu wo lai mai	1
+要不你发给我	yao bu ni fa gei wo	1
+一般被拿来	yi ban bei na lai	1
+一般不会说	yi ban bu hui shuo	1
+又不见人	you bu jian ren	1
+一边跳	yi bian tiao	1
+要被饿死了	yao bei e si le	1
+也甭算	ye beng suan	1
+要不要先睡	yao bu yao xian shui	1
+用不上电脑	yong bu shang dian nao	1
+有不良反应	you bu liang fan ying	1
+宜昌的	yi chang de	1
+远程调试	yuan cheng tiao shi	1
+一查日志	yi cha ri zhi	1
+有点味道	you dian wei dao	1
+有的同学应该	you de tong xue ying gai	1
+有点羡慕	you dian xian mu	1
+一段感情里	yi duan gan qing li	1
+有点离谱	you dian li pu	1
+遇到奇怪的人	yu dao qi guai de ren	1
+一顿夸	yi dun kua	1
+有点便太	you dian bian tai	1
+要多瘦	yao duo shou	1
+也带个	ye dai ge	1
+有带你贵	you dai ni gui	1
+有点局限	you dian ju xian	1
+有点不妥了	you dian bu tuo le	1
+压断了	ya duan le	1
+一点用也没有	yi dian yong ye mei you	1
+运动造成	yun dong zao cheng	1
+运动背心	yun dong bei xin	1
+要当个	yao dang ge	1
+用的也是	yong de ye shi	1
+移动窗口	yi dong chuang kou	1
+一二十个	yi er shi ge	1
+一个值得	yi ge zhi de	1
+一个一个试	yi ge yi ge shi	1
+要干净	yao gan jing	1
+一个白皮	yi ge bai pi	1
+要个你	yao ge ni	1
+一个案子	yi ge an zi	1
+一个亲亲	yi ge qin qin	1
+一锅端了	yi guo duan le	1
+应该很有自信	ying gai hen you zi xin	1
+应该不会说	ying gai bu hui shuo	1
+一个原则	yi ge yuan ze	1
+应该都会	ying gai dou hui	1
+已高速	yi gao su	1
+阳光与	yang guang yu	1
+应该也不行	ying gai ye bu xing	1
+应该都要	ying gai dou yao	1
+应该也不大	ying gai ye bu da	1
+有个人问我	you ge ren wen wo	1
+应该有很多	ying gai you hen duo	1
+有个桥	you ge qiao	1
+一个箱子里	yi ge xiang zi li	1
+应该都行	ying gai dou xing	1
+因该有	yin gai you	1
+一个医院	yi ge yi yuan	1
+应该很精彩	ying gai hen jing cai	1
+应该主要是	ying gai zhu yao shi	1
+一个回答	yi ge hui da	1
+有个视频	you ge shi pin	1
+英文不行	ying wen bu xing	1
+有无消息	you wu xiao xi	1
+也换不了	ye huan bu liao	1
+有黄州	you huang zhou	1
+衣服脱完了	yi fu tuo wan le	1
+又温柔	you wen rou	1
+有好几张	you hao ji zhang	1
+以后多分析	yi hou duo fen xi	1
+因为它会咬你	yin wei ta hui yao ni	1
+也还没到	ye hai mei dao	1
+因为想你	yin wei xiang ni	1
+要温柔一点	yao wen rou yi dian	1
+用户配置	yong hu pei zhi	1
+有很多鱼	you hen duo yu	1
+衣服的时候	yi fu de shi hou	1
+也会播	ye hui bo	1
+原发布页	yuan fa bu ye	1
+渔屋	yu wu	1
+有黑曜石	you hei yao shi	1
+因为你跟	yin wei ni gen	1
+有合照	you he zhao	1
+有好方法	you hao fang fa	1
+一加你好友	yi jia ni hao you	1
+硬件方面的	ying jian fang mian de	1
+一教高下	yi jiao gao xia	1
+已经实现了	yi jing shi xian le	1
+永久失踪	yong jiu shi zong	1
+已经看不到	yi jing kan bu dao	1
+邮件去	you jian qu	1
+眼睛好	yan jing hao	1
+已经碎了	yi jing sui le	1
+也进不了	ye jin bu liao	1
+一件毛衣	yi jian mao yi	1
+一件卫衣	yi jian wei yi	1
+一句一个	yi ju yi ge	1
+已经连上了	yi jing lian shang le	1
+一裤裆了	yi ku dang le	1
+又开始下雨了	you kai shi xia yu le	1
+一漏	yi lou	1
+羽绒服穿上了	yu rong fu chuan shang le	1
+幽灵行者	you ling xing zhe	1
+伊瑞的人	yi rui de ren	1
+又来任务	you lai ren wu	1
+疑人不用用人不疑	yi ren bu yong yong ren bu yi	1
+一路向	yi lu xiang	1
+又拿出来	you na chu lai	1
+摇了我吧	yao le wo ba	1
+耶裸	ye luo	1
+原来那地方	yuan lai na di fang	1
+压力大的时候	ya li da de shi hou	1
+有宁最爱的	you ning zui ai de	1
+用力打	yong li da	1
+有那么快	you na me kuai	1
+一漏玩	yi lou wan	1
+也裸	ye luo	1
+用你手机充电器	yong ni shou ji chong dian qi	1
+杨笠	yang li	1
+音量加	yin liang jia	1
+也没解决	ye mei jie jue	1
+越没用	yue mei yong	1
+有没有顺便	you mei you shun bian	1
+有冒呗	you mao bei	1
+用么司	yong me si	1
+幽默观察家	you mo guan cha jia	1
+也没地方骑	ye mei di fang qi	1
+要没人来	yao mei ren lai	1
+有茅台	you mao tai	1
+也没人动	ye mei ren dong	1
+疫苗了	yi miao le	1
+有么四	you me si	1
+也没梦见	ye mei meng jian	1
+养猫猫	yang mao mao	1
+一模一样	yi mo yi yang	1
+有名了	you ming le	1
+掩码中的	yan ma zhong de	1
+也没见着	ye mei jian zhe	1
+眼皮子上	yan pi zi shang	1
+也拍不出来	ye pai bu chu lai	1
+因怕	yin pa	1
+银趴	yin pa	1
+与其哦	yu qi o	1
+疫情情况	yi qing qing kuang	1
+一起爱	yi qi ai	1
+也去洗	ye qu xi	1
+也前天	ye qian tian	1
+用器械	yong qi xie	1
+以前带的	yi qian dai de	1
+一起走下去	yi qi zou xia qu	1
+有啥说的	you sha shuo de	1
+一搜就有	yi sou jiu you	1
+要是有资源	yao shi you zi yuan	1
+有时候就是	you shi hou jiu shi	1
+有啥烦心事	you sha fan xin shi	1
+预设的	yu she de	1
+要是有不一样的	yao shi you bu yi yang de	1
+以上的时间	yi shang de shi jian	1
+又是啥时候	you shi sha shi hou	1
+要是等	yao shi deng	1
+一上午加	yi shang wu jia	1
+有说啥	you shuo sha	1
+又说啥	you shuo sha	1
+有时候给你发的	you shi hou gei ni fa de	1
+医生好	yi sheng hao	1
+又失去了	you shi qu le	1
+要是坏了	yao shi huai le	1
+用啥呀	yong sha ya	1
+疑似有点	yi si you dian	1
+医生也说是	yi sheng ye shuo shi	1
+玥棠樾没用	yue tang yue mei yong	1
+越躺	yue tang	1
+油兔	you tu	1
+一条加密	yi tiao jia mi	1
+义体	yi ti	1
+隅田川	yu tian chuan	1
+有提示吗	you ti shi ma	1
+越涂	yue tu	1
+一小团	yi xiao tuan	1
+游戏也	you xi ye	1
+异形隔离	yi xing ge li	1
+游戏怎么	you xi zen me	1
+有些毛病	you xie mao bing	1
+医学诊断	yi xue zhen duan	1
+有些不能带	you xie bu neng dai	1
+一下用	yi xia yong	1
+运行个	yun xing ge	1
+影响哩	ying xiang li	1
+一笑话	yi xiao hua	1
+遥遥无望	yao yao wu wang	1
+也要穿	ye yao chuan	1
+严宇困	yan yu kun	1
+有一个问题是	you yi ge wen ti shi	1
+演员请	yan yuan qing	1
+也已呀	ye yi ya	1
+也一大堆	ye yi da dui	1
+也要学这些	ye yao xue zhe xie	1
+有一个报错	you yi ge bao cuo	1
+要有一点	yao you yi dian	1
+也要健康	ye yao jian kang	1
+又有个什么	you you ge shen me	1
+有这个机会	you zhe ge ji hui	1
+也总有个	ye zong you ge	1
+一直跟着我	yi zhi gen zhe wo	1
+一直在涂	yi zhi zai tu	1
+夜之城	ye zhi cheng	1
+咏哲	yong zhe	1
+也这么的	ye zhe me de	1
+有这条	you zhe tiao	1
+一直进不去	yi zhi jin bu qu	1
+野猪兽	ye zhu shou	1
+要做正式	yao zuo zheng shi	1
+颜值焦虑	yan zhi jiao lv	1
+越糟	yue zao	1
+咋不回信	za bu hui xin	1
+咋不跟	za bu gen	1
+真不生气	zhen bu sheng qi	1
+装备傻瓜	zhuang bei sha gua	1
+咋变坏	za bian huai	1
+这不存在	zhe bu cun zai	1
+直播延迟	zhi bo yan chi	1
+资本获利	zi ben huo li	1
+自闭了	zi bi le	1
+资本家的钱	zi ben jia de qian	1
+嘴巴想	zui ba xiang	1
+炸不掉	zha bu diao	1
+真比不过	zhen bi bu guo	1
+真不容易啊	zhen bu rong yi a	1
+坐标数字	zuo biao shu zi	1
+周边做些	zhou bian zuo xie	1
+咋不见了	za bu jian le	1
+扎巴多杰	zha ba duo jie	1
+真不是人	zhen bu shi ren	1
+准备比较好	zhun bei bi jiao hao	1
+咋不跟俺	za bu gen an	1
+造成问题的	zao cheng wen ti de	1
+这次勾引	zhe ci gou yin	1
+做错了啥	zuo cuo le sha	1
+这臭婊子	zhe chou biao zi	1
+造成的影响	zao cheng de ying xiang	1
+斩除	zhan chu	1
+这次又	zhe ci you	1
+咋滴宝宝	za di bao bao	1
+枕得	zhen de	1
+战斗进化	zhan dou jin hua	1
+咋打过去	za da guo qu	1
+找到捷克的	zhao dao jie ke de	1
+咋滴嘛	za di ma	1
+早得多了	zao de duo le	1
+直到那是	zhi dao na shi	1
+咋道歉	za dao qian	1
+做得不妥	zuo de bu tuo	1
+知道一下	zhi dao yi xia	1
+自动重启了	zi dong chong qi le	1
+脏多了	zang duo le	1
+转大弯	zhuan da wan	1
+自动联播	zi dong lian bo	1
+走得一身汗	zou de yi shen han	1
+这个题里	zhe ge ti li	1
+真过不下去了	zhen guo bu xia qu le	1
+做个备份	zuo ge bei fen	1
+走个过场	zou ge guo chang	1
+最贵的游戏	zui gui de you xi	1
+最高只支持	zui gao zhi zhi chi	1
+直个播	zhi ge bo	1
+中贵	zhong gui	1
+这个是否	zhe ge shi fou	1
+这个方块	zhe ge fang kuai	1
+做鬼屋	zuo gui wu	1
+咋干啥	za gan sha	1
+这个建筑	zhe ge jian zhu	1
+这个翻译	zhe ge fan yi	1
+祖国的关系	zu guo de guan xi	1
+正好考试	zheng hao kao shi	1
+再好看的老婆	zai hao kan de lao po	1
+整活	zheng huo	1
+咋玩呀	za wan ya	1
+总发出	zong fa chu	1
+中画质	zhong hua zhi	1
+正好到了	zheng hao dao le	1
+中午休息了	zhong wu xiu xi le	1
+再坏了	zai huai le	1
+置换一下	zhi huan yi xia	1
+折飞机	zhe fei ji	1
+最好使	zui hao shi	1
+在芬兰	zai fen lan	1
+总会给人	zong hui gei ren	1
+中午休息一下不	zhong wu xiu xi yi xia bu	1
+咋会没有	za hui mei you	1
+作文里头引用了	zuo wen li tou yin yong le	1
+自豪起来	zi hao qi lai	1
+支付宝里的	zhi fu bao li de	1
+知乎上面	zhi hu shang mian	1
+整完牙	zheng wan ya	1
+在进行多次	zai jin xing duo ci	1
+在家里呢	zai jia li ne	1
+这就属于	zhe jiu shu yu	1
+这几天放出来了	zhe ji tian fang chu lai le	1
+在记录中	zai ji lu zhong	1
+再进入	zai jin ru	1
+自己比	zi ji bi	1
+自己没他们帅	zi ji mei ta men shuai	1
+在加速	zai jia su	1
+再加速	zai jia su	1
+这就一	zhe jiu yi	1
+咋今天	za jin tian	1
+最近有点事	zui jin you dian shi	1
+自己急着	zi ji ji zhe	1
+最近的生活状况	zui jin de sheng huo zhuang kuang	1
+自己关机	zi ji guan ji	1
+自己的原因	zi ji de yuan yin	1
+真就觉得	zhen jiu jue de	1
+自己排	zi ji pai	1
+做精致	zuo jing zhi	1
+捉襟掣肘	zhuo jin che zhou	1
+暂居地	zan ju di	1
+自己饿死	zi ji e si	1
+自己还能	zi ji hai neng	1
+直接跪下了	zhi jie gui xia le	1
+最极致	zui ji zhi	1
+直接道歉	zhi jie dao qian	1
+这可就	zhe ke jiu	1
+坐困了	zuo kun le	1
+甄老师	zhen lao shi	1
+总能碰到	zong neng peng dao	1
+只能失误	zhi neng shi wu	1
+自留区	zi liu qu	1
+指令也有了	zhi ling ye you le	1
+最难搞的	zui nan gao de	1
+自然的样子	zi ran de yang zi	1
+在里屋	zai li wu	1
+罪呢	zui ne	1
+做了亏心事	zuo le kui xin shi	1
+植入了	zhi ru le	1
+渣男渣女	zha nan zha nv	1
+之里面	zhi li mian	1
+这论坛上	zhe lun tan shang	1
+猪灵	zhu ling	1
+站哪里	zhan na li	1
+造牛皮	zao niu pi	1
+诸如发	zhu ru fa	1
+咋哩好宝宝	za li hao bao bao	1
+在那听	zai na ting	1
+诸如一点	zhu ru yi dian	1
+专门除了	zhuan men chu le	1
+专门查	zhuan men cha	1
+种棉花	zhong mian hua	1
+这么搞的	zhe me gao de	1
+这么离谱	zhe me li pu	1
+最美女教师	zui mei nv jiao shi	1
+这么吧	zhe me ba	1
+怎么这么小	zen me zhe me xiao	1
+奏么斯	zou me si	1
+这么多箱子	zhe me duo xiang zi	1
+足模	zu mo	1
+怎么会事呢	zen me hui shi ne	1
+怎么不晓得	zen me bu xiao de	1
+这么色	zhe me se	1
+这么不经用	zhe me bu jing yong	1
+怎么会事	zen me hui shi	1
+怎么设施	zen me she shi	1
+之前也有过	zhi qian ye you guo	1
+之前就考虑	zhi qian jiu kao lv	1
+之前玩了一个	zhi qian wan le yi ge	1
+真奇异	zhen qi yi	1
+咋清灰	za qing hui	1
+之前有个啥	zhi qian you ge sha	1
+之前问他们	zhi qian wen ta men	1
+做事像个	zuo shi xiang ge	1
+这啥道理	zhe sha dao li	1
+知识盲区	zhi shi mang qu	1
+诸事顺意	zhu shi shun yi	1
+这上头	zhe shang tou	1
+卓叔	zhuo shu	1
+这是不是过了	zhe shi bu shi guo le	1
+这是报错信息	zhe shi bao cuo xin xi	1
+这是中文版	zhe shi zhong wen ban	1
+枕头枕歪了	zhen tou zhen wai le	1
+暂停了一样	zan ting le yi yang	1
+在探索	zai tan suo	1
+昨天我做了一个小手术	zuo tian wo zuo le yi ge xiao shou shu	1
+指头哥	zhi tou ge	1
+只听得懂	zhi ting de dong	1
+制图师	zhi tu shi	1
+赵甜甜	zhao tian tian	1
+咋涂	za tu	1
+咱学校的	zan xue xiao de	1
+长相没有	zhang xiang mei you	1
+只循环过	zhi xun huan guo	1
+准笑	zhun xiao	1
+整笑了	zheng xiao le	1
+追星的	zhui xing de	1
+咋洗漱	za xi shu	1
+转小弯	zhuan xiao wan	1
+咋消除	za xiao chu	1
+这些翻得	zhe xie fan de	1
+最新内容	zui xin nei rong	1
+做显卡	zuo xian ka	1
+注意的问题是	zhu yi de wen ti shi	1
+主要看宁	zhu yao kan ning	1
+咋又在	za you zai	1
+这样挺累的	zhe yang ting lei de	1
+最遥远的距离	zui yao yuan de ju li	1
+最遥远的	zui yao yuan de	1
+整牙齿	zheng ya chi	1
+张应该在	zhang ying gai zai	1
+终于每个人	zhong yu mei ge ren	1
+只有第三方	zhi you di san fang	1
+注意防护	zhu yi fang hu	1
+怎样处置	zen yang chu zhi	1
+直言不讳了	zhi yan bu hui le	1
+咋又开会	za you kai hui	1
+赵钇杰	zhao yi jie	1
+总有理由	zong you li you	1
+注意要带的	zhu yi yao dai de	1
+中央与	zhong yang yu	1
+真有这个	zhen you zhe ge	1
+资源的话	zi yuan de hua	1
+咋样效果	za yang xiao guo	1
+这一块都是	zhe yi kuai dou shi	1
+再也不想卖了	zai ye bu xiang mai le	1
+咋用哩	za yong li	1
+咋又称	za you cheng	1
+知云	zhi yun	1
+这也要被	zhe ye yao bei	1
+只有上午	zhi you shang wu	1
+种植园主	zhong zhi yuan zhu	1
+这照片上	zhe zhao pian shang	1
+真正毁灭者	zhen zheng hui mie zhe	1
+坐着聊天	zuo zhe liao tian	1
+这种食品	zhe zhong shi pin	1
+真正做事	zhen zheng zuo shi	1
+再综合	zai zong he	1
+政治局常委	zheng zhi ju chang wei	1
+张准备	zhang zhun bei	1
+正在吃早饭	zheng zai chi zao fan	1
+这这么多	zhe zhe me duo	1
+总砸我	zong za wo	1
+长这么高	zhang zhe me gao	1
+自主点	zi zhu dian	1
+早在这	zao zai zhe	1
+造在这	zao zai zhe	1
+总在奇怪的地方	zong zai qi guai de di fang	1
+咋造	za zao	1
+早知当	zao zhi dang	1

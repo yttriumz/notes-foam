@@ -1,0 +1,55 @@
+customization:
+  distribution_code_name: Weasel
+  distribution_version: 0.14.3_dev_0.8
+  generator: "Weasel::UIStyleSettings"
+  modified_time: "Fri Jun 24 21:26:31 2022"
+  rime_version: 1.7.3
+patch:
+  "preset_color_schemes/Pornhub":
+    author: YG777
+    back_color: 0x000000
+    border_color: 0x000000
+    border_color_width: 0
+    border_height: 4
+    border_width: 4
+    candidate_format: "%c %@"
+    candidate_shadow_color: 0xf8009BFF
+    candidate_text_color: 0xFFFFFF
+    comment_text_color: 0xFFFFFF
+    corner_radius: 5
+    font_face: PingFangSC
+    font_point: 17
+    hilited_back_color: 0x009BFF
+    hilited_candidate_label_color: 0xFFFFFF
+    hilited_candidate_text_color: 0x000000
+    hilited_comment_text_color: 0x000000
+    hilited_corner_radius: 5
+    hilited_text_color: 0x000000
+    horizontal: true
+    inline_preedit: true
+    label_color: 0xFFFFFF
+    label_font_face: "SFCompactText-Regular"
+    label_font_point: 13
+    name: "Mac自定义/Pornhub"
+    text_color: 0xFFFFFF
+  "style/color_font": true
+  "style/color_scheme": Pornhub
+  "style/comment_font_face": "TH-Tshyn-P0"
+  "style/comment_font_point": 10
+  "style/corner_radius": 5
+  "style/display_tray_icon": false
+  "style/font_face": "TH-Tshyn-P0"
+  "style/font_point": 14
+  "style/horizontal": false
+  "style/inline_preedit": true
+  "style/label_font_face": "隶书"
+  "style/label_font_point": 12
+  "style/layout/candidate_spacing": 12
+  "style/layout/margin_x": 9
+  "style/layout/margin_y": 8
+  "style/layout/round_corner": 10
+  "style/layout/shadow_offset_x": "-1"
+  "style/layout/shadow_offset_y": "-1"
+  "style/layout/shadow_radius": 3
+  "style/line_spacing": 12
+  us_keyboard_layout: true
