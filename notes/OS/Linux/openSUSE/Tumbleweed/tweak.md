@@ -1,33 +1,33 @@
 # Tweak openSUSE Tumbleweed on ThinkPad P1 Gen2
 
 - [Tweak openSUSE Tumbleweed on ThinkPad P1 Gen2](#tweak-opensuse-tumbleweed-on-thinkpad-p1-gen2)
-   - [Change hostname](#change-hostname)
-   - [Network settings](#network-settings)
-      - [WiFi](#wifi)
-   - [System update](#system-update)
-   - [Package management](#package-management)
-   - [Shell and terminal](#shell-and-terminal)
-      - [Bash](#bash)
-         - [Alias](#alias)
-      - [starship](#starship)
-      - [wezterm](#wezterm)
-   - [Graphics](#graphics)
-      - [Install driver and prime-select](#install-driver-and-prime-select)
-      - [If graphics driver or graphical desktop does not work](#if-graphics-driver-or-graphical-desktop-does-not-work)
-      - [Make applications running on NVidia card](#make-applications-running-on-nvidia-card)
-      - [Benchmark](#benchmark)
-   - [Codecs](#codecs)
-   - [Fingerprint](#fingerprint)
-   - [IR camera](#ir-camera)
-   - [Bluetooth](#bluetooth)
-   - [Font](#font)
-   - [Locale](#locale)
-   - [Input method](#input-method)
-      - [Rime](#rime)
-   - [Swappiness](#swappiness)
-   - [Grub2 theme](#grub2-theme)
-   - [KDE config](#kde-config)
-   - [Development environment](#development-environment)
+    - [Change hostname](#change-hostname)
+    - [Network settings](#network-settings)
+        - [WiFi](#wifi)
+    - [System update](#system-update)
+    - [Package management](#package-management)
+    - [Shell and terminal](#shell-and-terminal)
+        - [Bash](#bash)
+            - [Alias](#alias)
+        - [starship](#starship)
+        - [wezterm](#wezterm)
+    - [NVIDIA graphics card](#nvidia-graphics-card)
+        - [Install driver and prime-select](#install-driver-and-prime-select)
+        - [If graphics driver or graphical desktop does not work](#if-graphics-driver-or-graphical-desktop-does-not-work)
+        - [Make applications running on NVidia card](#make-applications-running-on-nvidia-card)
+        - [Benchmark](#benchmark)
+    - [Codecs](#codecs)
+    - [Fingerprint](#fingerprint)
+    - [IR camera](#ir-camera)
+    - [Bluetooth](#bluetooth)
+    - [Font](#font)
+    - [Locale](#locale)
+    - [Input method](#input-method)
+        - [Rime](#rime)
+    - [Swappiness](#swappiness)
+    - [Grub2 theme](#grub2-theme)
+    - [KDE config](#kde-config)
+    - [Development environment](#development-environment)
 
 References:
 
@@ -58,9 +58,7 @@ sudo zypper refresh
 sudo zypper dist-upgraded # optionally add "--no-recommends"
 ```
 
-**Note**:
-
-- An option `--no-recommends` can be added to only install required packages referring to [the Reddit post]( https://www.reddit.com/r/openSUSE/comments/10rnrnu/zypper_keeps_installing_kde_games_on_update_how/ ) and [the blog]( https://linuxkamarada.com/en/2021/04/07/what-are-recommended-packages-and-how-to-install-them-on-opensuse/ ).
+**Note**: An option `--no-recommends` can be added to only install required packages referring to [the Reddit post]( https://www.reddit.com/r/openSUSE/comments/10rnrnu/zypper_keeps_installing_kde_games_on_update_how/ ) and [the blog]( https://linuxkamarada.com/en/2021/04/07/what-are-recommended-packages-and-how-to-install-them-on-opensuse/ ).
 
 References:
 
@@ -130,7 +128,7 @@ References:
 ### starship
 
 1. Install CMake by `sudo zypper install cmake`.
-2. Install Rust. See [[Tumbleweed/dev_env]].
+2. Install Rust. See [[Tumbleweed/dev_env#Rust]].
 3. Then install starship by `cargo install starship --locked`.
 4. See [[shell#Starship]] for configuration.
 
@@ -139,7 +137,13 @@ References:
 1. Use *YaST* to install the stable version. Refer to [the official doc]( https://wezfurlong.org/wezterm/install/linux.html#installing-on-fedora-and-rpm-based-systems ) for the night version.
 2. See [[terminal#Wezterm]] for configuration.
 
-## Graphics
+**Note**: At the time of writing (*wezterm 20230326.111934.3666303c-1.1* in official repo), there is a bug that wezterm will leave a file `dhat-heap.json` in the directory where it's opened on. Installing the nightly version could solve the problem. You can install the nightly version by `zypper install https://github.com/wez/wezterm/releases/download/nightly/wezterm-nightly-opensuse_tumbleweed.rpm`.
+
+References:
+
+- https://wezfurlong.org/wezterm/install/linux.html#installing-on-fedora-and-rpm-based-systems
+
+## NVIDIA graphics card
 
 ### Install driver and prime-select
 
@@ -201,7 +205,7 @@ References for more:
    auth     sufficient      pam_fprintd.so
    ```
 
-   **NOTE**: you may have to re-config `/etc/pam.d/sddm` after system updates. Refer to [the official wiki](https://en.opensuse.org/SDB:Facial_authentication#Known_issues).
+   **NOTE**: You may have to re-config `/etc/pam.d/sddm` after system updates. Refer to [the official wiki](https://en.opensuse.org/SDB:Facial_authentication#Known_issues).
 
 4. Add the following config to `/etc/pam.d/kde` (create the file if there is no such file):
 
@@ -218,7 +222,9 @@ References:
 
 - [ ] set up facial auth
 
-Refer to [the wiki]( https://en.opensuse.org/SDB:Facial_authentication ).
+References:
+
+- https://en.opensuse.org/SDB:Facial_authentication
 
 ## Bluetooth
 
@@ -230,12 +236,11 @@ See [[fonts]].
 
 ## Locale
 
-Refer to [Arch wiki]( https://wiki.archlinux.org/title/Locale ).
-
 Change the system lock screen time format to 24H by adding `LC_TIME=C.UTF-8` to `/etc/locale.conf`.
 
-Alternatively, refer to these posts:
+References:
 
+- https://wiki.archlinux.org/title/Locale
 - https://askubuntu.com/questions/783184/how-to-display-kde-lock-screen-time-in-24-hour-format
 - https://forum.manjaro.org/t/changing-the-lock-screen-clock-theme/114424
 - https://www.reddit.com/r/kde/comments/kxr9qz/change_time_format_in_kde_lock_screen/
@@ -247,10 +252,35 @@ Alternatively, refer to these posts:
 1. Use `zypper install fcitx5-rime` to install.
 2. See [[rime#My config]] for configuration.
 
+**Note**:
+
+- `fcitx5-rime` is not responsible for the front end, which means `fcitx5.custom.yaml` does not control the look of the skin.
+- In order to display emoji correctly in the candidate list, add the following content to `~/.config/fontconfig/fonts.conf`:
+
+  ```xml
+  <match target="font">
+      <test name="family" compare="contains">
+          <string>Emoji</string>
+      </test>
+      <edit name="hinting" mode="assign">
+          <bool>true</bool>
+      </edit>
+      <edit name="hintstyle" mode="assign">
+          <const>hintslight</const>
+      </edit>
+      <edit name="embeddedbitmap" mode="assign">
+          <bool>true</bool>
+      </edit>
+  </match>
+  ```
+
 References:
 
 - https://rime.im/download/
 - https://github.com/fcitx/fcitx-rime
+- https://github.com/fkxxyz/rime-cloverpinyin/issues/50#issuecomment-835390794
+- https://bugs.freedesktop.org/show_bug.cgi?id=104542
+- https://www.freedesktop.org/software/fontconfig/fontconfig-user.html
 
 ## Swappiness
 
@@ -278,11 +308,12 @@ See [[Tumbleweed/dev_env]].
 [//begin]: # "Autogenerated link references for markdown compatibility"
 [packages]: packages.md "Package Management"
 [bash#Auto-completion for Alias]: ../../cross-distro/bash.md "Bash Usage"
-[Tumbleweed/dev_env]: dev_env.md "Development Environment"
+[Tumbleweed/dev_env#Rust]: dev_env.md "OpenSUSE Development Environment"
 [shell#Starship]: ../../../cross-platform/shell.md "Shell Related"
 [terminal#Wezterm]: ../../../cross-platform/terminal.md "Terminal Related"
 [cross-distro/bluetooth]: ../../cross-distro/bluetooth.md "Use the Same Bluetooth Device on Linux and Windows Dual Boot System"
 [fonts]: ../../../cross-platform/fonts.md "Fonts"
 [rime#My config]: ../../../cross-platform/rime.md "RIME | 中州韻輸入法引擎"
 [KDE]: ../../cross-distro/KDE.md "KDE Plasma Tweak"
+[Tumbleweed/dev_env]: dev_env.md "OpenSUSE Development Environment"
 [//end]: # "Autogenerated link references"

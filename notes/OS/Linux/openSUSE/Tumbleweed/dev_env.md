@@ -1,6 +1,6 @@
-# Development Environment
+# OpenSUSE Development Environment
 
-- [Development Environment](#development-environment)
+- [OpenSUSE Development Environment](#opensuse-development-environment)
    - [SSH](#ssh)
    - [git](#git)
    - [docker](#docker)
@@ -22,15 +22,15 @@
 
 ## SSH
 
-See [[SSH]]
+See [[SSH]] for configuration.
 
 ## git
 
-See [[git]]
+See [[git]] for configuration.
 
 ## docker
 
-1. Add *Virtualization:containers* repo. See [[packages#containers]]
+1. Add *Virtualization:containers* repo. See [[packages#containers]].
 2. Install docker using the following commands:
 
    ```bash
