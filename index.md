@@ -16,4 +16,4 @@ Enjoy your journey and I hope some of the notes help! :D
 
 ## Credits
 
-This notebook is built with the help of [Foam](https://github.com/foambubble/foam). You can read the Foam docs [here](docs/getting-started.md) or from the [official site](https://foambubble.github.io/foam/).
+This notebook is built with the help of [Foam](https://github.com/foambubble/foam). You can read the Foam documentation [here](foam_doc/getting-started.md) or from the [official site](https://foambubble.github.io/foam/).
