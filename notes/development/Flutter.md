@@ -1,9 +1,12 @@
 # Flutter
 
 - [Flutter](#flutter)
+	- [Docs](#docs)
 	- [Command line tool](#command-line-tool)
 	- [Dart project files](#dart-project-files)
 	- [Recommended Settings for VSCode](#recommended-settings-for-vscode)
+	- [Naming conventions](#naming-conventions)
+	- [Project structure](#project-structure)
 	- [Flutter with Rust](#flutter-with-rust)
 		- [flutter\_rust\_bridge](#flutter_rust_bridge)
 			- [Dependencies](#dependencies)
@@ -12,6 +15,12 @@
 			- [Build Rust code](#build-rust-code)
 				- [Automate the build process](#automate-the-build-process)
 			- [Template codes](#template-codes)
+
+## Docs
+
+- [Flutter documentation](https://docs.flutter.dev/)
+- [Learn Flutter any way you want](https://flutter.dev/learn)
+- [Flutter Samples](https://flutter.github.io/samples/#)
 
 ## Command line tool
 
@@ -88,6 +97,20 @@ References:
 References:
 
 - https://dartcode.org/docs/recommended-settings/
+
+## Naming conventions
+
+References:
+
+- [Naming Convention in Dart Programming Language Flutter](https://medium.com/@farhanaslam910/naming-convention-in-dart-programming-language-flutter-95feda7a8f4b)
+
+## Project structure
+
+References:
+
+- [Flutter – File Structure](https://www.geeksforgeeks.org/flutter-file-structure/)
+- [Flutter Project Structure: Feature-first or Layer-first?](https://codewithandrea.com/articles/flutter-project-structure/)
+- [Scalable Folder Structure for Flutter Applications](https://medium.com/flutter-community/scalable-folder-structure-for-flutter-applications-183746bdc320)
 
 ## Flutter with Rust
 

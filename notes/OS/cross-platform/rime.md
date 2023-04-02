@@ -1,8 +1,21 @@
 # [RIME | 中州韻輸入法引擎](https://rime.im/)
 
-## My config
+## System config
 
-See [the config folder](./attachments/rime/).
+System config files are located under:
+
+- Windows:
+- Linux: `/usr/share/rime-data/`
+
+## User config
+
+User config files are located under:
+
+- Windows:
+- Linux:
+    - fcitx5: `~/.local/share/fcitx5/rime/`
+
+Check [the config folder](./attachments/rime/) for configuration files.
 
 References:
 
