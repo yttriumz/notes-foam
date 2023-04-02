@@ -9,6 +9,7 @@
       - [Build and run NVidia GPU accelerated Docker containers](#build-and-run-nvidia-gpu-accelerated-docker-containers)
    - [Basic environment](#basic-environment)
    - [Android](#android)
+      - [Android Studio](#android-studio)
    - [C\_Cpp](#c_cpp)
    - [Flutter](#flutter)
    - [Go](#go)
@@ -79,8 +80,15 @@ sudo zypper install -t pattern devel_basis
 
 ## Android
 
+### Android Studio
+
 1. Download the package from [the official site](https://developer.android.com/studio).
-2. Extract and move the package to `/opt`.
+2. Extract and move the package to `/opt` by the following commands:
+
+   ```bash
+   sudo tar -zxvf DOWNLOADED_PACKAGE --directory=/opt
+   ```
+
 3. Add the following to `~/.bash_profile`:
 
    ```bash
@@ -90,8 +98,9 @@ sudo zypper install -t pattern devel_basis
    ```
 
 4. Run `/opt/android-studio/bin/studio.sh`.
-5. Install `cmdline-tools` from the studio. Go to *File >> Settings >> Appearance & Behavior >> System Settings >> Android SDK >> SDK Tools*.
-6. On the welcome page, press `ctrl`+`shift`+`a` and search "device". Create AVD using *Virtual Device Manager*.
+5. Install `cmdline-tools` from the studio. Go to *File > Settings > Appearance & Behavior > System Settings > Android SDK > SDK Tools*.
+6. (Optional) Install NDK [for building Rust code for Android](https://cjycode.com/flutter_rust_bridge/tutorial/setup_android.html#android-ndk). Go to *SDK Manager > SDK Tools > NDK (side by side)*.
+7. On the welcome page, press `ctrl`+`shift`+`a` and search "device". Create AVD using *Virtual Device Manager*.
 
 References:
 

@@ -2,7 +2,13 @@
 
 ## Release Note
 
-Refer to [the official site]( https://code.visualstudio.com/updates ).
+Refer to [the official site](https://code.visualstudio.com/updates).
+
+## Cloud Changes (Edit Session)
+
+References:
+
+- https://github.com/microsoft/vscode/pull/165877#issuecomment-1357545069
 
 ## Regex search and replace
 
