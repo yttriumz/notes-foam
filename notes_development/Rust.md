@@ -1,5 +1,10 @@
 # Rust
 
+## Docs and Refs
+
+- [cheat sheet](https://cheats.rs/)
+- https://t4wydfkrrq.feishu.cn/docx/doxcnM3juNBUJfxGcIWOfJRLk5g
+
 ## VSCode Config
 
 <!-- <details>
