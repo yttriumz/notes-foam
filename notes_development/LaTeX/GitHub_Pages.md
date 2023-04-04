@@ -12,11 +12,9 @@
     </script>
 </head>
 
-# $\LaTeX$ Issues
+# $\LaTeX$ on GitHub Pages
 
-## GitHub Page
-
-### Add the following code to the head of the markdown files
+## Add the following code to the head of the markdown files
 
 ```html
 <head>
@@ -40,7 +38,7 @@ References:
 - https://stackoverflow.com/questions/26275645/how-to-support-latex-in-github-pages
 - https://docs.mathjax.org/en/v2.7-latest/configuration.html#using-in-line-configuration-options
 
-### Wrap math expressions
+## Wrap math expressions
 
 Might need to wrap the math expressions with the following:
 
