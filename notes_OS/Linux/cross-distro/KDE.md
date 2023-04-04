@@ -7,17 +7,23 @@
 
 ## Recent files when right-clicking Firefox
 
-Open *System Settings* >> *Workspace Behavior* >> *Recent Files*.
+Open *System Settings > Workspace Behavior > Recent Files*.
 
 - https://www.reddit.com/r/kde/comments/ef17uq/dont_show_recent_documents_when_rightclicking_app/
 
+## Window focus stealing policy
+
+- Open *System Settings > Window Behavior > Focus > Focus stealing prevention*
+- Choose *None*
+
 ## Change Task Switcher
 
-Open *System Settings* >> *Window Management* >> *Task Switcher* >> Select *Thumbnails Grid*.
+- Open *System Settings > Window Management > Task Switcher*
+- Select *Thumbnails Grid*.
 
 ## Virtual Desktop Behavior
 
-Open *System Settings* >> *Window Management* >> *Window Behavior* >> *Advanced*.
+Open *System Settings > Window Management > Window Behavior > Advanced*.
 
 **Note**:
 
