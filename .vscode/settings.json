@@ -19,7 +19,7 @@
     "MD053": false,
     "MD010": false
   },
-  // "MarkdownPaste.path": "${fileWorkspaceFolder}/attachments",
-  "MarkdownPaste.path": "${fileDirname}/attachments",
+  // "MarkdownPaste.path": "${fileWorkspaceFolder}/attachment",
+  "MarkdownPaste.path": "${fileDirname}/attachment",
   "prettier.singleQuote": false,
 }
