@@ -21,6 +21,15 @@ References:
 - Discard all: `git restore .`
 - Discard a specific file: `git restore PATH_TO_THE_FILE`
 
+## Change commit messages
+
+- Change the last one by `git commit --amend`
+- [ ] Change multiple
+
+References:
+
+- [Changing a commit message](https://docs.github.com/en/pull-requests/committing-changes-to-your-project/creating-and-editing-commits/changing-a-commit-message)
+
 ## Hard reset remote repo
 
 After hard resetting the local repo, use `git push -f <remote> <branch-name>` to hard reset the remote repo.

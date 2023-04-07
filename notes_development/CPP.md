@@ -11,6 +11,7 @@
             - [`launch.json`](#launchjson)
             - [`tasks.json`](#tasksjson)
             - [`compile_flags.txt`](#compile_flagstxt)
+    - [array vs vector vs list](#array-vs-vector-vs-list)
 
 ## `.clang-format`
 
@@ -333,3 +334,9 @@ References:
 ```
 
 </details>
+
+## array vs vector vs list
+
+References:
+
+- [When to use arrays vs. vectors vs. lists?](https://www.reddit.com/r/cpp_questions/comments/5lqm5w/when_to_use_arrays_vs_vectors_vs_lists/)
