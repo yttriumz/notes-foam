@@ -2,6 +2,13 @@
 
 This note contains operation related tips. See [[cross-platform/git]] for configuration tips.
 
+- [Git Tips](#git-tips)
+    - [Commit message convention](#commit-message-convention)
+    - [Clone to a specific directory](#clone-to-a-specific-directory)
+    - [Discard unstaged changes](#discard-unstaged-changes)
+    - [Change commit messages](#change-commit-messages)
+    - [Hard reset remote repo](#hard-reset-remote-repo)
+
 ## Commit message convention
 
 References:
@@ -23,7 +30,7 @@ References:
 
 ## Change commit messages
 
-- Change the last one by `git commit --amend`
+- Change the last one: `git commit --amend`
 - [ ] Change multiple
 
 References:
