@@ -103,3 +103,12 @@ Here's how peer discovery typically works in libp2p:
 One key difference between libp2p and classical P2P networks is the use of multiple peer discovery protocols. In classical P2P networks, a single discovery protocol, such as a tracker or DHT, is typically used to discover other peers on the network. In contrast, libp2p uses a combination of protocols to provide robust and flexible peer discovery, with different protocols used depending on the specific network environment and context.
 
 Another difference is that libp2p is designed to be modular and extensible, with a wide range of components and protocols that can be customized and combined to suit different use cases. This makes it a flexible and adaptable solution for P2P networking in a variety of contexts, from file sharing to messaging to blockchain networks.
+
+## nostr
+
+### relay
+
+check global relays:
+
+- https://stats.nostr.band/
+- https://nostr.watch/relays/find

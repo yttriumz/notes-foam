@@ -6,4 +6,7 @@ References:
 
 ## Tools
 
-- https://www.ssavr.com
+- https://www.sharedrop.io/
+    - https://snapdrop.net/
+    - https://pairdrop.net/
+- https://www.ssavr.com/

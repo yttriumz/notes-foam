@@ -9,6 +9,7 @@
 	- [Recommended Settings for VSCode](#recommended-settings-for-vscode)
 	- [Naming conventions](#naming-conventions)
 	- [Project structure](#project-structure)
+	- [Recreate project](#recreate-project)
 	- [Flutter with Rust](#flutter-with-rust)
 		- [flutter\_rust\_bridge](#flutter_rust_bridge)
 			- [Dependencies](#dependencies)
@@ -132,6 +133,15 @@ References:
 - [Flutter – File Structure](https://www.geeksforgeeks.org/flutter-file-structure/)
 - [Flutter Project Structure: Feature-first or Layer-first?](https://codewithandrea.com/articles/flutter-project-structure/)
 - [Scalable Folder Structure for Flutter Applications](https://medium.com/flutter-community/scalable-folder-structure-for-flutter-applications-183746bdc320)
+
+## Recreate project
+
+- Delete all platform-specific folders such as `android`, `ios`, etc.
+- Run `flutter create .` from the directory where `pubspec.yaml` is located.
+
+References:
+
+- https://medium.com/@paulsean5/flutter-re-create-351eecf44e46
 
 ## Flutter with Rust
 
