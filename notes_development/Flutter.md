@@ -10,6 +10,8 @@
 	- [Naming conventions](#naming-conventions)
 	- [Project structure](#project-structure)
 	- [Recreate project](#recreate-project)
+	- [Release application](#release-application)
+		- [Android](#android)
 	- [Flutter with Rust](#flutter-with-rust)
 		- [flutter\_rust\_bridge](#flutter_rust_bridge)
 			- [Dependencies](#dependencies)
@@ -35,6 +37,7 @@
 - https://www.tutorialspoint.com/dart_programming/
 - https://dart-tutorial.com/
 - https://www.darttutorial.org/
+- https://www.bezkoder.com/dart-flutter-constructors/
 
 ## Command line tool
 
@@ -109,7 +112,8 @@ References:
 		// This results in code completion suggesting words when editing comments and
 		// strings. This setting will prevent that.
 		"editor.wordBasedSuggestions": false,
-	}
+	},
+    "dart.showTodos": false
 }
 ```
 
@@ -142,6 +146,14 @@ References:
 References:
 
 - https://medium.com/@paulsean5/flutter-re-create-351eecf44e46
+
+## Release application
+
+### Android
+
+References:
+
+- https://docs.flutter.dev/deployment/android
 
 ## Flutter with Rust
 

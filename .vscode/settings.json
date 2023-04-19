@@ -3,6 +3,7 @@
     "bootloader",
     "Btrfs",
     "coursier",
+    "cuda",
     "eduroam",
     "fcitx",
     "flatpak",
