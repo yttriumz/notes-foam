@@ -217,6 +217,11 @@ References:
 
 Download from [the official site](https://zoom.us/download?os=linux). `ibus` could be locked before installing.
 
+References:
+
+- https://support.zoom.us/hc/en-us/articles/204206269-Installing-or-updating-Zoom-on-Linux
+- https://www.reddit.com/r/openSUSE/comments/p4yhg0/does_anyone_here_know_of_a_good_guide_for/
+
 ## Become a Packager
 
 References:

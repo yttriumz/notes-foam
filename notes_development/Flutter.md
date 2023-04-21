@@ -151,6 +151,8 @@ References:
 
 ### Android
 
+- Release APK: `flutter build apk`.
+
 References:
 
 - https://docs.flutter.dev/deployment/android

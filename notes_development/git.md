@@ -9,6 +9,7 @@ This note contains operation related tips. See [[cross-platform/git]] for config
     - [Update an unchecked-out local branch from remote branch](#update-an-unchecked-out-local-branch-from-remote-branch)
     - [Hard reset remote branch](#hard-reset-remote-branch)
     - [Discard unstaged changes](#discard-unstaged-changes)
+    - [Stash changes](#stash-changes)
     - [Rename a branch](#rename-a-branch)
         - [Rename the checked-out local branch](#rename-the-checked-out-local-branch)
         - [Rename another local branch](#rename-another-local-branch)
@@ -53,7 +54,18 @@ After hard resetting the local repo, use `git push -f REMOTE_REPO BRANCH_NAME` t
 - Discard all: `git restore .`
 - Discard a specific file: `git restore PATH_TO_THE_FILE`
 
+## Stash changes
+
+- Stash changes by `git stash`.
+- Pop stash by `git stash pop`.
+
+References:
+
+- https://www.atlassian.com/git/tutorials/saving-changes/git-stash
+
 ## Rename a branch
+
+- [ ] todo
 
 ### Rename the checked-out local branch
 
