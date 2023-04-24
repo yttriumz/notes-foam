@@ -12,6 +12,8 @@
 	- [Recreate project](#recreate-project)
 	- [Release application](#release-application)
 		- [Android](#android)
+	- [Run on a real device](#run-on-a-real-device)
+		- [Hisense A5](#hisense-a5)
 	- [Flutter with Rust](#flutter-with-rust)
 		- [flutter\_rust\_bridge](#flutter_rust_bridge)
 			- [Dependencies](#dependencies)
@@ -156,6 +158,19 @@ References:
 References:
 
 - https://docs.flutter.dev/deployment/android
+
+## Run on a real device
+
+References:
+
+- https://appmaking.com/run-flutter-apps-on-android-device/
+
+### Hisense A5
+
+References:
+
+- https://nyko.me/2020/04/01/hisense-A6.html
+- https://wap.zol.com.cn/ask/x_607288.html
 
 ## Flutter with Rust
 
