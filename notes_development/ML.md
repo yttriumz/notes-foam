@@ -12,6 +12,65 @@ References:
 
 ### Use Tensorflow 2 in docker with VSCode
 
+#### `Dockerfile`
+
+```docker
+FROM tensorflow/tensorflow:2.11.1-gpu-jupyter
+
+RUN apt update
+RUN apt install -y graphviz
+# RUN mkdir /workspace
+# COPY ./requirements.txt /workspace/requirements.txt
+# RUN pip3 -q install pip --upgrade
+# RUN pip3 install -r /workspace/requirements.txt
+```
+
+#### `devcontainer.json`
+
+```json
+{
+    "name": "Tensorflow 2.11.1",
+    "context": "..",
+    "dockerFile": "../Dockerfile",
+    "customizations": {
+        "vscode": {
+            "settings": {},
+            "extensions": [
+                // git related
+                "donjayamanne.githistory",
+                // Markdown related
+                "bierner.github-markdown-preview",
+                "davidanson.vscode-markdownlint",
+                "takumii.markdowntable",
+                "yzhang.markdown-all-in-one",
+                // Python related
+                "ms-python.python",
+                "ms-toolsai.jupyter",
+                "visualstudioexptteam.vscodeintellicode",
+                "visualstudioexptteam.vscodeintellicode-completions",
+                // AI aid
+                "bito.bito",
+                "codeium.codeium",
+                "ktiays.aicursor",
+                // spell check
+                "streetsidesoftware.code-spell-checker",
+                "znck.grammarly",
+                // misc
+                "oderwat.indent-rainbow",
+                "gruntfuggly.todo-tree"
+            ]
+        }
+    },
+    "runArgs": [
+        // "-u",
+        // "$(id -u):$(id -g)",
+        "--runtime=nvidia",
+        "--gpus",
+        "all"
+    ]
+}
+```
+
 References:
 
 - [Machine Learning Container with GPU inside Visual Studio Code (Ubuntu)](https://madmenhitbooker.medium.com/machine-learning-container-with-gpu-inside-visual-studio-code-ubuntu-3233a2921462)

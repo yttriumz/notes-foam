@@ -9,7 +9,8 @@
             - [NVIDIA Container Toolkit](#nvidia-container-toolkit)
             - [CUDA](#cuda)
             - [M17N (Multilingualization)](#m17n-multilingualization)
-            - [Chrome](#chrome)
+            - [Google Chrome](#google-chrome)
+            - [Microsoft Edge](#microsoft-edge)
             - [Some repo reference](#some-repo-reference)
         - [Check repo](#check-repo)
         - [Set priority](#set-priority)
@@ -41,7 +42,7 @@ Note that after this, *YaST Software* may automatically select some NVidia drive
 
 #### VSCode
 
-Add *VSCode* repo (and install VSCode) by the following commands:
+Add *VSCode* repo (and install *VSCode*) by the following commands:
 
 ```bash
 sudo rpm --import https://packages.microsoft.com/keys/microsoft.asc
@@ -50,7 +51,9 @@ sudo zypper refresh
 sudo zypper install code
 ```
 
-Refer to [the wiki]( https://en.opensuse.org/Visual_Studio_Code#Install ) for more.
+References:
+
+- [Wiki](https://en.opensuse.org/Visual_Studio_Code#Install)
 
 #### containers
 
@@ -74,13 +77,13 @@ References:
     sudo zypper addrepo https://nvidia.github.io/libnvidia-container/sles15.1/libnvidia-container.repo
     ```
 
-2. Install NVIDIA Container Toolkit by the following commands:
+2. Install *NVIDIA Container Toolkit* by the following commands:
 
     ```bash
     sudo zypper install nvidia-container-toolkit
     ```
 
-3. Config docker by the following commands:
+3. Config *docker* by the following commands:
 
    ```bash
    sudo nvidia-ctk runtime configure --runtime=docker
@@ -119,13 +122,13 @@ Add *M17N* repo by the following commands:
 sudo zypper addrepo https://download.opensuse.org/repositories/M17N/openSUSE_Tumbleweed/M17N.repo
 ```
 
-#### Chrome
+#### Google Chrome
 
 Use the following commands:
 
 ```bash
 sudo rpm --import https://dl.google.com/linux/linux_signing_key.pub
-sudo zypper addrepo https://dl.google.com/linux/chrome/rpm/stable/x86_64 Google Chrome
+sudo zypper addrepo https://dl.google.com/linux/chrome/rpm/stable/x86_64 "Google Chrome"
 sudo zypper refresh
 sudo zypper install google-chrome-stable
 ```
@@ -134,6 +137,17 @@ References:
 
 - https://www.google.com/linuxrepositories/
 - https://linuxhint.com/installing-google-chrome-opensuse/
+
+#### Microsoft Edge
+
+Add *Microsoft Edge* repo (and install *Microsoft Edge*) by the following commands:
+
+```bash
+sudo rpm --import https://packages.microsoft.com/keys/microsoft.asc
+sudo zypper addrepo https://packages.microsoft.com/yumrepos/edge "Microsoft Edge"
+sudo zypper refresh
+sudo zypper install microsoft-edge-stable
+```
 
 #### Some repo reference
 

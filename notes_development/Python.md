@@ -1,12 +1,10 @@
 # Python
 
-## VSCode Config
-
-<!-- <details>
-<summary>json</summary> -->
+## VSCode workspace config
 
 ```json
 "[python]": {
+	"editor.formatOnSave": true,
     "editor.formatOnType": true
 },
 "python.analysis.autoImportCompletions": true,
@@ -23,13 +21,17 @@
 "python.linting.mypyEnabled": true,
 ```
 
-<!-- </details> -->
-
 ## Environment
 
 ### Virtual Environment
 
-- [how to activate venv]( https://docs.python.org/3/library/venv.html#how-venvs-work )
+#### Activate
+
+![venv_activate](attachments/venv_activate.png)
+
+References:
+
+- [How venvs work]( https://docs.python.org/3/library/venv.html#how-venvs-work )
 
 ### pip packages
 
