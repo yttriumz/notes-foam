@@ -44,6 +44,7 @@ RUN apt install -y graphviz
                 "takumii.markdowntable",
                 "yzhang.markdown-all-in-one",
                 // Python related
+                "ms-python.isort",
                 "ms-python.python",
                 "ms-toolsai.jupyter",
                 "visualstudioexptteam.vscodeintellicode",
