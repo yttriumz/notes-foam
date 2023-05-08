@@ -11,6 +11,7 @@
             - [M17N (Multilingualization)](#m17n-multilingualization)
             - [Google Chrome](#google-chrome)
             - [Microsoft Edge](#microsoft-edge)
+            - [Brave Browser](#brave-browser)
             - [Some repo reference](#some-repo-reference)
         - [Check repo](#check-repo)
         - [Set priority](#set-priority)
@@ -148,6 +149,21 @@ sudo zypper addrepo https://packages.microsoft.com/yumrepos/edge "Microsoft Edge
 sudo zypper refresh
 sudo zypper install microsoft-edge-stable
 ```
+
+#### Brave Browser
+
+Add *Brave* repo (and install *Brave*) by the following commands:
+
+```bash
+sudo rpm --import https://brave-browser-rpm-release.s3.brave.com/brave-core.asc
+sudo zypper addrepo https://brave-browser-rpm-release.s3.brave.com/brave-browser.repo
+sudo zypper refresh
+sudo zypper install brave-browser
+```
+
+References:
+
+- [Installing Brave on Linux](https://brave.com/linux/)
 
 #### Some repo reference
 

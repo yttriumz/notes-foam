@@ -1,5 +1,22 @@
 # Decentralization Related
 
+References:
+
+- https://yeasy.gitbook.io/blockchain_guide/
+
+## Bitcoin
+
+- [origin](https://www.metzdowd.com/pipermail/cryptography/2008-October/014810.html)
+- Paper:
+    - en: [Bitcoin: A Peer-to-Peer Electronic Cash System](https://bitcoin.org/bitcoin.pdf)
+    - zh_cn: [比特币：一种点对点电子货币系统](https://bitcoin.org/files/bitcoin-paper/bitcoin_zh_cn.pdf)
+- [Hashrate Distribution](https://www.blockchain.com/explorer/charts/pools)
+
+## Ethereum
+
+- [Ethereum Mainnet Statistics](https://ethernodes.org/)
+- [Solidity Programming Language](https://soliditylang.org/)
+
 ## How does peers in p2p network reach each other?
 
 In a peer-to-peer (P2P) network, peers communicate with each other directly rather than through a centralized server. In order for peers to reach each other, they must first discover each other's network addresses.

@@ -42,3 +42,8 @@ References:
 ## Data Engineering
 
 - [Feature Engineering: Scaling, Normalization, and Standardization](https://www.analyticsvidhya.com/blog/2020/04/feature-scaling-machine-learning-normalization-standardization/)
+
+## Interesting posts
+
+- [500 Lines or Less
+A Python Interpreter Written in Python](https://aosabook.org/en/500L/a-python-interpreter-written-in-python.html)
