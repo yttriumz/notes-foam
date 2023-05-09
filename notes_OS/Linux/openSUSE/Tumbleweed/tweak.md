@@ -48,7 +48,7 @@ sudo hostnamectl hostname SOME_HOSTNAME
 
 ### WiFi
 
-- eduroam: refer to [the HKUST ITSC guide]( https://itsc.hkust.edu.hk/services/general-it-services/wifi/wi-fi-services/configuration-eduroam ).
+- eduroam: refer to [the HKUST ITSC guide](https://itsc.hkust.edu.hk/services/general-it-services/wifi/wi-fi-services/configuration-eduroam).
 
 ## System update
 
@@ -59,7 +59,7 @@ sudo zypper refresh
 sudo zypper dist-upgraded # optionally add "--no-recommends"
 ```
 
-**Note**: An option `--no-recommends` can be added to only install required packages referring to [the Reddit post]( https://www.reddit.com/r/openSUSE/comments/10rnrnu/zypper_keeps_installing_kde_games_on_update_how/ ) and [the blog]( https://linuxkamarada.com/en/2021/04/07/what-are-recommended-packages-and-how-to-install-them-on-opensuse/ ).
+**Note**: An option `--no-recommends` can be added to only install required packages referring to [the Reddit post](https://www.reddit.com/r/openSUSE/comments/10rnrnu/zypper_keeps_installing_kde_games_on_update_how/) and [the blog](https://linuxkamarada.com/en/2021/04/07/what-are-recommended-packages-and-how-to-install-them-on-opensuse/).
 
 References:
 
@@ -135,7 +135,7 @@ References:
 
 ### wezterm
 
-1. Use *YaST* to install the stable version. Refer to [the official doc]( https://wezfurlong.org/wezterm/install/linux.html#installing-on-fedora-and-rpm-based-systems ) for the night version.
+1. Use *YaST* to install the stable version. Refer to [the official doc](https://wezfurlong.org/wezterm/install/linux.html#installing-on-fedora-and-rpm-based-systems) for the night version.
 
    **Note**: At the time of writing (*wezterm 20230326.111934.3666303c-1.1* in official repo), **if you install wezterm using `zypper install wezterm` from openSUSE's repo**, there is a bug that wezterm leaves a file `dhat-heap.json` in the directory where it's opened on. Directly installing the official package could solve the problem. You can install the nightly version by `zypper install https://github.com/wez/wezterm/releases/download/nightly/wezterm-nightly-opensuse_tumbleweed.rpm`. Or you can go to [the official site](https://wezfurlong.org/wezterm/install/linux.html#installing-on-fedora-and-rpm-based-systems) to find the latest stable version.
 
@@ -174,24 +174,27 @@ References:
 
 ### Benchmark
 
-Refer to [Arch wiki]( https://wiki.archlinux.org/title/benchmarking#Graphics ).
+Refer to [Arch wiki](https://wiki.archlinux.org/title/benchmarking#Graphics).
 
 ## Codecs
 
-Refer to [the wiki]( https://en.opensuse.org/SDB:Firefox_MP4/H.264_Video_Support ) to enable firefox to play HTML5 videos. For my machine I just installed the following packages from the *Packman* repository:
+Refer to [the wiki](https://en.opensuse.org/SDB:Firefox_MP4/H.264_Video_Support) to enable firefox to play HTML5 videos.
 
-- `libavcodec56`, `libavcodec57`, `libavcodec58`, `libavformat56`, `libavformat57`, `libavformat58`, `libavdevice56`, `libavdevice57`, `libavdevice58`
+- Method 1: For my machine I just installed the following packages from the *Packman* repository:
+  - `libavcodec56`, `libavcodec57`, `libavcodec58`, `libavformat56`, `libavformat57`, `libavformat58`, `libavdevice56`, `libavdevice57`, `libavdevice58`
+- Method 2: Use `opi codecs`.
 
-References for more:
+References:
 
 - https://en.opensuse.org/SDB:Installing_codecs_from_Packman_repositories
 - https://opensuse.github.io/openSUSE-docs-revamped-temp/codecs/
-- https://www.reddit.com/r/openSUSE/comments/u0myze/some_youtube_videos_dont_play_on_firefox/
+- [some youtube videos don't play on firefox](https://www.reddit.com/r/openSUSE/comments/u0myze/some_youtube_videos_dont_play_on_firefox/)
 - [openSUSE Simplifies Codec Installation](https://news.opensuse.org/2023/01/24/opensuse-simplifies-codec-install/)
+- [I've been using OpenSuse Tumbleweed for 40 days. My experience. Great for gaming.](https://www.youtube.com/watch?v=owOSnus9XU0)
 
 ## Fingerprint
 
-1. Check whether the device is supported from [the official page]( https://fprint.freedesktop.org/supported-devices.html ). Unsupported devices can be found [here]( https://gitlab.freedesktop.org/libfprint/wiki/-/wikis/Unsupported%20Devices ).
+1. Check whether the device is supported from [the official page](https://fprint.freedesktop.org/supported-devices.html). Unsupported devices can be found [here](https://gitlab.freedesktop.org/libfprint/wiki/-/wikis/Unsupported%20Devices).
 
    USB Device info can be checked via `lsusb` or *Info Center* >> *Devices* >> *USB Devices*.
 2. Install `fprintd` and `fprintd-pam`.
