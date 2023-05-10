@@ -14,7 +14,7 @@
     - [NVIDIA graphics card](#nvidia-graphics-card)
         - [Install driver and prime-select](#install-driver-and-prime-select)
         - [If graphics driver or graphical desktop does not work](#if-graphics-driver-or-graphical-desktop-does-not-work)
-        - [Make applications running on NVidia card](#make-applications-running-on-nvidia-card)
+        - [Make applications run on NVidia card](#make-applications-run-on-nvidia-card)
         - [Benchmark](#benchmark)
     - [Codecs](#codecs)
     - [Fingerprint](#fingerprint)
@@ -147,7 +147,7 @@ References:
 
 On my machine (*ThinkPad P1 Gen2 with T2000*), I installed `x11-video-nvidiaG05` and `suse-prime`.
 
-**Note**: `nvidia-driver-G06-kmp-default` does not work. But it might work later or on other machines.
+**Note**: At the time of writing (*Tumbleweed 20230429*), `nvidia-video-G06` does not work. But it might work later or on other machines.
 
 References for more:
 
@@ -162,7 +162,7 @@ References for more:
 - Press `Ctrl-Alt-F2` to switch to virtual terminal 2.
 - Press `Ctrl+Alt+F7` to switch back to the graphical desktop.
 
-### Make applications running on NVidia card
+### Make applications run on NVidia card
 
 Use `__NV_PRIME_RENDER_OFFLOAD=1 __VK_LAYER_NV_optimus=NVIDIA_only __GLX_VENDOR_LIBRARY_NAME=nvidia SOME_APP_COMMAND`.
 
