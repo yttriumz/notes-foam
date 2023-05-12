@@ -7,12 +7,11 @@ This note contains operation related tips. See [[cross-platform/git]] for config
     - [Change commit messages](#change-commit-messages)
     - [Clone to a specific directory](#clone-to-a-specific-directory)
     - [Update an unchecked-out local branch from remote branch](#update-an-unchecked-out-local-branch-from-remote-branch)
-    - [Hard reset remote branch](#hard-reset-remote-branch)
     - [Discard unstaged changes](#discard-unstaged-changes)
     - [Stash changes](#stash-changes)
-    - [Rename a branch](#rename-a-branch)
-        - [Rename the checked-out local branch](#rename-the-checked-out-local-branch)
-        - [Rename another local branch](#rename-another-local-branch)
+    - [Rename branch](#rename-branch)
+    - [Change repo remote origin](#change-repo-remote-origin)
+    - [Hard reset remote branch](#hard-reset-remote-branch)
     - [墙国专属](#墙国专属)
         - [Change `hosts`](#change-hosts)
         - [Set proxy](#set-proxy)
@@ -45,10 +44,6 @@ References:
 
 Use `git fetch REMOTE_REPO REMOTE_BRANCH:LOCAL_BRANCH`.
 
-## Hard reset remote branch
-
-After hard resetting the local repo, use `git push -f REMOTE_REPO BRANCH_NAME` to hard reset the remote repo.
-
 ## Discard unstaged changes
 
 - Discard all: `git restore .`
@@ -63,17 +58,22 @@ References:
 
 - https://www.atlassian.com/git/tutorials/saving-changes/git-stash
 
-## Rename a branch
+## Rename branch
 
-- [ ] todo
+- Rename checked-out local branch: Use `git branch --move NEW_BRANCH_NAME`.
+- Rename unchecked-out local branch: Use `git branch --move BRANCH_NAME NEW_BRANCH_NAME`.
 
-### Rename the checked-out local branch
+## Change repo remote origin
 
-Use `git branch --move NEW_BRANCH_NAME`.
+Use `git remote set-url REMOTE_NAME NEW_URL`.
 
-### Rename another local branch
+References:
 
-Use `git branch --move BRANCH_NAME NEW_BRANCH_NAME`.
+- [How To Change Git Remote Origin](https://devconnected.com/how-to-change-git-remote-origin/)
+
+## Hard reset remote branch
+
+After hard resetting the local repo, use `git push -f REMOTE_REPO BRANCH_NAME` to hard reset the remote repo.
 
 ## 墙国专属
 
@@ -89,6 +89,8 @@ Get `hosts` from the following sites:
 ### Set proxy
 
 #### Linux
+
+- [ ] todo
 
 References:
 
