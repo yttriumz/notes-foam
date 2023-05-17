@@ -25,6 +25,7 @@
     - [Input method](#input-method)
         - [Rime](#rime)
     - [Swappiness](#swappiness)
+    - [Power management](#power-management)
     - [Grub2 theme](#grub2-theme)
     - [KDE config](#kde-config)
     - [Disable middle click](#disable-middle-click)
@@ -292,6 +293,10 @@ References:
   vm.swappiness=YOU_DESIRED_VALUE
   ```
 
+## Power management
+
+See [[power]] for power saving config.
+
 ## Grub2 theme
 
 1. Go to https://k1ng.dev/distro-grub-themes/preview and download a theme.
@@ -319,6 +324,7 @@ See [[Tumbleweed/dev_env]].
 [cross-distro/bluetooth]: ../../cross-distro/bluetooth.md "Use the Same Bluetooth Device on Linux and Windows Dual Boot System"
 [fonts]: ../../../cross-platform/fonts.md "Fonts"
 [rime#User config]: ../../../cross-platform/rime.md "RIME | 中州韻輸入法引擎"
+[power]: ../../cross-distro/power.md "Power Management"
 [KDE]: ../../cross-distro/KDE.md "KDE Plasma Tweak"
 [Xorg#Disable middle click using ]: ../../../cross-platform/Xorg.md "X.Org"
 [Tumbleweed/dev_env]: dev_env.md "OpenSUSE Development Environment"
