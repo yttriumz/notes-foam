@@ -174,7 +174,11 @@ References for more:
 
 - Press `Ctrl+Alt+F2` to switch to virtual terminal 2.
 - Press `Ctrl+Alt+F7` to switch back to the graphical desktop.
-- Uninstall
+- Completely uninstall `nvidia-video-G06` (or `nvidia-drivers-G06`) via the following commands:
+
+  ```bash
+  zypper remove --clean-deps nvidia-drivers-G06 nvidia-video-G06 nvidia-driver-G06-kmp-default
+  ```
 
 ### Make applications run on NVidia card
 

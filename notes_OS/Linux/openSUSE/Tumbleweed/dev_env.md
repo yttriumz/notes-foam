@@ -18,7 +18,7 @@
    - [Rust](#rust)
    - [Scala](#scala)
    - [Machine Learning](#machine-learning)
-      - [Tensorflow 2](#tensorflow-2)
+      - [TensorFlow 2](#tensorflow-2)
 
 ## SSH
 
@@ -199,22 +199,22 @@ References:
 
 ## Machine Learning
 
-### Tensorflow 2
+### TensorFlow 2
 
-It is recommended to run tensorflow 2 in a container.
+It is recommended to run TensorFlow 2 in a container.
 
 1. Install docker. See [docker](#docker).
 2. Install NVIDIA Container Toolkit. See [[packages#NVIDIA Container Toolkit]].
-3. Install tensorflow 2 by the following commands:
+3. Install TensorFlow 2 via the following commands:
 
    ```bash
    sudo docker pull tensorflow/tensorflow:latest-gpu-jupyter
    ```
 
-4. Verify installation by the following commands:
+4. Verify installation via the following commands:
 
    ```bash
-   docker run --rm --runtime=nvidia --gpus all --rm tensorflow/tensorflow:latest-gpu-jupyter nvidia-smi
+   docker run --runtime=nvidia --gpus all --rm tensorflow/tensorflow:latest-gpu-jupyter nvidia-smi
    ```
 
 References:
