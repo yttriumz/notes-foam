@@ -202,7 +202,7 @@ References:
 
 References:
 
-- https://forums.opensuse.org/t/cleanup-of-distribution-upgrades/152148
+- [Cleanup of distribution upgrades](https://forums.opensuse.org/t/cleanup-of-distribution-upgrades/152148)
 
 #### Installation History
 
@@ -278,7 +278,7 @@ References:
 ### Interesting posts
 
 - [Flatpak Is Not the Future](https://ludocode.com/blog/flatpak-is-not-the-future)
-- [Flatpak Is Not the Future | Hacker News](https://news.ycombinator.com/item?id=29316024)
+- [Hacker News discussion](https://news.ycombinator.com/item?id=29316024)
 
 ## Become a Packager
 
