@@ -1,7 +1,7 @@
 # Package Management
 
 - [Package Management](#package-management)
-    - [Repository management](#repository-management)
+    - [Zypper](#zypper)
         - [Add repo](#add-repo)
             - [Packman and NVidia](#packman-and-nvidia)
             - [VSCode](#vscode)
@@ -12,24 +12,29 @@
             - [Google Chrome](#google-chrome)
             - [Microsoft Edge](#microsoft-edge)
             - [Brave Browser](#brave-browser)
+        - [Examine repo](#examine-repo)
             - [Some repo reference](#some-repo-reference)
-        - [Check repo](#check-repo)
         - [Set priority](#set-priority)
-    - [Package Query](#package-query)
-        - [Unused Packages](#unused-packages)
-        - [Installation History](#installation-history)
-        - [Package Dependency](#package-dependency)
-    - [Lock](#lock)
-        - [Lock packages](#lock-packages)
-        - [Lock patterns](#lock-patterns)
-        - [List locks](#list-locks)
-    - [Flatpak](#flatpak)
-        - [Interesting posts](#interesting-posts)
+        - [Package query](#package-query)
+            - [Unused Packages](#unused-packages)
+            - [Installation History](#installation-history)
+            - [Package Dependency](#package-dependency)
+        - [Lock](#lock)
+            - [Lock packages](#lock-packages)
+            - [Lock patterns](#lock-patterns)
+            - [List locks](#list-locks)
     - [Install rpm](#install-rpm)
         - [Zoom](#zoom)
+        - [Motrix download manager](#motrix-download-manager)
+    - [OBS Package Installer (OPI)](#obs-package-installer-opi)
+        - [Install OPI](#install-opi)
+    - [Flatpak](#flatpak)
+        - [Install Flatpak](#install-flatpak)
+        - [Add repo](#add-repo-1)
+        - [Interesting posts](#interesting-posts)
     - [Become a Packager](#become-a-packager)
 
-## Repository management
+## Zypper
 
 Refer to [the wiki]( https://en.opensuse.org/Package_repositories ) for more.
 
@@ -43,14 +48,16 @@ Note that after this, *YaST Software* may automatically select some NVidia drive
 
 #### VSCode
 
-Add *VSCode* repo (and install *VSCode*) by the following commands:
+- Add *VSCode* repo (and install *VSCode*) by the following commands:
 
-```bash
-sudo rpm --import https://packages.microsoft.com/keys/microsoft.asc
-sudo zypper addrepo https://packages.microsoft.com/yumrepos/vscode VSCode
-sudo zypper refresh
-sudo zypper install code
-```
+  ```bash
+  sudo rpm --import https://packages.microsoft.com/keys/microsoft.asc
+  sudo zypper addrepo https://packages.microsoft.com/yumrepos/vscode VSCode
+  sudo zypper refresh
+  sudo zypper install code
+  ```
+
+- Use `opi vscode`.
 
 References:
 
@@ -72,17 +79,17 @@ References:
 
 1. Add *NVIDIA Container Toolkit* repo by the following commands:
 
-    ```bash
-    sudo zypper addrepo https://nvidia.github.io/libnvidia-container/opensuse-leap15.1/libnvidia-container.repo
-    # The following one is the same
-    sudo zypper addrepo https://nvidia.github.io/libnvidia-container/sles15.1/libnvidia-container.repo
-    ```
+   ```bash
+   sudo zypper addrepo https://nvidia.github.io/libnvidia-container/opensuse-leap15.1/libnvidia-container.repo
+   # The following one is the same
+   sudo zypper addrepo https://nvidia.github.io/libnvidia-container/sles15.1/libnvidia-container.repo
+   ```
 
 2. Install *NVIDIA Container Toolkit* by the following commands:
 
-    ```bash
-    sudo zypper install nvidia-container-toolkit
-    ```
+   ```bash
+   sudo zypper install nvidia-container-toolkit
+   ```
 
 3. Config *docker* by the following commands:
 
@@ -108,12 +115,12 @@ References:
 Add *CUDA* repo by the following commands:
 
 ```bash
-sudo ypper addrepo -p 100 https://developer.download.nvidia.com/compute/cuda/repos/opensuse15/x86_64/cuda-opensuse15.repo
+sudo zypper addrepo -p 100 https://developer.download.nvidia.com/compute/cuda/repos/opensuse15/x86_64/cuda-opensuse15.repo
 ```
 
 References:
 
-- https://www.reddit.com/r/openSUSE/comments/gaihe9/cuda_on_tumbleweed/
+- [CUDA on Tumbleweed](https://www.reddit.com/r/openSUSE/comments/gaihe9/cuda_on_tumbleweed/)
 
 #### M17N (Multilingualization)
 
@@ -125,63 +132,71 @@ sudo zypper addrepo https://download.opensuse.org/repositories/M17N/openSUSE_Tum
 
 #### Google Chrome
 
-Use the following commands:
+- Use the following commands:
 
-```bash
-sudo rpm --import https://dl.google.com/linux/linux_signing_key.pub
-sudo zypper addrepo https://dl.google.com/linux/chrome/rpm/stable/x86_64 "Google Chrome"
-sudo zypper refresh
-sudo zypper install google-chrome-stable
-```
+  ```bash
+  sudo rpm --import https://dl.google.com/linux/linux_signing_key.pub
+  sudo zypper addrepo https://dl.google.com/linux/chrome/rpm/stable/x86_64 "Google Chrome"
+  sudo zypper refresh
+  sudo zypper install google-chrome-stable
+  ```
+
+- Use `opi chrome`.
 
 References:
 
 - https://www.google.com/linuxrepositories/
-- https://linuxhint.com/installing-google-chrome-opensuse/
+- [Installing Google Chrome in openSUSE](https://linuxhint.com/installing-google-chrome-opensuse/)
 
 #### Microsoft Edge
 
-Add *Microsoft Edge* repo (and install *Microsoft Edge*) by the following commands:
+- Add *Microsoft Edge* repo (and install *Microsoft Edge*) by the following commands:
 
-```bash
-sudo rpm --import https://packages.microsoft.com/keys/microsoft.asc
-sudo zypper addrepo https://packages.microsoft.com/yumrepos/edge "Microsoft Edge"
-sudo zypper refresh
-sudo zypper install microsoft-edge-stable
-```
+  ```bash
+  sudo rpm --import https://packages.microsoft.com/keys/microsoft.asc
+  sudo zypper addrepo https://packages.microsoft.com/yumrepos/edge "Microsoft Edge"
+  sudo zypper refresh
+  sudo zypper install microsoft-edge-stable
+  ```
+
+- Use `opi msedge`.
 
 #### Brave Browser
 
-Add *Brave* repo (and install *Brave*) by the following commands:
+- Add *Brave* repo (and install *Brave*) by the following commands:
 
-```bash
-sudo rpm --import https://brave-browser-rpm-release.s3.brave.com/brave-core.asc
-sudo zypper addrepo https://brave-browser-rpm-release.s3.brave.com/brave-browser.repo
-sudo zypper refresh
-sudo zypper install brave-browser
-```
+  ```bash
+  sudo rpm --import https://brave-browser-rpm-release.s3.brave.com/brave-core.asc
+  sudo zypper addrepo https://brave-browser-rpm-release.s3.brave.com/brave-browser.repo
+  sudo zypper refresh
+  sudo zypper install brave-browser
+  ```
+
+- Use `opi brave`.
 
 References:
 
 - [Installing Brave on Linux](https://brave.com/linux/)
 
+### Examine repo
+
+- Use *YaST*.
+- Use `zypper repos -P`.
+
 #### Some repo reference
 
 ![repos](attachments/Screenshot%202023-02-13%20151118.png)
 
-### Check repo
-
-Use *YaST* or `zypper repos -P`.
-
 ### Set priority
 
-Use *YaST* or `zypper modifyrepo -p`.
+- Use *YaST*.
+- Use `zypper modifyrepo -p`.
 
-## Package Query
+### Package query
 
-### Unused Packages
+#### Unused Packages
 
-1. Use `zypper packages --unneeded` to check.
+1. Use `zypper packages --unneeded` to examine.
 
 2. Use `zypper packages --unneeded | grep ^i | cut -d '|' -f3 | xargs sudo zypper rm --clean-deps --no-confirm` to uninstall.
 
@@ -189,68 +204,81 @@ References:
 
 - https://forums.opensuse.org/t/cleanup-of-distribution-upgrades/152148
 
-### Installation History
+#### Installation History
 
 The history can be found in `/var/log/zypp/history`. Root permission might be needed.
 
-### Package Dependency
+#### Package Dependency
 
 - Use `zypper info --requires SOME_PACKAGE` to check `SOME_PACKAGE`'s dependency.
 - Use `zypper search --requires SOME_PACKAGE` to obtain packages that needs `SOME_PACKAGE`.
 
-## Lock
+### Lock
 
-### Lock packages
+#### Lock packages
 
 - *YaST* can be used.
+- Use `zypper addlock SOME_PACKAGE`.
 
-### Lock patterns
+#### Lock patterns
 
-- [ ] todo
+Use `zypper addlock --type pattern SOME_PATTERN`.
 
-### List locks
+#### List locks
 
 Use `zypper locks`.
 
+## Install rpm
+
+Use `zypper install PATH_TO_RPM`.
+
+References:
+
+- https://opensuse-guide.org/installpackage.php
+- [how to install RPM files](https://forums.opensuse.org/t/how-to-install-rpm-files/24479)
+
+### Zoom
+
+- Install the package from [the official site](https://zoom.us/download?os=linux). `ibus` could be locked before installing.
+- Use `opi zoom`.
+
+References:
+
+- https://support.zoom.us/hc/en-us/articles/204206269-Installing-or-updating-Zoom-on-Linux
+- [Does anyone here know of a good guide for installing zoom?](https://www.reddit.com/r/openSUSE/comments/p4yhg0/does_anyone_here_know_of_a_good_guide_for/)
+
+### Motrix download manager
+
+Install the package from [the official site](https://github.com/agalwood/Motrix/releases).
+
+## OBS Package Installer (OPI)
+
+### Install OPI
+
+Use `zypper install opi`.
+
 ## Flatpak
 
-Install *Flatpak* by the following commands:
+### Install Flatpak
 
-```bash
-sudo zypper in flatpak
+Use `zypper install flatpak`.
 
-```
+### Add repo
 
-Add *flathub* repo by the following commands:
+Use the following commands:
 
 ```bash
 flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
 ```
 
-Refer to [the community guide]( https://opensuse.github.io/openSUSE-docs-revamped-temp/best_of_post/#setup-your-tumbleweed-for-flatpaks ) for more.
+References:
+
+- [The community guide]( https://opensuse.github.io/openSUSE-docs-revamped-temp/best_of_post/#setup-your-tumbleweed-for-flatpaks )
 
 ### Interesting posts
 
 - [Flatpak Is Not the Future](https://ludocode.com/blog/flatpak-is-not-the-future)
 - [Flatpak Is Not the Future | Hacker News](https://news.ycombinator.com/item?id=29316024)
-
-## Install rpm
-
-Use `zypper install /path/to/manually/downloaded.rpm`.
-
-References:
-
-- https://opensuse-guide.org/installpackage.php
-- https://forums.opensuse.org/t/how-to-install-rpm-files/24479
-
-### Zoom
-
-Download from [the official site](https://zoom.us/download?os=linux). `ibus` could be locked before installing.
-
-References:
-
-- https://support.zoom.us/hc/en-us/articles/204206269-Installing-or-updating-Zoom-on-Linux
-- https://www.reddit.com/r/openSUSE/comments/p4yhg0/does_anyone_here_know_of_a_good_guide_for/
 
 ## Become a Packager
 

@@ -33,7 +33,6 @@ Refer to [complete-alias](https://github.com/cykerway/complete-alias) for more.
 1. Save the following to `~/.bash_aliases_completion`:
 
    <details>
-   <summary>script</summary>
 
    ```bash
    #!/bin/bash
