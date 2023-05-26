@@ -1,40 +1,40 @@
 # Tweak openSUSE Tumbleweed on ThinkPad P1 Gen2
 
 - [Tweak openSUSE Tumbleweed on ThinkPad P1 Gen2](#tweak-opensuse-tumbleweed-on-thinkpad-p1-gen2)
-    - [Change hostname](#change-hostname)
-    - [Network settings](#network-settings)
-        - [WiFi](#wifi)
-    - [System update](#system-update)
-    - [Package management](#package-management)
-    - [Shell and terminal](#shell-and-terminal)
-        - [Bash](#bash)
-            - [Alias](#alias)
-                - [Modify `.bash_aliases`](#modify-bash_aliases)
-                - [Modify `.bashrc`](#modify-bashrc)
-                - [auto-completion for aliases](#auto-completion-for-aliases)
-        - [starship](#starship)
-        - [wezterm](#wezterm)
-    - [NVIDIA graphics card](#nvidia-graphics-card)
-        - [Install driver and prime-select](#install-driver-and-prime-select)
-        - [If graphics driver or graphical desktop does not work](#if-graphics-driver-or-graphical-desktop-does-not-work)
-        - [Make applications run on NVidia card](#make-applications-run-on-nvidia-card)
-        - [Benchmark](#benchmark)
-    - [Codecs](#codecs)
-    - [Fingerprint](#fingerprint)
-    - [IR camera](#ir-camera)
-    - [Bluetooth](#bluetooth)
-    - [Font](#font)
-    - [Locale](#locale)
-    - [Input method](#input-method)
-        - [Rime](#rime)
-    - [Swappiness](#swappiness)
-    - [Power management](#power-management)
-    - [Grub2 theme](#grub2-theme)
-    - [KDE config](#kde-config)
-    - [Mouse](#mouse)
-        - [Disable middle click](#disable-middle-click)
-        - [Scroll speed](#scroll-speed)
-    - [Development environment](#development-environment)
+  - [Change hostname](#change-hostname)
+  - [Network settings](#network-settings)
+    - [WiFi](#wifi)
+  - [System update](#system-update)
+  - [Package management](#package-management)
+  - [Shell and terminal](#shell-and-terminal)
+    - [Bash](#bash)
+      - [Alias](#alias)
+        - [Modify `.bash_aliases`](#modify-bash_aliases)
+        - [Modify `.bashrc`](#modify-bashrc)
+        - [auto-completion for aliases](#auto-completion-for-aliases)
+    - [starship](#starship)
+    - [wezterm](#wezterm)
+  - [NVIDIA graphics card](#nvidia-graphics-card)
+    - [Install driver and prime-select](#install-driver-and-prime-select)
+    - [If graphics driver or graphical desktop does not work](#if-graphics-driver-or-graphical-desktop-does-not-work)
+    - [Make applications run on NVidia card](#make-applications-run-on-nvidia-card)
+    - [Benchmark](#benchmark)
+  - [Codecs](#codecs)
+  - [Fingerprint](#fingerprint)
+  - [IR camera](#ir-camera)
+  - [Bluetooth](#bluetooth)
+  - [Font](#font)
+  - [Locale](#locale)
+  - [Input method](#input-method)
+    - [Rime](#rime)
+  - [Swappiness](#swappiness)
+  - [Power management](#power-management)
+  - [Grub2 theme](#grub2-theme)
+  - [KDE config](#kde-config)
+  - [Mouse](#mouse)
+    - [Disable middle click](#disable-middle-click)
+    - [Scroll speed](#scroll-speed)
+  - [Development environment](#development-environment)
 
 References:
 
@@ -156,9 +156,10 @@ See [[bash#Auto-completion for aliases]].
 
 ### Install driver and prime-select
 
-On my machine (*ThinkPad P1 Gen2 with T2000*), I installed `x11-video-nvidiaG05` and `suse-prime`.
+On my machine (*ThinkPad P1 Gen2 with T2000*), I tried 2 methods:
 
-**Note**: At the time of writing (*Tumbleweed 20230429*), `nvidia-video-G06` does not work. But it might work later or on other machines.
+- Install legacy driver `x11-video-nvidiaG05` and `suse-prime`.
+- Install the current driver `nvidia-video-G06` (or `nvidia-drivers-G06`) and `suse-prime`. At the time of updating (*Tumbleweed 20230518, KDE Plasma 5.27.5*), it may result in a black SDDM login screen with only the cursor. This could be solved by pressing `Ctrl+Alt+Backspace`.
 
 References for more:
 
@@ -166,12 +167,14 @@ References for more:
 - https://en.opensuse.org/SDB:NVIDIA_drivers
 - https://en.opensuse.org/SDB:NVIDIA_troubleshooting
 - https://en.opensuse.org/SDB:NVIDIA_SUSE_Prime
-- https://www.bwsl.wang/script/129.html
+- [来到opensuse15.3的世界后，我推荐你做点什么](https://www.bwsl.wang/script/129.html)
+- [Got a black screen with mouse cursor only after switching (on SDDM screen) a user session type between X11 and Wayland](https://forum.manjaro.org/t/got-a-black-screen-with-mouse-cursor-only-after-switching-on-sddm-screen-a-user-session-type-between-x11-and-wayland/87044/3)
 
 ### If graphics driver or graphical desktop does not work
 
-- Press `Ctrl-Alt-F2` to switch to virtual terminal 2.
+- Press `Ctrl+Alt+F2` to switch to virtual terminal 2.
 - Press `Ctrl+Alt+F7` to switch back to the graphical desktop.
+- Uninstall
 
 ### Make applications run on NVidia card
 
