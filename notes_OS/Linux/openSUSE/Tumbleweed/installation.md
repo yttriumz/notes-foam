@@ -2,7 +2,12 @@
 
 ## Before installation
 
-Download the ISO image from [the official site]( https://get.opensuse.org/tumbleweed/#download ).
+- Download the ISO image from [the official site](https://get.opensuse.org/tumbleweed/#download).
+- Create a Live USB stick.
+
+References:
+
+- [SDB:Create a Live USB stick using Windows](https://en.opensuse.org/SDB:Create_a_Live_USB_stick_using_Windows)
 
 ## During installation
 
