@@ -6,6 +6,15 @@ References:
 
 - https://en.opensuse.org/SDB:Switch_runlevel
 
+## System frozen
+
+On my machine (*ThinkPad P1 Gen2*), hold `Left Ctrl` + `PrtSc` and then press `r`, `s`, `e`, `i`, `u`, `b` to reboot the system.
+
+References:
+
+- [How to debug a hung system with SysRq keys](https://www.suse.com/support/kb/doc/?id=000020294)
+- [What should I do when Ubuntu freezes?](https://askubuntu.com/questions/4408/what-should-i-do-when-ubuntu-freezes)
+
 ## Check x86-64 microarchitecture levels
 
 Use the following commands:

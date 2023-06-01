@@ -2,8 +2,8 @@
 
 ## Before installation
 
-- Download the ISO image from [the official site](https://get.opensuse.org/tumbleweed/#download).
-- Create a Live USB stick.
+- Download the ISO image from [the official site](https://get.opensuse.org/tumbleweed/#download). Note that the images for installation and live OS are different.
+- Create a live USB stick. I used rufus with all default settings on Win10.
 
 References:
 
