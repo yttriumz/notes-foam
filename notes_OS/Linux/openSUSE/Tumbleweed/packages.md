@@ -25,6 +25,9 @@
       - [List locks](#list-locks)
   - [Install rpm](#install-rpm)
     - [Zoom](#zoom)
+    - [QQ](#qq)
+    - [WeChat](#wechat)
+    - [Xtreme Download Manager](#xtreme-download-manager)
     - [Motrix download manager](#motrix-download-manager)
   - [OBS Package Installer (OPI)](#obs-package-installer-opi)
     - [Install OPI](#install-opi)
@@ -241,7 +244,7 @@ References:
 
 ### Zoom
 
-- Install the package from [the official site](https://zoom.us/download?os=linux). `ibus` could be locked before installing.
+- Download from [the official site](https://zoom.us/download?os=linux). `ibus` could be locked before installing.
 - Use `opi zoom`.
 
 References:
@@ -249,9 +252,27 @@ References:
 - https://support.zoom.us/hc/en-us/articles/204206269-Installing-or-updating-Zoom-on-Linux
 - [Does anyone here know of a good guide for installing zoom?](https://www.reddit.com/r/openSUSE/comments/p4yhg0/does_anyone_here_know_of_a_good_guide_for/)
 
+### QQ
+
+Download from [the official site](https://im.qq.com/linuxqq/index.shtml).
+
+### WeChat
+
+- [ ] todo
+
+References:
+
+- [fedora 打包 wechat RPM 包](https://xuthus.cc/linux/fedora-packaged-wechat-rpm.html)
+
+### Xtreme Download Manager
+
+Download from [the official site](https://github.com/subhra74/xdm/releases).
+
 ### Motrix download manager
 
-Install the package from [the official site](https://github.com/agalwood/Motrix/releases).
+Download from [the official site](https://github.com/agalwood/Motrix/releases).
+
+**NOTE**: At the time of writing (*Tumbleweed 20230518*), it does not work. I did not further investigate.
 
 ## OBS Package Installer (OPI)
 
