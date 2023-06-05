@@ -29,7 +29,7 @@
 
 ![venv_activate](attachments/venv_activate.png)
 
-References:
+*References*:
 
 - [How venvs work]( https://docs.python.org/3/library/venv.html#how-venvs-work )
 

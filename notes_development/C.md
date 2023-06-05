@@ -6,7 +6,7 @@
 
 ## C in Linux
 
-References:
+*References*:
 
 - [Programming Language](https://www.kernel.org/doc/html/latest/process/programming-language.html)
 - [Extensions to the C Language Family](https://gcc.gnu.org/onlinedocs/gcc/C-Extensions.html)

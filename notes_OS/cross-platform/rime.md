@@ -17,7 +17,7 @@ User config files are located under:
 
 Check [the config folder](./attachments/rime/) for configuration files.
 
-References:
+*References*:
 
 - config repos:
     - https://github.com/ayaka14732/awesome-rime

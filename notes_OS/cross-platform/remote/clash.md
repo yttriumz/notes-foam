@@ -22,6 +22,6 @@ Download from [the official page](https://github.com/Fndroid/clash_for_windows_p
 - Install via `flatpak install flathub io.github.Fndroid.clash_for_windows`.
 - Run via `flatpak run io.github.Fndroid.clash_for_windows`.
 
-References:
+*References*:
 
 - https://flathub.org/apps/io.github.Fndroid.clash_for_windows

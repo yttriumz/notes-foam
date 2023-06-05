@@ -20,7 +20,7 @@ This note contains operation related tips. See [[cross-platform/git]] for config
 
 ## Commit message convention
 
-References:
+*References*:
 
 - https://www.conventionalcommits.org/en/v1.0.0/
 
@@ -29,7 +29,7 @@ References:
 - Change the last one: `git commit --amend`
 - [ ] Change multiple
 
-References:
+*References*:
 
 - [Changing a commit message](https://docs.github.com/en/pull-requests/committing-changes-to-your-project/creating-and-editing-commits/changing-a-commit-message)
 
@@ -37,7 +37,7 @@ References:
 
 Use `git clone git@github.com:SOME_REPO TARGET_DIRECTORY`.
 
-References:
+*References*:
 
 - [How to 'git pull' into a branch that is not the current one?](https://stackoverflow.com/questions/651038/how-do-i-clone-a-git-repository-into-a-specific-folder)
 
@@ -50,14 +50,18 @@ Use `git fetch REMOTE_REPO REMOTE_BRANCH:LOCAL_BRANCH`.
 - Discard all: `git restore .`
 - Discard a specific file: `git restore PATH_TO_THE_FILE`
 
+*References*:
+
+- [How To Completely Reset a Git Repository (Including Untracked Files)](https://www.howtogeek.com/devops/how-to-completely-reset-a-git-repository-including-untracked-files/)
+
 ## Stash changes
 
 - Stash changes by `git stash`.
 - Pop stash by `git stash pop`.
 
-References:
+*References*:
 
-- https://www.atlassian.com/git/tutorials/saving-changes/git-stash
+- [Git stash](https://www.atlassian.com/git/tutorials/saving-changes/git-stash)
 
 ## Rename branch
 
@@ -68,7 +72,7 @@ References:
 
 Use `git remote set-url REMOTE_NAME NEW_URL`.
 
-References:
+*References*:
 
 - [How To Change Git Remote Origin](https://devconnected.com/how-to-change-git-remote-origin/)
 
@@ -93,14 +97,14 @@ Get `hosts` from the following sites:
 
 - [ ] todo
 
-References:
+*References*:
 
 - [Configure Git to use a proxy](https://gist.github.com/evantoli/f8c23a37eb3558ab8765)
 - [Configure Git to use a proxy (https or SSH+GIT)](https://gist.github.com/ozbillwang/005bd1dfc597a2f3a00148834ad3e551)
 
 ### Other methods
 
-References:
+*References*:
 
 - https://github.com/dotnetcore/FastGithub
 

@@ -1,6 +1,6 @@
 # Decentralization Related
 
-References:
+*References*:
 
 - https://yeasy.gitbook.io/blockchain_guide/
 

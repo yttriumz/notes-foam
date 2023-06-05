@@ -2,7 +2,7 @@
 
 ## Oh My Posh
 
-References:
+*References*:
 
 - [the official doc](https://ohmyposh.dev/docs/installation/customize)
 
@@ -163,7 +163,7 @@ References:
 
 ## Starship
 
-References:
+*References*:
 
 - [the official doc](https://starship.rs/config/)
 

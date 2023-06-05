@@ -45,7 +45,7 @@ fatal: Need to specify how to reconcile divergent branches.
 
 </details>
 
-References:
+*References*:
 
 - https://stackoverflow.com/questions/62653114/how-can-i-deal-with-this-git-warning-pulling-without-specifying-how-to-reconci
 - https://github.com/desktop/desktop/issues/14431#issuecomment-1106634672

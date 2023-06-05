@@ -16,7 +16,7 @@
   - For controller support, install drivers via `zypper install steam-devices`.
 - Run via `flatpak run com.valvesoftware.Steam`.
 
-References:
+*References*:
 
 - https://flathub.org/en-GB/apps/com.valvesoftware.Steam
 - https://github.com/flathub/com.valvesoftware.Steam/wiki#my-controller-isnt-being-detected
@@ -29,7 +29,7 @@ References:
 
 #### Play non-Steam games using Proton
 
-References:
+*References*:
 
 - [How to add & play non-Steam games on Steam (on Linux with Proton)](https://www.youtube.com/watch?v=ZXPsIRGZizw)
 
@@ -38,7 +38,7 @@ References:
 - Install via `flatpak install flathub jp.yvt.OpenSpades`.
 - Run via `flatpak run jp.yvt.OpenSpades`.
 
-References:
+*References*:
 
 - https://openspades.yvt.jp
 

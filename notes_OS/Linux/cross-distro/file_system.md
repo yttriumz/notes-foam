@@ -2,6 +2,6 @@
 
 ## Btrfs
 
-References:
+*References*:
 
 - https://wiki.archlinux.org/title/Btrfs

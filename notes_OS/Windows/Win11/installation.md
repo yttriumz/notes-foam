@@ -1,6 +1,6 @@
 # Fresh Install Win11 on Surface Pro 8
 
-References:
+*References*:
 
 - [Restore or reset Surface for Windows]( https://support.microsoft.com/en-us/surface/restore-or-reset-surface-for-windows-e1fd649a-6396-a7de-2e87-7ba3b45e0fb1 )
 - [Creating and using a USB recovery drive for Surface]( https://support.microsoft.com/en-us/surface/creating-and-using-a-usb-recovery-drive-for-surface-677852e2-ed34-45cb-40ef-398fc7d62c07 )

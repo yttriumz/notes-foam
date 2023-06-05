@@ -7,10 +7,12 @@
     - [VSCode Config](#vscode-config)
         - [Simple Config](#simple-config)
             - [Extensions](#extensions)
-            - [`settings.json`](#settingsjson)
-            - [`launch.json`](#launchjson)
-            - [`tasks.json`](#tasksjson)
-            - [`compile_flags.txt`](#compile_flagstxt)
+            - [`settings.json` sample](#settingsjson-sample)
+            - [`launch.json` sample](#launchjson-sample)
+            - [`tasks.json` sample](#tasksjson-sample)
+            - [`compile_flags.txt` sample](#compile_flagstxt-sample)
+        - [Project config](#project-config)
+            - [Generate `compile_commands.json`](#generate-compile_commandsjson)
     - [array vs vector vs list](#array-vs-vector-vs-list)
 
 ## `.clang-format`
@@ -122,7 +124,7 @@ PPAPI_END_MESSAGE_MAP$"
 
 </details>
 
-References:
+*References*:
 
 - https://chromium.googlesource.com/chromium/src/+/HEAD/.clang-format
 
@@ -135,9 +137,7 @@ References:
 - clangd
 - CodeLLDB
 
-#### `settings.json`
-
-<details>
+#### `settings.json` sample
 
 ```json
 "C_Cpp.autocomplete": "Disabled",
@@ -154,11 +154,7 @@ References:
 }
 ```
 
-</details>
-
-#### `launch.json`
-
-<details>
+#### `launch.json` sample
 
 ```json
 {
@@ -207,11 +203,7 @@ References:
 }
 ```
 
-</details>
-
-#### `tasks.json`
-
-<details>
+#### `tasks.json` sample
 
 ```json
 // https://code.visualstudio.com/docs/editor/tasks
@@ -318,11 +310,7 @@ References:
 }
 ```
 
-</details>
-
-#### `compile_flags.txt`
-
-<details>
+#### `compile_flags.txt` sample
 
 ```text
 -g
@@ -333,10 +321,16 @@ References:
 -std=c++14
 ```
 
-</details>
+### Project config
+
+#### Generate `compile_commands.json`
+
+*References*:
+
+- [Getting started](https://clangd.llvm.org/installation#project-setup)
 
 ## array vs vector vs list
 
-References:
+*References*:
 
 - [When to use arrays vs. vectors vs. lists?](https://www.reddit.com/r/cpp_questions/comments/5lqm5w/when_to_use_arrays_vs_vectors_vs_lists/)

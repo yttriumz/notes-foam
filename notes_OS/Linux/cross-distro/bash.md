@@ -22,7 +22,7 @@
 
 Press `alt`-`ctrl`-`e`.
 
-References:
+*References*:
 
 - [Print terminal alias command as well as executing it](https://stackoverflow.com/a/22612852)
 

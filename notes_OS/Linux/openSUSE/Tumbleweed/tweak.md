@@ -36,7 +36,7 @@
     - [Scroll speed](#scroll-speed)
   - [Development environment](#development-environment)
 
-References:
+*References*:
 
 - https://opensuse.github.io/openSUSE-docs-revamped-temp/best_of_post/
 - https://opensuse.github.io/openSUSE-docs-revamped-temp/safety_usability/
@@ -67,7 +67,7 @@ sudo zypper dist-upgraded # optionally add "--no-recommends"
 
 **Note**: An option `--no-recommends` can be added to only install required packages referring to [the Reddit post](https://www.reddit.com/r/openSUSE/comments/10rnrnu/zypper_keeps_installing_kde_games_on_update_how/) and [the blog](https://linuxkamarada.com/en/2021/04/07/what-are-recommended-packages-and-how-to-install-them-on-opensuse/).
 
-References:
+*References*:
 
 - https://en.opensuse.org/SDB:System_upgrade
 - https://en.opensuse.org/SDB:Offline_upgrade
@@ -115,7 +115,7 @@ alias studio='/opt/android-studio/bin/studio.sh'
 alias trash='gio trash'
 ```
 
-References:
+*References*:
 
 - `sudo`
   - [Command not found when using sudo](https://stackoverflow.com/questions/12996397/command-not-found-when-using-sudo)
@@ -161,7 +161,7 @@ On my machine (*ThinkPad P1 Gen2 with T2000*), I tried 2 methods:
 - Install legacy driver `x11-video-nvidiaG05` and `suse-prime`.
 - Install the current driver `nvidia-video-G06` (or `nvidia-drivers-G06`) and `suse-prime`. At the time of updating (*Tumbleweed 20230518, KDE Plasma 5.27.5*), it may result in a black SDDM login screen with only the cursor. This could be solved by pressing `Ctrl+Alt+Backspace`.
 
-References for more:
+*References*:
 
 - https://opensuse.github.io/openSUSE-docs-revamped-temp/hybrid_graphics/
 - https://en.opensuse.org/SDB:NVIDIA_drivers
@@ -184,7 +184,7 @@ References for more:
 
 Use `__NV_PRIME_RENDER_OFFLOAD=1 __VK_LAYER_NV_optimus=NVIDIA_only __GLX_VENDOR_LIBRARY_NAME=nvidia SOME_APP_COMMAND`.
 
-References:
+*References*:
 
 - https://wiki.archlinux.org/title/PRIME#Configure_applications_to_render_using_GPU
 - https://askubuntu.com/questions/1364762/prime-run-command-not-found
@@ -202,7 +202,7 @@ Refer to [the wiki](https://en.opensuse.org/SDB:Firefox_MP4/H.264_Video_Support)
   - `libavcodec56`, `libavcodec57`, `libavcodec58`, `libavformat56`, `libavformat57`, `libavformat58`, `libavdevice56`, `libavdevice57`, `libavdevice58`
 - Method 2: Use `opi codecs`.
 
-References:
+*References*:
 
 - https://en.opensuse.org/SDB:Installing_codecs_from_Packman_repositories
 - https://opensuse.github.io/openSUSE-docs-revamped-temp/codecs/
@@ -233,7 +233,7 @@ References:
    auth 			sufficient  	pam_fprintd.so
    ```
 
-References:
+*References*:
 
 - https://en.opensuse.org/SDB:Using_fingerprint_authentication
 
@@ -241,7 +241,7 @@ References:
 
 - [ ] set up facial auth
 
-References:
+*References*:
 
 - https://en.opensuse.org/SDB:Facial_authentication
 
@@ -257,7 +257,7 @@ See [[fonts]].
 
 Change the system lock screen time format to 24H by adding `LC_TIME=C.UTF-8` to `/etc/locale.conf`.
 
-References:
+*References*:
 
 - https://wiki.archlinux.org/title/Locale
 - https://askubuntu.com/questions/783184/how-to-display-kde-lock-screen-time-in-24-hour-format
@@ -293,7 +293,7 @@ References:
   </match>
   ```
 
-References:
+*References*:
 
 - https://rime.im/download/
 - https://github.com/fcitx/fcitx-rime

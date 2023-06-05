@@ -2,7 +2,7 @@
 
 ## Folder naming convention
 
-References:
+*References*:
 
 - [Plural vs Singular - Directory Names](https://logansbailey.com/plural-vs-singular-directory-names)
 

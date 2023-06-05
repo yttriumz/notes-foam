@@ -2,7 +2,7 @@
 
 ## Wezterm
 
-References:
+*References*:
 
 - [the official doc]( https://wezfurlong.org/wezterm/config/files.html )
 - https://www.sharpwriting.net/project/configuring-wezterm/

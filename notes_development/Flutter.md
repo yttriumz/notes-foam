@@ -43,7 +43,7 @@
 
 ## Command line tool
 
-References:
+*References*:
 
 - [flutter: The Flutter command-line tool](https://docs.flutter.dev/reference/flutter-cli)
 
@@ -51,13 +51,13 @@ References:
 
 Use `dart format lib/*`.
 
-References:
+*References*:
 
 - [Automatically formatting code with the `dart` command](https://docs.flutter.dev/development/tools/formatting#automatically-formatting-code-with-the-dart-command)
 
 ## Dart project files
 
-References:
+*References*:
 
 - [What not to commit](https://dart.dev/guides/libraries/private-files)
 
@@ -121,20 +121,20 @@ References:
 
 </details>
 
-References:
+*References*:
 
 - https://dartcode.org/docs/recommended-settings/
 
 ## Naming conventions
 
-References:
+*References*:
 
 - [Effective Dart: Style](https://dart.dev/guides/language/effective-dart/style)
 - [Naming Convention in Dart Programming Language Flutter](https://medium.com/@farhanaslam910/naming-convention-in-dart-programming-language-flutter-95feda7a8f4b)
 
 ## Project structure
 
-References:
+*References*:
 
 - [Flutter – File Structure](https://www.geeksforgeeks.org/flutter-file-structure/)
 - [Flutter Project Structure: Feature-first or Layer-first?](https://codewithandrea.com/articles/flutter-project-structure/)
@@ -145,7 +145,7 @@ References:
 - Delete all platform-specific folders such as `android`, `ios`, etc.
 - Run `flutter create .` from the directory where `pubspec.yaml` is located.
 
-References:
+*References*:
 
 - https://medium.com/@paulsean5/flutter-re-create-351eecf44e46
 
@@ -155,19 +155,19 @@ References:
 
 - Release APK: `flutter build apk`.
 
-References:
+*References*:
 
 - https://docs.flutter.dev/deployment/android
 
 ## Run on a real device
 
-References:
+*References*:
 
 - https://appmaking.com/run-flutter-apps-on-android-device/
 
 ### Hisense A5
 
-References:
+*References*:
 
 - https://nyko.me/2020/04/01/hisense-A6.html
 - https://wap.zol.com.cn/ask/x_607288.html
@@ -182,7 +182,7 @@ References:
 
 1. `flutter pub add --dev ffigen && flutter pub add ffi`.
 
-References: See [[#Rust side]]'s references.
+*References*: See [[#Rust side]]'s references.
 
 ##### Rust side
 
@@ -204,7 +204,7 @@ References: See [[#Rust side]]'s references.
    i686-linux-android
    ```
 
-References:
+*References*:
 
 - https://cjycode.com/flutter_rust_bridge/integrate/deps.html
 - https://cjycode.com/flutter_rust_bridge/tutorial/setup_android.html
@@ -220,14 +220,14 @@ You should use the following commands to build the Rust code (because the emulat
 cargo ndk -t x86 -o ../android/app/src/main/jniLibs build
 ```
 
-References:
+*References*:
 
 - https://cjycode.com/flutter_rust_bridge/tutorial/setup_android.html#cargo-ndk
 - https://github.com/fzyzcjy/flutter_rust_bridge/issues/385#issuecomment-1061823207
 
 ##### Automate the build process
 
-References:
+*References*:
 
 - [ ] todo
 
@@ -246,7 +246,7 @@ Get the template here: https://github.com/Desdaemon/flutter_rust_bridge_template
    export PUB_HOSTED_URL=https://mirror.sjtu.edu.cn/dart-pub/
    ```
 
-   References:
+   *References*:
 
    - https://book.flutterchina.club/chapter1/install_flutter.html#_1-%E4%BD%BF%E7%94%A8%E9%95%9C%E5%83%8F
    - [Using Flutter in China](https://docs.flutter.dev/community/china)
@@ -262,7 +262,7 @@ Get the template here: https://github.com/Desdaemon/flutter_rust_bridge_template
    }
    ```
 
-   References:
+   *References*:
 
    - https://book.flutterchina.club/chapter1/install_flutter.html#_3-%E5%AE%89%E5%8D%93%E5%8C%85%E9%85%8D%E7%BD%AE%E9%97%AE%E9%A2%98
    - https://developer.aliyun.com/mvn/guide

@@ -53,7 +53,7 @@ See [[cross-platform/git]] for configuration.
 
 2. Log out and Log back in to take effect.
 
-References:
+*References*:
 
 - https://docs.docker.com/engine/install/linux-postinstall/#manage-docker-as-a-non-root-user
 
@@ -61,7 +61,7 @@ References:
 
 - [ ] todo
 
-References:
+*References*:
 
 - https://docs.docker.com/engine/security/rootless/
 
@@ -101,7 +101,7 @@ sudo zypper install -t pattern devel_basis
 6. (Optional) Install NDK [for building Rust code for Android](https://cjycode.com/flutter_rust_bridge/tutorial/setup_android.html#android-ndk). Go to *SDK Manager > SDK Tools > NDK (side by side)*.
 7. On the welcome page, press `ctrl`+`shift`+`a` and search "device". Create AVD using *Virtual Device Manager*.
 
-References:
+*References*:
 
 - https://developer.android.com/studio/install#linux
 - https://developer.android.com/codelabs/basic-android-kotlin-compose-install-android-studio#6
@@ -158,7 +158,7 @@ Use the following commands:
 sudo zypper install java-17-openjdk-devel java-17-openjdk-src
 ```
 
-References:
+*References*:
 
 - https://en.opensuse.org/SDB:Installing_Java
 - https://www.simplified.guide/java/jdk-install-suse
@@ -177,7 +177,7 @@ References:
    export CARGO_HOME=$HOME/.rust/.cargo
    ```
 
-References:
+*References*:
 
 - https://doc.rust-lang.org/book/ch01-01-installation.html
 
@@ -192,7 +192,7 @@ References:
    export COURSIER_BIN_DIR=$HOME/.coursier/bin
    ```
 
-References:
+*References*:
 
 - https://get-coursier.io/docs/cli-installation
 - https://get-coursier.io/docs/cli-install#installation-directory
@@ -217,7 +217,7 @@ It is recommended to run TensorFlow 2 in a container.
    docker run --runtime=nvidia --gpus all --rm tensorflow/tensorflow:latest-gpu-jupyter nvidia-smi
    ```
 
-References:
+*References*:
 
 - https://www.tensorflow.org/install/docker
 - https://docs.nvidia.com/datacenter/cloud-native/container-toolkit/install-guide.html#installing-on-suse-15

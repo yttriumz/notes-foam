@@ -18,7 +18,7 @@ Use `xmodmap -pp`.
 
 Note that this will completely disable the middle click function, which might cause problems in applications where the middle click is used, e.g., *Cyberpunk 2077*.
 
-References:
+*References*:
 
 - [Middle mouse click paste - how to disable?](https://www.reddit.com/r/openSUSE/comments/qtto1d/middle_mouse_click_paste_how_to_disable/)
 - [How to disable mouse scroll wheel click to paste in openSUSE / Plasma5?](https://forums.opensuse.org/t/how-to-disable-mouse-scroll-wheel-click-to-paste-in-opensuse-plasma5/117824)

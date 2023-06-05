@@ -63,7 +63,7 @@ Note that after this, *YaST Software* may automatically select some NVidia drive
 
 - Use `opi vscode`.
 
-References:
+*References*:
 
 - [Wiki](https://en.opensuse.org/Visual_Studio_Code#Install)
 
@@ -75,7 +75,7 @@ Add *Virtualization:containers* repo by the following commands:
 sudo zypper addrepo https://download.opensuse.org/repositories/Virtualization:containers/openSUSE_Tumbleweed/Virtualization:containers.repo
 ```
 
-References:
+*References*:
 
 - https://software.opensuse.org/download.html?project=Virtualization%3Acontainers&package=docker#manualopenSUSE
 
@@ -108,7 +108,7 @@ References:
    docker run --rm --runtime=nvidia --gpus all nvidia/cuda:11.6.2-base-ubuntu20.04 nvidia-smi
    ```
 
-References:
+*References*:
 
 - https://github.com/NVIDIA/nvidia-docker
 - https://docs.nvidia.com/datacenter/cloud-native/container-toolkit/install-guide.html
@@ -123,7 +123,7 @@ Add *CUDA* repo by the following commands:
 sudo zypper addrepo -p 100 https://developer.download.nvidia.com/compute/cuda/repos/opensuse15/x86_64/cuda-opensuse15.repo
 ```
 
-References:
+*References*:
 
 - [CUDA on Tumbleweed](https://www.reddit.com/r/openSUSE/comments/gaihe9/cuda_on_tumbleweed/)
 
@@ -148,7 +148,7 @@ sudo zypper addrepo https://download.opensuse.org/repositories/M17N/openSUSE_Tum
 
 - Use `opi chrome`.
 
-References:
+*References*:
 
 - https://www.google.com/linuxrepositories/
 - [Installing Google Chrome in openSUSE](https://linuxhint.com/installing-google-chrome-opensuse/)
@@ -179,7 +179,7 @@ References:
 
 - Use `opi brave`.
 
-References:
+*References*:
 
 - [Installing Brave on Linux](https://brave.com/linux/)
 
@@ -205,7 +205,7 @@ References:
 
 2. Use `zypper packages --unneeded | grep ^i | cut -d '|' -f3 | xargs sudo zypper rm --clean-deps --no-confirm` to uninstall.
 
-References:
+*References*:
 
 - [Cleanup of distribution upgrades](https://forums.opensuse.org/t/cleanup-of-distribution-upgrades/152148)
 
@@ -237,7 +237,7 @@ Use `zypper locks`.
 
 Use `zypper install PATH_TO_RPM`.
 
-References:
+*References*:
 
 - https://opensuse-guide.org/installpackage.php
 - [how to install RPM files](https://forums.opensuse.org/t/how-to-install-rpm-files/24479)
@@ -247,7 +247,7 @@ References:
 - Download from [the official site](https://zoom.us/download?os=linux). `ibus` could be locked before installing.
 - Use `opi zoom`.
 
-References:
+*References*:
 
 - https://support.zoom.us/hc/en-us/articles/204206269-Installing-or-updating-Zoom-on-Linux
 - [Does anyone here know of a good guide for installing zoom?](https://www.reddit.com/r/openSUSE/comments/p4yhg0/does_anyone_here_know_of_a_good_guide_for/)
@@ -260,7 +260,7 @@ Download from [the official site](https://im.qq.com/linuxqq/index.shtml).
 
 - [ ] todo
 
-References:
+*References*:
 
 - [fedora 打包 wechat RPM 包](https://xuthus.cc/linux/fedora-packaged-wechat-rpm.html)
 
@@ -294,7 +294,7 @@ Use the following commands:
 flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
 ```
 
-References:
+*References*:
 
 - [The community guide]( https://opensuse.github.io/openSUSE-docs-revamped-temp/best_of_post/#setup-your-tumbleweed-for-flatpaks )
 
@@ -309,7 +309,7 @@ Use `flatpak uninstall --unused`.
 
 ## Become a Packager
 
-References:
+*References*:
 
 - [Guide: How To Become A Packager](https://www.reddit.com/r/openSUSE/comments/10rpb24/guide_how_to_become_a_packager/)
 

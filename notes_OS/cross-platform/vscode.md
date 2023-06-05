@@ -6,7 +6,7 @@ Refer to [the official site](https://code.visualstudio.com/updates).
 
 ## Cloud Changes (Edit Session)
 
-References:
+*References*:
 
 - https://github.com/microsoft/vscode/pull/165877#issuecomment-1357545069
 
@@ -16,7 +16,7 @@ You can use `(lib[a-z]*[0-9][0-9])` (note the parentheses here) to match `libavc
 
 Wrap them with backtick `` ` `` using `` `$1` `` in the replace field.
 
-References:
+*References*:
 
 - [VS Code: Search-and-Replace Regex](https://dev.to/rfornal/vs-code-search-and-replace-regex-mn2)
 - [🔎 vscode | regex find and replace](https://www.youtube.com/watch?v=xMhKstbdr3k)

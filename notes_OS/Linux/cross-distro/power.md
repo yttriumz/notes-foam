@@ -1,6 +1,6 @@
 # Power Management
 
-References:
+*References*:
 
 - https://wiki.archlinux.org/title/Power_management
 - https://wiki.archlinux.org/title/Laptop_Mode_Tools

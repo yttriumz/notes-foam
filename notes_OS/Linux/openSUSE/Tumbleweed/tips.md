@@ -2,7 +2,7 @@
 
 ## Switch runlevel
 
-References:
+*References*:
 
 - https://en.opensuse.org/SDB:Switch_runlevel
 
@@ -10,7 +10,7 @@ References:
 
 On my machine (*ThinkPad P1 Gen2*), hold `Left Ctrl` + `PrtSc` and then press `r`, `s`, `e`, `i`, `u`, `b` to reboot the system.
 
-References:
+*References*:
 
 - [How to debug a hung system with SysRq keys](https://www.suse.com/support/kb/doc/?id=000020294)
 - [What should I do when Ubuntu freezes?](https://askubuntu.com/questions/4408/what-should-i-do-when-ubuntu-freezes)
@@ -23,7 +23,7 @@ Use the following commands:
 /usr/lib64/ld-linux-x86-64.so.2 --help
 ```
 
-References:
+*References*:
 
 - https://news.opensuse.org/2023/03/23/gcc-efibm-up-in-tw/
 - https://developers.redhat.com/blog/2021/01/05/building-red-hat-enterprise-linux-9-for-the-x86-64-v2-microarchitecture-level#
