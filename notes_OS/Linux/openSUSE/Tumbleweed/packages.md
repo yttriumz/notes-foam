@@ -25,6 +25,7 @@
       - [List locks](#list-locks)
   - [Install rpm](#install-rpm)
     - [Zoom](#zoom)
+    - [Warp](#warp)
     - [QQ](#qq)
     - [WeChat](#wechat)
     - [Xtreme Download Manager](#xtreme-download-manager)
@@ -251,6 +252,11 @@ Use `zypper install PATH_TO_RPM`.
 
 - https://support.zoom.us/hc/en-us/articles/204206269-Installing-or-updating-Zoom-on-Linux
 - [Does anyone here know of a good guide for installing zoom?](https://www.reddit.com/r/openSUSE/comments/p4yhg0/does_anyone_here_know_of_a_good_guide_for/)
+
+### Warp
+
+1. At the time of writing (*Tumbleweed 20230518*), install `setcap` via `zypper install libcap-progs`.
+2. Download from [the official site](https://pkg.cloudflareclient.com/packages/cloudflare-warp).
 
 ### QQ
 
