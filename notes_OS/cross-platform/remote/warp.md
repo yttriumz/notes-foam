@@ -6,6 +6,7 @@
 
 - Check account details via `warp-cli account`.
 - Update license key via `warp-cli set-license NEW_LICENSE_KEY`.
+- Change mode via `warp-cli set-mode NEW_MODE`.
 
 ### All subcommands (*warp-cli 2023.3.398*)
 
