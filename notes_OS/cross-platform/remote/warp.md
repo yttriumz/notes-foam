@@ -74,3 +74,7 @@
 | `help`                        | Print this message or the help of the given subcommand(s)                                                                       |
 
 </details>
+
+### Interesting posts
+
+- [\[SOLVED\] Cloudflare warp daemon error when register the client](https://community.cloudflare.com/t/solved-cloudflare-warp-daemon-error-when-register-the-client/281977)

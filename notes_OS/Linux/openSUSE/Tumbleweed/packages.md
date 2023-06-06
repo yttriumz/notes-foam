@@ -260,6 +260,10 @@ Use `zypper install PATH_TO_RPM`.
 
 See [[warp]] for configuration.
 
+*References*:
+
+- [How to install Linux capabilities like setcap and getcap?](https://unix.stackexchange.com/questions/189237/how-to-install-linux-capabilities-like-setcap-and-getcap)
+
 ### QQ
 
 Download from [the official site](https://im.qq.com/linuxqq/index.shtml).

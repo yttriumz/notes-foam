@@ -52,3 +52,19 @@ Open *System Settings > Window Management > Window Behavior > Advanced*.
 ## Baloo
 
 At the time of writing (*Tumbleweed 20230225, Baloo 5.103.0*), `baloo_file` constantly writes to my disk. Thus, I disabled it by `balooctl disable`.
+
+## SDDM login theme
+
+- Go to [KDE Store](https://store.kde.org/browse?cat=101&ord=rating) to find a good one, e.g [Sugar Candy for SDDM](https://store.kde.org/p/1312658).
+- Preview the theme via `sddm-greeter --test-mode --theme /usr/share/sddm/themes/THEME_TO_BE_VIEWED`.
+
+### Configure Sugar Candy for SDDM
+
+Change `/usr/share/sddm/themes/sugar-candy/theme.conf.user` according to the following:
+
+```properties
+[General]
+Background="/usr/share/wallpapers/default-1920x1080.jpg"
+ScreenWidth="1920"
+ScreenHeight="1080"
+```
