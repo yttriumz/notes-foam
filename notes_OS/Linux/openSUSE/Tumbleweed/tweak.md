@@ -101,6 +101,10 @@ alias fpk='flatpak'
 # NVidia related
 alias nv='__NV_PRIME_RENDER_OFFLOAD=1 __VK_LAYER_NV_optimus=NVIDIA_only __GLX_VENDOR_LIBRARY_NAME=nvidia'
 
+# AppImage
+alias dict='~/bin/AppImage/eudic.AppImage'
+alias ganache='~/bin/AppImage/ganache-2.7.1-linux-x86_64.AppImage'
+
 # gaming
 alias openspades='__NV_PRIME_RENDER_OFFLOAD=1 __VK_LAYER_NV_optimus=NVIDIA_only __GLX_VENDOR_LIBRARY_NAME=nvidia flatpak run jp.yvt.OpenSpades'
 alias steam='flatpak run com.valvesoftware.Steam'
@@ -108,19 +112,18 @@ alias steam='flatpak run com.valvesoftware.Steam'
 # misc
 alias clash='~/.clash/cfw'
 alias du='du --human-readable'
-alias et='exit'
 alias frp='~/.frp/frpc --config ~/.frp/frpc.ini'
 alias rm='rm -i'
 alias studio='/opt/android-studio/bin/studio.sh'
 alias trash='gio trash'
+alias xt='exit'
 ```
 
 *References*:
 
-- `sudo`
-  - [Command not found when using sudo](https://stackoverflow.com/questions/12996397/command-not-found-when-using-sudo)
-  - [Why does `sudo env "PATH=$PATH"` do anything at all?](https://superuser.com/questions/1551566/why-does-sudo-env-path-path-do-anything-at-all)
-  - [Aliases not available when using sudo](https://askubuntu.com/questions/22037/aliases-not-available-when-using-sudo)
+- [Command not found when using sudo](https://stackoverflow.com/questions/12996397/command-not-found-when-using-sudo)
+- [Why does `sudo env "PATH=$PATH"` do anything at all?](https://superuser.com/questions/1551566/why-does-sudo-env-path-path-do-anything-at-all)
+- [Aliases not available when using sudo](https://askubuntu.com/questions/22037/aliases-not-available-when-using-sudo)
 
 ##### Modify `.bashrc`
 
@@ -316,7 +319,7 @@ See [[power]] for power saving config.
 
 ## Grub2 theme
 
-1. Go to https://k1ng.dev/distro-grub-themes/preview and download a theme.
+1. Download a theme from [Distro themes](https://k1ng.dev/distro-grub-themes/preview).
 2. Unpack it and place the theme folder under `/boot/grub2/themes/`.
 3. Use *YaST* to choose the `.txt` file.
 

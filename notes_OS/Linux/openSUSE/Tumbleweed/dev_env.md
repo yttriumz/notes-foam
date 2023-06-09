@@ -14,6 +14,9 @@
    - [Flutter](#flutter)
    - [Go](#go)
    - [Java](#java)
+   - [JavaScript](#javascript)
+      - [Node.js](#nodejs)
+         - [fnm](#fnm)
    - [Python](#python)
    - [Rust](#rust)
    - [Scala](#scala)
@@ -162,6 +165,20 @@ sudo zypper install java-17-openjdk-devel java-17-openjdk-src
 
 - https://en.opensuse.org/SDB:Installing_Java
 - https://www.simplified.guide/java/jdk-install-suse
+
+## JavaScript
+
+### Node.js
+
+*References*:
+
+- https://docs.npmjs.com/cli/v9/configuring-npm/install
+
+#### fnm
+
+*References*:
+
+- https://github.com/Schniz/fnm
 
 ## Python
 
