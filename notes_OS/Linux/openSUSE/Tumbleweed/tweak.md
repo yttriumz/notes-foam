@@ -102,7 +102,7 @@ alias fpk='flatpak'
 alias nv='__NV_PRIME_RENDER_OFFLOAD=1 __VK_LAYER_NV_optimus=NVIDIA_only __GLX_VENDOR_LIBRARY_NAME=nvidia'
 
 # AppImage
-alias dict='~/bin/AppImage/eudic.AppImage'
+alias dic='~/bin/AppImage/eudic.AppImage'
 alias ganache='~/bin/AppImage/ganache-2.7.1-linux-x86_64.AppImage'
 
 # gaming
@@ -113,9 +113,10 @@ alias steam='flatpak run com.valvesoftware.Steam'
 alias clash='~/.clash/cfw'
 alias du='du --human-readable'
 alias frp='~/.frp/frpc --config ~/.frp/frpc.ini'
-alias rm='rm -i'
+alias rm='rm -I'
 alias studio='/opt/android-studio/bin/studio.sh'
 alias trash='gio trash'
+alias warp='warp-cli'
 alias xt='exit'
 ```
 
