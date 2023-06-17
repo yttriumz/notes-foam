@@ -8,7 +8,7 @@
 
 ## System frozen
 
-On my machine (*ThinkPad P1 Gen2*), hold `Left Ctrl` + `PrtSc` and then press `r`, `s`, `e`, `i`, `u`, `b` to reboot the system.
+On my machine (*ThinkPad P1 Gen2*), hold `Left Alt` + `PrtSc` and then press `r`, `s`, `e`, `i`, `u`, `b` to reboot the system.
 
 *References*:
 
