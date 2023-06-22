@@ -6,6 +6,7 @@ This note contains operation related tips. See [[cross-platform/git]] for config
   - [Commit message convention](#commit-message-convention)
   - [Change commit messages](#change-commit-messages)
   - [Clone to a specific directory](#clone-to-a-specific-directory)
+  - [Embedded repo](#embedded-repo)
   - [Update an unchecked-out local branch from remote branch](#update-an-unchecked-out-local-branch-from-remote-branch)
   - [Discard unstaged changes](#discard-unstaged-changes)
   - [Stash changes](#stash-changes)
@@ -40,6 +41,12 @@ Use `git clone git@github.com:SOME_REPO TARGET_DIRECTORY`.
 *References*:
 
 - [How to 'git pull' into a branch that is not the current one?](https://stackoverflow.com/questions/651038/how-do-i-clone-a-git-repository-into-a-specific-folder)
+
+## Embedded repo
+
+*References*:
+
+- [Git: How to make outer repository and embedded repository work as common/standalone repository?](https://stackoverflow.com/questions/47008290/git-how-to-make-outer-repository-and-embedded-repository-work-as-common-standal)
 
 ## Update an unchecked-out local branch from remote branch
 

@@ -12,6 +12,7 @@
       - [Google Chrome](#google-chrome)
       - [Microsoft Edge](#microsoft-edge)
       - [Brave Browser](#brave-browser)
+      - [Cloudflare WARP](#cloudflare-warp)
     - [Examine repo](#examine-repo)
       - [Some repo reference](#some-repo-reference)
     - [Set priority](#set-priority)
@@ -25,7 +26,7 @@
       - [List locks](#list-locks)
   - [Install rpm](#install-rpm)
     - [Zoom](#zoom)
-    - [Warp](#warp)
+    - [WARP (manually)](#warp-manually)
     - [QQ](#qq)
     - [WeChat](#wechat)
     - [Xtreme Download Manager](#xtreme-download-manager)
@@ -56,10 +57,10 @@ Note that after this, *YaST Software* may automatically select some NVidia drive
 - Add *VSCode* repo (and install *VSCode*) by the following commands:
 
   ```bash
-  sudo rpm --import https://packages.microsoft.com/keys/microsoft.asc
-  sudo zypper addrepo https://packages.microsoft.com/yumrepos/vscode VSCode
-  sudo zypper refresh
-  sudo zypper install code
+  rpm --import https://packages.microsoft.com/keys/microsoft.asc
+  zypper addrepo https://packages.microsoft.com/yumrepos/vscode VSCode
+  zypper refresh
+  zypper install code
   ```
 
 - Use `opi vscode`.
@@ -73,7 +74,7 @@ Note that after this, *YaST Software* may automatically select some NVidia drive
 Add *Virtualization:containers* repo by the following commands:
 
 ```bash
-sudo zypper addrepo https://download.opensuse.org/repositories/Virtualization:containers/openSUSE_Tumbleweed/Virtualization:containers.repo
+zypper addrepo https://download.opensuse.org/repositories/Virtualization:containers/openSUSE_Tumbleweed/Virtualization:containers.repo
 ```
 
 *References*:
@@ -86,21 +87,21 @@ sudo zypper addrepo https://download.opensuse.org/repositories/Virtualization:co
 2. Add *NVIDIA Container Toolkit* repo by the following commands:
 
    ```bash
-   sudo zypper addrepo https://nvidia.github.io/libnvidia-container/opensuse-leap15.1/libnvidia-container.repo
+   zypper addrepo https://nvidia.github.io/libnvidia-container/opensuse-leap15.1/libnvidia-container.repo
    # The following one is the same
-   sudo zypper addrepo https://nvidia.github.io/libnvidia-container/sles15.1/libnvidia-container.repo
+   zypper addrepo https://nvidia.github.io/libnvidia-container/sles15.1/libnvidia-container.repo
    ```
 
 3. Install *NVIDIA Container Toolkit* by the following commands:
 
    ```bash
-   sudo zypper install nvidia-container-toolkit
+   zypper install nvidia-container-toolkit
    ```
 
 4. Config *docker* by the following commands:
 
    ```bash
-   sudo nvidia-ctk runtime configure --runtime=docker
+   nvidia-ctk runtime configure --runtime=docker
    ```
 
 5. Verify installation by the following commands:
@@ -121,7 +122,7 @@ sudo zypper addrepo https://download.opensuse.org/repositories/Virtualization:co
 Add *CUDA* repo by the following commands:
 
 ```bash
-sudo zypper addrepo -p 100 https://developer.download.nvidia.com/compute/cuda/repos/opensuse15/x86_64/cuda-opensuse15.repo
+zypper addrepo -p 100 https://developer.download.nvidia.com/compute/cuda/repos/opensuse15/x86_64/cuda-opensuse15.repo
 ```
 
 *References*:
@@ -133,7 +134,7 @@ sudo zypper addrepo -p 100 https://developer.download.nvidia.com/compute/cuda/re
 Add *M17N* repo by the following commands:
 
 ```bash
-sudo zypper addrepo https://download.opensuse.org/repositories/M17N/openSUSE_Tumbleweed/M17N.repo
+zypper addrepo https://download.opensuse.org/repositories/M17N/openSUSE_Tumbleweed/M17N.repo
 ```
 
 #### Google Chrome
@@ -141,10 +142,10 @@ sudo zypper addrepo https://download.opensuse.org/repositories/M17N/openSUSE_Tum
 - Use the following commands:
 
   ```bash
-  sudo rpm --import https://dl.google.com/linux/linux_signing_key.pub
-  sudo zypper addrepo https://dl.google.com/linux/chrome/rpm/stable/x86_64 "Google Chrome"
-  sudo zypper refresh
-  sudo zypper install google-chrome-stable
+  rpm --import https://dl.google.com/linux/linux_signing_key.pub
+  zypper addrepo https://dl.google.com/linux/chrome/rpm/stable/x86_64 "Google Chrome"
+  zypper refresh
+  zypper install google-chrome-stable
   ```
 
 - Use `opi chrome`.
@@ -159,10 +160,10 @@ sudo zypper addrepo https://download.opensuse.org/repositories/M17N/openSUSE_Tum
 - Add *Microsoft Edge* repo (and install *Microsoft Edge*) by the following commands:
 
   ```bash
-  sudo rpm --import https://packages.microsoft.com/keys/microsoft.asc
-  sudo zypper addrepo https://packages.microsoft.com/yumrepos/edge "Microsoft Edge"
-  sudo zypper refresh
-  sudo zypper install microsoft-edge-stable
+  rpm --import https://packages.microsoft.com/keys/microsoft.asc
+  zypper addrepo https://packages.microsoft.com/yumrepos/edge "Microsoft Edge"
+  zypper refresh
+  zypper install microsoft-edge-stable
   ```
 
 - Use `opi msedge`.
@@ -172,10 +173,10 @@ sudo zypper addrepo https://download.opensuse.org/repositories/M17N/openSUSE_Tum
 - Add *Brave* repo (and install *Brave*) by the following commands:
 
   ```bash
-  sudo rpm --import https://brave-browser-rpm-release.s3.brave.com/brave-core.asc
-  sudo zypper addrepo https://brave-browser-rpm-release.s3.brave.com/brave-browser.repo
-  sudo zypper refresh
-  sudo zypper install brave-browser
+  rpm --import https://brave-browser-rpm-release.s3.brave.com/brave-core.asc
+  zypper addrepo https://brave-browser-rpm-release.s3.brave.com/brave-browser.repo
+  zypper refresh
+  zypper install brave-browser
   ```
 
 - Use `opi brave`.
@@ -183,6 +184,20 @@ sudo zypper addrepo https://download.opensuse.org/repositories/M17N/openSUSE_Tum
 *References*:
 
 - [Installing Brave on Linux](https://brave.com/linux/)
+
+#### Cloudflare WARP
+
+- At the time of updating (*Tumbleweed 20230605, WARP 2023.3.470*), add *WARP* repo (and install *WARP*) by the following commands:
+
+  ```bash
+  zypper addrepo https://pkg.cloudflareclient.com/cloudflare-warp-ascii.repo
+  zypper refresh
+  zypper install cloudflare-warp
+  ```
+
+- See [[#WARP (manually)]] for manually installing *WARP*.
+
+See [[WARP]] for configuration.
 
 ### Examine repo
 
@@ -253,12 +268,12 @@ Use `zypper install PATH_TO_RPM`.
 - https://support.zoom.us/hc/en-us/articles/204206269-Installing-or-updating-Zoom-on-Linux
 - [Does anyone here know of a good guide for installing zoom?](https://www.reddit.com/r/openSUSE/comments/p4yhg0/does_anyone_here_know_of_a_good_guide_for/)
 
-### Warp
+### WARP (manually)
 
-1. At the time of writing (*Tumbleweed 20230518*), install `setcap` via `zypper install libcap-progs`.
-2. Download from [the official site](https://pkg.cloudflareclient.com/packages/cloudflare-warp).
+1. ~~At the time of writing (*Tumbleweed 20230518, WARP 2023.3.398*), install `setcap` via `zypper install libcap-progs`. Otherwise, the post-install script will fail to run.~~ At the time of updating (*Tumbleweed 20230605, WARP 2023.3.470*), no need to install `libcap-progs`.
+2. ~~Download from [the official site](https://pkg.cloudflareclient.com/packages/cloudflare-warp)~~. At the time of updating (*2023-06-21*), direct access to the package is forbidden.
 
-See [[warp]] for configuration.
+See [[WARP]] for configuration.
 
 *References*:
 
@@ -328,5 +343,6 @@ Use `flatpak uninstall --unused`.
 [//begin]: # "Autogenerated link references for markdown compatibility"
 [Tumbleweed/tweak#NVIDIA graphics card]: tweak.md "Tweak openSUSE Tumbleweed on ThinkPad P1 Gen2"
 [Tumbleweed/tweak#Install driver and prime-select]: tweak.md "Tweak openSUSE Tumbleweed on ThinkPad P1 Gen2"
-[warp]: ../../../cross-platform/remote/warp.md "Warp"
+[#WARP (manually)]: packages.md "Package Management"
+[WARP]: ../../../cross-platform/remote/WARP.md "Cloudflare WARP"
 [//end]: # "Autogenerated link references"
