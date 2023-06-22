@@ -10,9 +10,10 @@ Edit registry entry `Computer\HKEY_CURRENT_USER\Software\Microsoft\Windows\Curre
 
 ## "tag present in the reparse point buffer is invalid"
 
-Use `chkdsk C: /r /f`.
+Use `chkdsk C: /r`.
 
 *References*:
 
+- [chkdsk](https://learn.microsoft.com/en-us/windows-server/administration/windows-commands/chkdsk?tabs=event-viewer)
 - [How to Fix OneDrive’s "The Tag Present in the Reparse Point Buffer Is Invalid" Error on Windows](https://www.makeuseof.com/fix-the-tag-present-in-the-reparse-point-buffer-is-invalid-error-on-windows/)
-- [![How to Fix "tag present in the reparse point buffer is invalid" OneDrive Error](https://img.youtube.com/vi/SMd2s1Em42Q/0.jpg)](https://www.youtube.com/watch?v=SMd2s1Em42Q)
+- [How to Fix "tag present in the reparse point buffer is invalid" OneDrive Error](https://www.youtube.com/watch?v=SMd2s1Em42Q)
