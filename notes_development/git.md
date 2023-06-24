@@ -13,6 +13,7 @@ This note contains operation related tips. See [[cross-platform/git]] for config
   - [Rename branch](#rename-branch)
   - [Change repo remote origin](#change-repo-remote-origin)
   - [Hard reset remote branch](#hard-reset-remote-branch)
+  - [Private fork](#private-fork)
   - [墙国专属](#墙国专属)
     - [Change `hosts`](#change-hosts)
     - [Set proxy](#set-proxy)
@@ -86,6 +87,46 @@ Use `git remote set-url REMOTE_NAME NEW_URL`.
 ## Hard reset remote branch
 
 After hard resetting the local repo, use `git push -f REMOTE_REPO BRANCH_NAME` to hard reset the remote repo.
+
+## Private fork
+
+1. Create a new repo (`PRI_REPO`) via the GitHub Website.
+2. Duplicate the public repo (`PUB_REPO`) via the following commands:
+
+   ```bash
+   git clone --bare https://github.com/exampleuser/PUB_REPO.git
+   cd PUB_REPO.git
+   git push --mirror https://github.com/yourname/PRI_REPO.git
+   cd ..
+   rm -rf PUB_REPO.git
+   ```
+
+3. Clone the private repo and add `upstream` via the following commands:
+
+   ```bash
+   git clone https://github.com/yourname/PRI_REPO.git
+   cd PRI_REPO
+   git remote add upstream https://github.com/exampleuser/PUB_REPO.git
+   git remote set-url --push upstream DISABLE # Optional
+   ```
+
+   - Pull updates from `upstream` via the following commands:
+
+     ```bash
+     git pull upstream master # Creates a merge commit
+     ```
+
+   - Push to `PRI_REPO`:
+
+     ```bash
+     git push origin master
+     ```
+
+*References*:
+
+- [GitHub: How to make a fork of public repository private?](https://stackoverflow.com/questions/10065526/github-how-to-make-a-fork-of-PUB_REPOsitory-private)
+- [Create a private fork of a public repository](https://gist.github.com/0xjac/85097472043b697ab57ba1b1c7530274)
+- [Duplicating a repository](https://docs.github.com/en/repositories/creating-and-managing-repositories/duplicating-a-repository)
 
 ## 墙国专属
 
