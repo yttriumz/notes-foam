@@ -4,10 +4,11 @@
 
 ```json
 "[python]": {
-	"editor.formatOnSave": true,
+    "editor.formatOnSave": true,
     "editor.formatOnType": true
 },
 "python.analysis.autoImportCompletions": true,
+"python.analysis.inlayHints.callArgumentNames": true,
 "python.analysis.inlayHints.functionReturnTypes": true,
 "python.analysis.inlayHints.pytestParameters": true,
 "python.analysis.inlayHints.variableTypes": true,
