@@ -4,9 +4,10 @@
   - [Widget](#widget)
   - [Recent files when right-clicking Firefox](#recent-files-when-right-clicking-firefox)
   - [Window focus stealing policy](#window-focus-stealing-policy)
-  - [Change Task Switcher](#change-task-switcher)
-  - [Virtual Desktop Behavior](#virtual-desktop-behavior)
-  - [Hide Window Border](#hide-window-border)
+  - [Change task switcher](#change-task-switcher)
+  - [Virtual Desktop behavior](#virtual-desktop-behavior)
+  - [Hide window border](#hide-window-border)
+  - [Move a window to the center](#move-a-window-to-the-center)
   - [Mouse wheel scroll speed](#mouse-wheel-scroll-speed)
   - [Baloo](#baloo)
   - [KWallet](#kwallet)
@@ -22,7 +23,8 @@
 
 ## Recent files when right-clicking Firefox
 
-Open *System Settings > Workspace Behavior > Recent Files*.
+- Go to *System Settings > Workspace Behavior > Recent Files*.
+- Select *Do not remember*.
 
 *References*:
 
@@ -30,21 +32,20 @@ Open *System Settings > Workspace Behavior > Recent Files*.
 
 ## Window focus stealing policy
 
-- Open *System Settings > Window Behavior > Focus > Focus stealing prevention*
+- Go to *System Settings > Window Behavior > Focus > Focus stealing prevention*
 - Choose *None*
 
-## Change Task Switcher
+## Change task switcher
 
-- Open *System Settings > Window Management > Task Switcher*
+- Go to *System Settings > Window Management > Task Switcher*
 - Select *Thumbnails Grid*.
 
-## Virtual Desktop Behavior
+## Virtual Desktop behavior
 
-Open *System Settings > Window Management > Window Behavior > Advanced*.
+- Go to *System Settings > Window Management > Window Behavior > Advanced > Virtual Desktop behavior*.
+- Select *Switch to that Virtual Desktop*.
 
-**Note**: ~~At the time of writing (*Tumbleweed 20230211, KDE Plasma 5.26.5, Firefox 109.0.1*), there is a bug that Firefox does not follow the behavior.~~
-
-**Update**: At the time of updating (*Tumbleweed 20230224, KDE Plasma 5.27.1, Firefox 109.0.1*), the bug is already fixed.
+**Note**: ~~At the time of writing (*Tumbleweed 20230211, KDE Plasma 5.26.5, Firefox 109.0.1*), there is a bug that Firefox does not follow the behavior.~~ At the time of updating (*Tumbleweed 20230224, KDE Plasma 5.27.1, Firefox 109.0.1*), the bug is already fixed.
 
 *References*:
 
@@ -52,11 +53,19 @@ Open *System Settings > Window Management > Window Behavior > Advanced*.
 - [Prevent a browser window from changing virtual desktops when an application on another desktop opens a link?](https://www.reddit.com/r/kde/comments/zm6gag/prevent_a_browser_window_from_changing_virtual/)
 - [Windows do not stay on the virtual desktop they are on](https://bugs.kde.org/show_bug.cgi?id=462996)
 
-## Hide Window Border
+## Hide window border
+
+- Create a window rule for the desired window/application, or go to *System Settings > Window Management > Window Rules > Add New...*.
+- Click *Add Property...* and search for *No titlebar and frame*. Select *Force* and *Yes*.
 
 *References*:
 
-- https://medium.com/@CodyReichert/how-to-hide-title-bars-in-kde-plasma-5-348e0df4087f
+- [How to hide title bars in KDE plasma 5](https://medium.com/@CodyReichert/how-to-hide-title-bars-in-kde-plasma-5-348e0df4087f)
+
+## Move a window to the center
+
+- Go to *System Settings > Shortcuts > KWin > Move Window to the Center*.
+- I changed the custom shortcuts to `Meta` + `Ctrl` + `C`.
 
 ## Mouse wheel scroll speed
 
@@ -102,7 +111,7 @@ The simplest method: create a wallet in KWallet and use a blank password.
 
 ### Configure Sugar Candy for SDDM
 
-Change `/usr/share/sddm/themes/sugar-candy/theme.conf.user` according to the following:
+On my machine, I changed `/usr/share/sddm/themes/sugar-candy/theme.conf.user` according to the following:
 
 ```properties
 [General]
