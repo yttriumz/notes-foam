@@ -17,3 +17,11 @@ Use `chkdsk C: /r`.
 - [chkdsk](https://learn.microsoft.com/en-us/windows-server/administration/windows-commands/chkdsk?tabs=event-viewer)
 - [How to Fix OneDrive’s "The Tag Present in the Reparse Point Buffer Is Invalid" Error on Windows](https://www.makeuseof.com/fix-the-tag-present-in-the-reparse-point-buffer-is-invalid-error-on-windows/)
 - [How to Fix "tag present in the reparse point buffer is invalid" OneDrive Error](https://www.youtube.com/watch?v=SMd2s1Em42Q)
+
+## Windows boot log
+
+*References*:
+
+- [Advanced troubleshooting for Windows boot problems](https://learn.microsoft.com/en-us/troubleshoot/windows-client/performance/windows-boot-issues-troubleshooting)
+- [Windows 10 log info when starting](https://superuser.com/questions/1140309/windows-10-log-info-when-starting)
+- [How to force Win10 to show text rather than circle while loading](https://www.tenforums.com/general-support/133620-how-force-win10-show-text-rather-than-circle-while-loading.html)
