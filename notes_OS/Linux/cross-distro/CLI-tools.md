@@ -49,6 +49,7 @@ Add `2>&1 | grep -v "Permission denied"` to the end.
 *References*:
 
 - https://github.com/BurntSushi/ripgrep
+- [ripgrep is faster than {grep, ag, git grep, ucg, pt, sift}](https://blog.burntsushi.net/ripgrep/)
 
 ## File manager
 

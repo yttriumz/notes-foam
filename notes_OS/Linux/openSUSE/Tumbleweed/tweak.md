@@ -376,7 +376,7 @@ See [[boot_param]] for parameter meanings.
 [rime#User config]: ../../../cross-platform/rime.md "RIME | 中州韻輸入法引擎"
 [power]: ../../cross-distro/power.md "Power Management"
 [KDE]: ../../cross-distro/KDE.md "KDE Plasma Tweak"
-[Xorg#Disable middle click using ]: ../../../cross-platform/Xorg.md "X.Org"
+[Xorg#Disable middle click using ]: ../../cross-distro/Xorg.md "X.Org"
 [KDE#Mouse wheel scroll speed]: ../../cross-distro/KDE.md "KDE Plasma Tweak"
 [Tumbleweed/dev_env]: dev_env.md "OpenSUSE Development Environment"
 [boot_param]: ../../cross-distro/boot_param.md "Boot Parameters"

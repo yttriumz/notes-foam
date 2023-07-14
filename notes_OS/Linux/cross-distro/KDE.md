@@ -2,6 +2,7 @@
 
 - [KDE Plasma Tweak](#kde-plasma-tweak)
   - [Widget](#widget)
+  - [Autostart](#autostart)
   - [Recent files when right-clicking Firefox](#recent-files-when-right-clicking-firefox)
   - [Window focus stealing policy](#window-focus-stealing-policy)
   - [Change task switcher](#change-task-switcher)
@@ -18,8 +19,16 @@
 
 ## Widget
 
-- [Event Calendar]( https://store.kde.org/p/998901 )
-- [Prime Render Switch and Status]( https://store.kde.org/p/1425330 )
+- [Event Calendar](https://store.kde.org/p/998901)
+- [Prime Render Switch and Status](https://store.kde.org/p/1425330)
+
+## Autostart
+
+*References*:
+
+- [Autostart](https://userbase.kde.org/System_Settings/Startup_and_Shutdown#Autostart)
+- [System Settings/Autostart](https://userbase.kde.org/System_Settings/Autostart)
+- [Autostart](https://docs.kde.org/stable5/en/plasma-workspace/kcontrol/autostart/index.html)
 
 ## Recent files when right-clicking Firefox
 
