@@ -1,4 +1,4 @@
-# Windows Softwares
+# Softwares on Windows
 
 ## MS store
 
@@ -16,15 +16,15 @@
 ## Standalone
 
 - *Uninstall Tool*
-- *Microsoft Visual C++ Redistributable* from [the official page](https://learn.microsoft.com/en-us/cpp/windows/latest-supported-vc-redist?view=msvc-170).
-- [*Traffic Monitor*]( https://github.com/zhongyang219/TrafficMonitor )
-- [*VSCode*]( https://code.visualstudio.com/#alt-downloads )
-- [*Git*]( https://gitforwindows.org/ )
-- [*Everything*]( https://www.voidtools.com/downloads/ )
-- [*f.lux*]( https://justgetflux.com/ )
-- [*sizer4*]( http://www.brianapps.net/sizer4/ )
+- *Microsoft Visual C++ Redistributable* from [the official page](https://learn.microsoft.com/en-us/cpp/windows/latest-supported-vc-redist?view=msvc-170)
+- [*Traffic Monitor*](https://github.com/zhongyang219/TrafficMonitor)
+- [*VSCode*](https://code.visualstudio.com/#alt-downloads)
+- [*Git*](https://gitforwindows.org/)
+- [*Everything*](https://www.voidtools.com/downloads/)
+- [*f.lux*](https://justgetflux.com/)
+- [*sizer4*](http://www.brianapps.net/sizer4/)
 - *Zoom*
-- *Clash*
+- *Clash for Windows*
 
 ## Don's
 
