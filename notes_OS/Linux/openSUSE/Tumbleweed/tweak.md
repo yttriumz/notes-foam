@@ -191,9 +191,10 @@ Use `__NV_PRIME_RENDER_OFFLOAD=1 __VK_LAYER_NV_optimus=NVIDIA_only __GLX_VENDOR_
 
 *References*:
 
-- https://wiki.archlinux.org/title/PRIME#Configure_applications_to_render_using_GPU
-- https://askubuntu.com/questions/1364762/prime-run-command-not-found
-- https://www.youtube.com/watch?v=aPi8NfDyDMU
+- [Chapter 35. PRIME Render Offload](https://download.nvidia.com/XFree86/Linux-x86_64/525.116.04/README/primerenderoffload.html)
+- [2.2.2 Configure applications to render using GPU](https://wiki.archlinux.org/title/PRIME#Configure_applications_to_render_using_GPU)
+- [Prime-run command not found](https://askubuntu.com/questions/1364762/prime-run-command-not-found)
+- [Prime-run on Ubuntu, openSUSE, and Fedora (Nvidia & Linux)](https://www.youtube.com/watch?v=aPi8NfDyDMU)
 
 ### Benchmark
 
