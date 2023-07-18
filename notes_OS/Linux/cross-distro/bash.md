@@ -28,8 +28,6 @@ Press `alt`-`ctrl`-`e`.
 
 ### Auto-completion for aliases
 
-Refer to [complete-alias](https://github.com/cykerway/complete-alias) for more.
-
 1. Save the following to `~/.bash_aliases_completion`:
 
    <details>
@@ -1018,3 +1016,7 @@ Refer to [complete-alias](https://github.com/cykerway/complete-alias) for more.
        . ~/.bash_aliases_completion
    fi
    ```
+
+*References*:
+
+- [complete-alias](https://github.com/cykerway/complete-alias)

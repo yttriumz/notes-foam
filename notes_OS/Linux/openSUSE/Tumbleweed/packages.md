@@ -1,44 +1,43 @@
 # Package Management
 
-- [Package Management](#package-management)
-  - [Zypper](#zypper)
-    - [Add repo](#add-repo)
-      - [Packman and NVidia](#packman-and-nvidia)
-      - [VSCode](#vscode)
-      - [containers](#containers)
-      - [NVIDIA Container Toolkit](#nvidia-container-toolkit)
-      - [CUDA](#cuda)
-      - [M17N (Multilingualization)](#m17n-multilingualization)
-      - [Google Chrome](#google-chrome)
-      - [Microsoft Edge](#microsoft-edge)
-      - [Brave Browser](#brave-browser)
-      - [Cloudflare WARP](#cloudflare-warp)
-    - [Examine repo](#examine-repo)
-      - [Some repo reference](#some-repo-reference)
-    - [Set priority](#set-priority)
-    - [Package query](#package-query)
-      - [Unused Packages](#unused-packages)
-      - [Installation History](#installation-history)
-      - [Package Dependency](#package-dependency)
-    - [Lock](#lock)
-      - [Lock packages](#lock-packages)
-      - [Lock patterns](#lock-patterns)
-      - [List locks](#list-locks)
-  - [Install rpm](#install-rpm)
-    - [Zoom](#zoom)
-    - [WARP (manually)](#warp-manually)
-    - [QQ](#qq)
-    - [WeChat](#wechat)
-    - [Xtreme Download Manager](#xtreme-download-manager)
-    - [Motrix download manager](#motrix-download-manager)
-  - [OBS Package Installer (OPI)](#obs-package-installer-opi)
-    - [Install OPI](#install-opi)
-  - [Flatpak](#flatpak)
-    - [Install Flatpak](#install-flatpak)
-    - [Add repo](#add-repo-1)
-    - [Uninstall unused packages](#uninstall-unused-packages)
-    - [Interesting posts](#interesting-posts)
-  - [Become a Packager](#become-a-packager)
+- [Zypper](#zypper)
+  - [Add repo](#add-repo)
+    - [Packman and NVidia](#packman-and-nvidia)
+    - [VSCode](#vscode)
+    - [containers](#containers)
+    - [NVIDIA Container Toolkit](#nvidia-container-toolkit)
+    - [CUDA](#cuda)
+    - [M17N (Multilingualization)](#m17n-multilingualization)
+    - [Google Chrome](#google-chrome)
+    - [Microsoft Edge](#microsoft-edge)
+    - [Brave Browser](#brave-browser)
+    - [Cloudflare WARP](#cloudflare-warp)
+  - [Examine repo](#examine-repo)
+    - [Some repo reference](#some-repo-reference)
+  - [Set priority](#set-priority)
+  - [Package query](#package-query)
+    - [Unused Packages](#unused-packages)
+    - [Installation History](#installation-history)
+    - [Package Dependency](#package-dependency)
+  - [Lock](#lock)
+    - [Lock packages](#lock-packages)
+    - [Lock patterns](#lock-patterns)
+    - [List locks](#list-locks)
+- [Install rpm](#install-rpm)
+  - [Zoom](#zoom)
+  - [WARP (manually)](#warp-manually)
+  - [QQ](#qq)
+  - [WeChat](#wechat)
+  - [Xtreme Download Manager](#xtreme-download-manager)
+  - [Motrix download manager](#motrix-download-manager)
+- [OBS Package Installer (OPI)](#obs-package-installer-opi)
+  - [Install OPI](#install-opi)
+- [Flatpak](#flatpak)
+  - [Install Flatpak](#install-flatpak)
+  - [Add repo](#add-repo-1)
+  - [Uninstall unused packages](#uninstall-unused-packages)
+  - [Interesting posts](#interesting-posts)
+- [Become a Packager](#become-a-packager)
 
 ## Zypper
 
@@ -63,7 +62,7 @@ Note that after this, *YaST Software* may automatically select some NVidia drive
   zypper install code
   ```
 
-- Use `opi vscode`.
+- Or use `opi vscode`.
 
 *References*:
 
@@ -79,7 +78,7 @@ zypper addrepo https://download.opensuse.org/repositories/Virtualization:contain
 
 *References*:
 
-- https://software.opensuse.org/download.html?project=Virtualization%3Acontainers&package=docker#manualopenSUSE
+- [docker from Virtualization:containers project](https://software.opensuse.org/download.html?project=Virtualization%3Acontainers&package=docker#manualopenSUSE)
 
 #### NVIDIA Container Toolkit
 
@@ -148,7 +147,7 @@ zypper addrepo https://download.opensuse.org/repositories/M17N/openSUSE_Tumblewe
   zypper install google-chrome-stable
   ```
 
-- Use `opi chrome`.
+- Or use `opi chrome`.
 
 *References*:
 
@@ -166,7 +165,7 @@ zypper addrepo https://download.opensuse.org/repositories/M17N/openSUSE_Tumblewe
   zypper install microsoft-edge-stable
   ```
 
-- Use `opi msedge`.
+- Or use `opi msedge`.
 
 #### Brave Browser
 
@@ -179,7 +178,7 @@ zypper addrepo https://download.opensuse.org/repositories/M17N/openSUSE_Tumblewe
   zypper install brave-browser
   ```
 
-- Use `opi brave`.
+- Or use `opi brave`.
 
 *References*:
 
@@ -202,7 +201,7 @@ See [[WARP]] for configuration.
 ### Examine repo
 
 - Use *YaST*.
-- Use `zypper repos -P`.
+- Or use `zypper repos -P`.
 
 #### Some repo reference
 
@@ -211,7 +210,7 @@ See [[WARP]] for configuration.
 ### Set priority
 
 - Use *YaST*.
-- Use `zypper modifyrepo -p`.
+- Or use `zypper modifyrepo -p`.
 
 ### Package query
 
@@ -238,8 +237,8 @@ The history can be found in `/var/log/zypp/history`. Root permission might be ne
 
 #### Lock packages
 
-- *YaST* can be used.
-- Use `zypper addlock SOME_PACKAGE`.
+- Use *YaST*.
+- Or use `zypper addlock SOME_PACKAGE`.
 
 #### Lock patterns
 
@@ -261,7 +260,7 @@ Use `zypper install PATH_TO_RPM`.
 ### Zoom
 
 - Download from [the official site](https://zoom.us/download?os=linux). `ibus` could be locked before installing.
-- Use `opi zoom`.
+- Or use `opi zoom`.
 
 *References*:
 
