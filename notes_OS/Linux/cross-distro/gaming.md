@@ -6,11 +6,11 @@
   - [Play non-Steam games using Proton (Flatpak)](#play-non-steam-games-using-proton-flatpak)
   - [Launch options template](#launch-options-template)
   - [Cyberpunk 2077](#cyberpunk-2077)
-    - [Graphics options](#graphics-options)
+    - [Graphics options (T2000)](#graphics-options-t2000)
     - [Game save](#game-save)
   - [Gene Shift Auto](#gene-shift-auto)
   - [Outer Wilds](#outer-wilds)
-    - [Graphics options](#graphics-options-1)
+    - [Graphics options (T2000)](#graphics-options-t2000-1)
     - [Game save](#game-save-1)
   - [Super Animal Royal](#super-animal-royal)
   - [theHunter: Call of the Wild](#thehunter-call-of-the-wild)
@@ -80,8 +80,9 @@ GAMEMODERUNEXEC="env __NV_PRIME_RENDER_OFFLOAD=1 __VK_LAYER_NV_optimus=NVIDIA_on
 
 ### Cyberpunk 2077
 
-#### Graphics options
+#### Graphics options (T2000)
 
+- Limit framerate to 30.
 - [ ] todo
 
 #### Game save
@@ -102,9 +103,10 @@ __NV_PRIME_RENDER_OFFLOAD=1 __VK_LAYER_NV_optimus=NVIDIA_only __GLX_VENDOR_LIBRA
 
 ### Outer Wilds
 
-#### Graphics options
+#### Graphics options (T2000)
 
-- *Shadow quality* is most GPU-consuming. Set it to low.
+- Limit framerate to 45.
+- *Shadow Quality* is most GPU-consuming. Set it to *Low*.
 
 #### Game save
 
