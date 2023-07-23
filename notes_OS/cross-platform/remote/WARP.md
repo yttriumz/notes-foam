@@ -2,6 +2,7 @@
 
 - [Installation](#installation)
   - [Linux](#linux)
+  - [Android](#android)
 - [Commonly used subcommands (*warp-cli 2023.3.398*)](#commonly-used-subcommands-warp-cli-20233398)
 - [Select endpoint](#select-endpoint)
 - [Auxiliary utilities](#auxiliary-utilities)
@@ -17,6 +18,13 @@
 ### Linux
 
 - [[packages#Cloudflare WARP]]
+
+### Android
+
+*References*:
+
+- [Android使用WARP](https://blog.tanglu.me/WARP-for-Android/)
+- [CloudFlare WARP 官方客户端详细使用教程 （持续更新）](https://blog.misaka.rest/2023/02/08/cf-warp/)
 
 ## Commonly used subcommands (*warp-cli 2023.3.398*)
 

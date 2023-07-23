@@ -12,7 +12,7 @@
       - [Modify `.bashrc`](#modify-bashrc)
       - [auto-completion for aliases](#auto-completion-for-aliases)
   - [starship](#starship)
-  - [wezterm](#wezterm)
+  - [WezTerm](#wezterm)
 - [NVIDIA graphics card](#nvidia-graphics-card)
   - [Install driver and prime-select](#install-driver-and-prime-select)
   - [If graphics driver or graphical desktop does not work](#if-graphics-driver-or-graphical-desktop-does-not-work)
@@ -116,7 +116,9 @@ alias frp='~/.frp/frpc --config ~/.frp/frpc.ini'
 alias rm='rm -I'
 alias studio='/opt/android-studio/bin/studio.sh'
 alias trash='gio trash'
-alias warp='warp-cli'
+alias warp='warp-cli -vvv'
+alias warpc='warp-cli -vvv connect'
+alias warpd='warp-cli -vvv disconnect'
 alias xt='exit'
 ```
 
@@ -148,13 +150,10 @@ See [[bash#Auto-completion for aliases]].
 3. Then install starship by `cargo install starship --locked`.
 4. See [[shell#Starship]] for configuration.
 
-### wezterm
+### WezTerm
 
-1. Use *YaST* to install the stable version. Refer to [the official doc](https://wezfurlong.org/wezterm/install/linux.html#installing-on-fedora-and-rpm-based-systems) for the night version.
-
-   **Note**: At the time of writing (*wezterm 20230326.111934.3666303c-1.1* in official repo), **if you install wezterm using `zypper install wezterm` from openSUSE's repo**, there is a bug that wezterm leaves a file `dhat-heap.json` in the directory where it's opened on. Directly installing the official package could solve the problem. You can install the nightly version by `zypper install https://github.com/wez/wezterm/releases/download/nightly/wezterm-nightly-opensuse_tumbleweed.rpm`. Or you can go to [the official site](https://wezfurlong.org/wezterm/install/linux.html#installing-on-fedora-and-rpm-based-systems) to find the latest stable version.
-
-2. See [[terminal#Wezterm]] for configuration.
+1. See [[packages#WezTerm]] for installation.
+2. See [[terminal#WezTerm]] for configuration.
 
 ## NVIDIA graphics card
 
@@ -370,7 +369,8 @@ See [[boot_param]] for parameter meanings.
 [bash#Auto-completion for aliases]: ../../cross-distro/bash.md "Bash Usage"
 [Tumbleweed/dev_env#Rust]: dev_env.md "OpenSUSE Tumbleweed Development Environment"
 [shell#Starship]: ../../../cross-platform/shell.md "Shell Related"
-[terminal#Wezterm]: ../../../cross-platform/terminal.md "Terminal Related"
+[packages#WezTerm]: packages.md "Package Management"
+[terminal#WezTerm]: ../../../cross-platform/terminal.md "Terminal Related"
 [cross-distro/bluetooth]: ../../cross-distro/bluetooth.md "Use the Same Bluetooth Device on Linux and Windows Dual Boot System"
 [fonts]: ../../../cross-platform/fonts.md "Fonts"
 [rime#User config]: ../../../cross-platform/rime.md "RIME | 中州韻輸入法引擎"

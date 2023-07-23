@@ -14,7 +14,6 @@
     "nostr",
     "ohmyposh",
     "rustup",
-    "wezterm"
   ],
   "editor.minimap.enabled": false,
   "markdownlint.config": {
