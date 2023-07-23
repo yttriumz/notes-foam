@@ -2,29 +2,28 @@
 
 This note contains operation related tips. See [[cross-platform/git]] for configuration tips.
 
-- [Git Tips](#git-tips)
-  - [Commit message convention](#commit-message-convention)
-  - [Change commit messages](#change-commit-messages)
-  - [Clone to a specific directory](#clone-to-a-specific-directory)
-  - [Embedded repo](#embedded-repo)
-  - [Update an unchecked-out local branch from remote branch](#update-an-unchecked-out-local-branch-from-remote-branch)
-  - [Discard unstaged changes](#discard-unstaged-changes)
-  - [Stash changes](#stash-changes)
-  - [Rename branch](#rename-branch)
-  - [Change repo remote origin](#change-repo-remote-origin)
-  - [Hard reset remote branch](#hard-reset-remote-branch)
-  - [Private fork](#private-fork)
-  - [墙国专属](#墙国专属)
-    - [Change `hosts`](#change-hosts)
-    - [Set proxy](#set-proxy)
-      - [Linux](#linux)
-    - [Other methods](#other-methods)
+- [Commit message convention](#commit-message-convention)
+- [Change commit messages](#change-commit-messages)
+- [Clone to a specific directory](#clone-to-a-specific-directory)
+- [Embedded repo](#embedded-repo)
+- [Update an unchecked-out local branch from remote branch](#update-an-unchecked-out-local-branch-from-remote-branch)
+- [Discard unstaged changes](#discard-unstaged-changes)
+- [Stash changes](#stash-changes)
+- [Rename branch](#rename-branch)
+- [Change repo remote origin](#change-repo-remote-origin)
+- [Hard reset remote branch](#hard-reset-remote-branch)
+- [Private fork](#private-fork)
+- [墙国专属](#墙国专属)
+  - [Change `hosts`](#change-hosts)
+  - [Set proxy](#set-proxy)
+    - [Linux](#linux)
+  - [Other methods](#other-methods)
 
 ## Commit message convention
 
 *References*:
 
-- https://www.conventionalcommits.org/en/v1.0.0/
+- [Conventional Commits](https://www.conventionalcommits.org/en/v1.0.0/)
 
 ## Change commit messages
 

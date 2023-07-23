@@ -2,6 +2,14 @@
 
 This note contains configuration related tips. See [[notes_development/git]] for other git operation tips.
 
+- [Local configuration](#local-configuration)
+  - [Show configs](#show-configs)
+  - [Configure user](#configure-user)
+  - [Automatic transformation (Windows)](#automatic-transformation-windows)
+  - [Specify how to reconcile divergent branches](#specify-how-to-reconcile-divergent-branches)
+- [GitHub configuration](#github-configuration)
+  - [Add SSH key to GitHub](#add-ssh-key-to-github)
+
 ## Local configuration
 
 ### Show configs

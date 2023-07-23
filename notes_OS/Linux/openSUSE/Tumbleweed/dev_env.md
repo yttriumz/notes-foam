@@ -1,27 +1,27 @@
-# OpenSUSE Development Environment
+# OpenSUSE Tumbleweed Development Environment
 
-- [OpenSUSE Development Environment](#opensuse-development-environment)
-   - [SSH](#ssh)
-   - [git](#git)
-   - [docker](#docker)
-      - [Manage Docker as a non-root user (less secure)](#manage-docker-as-a-non-root-user-less-secure)
-      - [Rootless mode (more secure)](#rootless-mode-more-secure)
-      - [Build and run NVidia GPU accelerated Docker containers](#build-and-run-nvidia-gpu-accelerated-docker-containers)
-   - [Basic environment](#basic-environment)
-   - [Android](#android)
-      - [Android Studio](#android-studio)
-   - [C\_Cpp](#c_cpp)
-   - [Flutter](#flutter)
-   - [Go](#go)
-   - [Java](#java)
-   - [JavaScript](#javascript)
-      - [Node.js](#nodejs)
-         - [fnm](#fnm)
-   - [Python](#python)
-   - [Rust](#rust)
-   - [Scala](#scala)
-   - [Machine Learning](#machine-learning)
-      - [TensorFlow 2](#tensorflow-2)
+- [SSH](#ssh)
+- [git](#git)
+- [VSCode](#vscode)
+- [Docker](#docker)
+   - [Build and run NVidia GPU accelerated Docker containers](#build-and-run-nvidia-gpu-accelerated-docker-containers)
+- [KVM](#kvm)
+- [Basic environment](#basic-environment)
+- [Android](#android)
+   - [Android Studio](#android-studio)
+- [C\_Cpp](#c_cpp)
+- [Flutter](#flutter)
+- [Go](#go)
+- [Java](#java)
+- [JavaScript](#javascript)
+   - [Node.js](#nodejs)
+      - [fnm](#fnm)
+- [PowerShell 7](#powershell-7)
+- [Python](#python)
+- [Rust](#rust)
+- [Scala](#scala)
+- [Machine Learning](#machine-learning)
+   - [TensorFlow 2](#tensorflow-2)
 
 ## SSH
 
@@ -31,13 +31,19 @@ See [[SSH]] for configuration.
 
 See [[cross-platform/git]] for configuration.
 
-## docker
+## VSCode
+
+See [[packages#VSCode]].
+
+## Docker
+
+For usage, see [[notes_development/Docker]].
 
 1. Add *Virtualization:containers* repo. See [[packages#containers]].
 2. Install docker using the following commands:
 
    ```bash
-   sudo zypper install docker
+   zypper install docker
    ```
 
 3. Verify installation by the following commands:
@@ -46,38 +52,32 @@ See [[cross-platform/git]] for configuration.
    sudo docker run --rm hello-world
    ```
 
-### Manage Docker as a non-root user (less secure)
-
-1. Add yourself to the `docker` group by the following commands:
-
-   ```bash
-   sudo usermod -aG docker $USER
-   ```
-
-2. Log out and Log back in to take effect.
-
-*References*:
-
-- https://docs.docker.com/engine/install/linux-postinstall/#manage-docker-as-a-non-root-user
-
-### Rootless mode (more secure)
-
-- [ ] todo
-
-*References*:
-
-- https://docs.docker.com/engine/security/rootless/
-
 ### Build and run NVidia GPU accelerated Docker containers
 
 See [[packages#NVIDIA Container Toolkit]]
+
+## KVM
+
+For usage, see [[cross-distro/KVM]].
+
+At the time of writing (openSUSE Tumbleweed 20230707), install KVM-related tools via the following commands:
+
+```bash
+zypper install --type pattern kvm_tools
+zypper install libvirt
+```
+
+*References*:
+
+- [6.2.3 Installing specific installation patterns](https://doc.opensuse.org/documentation/leap/virtualization/single-html/book-virtualization/#install-virtualization-components-pattern)
 
 ## Basic environment
 
 Install the basic environment by the following commands:
 
 ```bash
-sudo zypper install -t pattern devel_basis
+zypper install -t pattern devel_basis
+zypper install pattern:devel_basis # This is the same
 ```
 
 ## Android
@@ -120,7 +120,7 @@ sudo zypper install -t pattern devel_basis
 1. Install some packages by the following commands:
 
    ```bash
-   sudo zypper install clang
+   zypper install clang
    ```
 
 ## Flutter
@@ -145,7 +145,7 @@ sudo zypper install -t pattern devel_basis
 
 ## Go
 
-1. Refer to [the official doc]( https://go.dev/doc/install ). I installed it under `$HOME/.go`.
+1. Refer to [the official doc](https://go.dev/doc/install). I installed it under `$HOME/.go`.
 2. Add the following to `~/.bash_profile`:
 
    ```bash
@@ -153,12 +153,16 @@ sudo zypper install -t pattern devel_basis
    export PATH="$PATH:$HOME/.go/bin"
    ```
 
+*References*:
+
+- [The `GOPATH` environment variable](https://go.dev/doc/gopath_code#GOPATH)
+
 ## Java
 
 Use the following commands:
 
 ```bash
-sudo zypper install java-17-openjdk-devel java-17-openjdk-src
+zypper install java-17-openjdk-devel java-17-openjdk-src
 ```
 
 *References*:
@@ -170,6 +174,8 @@ sudo zypper install java-17-openjdk-devel java-17-openjdk-src
 
 ### Node.js
 
+It is recommended to use a Node version manager to install Node.js and npm.
+
 *References*:
 
 - https://docs.npmjs.com/cli/v9/configuring-npm/install
@@ -180,23 +186,47 @@ sudo zypper install java-17-openjdk-devel java-17-openjdk-src
 
 - https://github.com/Schniz/fnm
 
-## Python
+## PowerShell 7
 
-`python3` is already installed.
+Go to [the official repo](https://github.com/PowerShell/PowerShell/releases) and install an LTS version (e.g. `powershell-lts-7.2.13-1.rh.x86_64.rpm`) via the following command:
 
-## Rust
+```bash
+zypper install https://github.com/PowerShell/PowerShell/releases/download/v7.2.13/powershell-lts-7.2.13-1.rh.x86_64.rpm
+```
 
-1. I installed it under `$HOME/.rust` by adding the following to `.bash_profile` before installation:
+At the time of writing (*Tumbleweed 20230707, PowerShell 7.2.13*), I encountered the following issue and chose to ignore it:
 
-   ```bash
-   # Rust environment
-   export RUSTUP_HOME=$HOME/.rust/.rustup
-   export CARGO_HOME=$HOME/.rust/.cargo
-   ```
+```text
+Problem: nothing provides 'openssl-libs' needed by the to be installed powershell-lts-7.2.13-1.rh.x86_64
+ Solution 1: do not install powershell-lts-7.2.13-1.rh.x86_64
+ Solution 2: break powershell-lts-7.2.13-1.rh.x86_64 by ignoring some of its dependencies
+```
 
 *References*:
 
-- https://doc.rust-lang.org/book/ch01-01-installation.html
+- [PowerShell](https://en.opensuse.org/PowerShell)
+- [Install PowerShell on Linux](https://learn.microsoft.com/en-US/powershell/scripting/install/installing-powershell-on-linux?view=powershell-7.2)
+- [PowerShell paths](https://learn.microsoft.com/en-us/powershell/scripting/install/install-rhel?view=powershell-7.2#powershell-paths)
+- [Install the .NET SDK or the .NET Runtime on openSUSE](https://learn.microsoft.com/en-us/dotnet/core/install/linux-opensuse)
+- [Using Visual Studio Code for PowerShell Development](https://learn.microsoft.com/en-us/powershell/scripting/dev-cross-plat/vscode/using-vscode?view=powershell-7.2)
+
+## Python
+
+`python3` is already available upon system installation.
+
+## Rust
+
+I installed it under `$HOME/.rust` by adding the following to `.bash_profile` before installation:
+
+```bash
+# Rust environment
+export RUSTUP_HOME=$HOME/.rust/.rustup
+export CARGO_HOME=$HOME/.rust/.cargo
+```
+
+*References*:
+
+- [Installation](https://doc.rust-lang.org/book/ch01-01-installation.html)
 
 ## Scala
 
@@ -244,6 +274,9 @@ It is recommended to run TensorFlow 2 in a container.
 [//begin]: # "Autogenerated link references for markdown compatibility"
 [SSH]: ../../../cross-platform/remote/SSH.md "SSH configs"
 [cross-platform/git]: ../../../cross-platform/git.md "Git Configuration"
+[packages#VSCode]: packages.md "Package Management"
+[notes_development/Docker]: ../../../../notes_development/Docker.md "Developing Using Docker"
 [packages#containers]: packages.md "Package Management"
 [packages#NVIDIA Container Toolkit]: packages.md "Package Management"
+[cross-distro/KVM]: ../../cross-distro/KVM.md "Kernel-based Virtual Machine Usage"
 [//end]: # "Autogenerated link references"

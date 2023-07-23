@@ -1,21 +1,21 @@
 # Commonly Used Command-line Tools
 
-- [Commonly Used Command-line Tools](#commonly-used-command-line-tools)
-  - [Search tool](#search-tool)
-    - [`find`](#find)
-      - [Ignore case](#ignore-case)
-      - [Get rid of "Permission Denied"](#get-rid-of-permission-denied)
-      - [Interesting posts](#interesting-posts)
-    - [`fd` (Rust)](#fd-rust)
-    - [ripgrep (`rg`) (Rust)](#ripgrep-rg-rust)
-  - [File manager](#file-manager)
-    - [`joshuto` (Rust)](#joshuto-rust)
-    - [`ranger` (Python)](#ranger-python)
-  - [`ls` replacement](#ls-replacement)
-    - [`exa` (Rust)](#exa-rust)
-    - [`lsd` (Rust)](#lsd-rust)
-  - [`cat` replacement](#cat-replacement)
-    - [`bat` (Rust)](#bat-rust)
+- [Search tool](#search-tool)
+  - [`find`](#find)
+    - [Ignore case](#ignore-case)
+    - [Find only files/directories](#find-only-filesdirectories)
+    - [Get rid of "Permission Denied"](#get-rid-of-permission-denied)
+    - [Interesting posts](#interesting-posts)
+  - [`fd` (Rust)](#fd-rust)
+  - [ripgrep (`rg`) (Rust)](#ripgrep-rg-rust)
+- [File manager](#file-manager)
+  - [`joshuto` (Rust)](#joshuto-rust)
+  - [`ranger` (Python)](#ranger-python)
+- [`ls` alternatives](#ls-alternatives)
+  - [`exa` (Rust)](#exa-rust)
+  - [`lsd` (Rust)](#lsd-rust)
+- [`cat` alternatives](#cat-alternatives)
+  - [`bat` (Rust)](#bat-rust)
 
 ## Search tool
 
@@ -24,6 +24,14 @@
 #### Ignore case
 
 Use `-iname` instead of `-name`.
+
+#### Find only files/directories
+
+For files use `! -type d`; for directories use `-type d`.
+
+*References*:
+
+- [How to mark directories in the output of the `find` command?](https://unix.stackexchange.com/questions/652076/how-to-mark-directories-in-the-output-of-the-find-command)
 
 #### Get rid of "Permission Denied"
 
@@ -65,7 +73,7 @@ Add `2>&1 | grep -v "Permission denied"` to the end.
 
 - https://github.com/ranger/ranger
 
-## `ls` replacement
+## `ls` alternatives
 
 ### `exa` (Rust)
 
@@ -80,7 +88,7 @@ Add `2>&1 | grep -v "Permission denied"` to the end.
 
 - https://github.com/lsd-rs/lsd
 
-## `cat` replacement
+## `cat` alternatives
 
 ### `bat` (Rust)
 
