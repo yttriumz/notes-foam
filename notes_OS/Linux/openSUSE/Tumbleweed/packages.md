@@ -1,44 +1,43 @@
 # Package Management
 
-- [Package Management](#package-management)
-  - [Zypper](#zypper)
-    - [Add repo](#add-repo)
-      - [Packman and NVidia](#packman-and-nvidia)
-      - [VSCode](#vscode)
-      - [containers](#containers)
-      - [NVIDIA Container Toolkit](#nvidia-container-toolkit)
-      - [CUDA](#cuda)
-      - [M17N (Multilingualization)](#m17n-multilingualization)
-      - [Google Chrome](#google-chrome)
-      - [Microsoft Edge](#microsoft-edge)
-      - [Brave Browser](#brave-browser)
-      - [Cloudflare WARP](#cloudflare-warp)
-    - [Examine repo](#examine-repo)
-      - [Some repo reference](#some-repo-reference)
-    - [Set priority](#set-priority)
-    - [Package query](#package-query)
-      - [Unused Packages](#unused-packages)
-      - [Installation History](#installation-history)
-      - [Package Dependency](#package-dependency)
-    - [Lock](#lock)
-      - [Lock packages](#lock-packages)
-      - [Lock patterns](#lock-patterns)
-      - [List locks](#list-locks)
-  - [Install rpm](#install-rpm)
-    - [Zoom](#zoom)
-    - [WARP (manually)](#warp-manually)
-    - [QQ](#qq)
-    - [WeChat](#wechat)
-    - [Xtreme Download Manager](#xtreme-download-manager)
-    - [Motrix download manager](#motrix-download-manager)
-  - [OBS Package Installer (OPI)](#obs-package-installer-opi)
-    - [Install OPI](#install-opi)
-  - [Flatpak](#flatpak)
-    - [Install Flatpak](#install-flatpak)
-    - [Add repo](#add-repo-1)
-    - [Uninstall unused packages](#uninstall-unused-packages)
-    - [Interesting posts](#interesting-posts)
-  - [Become a Packager](#become-a-packager)
+- [Zypper](#zypper)
+  - [Add repo](#add-repo)
+    - [Packman and NVidia](#packman-and-nvidia)
+    - [VSCode](#vscode)
+    - [containers](#containers)
+    - [NVIDIA Container Toolkit](#nvidia-container-toolkit)
+    - [CUDA](#cuda)
+    - [M17N (Multilingualization)](#m17n-multilingualization)
+    - [Google Chrome](#google-chrome)
+    - [Microsoft Edge](#microsoft-edge)
+    - [Brave Browser](#brave-browser)
+    - [Cloudflare WARP](#cloudflare-warp)
+  - [Examine repo](#examine-repo)
+    - [Some repo reference](#some-repo-reference)
+  - [Set priority](#set-priority)
+  - [Package query](#package-query)
+    - [Unused Packages](#unused-packages)
+    - [Installation History](#installation-history)
+    - [Package Dependency](#package-dependency)
+  - [Lock](#lock)
+    - [Lock packages](#lock-packages)
+    - [Lock patterns](#lock-patterns)
+    - [List locks](#list-locks)
+- [Install rpm](#install-rpm)
+  - [Zoom](#zoom)
+  - [WARP (manually)](#warp-manually)
+  - [QQ](#qq)
+  - [WeChat](#wechat)
+  - [Xtreme Download Manager](#xtreme-download-manager)
+  - [Motrix download manager](#motrix-download-manager)
+- [OBS Package Installer (OPI)](#obs-package-installer-opi)
+  - [Install OPI](#install-opi)
+- [Flatpak](#flatpak)
+  - [Install Flatpak](#install-flatpak)
+  - [Add repo](#add-repo-1)
+  - [Uninstall unused packages](#uninstall-unused-packages)
+  - [Interesting posts](#interesting-posts)
+- [Become a Packager](#become-a-packager)
 
 ## Zypper
 
@@ -187,7 +186,7 @@ zypper addrepo https://download.opensuse.org/repositories/M17N/openSUSE_Tumblewe
 
 #### Cloudflare WARP
 
-- At the time of updating (*Tumbleweed 20230605, WARP 2023.3.470*), add *WARP* repo (and install *WARP*) by the following commands:
+- At the time of updating (*Tumbleweed 20230718, WARP 2023.7.40*), add *WARP* repo (and install *WARP*) by the following commands:
 
   ```bash
   zypper addrepo https://pkg.cloudflareclient.com/cloudflare-warp-ascii.repo
@@ -198,6 +197,10 @@ zypper addrepo https://download.opensuse.org/repositories/M17N/openSUSE_Tumblewe
 - See [[#WARP (manually)]] for manually installing *WARP*.
 
 See [[WARP]] for configuration.
+
+*References*:
+
+- [Red Hat Enterprise Linux & CentOS](https://pkg.cloudflareclient.com/#rhel)
 
 ### Examine repo
 
@@ -270,7 +273,8 @@ Use `zypper install PATH_TO_RPM`.
 
 ### WARP (manually)
 
-1. ~~At the time of writing (*Tumbleweed 20230518, WARP 2023.3.398*), install `setcap` via `zypper install libcap-progs`. Otherwise, the post-install script will fail to run.~~ At the time of updating (*Tumbleweed 20230605, WARP 2023.3.470*), no need to install `libcap-progs`.
+1. ~~At the time of writing (*Tumbleweed 20230518, WARP 2023.3.398*), install `setcap` via `zypper install libcap-progs`. Otherwise, the post-install script will fail to run.~~ At the time of updating (*Tumbleweed 20230718, WARP 2023.7.40*), no need to install `libcap-progs`.
+   - At the time of updating (*Tumbleweed 20230718, WARP 2023.7.40*), zypper will report "nothing provides `dbus` needed". I just ignored it, and it worked well.
 2. ~~Download from [the official site](https://pkg.cloudflareclient.com/packages/cloudflare-warp)~~. At the time of updating (*2023-06-21*), direct access to the package is forbidden.
 
 See [[WARP]] for configuration.
