@@ -187,7 +187,7 @@ zypper addrepo https://download.opensuse.org/repositories/M17N/openSUSE_Tumblewe
 
 #### Cloudflare WARP
 
-- At the time of updating (*Tumbleweed 20230605, WARP 2023.3.470*), add *WARP* repo (and install *WARP*) by the following commands:
+- At the time of updating (*Tumbleweed 20230718, WARP 2023.7.40*), add *WARP* repo (and install *WARP*) by the following commands:
 
   ```bash
   zypper addrepo https://pkg.cloudflareclient.com/cloudflare-warp-ascii.repo
@@ -198,6 +198,10 @@ zypper addrepo https://download.opensuse.org/repositories/M17N/openSUSE_Tumblewe
 - See [[#WARP (manually)]] for manually installing *WARP*.
 
 See [[WARP]] for configuration.
+
+*References*:
+
+- [Red Hat Enterprise Linux & CentOS](https://pkg.cloudflareclient.com/#rhel)
 
 ### Examine repo
 
@@ -275,7 +279,8 @@ At the time of writing (*WezTerm 20230326.111934.3666303c-1.1* in official repo)
 
 ### WARP (manually)
 
-1. ~~At the time of writing (*Tumbleweed 20230518, WARP 2023.3.398*), install `setcap` via `zypper install libcap-progs`. Otherwise, the post-install script will fail to run.~~ At the time of updating (*Tumbleweed 20230605, WARP 2023.3.470*), no need to install `libcap-progs`.
+1. ~~At the time of writing (*Tumbleweed 20230518, WARP 2023.3.398*), install `setcap` via `zypper install libcap-progs`. Otherwise, the post-install script will fail to run.~~ At the time of updating (*Tumbleweed 20230718, WARP 2023.7.40*), no need to install `libcap-progs`.
+   - At the time of updating (*Tumbleweed 20230718, WARP 2023.7.40*), zypper will report "nothing provides `dbus` needed". I just ignored it, and it worked well.
 2. ~~Download from [the official site](https://pkg.cloudflareclient.com/packages/cloudflare-warp)~~. At the time of updating (*2023-06-21*), direct access to the package is forbidden.
 
 See [[WARP]] for configuration.
