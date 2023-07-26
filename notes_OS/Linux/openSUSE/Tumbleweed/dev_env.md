@@ -58,14 +58,14 @@ See [[packages#NVIDIA Container Toolkit]]
 
 ## KVM
 
-For usage, see [[cross-distro/KVM]].
-
-At the time of writing (openSUSE Tumbleweed 20230707), install KVM-related tools via the following commands:
+At the time of writing (*Tumbleweed 20230707*), install KVM-related tools via the following commands:
 
 ```bash
 zypper install --type pattern kvm_tools
 zypper install libvirt
 ```
+
+For usage, see [[cross-distro/KVM]].
 
 *References*:
 

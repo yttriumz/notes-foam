@@ -21,6 +21,8 @@
 
 ### Android
 
+Google Mobile Services might be required. Use WireGuard instead for convenience.
+
 *References*:
 
 - [Android使用WARP](https://blog.tanglu.me/WARP-for-Android/)

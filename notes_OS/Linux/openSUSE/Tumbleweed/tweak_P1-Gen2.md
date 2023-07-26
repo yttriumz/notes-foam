@@ -89,7 +89,10 @@ Add the following:
 ```bash
 # sudo related
 alias asudo='sudo ' # able to use aliases
-alias esudo='sudo --preserve-env env "PATH=$PATH"' # able to use user pathes
+alias esudo='sudo --preserve-env env "PATH=$PATH"' # able to use user PATH
+
+# systemctl related
+alias sysstatus='systemctl status'
 
 # zypper related
 alias sdz='sudo zypper'
@@ -101,8 +104,19 @@ alias fpk='flatpak'
 # NVidia related
 alias nv='__NV_PRIME_RENDER_OFFLOAD=1 __VK_LAYER_NV_optimus=NVIDIA_only __GLX_VENDOR_LIBRARY_NAME=nvidia'
 
-# AppImage
-alias dic='~/bin/AppImage/eudic.AppImage'
+# WARP
+alias warp='warp-cli -vvv'
+alias warpc='warp-cli -vvv connect'
+alias warpd='warp-cli -vvv disconnect'
+
+# Clash
+alias clash='~/.clash/cfw'
+
+# KVM
+alias vstart='sudo systemctl start libvirtd.service && systemctl status libvirtd.service && sudo virsh net-start default && sudo virsh net-list --all && virt-manager'
+
+# AppImages
+alias eudic='~/bin/AppImage/eudic.AppImage'
 alias ganache='~/bin/AppImage/ganache-2.7.1-linux-x86_64.AppImage'
 
 # gaming
@@ -110,15 +124,11 @@ alias openspades='__NV_PRIME_RENDER_OFFLOAD=1 __VK_LAYER_NV_optimus=NVIDIA_only 
 alias steam='flatpak run com.valvesoftware.Steam'
 
 # misc
-alias clash='~/.clash/cfw'
 alias du='du --human-readable'
 alias frp='~/.frp/frpc --config ~/.frp/frpc.ini'
 alias rm='rm -I'
 alias studio='/opt/android-studio/bin/studio.sh'
 alias trash='gio trash'
-alias warp='warp-cli -vvv'
-alias warpc='warp-cli -vvv connect'
-alias warpd='warp-cli -vvv disconnect'
 alias xt='exit'
 ```
 

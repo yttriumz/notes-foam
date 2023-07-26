@@ -18,7 +18,7 @@ systemctl start libvirtd.service
 
 ## Virtual networks
 
-At the time of writing (**), first disable WARP then enable WARP.
+At the time of writing (*Tumbleweed 20230118*), first disable WARP then enable WARP.
 
 *References*:
 

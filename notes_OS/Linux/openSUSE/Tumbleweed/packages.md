@@ -31,6 +31,7 @@
   - [WeChat](#wechat)
   - [Xtreme Download Manager](#xtreme-download-manager)
   - [Motrix download manager](#motrix-download-manager)
+  - [ToDesk](#todesk)
 - [OBS Package Installer (OPI)](#obs-package-installer-opi)
   - [Install OPI](#install-opi)
 - [Flatpak](#flatpak)
@@ -310,6 +311,10 @@ Download from [the official site](https://github.com/subhra74/xdm/releases).
 Download from [the official site](https://github.com/agalwood/Motrix/releases).
 
 **NOTE**: At the time of writing (*Tumbleweed 20230518*), it does not work. I did not further investigate.
+
+### ToDesk
+
+Download from [the official site](https://www.todesk.com/linux.html).
 
 ## OBS Package Installer (OPI)
 
