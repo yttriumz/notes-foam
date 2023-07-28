@@ -58,6 +58,8 @@ See [[packages#NVIDIA Container Toolkit]]
 
 ## KVM
 
+For KVM usage, see [[cross-distro/KVM]].
+
 At the time of writing (*Tumbleweed 20230707*), install KVM-related tools via the following commands:
 
 ```bash
@@ -65,10 +67,9 @@ zypper install --type pattern kvm_tools
 zypper install libvirt
 ```
 
-For usage, see [[cross-distro/KVM]].
-
 *References*:
 
+- [32 Setting up a KVM VM Host Server](https://doc.opensuse.org/documentation/leap/virtualization/html/book-virtualization/cha-qemu-host.html)
 - [6.2.3 Installing specific installation patterns](https://doc.opensuse.org/documentation/leap/virtualization/single-html/book-virtualization/#install-virtualization-components-pattern)
 
 ## Basic environment
