@@ -1,19 +1,18 @@
 # C++
 
-- [C++](#c)
-    - [`.clang-format`](#clang-format)
-        - [ANGLE](#angle)
-        - [Chromium](#chromium)
-    - [VSCode Config](#vscode-config)
-        - [Simple Config](#simple-config)
-            - [Extensions](#extensions)
-            - [`settings.json` sample](#settingsjson-sample)
-            - [`launch.json` sample](#launchjson-sample)
-            - [`tasks.json` sample](#tasksjson-sample)
-            - [`compile_flags.txt` sample](#compile_flagstxt-sample)
-        - [Project config](#project-config)
-            - [Generate `compile_commands.json`](#generate-compile_commandsjson)
-    - [array vs vector vs list](#array-vs-vector-vs-list)
+- [`.clang-format`](#clang-format)
+    - [ANGLE](#angle)
+    - [Chromium](#chromium)
+- [VSCode Config](#vscode-config)
+    - [Simple Config](#simple-config)
+        - [Extensions](#extensions)
+        - [`settings.json` sample](#settingsjson-sample)
+        - [`launch.json` sample](#launchjson-sample)
+        - [`tasks.json` sample](#tasksjson-sample)
+        - [`compile_flags.txt` sample](#compile_flagstxt-sample)
+    - [Project config](#project-config)
+        - [Generate `compile_commands.json`](#generate-compile_commandsjson)
+- [`std::array` vs `std::vector` vs `std::list`](#stdarray-vs-stdvector-vs-stdlist)
 
 ## `.clang-format`
 
@@ -134,8 +133,8 @@ PPAPI_END_MESSAGE_MAP$"
 
 #### Extensions
 
-- clangd
-- CodeLLDB
+- `llvm-vs-code-extensions.vscode-clangd`
+- `vadimcn.vscode-lldb`
 
 #### `settings.json` sample
 
@@ -329,7 +328,7 @@ PPAPI_END_MESSAGE_MAP$"
 
 - [Getting started](https://clangd.llvm.org/installation#project-setup)
 
-## array vs vector vs list
+## `std::array` vs `std::vector` vs `std::list`
 
 *References*:
 

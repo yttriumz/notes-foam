@@ -14,7 +14,7 @@ ssh-keygen -t ed25519 -C "YOUR_EMAIL"
 
 - [How to Show All Active SSH Connections in Linux](https://www.maketecheasier.com/show-active-ssh-connections-linux/)
 
-## Kill locked SSH session
+## Kill idle SSH sessions
 
 *References*:
 

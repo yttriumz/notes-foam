@@ -1,14 +1,11 @@
 # Rust
 
-## Docs and Refs
+## Readings
 
 - [cheat sheet](https://cheats.rs/)
-- https://t4wydfkrrq.feishu.cn/docx/doxcnM3juNBUJfxGcIWOfJRLk5g
+- [System Programming Memory Model Implied by RUST](https://t4wydfkrrq.feishu.cn/docx/doxcnM3juNBUJfxGcIWOfJRLk5g)
 
 ## VSCode Config
-
-<!-- <details>
-<summary>json</summary> -->
 
 ```json
 "[rust]": {
@@ -17,11 +14,9 @@
 "rust-analyzer.check.command": "clippy",
 ```
 
-<!-- </details> -->
-
 ## Rust with Flutter
 
-See [[Flutter#Flutter with Rust]]
+See [[Flutter#Flutter with Rust]].
 
 ## Interesting posts
 

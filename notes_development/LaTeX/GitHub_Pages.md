@@ -34,9 +34,9 @@
 
 *References*:
 
-- https://zhuanlan.zhihu.com/p/36302775
-- https://stackoverflow.com/questions/26275645/how-to-support-latex-in-github-pages
-- https://docs.mathjax.org/en/v2.7-latest/configuration.html#using-in-line-configuration-options
+- [让GitHub Page支持Latex公式](https://zhuanlan.zhihu.com/p/36302775)
+- [How to support latex in GitHub-pages?](https://stackoverflow.com/questions/26275645/how-to-support-latex-in-github-pages)
+- [Using in-line configuration options](https://docs.mathjax.org/en/v2.7-latest/configuration.html#using-in-line-configuration-options)
 
 ## Wrap math expressions
 
@@ -48,4 +48,6 @@ SOME_MATH
 {% endraw %}
 ```
 
-Refer to [the GitHub issue](https://github.com/jekyll/jekyll/issues/5458#issuecomment-252063824).
+*References*:
+
+- [Liquid Exception: Liquid syntax error (line 123): Variable '{{0,1}' was not properly terminated with regexp: /\}\}/ in xxx.md #5458](https://github.com/jekyll/jekyll/issues/5458#issuecomment-252063824)

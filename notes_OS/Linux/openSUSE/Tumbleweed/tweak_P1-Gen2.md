@@ -15,8 +15,8 @@
   - [WezTerm](#wezterm)
 - [NVIDIA graphics card](#nvidia-graphics-card)
   - [Install driver and prime-select](#install-driver-and-prime-select)
-  - [If graphics driver or graphical desktop does not work](#if-graphics-driver-or-graphical-desktop-does-not-work)
   - [Make applications run on NVidia card](#make-applications-run-on-nvidia-card)
+  - [If graphics driver or graphical desktop does not work](#if-graphics-driver-or-graphical-desktop-does-not-work)
   - [Benchmark](#benchmark)
 - [Codecs](#codecs)
 - [Fingerprint](#fingerprint)
@@ -172,7 +172,7 @@ See [[bash#Auto-completion for aliases]].
 On my machine (*ThinkPad P1 Gen2 with T2000*), I tried 2 methods:
 
 - Install legacy driver `x11-video-nvidiaG05` and `suse-prime`.
-- Install the current driver `nvidia-video-G06` (or `nvidia-drivers-G06`) and `suse-prime`. At the time of updating (*Tumbleweed 20230518, KDE Plasma 5.27.5*), it may result in a black SDDM login screen with only the cursor. This could be solved by pressing `Ctrl+Alt+Backspace`.
+- Install the current driver `nvidia-video-G06` (or `nvidia-drivers-G06`) and `suse-prime`. At the time of updating (*Tumbleweed 20230518, KDE Plasma 5.27.5, NV driver 525.116.04*), it may result in a black SDDM login screen with only the cursor. This could be solved by holding `Ctrl` + `Alt` and pressing `Backspace` twice to restart the X server.
 
 *References*:
 
@@ -182,16 +182,6 @@ On my machine (*ThinkPad P1 Gen2 with T2000*), I tried 2 methods:
 - https://en.opensuse.org/SDB:NVIDIA_SUSE_Prime
 - [来到opensuse15.3的世界后，我推荐你做点什么](https://www.bwsl.wang/script/129.html)
 - [Got a black screen with mouse cursor only after switching (on SDDM screen) a user session type between X11 and Wayland](https://forum.manjaro.org/t/got-a-black-screen-with-mouse-cursor-only-after-switching-on-sddm-screen-a-user-session-type-between-x11-and-wayland/87044/3)
-
-### If graphics driver or graphical desktop does not work
-
-- Press `Ctrl+Alt+F2` to switch to virtual terminal 2.
-- Press `Ctrl+Alt+F7` to switch back to the graphical desktop.
-- Completely uninstall `nvidia-video-G06` (or `nvidia-drivers-G06`) via the following commands:
-
-  ```bash
-  zypper remove --clean-deps nvidia-drivers-G06 nvidia-video-G06 nvidia-driver-G06-kmp-default
-  ```
 
 ### Make applications run on NVidia card
 
@@ -203,6 +193,24 @@ Use `__NV_PRIME_RENDER_OFFLOAD=1 __VK_LAYER_NV_optimus=NVIDIA_only __GLX_VENDOR_
 - [2.2.2 Configure applications to render using GPU](https://wiki.archlinux.org/title/PRIME#Configure_applications_to_render_using_GPU)
 - [Prime-run command not found](https://askubuntu.com/questions/1364762/prime-run-command-not-found)
 - [Prime-run on Ubuntu, openSUSE, and Fedora (Nvidia & Linux)](https://www.youtube.com/watch?v=aPi8NfDyDMU)
+
+### If graphics driver or graphical desktop does not work
+
+- Press `Ctrl+Alt+F4` to switch to virtual terminal 4.
+- Press `Ctrl+Alt+F2` to switch back to the graphical desktop.
+- Completely uninstall `nvidia-video-G06` (or `nvidia-drivers-G06`) via the following commands:
+
+  ```bash
+  zypper remove --clean-deps nvidia-drivers-G06 nvidia-video-G06 nvidia-driver-G06-kmp-default
+  ```
+
+*References*:
+
+- [Accessing a TTY](https://www.howtogeek.com/428174/what-is-a-tty-on-linux-and-how-to-use-the-tty-command/#accessing-a-tty)
+- [How to Access TTY in Linux?](https://itsfoss.com/what-is-tty-in-linux/#how-to-access-tty-in-linux)
+- [The TTY demystified](https://www.linusakesson.net/programming/tty/index.php)
+- [How to restart X and kde properly?](https://forums.opensuse.org/t/how-to-restart-x-and-kde-properly/61879)
+- [Restart KDE in Kubuntu](https://www.maketecheasier.com/restart-frozen-desktop-linux/#restart-kde-kubuntu)
 
 ### Benchmark
 
