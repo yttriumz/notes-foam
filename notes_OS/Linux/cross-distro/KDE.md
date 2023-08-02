@@ -1,21 +1,21 @@
 # KDE Plasma Tweak
 
-- [KDE Plasma Tweak](#kde-plasma-tweak)
-  - [Widget](#widget)
-  - [Autostart](#autostart)
-  - [Recent files when right-clicking Firefox](#recent-files-when-right-clicking-firefox)
-  - [Window focus stealing policy](#window-focus-stealing-policy)
-  - [Change task switcher](#change-task-switcher)
-  - [Virtual Desktop behavior](#virtual-desktop-behavior)
-  - [Hide window border](#hide-window-border)
-  - [Move a window to the center](#move-a-window-to-the-center)
-  - [Mouse wheel scroll speed](#mouse-wheel-scroll-speed)
-  - [Baloo](#baloo)
-  - [KWallet](#kwallet)
-    - [Blowfish and GPG](#blowfish-and-gpg)
-    - [KWallet and VSCode](#kwallet-and-vscode)
-  - [SDDM login theme](#sddm-login-theme)
-    - [Configure Sugar Candy for SDDM](#configure-sugar-candy-for-sddm)
+- [Widget](#widget)
+- [Autostart](#autostart)
+- [Recent files when right-clicking Firefox](#recent-files-when-right-clicking-firefox)
+- [Window focus stealing policy](#window-focus-stealing-policy)
+- [Change task switcher](#change-task-switcher)
+- [Virtual Desktop behavior](#virtual-desktop-behavior)
+- [Hide window border](#hide-window-border)
+- [Move a window to the center](#move-a-window-to-the-center)
+- [Mouse wheel scroll speed](#mouse-wheel-scroll-speed)
+- [Baloo](#baloo)
+- [KWallet](#kwallet)
+  - [Blowfish and GPG](#blowfish-and-gpg)
+  - [KWallet \& VSCode](#kwallet--vscode)
+- [SDDM login theme](#sddm-login-theme)
+  - [Configure Sugar Candy for SDDM](#configure-sugar-candy-for-sddm)
+- [Dolphin](#dolphin)
 
 ## Widget
 
@@ -102,11 +102,11 @@ Some references:
 - [Why don't we use Blowfish if it hasn't been cracked?](https://crypto.stackexchange.com/questions/87278/why-dont-we-use-blowfish-if-it-hasnt-been-cracked)
 - [Kwallet and KMail: What’s GPG? What’s Blowfish? Why a Blank Password?](https://forums.opensuse.org/t/kwallet-and-kmail-whats-gpg-whats-blowfish-why-a-blank-password/113770)
 
-### KWallet and VSCode
+### KWallet & VSCode
 
 The simplest method: create a wallet in KWallet and use a blank password.
 
-**NOTE**: At the time of writing (*Tumbleweed 20230225*, *KDE Plasma 5.27.1*), if no other application uses KWallet (e.g. not encrypting any WiFi password with KWallet), then KWallet might not automatically open the wallet at user login, which will cause VSCode authentication failure. But you can still config the KWallet to auto-unlock referring to [the post]( https://gist.github.com/Trucido/b788017a18e1189e6703e42315e8829c ).
+**NOTE**: At the time of writing (*Tumbleweed 20230225*, *KDE Plasma 5.27.1*), if no other application uses KWallet (e.g. not encrypting any WiFi password with KWallet), then KWallet might not automatically open the wallet at user login, which will cause VSCode authentication failure. But you can still config the KWallet to auto-unlock referring to [this post](https://gist.github.com/Trucido/b788017a18e1189e6703e42315e8829c).
 
 *References*:
 
@@ -128,3 +128,9 @@ Background="/usr/share/wallpapers/default-1920x1080.jpg"
 ScreenWidth="1920"
 ScreenHeight="1080"
 ```
+
+## Dolphin
+
+*References*:
+
+- [A comprehensive guide to Dolphin, a KDE file manager](https://opensource.com/life/15/8/comprehensive-guide-dolphin-file-manager)

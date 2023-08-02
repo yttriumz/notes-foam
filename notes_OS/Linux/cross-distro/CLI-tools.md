@@ -1,6 +1,6 @@
 # Commonly Used Command-line Tools
 
-- [Search tool](#search-tool)
+- [Search tools](#search-tools)
   - [`find`](#find)
     - [Ignore case](#ignore-case)
     - [Find only files/directories](#find-only-filesdirectories)
@@ -16,8 +16,10 @@
   - [`lsd` (Rust)](#lsd-rust)
 - [`cat` alternatives](#cat-alternatives)
   - [`bat` (Rust)](#bat-rust)
+- [Network tools](#network-tools)
+  - [`ip route`](#ip-route)
 
-## Search tool
+## Search tools
 
 ### `find`
 
@@ -95,3 +97,12 @@ Add `2>&1 | grep -v "Permission denied"` to the end.
 *References*:
 
 - https://github.com/sharkdp/bat
+
+## Network tools
+
+### `ip route`
+
+*References*:
+
+- [What's the meaning of `linkdown` and `onlink` in Linux Route?](https://unix.stackexchange.com/questions/579087/whats-the-meaning-of-linkdown-and-onlink-in-linux-route)
+- [Interface following a link](https://serverfault.com/questions/1079631/interface-following-a-link)

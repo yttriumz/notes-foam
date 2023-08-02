@@ -21,7 +21,7 @@
 
 ### Android
 
-Google Mobile Services might be required. Use WireGuard instead for convenience.
+Google Mobile Services might be required. Use *WireGuard* instead for convenience.
 
 *References*:
 

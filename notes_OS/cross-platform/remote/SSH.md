@@ -1,4 +1,4 @@
-# SSH configs
+# SSH Usage
 
 ## Generate SSH key
 
@@ -7,3 +7,15 @@ Refer to [the GitHub doc]( https://docs.github.com/en/authentication/connecting-
 ```bash
 ssh-keygen -t ed25519 -C "YOUR_EMAIL"
 ```
+
+## Show all active SSH connections
+
+*References*:
+
+- [How to Show All Active SSH Connections in Linux](https://www.maketecheasier.com/show-active-ssh-connections-linux/)
+
+## Kill locked SSH session
+
+*References*:
+
+- [How can I break out of ssh when it locks?](https://askubuntu.com/questions/29942/how-can-i-break-out-of-ssh-when-it-locks)
