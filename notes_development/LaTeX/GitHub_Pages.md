@@ -48,6 +48,8 @@ SOME_MATH
 {% endraw %}
 ```
 
+{% raw %}
 *References*:
 
 - [Liquid Exception: Liquid syntax error (line 123): Variable '{{0,1}' was not properly terminated with regexp: /\}\}/ in xxx.md #5458](https://github.com/jekyll/jekyll/issues/5458#issuecomment-252063824)
+{% endraw %}
