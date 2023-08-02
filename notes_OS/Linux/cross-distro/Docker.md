@@ -28,9 +28,11 @@ For installation, see:
 
 ## Access Docker container port from host
 
+{% raw %}
 For modern Docker engine, check the container's ip via `sudo docker inspect -f "{{ .NetworkSettings.IPAddress }}" CONTAINER_NAME`.
 
 For older Docker engine, check the container's ip via `docker inspect -f '{{range.NetworkSettings.Networks}}{{.IPAddress}}{{end}}' CONTAINER_NAME`.
+{% endraw %}
 
 *References*:
 
