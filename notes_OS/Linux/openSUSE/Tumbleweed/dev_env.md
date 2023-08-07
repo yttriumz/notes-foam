@@ -60,12 +60,24 @@ See [[packages#NVIDIA Container Toolkit]]
 
 For KVM usage, see [[cross-distro/KVM]].
 
-At the time of writing (*Tumbleweed 20230707*), install KVM-related tools via the following commands:
+- At the time of writing (*Tumbleweed 20230707*), install KVM-related tools via the following commands:
 
-```bash
-zypper install --type pattern kvm_tools
-zypper install libvirt
-```
+  ```bash
+  zypper install --type pattern kvm_tools
+  zypper install libvirt
+  ```
+
+- Verify via the following commands:
+
+  ```bash
+  virt-host-validate
+  ```
+
+  The following may be added to boot parameter depending on the output:
+
+  ```text
+  cgroup_enable=cpu cgroup_enable=cpuset cgroup_enable=devices cgroup_enable=freezer cgroup_enable=blkio
+  ```
 
 *References*:
 
@@ -73,6 +85,7 @@ zypper install libvirt
 - [32 Setting up a KVM VM Host Server](https://doc.opensuse.org/documentation/leap/virtualization/single-html/book-virtualization/#cha-qemu-host)
 - [How To Use Virtual Machines on Linux](https://www.youtube.com/watch?v=t-23HOKMer0)
 - [Setup Qemu in Debian Linux](https://christitus.com/vm-setup-in-linux/)
+- [Freezer error when installing KVM on Debian.](https://www.reddit.com/r/linuxquestions/comments/w38k31/comment/iguuy6j/?utm_source=share&utm_medium=web2x&context=3)
 
 ## Basic environment
 
@@ -271,8 +284,8 @@ It is recommended to run TensorFlow 2 in a container.
 
 *References*:
 
-- https://www.tensorflow.org/install/docker
-- https://docs.nvidia.com/datacenter/cloud-native/container-toolkit/install-guide.html#installing-on-suse-15
+- [Docker](https://www.tensorflow.org/install/docker)
+- [Installing on SUSE 15](https://docs.nvidia.com/datacenter/cloud-native/container-toolkit/latest/install-guide.html#installing-on-suse-15)
 - [Document supported CUDA/cuDNN versions](https://github.com/tensorflow/tensorflow/issues/57000)
 - [Upgrade TF to CUDA 11.4 and cuDNN 8.2](https://github.com/tensorflow/tensorflow/issues/51659)
 

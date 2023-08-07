@@ -128,7 +128,7 @@ Note that at the time of writing (*Tumbleweed 20230727, libvirt 9.5.0-2.1*), clo
 
 ### virtio and SPICE drivers
 
-At the time of writing (*libvirt 9.5.0-2.1, virtio-win 0.1.229*), a virtio virtual disk must be attached before installing virtio drivers. Otherwise, the main virtual disk cannot be changed from sata to virtio.
+At the time of writing (*libvirt 9.5.0-2.1, virtio-win 0.1.229*), a virtio virtual disk must be attached when installing virtio drivers. Otherwise, the main virtual disk cannot be recognized if later changed from sata to virtio.
 
 *References*:
 
