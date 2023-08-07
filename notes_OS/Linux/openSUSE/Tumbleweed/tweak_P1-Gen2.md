@@ -13,6 +13,7 @@
       - [auto-completion for aliases](#auto-completion-for-aliases)
   - [starship](#starship)
   - [WezTerm](#wezterm)
+  - [Zellij](#zellij)
 - [NVIDIA graphics card](#nvidia-graphics-card)
   - [Install driver and prime-select](#install-driver-and-prime-select)
   - [Make applications run on NVidia card](#make-applications-run-on-nvidia-card)
@@ -47,7 +48,7 @@
 Change the hostname by the following commands:
 
 ```bash
-sudo hostnamectl hostname SOME_HOSTNAME
+sudo hostnamectl hostname NEW_HOSTNAME
 ```
 
 ## Network settings
@@ -160,10 +161,18 @@ See [[bash#Auto-completion for aliases]].
 3. Then install starship by `cargo install starship --locked`.
 4. See [[shell#Starship]] for configuration.
 
+*References*:
+
+- [🚀 Installation](https://starship.rs/guide/#%F0%9F%9A%80-installation)
+
 ### WezTerm
 
 1. See [[packages#WezTerm]] for installation.
 2. See [[terminal#WezTerm]] for configuration.
+
+### Zellij
+
+![Plasma clipboard settings](attachments/Plasma_clipboard_settings.png)
 
 ## NVIDIA graphics card
 

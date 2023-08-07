@@ -69,9 +69,8 @@ zypper install libvirt
 
 *References*:
 
-- [32 Setting up a KVM VM Host Server](https://doc.opensuse.org/documentation/leap/virtualization/single-html/book-virtualization/#cha-qemu-host)
-- [32 Setting up a KVM VM Host Server](https://doc.opensuse.org/documentation/leap/virtualization/html/book-virtualization/cha-qemu-host.html)
 - [6.2.3 Installing specific installation patterns](https://doc.opensuse.org/documentation/leap/virtualization/single-html/book-virtualization/#install-virtualization-components-pattern)
+- [32 Setting up a KVM VM Host Server](https://doc.opensuse.org/documentation/leap/virtualization/single-html/book-virtualization/#cha-qemu-host)
 - [How To Use Virtual Machines on Linux](https://www.youtube.com/watch?v=t-23HOKMer0)
 - [Setup Qemu in Debian Linux](https://christitus.com/vm-setup-in-linux/)
 
@@ -186,6 +185,9 @@ It is recommended to use a Node version manager to install Node.js and npm.
 
 #### fnm
 
+- Install via `curl -fsSL https://fnm.vercel.app/install | bash`.
+- Upgrade via `curl -fsSL https://fnm.vercel.app/install | bash -s -- --skip-shell`.
+
 *References*:
 
 - https://github.com/Schniz/fnm
@@ -235,7 +237,6 @@ export CARGO_HOME=$HOME/.rust/.cargo
 ## Scala
 
 1. [Installing Java](#java) can be performed before installing Scala.
-
 2. I installed it under `$HOME/.coursier` by adding the following to `.bash_profile` before installation:
 
    ```bash
@@ -245,8 +246,8 @@ export CARGO_HOME=$HOME/.rust/.cargo
 
 *References*:
 
-- https://get-coursier.io/docs/cli-installation
-- https://get-coursier.io/docs/cli-install#installation-directory
+- [Installation](https://get-coursier.io/docs/cli-installation)
+- [Installation directory](https://get-coursier.io/docs/cli-install#installation-directory)
 
 ## Machine Learning
 

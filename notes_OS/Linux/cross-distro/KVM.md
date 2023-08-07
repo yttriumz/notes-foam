@@ -2,23 +2,28 @@
 
 - [Start service](#start-service)
 - [Virtual networks](#virtual-networks)
-- [Shared directory](#shared-directory)
-  - [Linux guest](#linux-guest)
-  - [Windows guest](#windows-guest)
-- [GPU passthrough](#gpu-passthrough)
-  - [Windows guest](#windows-guest-1)
 - [USB redirect](#usb-redirect)
+- [Clone a VM](#clone-a-vm)
+  - [Use `virt-manager`](#use-virt-manager)
+- [Linux guest](#linux-guest)
+  - [Shared directory](#shared-directory)
+- [Windows guest](#windows-guest)
+  - [virtio and SPICE drivers](#virtio-and-spice-drivers)
+  - [GPU passthrough](#gpu-passthrough)
 - [Looking Glass](#looking-glass)
+  - [IVSHMEM](#ivshmem)
+  - [Mouse and keyboard](#mouse-and-keyboard)
+    - [Not recommended](#not-recommended)
   - [Build client](#build-client)
     - [Prerequisite](#prerequisite)
-  - [Mouse and keyboard](#mouse-and-keyboard)
   - [Run client](#run-client)
   - [Run host](#run-host)
-- [Clone a VM](#clone-a-vm)
+  - [TearFree](#tearfree)
+  - [USB redirect using `virsh`](#usb-redirect-using-virsh)
 
-For installation, see:
+For KVM installation, see:
 
-- [[Tumbleweed/dev_env#KVM]]
+- openSUSE Tumbleweed: [[Tumbleweed/dev_env#KVM]]
 
 ## Start service
 
@@ -48,9 +53,32 @@ At the time of writing (*Tumbleweed 20230727*), first disable WARP then enable W
 - [What is the difference between virbr# and vnet#?](https://unix.stackexchange.com/questions/52855/what-is-the-difference-between-virbr-and-vnet)
 - [WARP breaks KVM/libvirt networking on Linux (Virt-manager)](https://community.cloudflare.com/t/warp-breaks-kvm-libvirt-networking-on-linux-virt-manager/533205)
 
-## Shared directory
+## USB redirect
 
-### Linux guest
+At the time of writing (*Tumbleweed 20230727, kvm_tools 20210330-5.1, libvirt 9.5.0-2.1*), add the user to the `kvm` group to grant access.
+
+*References*:
+
+- [error when redirecting usb in virt-manager](https://www.reddit.com/r/openSUSE/comments/buhkdb/error_when_redirecting_usb_in_virtmanager/)
+- [Redirecting USB device to a virtual machine with virt-manager does not work](https://serverfault.com/questions/1073182/redirecting-usb-device-to-a-virtual-machine-with-virt-manager-does-not-work)
+
+## Clone a VM
+
+### Use `virt-manager`
+
+Note that at the time of writing (*Tumbleweed 20230727, libvirt 9.5.0-2.1*), cloning onto existing storage volume is not currently supported. But you can still change the path of the new virtual disk to be created (do **not** click that "Browse" button).
+
+![Change disk path](attachments/change_disk_path.png)
+
+*References*:
+
+- [3.2.2. Cloning Guests with virt-manager](https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/6/html/virtualization_administration_guide/cloning_vms_with_virt-manager)
+- [Clone a KVM virtual machine](https://docs.deistercloud.com/content/Tutorials.100/Linux.80/KVM%20virtualization.40/Clone%20a%20KVM%20virtual%20machine.6.xml?embedded=true)
+- [kvm 虚拟化 virt-clone 克隆虚拟机](https://blog.csdn.net/wanglei_storage/article/details/51106096)
+
+## Linux guest
+
+### Shared directory
 
 1. Enable shared memory:
 
@@ -96,27 +124,111 @@ At the time of writing (*Tumbleweed 20230727*), first disable WARP then enable W
 - [The new shared folder implementation appears to be virtio-9p/"virtfs" rather than virtiofs.](https://github.com/utmapp/UTM/issues/4386#issuecomment-1242033554)
 - [Mount Device With Specific User Rights](https://www.baeldung.com/linux/mount-user-rights)
 
-### Windows guest
+## Windows guest
 
-## GPU passthrough
+### virtio and SPICE drivers
 
-- Set `vfio-pci.ids=10de:1fb8` in the boot parameter.
-
-### Windows guest
+At the time of writing (*libvirt 9.5.0-2.1, virtio-win 0.1.229*), a virtio virtual disk must be attached before installing virtio drivers. Otherwise, the main virtual disk cannot be changed from sata to virtio.
 
 *References*:
 
-- [Configuring GPU Pass-Through for NVIDIA cards](https://doc.opensuse.org/documentation/leap/virtualization/html/book-virtualization/app-gpu-passthru.html)
+- [Downloads](https://github.com/virtio-win/virtio-win-pkg-scripts#downloads)
+- [Download](https://www.spice-space.org/download.html)
+
+### GPU passthrough
+
+1. Enable IOMMU by adding the following to boot parameter:
+
+   ```text
+   iommu=pt intel_iommu=on rd.driver.pre=vfio-pci
+   ```
+
+2. Reboot and verify that IOMMU is enabled via the following commandL
+
+   ```bash
+   dmesg |  grep -e DMAR -e IOMMU
+   ```
+
+3. Configure VFIO and isolate the GPU:
+   - Set `vfio-pci.ids` in boot parameter. On my machine (*ThinkPad P1 Gen2*), it's `vfio-pci.ids=10de:1fb8`.
+   - Or create the file `/etc/modprobe.d/vfio.conf` with the following content:
+
+     ```text
+     options vfio-pci ids=10de:1fb8
+     ```
+
+4. Load the VFIO driver by adding the driver to the list of auto-loaded modules. Create the file `/etc/modules-load.d/vfio-pci.conf` and add the following content:
+
+   ```text
+   vfio
+   vfio_iommu_type1
+   vfio_pci
+   kvm
+   kvm_intel
+   ```
+
+5. Disable MSR for Microsoft Windows guests by creating the file `/etc/modprobe.d/kvm.conf` and adding the following content:
+
+   ```text
+   options kvm ignore_msrs=1
+   ```
+
+6. Reboot.
+
+*References*:
+
+- [Configuring GPU Pass-Through for NVIDIA cards](https://doc.opensuse.org/documentation/leap/virtualization/single-html/book-virtualization/#app-gpu-passthru)
 - [3.1 Binding vfio-pci via device ID](https://wiki.archlinux.org/title/PCI_passthrough_via_OVMF#Binding_vfio-pci_via_device_ID)
-- [\[tutorial\] The Ultimate Linux Laptop for Gaming – feat. KVM and VFIO](https://www.youtube.com/watch?v=m8xj2Py8KPc)
-
-## USB redirect
-
-*References*:
-
-- [error when redirecting usb in virt-manager](https://www.reddit.com/r/openSUSE/comments/buhkdb/error_when_redirecting_usb_in_virtmanager/)
+- (Blacklisted by Looking Glass Discord server) [\[tutorial\] The Ultimate Linux Laptop for Gaming – feat. KVM and VFIO](https://www.youtube.com/watch?v=m8xj2Py8KPc)
 
 ## Looking Glass
+
+### IVSHMEM
+
+1. Add the following to VM xml's `device` section:
+
+   ```xml
+   <shmem name='looking-glass'>
+     <model type='ivshmem-plain'/>
+     <size unit='M'>32</size>
+   </shmem>
+   ```
+
+2. Write the following to `/etc/tmpfiles.d/10-looking-glass.conf`:
+
+   ```conf
+   # Type Path               Mode UID GID Age Argument
+
+   f /dev/shm/looking-glass 0660 USER kvm -
+   ```
+
+*References*:
+
+- [IVSHMEM](https://looking-glass.io/docs/B6/install/#ivshmem)
+
+### Mouse and keyboard
+
+- Find your `<video>` device, and set `<model type='vga'/>`.
+- Remove the `<input type='tablet'/>` device, if you have one.
+- Create an `<input type='mouse' bus='virtio'/>` device, if you don’t already have one.
+- Create an `<input type='keyboard' bus='virtio'/>` device to improve keyboard usage.
+
+*References*:
+
+- [Keyboard/mouse/display/audio](https://looking-glass.io/docs/B6/install/#keyboard-mouse-display-audio)
+
+#### Not recommended
+
+~~Add the following XML to the VM config:~~
+
+```xml
+<input type="evdev">
+    <source dev="/dev/input/by-id/usb-Logitech_USB_Receiver-if01-event-mouse"/>
+</input>
+<input type="evdev">
+    <source dev="/dev/input/by-path/platform-i8042-serio-0-event-kbd" grab="all" grabToggle="ctrl-ctrl" repeat="on"/>
+</input>
+```
 
 ### Build client
 
@@ -243,31 +355,50 @@ Then I succeed via `cmake -DENABLE_BACKTRACE=0 ../` and `make install`.
 - [OpenSuSE Leap 15.0+](https://looking-glass.io/wiki/Installation_on_other_distributions#OpenSuSE_Leap_15.0.2B)
 - [Client `make` fails to build on arch with "DSO missing from command line"](https://github.com/gnif/LookingGlass/issues/1056#issuecomment-1399147873)
 
-### Mouse and keyboard
-
-Add the following XML to the VM config:
-
-```xml
-<input type="evdev">
-    <source dev="/dev/input/by-id/usb-Logitech_USB_Receiver-if01-event-mouse"/>
-</input>
-<input type="evdev">
-    <source dev="/dev/input/by-path/platform-i8042-serio-0-event-kbd" grab="all" grabToggle="ctrl-ctrl" repeat="on"/>
-</input>
-```
-
 ### Run client
 
-Use `looking-glass-client -s -m KEY_HOME`.
+Use ~~`looking-glass-client -s -m KEY_HOME`~~ `looking-glass-client -m KEY_HOME`.
 
 ### Run host
 
-## Clone a VM
+### TearFree
+
+Edit `/etc/X11/xorg.conf.d/90-intel.conf`.
 
 *References*:
 
-- [Clone a KVM virtual machine](https://docs.deistercloud.com/content/Tutorials.100/Linux.80/KVM%20virtualization.40/Clone%20a%20KVM%20virtual%20machine.6.xml?embedded=true)
-- [kvm 虚拟化 virt-clone 克隆虚拟机](https://blog.csdn.net/wanglei_storage/article/details/51106096)
+- [6.1.2 With the modesetting driver](https://wiki.archlinux.org/title/Intel_graphics#With_the_modesetting_driver)
+- [How to fix video tearing in Linux (with Intel graphics)](https://www.dedoimedo.com/computers/linux-intel-graphics-video-tearing.html)
+- [Changing driver into modesetting](https://askubuntu.com/questions/956759/changing-driver-into-modesetting)
+
+### USB redirect using `virsh`
+
+1. Create an XML file and give it a logical name. Make sure to copy the vendor and product IDs exactly as was displayed in `lsusb -v`. For example, my *Bus 002 Device 002: ID 0951:1666 Kingston Technology DataTraveler 100 G3/G4/SE9 G2/50* device will have the following XML:
+
+   ```xml
+   <hostdev mode='subsystem' type='usb' managed='yes'>
+     <source>
+       <vendor id='0x0951'/>
+       <product id='0x1666'/>
+     </source>
+   </hostdev>
+   ```
+
+2. Attach the device via the following commands:
+
+   ```bash
+   virsh attach-device VM-NAME --file USB-DEVICE.xml --current
+   ```
+
+3. Detach the device via the following commands:
+
+   ```bash
+   virsh detach-device VM-NAME --file USB-DEVICE.xml
+   ```
+
+*References*:
+
+- [14.2. Attaching and Updating a Device with virsh](https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/6/html/virtualization_administration_guide/sect-managing_guest_virtual_machines_with_virsh-attaching_and_updating_a_device_with_virsh)
 
 [//begin]: # "Autogenerated link references for markdown compatibility"
 [Tumbleweed/dev_env#KVM]: ../openSUSE/Tumbleweed/dev_env.md "OpenSUSE Tumbleweed Development Environment"

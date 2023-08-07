@@ -165,7 +165,7 @@
 
 *References*:
 
-- [the official doc](https://starship.rs/config/)
+- [Configuration](https://starship.rs/config/)
 
 ### My Config
 

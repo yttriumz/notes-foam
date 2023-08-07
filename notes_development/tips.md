@@ -5,6 +5,8 @@
 *References*:
 
 - [Plural vs Singular - Directory Names](https://logansbailey.com/plural-vs-singular-directory-names)
+- [Google developer documentation style guide](https://developers.google.com/style/filenames)
+- [dashes-versus_underscores; The Definitive Guide](https://x-equals.com/dashes-versus-underscores/)
 
 ## Git commit message convention
 

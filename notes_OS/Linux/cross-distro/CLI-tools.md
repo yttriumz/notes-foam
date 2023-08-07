@@ -18,6 +18,7 @@
   - [`bat` (Rust)](#bat-rust)
 - [Network tools](#network-tools)
   - [`ip route`](#ip-route)
+  - [`curl` for downloading](#curl-for-downloading)
 
 ## Search tools
 
@@ -106,3 +107,7 @@ Add `2>&1 | grep -v "Permission denied"` to the end.
 
 - [What's the meaning of `linkdown` and `onlink` in Linux Route?](https://unix.stackexchange.com/questions/579087/whats-the-meaning-of-linkdown-and-onlink-in-linux-route)
 - [Interface following a link](https://serverfault.com/questions/1079631/interface-following-a-link)
+
+### `curl` for downloading
+
+Commonly used flags are `-fSLO`.
