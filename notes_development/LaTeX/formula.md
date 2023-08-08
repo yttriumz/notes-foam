@@ -14,10 +14,23 @@
 
 # $\LaTeX$ Formula
 
+- [Elementary arithmetic](#elementary-arithmetic)
+- [Exponential function](#exponential-function)
+- [Square root](#square-root)
+- [Trigonometric functions](#trigonometric-functions)
+- [Fraction](#fraction)
+- [Progression](#progression)
+- [Limit](#limit)
+- [Factorial function](#factorial-function)
+- [Matrix](#matrix)
+- [Piecewise function](#piecewise-function)
+- [Calculus](#calculus)
+- [Align](#align)
+
 *References*:
 
-- https://hackmd.io/@CynthiaChuang/Basic-LaTeX-Commands
-- https://www.scijournal.org/articles/dots-symbols-in-latex
+- [常用 LaTeX 數學符號指令](https://hackmd.io/@CynthiaChuang/Basic-LaTeX-Commands)
+- [How to write dots symbols in LaTeX?](https://www.scijournal.org/articles/dots-symbols-in-latex)
 
 ## Elementary arithmetic
 

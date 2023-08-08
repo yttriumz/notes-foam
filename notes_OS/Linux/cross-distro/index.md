@@ -12,6 +12,7 @@ type: index
 - [[Xorg]]
 - [[KDE]]
 - [[cross-distro/Docker]]
+- [[k8s]]
 - [[KVM]]
 - [[gaming]]
 - [[hotspot]]
@@ -27,6 +28,7 @@ type: index
 [Xorg]: Xorg.md "X.Org"
 [KDE]: KDE.md "KDE Plasma Tweak"
 [cross-distro/Docker]: Docker.md "Docker Usage"
+[k8s]: k8s.md "Kubernetes Usage"
 [KVM]: KVM.md "Kernel-based Virtual Machine Usage"
 [gaming]: gaming.md "Gaming on Linux"
 [hotspot]: hotspot.md "Create Hotspot on Linux"

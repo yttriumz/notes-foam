@@ -54,7 +54,7 @@ For usage, see [[cross-distro/Docker]].
 
 ### Build and run NVidia GPU accelerated Docker containers
 
-See [[packages#NVIDIA Container Toolkit]]
+See [[packages#NVIDIA Container Toolkit]].
 
 ## KVM
 

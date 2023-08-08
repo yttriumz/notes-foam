@@ -1,15 +1,19 @@
 # Kernel-based Virtual Machine Usage
 
 - [Start service](#start-service)
-- [Virtual networks](#virtual-networks)
+- [Virtual network](#virtual-network)
+  - [WARP issue](#warp-issue)
 - [USB redirect](#usb-redirect)
+  - [Permission issue](#permission-issue)
+  - [USB redirect using `virsh`](#usb-redirect-using-virsh)
+- [GPU passthrough](#gpu-passthrough)
 - [Clone a VM](#clone-a-vm)
-  - [Use `virt-manager`](#use-virt-manager)
+  - [Cloning using `virt-manager`](#cloning-using-virt-manager)
+- [Manage snapshots](#manage-snapshots)
 - [Linux guest](#linux-guest)
   - [Shared directory](#shared-directory)
 - [Windows guest](#windows-guest)
   - [virtio and SPICE drivers](#virtio-and-spice-drivers)
-  - [GPU passthrough](#gpu-passthrough)
 - [Looking Glass](#looking-glass)
   - [IVSHMEM](#ivshmem)
   - [Mouse and keyboard](#mouse-and-keyboard)
@@ -17,9 +21,9 @@
   - [Build client](#build-client)
     - [Prerequisite](#prerequisite)
   - [Run client](#run-client)
-  - [Run host](#run-host)
-  - [TearFree](#tearfree)
-  - [USB redirect using `virsh`](#usb-redirect-using-virsh)
+  - [Screen tearing](#screen-tearing)
+    - [KDE compositor](#kde-compositor)
+    - [TearFree (not verified to be working)](#tearfree-not-verified-to-be-working)
 
 For KVM installation, see:
 
@@ -43,9 +47,11 @@ alias vstart='sudo systemctl start libvirtd.service && systemctl status libvirtd
 
 - [7.1 Starting and stopping the monolithic daemon](https://doc.opensuse.org/documentation/leap/virtualization/single-html/book-virtualization/#libvirt-monolithic-daemon)
 
-## Virtual networks
+## Virtual network
 
-At the time of writing (*Tumbleweed 20230727*), first disable WARP then enable WARP.
+### WARP issue
+
+At the time of writing (*Tumbleweed 20230727, warp-cli 2023.7.40*), first disable WARP then enable WARP.
 
 *References*:
 
@@ -55,6 +61,8 @@ At the time of writing (*Tumbleweed 20230727*), first disable WARP then enable W
 
 ## USB redirect
 
+### Permission issue
+
 At the time of writing (*Tumbleweed 20230727, kvm_tools 20210330-5.1, libvirt 9.5.0-2.1*), add the user to the `kvm` group to grant access.
 
 *References*:
@@ -62,11 +70,86 @@ At the time of writing (*Tumbleweed 20230727, kvm_tools 20210330-5.1, libvirt 9.
 - [error when redirecting usb in virt-manager](https://www.reddit.com/r/openSUSE/comments/buhkdb/error_when_redirecting_usb_in_virtmanager/)
 - [Redirecting USB device to a virtual machine with virt-manager does not work](https://serverfault.com/questions/1073182/redirecting-usb-device-to-a-virtual-machine-with-virt-manager-does-not-work)
 
+### USB redirect using `virsh`
+
+1. Create an XML file and give it a logical name. Make sure to copy the vendor and product IDs exactly as was displayed in `lsusb -v`. For example, my *Bus 002 Device 002: ID 0951:1666 Kingston Technology DataTraveler 100 G3/G4/SE9 G2/50* device will have the following XML:
+
+   ```xml
+   <hostdev mode='subsystem' type='usb' managed='yes'>
+     <source>
+       <vendor id='0x0951'/>
+       <product id='0x1666'/>
+     </source>
+   </hostdev>
+   ```
+
+2. Attach the device via the following commands:
+
+   ```bash
+   virsh attach-device VM-NAME --file USB-DEVICE.xml --current
+   ```
+
+3. Detach the device via the following commands:
+
+   ```bash
+   virsh detach-device VM-NAME --file USB-DEVICE.xml
+   ```
+
+*References*:
+
+- [14.2. Attaching and Updating a Device with virsh](https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/6/html/virtualization_administration_guide/sect-managing_guest_virtual_machines_with_virsh-attaching_and_updating_a_device_with_virsh)
+
+## GPU passthrough
+
+1. Enable IOMMU by adding the following to boot parameter:
+
+   ```text
+   iommu=pt intel_iommu=on rd.driver.pre=vfio-pci
+   ```
+
+2. Reboot and verify that IOMMU is enabled via the following commandL
+
+   ```bash
+   dmesg |  grep -e DMAR -e IOMMU
+   ```
+
+3. Configure VFIO and isolate the GPU:
+   - Set `vfio-pci.ids` in boot parameter. On my machine (*ThinkPad P1 Gen2*), it's `vfio-pci.ids=10de:1fb8`.
+   - Or create the file `/etc/modprobe.d/vfio.conf` with the following content:
+
+     ```text
+     options vfio-pci ids=10de:1fb8
+     ```
+
+4. Load the VFIO driver by adding the driver to the list of auto-loaded modules. Create the file `/etc/modules-load.d/vfio-pci.conf` and add the following content:
+
+   ```text
+   vfio
+   vfio_iommu_type1
+   vfio_pci
+   kvm
+   kvm_intel
+   ```
+
+5. Disable MSR for Microsoft Windows guests by creating the file `/etc/modprobe.d/kvm.conf` and adding the following content:
+
+   ```text
+   options kvm ignore_msrs=1
+   ```
+
+6. Reboot.
+
+*References*:
+
+- [Configuring GPU Pass-Through for NVIDIA cards](https://doc.opensuse.org/documentation/leap/virtualization/single-html/book-virtualization/#app-gpu-passthru)
+- [3.1 Binding vfio-pci via device ID](https://wiki.archlinux.org/title/PCI_passthrough_via_OVMF#Binding_vfio-pci_via_device_ID)
+- (Blacklisted by Looking Glass Discord server) [\[tutorial\] The Ultimate Linux Laptop for Gaming – feat. KVM and VFIO](https://www.youtube.com/watch?v=m8xj2Py8KPc)
+
 ## Clone a VM
 
-### Use `virt-manager`
+### Cloning using `virt-manager`
 
-Note that at the time of writing (*Tumbleweed 20230727, libvirt 9.5.0-2.1*), cloning onto existing storage volume is not currently supported. But you can still change the path of the new virtual disk to be created (do **not** click that "Browse" button).
+Note that at the time of writing (*Tumbleweed 20230727, libvirt 9.5.0-2.1*), cloning onto existing storage volume is not currently supported. But you can still change the path of the new virtual disk to be created (do **not** click that "Browse" button):
 
 ![Change disk path](attachments/change_disk_path.png)
 
@@ -75,6 +158,20 @@ Note that at the time of writing (*Tumbleweed 20230727, libvirt 9.5.0-2.1*), clo
 - [3.2.2. Cloning Guests with virt-manager](https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/6/html/virtualization_administration_guide/cloning_vms_with_virt-manager)
 - [Clone a KVM virtual machine](https://docs.deistercloud.com/content/Tutorials.100/Linux.80/KVM%20virtualization.40/Clone%20a%20KVM%20virtual%20machine.6.xml?embedded=true)
 - [kvm 虚拟化 virt-clone 克隆虚拟机](https://blog.csdn.net/wanglei_storage/article/details/51106096)
+
+## Manage snapshots
+
+- List snapshots as tree via the following commands:
+
+  ```bash
+  virsh snapshot-list VM_NAME --tree
+  ```
+
+- Rename snapshot via the following commands:
+
+  ```bash
+  virsh snapshot-edit VM_NAME --snapshotname SNAPSHOT_TO_BE_RENAMED --rename
+  ```
 
 ## Linux guest
 
@@ -134,52 +231,6 @@ At the time of writing (*libvirt 9.5.0-2.1, virtio-win 0.1.229*), a virtio virtu
 
 - [Downloads](https://github.com/virtio-win/virtio-win-pkg-scripts#downloads)
 - [Download](https://www.spice-space.org/download.html)
-
-### GPU passthrough
-
-1. Enable IOMMU by adding the following to boot parameter:
-
-   ```text
-   iommu=pt intel_iommu=on rd.driver.pre=vfio-pci
-   ```
-
-2. Reboot and verify that IOMMU is enabled via the following commandL
-
-   ```bash
-   dmesg |  grep -e DMAR -e IOMMU
-   ```
-
-3. Configure VFIO and isolate the GPU:
-   - Set `vfio-pci.ids` in boot parameter. On my machine (*ThinkPad P1 Gen2*), it's `vfio-pci.ids=10de:1fb8`.
-   - Or create the file `/etc/modprobe.d/vfio.conf` with the following content:
-
-     ```text
-     options vfio-pci ids=10de:1fb8
-     ```
-
-4. Load the VFIO driver by adding the driver to the list of auto-loaded modules. Create the file `/etc/modules-load.d/vfio-pci.conf` and add the following content:
-
-   ```text
-   vfio
-   vfio_iommu_type1
-   vfio_pci
-   kvm
-   kvm_intel
-   ```
-
-5. Disable MSR for Microsoft Windows guests by creating the file `/etc/modprobe.d/kvm.conf` and adding the following content:
-
-   ```text
-   options kvm ignore_msrs=1
-   ```
-
-6. Reboot.
-
-*References*:
-
-- [Configuring GPU Pass-Through for NVIDIA cards](https://doc.opensuse.org/documentation/leap/virtualization/single-html/book-virtualization/#app-gpu-passthru)
-- [3.1 Binding vfio-pci via device ID](https://wiki.archlinux.org/title/PCI_passthrough_via_OVMF#Binding_vfio-pci_via_device_ID)
-- (Blacklisted by Looking Glass Discord server) [\[tutorial\] The Ultimate Linux Laptop for Gaming – feat. KVM and VFIO](https://www.youtube.com/watch?v=m8xj2Py8KPc)
 
 ## Looking Glass
 
@@ -359,46 +410,29 @@ Then I succeed via `cmake -DENABLE_BACKTRACE=0 ../` and `make install`.
 
 Use ~~`looking-glass-client -s -m KEY_HOME`~~ `looking-glass-client -m KEY_HOME`.
 
-### Run host
+### Screen tearing
 
-### TearFree
+#### KDE compositor
 
-Edit `/etc/X11/xorg.conf.d/90-intel.conf`.
+Forbid apps from blocking compositing:
+
+![KDE compositor](attachments/compositor.png)
+
+*References*:
+
+- [Compositing window manager](https://en.wikipedia.org/wiki/Compositing_window_manager)
+- [What is a compositor (in general), and which gives the best performance (Ubuntu Mate 16.04)?](https://unix.stackexchange.com/questions/359257/what-is-a-compositor-in-general-and-which-gives-the-best-performance-ubuntu)
+- [Compositor (X11)](https://linux-gaming.kwindu.eu/index.php?title=Compositor_(X11))
+
+#### TearFree (not verified to be working)
+
+Edit `/etc/X11/xorg.conf.d/20-intel.conf`.
 
 *References*:
 
 - [6.1.2 With the modesetting driver](https://wiki.archlinux.org/title/Intel_graphics#With_the_modesetting_driver)
 - [How to fix video tearing in Linux (with Intel graphics)](https://www.dedoimedo.com/computers/linux-intel-graphics-video-tearing.html)
 - [Changing driver into modesetting](https://askubuntu.com/questions/956759/changing-driver-into-modesetting)
-
-### USB redirect using `virsh`
-
-1. Create an XML file and give it a logical name. Make sure to copy the vendor and product IDs exactly as was displayed in `lsusb -v`. For example, my *Bus 002 Device 002: ID 0951:1666 Kingston Technology DataTraveler 100 G3/G4/SE9 G2/50* device will have the following XML:
-
-   ```xml
-   <hostdev mode='subsystem' type='usb' managed='yes'>
-     <source>
-       <vendor id='0x0951'/>
-       <product id='0x1666'/>
-     </source>
-   </hostdev>
-   ```
-
-2. Attach the device via the following commands:
-
-   ```bash
-   virsh attach-device VM-NAME --file USB-DEVICE.xml --current
-   ```
-
-3. Detach the device via the following commands:
-
-   ```bash
-   virsh detach-device VM-NAME --file USB-DEVICE.xml
-   ```
-
-*References*:
-
-- [14.2. Attaching and Updating a Device with virsh](https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/6/html/virtualization_administration_guide/sect-managing_guest_virtual_machines_with_virsh-attaching_and_updating_a_device_with_virsh)
 
 [//begin]: # "Autogenerated link references for markdown compatibility"
 [Tumbleweed/dev_env#KVM]: ../openSUSE/Tumbleweed/dev_env.md "OpenSUSE Tumbleweed Development Environment"
