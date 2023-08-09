@@ -1,5 +1,7 @@
 # Trusted Platform Module
 
+## Check support
+
 *References*:
 
 - [Checking support](https://wiki.archlinux.org/title/Trusted_Platform_Module#Checking_support)

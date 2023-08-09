@@ -9,6 +9,7 @@
 - [GPU passthrough](#gpu-passthrough)
 - [Clone a VM](#clone-a-vm)
   - [Cloning using `virt-manager`](#cloning-using-virt-manager)
+  - [Cloning using `virt-clone`](#cloning-using-virt-clone)
 - [Manage snapshots](#manage-snapshots)
 - [Linux guest](#linux-guest)
   - [Shared directory](#shared-directory)
@@ -156,6 +157,12 @@ Note that at the time of writing (*Tumbleweed 20230727, libvirt 9.5.0-2.1*), clo
 *References*:
 
 - [3.2.2. Cloning Guests with virt-manager](https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/6/html/virtualization_administration_guide/cloning_vms_with_virt-manager)
+- [4.2.2. Cloning Guests with virt-manager](https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/7/html/virtualization_deployment_and_administration_guide/cloning-a-vm#Cloning_VMs_with_virt-manager)
+
+### Cloning using `virt-clone`
+
+*References*:
+
 - [Clone a KVM virtual machine](https://docs.deistercloud.com/content/Tutorials.100/Linux.80/KVM%20virtualization.40/Clone%20a%20KVM%20virtual%20machine.6.xml?embedded=true)
 - [kvm 虚拟化 virt-clone 克隆虚拟机](https://blog.csdn.net/wanglei_storage/article/details/51106096)
 

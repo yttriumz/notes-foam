@@ -104,11 +104,18 @@ chmod 700 get_helm.sh
 
 *References*:
 
-- [From Script](https://helm.sh/docs/intro/install/#from-script)
+- [Installing Helm](https://helm.sh/docs/intro/install/)
 
 ## Redpanda
 
 ### `minikube` and `docker`
+
+*References*:
+
+- [Version: 23.2 Kubernetes Cluster Requirements](https://docs.redpanda.com/docs/deploy/deployment-option/self-hosted/kubernetes/kubernetes-cluster-requirements/)
+- [Version: 23.2 Deploy a Local Development Cluster with kind or minikube](https://docs.redpanda.com/docs/deploy/deployment-option/self-hosted/kubernetes/local-guide/)
+- [Version: 23.2 Troubleshoot Redpanda in Kubernetes](https://docs.redpanda.com/docs/manage/kubernetes/troubleshooting/troubleshoot/)
+- [Monitoring, Logging, and Debugging](https://kubernetes.io/docs/tasks/debug/)
 
 #### Start the cluster
 
@@ -304,7 +311,37 @@ helm install redpanda redpanda/redpanda \
 ```
 
 <details>
-<summary>Output</summary>
+<summary>Output1</summary>
+
+```text
+NAME: cert-manager
+LAST DEPLOYED: Wed Aug  9 18:04:39 2023
+NAMESPACE: cert-manager
+STATUS: deployed
+REVISION: 1
+TEST SUITE: None
+NOTES:
+cert-manager v1.12.3 has been deployed successfully!
+
+In order to begin issuing certificates, you will need to set up a ClusterIssuer
+or Issuer resource (for example, by creating a 'letsencrypt-staging' issuer).
+
+More information on the different types of issuers and how to configure them
+can be found in our documentation:
+
+https://cert-manager.io/docs/configuration/
+
+For information on how to configure cert-manager to automatically provision
+Certificates for Ingress resources, take a look at the `ingress-shim`
+documentation:
+
+https://cert-manager.io/docs/usage/ingress/
+```
+
+</details>
+
+<details>
+<summary>Output2</summary>
 
 ```text
 NAME: redpanda
@@ -348,7 +385,35 @@ Delete the topic:
    alias rpk-topic="kubectl --namespace redpanda-k8s exec -i -t redpanda-0 -c redpanda -- rpk topic --brokers redpanda-0.redpanda.redpanda-k8s.svc.cluster.local.:9093,redpanda-1.redpanda.redpanda-k8s.svc.cluster.local.:9093,redpanda-2.redpanda.redpanda-k8s.svc.cluster.local.:9093 --tls-truststore /etc/tls/certs/default/ca.crt --tls-enabled"
    ```
 
-   Note that when specifying the `--brokers` flag, you may need to change the broker names if you are using a different k8s namespace. E.g. if using `foobar-namespace` instead of `redpanda-k8s`, the broker names would be `redpanda-0.redpanda.foobar-namespace.svc.cluster.local` etc. More detailed information can be obtained via `kubectl cluster-info dump`.
+   Note that when specifying the `--brokers` flag, you may need to change the broker names if you are using a different k8s namespace. E.g. if using `foobar-namespace` instead of `redpanda-k8s`, the broker names would be `redpanda-0.redpanda.foobar-namespace.svc.cluster.local`, etc. More detailed information about the cluster can be obtained via `kubectl cluster-info dump`.
+
+2. Create a topic called `twitch_chat` via the following commands:
+
+   ```bash
+   rpk-topic create twitch_chat
+   ```
+
+3. Describe the topic via the following commands:
+
+   ```bash
+   rpk-topic describe twitch_chat
+   ```
+
+4. Produce a message to the topic via the following commands:
+
+   ```bash
+   rpk-topic produce twitch_chat
+   ```
+
+   Type a message, then press `Enter`.
+
+   Press `Ctrl`+`C` to finish producing messages to the topic.
+
+5. Consume one message from the topic via the following commands:
+
+   ```bash
+   rpk-topic consume twitch_chat --num 1
+   ```
 
 ### `kubeadm` and `containerd`
 
