@@ -2,9 +2,9 @@
 
 *References*:
 
-- [Power management](https://wiki.archlinux.org/title/Power_management)
-- [Laptop Mode Tools](https://wiki.archlinux.org/title/Laptop_Mode_Tools)
-- [CPU frequency scaling](https://wiki.archlinux.org/title/CPU_frequency_scaling)
+- [Power management - ArchWiki](https://wiki.archlinux.org/title/Power_management)
+- [Laptop Mode Tools - ArchWiki](https://wiki.archlinux.org/title/Laptop_Mode_Tools)
+- [CPU frequency scaling - ArchWiki](https://wiki.archlinux.org/title/CPU_frequency_scaling)
 - [auto-cpufreq](https://github.com/AdnanHodzic/auto-cpufreq)
 - [Laptop Mode Tools README](https://github.com/rickysarraf/laptop-mode-tools)
 
@@ -14,7 +14,7 @@ Enable TLP service via `systemctl enable tlp.service`.
 
 *References*:
 
-- [TLP](https://wiki.archlinux.org/title/TLP)
+- [TLP - ArchWiki](https://wiki.archlinux.org/title/TLP)
 
 ### Recalibrate the battery
 

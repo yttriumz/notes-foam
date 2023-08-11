@@ -93,7 +93,7 @@ At the time of writing (*Tumbleweed 20230225, Baloo 5.103.0*), `baloo_file` cons
 *References*:
 
 - [the official doc]( https://docs.kde.org/trunk5/en/kwalletmanager/kwallet5/index.html ) ([PDF version]( https://docs.kde.org/stable5/en/kwalletmanager/kwallet5/kwallet5.pdf ))
-- [Arch wiki]( https://wiki.archlinux.org/title/KDE_Wallet )
+- [KDE Wallet - ArchWiki]( https://wiki.archlinux.org/title/KDE_Wallet )
 
 ### Blowfish and GPG
 
