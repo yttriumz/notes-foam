@@ -160,7 +160,7 @@ See [[bash#Auto-completion for aliases]].
 1. Install CMake by `sudo zypper install cmake`.
 2. Install Rust. See [[Tumbleweed/dev-env]].
 3. Then install starship by `cargo install starship --locked`.
-4. See [[shell#Starship]] for configuration.
+4. See [[shell-tools#Starship]] for configuration.
 
 *References*:
 
@@ -169,11 +169,11 @@ See [[bash#Auto-completion for aliases]].
 ### WezTerm
 
 1. See [[packages#WezTerm]] for installation.
-2. See [[terminal#WezTerm]] for configuration.
+2. See [[terminal-tools#WezTerm]] for configuration.
 
 ### Zellij
 
-![Plasma clipboard settings](attachments/Plasma_clipboard_settings.png)
+See [[terminal-tools#Zellij]].
 
 ## NVIDIA graphics card
 
@@ -405,9 +405,10 @@ See [[boot-parameter]] for parameter meanings.
 [packages]: packages.md "Package Management"
 [bash#Auto-completion for aliases]: ../../cross-distro/bash.md "Bash Usage"
 [Tumbleweed/dev-env]: dev-env.md "OpenSUSE Tumbleweed Development Environment"
-[shell#Starship]: ../../../cross-platform/shell.md "Shell Related"
+[shell-tools#Starship]: ../../cross-distro/shell-tools.md "Shell Related Tools"
 [packages#WezTerm]: packages.md "Package Management"
-[terminal#WezTerm]: ../../../cross-platform/terminal.md "Terminal Related"
+[terminal-tools#WezTerm]: ../../cross-distro/terminal-tools.md "Terminal Related Tools"
+[terminal-tools#Zellij]: ../../cross-distro/terminal-tools.md "Terminal Related Tools"
 [cross-distro/bluetooth]: ../../cross-distro/bluetooth.md "Use the Same Bluetooth Device on Linux and Windows Dual Boot System"
 [fonts]: ../../../cross-platform/fonts.md "Fonts"
 [rime#User config]: ../../../cross-platform/rime.md "RIME | 中州韻輸入法引擎"

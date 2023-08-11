@@ -53,13 +53,13 @@ Add `2>&1 | grep -v "Permission denied"` to the end.
 
 *References*:
 
-- https://github.com/sharkdp/fd
+- [A simple, fast and user-friendly alternative to 'find'](https://github.com/sharkdp/fd)
 
 ### ripgrep (`rg`) (Rust)
 
 *References*:
 
-- https://github.com/BurntSushi/ripgrep
+- [ripgrep recursively searches directories for a regex pattern while respecting your gitignore](https://github.com/BurntSushi/ripgrep)
 - [ripgrep is faster than {grep, ag, git grep, ucg, pt, sift}](https://blog.burntsushi.net/ripgrep/)
 
 ## File manager
@@ -68,13 +68,13 @@ Add `2>&1 | grep -v "Permission denied"` to the end.
 
 *References*:
 
-- https://github.com/kamiyaa/joshuto
+- [ranger-like terminal file manager written in Rust](https://github.com/kamiyaa/joshuto)
 
 ### `ranger` (Python)
 
 *References*:
 
-- https://github.com/ranger/ranger
+- [A VIM-inspired filemanager for the console](https://github.com/ranger/ranger)
 
 ## `ls` alternatives
 
@@ -82,14 +82,14 @@ Add `2>&1 | grep -v "Permission denied"` to the end.
 
 *References*:
 
-- https://github.com/ogham/exa
+- [A modern replacement for ‘ls’.](https://github.com/ogham/exa)
 - [Which Ls Replacement Will I Keep Around Exa vs Ls Deluxe](https://www.youtube.com/watch?v=PDu1e6S_gWw)
 
 ### `lsd` (Rust)
 
 *References*:
 
-- https://github.com/lsd-rs/lsd
+- [The next gen ls command](https://github.com/lsd-rs/lsd)
 
 ## `cat` alternatives
 
@@ -97,7 +97,7 @@ Add `2>&1 | grep -v "Permission denied"` to the end.
 
 *References*:
 
-- https://github.com/sharkdp/bat
+- [A cat(1) clone with wings.](https://github.com/sharkdp/bat)
 
 ## Network tools
 

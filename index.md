@@ -4,7 +4,7 @@ type: index
 
 # Alecton4's Notes
 
-This is [Alecton4](https://github.com/Alecton4)'s notebook. Enjoy your exploration and I hope some of the notes help! :D
+This is [Alecton4](https://github.com/Alecton4)'s notebook. Enjoy exploring and hopefully some notes are helpful!
 
 ## Index
 

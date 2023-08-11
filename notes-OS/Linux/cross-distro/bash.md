@@ -1,5 +1,9 @@
 # Bash Usage
 
+- [Alias](#alias)
+    - [Alias expansion](#alias-expansion)
+    - [Auto-completion for aliases](#auto-completion-for-aliases)
+
 ## Alias
 
 1. Add the following to `.bash_aliases`.

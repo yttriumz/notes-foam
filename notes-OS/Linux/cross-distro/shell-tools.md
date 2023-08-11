@@ -1,4 +1,4 @@
-# Shell Related
+# Shell Related Tools
 
 ## Oh My Posh
 
