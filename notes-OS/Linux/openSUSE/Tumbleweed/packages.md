@@ -113,8 +113,8 @@ zypper addrepo https://download.opensuse.org/repositories/Virtualization:contain
 
 *References*:
 
-- https://github.com/NVIDIA/nvidia-docker
-- https://docs.nvidia.com/datacenter/cloud-native/container-toolkit/install-guide.html
+- [NVIDIA Container Toolkit](https://github.com/NVIDIA/nvidia-docker)
+- [Installation Guide](https://docs.nvidia.com/datacenter/cloud-native/container-toolkit/install-guide.html)
 - [package info details](https://github.com/NVIDIA/nvidia-docker/issues/1268#issuecomment-632692949)
 - [How to use with Docker 19.03 / nvidia-container-toolkit?](https://github.com/NVIDIA/k8s-device-plugin/issues/168#issuecomment-625981223)
 
@@ -153,7 +153,7 @@ zypper addrepo https://download.opensuse.org/repositories/M17N/openSUSE_Tumblewe
 
 *References*:
 
-- https://www.google.com/linuxrepositories/
+- [Google Linux Software Repositories](https://www.google.com/linuxrepositories/)
 - [Installing Google Chrome in openSUSE](https://linuxhint.com/installing-google-chrome-opensuse/)
 
 #### Microsoft Edge

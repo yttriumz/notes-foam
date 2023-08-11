@@ -42,7 +42,7 @@
 
 - https://opensuse.github.io/openSUSE-docs-revamped-temp/best_of_post/
 - https://opensuse.github.io/openSUSE-docs-revamped-temp/safety_usability/
-- https://averagelinuxuser.com/after-installing-opensuse/
+- [21 Things To Do After Installing OpenSUSE](https://averagelinuxuser.com/after-installing-opensuse/)
 
 ## Change hostname
 
@@ -187,9 +187,9 @@ On my machine (*ThinkPad P1 Gen2 with T2000*), I tried 2 methods:
 *References*:
 
 - https://opensuse.github.io/openSUSE-docs-revamped-temp/hybrid_graphics/
-- https://en.opensuse.org/SDB:NVIDIA_drivers
-- https://en.opensuse.org/SDB:NVIDIA_troubleshooting
-- https://en.opensuse.org/SDB:NVIDIA_SUSE_Prime
+- [SDB:NVIDIA drivers](https://en.opensuse.org/SDB:NVIDIA_drivers)
+- [SDB:NVIDIA troubleshooting](https://en.opensuse.org/SDB:NVIDIA_troubleshooting)
+- [SDB:NVIDIA SUSE Prime](https://en.opensuse.org/SDB:NVIDIA_SUSE_Prime)
 - [来到opensuse15.3的世界后，我推荐你做点什么](https://www.bwsl.wang/script/129.html)
 - [Got a black screen with mouse cursor only after switching (on SDDM screen) a user session type between X11 and Wayland](https://forum.manjaro.org/t/got-a-black-screen-with-mouse-cursor-only-after-switching-on-sddm-screen-a-user-session-type-between-x11-and-wayland/87044/3)
 

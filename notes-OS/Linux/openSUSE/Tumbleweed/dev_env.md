@@ -122,12 +122,12 @@ zypper install pattern:devel_basis # This is the same
 
 *References*:
 
-- https://developer.android.com/studio/install#linux
-- https://developer.android.com/codelabs/basic-android-kotlin-compose-install-android-studio#6
-- https://tutorialforlinux.com/2019/05/08/how-to-install-android-studio-on-opensuse-15-gnulinux-easy-guide/2/
-- https://developer.android.com/studio/command-line
-- https://developer.android.com/studio/command-line/variables#envar
-- https://developer.android.com/studio/run/emulator-acceleration?utm_source=android-studio#vm-linux
+- [Install Android Studio](https://developer.android.com/studio/install#linux)
+- [7. Linux: Download and install Android Studio](https://developer.android.com/codelabs/basic-android-kotlin-compose-install-android-studio#6)
+- [How to Install Android Studio on openSUSE 15 Easy Guide](https://tutorialforlinux.com/2019/05/08/how-to-install-android-studio-on-opensuse-15-gnulinux-easy-guide/2/)
+- [Command-line tools](https://developer.android.com/studio/command-line)
+- [Variables reference](https://developer.android.com/studio/command-line/variables#envar)
+- [Configure VM acceleration on Linux](https://developer.android.com/studio/run/emulator-acceleration?utm_source=android-studio#vm-linux)
 
 ## C_Cpp
 
@@ -183,8 +183,8 @@ zypper install java-17-openjdk-devel java-17-openjdk-src
 
 *References*:
 
-- https://en.opensuse.org/SDB:Installing_Java
-- https://www.simplified.guide/java/jdk-install-suse
+- [SDB:Installing Java](https://en.opensuse.org/SDB:Installing_Java)
+- [How to install Java Development Kit (JDK) on openSUSE and SLES](https://www.simplified.guide/java/jdk-install-suse)
 
 ## JavaScript
 
@@ -194,7 +194,7 @@ It is recommended to use a Node version manager to install Node.js and npm.
 
 *References*:
 
-- https://docs.npmjs.com/cli/v9/configuring-npm/install
+- [Download and install node and npm](https://docs.npmjs.com/cli/v9/configuring-npm/install)
 
 #### fnm
 
@@ -203,7 +203,7 @@ It is recommended to use a Node version manager to install Node.js and npm.
 
 *References*:
 
-- https://github.com/Schniz/fnm
+- [Fast Node Manager (fnm)](https://github.com/Schniz/fnm)
 
 ## PowerShell 7
 

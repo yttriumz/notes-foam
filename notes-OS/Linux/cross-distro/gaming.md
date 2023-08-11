@@ -1,6 +1,6 @@
 # Gaming on Linux
 
-- [Steam](#steam)
+- [Steam (Flatpak)](#steam-flatpak)
   - [Installation](#installation)
   - [Steam Play settings](#steam-play-settings)
   - [Play non-Steam games using Proton (Flatpak)](#play-non-steam-games-using-proton-flatpak)
@@ -20,10 +20,10 @@
   - [theHunter: Call of the Wild](#thehunter-call-of-the-wild)
 - [KVM](#kvm)
 - [Lutris](#lutris)
-- [OpenSpades](#openspades)
+- [OpenSpades (Flatpak)](#openspades-flatpak)
   - [Tips](#tips)
 
-## Steam
+## Steam (Flatpak)
 
 ### Installation
 
@@ -35,9 +35,9 @@
 
 *References*:
 
-- https://flathub.org/en-GB/apps/com.valvesoftware.Steam
-- https://github.com/flathub/com.valvesoftware.Steam/wiki#my-controller-isnt-being-detected
-- [Is there any real “disadvantages” to using the FlatPak version of Steam? ](https://www.reddit.com/r/linux_gaming/comments/rp2ss9/is_there_any_real_disadvantages_to_using_the/)
+- [Steam](https://flathub.org/en-GB/apps/com.valvesoftware.Steam)
+- [My controller isn't being detected](https://github.com/flathub/com.valvesoftware.Steam/wiki#my-controller-isnt-being-detected)
+- [Is there any real “disadvantages” to using the FlatPak version of Steam?](https://www.reddit.com/r/linux_gaming/comments/rp2ss9/is_there_any_real_disadvantages_to_using_the/)
 - [How to Run Cyberpunk 2077 on Linux](https://segmentnext.com/cyberpunk-2077-linux/)
 - [Linux steam client cannot display Chinese character.](https://www.reddit.com/r/linux_gaming/comments/13xag7z/linux_steam_client_cannot_display_chinese/)
 
@@ -174,14 +174,14 @@ See [[KVM#Looking Glass]].
 
 - [Play all your games on Linux](https://lutris.net/)
 
-## OpenSpades
+## OpenSpades (Flatpak)
 
 - Install via `flatpak install flathub jp.yvt.OpenSpades`.
 - Run via `flatpak run jp.yvt.OpenSpades`.
 
 *References*:
 
-- https://openspades.yvt.jp
+- [Play OpenSpades, the open-source voxel first-person shooter](https://openspades.yvt.jp)
 
 ### Tips
 
