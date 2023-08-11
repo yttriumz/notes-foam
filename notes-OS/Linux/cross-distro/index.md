@@ -9,7 +9,7 @@ type: index
 - [[shell-tools]]
 - [[terminal-tools]]
 - [[bash]]
-- [[file_system]]
+- [[file-system]]
 - [[power]]
 - [[hotspot]]
 - [[Xorg]]
@@ -25,7 +25,7 @@ type: index
 [shell-tools]: shell-tools.md "Shell Related Tools"
 [terminal-tools]: terminal-tools.md "Terminal Related Tools"
 [bash]: bash.md "Bash Usage"
-[file_system]: file_system.md "File Systems"
+[file-system]: file-system.md "File Systems"
 [power]: power.md "Power Management"
 [hotspot]: hotspot.md "Create Hotspot on Linux"
 [Xorg]: Xorg.md "X.Org"
