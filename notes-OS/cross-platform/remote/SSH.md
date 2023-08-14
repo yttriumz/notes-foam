@@ -2,11 +2,15 @@
 
 ## Generate SSH key
 
-Refer to [the GitHub doc]( https://docs.github.com/en/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent ) for more. Generate a new key by the following commands:
+Generate a new key via the following commands:
 
 ```bash
 ssh-keygen -t ed25519 -C "YOUR_EMAIL"
 ```
+
+*References*:
+
+- [Generating a new SSH key and adding it to the ssh-agent](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent)
 
 ## Show all active SSH connections
 
