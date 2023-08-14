@@ -16,6 +16,7 @@
 - [Stash changes](#stash-changes)
 - [Rename branch](#rename-branch)
 - [Change remote origin](#change-remote-origin)
+- [Use non-default SSH key for remote connection](#use-non-default-ssh-key-for-remote-connection)
 - [Hard reset remote branch](#hard-reset-remote-branch)
 - [Private fork](#private-fork)
 - [墙国专属](#墙国专属)
@@ -143,6 +144,13 @@ Use `git remote set-url REMOTE_NAME NEW_URL`.
 *References*:
 
 - [How To Change Git Remote Origin](https://devconnected.com/how-to-change-git-remote-origin/)
+
+## Use non-default SSH key for remote connection
+
+*References*:
+
+- [Using a non-default key name (other than id_rsa)](https://stackoverflow.com/questions/41412964/using-a-non-default-key-name-other-than-id-rsa)
+- [Working with non-default SSH key pair paths](https://gist.github.com/mynameiskreang/deb3fd3b41d7dda664ab0d3597710ef9)
 
 ## Hard reset remote branch
 
