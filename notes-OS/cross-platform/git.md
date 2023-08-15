@@ -1,6 +1,6 @@
 # Git Usage Tips
 
-- [Local configuration](#local-configuration)
+- [Git configuration](#git-configuration)
   - [Show configs](#show-configs)
   - [Configure user](#configure-user)
   - [Automatic transformation (Windows)](#automatic-transformation-windows)
@@ -26,7 +26,7 @@
   - [Other methods](#other-methods)
 - [Interesting posts](#interesting-posts)
 
-## Local configuration
+## Git configuration
 
 ### Show configs
 
@@ -34,12 +34,23 @@ Use `git config --list --show-origin --show-scope`.
 
 ### Configure user
 
-Set the user name and email by the following commands:
+- Set *local* (inside each repo) user name and email via the following commands:
 
-```bash
-git config --global user.name "YOUR_NAME"
-git config --global user.email "YOUR_EMAIL"
-```
+  ```bash
+  git config user.name "YOUR_NAME"
+  git config user.email "YOUR_EMAIL"
+  ```
+
+- Set *global* user name and email via the following commands:
+
+  ```bash
+  git config --global user.name "YOUR_NAME"
+  git config --global user.email "YOUR_EMAIL"
+  ```
+
+*References*:
+
+- [Git: Set local user.name and user.email different for each repo](https://stackoverflow.com/questions/42167345/git-set-local-user-name-and-user-email-different-for-each-repo)
 
 ### Automatic transformation (Windows)
 

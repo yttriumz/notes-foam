@@ -12,7 +12,7 @@ For installation, see:
 
 ## Manage Docker as a non-root user (less secure)
 
-1. Add yourself to the `docker` group by the following commands:
+1. Add yourself to the `docker` group via the following commands:
 
    ```bash
    sudo usermod -aG docker $USER

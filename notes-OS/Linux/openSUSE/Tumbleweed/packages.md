@@ -12,6 +12,7 @@
     - [Microsoft Edge](#microsoft-edge)
     - [Brave Browser](#brave-browser)
     - [Cloudflare WARP](#cloudflare-warp)
+    - [Emulators](#emulators)
   - [Examine repo](#examine-repo)
     - [Some repo reference](#some-repo-reference)
   - [Set priority](#set-priority)
@@ -55,7 +56,7 @@ Note that after this, *YaST Software* may automatically select some NVidia drive
 
 #### VSCode
 
-- Add *VSCode* repo (and install *VSCode*) by the following commands:
+- Add *VSCode* repo (and install *VSCode*) via the following commands:
 
   ```bash
   rpm --import https://packages.microsoft.com/keys/microsoft.asc
@@ -72,7 +73,7 @@ Note that after this, *YaST Software* may automatically select some NVidia drive
 
 #### containers
 
-Add *Virtualization:containers* repo by the following commands:
+Add *Virtualization:containers* repo via the following commands:
 
 ```bash
 zypper addrepo https://download.opensuse.org/repositories/Virtualization:containers/openSUSE_Tumbleweed/Virtualization:containers.repo
@@ -85,7 +86,7 @@ zypper addrepo https://download.opensuse.org/repositories/Virtualization:contain
 #### NVIDIA Container Toolkit
 
 1. Install NVIDIA drivers. See [[tweak-P1-Gen2#Install driver and prime-select]].
-2. Add *NVIDIA Container Toolkit* repo by the following commands:
+2. Add *NVIDIA Container Toolkit* repo via the following commands:
 
    ```bash
    zypper addrepo https://nvidia.github.io/libnvidia-container/opensuse-leap15.1/libnvidia-container.repo
@@ -93,19 +94,19 @@ zypper addrepo https://download.opensuse.org/repositories/Virtualization:contain
    zypper addrepo https://nvidia.github.io/libnvidia-container/sles15.1/libnvidia-container.repo
    ```
 
-3. Install *NVIDIA Container Toolkit* by the following commands:
+3. Install *NVIDIA Container Toolkit* via the following commands:
 
    ```bash
    zypper install nvidia-container-toolkit
    ```
 
-4. Config *docker* by the following commands:
+4. Config *docker* via the following commands:
 
    ```bash
    nvidia-ctk runtime configure --runtime=docker
    ```
 
-5. Verify installation by the following commands:
+5. Verify installation via the following commands:
 
    ```bash
    docker run --rm --runtime=nvidia --gpus all nvidia/cuda:11.6.2-base-ubuntu20.04 nvidia-smi
@@ -120,7 +121,7 @@ zypper addrepo https://download.opensuse.org/repositories/Virtualization:contain
 
 #### CUDA
 
-Add *CUDA* repo by the following commands:
+Add *CUDA* repo via the following commands:
 
 ```bash
 zypper addrepo -p 100 https://developer.download.nvidia.com/compute/cuda/repos/opensuse15/x86_64/cuda-opensuse15.repo
@@ -132,7 +133,7 @@ zypper addrepo -p 100 https://developer.download.nvidia.com/compute/cuda/repos/o
 
 #### M17N (Multilingualization)
 
-Add *M17N* repo by the following commands:
+Add *M17N* repo via the following commands:
 
 ```bash
 zypper addrepo https://download.opensuse.org/repositories/M17N/openSUSE_Tumbleweed/M17N.repo
@@ -158,7 +159,7 @@ zypper addrepo https://download.opensuse.org/repositories/M17N/openSUSE_Tumblewe
 
 #### Microsoft Edge
 
-- Add *Microsoft Edge* repo (and install *Microsoft Edge*) by the following commands:
+- Add *Microsoft Edge* repo (and install *Microsoft Edge*) via the following commands:
 
   ```bash
   rpm --import https://packages.microsoft.com/keys/microsoft.asc
@@ -171,7 +172,7 @@ zypper addrepo https://download.opensuse.org/repositories/M17N/openSUSE_Tumblewe
 
 #### Brave Browser
 
-- Add *Brave* repo (and install *Brave*) by the following commands:
+- Add *Brave* repo (and install *Brave*) via the following commands:
 
   ```bash
   rpm --import https://brave-browser-rpm-release.s3.brave.com/brave-core.asc
@@ -188,7 +189,7 @@ zypper addrepo https://download.opensuse.org/repositories/M17N/openSUSE_Tumblewe
 
 #### Cloudflare WARP
 
-- At the time of updating (*Tumbleweed 20230718, WARP 2023.7.40*), add *WARP* repo (and install *WARP*) by the following commands:
+- At the time of updating (*Tumbleweed 20230718, WARP 2023.7.40*), add *WARP* repo (and install *WARP*) via the following commands:
 
   ```bash
   zypper addrepo https://pkg.cloudflareclient.com/cloudflare-warp-ascii.repo
@@ -203,6 +204,14 @@ See [[WARP]] for configuration.
 *References*:
 
 - [Red Hat Enterprise Linux & CentOS](https://pkg.cloudflareclient.com/#rhel)
+
+#### Emulators
+
+Add *Emulators* repo via the following commands:
+
+```bash
+zypper addrepo https://download.opensuse.org/repositories/Emulators/openSUSE_Tumbleweed/Emulators.repo
+```
 
 ### Examine repo
 
