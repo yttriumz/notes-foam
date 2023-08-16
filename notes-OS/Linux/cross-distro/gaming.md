@@ -27,19 +27,20 @@
 
 ### Installation
 
-- Install via `flatpak install flathub com.valvesoftware.Steam`.
-  - For controller support, install drivers via `zypper install steam-devices`.
-- Install Chinese font `wqy-zenhei`.
-  - OpenSUSE Tumbleweed: `zypper install wqy-zenhei-fonts`.
-- Run via `flatpak run com.valvesoftware.Steam`.
+1. Install via `flatpak install flathub com.valvesoftware.Steam`.
+   - For controller support, install drivers via `zypper install steam-devices`.
+   - Optionally install Chinese font `wqy-zenhei`.
+     - OpenSUSE Tumbleweed: `zypper install wqy-zenhei-fonts`.
+   - Optionally set environment to make Steam running using NVIDIA card via `flatpak override --user --env='__NV_PRIME_RENDER_OFFLOAD=1 __VK_LAYER_NV_optimus=NVIDIA_only __GLX_VENDOR_LIBRARY_NAME=nvidia' com.valvesoftware.Steam`.
+2. Run via `flatpak run com.valvesoftware.Steam`.
 
 *References*:
 
 - [Steam](https://flathub.org/en-GB/apps/com.valvesoftware.Steam)
 - [My controller isn't being detected](https://github.com/flathub/com.valvesoftware.Steam/wiki#my-controller-isnt-being-detected)
 - [Is there any real “disadvantages” to using the FlatPak version of Steam?](https://www.reddit.com/r/linux_gaming/comments/rp2ss9/is_there_any_real_disadvantages_to_using_the/)
-- [How to Run Cyberpunk 2077 on Linux](https://segmentnext.com/cyberpunk-2077-linux/)
 - [Linux steam client cannot display Chinese character.](https://www.reddit.com/r/linux_gaming/comments/13xag7z/linux_steam_client_cannot_display_chinese/)
+- [4. 以Nvidia PRIME啟動Flatpak版Steam遊戲](https://ivonblog.com/posts/linux-nvidia-prime/#4-%E4%BB%A5nvidia-prime%E5%95%9F%E5%8B%95flatpak%E7%89%88steam%E9%81%8A%E6%88%B2)
 
 ### Steam Play settings
 
@@ -84,6 +85,10 @@ GAMEMODERUNEXEC="env __NV_PRIME_RENDER_OFFLOAD=1 __VK_LAYER_NV_optimus=NVIDIA_on
 - [gamemode](https://github.com/FeralInteractive/gamemode)
 
 ### Cyberpunk 2077
+
+*References*:
+
+- [How to Run Cyberpunk 2077 on Linux](https://segmentnext.com/cyberpunk-2077-linux/)
 
 #### Graphics options (T2000)
 

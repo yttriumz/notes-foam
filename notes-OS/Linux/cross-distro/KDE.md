@@ -1,5 +1,6 @@
 # KDE Plasma Tweak
 
+- [Interesting posts](#interesting-posts)
 - [Widget](#widget)
 - [Autostart](#autostart)
 - [Recent files when right-clicking Firefox](#recent-files-when-right-clicking-firefox)
@@ -16,6 +17,10 @@
 - [SDDM login theme](#sddm-login-theme)
   - [Configure Sugar Candy for SDDM](#configure-sugar-candy-for-sddm)
 - [Dolphin](#dolphin)
+
+## Interesting posts
+
+- [KDE Plasma與GNOME桌面比較，最終我還是選擇KDE](https://ivonblog.com/posts/kde-plasma-gnome-comparison/)
 
 ## Widget
 

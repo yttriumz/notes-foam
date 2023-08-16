@@ -1,5 +1,12 @@
 # File Systems
 
+## Interesting posts
+
+- [Where should a local executable be placed?](https://unix.stackexchange.com/questions/36871/where-should-a-local-executable-be-placed)
+- [Filesystem Hierarchy Standard](https://www.pathname.com/fhs/pub/fhs-2.3.html)
+- [XDG Base Directory Specification](https://specifications.freedesktop.org/basedir-spec/basedir-spec-latest.html)
+- [Use the XDG standard bin directory on linux?](https://github.com/JuliaLang/juliaup/issues/247)
+
 ## Btrfs
 
 *References*:

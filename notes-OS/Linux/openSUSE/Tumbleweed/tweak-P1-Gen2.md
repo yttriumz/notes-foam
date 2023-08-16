@@ -117,6 +117,9 @@ alias clash='~/.clash/cfw'
 
 # KVM
 alias vstart='sudo systemctl start libvirtd.service && systemctl status libvirtd.service && sudo virsh net-start default && sudo virsh net-list --all && virt-manager'
+alias vattach='sudo virsh attach-device'
+alias vdetach='sudo virsh detach-device'
+alias lgc='looking-glass-client -m KEY_HOME'
 
 # AppImages
 alias eudic='~/bin/AppImage/eudic.AppImage'

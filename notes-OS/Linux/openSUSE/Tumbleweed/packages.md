@@ -36,10 +36,10 @@
 - [OBS Package Installer (OPI)](#obs-package-installer-opi)
   - [Install OPI](#install-opi)
 - [Flatpak](#flatpak)
+  - [Interesting posts](#interesting-posts)
   - [Install Flatpak](#install-flatpak)
   - [Add repo](#add-repo-1)
   - [Uninstall unused packages](#uninstall-unused-packages)
-  - [Interesting posts](#interesting-posts)
 - [Become a Packager](#become-a-packager)
 
 ## Zypper
@@ -333,6 +333,11 @@ Use `zypper install opi`.
 
 ## Flatpak
 
+### Interesting posts
+
+- [Flatpak Is Not the Future](https://ludocode.com/blog/flatpak-is-not-the-future)
+- [Hacker News discussion](https://news.ycombinator.com/item?id=29316024)
+
 ### Install Flatpak
 
 Use `zypper install flatpak`.
@@ -352,11 +357,6 @@ flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flat
 ### Uninstall unused packages
 
 Use `flatpak uninstall --unused`.
-
-### Interesting posts
-
-- [Flatpak Is Not the Future](https://ludocode.com/blog/flatpak-is-not-the-future)
-- [Hacker News discussion](https://news.ycombinator.com/item?id=29316024)
 
 ## Become a Packager
 

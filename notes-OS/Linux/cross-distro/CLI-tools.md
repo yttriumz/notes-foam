@@ -2,10 +2,10 @@
 
 - [Search tools](#search-tools)
   - [`find`](#find)
+    - [Interesting posts](#interesting-posts)
     - [Ignore case](#ignore-case)
     - [Find only files/directories](#find-only-filesdirectories)
     - [Get rid of "Permission Denied"](#get-rid-of-permission-denied)
-    - [Interesting posts](#interesting-posts)
   - [`fd` (Rust)](#fd-rust)
   - [ripgrep (`rg`) (Rust)](#ripgrep-rg-rust)
 - [File manager](#file-manager)
@@ -23,6 +23,10 @@
 ## Search tools
 
 ### `find`
+
+#### Interesting posts
+
+- [Ways to Use ‘find’ Command to Search Directories More Efficiently](https://www.tecmint.com/find-directory-in-linux/)
 
 #### Ignore case
 
@@ -44,10 +48,6 @@ Add `2>&1 | grep -v "Permission denied"` to the end.
 
 - [How to skip "permission denied" errors when running find in Linux? \[duplicate\]](https://unix.stackexchange.com/questions/42841/how-to-skip-permission-denied-errors-when-running-find-in-linux)
 - [How can I exclude all "permission denied" messages from "find"?](https://stackoverflow.com/questions/762348/how-can-i-exclude-all-permission-denied-messages-from-find)
-
-#### Interesting posts
-
-- [Ways to Use ‘find’ Command to Search Directories More Efficiently](https://www.tecmint.com/find-directory-in-linux/)
 
 ### `fd` (Rust)
 

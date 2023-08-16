@@ -14,6 +14,7 @@
     "nostr",
     "ohmyposh",
     "rustup",
+    "virtio"
   ],
   "editor.minimap.enabled": false,
   "markdownlint.config": {

@@ -6,25 +6,25 @@
 - [USB redirect](#usb-redirect)
   - [Permission issue](#permission-issue)
   - [USB redirect using `virsh`](#usb-redirect-using-virsh)
+- [Sharing files between host and guest](#sharing-files-between-host-and-guest)
+  - [Linux guest](#linux-guest)
 - [GPU passthrough](#gpu-passthrough)
 - [Clone a VM](#clone-a-vm)
   - [Cloning using `virt-manager`](#cloning-using-virt-manager)
   - [Cloning using `virt-clone`](#cloning-using-virt-clone)
 - [Manage snapshots](#manage-snapshots)
-- [Linux guest](#linux-guest)
-  - [Shared directory](#shared-directory)
-- [Windows guest](#windows-guest)
-  - [virtio and SPICE drivers](#virtio-and-spice-drivers)
+- [Manage VM storage](#manage-vm-storage)
 - [Looking Glass](#looking-glass)
-  - [IVSHMEM](#ivshmem)
-  - [Mouse and keyboard](#mouse-and-keyboard)
-    - [Not recommended](#not-recommended)
-  - [Build client](#build-client)
+  - [Interesting posts](#interesting-posts)
+  - [virtio and SPICE drivers (inside guest)](#virtio-and-spice-drivers-inside-guest)
+  - [IVSHMEM (on host)](#ivshmem-on-host)
+  - [Mouse and keyboard (on host)](#mouse-and-keyboard-on-host)
+  - [Build client (on host)](#build-client-on-host)
     - [Prerequisite](#prerequisite)
-  - [Run client](#run-client)
+  - [Run client (on host)](#run-client-on-host)
   - [Screen tearing](#screen-tearing)
-    - [KDE compositor](#kde-compositor)
-    - [TearFree (not verified to be working)](#tearfree-not-verified-to-be-working)
+    - [KDE compositor (on host)](#kde-compositor-on-host)
+    - [TearFree (on host)](#tearfree-on-host)
 
 For KVM installation, see:
 
@@ -99,6 +99,55 @@ At the time of writing (*Tumbleweed 20230727, kvm_tools 20210330-5.1, libvirt 9.
 *References*:
 
 - [14.2. Attaching and Updating a Device with virsh](https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/6/html/virtualization_administration_guide/sect-managing_guest_virtual_machines_with_virsh-attaching_and_updating_a_device_with_virsh)
+
+## Sharing files between host and guest
+
+### Linux guest
+
+1. Enable shared memory:
+
+   ![Enable shared memory](attachments/shared_mem.png)
+
+2. Add hardware:
+
+   ![Add hardware](attachments/add_hw.png)
+
+   Then edit XML as follows:
+
+   ```xml
+   <filesystem type="mount" accessmode="passthrough">
+     <source dir="HOST_SHARE_PATH"/>
+     <target dir="GUEST_SHARE_PATH"/>
+     <driver type="virtiofs"/>
+   </filesystem>
+   ```
+
+   Note that for old distro having kernel version lower than *Linux v5.4* (e.g. *Ubuntu 16.04*), `9p` should be used instead of `virtiofs`. Supported FS could be checked via the following commands:
+
+   ```bash
+   cat /etc/filesystems
+   cat /proc/filesystems
+   ls /lib/modules/$(uname -r)/kernel/fs
+   ```
+
+3. Mount the shared directory within the guest operating system via the following commands:
+
+   ```bash
+   mkdir -v ~/shared
+   sudo mount -t virtiofs GUEST_SHARE_PATH ~/shared
+   ```
+
+*References*:
+
+- [12.3 Sharing directories between host and guests (file system pass-through)](https://doc.opensuse.org/documentation/leap/virtualization/single-html/book-virtualization/#sec-libvirt-storage-share)
+- [Sharing files with Virtiofs](https://libvirt.org/kbase/virtiofs.html)
+- [Documentation/9psetup](https://wiki.qemu.org/Documentation/9psetup)
+- [Libvirt](https://discourse.ubuntu.com/t/libvirt/11522)
+- [Share Folder Between Guest and Host in virt-manager (KVM/Qemu/libvirt)](https://www.debugpoint.com/share-folder-virt-manager/)
+- [Share Files Between KVM Host and Linux Guest Using Virtiofs](https://sysguides.com/share-files-between-kvm-host-and-linux-guest-using-virtiofs/)
+- [Using file system passthrough with KVM guests](https://askubuntu.com/questions/1014674/using-file-system-passthrough-with-kvm-guests)
+- [The new shared folder implementation appears to be virtio-9p/"virtfs" rather than virtiofs.](https://github.com/utmapp/UTM/issues/4386#issuecomment-1242033554)
+- [Mount Device With Specific User Rights](https://www.baeldung.com/linux/mount-user-rights)
 
 ## GPU passthrough
 
@@ -180,68 +229,31 @@ Note that at the time of writing (*Tumbleweed 20230727, libvirt 9.5.0-2.1*), clo
   virsh snapshot-edit VM_NAME --snapshotname SNAPSHOT_TO_BE_RENAMED --rename
   ```
 
-## Linux guest
-
-### Shared directory
-
-1. Enable shared memory:
-
-   ![Enable shared memory](attachments/shared_mem.png)
-
-2. Add hardware:
-
-   ![Add hardware](attachments/add_hw.png)
-
-   Then edit XML as follows:
-
-   ```xml
-   <filesystem type="mount" accessmode="passthrough">
-     <source dir="HOST_SHARE_PATH"/>
-     <target dir="GUEST_SHARE_PATH"/>
-     <driver type="virtiofs"/>
-   </filesystem>
-   ```
-
-   Note that for old distro having kernel version lower than *Linux v5.4* (e.g. *Ubuntu 16.04*), `9p` should be used instead of `virtiofs`. Supported FS could be checked via the following commands:
-
-   ```bash
-   cat /etc/filesystems
-   cat /proc/filesystems
-   ls /lib/modules/$(uname -r)/kernel/fs
-   ```
-
-3. Mount the shared directory within the guest operating system via the following commands:
-
-   ```bash
-   mkdir -v ~/shared
-   sudo mount -t virtiofs GUEST_SHARE_PATH ~/shared
-   ```
+## Manage VM storage
 
 *References*:
 
-- [Sharing files with Virtiofs](https://libvirt.org/kbase/virtiofs.html)
-- [Documentation/9psetup](https://wiki.qemu.org/Documentation/9psetup)
-- [Libvirt](https://discourse.ubuntu.com/t/libvirt/11522)
-- [Share Folder Between Guest and Host in virt-manager (KVM/Qemu/libvirt)](https://www.debugpoint.com/share-folder-virt-manager/)
-- [Share Files Between KVM Host and Linux Guest Using Virtiofs](https://sysguides.com/share-files-between-kvm-host-and-linux-guest-using-virtiofs/)
-- [Using file system passthrough with KVM guests](https://askubuntu.com/questions/1014674/using-file-system-passthrough-with-kvm-guests)
-- [The new shared folder implementation appears to be virtio-9p/"virtfs" rather than virtiofs.](https://github.com/utmapp/UTM/issues/4386#issuecomment-1242033554)
-- [Mount Device With Specific User Rights](https://www.baeldung.com/linux/mount-user-rights)
+- [18.3.4 virt-resize](https://doc.opensuse.org/documentation/leap/virtualization/single-html/book-virtualization/#sec-guestfs-tools-virt-resize)
+- [How to Increase a KVM Virtual Machine's Disk Size](https://www.howtogeek.com/devops/how-to-increase-a-kvm-virtual-machines-disk-size/)
+- [How To extend/increase KVM Virtual Machine (VM) disk size](https://computingforgeeks.com/how-to-extend-increase-kvm-virtual-machine-disk-size/?expand_article=1)
 
-## Windows guest
+## Looking Glass
 
-### virtio and SPICE drivers
+### Interesting posts
 
-At the time of writing (*libvirt 9.5.0-2.1, virtio-win 0.1.229*), a virtio virtual disk must be attached when installing virtio drivers. Otherwise, the main virtual disk cannot be recognized if later changed from sata to virtio.
+- [如何在Linux系統安裝Windows 11虛擬機(QEMU/KVM) ＋ 常用技巧](https://ivonblog.com/posts/install-windows-11-qemu-kvm-on-linux/)
+- [如何在Windows虛擬機玩遊戲 ～ Linux QEMU/KVM雙GPU直通 ＋ Looking Glass安裝過程](https://ivonblog.com/posts/qemu-kvm-vfio-gaming/)
+
+### virtio and SPICE drivers (inside guest)
+
+At the time of writing (*libvirt 9.5.0-2.1, virtio-win 0.1.229*), a virtio virtual disk must be attached when installing virtio drivers. Otherwise, the main virtual disk cannot be recognized if later changed from SATA to virtio.
 
 *References*:
 
 - [Downloads](https://github.com/virtio-win/virtio-win-pkg-scripts#downloads)
 - [Download](https://www.spice-space.org/download.html)
 
-## Looking Glass
-
-### IVSHMEM
+### IVSHMEM (on host)
 
 1. Add the following to VM xml's `device` section:
 
@@ -264,7 +276,9 @@ At the time of writing (*libvirt 9.5.0-2.1, virtio-win 0.1.229*), a virtio virtu
 
 - [IVSHMEM](https://looking-glass.io/docs/B6/install/#ivshmem)
 
-### Mouse and keyboard
+### Mouse and keyboard (on host)
+
+Make the following modifications to VM's xml:
 
 - Find your `<video>` device, and set `<model type='vga'/>`.
 - Remove the `<input type='tablet'/>` device, if you have one.
@@ -275,7 +289,7 @@ At the time of writing (*libvirt 9.5.0-2.1, virtio-win 0.1.229*), a virtio virtu
 
 - [Keyboard/mouse/display/audio](https://looking-glass.io/docs/B6/install/#keyboard-mouse-display-audio)
 
-#### Not recommended
+Note that the following method is **not** recommended in the LG official Discord server.
 
 ~~Add the following XML to the VM config:~~
 
@@ -288,7 +302,7 @@ At the time of writing (*libvirt 9.5.0-2.1, virtio-win 0.1.229*), a virtio virtu
 </input>
 ```
 
-### Build client
+### Build client (on host)
 
 #### Prerequisite
 
@@ -413,15 +427,15 @@ Then I succeed via `cmake -DENABLE_BACKTRACE=0 ../` and `make install`.
 - [OpenSuSE Leap 15.0+](https://looking-glass.io/wiki/Installation_on_other_distributions#OpenSuSE_Leap_15.0.2B)
 - [Client `make` fails to build on arch with "DSO missing from command line"](https://github.com/gnif/LookingGlass/issues/1056#issuecomment-1399147873)
 
-### Run client
+### Run client (on host)
 
-Use ~~`looking-glass-client -s -m KEY_HOME`~~ `looking-glass-client -m KEY_HOME`.
+Use ~~`looking-glass-client -s -m KEY_HOME`~~ `looking-glass-client -m KEY_HOME`. Note that it's not necessary to set the menu key to be `KEY_HOME`. By default it's `KEY_SCROLLLOCK`.
 
 ### Screen tearing
 
-#### KDE compositor
+#### KDE compositor (on host)
 
-Forbid apps from blocking compositing:
+Forbid apps from blocking compositing (it drops framerate):
 
 ![KDE compositor](attachments/compositor.png)
 
@@ -431,9 +445,9 @@ Forbid apps from blocking compositing:
 - [What is a compositor (in general), and which gives the best performance (Ubuntu Mate 16.04)?](https://unix.stackexchange.com/questions/359257/what-is-a-compositor-in-general-and-which-gives-the-best-performance-ubuntu)
 - [Compositor (X11)](https://linux-gaming.kwindu.eu/index.php?title=Compositor_(X11))
 
-#### TearFree (not verified to be working)
+#### TearFree (on host)
 
-Edit `/etc/X11/xorg.conf.d/20-intel.conf`.
+Note that this was not verified to be working on my machine. Edit `/etc/X11/xorg.conf.d/20-intel.conf`.
 
 *References*:
 

@@ -1,5 +1,9 @@
 # Android
 
+## Interesting posts
+
+- [The application may be doing too much work on its main thread](https://stackoverflow.com/questions/14678593/the-application-may-be-doing-too-much-work-on-its-main-thread)
+
 ## Emulator
 
 *References*:
@@ -16,7 +20,3 @@
 ## Android-x86
 
 - https://www.android-x86.org/
-
-## Interesting posts
-
-- [The application may be doing too much work on its main thread](https://stackoverflow.com/questions/14678593/the-application-may-be-doing-too-much-work-on-its-main-thread)
