@@ -1,5 +1,7 @@
 # Gaming on Linux
 
+Created: 2023/08/02 16:32:20 Last modified: 2023/08/17 10:49:16
+
 - [Steam (Flatpak)](#steam-flatpak)
   - [Installation](#installation)
   - [Steam Play settings](#steam-play-settings)
@@ -9,6 +11,7 @@
     - [Graphics options (T2000)](#graphics-options-t2000)
     - [Game save](#game-save)
   - [Gene Shift Auto](#gene-shift-auto)
+    - [Minimal working launch options](#minimal-working-launch-options)
   - [Dead Island 2](#dead-island-2)
     - [Graphics options (T2000)](#graphics-options-t2000-1)
     - [Game save](#game-save-1)
@@ -17,7 +20,9 @@
     - [Graphics options (T2000)](#graphics-options-t2000-2)
     - [Game save](#game-save-2)
   - [Super Animal Royal](#super-animal-royal)
+    - [Minimal working launch options](#minimal-working-launch-options-1)
   - [theHunter: Call of the Wild](#thehunter-call-of-the-wild)
+    - [Minimal working launch options](#minimal-working-launch-options-2)
 - [KVM](#kvm)
 - [Lutris](#lutris)
 - [OpenSpades (Flatpak)](#openspades-flatpak)
@@ -105,7 +110,7 @@ Save is located at `%userprofile%\Saved Games\CD Projekt Red\Cyberpunk 2077`.
 
 ### Gene Shift Auto
 
-Simplest launch options:
+#### Minimal working launch options
 
 ```text
 __NV_PRIME_RENDER_OFFLOAD=1 __VK_LAYER_NV_optimus=NVIDIA_only __GLX_VENDOR_LIBRARY_NAME=nvidia %command%
@@ -147,7 +152,7 @@ Save is located at `%HOMEPATH%\appData\LocalLow\Mobius Digital\Outer Wilds`.
 
 ### Super Animal Royal
 
-Simplest launch options:
+#### Minimal working launch options
 
 ```text
 PROTON_USE_WINED3D=1 %command%
@@ -159,7 +164,7 @@ PROTON_USE_WINED3D=1 %command%
 
 ### theHunter: Call of the Wild
 
-Simplest launch options:
+#### Minimal working launch options
 
 ```text
 DXVK_FILTER_DEVICE_NAME="T2000" %command% /borderless

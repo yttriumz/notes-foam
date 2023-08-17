@@ -1,16 +1,16 @@
 # X.Org
 
-## Disable middle click using `xmodmap`
+## `xmodmap`
 
 ### Check the current pointer map
 
 Use `xmodmap -pp`.
 
-### Restore `xmodmap` settings
-
-*References*:
+### Restore `xmodmap` defaults
 
 There is no way to restore it directly.
+
+*References*:
 
 - [How do I clear xmodmap settings?](https://askubuntu.com/questions/29603/how-do-i-clear-xmodmap-settings)
 
@@ -18,13 +18,19 @@ There is no way to restore it directly.
 
 1. putting the following contents to `~/.Xmodmap`:
 
-    ```text
-    pointer = 1 0 3 4 5 6 7 8 9 10
-    ```
+   ```text
+   pointer = 1 0 3
+   ```
 
-2. Then apply the settings by `xmodmap ~/.Xmodmap`.
+2. Then apply the settings via `xmodmap ~/.Xmodmap`. This is also auto applied every time user logs in.
 
-Note that this will completely disable the middle click function, which might cause problems in applications where the middle click is used, e.g., *Cyberpunk 2077*.
+   Note that this will completely disable the middle click function (except in KVM guest machines), which might cause problems in applications where the middle click is used, e.g., *Cyberpunk 2077*.
+
+3. You can restore it by writing the following to `~/.Xmodmap-restore-middle-click` and apply via `xmodmap ~/Xmodmap-restore-middle-click`:
+
+   ```text
+   pointer = 1 2 3
+   ```
 
 *References*:
 
