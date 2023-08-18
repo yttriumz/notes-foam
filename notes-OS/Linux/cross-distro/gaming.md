@@ -1,6 +1,6 @@
 # Gaming on Linux
 
-Created: 2023/08/02 16:32:20 Last modified: 2023/08/17 10:49:16
+Last modified: 2023/08/17 16:38:37
 
 - [Steam (Flatpak)](#steam-flatpak)
   - [Installation](#installation)
@@ -19,7 +19,7 @@ Created: 2023/08/02 16:32:20 Last modified: 2023/08/17 10:49:16
   - [Outer Wilds](#outer-wilds)
     - [Graphics options (T2000)](#graphics-options-t2000-2)
     - [Game save](#game-save-2)
-  - [Super Animal Royal](#super-animal-royal)
+  - [Super Animal Royale](#super-animal-royale)
     - [Minimal working launch options](#minimal-working-launch-options-1)
   - [theHunter: Call of the Wild](#thehunter-call-of-the-wild)
     - [Minimal working launch options](#minimal-working-launch-options-2)
@@ -150,7 +150,7 @@ Save is located at `%HOMEPATH%\appData\LocalLow\Mobius Digital\Outer Wilds`.
 - [星际拓荒XGP存档转steam存档方法](https://www.bilibili.com/read/cv20764437/)
 - [【星际拓荒】没有主菜单问题的解决方法](https://www.bilibili.com/read/cv13634330/)
 
-### Super Animal Royal
+### Super Animal Royale
 
 #### Minimal working launch options
 
