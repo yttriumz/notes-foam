@@ -1,8 +1,13 @@
 # Bash Usage
 
+- [Interesting posts](#interesting-posts)
 - [Alias](#alias)
     - [Alias expansion](#alias-expansion)
     - [Auto-completion for aliases](#auto-completion-for-aliases)
+
+## Interesting posts
+
+- [What does the 'rc' in `.bashrc`, etc. mean? \[duplicate\]](https://superuser.com/questions/173165/what-does-the-rc-in-bashrc-etc-mean)
 
 ## Alias
 
