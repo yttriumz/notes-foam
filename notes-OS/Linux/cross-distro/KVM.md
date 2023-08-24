@@ -9,6 +9,7 @@
 - [Sharing files between host and guest](#sharing-files-between-host-and-guest)
   - [Linux guest](#linux-guest)
 - [GPU passthrough](#gpu-passthrough)
+- [Suspend a VM](#suspend-a-vm)
 - [Clone a VM](#clone-a-vm)
   - [Cloning using `virt-manager`](#cloning-using-virt-manager)
   - [Cloning using `virt-clone`](#cloning-using-virt-clone)
@@ -194,6 +195,12 @@ At the time of writing (*Tumbleweed 20230727, kvm_tools 20210330-5.1, libvirt 9.
 - [Configuring GPU Pass-Through for NVIDIA cards](https://doc.opensuse.org/documentation/leap/virtualization/single-html/book-virtualization/#app-gpu-passthru)
 - [3.1 Binding vfio-pci via device ID](https://wiki.archlinux.org/title/PCI_passthrough_via_OVMF#Binding_vfio-pci_via_device_ID)
 - (Blacklisted by Looking Glass Discord server) [\[tutorial\] The Ultimate Linux Laptop for Gaming – feat. KVM and VFIO](https://www.youtube.com/watch?v=m8xj2Py8KPc)
+
+## Suspend a VM
+
+*References*:
+
+- [Pause QEMU/KVM VM (save RAM and CPU state to disk) like vmware Player?](https://unix.stackexchange.com/questions/361010/pause-qemu-kvm-vm-save-ram-and-cpu-state-to-disk-like-vmware-player)
 
 ## Clone a VM
 

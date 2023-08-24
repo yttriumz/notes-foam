@@ -4,6 +4,7 @@
 - [Rootless mode (more secure)](#rootless-mode-more-secure)
 - [Access Docker container port from host](#access-docker-container-port-from-host)
 - [Access host port in Docker container](#access-host-port-in-docker-container)
+- [Stop all containers](#stop-all-containers)
 - [VSCode \& Docker](#vscode--docker)
 
 For installation, see:
@@ -51,6 +52,14 @@ Find the `docker0` interface IP of the host via `ip addr show docker0`.
 *References*:
 
 - [How do I access the host port in a Docker container?](https://bright-softwares.com/blog/en/docker/how-do-i-access-the-host-port-in-a-docker-container#step-2-get-the-containers-ip)
+
+## Stop all containers
+
+Use `docker stop $(docker ps -a -q)`.
+
+*References*:
+
+- [Stop and remove all docker containers](https://stackoverflow.com/questions/45357771/stop-and-remove-all-docker-containers)
 
 ## VSCode & Docker
 

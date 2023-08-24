@@ -1,7 +1,8 @@
 # Gaming on Linux
 
-Last modified: 2023/08/17 16:38:37
+Last modified: 2023/08/24 12:13:51
 
+- [Interesting posts](#interesting-posts)
 - [Steam (Flatpak)](#steam-flatpak)
   - [Installation](#installation)
   - [Steam Play settings](#steam-play-settings)
@@ -27,6 +28,10 @@ Last modified: 2023/08/17 16:38:37
 - [Lutris](#lutris)
 - [OpenSpades (Flatpak)](#openspades-flatpak)
   - [Tips](#tips)
+
+## Interesting posts
+
+- [What games do you play on openSuse?](https://www.reddit.com/r/openSUSE/comments/10ubemu/what_games_do_you_play_on_opensuse/)
 
 ## Steam (Flatpak)
 

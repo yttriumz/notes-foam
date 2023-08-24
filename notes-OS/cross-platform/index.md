@@ -8,7 +8,9 @@ type: index
 - [[terminal-tools]]
 - [[remote/index]]
 - [[cross-platform/git]]
-- [[vscode]]
+- [[VSCode]]
+- [[Neovim]]
+- [[Emacs]]
 - [[fonts]]
 - [[hard-disk]]
 - [[NVIDIA]]
@@ -18,7 +20,9 @@ type: index
 [terminal-tools]: ../Linux/cross-distro/terminal-tools.md "Terminal Related Tools"
 [remote/index]: remote/index.md "Remote Development"
 [cross-platform/git]: git.md "Git Usage Tips"
-[vscode]: VSCode.md "Visual Studio Code Tips"
+[VSCode]: VSCode.md "Visual Studio Code Tips"
+[Neovim]: Neovim.md "Neovim"
+[Emacs]: Emacs.md "Emacs"
 [fonts]: fonts.md "Fonts"
 [hard-disk]: hard-disk.md "Hard Disk Manipulation"
 [NVIDIA]: NVIDIA.md "NVIDIA Devices"

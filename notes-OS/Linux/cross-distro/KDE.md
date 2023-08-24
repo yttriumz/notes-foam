@@ -21,6 +21,7 @@
 ## Interesting posts
 
 - [KDE Plasma與GNOME桌面比較，最終我還是選擇KDE](https://ivonblog.com/posts/kde-plasma-gnome-comparison/)
+- [plasmashell crash on wayland](https://www.reddit.com/r/openSUSE/comments/10v0lxl/plasmashell_crash_on_wayland/)
 
 ## Widget
 
