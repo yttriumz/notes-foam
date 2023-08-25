@@ -2,8 +2,7 @@
 
 ## Interesting posts
 
-- [500 Lines or Less
-A Python Interpreter Written in Python](https://aosabook.org/en/500L/a-python-interpreter-written-in-python.html)
+- [A Python Interpreter Written in Python](https://aosabook.org/en/500L/a-python-interpreter-written-in-python.html)
 
 ## VSCode workspace config
 
@@ -29,7 +28,7 @@ A Python Interpreter Written in Python](https://aosabook.org/en/500L/a-python-in
 
 ## Environment
 
-### Virtual Environment
+### venv
 
 #### Activate
 
@@ -44,6 +43,10 @@ A Python Interpreter Written in Python](https://aosabook.org/en/500L/a-python-in
 - [`black[jupyter]`](https://black.readthedocs.io/en/stable/getting_started.html#installation) for formatting
 - [`mypy`](https://mypy.readthedocs.io/en/stable/getting_started.html#installing-and-running-mypy) for linting
 - [`ipykernel`](https://ipython.readthedocs.io/en/stable/install/kernel_install.html#kernels-for-python-2-and-3) for VSCode Jupyter support
+
+### pipx
+
+- [pipx](https://pypa.github.io/pipx/)
 
 ## Data Engineering
 

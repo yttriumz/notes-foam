@@ -1,5 +1,7 @@
 # Tweak openSUSE Tumbleweed on ThinkPad P1 Gen2
 
+Last modified: 2023/08/24 18:56:14
+
 - [Change hostname](#change-hostname)
 - [Network settings](#network-settings)
   - [WiFi](#wifi)
@@ -195,6 +197,7 @@ On my machine (*ThinkPad P1 Gen2 with T2000*), I tried 2 methods:
 - [SDB:NVIDIA drivers](https://en.opensuse.org/SDB:NVIDIA_drivers)
 - [SDB:NVIDIA troubleshooting](https://en.opensuse.org/SDB:NVIDIA_troubleshooting)
 - [SDB:NVIDIA SUSE Prime](https://en.opensuse.org/SDB:NVIDIA_SUSE_Prime)
+- [7.4 Switching between Intel and NVIDIA Optimus GPUs with SUSE Prime](https://doc.opensuse.org/documentation/leap/reference/single-html/book-reference/index.html#sec-gui-desktop-suse-prime)
 - [来到opensuse15.3的世界后，我推荐你做点什么](https://www.bwsl.wang/script/129.html)
 - [Got a black screen with mouse cursor only after switching (on SDDM screen) a user session type between X11 and Wayland](https://forum.manjaro.org/t/got-a-black-screen-with-mouse-cursor-only-after-switching-on-sddm-screen-a-user-session-type-between-x11-and-wayland/87044/3)
 

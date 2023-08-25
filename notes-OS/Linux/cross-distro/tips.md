@@ -1,6 +1,6 @@
 # General Linux Usage Tips
 
-Last modified: 2023/08/24 15:54:42
+Last modified: 2023/08/25 10:47:36
 
 ## Boot Parameters
 
@@ -21,6 +21,11 @@ Last modified: 2023/08/24 15:54:42
 
 - [Bluetooth Pairing on Dual Boot of Windows & Linux Mint/Ubuntu - Stop having to Pair Devices](https://unix.stackexchange.com/questions/255509/bluetooth-pairing-on-dual-boot-of-windows-linux-mint-ubuntu-stop-having-to-p)
 - [Guide: Pair and use the same Bluetooth device on both Windows and Pop!_OS when dual booting, without needing to re-pair every time you switch OS.](https://www.reddit.com/r/pop_os/comments/lf8kvu/guide_pair_and_use_the_same_bluetooth_device_on/)
+
+## User management
+
+- Change username: `usermod -l NEW_USERNAME OLD_USERNAME`
+- Change user's home directory: `usermod -d PATH_TO_NEW_HOME -m USER`
 
 ## Trusted Platform Module
 
