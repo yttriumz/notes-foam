@@ -1,5 +1,7 @@
 # JavaScript/TypeScript
 
+Last modified: 2023/08/30 16:11:05
+
 - [Interesting posts](#interesting-posts)
   - [Development environment](#development-environment)
   - [Development tools](#development-tools)
@@ -30,9 +32,18 @@
 - [IIFE](https://developer.mozilla.org/en-US/docs/Glossary/IIFE)
 - [... in JavaScript – the Three Dots Operator in JS](https://www.freecodecamp.org/news/three-dots-operator-in-javascript/)
 - [Callback Functions in JavaScript](https://www.impressivewebs.com/callback-functions-javascript/)
+- [As a JS Developer, ES6 Classes Are What Keep Me Up at Night](https://www.toptal.com/javascript/es6-class-chaos-keeps-js-developer-up)
+- [Inheritance and the prototype chain](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Inheritance_and_the_prototype_chain)
 - [Get loop counter/index using for…of syntax in JavaScript](https://stackoverflow.com/questions/10179815/get-loop-counter-index-using-for-of-syntax-in-javascript)
 - [Can i write typescript with in \<Script\> tag?](https://stackoverflow.com/questions/56106649/can-i-write-typescript-with-in-script-tag)
+- [Differences Between Type Aliases and Interfaces](https://www.typescriptlang.org/docs/handbook/2/everyday-types.html#differences-between-type-aliases-and-interfaces)
 - [Interfaces vs Types in TypeScript](https://stackoverflow.com/questions/37233735/interfaces-vs-types-in-typescript/52682220#52682220)
+- [Learn and use Composition in JavaScript and TypeScript](https://softchris.github.io/pages/javascript-composition.html)
+- [Don't use Enums in Typescript, they are very dangerous 😨](https://dev.to/ivanzm123/dont-use-enums-in-typescript-they-are-very-dangerous-57bh)
+- [Nine terrible ways to use TypeScript enums, and one good way.](https://bluepnume.medium.com/nine-terrible-ways-to-use-typescript-enums-and-one-good-way-f9c7ec68bf15)
+- [What does the `is` keyword do in typescript?](https://stackoverflow.com/questions/40081332/what-does-the-is-keyword-do-in-typescript)
+- [What does the "as" keyword do?](https://stackoverflow.com/questions/55781559/what-does-the-as-keyword-do)
+- [What does {} mean in TypeScript?](https://stackoverflow.com/questions/60381643/what-does-mean-in-typescript)
 
 ### React
 
