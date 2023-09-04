@@ -1,6 +1,6 @@
 # JavaScript/TypeScript
 
-Last modified: 2023/08/30 16:11:05
+Last modified: 2023/08/31 10:54:37
 
 - [Interesting posts](#interesting-posts)
   - [Development environment](#development-environment)
@@ -30,6 +30,7 @@ Last modified: 2023/08/30 16:11:05
 - [JavaScript technologies overview](https://developer.mozilla.org/en-US/docs/Web/JavaScript/JavaScript_technologies_overview)
 - [Strict mode](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Strict_mode)
 - [IIFE](https://developer.mozilla.org/en-US/docs/Glossary/IIFE)
+- [Immediately-Invoked Function Expression (IIFE)](https://benalman.com/news/2010/11/immediately-invoked-function-expression/)
 - [... in JavaScript – the Three Dots Operator in JS](https://www.freecodecamp.org/news/three-dots-operator-in-javascript/)
 - [Callback Functions in JavaScript](https://www.impressivewebs.com/callback-functions-javascript/)
 - [As a JS Developer, ES6 Classes Are What Keep Me Up at Night](https://www.toptal.com/javascript/es6-class-chaos-keeps-js-developer-up)

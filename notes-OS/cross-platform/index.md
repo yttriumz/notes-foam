@@ -11,6 +11,7 @@ type: index
 - [[VSCode]]
 - [[Neovim]]
 - [[Emacs]]
+- [[Firefox]]
 - [[fonts]]
 - [[hard-disk]]
 - [[NVIDIA]]
@@ -23,6 +24,7 @@ type: index
 [VSCode]: VSCode.md "Visual Studio Code Tips"
 [Neovim]: Neovim.md "Neovim"
 [Emacs]: Emacs.md "Emacs"
+[Firefox]: Firefox.md "Firefox"
 [fonts]: fonts.md "Fonts"
 [hard-disk]: hard-disk.md "Hard Disk Manipulation"
 [NVIDIA]: NVIDIA.md "NVIDIA Devices"
