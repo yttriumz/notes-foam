@@ -1,6 +1,6 @@
 # Tweak openSUSE Tumbleweed on ThinkPad P1 Gen2
 
-Last modified: 2023/08/29 19:11:01
+Last modified: 2023/09/05 15:34:58
 
 - [Change hostname](#change-hostname)
 - [Network settings](#network-settings)
@@ -195,10 +195,10 @@ See [[terminal-tools#Zellij]].
 
 ### Install driver and prime-select
 
-On my machine (*ThinkPad P1 Gen2 with T2000*), I tried 2 methods:
+On my machine (*ThinkPad P1 Gen2 with T2000*), I tested 2 methods:
 
 - Install legacy driver `x11-video-nvidiaG05` and `suse-prime`.
-- Install the current driver `nvidia-video-G06` (or `nvidia-drivers-G06`) and `suse-prime`. At the time of updating (*Tumbleweed 20230518, KDE Plasma 5.27.5, NV driver 525.116.04*), it may result in a black SDDM login screen with only the cursor. This could be solved by holding `Ctrl` + `Alt` and pressing `Backspace` twice to restart the X server.
+- Install the current driver `nvidia-video-G06` (or `nvidia-drivers-G06`) and `suse-prime`. At the time of updating (*Tumbleweed 20230518, KDE Plasma 5.27.5, NV driver 525.116.04*), it may result in a black SDDM login screen with only the cursor. This could be solved by pressing `Ctrl` + `Alt` + `Backspace` twice to restart the X server.
 
 *References*:
 

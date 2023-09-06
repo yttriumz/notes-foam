@@ -1,6 +1,6 @@
 # Kernel-based Virtual Machine Usage
 
-Last modified: 2023/08/24 15:55:55
+Last modified: 2023/09/05 15:44:19
 
 - [Start service](#start-service)
 - [Virtual network](#virtual-network)
@@ -19,7 +19,7 @@ Last modified: 2023/08/24 15:55:55
 - [Manage VM storage](#manage-vm-storage)
 - [Looking Glass](#looking-glass)
   - [Interesting posts](#interesting-posts)
-  - [virtio and SPICE drivers (inside guest)](#virtio-and-spice-drivers-inside-guest)
+  - [virtio and SPICE drivers (on guest)](#virtio-and-spice-drivers-on-guest)
   - [IVSHMEM (on host)](#ivshmem-on-host)
   - [Mouse and keyboard (on host)](#mouse-and-keyboard-on-host)
   - [Build client (on host)](#build-client-on-host)
@@ -253,7 +253,7 @@ Note that at the time of writing (*Tumbleweed 20230727, libvirt 9.5.0-2.1*), clo
 - [如何在Linux系統安裝Windows 11虛擬機(QEMU/KVM) ＋ 常用技巧](https://ivonblog.com/posts/install-windows-11-qemu-kvm-on-linux/)
 - [如何在Windows虛擬機玩遊戲 ～ Linux QEMU/KVM雙GPU直通 ＋ Looking Glass安裝過程](https://ivonblog.com/posts/qemu-kvm-vfio-gaming/)
 
-### virtio and SPICE drivers (inside guest)
+### virtio and SPICE drivers (on guest)
 
 At the time of writing (*libvirt 9.5.0-2.1, virtio-win 0.1.229*), a virtio virtual disk must be attached when installing virtio drivers. Otherwise, the main virtual disk cannot be recognized if later changed from SATA to virtio.
 
@@ -294,11 +294,7 @@ Make the following modifications to VM's xml:
 - Create an `<input type='mouse' bus='virtio'/>` device, if you don’t already have one.
 - Create an `<input type='keyboard' bus='virtio'/>` device to improve keyboard usage.
 
-*References*:
-
-- [Keyboard/mouse/display/audio](https://looking-glass.io/docs/B6/install/#keyboard-mouse-display-audio)
-
-Note that the following method is **not** recommended in the LG official Discord server.
+Note that the following method is **not** recommended in the LG official Discord server:
 
 ~~Add the following XML to the VM config:~~
 
@@ -310,6 +306,10 @@ Note that the following method is **not** recommended in the LG official Discord
     <source dev="/dev/input/by-path/platform-i8042-serio-0-event-kbd" grab="all" grabToggle="ctrl-ctrl" repeat="on"/>
 </input>
 ```
+
+*References*:
+
+- [Keyboard/mouse/display/audio](https://looking-glass.io/docs/B6/install/#keyboard-mouse-display-audio)
 
 ### Build client (on host)
 
@@ -456,7 +456,7 @@ Forbid apps from blocking compositing (it drops framerate):
 
 #### TearFree (on host)
 
-Note that this was not verified to be working on my machine. Edit `/etc/X11/xorg.conf.d/20-intel.conf`.
+This failed to work on my machine. Edit `/etc/X11/xorg.conf.d/20-intel.conf`.
 
 *References*:
 
