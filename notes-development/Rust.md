@@ -2,13 +2,18 @@
 
 ## Interesting posts
 
-- [How not to learn Rust](https://dystroy.org/blog/how-not-to-learn-rust/)
-- [How Much Memory Do You Need to Run 1 Million Concurrent Tasks?](https://pkolaczk.github.io/memory-consumption-of-async/)
-
-## Readings
-
 - [cheat sheet](https://cheats.rs/)
+- [How not to learn Rust](https://dystroy.org/blog/how-not-to-learn-rust/)
+- [Are We GUI Yet?](https://github.com/areweguiyet/areweguiyet)
+- [Are We Web Yet?](https://github.com/rust-lang/arewewebyet)
+- [Rust web framework comparison](https://github.com/flosse/rust-web-framework-comparison)
+- [Exploring the top Rust web frameworks](https://blog.logrocket.com/top-rust-web-frameworks/)
+- [Learning by doing: An HTTP API with Rust](https://blog.frankel.ch/http-api-rust/)
+- [Which Crates Will Work Off-the-Shelf with WebAssembly?](https://rustwasm.github.io/docs/book/reference/which-crates-work-with-wasm.html)
+- [How Much Memory Do You Need to Run 1 Million Concurrent Tasks?](https://pkolaczk.github.io/memory-consumption-of-async/)
 - [System Programming Memory Model Implied by RUST](https://t4wydfkrrq.feishu.cn/docx/doxcnM3juNBUJfxGcIWOfJRLk5g)
+- [如何在Rust中使用ClickHouse](https://cloud.tencent.com/developer/article/1814306)
+- [想问下如果用rust写的sdk, 只给库而不是代码.是不是只能在封装dll c接口](https://rustcc.cn/article?id=62bbfc2f-230d-4abc-ad94-8390a8487520)
 
 ## VSCode Config
 

@@ -1,6 +1,6 @@
 # JavaScript/TypeScript
 
-Last modified: 2023/08/31 10:54:37
+Last modified: 2023/09/05 18:33:43
 
 - [Interesting posts](#interesting-posts)
   - [Development environment](#development-environment)
@@ -36,9 +36,13 @@ Last modified: 2023/08/31 10:54:37
 - [As a JS Developer, ES6 Classes Are What Keep Me Up at Night](https://www.toptal.com/javascript/es6-class-chaos-keeps-js-developer-up)
 - [Inheritance and the prototype chain](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Inheritance_and_the_prototype_chain)
 - [Get loop counter/index using for…of syntax in JavaScript](https://stackoverflow.com/questions/10179815/get-loop-counter-index-using-for-of-syntax-in-javascript)
+- [MDN note about `import`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Modules#importing_features_into_your_script):
+
+  The imported values are read-only views of the features that were exported. Similar to `const` variables, you cannot re-assign the variable that was imported, but you can still modify properties of object values. The value can only be re-assigned by the module exporting it.
 - [Can i write typescript with in \<Script\> tag?](https://stackoverflow.com/questions/56106649/can-i-write-typescript-with-in-script-tag)
 - [Differences Between Type Aliases and Interfaces](https://www.typescriptlang.org/docs/handbook/2/everyday-types.html#differences-between-type-aliases-and-interfaces)
 - [Interfaces vs Types in TypeScript](https://stackoverflow.com/questions/37233735/interfaces-vs-types-in-typescript/52682220#52682220)
+- [Type vs Interface in TypeScript](https://blog.bitsrc.io/type-vs-interface-in-typescript-cf3c00bc04ae)
 - [Learn and use Composition in JavaScript and TypeScript](https://softchris.github.io/pages/javascript-composition.html)
 - [Don't use Enums in Typescript, they are very dangerous 😨](https://dev.to/ivanzm123/dont-use-enums-in-typescript-they-are-very-dangerous-57bh)
 - [Nine terrible ways to use TypeScript enums, and one good way.](https://bluepnume.medium.com/nine-terrible-ways-to-use-typescript-enums-and-one-good-way-f9c7ec68bf15)
@@ -48,6 +52,7 @@ Last modified: 2023/08/31 10:54:37
 
 ### React
 
+- [Snack - React Native in the browser](https://snack.expo.dev/)
 - [Getting Started | Create React App](https://create-react-app.dev/docs/getting-started)
 - [TypeScript: Documentation - React](https://www.typescriptlang.org/docs/handbook/react.html)
 - [microsoft/TypeScript-React-Starter: A starter template for TypeScript and React with a detailed README describing how to use the two together.](https://github.com/microsoft/TypeScript-React-Starter)
@@ -67,6 +72,7 @@ Last modified: 2023/08/31 10:54:37
   Very happy to be corrected because I am by no means experienced by react, quite the oppostie, but this mental model has worked for me well so far, even if it may not be entirely accurate.
 
   Will Sentance from codesmith is very good at explaining this. He usually has free seminars every week, but I can't see any on UIs (I reckon FEM may have something to do with that since he released a course).
+- [Blogged Answers: A (Mostly) Complete Guide to React Rendering Behavior](https://blog.isquaredsoftware.com/2020/05/blogged-answers-a-mostly-complete-guide-to-react-rendering-behavior/)
 
 ## VSCode config
 
