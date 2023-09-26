@@ -1,5 +1,7 @@
 # Git Usage Tips
 
+Last modified: 2023/09/26 12:41:01
+
 - [Interesting posts](#interesting-posts)
 - [Git configuration](#git-configuration)
   - [Show configs](#show-configs)
@@ -17,6 +19,7 @@
 - [Stash changes](#stash-changes)
 - [Rename branch](#rename-branch)
 - [Change remote origin](#change-remote-origin)
+- [Push an existing repo to a new remote](#push-an-existing-repo-to-a-new-remote)
 - [Use non-default SSH key for remote connection](#use-non-default-ssh-key-for-remote-connection)
 - [Hard reset remote branch](#hard-reset-remote-branch)
 - [Private fork](#private-fork)
@@ -154,11 +157,22 @@ Use `git fetch REMOTE_REPO REMOTE_BRANCH:LOCAL_BRANCH`.
 
 ## Change remote origin
 
-Use `git remote set-url REMOTE_NAME NEW_URL`.
+Use `git remote set-url REMOTE_NAME NEW_REMOTE_REPO`.
 
 *References*:
 
 - [How To Change Git Remote Origin](https://devconnected.com/how-to-change-git-remote-origin/)
+
+## Push an existing repo to a new remote
+
+Use the following commands:
+
+```bash
+git remote rename origin old-origin
+git remote add origin NEW_REMOTE_REPO
+git push --set-upstream origin --all
+git push --set-upstream origin --tags
+```
 
 ## Use non-default SSH key for remote connection
 
