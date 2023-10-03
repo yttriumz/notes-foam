@@ -1,6 +1,6 @@
 # Tweak openSUSE Tumbleweed on ThinkPad P1 Gen2
 
-Last modified: 2023/09/05 15:34:58
+Last modified: 2023/10/03 10:53:57
 
 - [Change hostname](#change-hostname)
 - [Network settings](#network-settings)
@@ -143,8 +143,9 @@ alias steam='flatpak run com.valvesoftware.Steam'
 
 # misc
 alias du='du --human-readable'
+alias dk='docker'
 alias frp='~/.frp/frpc --config ~/.frp/frpc.ini'
-alias rm='rm -I'
+alias rm='rm --interactive=once'
 alias studio='/opt/android-studio/bin/studio.sh'
 alias trash='gio trash'
 alias xt='exit'
