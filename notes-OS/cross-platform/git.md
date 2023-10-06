@@ -1,6 +1,6 @@
 # Git Usage Tips
 
-Last modified: 2023/09/26 12:41:01
+Last modified: 2023/09/26 17:07:13
 
 - [Interesting posts](#interesting-posts)
 - [Git configuration](#git-configuration)
@@ -154,6 +154,7 @@ Use `git fetch REMOTE_REPO REMOTE_BRANCH:LOCAL_BRANCH`.
 
 - Rename checked-out local branch: Use `git branch --move NEW_BRANCH_NAME`.
 - Rename unchecked-out local branch: Use `git branch --move BRANCH_NAME NEW_BRANCH_NAME`.
+- If remote branches also needs renaming, just push the renamed local branches and delete the old branches on remote.
 
 ## Change remote origin
 
