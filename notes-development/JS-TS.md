@@ -1,14 +1,19 @@
-# JavaScript/TypeScript
+# JavaScript/TypeScript Development
 
-Last modified: 2023/09/05 18:33:43
+Last modified: 2023/10/04 18:59:40
 
 - [Interesting posts](#interesting-posts)
   - [Development environment](#development-environment)
   - [Development tools](#development-tools)
-  - [JS/TS](#jsts)
+  - [Language features](#language-features)
+  - [Coding style](#coding-style)
   - [React](#react)
-- [VSCode config](#vscode-config)
-- [`.eslintrc.json`](#eslintrcjson)
+    - [Elastic UI](#elastic-ui)
+    - [i18n](#i18n)
+- [Config](#config)
+  - [VSCode `settings.json`](#vscode-settingsjson)
+  - [VSCode `extensions.json`](#vscode-extensionsjson)
+  - [`.eslintrc.json`](#eslintrcjson)
 
 ## Interesting posts
 
@@ -16,6 +21,9 @@ Last modified: 2023/09/05 18:33:43
 
 - [ReactJS - Environment Setup](https://www.tutorialspoint.com/reactjs/reactjs_environment_setup.htm)
 - [ReactJS Environment Setup](https://www.geeksforgeeks.org/reactjs-environment-setup/)
+- [Error message "error:0308010C:digital envelope routines::unsupported"](https://stackoverflow.com/questions/69692842/error-message-error0308010cdigital-envelope-routinesunsupported)
+- [🧐[问题]项目无法启动，error:0308010C:digital envelope routines::unsupported #9272](https://github.com/ant-design/ant-design-pro/issues/9272#issuecomment-1083276843)
+- [Cannot set headers after they are sent to the client #805](https://github.com/http-party/http-server/issues/805)
 
 ### Development tools
 
@@ -23,7 +31,7 @@ Last modified: 2023/09/05 18:33:43
 - [npx | npm Docs](https://docs.npmjs.com/cli/v9/commands/npx?v=true)
 - [npm-cache | npm Docs](https://docs.npmjs.com/cli/v9/commands/npm-cache?v=true)
 
-### JS/TS
+### Language features
 
 - [ECMAScript 6 compatibility table](https://kangax.github.io/compat-table/es6/)
 - [HTML Button background-color property does not work](https://stackoverflow.com/questions/41180844/html-button-background-color-property-does-not-work)
@@ -31,6 +39,7 @@ Last modified: 2023/09/05 18:33:43
 - [Strict mode](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Strict_mode)
 - [IIFE](https://developer.mozilla.org/en-US/docs/Glossary/IIFE)
 - [Immediately-Invoked Function Expression (IIFE)](https://benalman.com/news/2010/11/immediately-invoked-function-expression/)
+- [Spread syntax (...)](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Spread_syntax)
 - [... in JavaScript – the Three Dots Operator in JS](https://www.freecodecamp.org/news/three-dots-operator-in-javascript/)
 - [Callback Functions in JavaScript](https://www.impressivewebs.com/callback-functions-javascript/)
 - [As a JS Developer, ES6 Classes Are What Keep Me Up at Night](https://www.toptal.com/javascript/es6-class-chaos-keeps-js-developer-up)
@@ -49,6 +58,15 @@ Last modified: 2023/09/05 18:33:43
 - [What does the `is` keyword do in typescript?](https://stackoverflow.com/questions/40081332/what-does-the-is-keyword-do-in-typescript)
 - [What does the "as" keyword do?](https://stackoverflow.com/questions/55781559/what-does-the-as-keyword-do)
 - [What does {} mean in TypeScript?](https://stackoverflow.com/questions/60381643/what-does-mean-in-typescript)
+
+### Coding style
+
+- [TypeScript codebase coding guidelines](https://github.com/Microsoft/TypeScript/wiki/Coding-guidelines)
+- [Google TypeScript Style Guide](https://google.github.io/styleguide/tsguide.html)
+- [TypeScript Naming Conventions: Crafting Maintainable Code](https://aykhanhuseyn.medium.com/typescript-naming-conventions-crafting-maintainable-code-7d872234fe17)
+- [TypeScript Naming Convention](https://dev.to/shintoshio_me/typescript-naming-convention-2bbg)
+- [Confused about the Interface and Class coding guidelines for TypeScript](https://stackoverflow.com/questions/31876947/confused-about-the-interface-and-class-coding-guidelines-for-typescript)
+- [`Array<T>` Type](https://google.github.io/styleguide/tsguide.html#arrayt-type)
 
 ### React
 
@@ -72,9 +90,26 @@ Last modified: 2023/09/05 18:33:43
   Very happy to be corrected because I am by no means experienced by react, quite the oppostie, but this mental model has worked for me well so far, even if it may not be entirely accurate.
 
   Will Sentance from codesmith is very good at explaining this. He usually has free seminars every week, but I can't see any on UIs (I reckon FEM may have something to do with that since he released a course).
+- [React hooks: not magic, just arrays](https://medium.com/@ryardley/react-hooks-not-magic-just-arrays-cd4f1857236e)
 - [Blogged Answers: A (Mostly) Complete Guide to React Rendering Behavior](https://blog.isquaredsoftware.com/2020/05/blogged-answers-a-mostly-complete-guide-to-react-rendering-behavior/)
+- [Timeline of a React Component With Hooks](https://julesblom.com/writing/react-hook-component-timeline)
+- [How to Upgrade to React 18](https://react.dev/blog/2022/03/08/react-18-upgrade-guide#updates-to-client-rendering-apis)
 
-## VSCode config
+#### Elastic UI
+
+- [\[Meta\] Deprecation schedule #1469](https://github.com/elastic/eui/issues/1469)
+- [Attempted import error: 'EuiPageContent' is not exported from '@elastic/eui' #6122](https://github.com/elastic/eui/issues/6122)
+- [Cannot turn off "potentially unsafe when doing server-side rendering" noise #1105](https://github.com/emotion-js/emotion/issues/1105)
+- [关于 Antd Table 报错 ”ResizeObserver loop completed with undelivered notifications“](https://juejin.cn/post/7262623363700981797)
+- [Vite/Rollup cannot process the dynamic imports in `EuiIcon` #5463](https://github.com/elastic/eui/issues/5463)
+
+#### i18n
+
+- [React i18n: A step-by-step guide to React-intl](https://lokalise.com/blog/react-i18n-intl/)
+
+## Config
+
+### VSCode `settings.json`
 
 ```json
 "editor.formatOnSave": true,
@@ -127,12 +162,33 @@ Last modified: 2023/09/05 18:33:43
 "typescript.inlayHints.variableTypes.suppressWhenTypeMatchesName": false,
 ```
 
-## `.eslintrc.json`
+### VSCode `extensions.json`
+
+```json
+"recommendations": [
+    "mgmcdermott.vscode-language-babel",
+    "ms-azuretools.vscode-docker",
+    "dbaeumer.vscode-eslint",
+    "github.vscode-github-actions",
+    "github.vscode-pull-request-github",
+    "visualstudioexptteam.vscodeintellicode",
+    "idered.npm",
+    "esbenp.prettier-vscode",
+    "habeebarul.react-component-tree",
+    "mtxr.sqltools",
+    "nathhorrigan.code-svgr",
+    "godrix.svgr-preview"
+]
+```
+
+### `.eslintrc.json`
 
 ```json
 "rules": {
   // maybe your other rules...
   "no-unused-vars": "warn",
-  "react/prop-types": "warn"
+  "react/prop-types": "warn",
+  "@typescript-eslint/no-explicit-any": "warn",
+  "@typescript-eslint/no-unused-vars": "warn",
 }
 ```
