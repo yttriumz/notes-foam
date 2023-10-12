@@ -1,11 +1,12 @@
 # Tweak openSUSE Tumbleweed on ThinkPad P1 Gen2
 
-Last modified: 2023/10/03 10:53:57
+Last modified: 2023/10/12 17:31:39
 
 - [Change hostname](#change-hostname)
 - [Network settings](#network-settings)
   - [WiFi](#wifi)
 - [Swappiness](#swappiness)
+- [Hibernation](#hibernation)
 - [System update](#system-update)
 - [Package management](#package-management)
 - [Shell \& terminal](#shell--terminal)
@@ -69,6 +70,15 @@ sudo hostnamectl hostname NEW_HOSTNAME
   ```text
   vm.swappiness=YOU_DESIRED_VALUE
   ```
+
+## Hibernation
+
+Hibernation is disabled by default for security reasons. You can check dracut modules via `lsinitrd /boot/IMAGE_YOU_WANT_TO_CHECK | less`.
+
+*References*:
+
+- [Hibernation, Sleep, Configuration - English / Hardware - openSUSE Forums](https://forums.opensuse.org/t/hibernation-sleep-configuration/146316/2)
+- [System Fails to Resume from Hibernation | Support | SUSE](https://www.suse.com/support/kb/doc/?id=000020287)
 
 ## System update
 
