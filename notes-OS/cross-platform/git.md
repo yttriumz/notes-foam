@@ -1,6 +1,6 @@
 # Git Usage Tips
 
-Last modified: 2023/09/26 17:07:13
+Last modified: 2023/10/13 15:36:46
 
 - [Interesting posts](#interesting-posts)
 - [Git configuration](#git-configuration)
@@ -8,21 +8,21 @@ Last modified: 2023/09/26 17:07:13
   - [Configure user](#configure-user)
   - [Automatic transformation (Windows)](#automatic-transformation-windows)
   - [Specify how to reconcile divergent branches](#specify-how-to-reconcile-divergent-branches)
-- [GitHub configuration](#github-configuration)
   - [Add SSH key to GitHub](#add-ssh-key-to-github)
+  - [Use non-default SSH keys for remote connection](#use-non-default-ssh-keys-for-remote-connection)
+  - [Use different keys for different repositories](#use-different-keys-for-different-repositories)
+- [Clone to a specific directory](#clone-to-a-specific-directory)
 - [Commit message convention](#commit-message-convention)
 - [Change commit messages](#change-commit-messages)
-- [Clone to a specific directory](#clone-to-a-specific-directory)
-- [Embedded repo](#embedded-repo)
-- [Update an unchecked-out local branch from remote branch](#update-an-unchecked-out-local-branch-from-remote-branch)
-- [Discard unstaged changes](#discard-unstaged-changes)
 - [Stash changes](#stash-changes)
+- [Discard unstaged changes](#discard-unstaged-changes)
+- [Update an unchecked-out local branch from remote branch](#update-an-unchecked-out-local-branch-from-remote-branch)
 - [Rename branch](#rename-branch)
 - [Change remote origin](#change-remote-origin)
-- [Push an existing repo to a new remote](#push-an-existing-repo-to-a-new-remote)
-- [Use non-default SSH key for remote connection](#use-non-default-ssh-key-for-remote-connection)
+- [Push an existing repository to a new remote](#push-an-existing-repository-to-a-new-remote)
 - [Hard reset remote branch](#hard-reset-remote-branch)
 - [Private fork](#private-fork)
+- [Embedded repositories](#embedded-repositories)
 - [墙国专属](#墙国专属)
   - [Change `hosts`](#change-hosts)
   - [Set proxy](#set-proxy)
@@ -41,7 +41,7 @@ Use `git config --list --show-origin --show-scope`.
 
 ### Configure user
 
-- Set *local* (inside each repo) user name and email via the following commands:
+- Set *local* (inside each repository) user name and email via the following commands:
 
   ```bash
   git config user.name "YOUR_NAME"
@@ -88,12 +88,31 @@ fatal: Need to specify how to reconcile divergent branches.
 - [How can I deal with this Git warning? "Pulling without specifying how to reconcile divergent branches is discouraged"](https://stackoverflow.com/questions/62653114/how-can-i-deal-with-this-git-warning-pulling-without-specifying-how-to-reconci)
 - ["You have divergent branches and need to specify how to reconcile them."](https://github.com/desktop/desktop/issues/14431#issuecomment-1106634672)
 
-## GitHub configuration
-
 ### Add SSH key to GitHub
 
 1. Generate a key. See [[SSH#Generate SSH key]].
 2. See [the GitHub guide](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/adding-a-new-ssh-key-to-your-github-account).
+
+### Use non-default SSH keys for remote connection
+
+*References*:
+
+- [Using a non-default key name (other than id_rsa)](https://stackoverflow.com/questions/41412964/using-a-non-default-key-name-other-than-id-rsa)
+- [Working with non-default SSH key pair paths](https://gist.github.com/mynameiskreang/deb3fd3b41d7dda664ab0d3597710ef9)
+
+### Use different keys for different repositories
+
+*References*:
+
+- [How to tell git which private key to use?](https://superuser.com/questions/232373/how-to-tell-git-which-private-key-to-use/1664624#1664624)
+
+## Clone to a specific directory
+
+Use `git clone git@github.com:SOME_REPO TARGET_DIRECTORY`.
+
+*References*:
+
+- [How do I clone a Git repository into a specific folder?](https://stackoverflow.com/questions/651038/how-do-i-clone-a-git-repository-into-a-specific-folder)
 
 ## Commit message convention
 
@@ -110,27 +129,14 @@ fatal: Need to specify how to reconcile divergent branches.
 
 - [Changing a commit message](https://docs.github.com/en/pull-requests/committing-changes-to-your-project/creating-and-editing-commits/changing-a-commit-message)
 
-## Clone to a specific directory
+## Stash changes
 
-Use `git clone git@github.com:SOME_REPO TARGET_DIRECTORY`.
-
-*References*:
-
-- [How do I clone a Git repository into a specific folder?](https://stackoverflow.com/questions/651038/how-do-i-clone-a-git-repository-into-a-specific-folder)
-
-## Embedded repo
+- Stash changes by `git stash`.
+- Pop stash by `git stash pop`.
 
 *References*:
 
-- [Git: How to make outer repository and embedded repository work as common/standalone repository?](https://stackoverflow.com/questions/47008290/git-how-to-make-outer-repository-and-embedded-repository-work-as-common-standal)
-
-## Update an unchecked-out local branch from remote branch
-
-Use `git fetch REMOTE_REPO REMOTE_BRANCH:LOCAL_BRANCH`.
-
-*References*:
-
-- [How to 'git pull' into a branch that is not the current one?](https://stackoverflow.com/questions/18994609/how-to-git-pull-into-a-branch-that-is-not-the-current-one)
+- [Git stash](https://www.atlassian.com/git/tutorials/saving-changes/git-stash)
 
 ## Discard unstaged changes
 
@@ -141,14 +147,13 @@ Use `git fetch REMOTE_REPO REMOTE_BRANCH:LOCAL_BRANCH`.
 
 - [How To Completely Reset a Git Repository (Including Untracked Files)](https://www.howtogeek.com/devops/how-to-completely-reset-a-git-repository-including-untracked-files/)
 
-## Stash changes
+## Update an unchecked-out local branch from remote branch
 
-- Stash changes by `git stash`.
-- Pop stash by `git stash pop`.
+Use `git fetch REMOTE_REPO REMOTE_BRANCH:LOCAL_BRANCH`.
 
 *References*:
 
-- [Git stash](https://www.atlassian.com/git/tutorials/saving-changes/git-stash)
+- [How to 'git pull' into a branch that is not the current one?](https://stackoverflow.com/questions/18994609/how-to-git-pull-into-a-branch-that-is-not-the-current-one)
 
 ## Rename branch
 
@@ -164,7 +169,7 @@ Use `git remote set-url REMOTE_NAME NEW_REMOTE_REPO`.
 
 - [How To Change Git Remote Origin](https://devconnected.com/how-to-change-git-remote-origin/)
 
-## Push an existing repo to a new remote
+## Push an existing repository to a new remote
 
 Use the following commands:
 
@@ -175,21 +180,14 @@ git push --set-upstream origin --all
 git push --set-upstream origin --tags
 ```
 
-## Use non-default SSH key for remote connection
-
-*References*:
-
-- [Using a non-default key name (other than id_rsa)](https://stackoverflow.com/questions/41412964/using-a-non-default-key-name-other-than-id-rsa)
-- [Working with non-default SSH key pair paths](https://gist.github.com/mynameiskreang/deb3fd3b41d7dda664ab0d3597710ef9)
-
 ## Hard reset remote branch
 
-After hard resetting the local repo, use `git push -f REMOTE_REPO BRANCH_NAME` to hard reset the remote repo.
+After hard resetting the local repository, use `git push -f REMOTE_REPO BRANCH_NAME` to hard reset the remote repository.
 
 ## Private fork
 
-1. Create a new repo (`PRI_REPO`) via the GitHub Website.
-2. Duplicate the public repo (`PUB_REPO`) via the following commands:
+1. Create a new repository (`PRI_REPO`) via the GitHub Website.
+2. Duplicate the public repository (`PUB_REPO`) via the following commands:
 
    ```bash
    git clone --bare https://github.com/exampleuser/PUB_REPO.git
@@ -199,7 +197,7 @@ After hard resetting the local repo, use `git push -f REMOTE_REPO BRANCH_NAME` t
    rm -rf PUB_REPO.git
    ```
 
-3. Clone the private repo and add `upstream` via the following commands:
+3. Clone the private repository and add `upstream` via the following commands:
 
    ```bash
    git clone https://github.com/yourname/PRI_REPO.git
@@ -225,6 +223,12 @@ After hard resetting the local repo, use `git push -f REMOTE_REPO BRANCH_NAME` t
 - [GitHub: How to make a fork of public repository private?](https://stackoverflow.com/questions/10065526/github-how-to-make-a-fork-of-PUB_REPOsitory-private)
 - [Create a private fork of a public repository](https://gist.github.com/0xjac/85097472043b697ab57ba1b1c7530274)
 - [Duplicating a repository](https://docs.github.com/en/repositories/creating-and-managing-repositories/duplicating-a-repository)
+
+## Embedded repositories
+
+*References*:
+
+- [Git: How to make outer repository and embedded repository work as common/standalone repository?](https://stackoverflow.com/questions/47008290/git-how-to-make-outer-repository-and-embedded-repository-work-as-common-standal)
 
 ## 墙国专属
 
