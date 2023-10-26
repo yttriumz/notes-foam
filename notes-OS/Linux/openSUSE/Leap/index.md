@@ -2,7 +2,7 @@
 type: index
 ---
 
-# Leap
+# openSUSE Leap
 
 - [[Leap/packages]]
 

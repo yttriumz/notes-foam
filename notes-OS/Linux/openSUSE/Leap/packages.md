@@ -1,6 +1,6 @@
 # Leap Package Management
 
-Last modified: 2023/08/25 11:42:32
+Last modified: 2023/10/11 15:58:57
 
 - [Zypper](#zypper)
   - [Add repo](#add-repo)
@@ -16,7 +16,6 @@ Last modified: 2023/08/25 11:42:32
     - [Cloudflare WARP](#cloudflare-warp)
     - [Emulators](#emulators)
   - [Examine repo](#examine-repo)
-    - [Some repo reference](#some-repo-reference)
   - [Set priority](#set-priority)
   - [Package query](#package-query)
     - [Unused Packages](#unused-packages)
@@ -45,37 +44,19 @@ Last modified: 2023/08/25 11:42:32
   - [Uninstall unused packages](#uninstall-unused-packages)
 - [Become a Packager](#become-a-packager)
 
+Most of the procedures should be the same as the ones in [[Tumbleweed/packages]]. But some repo addresses might be different, which will be listed here.
+
 ## Zypper
-
-*References*:
-
-- [Package repositories - openSUSE Wiki](https://en.opensuse.org/Package_repositories)
-- [Additional package repositories - openSUSE Wiki](https://en.opensuse.org/Additional_package_repositories)
 
 ### Add repo
 
 #### Packman and NVidia
 
-Open *YaST Software Repositories* and select *Add* >> *Community Repositories*.
-
-Note that after this, *YaST Software* may automatically select some NVidia drivers to install. Do **not** install them because they will cause problems. See [[tweak-P1-Gen2#NVIDIA graphics card]].
+See [[Tumbleweed/packages#Packman and NVidia]].
 
 #### VSCode
 
-- Add *VSCode* repo (and install *VSCode*) via the following commands:
-
-  ```bash
-  rpm --import https://packages.microsoft.com/keys/microsoft.asc
-  zypper addrepo https://packages.microsoft.com/yumrepos/vscode VSCode
-  zypper refresh
-  zypper install code
-  ```
-
-- Or use `opi vscode`.
-
-*References*:
-
-- [Wiki](https://en.opensuse.org/Visual_Studio_Code#Install)
+See [[Tumbleweed/packages#VSCode]].
 
 #### containers
 
@@ -91,51 +72,11 @@ zypper addrepo https://download.opensuse.org/repositories/Virtualization:/contai
 
 #### NVIDIA Container Toolkit
 
-1. Install NVIDIA drivers. See [[tweak-P1-Gen2#Install driver and prime-select]].
-2. Add *NVIDIA Container Toolkit* repo via the following commands:
-
-   ```bash
-   zypper addrepo https://nvidia.github.io/libnvidia-container/opensuse-leap15.5/libnvidia-container.repo
-   # The following one is the same
-   zypper addrepo https://nvidia.github.io/libnvidia-container/sles15.5/libnvidia-container.repo
-   ```
-
-3. Install *NVIDIA Container Toolkit* via the following commands:
-
-   ```bash
-   zypper install nvidia-container-toolkit
-   ```
-
-4. Config *docker* via the following commands:
-
-   ```bash
-   nvidia-ctk runtime configure --runtime=docker
-   ```
-
-5. Verify installation via the following commands:
-
-   ```bash
-   docker run --rm --runtime=nvidia --gpus all nvidia/cuda:11.6.2-base-ubuntu20.04 nvidia-smi
-   ```
-
-*References*:
-
-- [NVIDIA Container Toolkit](https://github.com/NVIDIA/nvidia-docker)
-- [Installation Guide](https://docs.nvidia.com/datacenter/cloud-native/container-toolkit/install-guide.html)
-- [package info details](https://github.com/NVIDIA/nvidia-docker/issues/1268#issuecomment-632692949)
-- [How to use with Docker 19.03 / nvidia-container-toolkit?](https://github.com/NVIDIA/k8s-device-plugin/issues/168#issuecomment-625981223)
+See [[Tumbleweed/packages#NVIDIA Container Toolkit]].
 
 #### CUDA
 
-Add *CUDA* repo via the following commands:
-
-```bash
-zypper addrepo -p 100 https://developer.download.nvidia.com/compute/cuda/repos/opensuse15/x86_64/cuda-opensuse15.repo
-```
-
-*References*:
-
-- [CUDA on Tumbleweed](https://www.reddit.com/r/openSUSE/comments/gaihe9/cuda_on_tumbleweed/)
+See [[Tumbleweed/packages#CUDA]].
 
 #### M17N (Multilingualization)
 
@@ -147,69 +88,21 @@ zypper addrepo https://download.opensuse.org/repositories/M17N/openSUSE_Tumblewe
 
 #### Google Chrome
 
-- Use the following commands:
-
-  ```bash
-  rpm --import https://dl.google.com/linux/linux_signing_key.pub
-  zypper addrepo https://dl.google.com/linux/chrome/rpm/stable/x86_64 "Google Chrome"
-  zypper refresh
-  zypper install google-chrome-stable
-  ```
-
-- Or use `opi chrome`.
-
-*References*:
-
-- [Google Linux Software Repositories](https://www.google.com/linuxrepositories/)
-- [Installing Google Chrome in openSUSE](https://linuxhint.com/installing-google-chrome-opensuse/)
+See [[Tumbleweed/packages#Google Chrome]].
 
 #### Microsoft Edge
 
-- Add *Microsoft Edge* repo (and install *Microsoft Edge*) via the following commands:
-
-  ```bash
-  rpm --import https://packages.microsoft.com/keys/microsoft.asc
-  zypper addrepo https://packages.microsoft.com/yumrepos/edge "Microsoft Edge"
-  zypper refresh
-  zypper install microsoft-edge-stable
-  ```
-
-- Or use `opi msedge`.
+See [[Tumbleweed/packages#Microsoft Edge]].
 
 #### Brave Browser
 
-- Add *Brave* repo (and install *Brave*) via the following commands:
-
-  ```bash
-  rpm --import https://brave-browser-rpm-release.s3.brave.com/brave-core.asc
-  zypper addrepo https://brave-browser-rpm-release.s3.brave.com/brave-browser.repo
-  zypper refresh
-  zypper install brave-browser
-  ```
-
-- Or use `opi brave`.
-
-*References*:
-
-- [Installing Brave on Linux](https://brave.com/linux/)
+See [[Tumbleweed/packages#Brave Browser]].
 
 #### Cloudflare WARP
 
-- At the time of updating (*Tumbleweed 20230718, WARP 2023.7.40*), add *WARP* repo (and install *WARP*) via the following commands:
-
-  ```bash
-  zypper addrepo https://pkg.cloudflareclient.com/cloudflare-warp-ascii.repo
-  zypper refresh
-  zypper install cloudflare-warp
-  ```
-
-- See [[#WARP (manually)]] for manually installing *WARP*.
+See [[Tumbleweed/packages#Cloudflare WARP]].
 
 See [[WARP]] for configuration.
-
-*References*:
-
-- [Red Hat Enterprise Linux & CentOS](https://pkg.cloudflareclient.com/#rhel)
 
 #### Emulators
 
@@ -223,10 +116,6 @@ zypper addrepo https://download.opensuse.org/repositories/Emulators/openSUSE_Tum
 
 - Use *YaST*.
 - Or use `zypper repos -P`.
-
-#### Some repo reference
-
-![repos](attachments/Screenshot%202023-02-13%20151118.png)
 
 ### Set priority
 
@@ -300,7 +189,7 @@ At the time of writing (*WezTerm 20230326.111934.3666303c-1.1* in official repo)
 ### WARP (manually)
 
 1. ~~At the time of writing (*Tumbleweed 20230518, WARP 2023.3.398*), install `setcap` via `zypper install libcap-progs`. Otherwise, the post-install script will fail to run.~~ At the time of updating (*Tumbleweed 20230718, WARP 2023.7.40*), no need to install `libcap-progs`.
-   - At the time of updating (*Tumbleweed 20230718, WARP 2023.7.40*), zypper will report "nothing provides `dbus` needed". I just ignored it, and it worked well.
+   - At the time of updating (*Tumbleweed 20230718, WARP 2023.7.40*), during installation, zypper will report "nothing provides 'dbus' needed". I just ignored it.
 2. ~~Download from [the official site](https://pkg.cloudflareclient.com/packages/cloudflare-warp)~~. At the time of updating (*2023-06-21*), direct access to the package is forbidden.
 
 See [[WARP]] for configuration.
@@ -312,6 +201,8 @@ See [[WARP]] for configuration.
 ### QQ
 
 Download from [the official site](https://im.qq.com/linuxqq/index.shtml).
+
+- At the time of updating (*Tumbleweed 20231006, linuxqq 3.2.1_17153-1*), during installation, zypper will report "nothing provides 'libuuid' needed". I just ignored it.
 
 ### WeChat
 
@@ -375,8 +266,14 @@ Use `flatpak uninstall --unused`.
 - [Guide: How To Become A Packager](https://www.reddit.com/r/openSUSE/comments/10rpb24/guide_how_to_become_a_packager/)
 
 [//begin]: # "Autogenerated link references for markdown compatibility"
-[tweak-P1-Gen2#NVIDIA graphics card]: ../Tumbleweed/tweak-P1-Gen2.md "Tweak openSUSE Tumbleweed on ThinkPad P1 Gen2"
-[tweak-P1-Gen2#Install driver and prime-select]: ../Tumbleweed/tweak-P1-Gen2.md "Tweak openSUSE Tumbleweed on ThinkPad P1 Gen2"
-[#WARP (manually)]: packages.md "Package Management"
+[Tumbleweed/packages]: ../Tumbleweed/packages.md "Tumbleweed Package Management"
+[Tumbleweed/packages#Packman and NVidia]: ../Tumbleweed/packages.md "Tumbleweed Package Management"
+[Tumbleweed/packages#VSCode]: ../Tumbleweed/packages.md "Tumbleweed Package Management"
+[Tumbleweed/packages#NVIDIA Container Toolkit]: ../Tumbleweed/packages.md "Tumbleweed Package Management"
+[Tumbleweed/packages#CUDA]: ../Tumbleweed/packages.md "Tumbleweed Package Management"
+[Tumbleweed/packages#Google Chrome]: ../Tumbleweed/packages.md "Tumbleweed Package Management"
+[Tumbleweed/packages#Microsoft Edge]: ../Tumbleweed/packages.md "Tumbleweed Package Management"
+[Tumbleweed/packages#Brave Browser]: ../Tumbleweed/packages.md "Tumbleweed Package Management"
+[Tumbleweed/packages#Cloudflare WARP]: ../Tumbleweed/packages.md "Tumbleweed Package Management"
 [WARP]: ../../../cross-platform/remote/WARP.md "Cloudflare WARP"
 [//end]: # "Autogenerated link references"
