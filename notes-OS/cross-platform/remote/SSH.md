@@ -1,6 +1,6 @@
 # SSH Usage
 
-Last modified: 2023/10/17 12:03:51
+Last modified: 2023/10/26 11:33:24
 
 - [Create SSH key pair](#create-ssh-key-pair)
 - [Generate public key from private key](#generate-public-key-from-private-key)
@@ -48,9 +48,9 @@ Generate the public key via `ssh-keygen -f PATH_TO_PRI_KEY -y > PATH_TO_PUB_KEY`
 
 Suppose the local machine (**Host A**) can establish SSH connections with both **Server B** and **Server C**, but **Server B** and **Server C** cannot reach each other.
 
-However, from **Server B**, we want to access a git repository service on **Server C** via SSH. This is where remote port forwarding is useful.
+However, from **Server B**, we want to access a GitLab service on **Server C** via SSH. This is where remote port forwarding is useful.
 
-On local machine (**Host A**), we use the following config:
+On local machine (**Host A**), we use the following `.ssh/config`:
 
 ```text
 Host Server-B
@@ -59,7 +59,7 @@ Host Server-B
     RemoteForward AVAILABLE_PORT_ON_SERVER_B(say 11111) ADDRESS_OF_SERVER_C:DESTINATION_PORT_ON_SERVER_C(say 22)
 ```
 
-On **Server B**, we use the following config:
+On **Server B**, we use the following `.ssh/config`:
 
 ```text
 Host ADDRESS_OF_SERVER_C
