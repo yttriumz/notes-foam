@@ -1,6 +1,6 @@
 # Tweak openSUSE Tumbleweed on ThinkPad P1 Gen2
 
-Last modified: 2023/10/12 17:31:39
+Last modified: 2023/10/18 18:21:04
 
 - [Change hostname](#change-hostname)
 - [Network settings](#network-settings)
@@ -14,7 +14,7 @@ Last modified: 2023/10/12 17:31:39
     - [Alias](#alias)
       - [Modify `.bash_aliases`](#modify-bash_aliases)
       - [Modify `.bashrc`](#modify-bashrc)
-      - [auto-completion for aliases](#auto-completion-for-aliases)
+      - [Auto-completion for aliases](#auto-completion-for-aliases)
   - [Starship](#starship)
   - [WezTerm](#wezterm)
   - [Zellij](#zellij)
@@ -178,7 +178,7 @@ if [ -f ~/.bash_aliases ]; then
 fi
 ```
 
-##### auto-completion for aliases
+##### Auto-completion for aliases
 
 See [[bash#Auto-completion for aliases]].
 
@@ -206,10 +206,11 @@ See [[terminal-tools#Zellij]].
 
 ### Install driver and prime-select
 
-On my machine (*ThinkPad P1 Gen2 with T2000*), I tested 2 methods:
+1. Add NVidia's repo. See [[Tumbleweed/packages#Packman and NVidia]].
+2. Install drivers. On my machine (*ThinkPad P1 Gen2 with T2000*), I tested 2 methods:
 
-- Install legacy driver `x11-video-nvidiaG05` and `suse-prime`.
-- Install the current driver `nvidia-video-G06` (or `nvidia-drivers-G06`) and `suse-prime`. At the time of updating (*Tumbleweed 20230518, KDE Plasma 5.27.5, NV driver 525.116.04*), it may result in a black SDDM login screen with only the cursor. This could be solved by pressing `Ctrl` + `Alt` + `Backspace` twice to restart the X server.
+   - Install legacy driver `x11-video-nvidiaG05` and `suse-prime`.
+   - Install the current driver `nvidia-video-G06` (or `nvidia-drivers-G06`) and `suse-prime`. At the time of updating (*Tumbleweed 20230518, KDE Plasma 5.27.5, NV driver 525.116.04*), it may result in a black SDDM login screen with only the cursor. This could be solved by pressing `Ctrl` + `Alt` + `Backspace` twice to restart the X server.
 
 *References*:
 
@@ -435,6 +436,7 @@ See [[gaming]].
 [Tumbleweed/packages#WezTerm]: packages.md "Tumbleweed Package Management"
 [terminal-tools#WezTerm]: ../../cross-distro/terminal-tools.md "Terminal Related Tools"
 [terminal-tools#Zellij]: ../../cross-distro/terminal-tools.md "Terminal Related Tools"
+[Tumbleweed/packages#Packman and NVidia]: packages.md "Tumbleweed Package Management"
 [cross-distro/tips#Use the Same Bluetooth Device on Linux and Windows Dual Boot System]: ../../cross-distro/tips.md "General Linux Usage Tips"
 [fonts]: ../../../cross-platform/fonts.md "Fonts"
 [rime#User config]: ../../../cross-platform/rime.md "RIME | 中州韻輸入法引擎"
