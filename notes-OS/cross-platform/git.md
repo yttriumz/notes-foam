@@ -1,6 +1,6 @@
 # Git Usage Tips
 
-Last modified: 2023/10/20 12:09:46
+Last modified: 2023/11/03 16:19:56
 
 - [Interesting posts](#interesting-posts)
 - [Git configuration](#git-configuration)
@@ -12,6 +12,7 @@ Last modified: 2023/10/20 12:09:46
   - [Use non-default SSH keys for remote connection](#use-non-default-ssh-keys-for-remote-connection)
   - [Use different keys for different repositories](#use-different-keys-for-different-repositories)
 - [Clone to a specific directory](#clone-to-a-specific-directory)
+- [Clone all remote branches](#clone-all-remote-branches)
 - [Commit message convention](#commit-message-convention)
 - [Change commit messages](#change-commit-messages)
 - [Stash changes](#stash-changes)
@@ -115,6 +116,12 @@ Use `git clone git@github.com:SOME_REPO TARGET_DIRECTORY`.
 *References*:
 
 - [How do I clone a Git repository into a specific folder?](https://stackoverflow.com/questions/651038/how-do-i-clone-a-git-repository-into-a-specific-folder)
+
+## Clone all remote branches
+
+*References*:
+
+- [git - How do I clone all remote branches? - Stack Overflow](https://stackoverflow.com/questions/67699/how-do-i-clone-all-remote-branches)
 
 ## Commit message convention
 
