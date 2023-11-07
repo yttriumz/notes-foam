@@ -1,18 +1,29 @@
 # Python
 
+Last modified: 2023/10/18 18:08:49
+
+- [Interesting posts](#interesting-posts)
+- [VSCode `settings.json`](#vscode-settingsjson)
+- [Environment](#environment)
+  - [venv](#venv)
+    - [Activate](#activate)
+  - [pip packages](#pip-packages)
+  - [pipx](#pipx)
+- [Data Engineering](#data-engineering)
+
 ## Interesting posts
 
 - [A Python Interpreter Written in Python](https://aosabook.org/en/500L/a-python-interpreter-written-in-python.html)
 
-## VSCode workspace config
+## VSCode `settings.json`
 
 ```json
 "[python]": {
-    "editor.formatOnSave": true,
-    "editor.formatOnType": true
+  "editor.formatOnSave": true,
+  "editor.formatOnType": true
 },
 "python.analysis.autoImportCompletions": true,
-"python.analysis.inlayHints.callArgumentNames": true,
+"python.analysis.inlayHints.callArgumentNames": "partial",
 "python.analysis.inlayHints.functionReturnTypes": true,
 "python.analysis.inlayHints.pytestParameters": true,
 "python.analysis.inlayHints.variableTypes": true,
@@ -20,8 +31,8 @@
 // "python.defaultInterpreterPath": "${workspaceFolder}\\.venv\\Scripts\\python.exe",
 "python.formatting.provider": "black",
 "python.formatting.blackArgs": [
-    "--line-length",
-    "80"
+  "--line-length",
+  "80"
 ],
 "python.linting.mypyEnabled": true,
 ```

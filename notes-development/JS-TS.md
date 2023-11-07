@@ -1,6 +1,6 @@
 # JavaScript/TypeScript Development
 
-Last modified: 2023/10/04 18:59:40
+Last modified: 2023/10/25 11:16:21
 
 - [Interesting posts](#interesting-posts)
   - [Development environment](#development-environment)
@@ -166,18 +166,19 @@ Last modified: 2023/10/04 18:59:40
 
 ```json
 "recommendations": [
-    "mgmcdermott.vscode-language-babel",
-    "ms-azuretools.vscode-docker",
-    "dbaeumer.vscode-eslint",
-    "github.vscode-github-actions",
-    "github.vscode-pull-request-github",
-    "visualstudioexptteam.vscodeintellicode",
-    "idered.npm",
-    "esbenp.prettier-vscode",
-    "habeebarul.react-component-tree",
-    "mtxr.sqltools",
-    "nathhorrigan.code-svgr",
-    "godrix.svgr-preview"
+  "mgmcdermott.vscode-language-babel",
+  "dbaeumer.vscode-eslint",
+  "esbenp.prettier-vscode",
+  "idered.npm",
+  "habeebarul.react-component-tree",
+  "godrix.svgr-preview",
+  "nathhorrigan.code-svgr",
+  "ms-azuretools.vscode-docker",
+  "mtxr.sqltools",
+  "ultram4rine.sqltools-clickhouse-driver",
+  "mtxr.sqltools-driver-pg",
+  "github.vscode-github-actions",
+  "github.vscode-pull-request-github"
 ]
 ```
 
