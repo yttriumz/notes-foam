@@ -1,13 +1,14 @@
 # Tweak openSUSE Tumbleweed on ThinkPad P1 Gen2
 
-Last modified: 2023/10/18 18:21:04
+Last modified: 2023/11/08 13:21:03
 
 - [Change hostname](#change-hostname)
 - [Network settings](#network-settings)
   - [WiFi](#wifi)
 - [Swappiness](#swappiness)
 - [Hibernation](#hibernation)
-- [System update](#system-update)
+- [System upgrade](#system-upgrade)
+  - [Upgrade failures](#upgrade-failures)
 - [Package management](#package-management)
 - [Shell \& terminal](#shell--terminal)
   - [Bash](#bash)
@@ -80,7 +81,7 @@ Hibernation is disabled by default for security reasons. You can check dracut mo
 - [Hibernation, Sleep, Configuration - English / Hardware - openSUSE Forums](https://forums.opensuse.org/t/hibernation-sleep-configuration/146316/2)
 - [System Fails to Resume from Hibernation | Support | SUSE](https://www.suse.com/support/kb/doc/?id=000020287)
 
-## System update
+## System upgrade
 
 Run the following commands:
 
@@ -96,6 +97,10 @@ sudo zypper dist-upgraded # optionally add "--no-recommends"
 
 - [SDB:System upgrade](https://en.opensuse.org/SDB:System_upgrade)
 - [SDB:Offline upgrade](https://en.opensuse.org/SDB:Offline_upgrade)
+
+### Upgrade failures
+
+- [Chromium and chromium based browsers (Vivaldi) not displaying content correctly - English / Applications - openSUSE Forums](https://forums.opensuse.org/t/chromium-and-chromium-based-browsers-vivaldi-not-displaying-content-correctly/167660/2)
 
 ## Package management
 
