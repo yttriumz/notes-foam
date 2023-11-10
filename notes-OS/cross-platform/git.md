@@ -1,6 +1,6 @@
 # Git Usage Tips
 
-Last modified: 2023/11/03 16:19:56
+Last modified: 2023/11/07 12:18:47
 
 - [Interesting posts](#interesting-posts)
 - [Git configuration](#git-configuration)
@@ -32,6 +32,7 @@ Last modified: 2023/11/03 16:19:56
 
 ## Interesting posts
 
+- [Flight rules for Git](https://github.com/k88hudson/git-flight-rules/tree/master)
 - [git里面的文件怎么删不掉_彻底删除git中没用的大文件](https://blog.csdn.net/weixin_33335559/article/details/112012325)
 
 ## Git configuration
