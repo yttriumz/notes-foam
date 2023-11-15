@@ -1,6 +1,6 @@
 # Git Usage Tips
 
-Last modified: 2023/11/07 12:18:47
+Last modified: 2023/11/15 12:29:01
 
 - [Interesting posts](#interesting-posts)
 - [Git configuration](#git-configuration)
@@ -34,6 +34,7 @@ Last modified: 2023/11/07 12:18:47
 
 - [Flight rules for Git](https://github.com/k88hudson/git-flight-rules/tree/master)
 - [git里面的文件怎么删不掉_彻底删除git中没用的大文件](https://blog.csdn.net/weixin_33335559/article/details/112012325)
+- [Shell variable expansion in git config - Stack Overflow](https://stackoverflow.com/questions/11262010/shell-variable-expansion-in-git-config)
 
 ## Git configuration
 
@@ -108,7 +109,7 @@ fatal: Need to specify how to reconcile divergent branches.
 
 *References*:
 
-- [How to tell git which private key to use?](https://superuser.com/questions/232373/how-to-tell-git-which-private-key-to-use/1664624#1664624)
+- [ssh - How to tell git which private key to use? - Super User](https://superuser.com/questions/232373/how-to-tell-git-which-private-key-to-use/1664624#1664624)
 
 ## Clone to a specific directory
 

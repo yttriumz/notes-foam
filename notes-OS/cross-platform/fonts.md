@@ -1,6 +1,6 @@
 # Fonts
 
-Last modified: 2023/11/03 11:57:31
+Last modified: 2023/11/13 16:47:52
 
 - [Test and compare fonts](#test-and-compare-fonts)
 - [Font tags](#font-tags)
@@ -12,7 +12,8 @@ Last modified: 2023/11/03 11:57:31
   - [Fira Code (Retina)](#fira-code-retina)
   - [Hack](#hack)
   - [Jetbrains Mono](#jetbrains-mono)
-  - [MesloLGS Nerd Font](#meslolgs-nerd-font)
+  - [Meslo LG S](#meslo-lg-s)
+  - [Monaspace](#monaspace)
 - [Non-mono](#non-mono)
   - [Fira Sans](#fira-sans)
 - [Chinese](#chinese)
@@ -72,7 +73,13 @@ Font features: Check [the official doc](https://github.com/tonsky/FiraCode/wiki/
 
 ### Jetbrains Mono
 
-### [MesloLGS Nerd Font](https://github.com/ryanoasis/nerd-fonts/releases)
+### Meslo LG S
+
+- [nerd font (MesloLGS Nerd Font)](https://github.com/ryanoasis/nerd-fonts/tree/master/patched-fonts/Meslo)
+
+### Monaspace
+
+Font features: The features I prefer are `"editor.fontLigatures": "'liga', 'calt', 'ss02', 'ss03', 'ss04', 'ss05', 'ss06', 'ss07', 'ss08'"`. Check [the official doc](https://github.com/githubnext/monaspace#coding-ligatures) for more.
 
 ## Non-mono
 
