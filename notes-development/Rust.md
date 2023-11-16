@@ -1,6 +1,6 @@
 # Rust Development
 
-Last modified: 2023/10/27 16:24:51
+Last modified: 2023/11/14 16:45:19
 
 - [Interesting posts](#interesting-posts)
   - [Tools](#tools)
@@ -24,7 +24,9 @@ Last modified: 2023/10/27 16:24:51
 - [Where is the recommended place to put `use` declarations in Rust?](https://stackoverflow.com/questions/45618552/where-is-the-recommended-place-to-put-use-declarations-in-rust)
 - [Rust from Scratch: Smart Pointers](https://medium.com/@zainalpour_79971/rust-from-scratch-smart-pointers-2951b7725760)
 - [Why async Rust? - Without boats, dreams dry up](https://without.boats/blog/why-async-rust/)
+- [Designing futures for Rust · Aaron Turon](http://aturon.github.io/blog/2016/09/07/futures-design/)
 - [判别Fn、FnMut、FnOnce的标准 - Rust语言中文社区](https://rustcc.cn/article?id=8b6c5e63-c1e0-4110-8ae8-a3ce1d3e03b9)
+- [Compile-time checks in generic functions work, and you can use them in your code | More Stina Blog!](https://morestina.net/blog/1940/compile-time-checks-in-generic-functions-work-and-you-can-use-them-in-your-code)
 
 ### Tools
 
@@ -55,6 +57,7 @@ Last modified: 2023/10/27 16:24:51
   - [Building the Rust Web App — Multiple Users and Authentication](https://betterprogramming.pub/building-the-rust-web-app-multiple-users-and-authentication-5ca5988ddfe4)
   - [Building the Rust Web App — Finishing Up](https://medium.com/better-programming/building-the-rust-web-app-finishing-up-1624c9b82f80)
 - [使用 Rust 編寫更快的 React 組件](https://www.readfog.com/a/1653827465241530368)
+- [I have written a JVM in Rust · Andrea Bergia's Website](https://andreabergia.com/blog/2023/07/i-have-written-a-jvm-in-rust/)
 
 ## VSCode `settings.json`
 
