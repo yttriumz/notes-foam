@@ -1,6 +1,6 @@
 # Tweak openSUSE Tumbleweed on ThinkPad P1 Gen2
 
-Last modified: 2023/11/08 13:21:03
+Last modified: 2023/11/20 20:21:17
 
 - [Change hostname](#change-hostname)
 - [Network settings](#network-settings)
@@ -13,7 +13,7 @@ Last modified: 2023/11/08 13:21:03
 - [Shell \& terminal](#shell--terminal)
   - [Bash](#bash)
     - [Alias](#alias)
-      - [Modify `.bash_aliases`](#modify-bash_aliases)
+      - [My `.bash_aliases`](#my-bash_aliases)
       - [Modify `.bashrc`](#modify-bashrc)
       - [Auto-completion for aliases](#auto-completion-for-aliases)
   - [Starship](#starship)
@@ -33,6 +33,7 @@ Last modified: 2023/11/08 13:21:03
 - [Input method](#input-method)
   - [Rime](#rime)
 - [Power management](#power-management)
+- [Fan control](#fan-control)
 - [Grub2 theme](#grub2-theme)
 - [KDE tweak](#kde-tweak)
 - [Mouse](#mouse)
@@ -112,13 +113,12 @@ See [[Tumbleweed/packages]].
 
 #### Alias
 
-##### Modify `.bash_aliases`
-
-Add the following:
+##### My `.bash_aliases`
 
 ```bash
+#!/bin/bash
 # sudo related
-alias asudo='sudo ' # able to use aliases
+alias asudo='sudo '                                # able to use aliases
 alias esudo='sudo --preserve-env env "PATH=$PATH"' # able to use user PATH
 
 # systemctl related
@@ -128,8 +128,31 @@ alias sysstatus='systemctl status'
 alias sdz='sudo zypper'
 alias z='zypper'
 
+# AppImages
+appimage_dir="$HOME/bin/AppImage"
+alias eudic="$appimage_dir/eudic.AppImage"
+alias ganache="$appimage_dir/ganache-2.7.1-linux-x86_64.AppImage"
+alias qq="$appimage_dir/linuxqq_3.2.1-17816_x86_64.AppImage"
+
+# Clash
+alias clash='~/.clash/cfw'
+
+# eza
+alias e='eza -a -lFg --time-style iso'
+alias eT2='eza -lTFg --level 2 --time-style iso'
+
 # flatpak related
 alias fpk='flatpak'
+
+# gaming
+alias openspades='__NV_PRIME_RENDER_OFFLOAD=1 __VK_LAYER_NV_optimus=NVIDIA_only __GLX_VENDOR_LIBRARY_NAME=nvidia flatpak run jp.yvt.OpenSpades'
+alias steam='flatpak run com.valvesoftware.Steam'
+
+# KVM
+alias vstart='sudo systemctl start libvirtd.service && systemctl status libvirtd.service && sudo virsh net-start default && sudo virsh net-list --all && virt-manager'
+alias vattach='sudo virsh attach-device'
+alias vdetach='sudo virsh detach-device'
+alias lgc='looking-glass-client -m KEY_HOME'
 
 # NVidia related
 alias nv='__NV_PRIME_RENDER_OFFLOAD=1 __VK_LAYER_NV_optimus=NVIDIA_only __GLX_VENDOR_LIBRARY_NAME=nvidia'
@@ -139,27 +162,12 @@ alias warp='warp-cli -vvv'
 alias warpc='warp-cli -vvv connect'
 alias warpd='warp-cli -vvv disconnect'
 
-# Clash
-alias clash='~/.clash/cfw'
-
-# KVM
-alias vstart='sudo systemctl start libvirtd.service && systemctl status libvirtd.service && sudo virsh net-start default && sudo virsh net-list --all && virt-manager'
-alias vattach='sudo virsh attach-device'
-alias vdetach='sudo virsh detach-device'
-alias lgc='looking-glass-client -m KEY_HOME'
-
-# AppImages
-alias eudic='~/bin/AppImage/eudic.AppImage'
-alias ganache='~/bin/AppImage/ganache-2.7.1-linux-x86_64.AppImage'
-
-# gaming
-alias openspades='__NV_PRIME_RENDER_OFFLOAD=1 __VK_LAYER_NV_optimus=NVIDIA_only __GLX_VENDOR_LIBRARY_NAME=nvidia flatpak run jp.yvt.OpenSpades'
-alias steam='flatpak run com.valvesoftware.Steam'
-
 # misc
 alias du='du --human-readable'
 alias dk='docker'
+alias freetube='flatpak run io.freetubeapp.FreeTube'
 alias frp='~/.frp/frpc --config ~/.frp/frpc.ini'
+alias languagetool='docker run -d --rm -p 8081:8010 --name languagetool silviof/docker-languagetool'
 alias rm='rm --interactive=once'
 alias studio='/opt/android-studio/bin/studio.sh'
 alias trash='gio trash'
@@ -372,6 +380,14 @@ Change the system lock screen time format to 24H by adding `LC_TIME=C.UTF-8` to 
 ## Power management
 
 See [[power]] for power saving config.
+
+## Fan control
+
+*References*:
+
+- [How to control fan speed - ThinkWiki](https://www.thinkwiki.org/wiki/How_to_control_fan_speed)
+- [How to control ThinkPad P14s' fan speed in Linux - Monosoul's Dev Blog](https://blog.monosoul.dev/2021/10/17/how-to-control-thinkpad-p14s-fan-speed-in-linux/)
+- [How to manually change fan speed on a thinkpad? : r/linuxquestions](https://www.reddit.com/r/linuxquestions/comments/t4v49g/how_to_manually_change_fan_speed_on_a_thinkpad/?rdt=56743)
 
 ## Grub2 theme
 
