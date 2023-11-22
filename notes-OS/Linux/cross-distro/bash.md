@@ -1,13 +1,45 @@
 # Bash Usage
 
+Last modified: 2023/11/10 15:58:33
+
 - [Interesting posts](#interesting-posts)
+- [Configuration files](#configuration-files)
+- [History](#history)
+    - [Customize history](#customize-history)
 - [Alias](#alias)
     - [Alias expansion](#alias-expansion)
     - [Auto-completion for aliases](#auto-completion-for-aliases)
+- [stdout and stderr](#stdout-and-stderr)
 
 ## Interesting posts
 
 - [What does the 'rc' in `.bashrc`, etc. mean? \[duplicate\]](https://superuser.com/questions/173165/what-does-the-rc-in-bashrc-etc-mean)
+
+## Configuration files
+
+*References*:
+
+- [Difference Between .bashrc, .bash-profile, and .profile | Baeldung on Linux](https://www.baeldung.com/linux/bashrc-vs-bash-profile-vs-profile)
+- [unix - Choosing between .bashrc, .profile, .bash_profile, etc - Super User](https://superuser.com/questions/789448/choosing-between-bashrc-profile-bash-profile-etc)
+- [bash - Difference between .bashrc and .bash_profile - Super User](https://superuser.com/questions/183870/difference-between-bashrc-and-bash-profile)
+- [linux - What are the functional differences between .profile .bash_profile and .bashrc - Server Fault](https://serverfault.com/questions/261802/what-are-the-functional-differences-between-profile-bash-profile-and-bashrc)
+
+## History
+
+### Customize history
+
+I have the following configs in `.bashrc`:
+
+```bash
+# customize history (bash specific)
+export HISTTIMEFORMAT='%F %T '
+export HISTCONTROL=ignoredups
+```
+
+*References*:
+
+- [Remove and Avoid Duplicate Entries in Bash History | Baeldung on Linux](https://www.baeldung.com/linux/history-remove-avoid-duplicates)
+- [Bash – Using History Efficiently | Baeldung on Linux](https://www.baeldung.com/linux/bash-using-history-efficiently)
 
 ## Alias
 
@@ -1029,3 +1061,11 @@ Press `alt`-`ctrl`-`e`.
 *References*:
 
 - [complete-alias](https://github.com/cykerway/complete-alias)
+
+## stdout and stderr
+
+*References*:
+
+- [I/O Redirection](https://tldp.org/LDP/abs/html/io-redirection.html)
+- [bash - echo that outputs to stderr - Stack Overflow](https://stackoverflow.com/questions/2990414/echo-that-outputs-to-stderr)
+- [linux - Echo to both stdout and stderr - Stack Overflow](https://stackoverflow.com/questions/6852969/echo-to-both-stdout-and-stderr)

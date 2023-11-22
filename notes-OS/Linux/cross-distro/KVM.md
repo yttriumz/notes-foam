@@ -1,6 +1,6 @@
 # Kernel-based Virtual Machine Usage
 
-Last modified: 2023/09/05 15:44:19
+Last modified: 2023/11/06 11:15:41
 
 - [Start service](#start-service)
 - [Virtual network](#virtual-network)
@@ -223,6 +223,7 @@ Note that at the time of writing (*Tumbleweed 20230727, libvirt 9.5.0-2.1*), clo
 
 - [Clone a KVM virtual machine](https://docs.deistercloud.com/content/Tutorials.100/Linux.80/KVM%20virtualization.40/Clone%20a%20KVM%20virtual%20machine.6.xml?embedded=true)
 - [kvm 虚拟化 virt-clone 克隆虚拟机](https://blog.csdn.net/wanglei_storage/article/details/51106096)
+- [Cloning KVM snapshots - DEV Community](https://dev.to/mediocredevops/cloning-kvm-snapshots-1paj)
 
 ## Manage snapshots
 
@@ -298,6 +299,9 @@ Note that the following method is **not** recommended in the LG official Discord
 
 ~~Add the following XML to the VM config:~~
 
+<details>
+<summary>Not recommended</summary>
+
 ```xml
 <input type="evdev">
     <source dev="/dev/input/by-id/usb-Logitech_USB_Receiver-if01-event-mouse"/>
@@ -306,6 +310,8 @@ Note that the following method is **not** recommended in the LG official Discord
     <source dev="/dev/input/by-path/platform-i8042-serio-0-event-kbd" grab="all" grabToggle="ctrl-ctrl" repeat="on"/>
 </input>
 ```
+
+</details>
 
 *References*:
 
@@ -456,7 +462,7 @@ Forbid apps from blocking compositing (it drops framerate):
 
 #### TearFree (on host)
 
-This failed to work on my machine. Edit `/etc/X11/xorg.conf.d/20-intel.conf`.
+Edit `/etc/X11/xorg.conf.d/20-intel.conf`. But this failed to work on my machine.
 
 *References*:
 

@@ -12,7 +12,7 @@ type: index
 - [[bash]]
 - [[file-system]]
 - [[power]]
-- [[hotspot]]
+- [[cross-distro/networking]]
 - [[Xorg]]
 - [[KDE]]
 - [[cross-distro/Docker]]
@@ -28,9 +28,9 @@ type: index
 [shell-tools]: shell-tools.md "Shell Related Tools"
 [terminal-tools]: terminal-tools.md "Terminal Related Tools"
 [bash]: bash.md "Bash Usage"
-[file-system]: file-system.md "File Systems"
+[file-system]: file-system.md "File System"
 [power]: power.md "Power Management"
-[hotspot]: hotspot.md "Create Hotspot on Linux"
+[cross-distro/networking]: networking.md "Networking"
 [Xorg]: Xorg.md "X.Org"
 [KDE]: KDE.md "KDE Plasma Tweak"
 [cross-distro/Docker]: Docker.md "Docker Usage"
