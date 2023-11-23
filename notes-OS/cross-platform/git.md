@@ -1,6 +1,6 @@
 # Git Usage Tips
 
-Last modified: 2023/11/15 12:29:01
+Last modified: 2023/11/21 11:53:36
 
 - [Interesting posts](#interesting-posts)
 - [Git configuration](#git-configuration)
@@ -24,6 +24,7 @@ Last modified: 2023/11/15 12:29:01
 - [Hard reset remote branch](#hard-reset-remote-branch)
 - [Private fork](#private-fork)
 - [Embedded repositories](#embedded-repositories)
+- [Submodule](#submodule)
 - [墙国专属](#墙国专属)
   - [Change `hosts`](#change-hosts)
   - [Set proxy](#set-proxy)
@@ -134,7 +135,11 @@ Use `git clone git@github.com:SOME_REPO TARGET_DIRECTORY`.
 ## Change commit messages
 
 - Change the last one: `git commit --amend`
-- [ ] Change multiple
+- Change multiple:
+  1. Use `git rebase -i HEAD~n` to display a list of the last `n` commits in the default text editor.
+  2. Replace `pick` with `reword` before each commit message needs to change.
+  3. Save and close the commit list file.
+  4. In each resulting commit file, type the new commit message, save the file, and close it.
 
 *References*:
 
@@ -240,6 +245,13 @@ After hard resetting the local repository, use `git push -f REMOTE_REPO BRANCH_N
 *References*:
 
 - [Git: How to make outer repository and embedded repository work as common/standalone repository?](https://stackoverflow.com/questions/47008290/git-how-to-make-outer-repository-and-embedded-repository-work-as-common-standal)
+
+## Submodule
+
+*References*:
+
+- [Git - Submodules](https://git-scm.com/book/en/v2/Git-Tools-Submodules)
+- [Git submodule | Atlassian](https://www.atlassian.com/git/tutorials/git-submodule)
 
 ## 墙国专属
 
