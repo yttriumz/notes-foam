@@ -5,6 +5,8 @@
 - [NVIDIA professional laptop GPUs (2023)](https://nvdam.widen.net/s/dmdqnnwcmk/proviz-mobile-linecard-update-2653183)
 - [NVIDIA professional laptop GPUs (2021)](https://www.nvidia.com/content/dam/en-zz/Solutions/design-visualization/documents/nvidia-rtx-line-card-for-mobile-workstation.pdf)
 - [Official Advanced Driver Search](https://www.nvidia.com/download/find.aspx)
+- [Unix Drivers | NVIDIA](https://www.nvidia.com/en-us/drivers/unix/)
+- [Linux AMD64 Display Driver Archive | NVIDIA](https://www.nvidia.com/en-us/drivers/unix/linux-amd64-display-archive/)
 - [Your GPU Compute Capability](https://developer.nvidia.com/cuda-gpus)
 - [Video Encode and Decode GPU Support Matrix](https://developer.nvidia.com/video-encode-and-decode-gpu-support-matrix-new)
 - [OpenGL Driver Support](https://developer.nvidia.com/opengl-driver)
