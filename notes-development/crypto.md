@@ -1,16 +1,16 @@
 # Crypto
 
-Last modified: 2023/11/22 17:26:49
+Last modified: 2023/11/27 17:29:12
 
 ## PKCS12
 
 - `keytool`
   - Show certificates in the keystore: `keytool -list -v -keystore KEYSTORE_PATH -storepass KEYSTORE_PASSWORD -storetype PKCS12`
-  - Delete a certificate in the keystore: `keytool -delete -alias ALIAS_NAME -keystore KEYSTORE_PATH -storepass KEYSTORE_PASSWORD -storetype PKCS12`
-  - Import a certificate to the keystore: `keytool -importcert -alias ALIAS_NAME -keystore KEYSTORE_PATH -storepass KEYSTORE_PASSWORD -storetype PKCS12 -trustcacerts -file CERTIFICATE_PATH`
+  - Delete a certificate in the keystore (with legacy option): `keytool -delete -alias ALIAS_NAME -keystore KEYSTORE_PATH -storepass KEYSTORE_PASSWORD -storetype PKCS12 -J-Dkeystore.pkcs12.legacy`
+  - Import a certificate to the keystore (with legacy option): `keytool -importcert -alias ALIAS_NAME -keystore KEYSTORE_PATH -storepass KEYSTORE_PASSWORD -storetype PKCS12 -trustcacerts -file CERTIFICATE_PATH -J-Dkeystore.pkcs12.legacy`
 - `openssl`
-  - Show certificates in the keystore with `-legacy` option: `openssl pkcs12 -info -legacy -nokeys -in KEYSTORE_PATH -passin "pass:KEYSTORE_PASSWORD"`
-  - Create/overwrite a keystore with `-legacy` option: `openssl pkcs12 -export -legacy -inkey PRIVATE_KEY -in CERTIFICATE_PATH -name ALIAS_NAME -out KEYSTORE_PATH -passout "pass:KEYSTORE_PASSWORD"`
+  - Show certificates in the keystore (with legacy option): `openssl pkcs12 -info -legacy -nokeys -in KEYSTORE_PATH -passin "pass:KEYSTORE_PASSWORD"`
+  - Create/overwrite a keystore (with legacy option): `openssl pkcs12 -export -legacy -inkey PRIVATE_KEY -in CERTIFICATE_PATH -name ALIAS_NAME -out KEYSTORE_PATH -passout "pass:KEYSTORE_PASSWORD"`
 
 *References*:
 
