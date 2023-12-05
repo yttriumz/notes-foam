@@ -1,6 +1,6 @@
 # Tweak openSUSE Tumbleweed on ThinkPad P1 Gen2
 
-Last modified: 2023/11/20 20:21:17
+Last modified: 2023/12/04 12:30:20
 
 - [Change hostname](#change-hostname)
 - [Network settings](#network-settings)
@@ -164,7 +164,6 @@ alias warpd='warp-cli -vvv disconnect'
 
 # misc
 alias du='du --human-readable'
-alias dk='docker'
 alias freetube='flatpak run io.freetubeapp.FreeTube'
 alias frp='~/.frp/frpc --config ~/.frp/frpc.ini'
 alias languagetool='docker run -d --rm -p 8081:8010 --name languagetool silviof/docker-languagetool'
@@ -219,7 +218,7 @@ See [[terminal-tools#Zellij]].
 
 ### Install driver and prime-select
 
-1. Add NVidia's repo. See [[Tumbleweed/packages#Packman and NVidia]].
+1. Add NVidia's repo. See [[Tumbleweed/packages#Packman (essentials) and NVidia]].
 2. Install drivers. On my machine (*ThinkPad P1 Gen2 with T2000*), I tested 2 methods:
 
    - Install legacy driver `x11-video-nvidiaG05` and `suse-prime`.
@@ -290,7 +289,7 @@ Refer to [the wiki](https://en.opensuse.org/SDB:Firefox_MP4/H.264_Video_Support)
 
 1. Check whether the device is supported from [the official page](https://fprint.freedesktop.org/supported-devices.html). Unsupported devices can be found [here](https://gitlab.freedesktop.org/libfprint/wiki/-/wikis/Unsupported%20Devices).
 
-   USB Device info can be checked via `lsusb` or *Info Center* >> *Devices* >> *USB Devices*.
+   USB Device info can be checked via `lsusb` or *Info Center > Devices > USB Devices*.
 2. Install `fprintd` and `fprintd-pam`.
 3. Add the following config to `/etc/pam.d/sddm`:
 
@@ -457,7 +456,7 @@ See [[gaming]].
 [Tumbleweed/packages#WezTerm]: packages.md "Tumbleweed Package Management"
 [terminal-tools#WezTerm]: ../../cross-distro/terminal-tools.md "Terminal Related Tools"
 [terminal-tools#Zellij]: ../../cross-distro/terminal-tools.md "Terminal Related Tools"
-[Tumbleweed/packages#Packman and NVidia]: packages.md "Tumbleweed Package Management"
+[Tumbleweed/packages#Packman (essentials) and NVidia]: packages.md "Tumbleweed Package Management"
 [cross-distro/tips#Use the Same Bluetooth Device on Linux and Windows Dual Boot System]: ../../cross-distro/tips.md "General Linux Usage Tips"
 [fonts]: ../../../cross-platform/fonts.md "Fonts"
 [rime#User config]: ../../../cross-platform/rime.md "RIME | 中州韻輸入法引擎"

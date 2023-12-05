@@ -1,6 +1,6 @@
 # Tumbleweed Package Management
 
-Last modified: 2023/10/26 16:26:01
+Last modified: 2023/12/04 12:30:59
 
 - [Interesting posts](#interesting-posts)
 - [Zypper](#zypper)
@@ -61,9 +61,9 @@ Last modified: 2023/10/26 16:26:01
 
 #### Packman (essentials) and NVidia
 
-Open *YaST Software Repositories* and select *Add* >> *Community Repositories* and select the desired repos to add.
+Open *YaST Software Repositories*, select *Add > Community Repositories*, and choose the desired repos to add.
 
-**NOTE**: After this, *YaST Software* may automatically select some NVidia drivers to install. Do **not** install them because they will cause problems. See [[tweak-P1-Gen2#NVIDIA graphics card]].
+**NOTE**: After this, *YaST Software* may automatically select some NVidia drivers to install. Do **not** install them because they will probably cause problems. See [[tweak-P1-Gen2#NVIDIA graphics card]].
 
 #### VSCode
 
