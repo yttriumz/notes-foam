@@ -1,6 +1,6 @@
 # Git Usage Tips
 
-Last modified: 2023/11/21 11:53:36
+Last modified: 2023/12/04 17:27:01
 
 - [Interesting posts](#interesting-posts)
 - [Git configuration](#git-configuration)
@@ -15,6 +15,7 @@ Last modified: 2023/11/21 11:53:36
 - [Clone all remote branches](#clone-all-remote-branches)
 - [Commit message convention](#commit-message-convention)
 - [Change commit messages](#change-commit-messages)
+- [Delete tags](#delete-tags)
 - [Stash changes](#stash-changes)
 - [Discard unstaged changes](#discard-unstaged-changes)
 - [Update an unchecked-out local branch from remote branch](#update-an-unchecked-out-local-branch-from-remote-branch)
@@ -144,6 +145,15 @@ Use `git clone git@github.com:SOME_REPO TARGET_DIRECTORY`.
 *References*:
 
 - [Changing a commit message](https://docs.github.com/en/pull-requests/committing-changes-to-your-project/creating-and-editing-commits/changing-a-commit-message)
+
+## Delete tags
+
+- Delete a local tag: `git tag -d TAG_NAME`
+- Delete a remote tag: `git push --delete REMOTE_REPO TAG_NAME`
+
+*References*:
+
+- [git - How can I delete a remote tag? - Stack Overflow](https://stackoverflow.com/questions/5480258/how-can-i-delete-a-remote-tag)
 
 ## Stash changes
 

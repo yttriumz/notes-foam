@@ -1,6 +1,6 @@
 # SSH Usage
 
-Last modified: 2023/10/26 11:33:24
+Last modified: 2023/11/29 14:13:33
 
 - [Create SSH key pair](#create-ssh-key-pair)
 - [Generate public key from private key](#generate-public-key-from-private-key)
@@ -32,6 +32,8 @@ Generate the public key via `ssh-keygen -f PATH_TO_PRI_KEY -y > PATH_TO_PUB_KEY`
 - [How to Show All Active SSH Connections in Linux](https://www.maketecheasier.com/show-active-ssh-connections-linux/)
 
 ## Kill idle SSH sessions
+
+Hit subsequently `Enter` + `~` + `.`.
 
 *References*:
 
