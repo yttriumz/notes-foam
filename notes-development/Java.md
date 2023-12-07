@@ -1,9 +1,10 @@
 # Java Development
 
-Last modified: 2023/11/07 12:56:37
+Last modified: 2023/12/07 14:37:20
 
 - [Interesting posts](#interesting-posts)
 - [Java version manager](#java-version-manager)
+- [JAR manipulations](#jar-manipulations)
 
 ## Interesting posts
 
@@ -18,3 +19,41 @@ Last modified: 2023/11/07 12:56:37
 - [jenv](https://github.com/jenv/jenv)
 - [SDKMAN! CLI](https://github.com/sdkman/sdkman-cli)
 - [Coursier: How to install multiple Java JDK/JVMs | alvinalexander.com](https://alvinalexander.com/scala/coursier-how-install-multiple-java-jdks-jvms/)
+
+## JAR manipulations
+
+- Add files to a JAR file with manifest:
+
+  ```bash
+  jar --create --verbose --manifest=META-INF/MANIFEST.MF --file JAR_FILE FILES_TO_ADD
+  ```
+
+- List the content of a JAR file:
+
+  ```bash
+  jar tf JAR_FILE
+  ```
+
+- Extract the content of a JAR file:
+
+  ```bash
+  # use `jar`
+  jar xf JAR_FILE
+  jar xf JAR_FILE PATH/TO/A_FILE/IN/JAR
+  # use `unzip`
+  unzip JAR_FILE -d ./EXTRACTED
+  ```
+
+- Update a JAR file:
+
+  ```bash
+  jar uf JAR_FILE PATH/TO/A_FILE/IN/JAR
+  ```
+
+*References*:
+
+- [Creating a JAR File (The Java™ Tutorials > Deployment > Packaging Programs in JAR Files)](https://docs.oracle.com/javase/tutorial/deployment/jar/build.html)
+- [Viewing the Contents of a JAR File (The Java™ Tutorials > Deployment > Packaging Programs in JAR Files)](https://docs.oracle.com/javase/tutorial/deployment/jar/view.html)
+- [Extracting the Contents of a JAR File (The Java™ Tutorials > Deployment > Packaging Programs in JAR Files)](https://docs.oracle.com/javase/tutorial/deployment/jar/unpack.html)
+- [Updating a JAR File (The Java™ Tutorials > Deployment > Packaging Programs in JAR Files)](https://docs.oracle.com/javase/tutorial/deployment/jar/update.html)
+- [java - Can't execute jar- file: "no main manifest attribute" - Stack Overflow](https://stackoverflow.com/questions/9689793/cant-execute-jar-file-no-main-manifest-attribute)
