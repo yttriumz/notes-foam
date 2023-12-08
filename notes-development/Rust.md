@@ -1,13 +1,14 @@
-# Rust Development
+# Rust
 
-Last modified: 2023/11/29 15:01:42
+Last modified: 2023/12/07 19:09:47
 
 - [Interesting posts](#interesting-posts)
   - [Tools](#tools)
   - [Web related](#web-related)
     - [Tutorials](#tutorials)
-- [VSCode `settings.json`](#vscode-settingsjson)
-- [VSCode `extensions.json`](#vscode-extensionsjson)
+- [VSCode](#vscode)
+  - [`settings.json`](#settingsjson)
+  - [`extensions.json`](#extensionsjson)
 - [Rust with Flutter](#rust-with-flutter)
 - [墙国专属](#墙国专属)
 
@@ -23,6 +24,8 @@ Last modified: 2023/11/29 15:01:42
 - [System Programming Memory Model Implied by RUST](https://t4wydfkrrq.feishu.cn/docx/doxcnM3juNBUJfxGcIWOfJRLk5g)
 - [想问下如果用rust写的sdk, 只给库而不是代码.是不是只能在封装dll c接口](https://rustcc.cn/article?id=62bbfc2f-230d-4abc-ad94-8390a8487520)
 - [Where is the recommended place to put `use` declarations in Rust?](https://stackoverflow.com/questions/45618552/where-is-the-recommended-place-to-put-use-declarations-in-rust)
+- [indexing - How to index a String in Rust - Stack Overflow](https://stackoverflow.com/questions/24542115/how-to-index-a-string-in-rust)
+- [Why String can be sliced with usize index? - help - The Rust Programming Language Forum](https://users.rust-lang.org/t/why-string-can-be-sliced-with-usize-index/71437)
 - [Rust from Scratch: Smart Pointers](https://medium.com/@zainalpour_79971/rust-from-scratch-smart-pointers-2951b7725760)
 - [Why async Rust? - Without boats, dreams dry up](https://without.boats/blog/why-async-rust/)
 - [Designing futures for Rust · Aaron Turon](http://aturon.github.io/blog/2016/09/07/futures-design/)
@@ -60,7 +63,9 @@ Last modified: 2023/11/29 15:01:42
 - [使用 Rust 編寫更快的 React 組件](https://www.readfog.com/a/1653827465241530368)
 - [I have written a JVM in Rust · Andrea Bergia's Website](https://andreabergia.com/blog/2023/07/i-have-written-a-jvm-in-rust/)
 
-## VSCode `settings.json`
+## VSCode
+
+### `settings.json`
 
 ```json
 "[rust]": {
@@ -70,7 +75,7 @@ Last modified: 2023/11/29 15:01:42
 "rust-analyzer.check.command": "clippy",
 ```
 
-## VSCode `extensions.json`
+### `extensions.json`
 
 ```json
 "recommendations": [

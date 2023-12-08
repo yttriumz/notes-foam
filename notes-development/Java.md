@@ -1,6 +1,6 @@
-# Java Development
+# Java
 
-Last modified: 2023/12/07 14:37:20
+Last modified: 2023/12/07 19:03:21
 
 - [Interesting posts](#interesting-posts)
 - [Java version manager](#java-version-manager)
@@ -11,6 +11,8 @@ Last modified: 2023/12/07 14:37:20
 - [成为一个更好的Java程序员](https://github.com/crisxuan/bestJavaer)
 - [互联网 Java 工程师进阶知识完全扫盲](https://github.com/doocs/advanced-java)
 - [史上最简单的 IntelliJ IDEA 教程](https://github.com/guobinhit/intellij-idea-tutorial)
+- [The Oracle Java Platform Extension for Visual Studio Code | Hacker News](https://news.ycombinator.com/item?id=37929311)
+- [Introducing the Oracle Java Platform Extension for Visual Studio Code : java](https://www.reddit.com/r/java/comments/17ar11h/introducing_the_oracle_java_platform_extension/)
 
 ## Java version manager
 

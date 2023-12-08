@@ -1,6 +1,6 @@
-# JavaScript/TypeScript Development
+# JavaScript/TypeScript
 
-Last modified: 2023/11/27 12:30:23
+Last modified: 2023/12/07 19:03:58
 
 - [Interesting posts](#interesting-posts)
   - [Development environment](#development-environment)

@@ -10,6 +10,7 @@ type: index
   - [[C]]
   - [[CPP]]
   - [[Flutter]]
+  - [[Haskell]]
   - [[Java]]
   - [[JS-TS]]
   - [[LaTeX/index]]
@@ -19,7 +20,7 @@ type: index
 - Domain-specific:
   - [[Android]]
   - [[containerization/index]]
-  - [[database/index]]
+  - [[databases]]
   - [[decentralization]]
   - [[DevOps/index]]
   - [[ML]]
@@ -42,15 +43,16 @@ type: index
 [C]: C.md "C"
 [CPP]: CPP.md "C++"
 [Flutter]: Flutter.md "Flutter"
-[Java]: Java.md "Java Development"
-[JS-TS]: JS-TS.md "JavaScript/TypeScript Development"
+[Haskell]: Haskell.md "Haskell"
+[Java]: Java.md "Java"
+[JS-TS]: JS-TS.md "JavaScript/TypeScript"
 [LaTeX/index]: LaTeX/index.md "$\LaTeX$"
 [Python]: Python.md "Python"
-[Rust]: Rust.md "Rust Development"
+[Rust]: Rust.md "Rust"
 [Scala]: Scala.md "Scala"
 [Android]: Android.md "Android"
 [containerization/index]: containerization/index.md "Containerization"
-[database/index]: database/index.md "Database related development"
+[databases]: databases.md "Databases"
 [decentralization]: decentralization.md "Decentralization Related"
 [DevOps/index]: DevOps/index.md "DevOps Related"
 [ML]: ML.md "Machine Learning"

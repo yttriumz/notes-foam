@@ -1,9 +1,11 @@
 # Python
 
-Last modified: 2023/10/18 18:08:49
+Last modified: 2023/12/07 18:36:18
 
 - [Interesting posts](#interesting-posts)
-- [VSCode `settings.json`](#vscode-settingsjson)
+- [VSCode](#vscode)
+  - [`settings.json`](#settingsjson)
+  - [`extension.json`](#extensionjson)
 - [Environment](#environment)
   - [venv](#venv)
     - [Activate](#activate)
@@ -15,7 +17,9 @@ Last modified: 2023/10/18 18:08:49
 
 - [A Python Interpreter Written in Python](https://aosabook.org/en/500L/a-python-interpreter-written-in-python.html)
 
-## VSCode `settings.json`
+## VSCode
+
+### `settings.json`
 
 ```json
 "[python]": {
@@ -35,6 +39,19 @@ Last modified: 2023/10/18 18:08:49
   "80"
 ],
 "python.linting.mypyEnabled": true,
+```
+
+### `extension.json`
+
+```json
+"recommendations": [
+  "ms-python.python",
+  "ms-toolsai.jupyter",
+  "visualstudioexptteam.vscodeintellicode",
+  "kevinrose.vsc-python-indent",
+  "twixes.pypi-assistant",
+  "donjayamanne.python-environment-manager",
+]
 ```
 
 ## Environment
