@@ -1,6 +1,6 @@
 # Gaming on Linux
 
-Last modified: 2023/08/24 12:13:51
+Last modified: 2023/12/04 12:31:28
 
 - [Interesting posts](#interesting-posts)
 - [Steam (Flatpak)](#steam-flatpak)
@@ -203,7 +203,7 @@ See [[KVM#Looking Glass]].
 - You may want to run the game on NV card.
   - See [[tweak-P1-Gen2#Make applications run on NVidia card]].
   - After updating system's native driver, the driver in flatpak should also be updated before running the game.
-- To make it run without a window frame, add a rule in *System Settings* >> *Window Management* >> *Window Rules*:
+- To make it run without a window frame, add a rule in *System Settings > Window Management > Window Rules*:
 
   ![OpenSpades rule](attachments/openspades_rule.png)
 

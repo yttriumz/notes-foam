@@ -1,6 +1,6 @@
 # Bash Usage
 
-Last modified: 2023/11/10 15:58:33
+Last modified: 2023/12/12 16:24:08
 
 - [Interesting posts](#interesting-posts)
 - [Configuration files](#configuration-files)
@@ -9,7 +9,10 @@ Last modified: 2023/11/10 15:58:33
 - [Alias](#alias)
     - [Alias expansion](#alias-expansion)
     - [Auto-completion for aliases](#auto-completion-for-aliases)
-- [stdout and stderr](#stdout-and-stderr)
+- [Redirect command/script/application output](#redirect-commandscriptapplication-output)
+- [Syntax](#syntax)
+    - [`[@]` and `[*]`](#-and-)
+    - [`${}` and `$()`](#-and--1)
 
 ## Interesting posts
 
@@ -61,7 +64,7 @@ export HISTCONTROL=ignoredups
 
 ### Alias expansion
 
-Press `alt`-`ctrl`-`e`.
+Press `Alt`+`Ctrl`+`E`.
 
 *References*:
 
@@ -1062,10 +1065,74 @@ Press `alt`-`ctrl`-`e`.
 
 - [complete-alias](https://github.com/cykerway/complete-alias)
 
-## stdout and stderr
+## Redirect command/script/application output
 
 *References*:
 
 - [I/O Redirection](https://tldp.org/LDP/abs/html/io-redirection.html)
+- [how to output text to both screen and file inside a shell script? - Unix & Linux Stack Exchange](https://unix.stackexchange.com/questions/80707/how-to-output-text-to-both-screen-and-file-inside-a-shell-script)
+- [terminal - Display output from command and save to file - Unix & Linux Stack Exchange](https://unix.stackexchange.com/questions/274168/display-output-from-command-and-save-to-file)
 - [bash - echo that outputs to stderr - Stack Overflow](https://stackoverflow.com/questions/2990414/echo-that-outputs-to-stderr)
 - [linux - Echo to both stdout and stderr - Stack Overflow](https://stackoverflow.com/questions/6852969/echo-to-both-stdout-and-stderr)
+
+## Syntax
+
+### `[@]` and `[*]`
+
+From Phind:
+
+> In Bash, the `[@]` or `[*]` notation after an array variable is used to retrieve all elements from the array.
+>
+> - `${array[@]}`: This syntax expands to all the values of the array. Each value is treated as a separate word by the shell. This is useful when your array elements might contain spaces or other special characters.
+> - `${array[*]}`: This syntax also expands to all the values of the array, but the values are treated as a single word by the shell.
+>
+> When you use `[@]` or `[*]` in double quotes like `"${array[@]}"` or `"${array[*]}"`, it preserves the whitespace within each element, which can be important if your array elements contain spaces.
+>
+> In your specific case, `${#files[@]}` is used to get the number of elements in the `files` array. The `[@]` is necessary to specify that you want the count of all elements in the array. If you just used `${#files}`, it would give you the length of the first element of the array, not the total number of elements.
+>
+> In the context of `${#files[@]}` or `${#files[*]}`, both `[@]` and `[*]` will give you the count of the total number of elements in the array. So, you can use either `${#files[@]}` or `${#files[*]}` to get the number of elements in the `files` array.
+>
+> The difference between `[@]` and `[*]` comes into play when you're expanding the array without the `#` operator. When quoted:
+>
+> - `"${array[@]}"` expands each item as a separate word. This is useful when your array elements might contain spaces or other special characters.
+> - `"${array[*]}"` expands all items as a single word, with the first character of IFS acting as a separator.
+>
+> In your specific case, since you're just counting the number of elements in the array, it doesn't matter whether you use `[@]` or `[*]`.
+
+Run the following snippet to see the difference:
+
+```bash
+#!/usr/bin/env bash
+array=("element 1" "element 2" "element 3")
+
+echo ${#array[@]}
+echo ${#array[*]}
+
+for e in "${array[@]}"; do
+    echo "$e"
+done
+
+for e in ${array[@]}; do
+    echo "$e"
+done
+
+for e in "${array[*]}"; do
+    echo "$e"
+done
+
+for e in ${array[*]}; do
+    echo "$e"
+done
+```
+
+### `${}` and `$()`
+
+From Phind:
+
+> In Bash, the syntax `${}` is used for parameter expansion, which means it's used to manipulate the value of a variable (or parameter). The `#` inside `${}` is used to get the length of a variable or array.
+>
+> So, `${#files[@]}` is used to get the number of elements in the `files` array. The `[@]` is used to get all elements of the array, and the `#` is used to count them.
+>
+> On the other hand, `$()` is used for command substitution. It runs the command inside the parentheses and replaces the command with its output. So, `$(#files[@])` would try to run `#files[@]` as a command, which is not valid syntax.
+>
+> In summary, `${}` and `$()` are used for different things in Bash. `${}` is used for parameter expansion, which includes things like getting the length of a variable or array, while `$()` is used for command substitution.

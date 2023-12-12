@@ -1,6 +1,6 @@
 # Kubernetes Usage
 
-Last modified: 2023/11/08 16:13:50
+Last modified: 2023/12/06 18:37:05
 
 - [Interesting posts](#interesting-posts)
 - [Management tool](#management-tool)
@@ -9,6 +9,7 @@ Last modified: 2023/11/08 16:13:50
 - [Remove pods](#remove-pods)
 - [Debug pods](#debug-pods)
 - [Get a shell](#get-a-shell)
+- [Get files inside pods](#get-files-inside-pods)
 
 ## Interesting posts
 
@@ -58,3 +59,9 @@ Last modified: 2023/11/08 16:13:50
 *References*:
 
 - [Get a Shell to a Running Container | Kubernetes](https://kubernetes.io/docs/tasks/debug/debug-application/get-shell-running-container/)
+
+## Get files inside pods
+
+*References*:
+
+- [azure aks - How to copy files from kubernetes Pods to local system - Stack Overflow](https://stackoverflow.com/questions/52407277/how-to-copy-files-from-kubernetes-pods-to-local-system)

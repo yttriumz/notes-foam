@@ -1,6 +1,6 @@
 # Commonly Used Command-line Tools
 
-Last modified: 2023/11/14 18:26:08
+Last modified: 2023/12/12 16:23:54
 
 - [Interesting posts](#interesting-posts)
 - [Search tools](#search-tools)
@@ -20,14 +20,46 @@ Last modified: 2023/11/14 18:26:08
   - [`lsd` (Rust)](#lsd-rust)
 - [`cat` alternatives](#cat-alternatives)
   - [`bat` (Rust)](#bat-rust)
-- [Download from internet](#download-from-internet)
-  - [Use `curl` for downloading](#use-curl-for-downloading)
-- [Redirect command/script/application output](#redirect-commandscriptapplication-output)
+- [Download from network](#download-from-network)
+  - [`curl`](#curl)
 - [Move a foreground task to the background and disown it](#move-a-foreground-task-to-the-background-and-disown-it)
+- [`iconv`](#iconv)
 
 ## Interesting posts
 
 - [Rewritten in Rust: Modern Alternatives of Command-Line Tools · Zaiste Programming](https://zaiste.net/posts/shell-commands-rust/)
+- From Phind:
+
+  > Yes, there are other ways to read a file's content in a shell script besides using `cat` or the `<` operator. Here are a few alternatives:
+  >
+  > - `read` command: The `read` command can be used in a loop to read a file line by line.
+  >
+  >   ```bash
+  >   while IFS= read -r line
+  >   do
+  >     echo "$line"
+  >   done < "$filename"
+  >   ```
+  >
+  > - `awk` command: `awk` is a powerful text-processing command. It can be used to read a file.
+  >
+  >   ```bash
+  >   awk '{print}' "$filename"
+  >   ```
+  >
+  > - sed command: sed is a stream editor for filtering and transforming text. It can be used to print out a file.
+  >
+  >   ```bash
+  >   sed -n 'p' "$filename"
+  >   ```
+  >
+  > - grep command: grep is used to search text. You can use it to print out all lines in a file.
+  >
+  >   ```bash
+  >   grep . "$filename"
+  >   ```
+  >
+  > Please note that these commands are more complex and powerful than cat and the < operator. If all you need is to read a file's content, cat or the < operator are the simplest and most efficient options. The other commands are useful if you need to process the file's content in some way, such as filtering or transforming the text.
 
 ## Search tools
 
@@ -114,18 +146,11 @@ Add `2>&1 | grep -v "Permission denied"` to the end.
 
 - [A cat(1) clone with wings.](https://github.com/sharkdp/bat)
 
-## Download from internet
+## Download from network
 
-### Use `curl` for downloading
+### `curl`
 
-Commonly used flags are `-fSLO`.
-
-## Redirect command/script/application output
-
-*References*:
-
-- [how to output text to both screen and file inside a shell script? - Unix & Linux Stack Exchange](https://unix.stackexchange.com/questions/80707/how-to-output-text-to-both-screen-and-file-inside-a-shell-script)
-- [terminal - Display output from command and save to file - Unix & Linux Stack Exchange](https://unix.stackexchange.com/questions/274168/display-output-from-command-and-save-to-file)
+Commonly used flags for downloading are `-fSLO`.
 
 ## Move a foreground task to the background and disown it
 
@@ -137,3 +162,9 @@ Commonly used flags are `-fSLO`.
 3. After moving the process to the background with bg, type `disown %1` and press Enter. Replace `1` with the job number if it's not 1, which can be checked via `jobs`. This will remove the process from the shell's job table, preventing it from receiving the HUP (hangup) signal when the terminal session ends.
 
    If needed, you can always bring the process back to the foreground with the fg command.
+
+## `iconv`
+
+*References*:
+
+- [libiconv - GNU Project - Free Software Foundation (FSF)](https://www.gnu.org/software/libiconv/)
