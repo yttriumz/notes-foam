@@ -13,6 +13,7 @@ type: index
   - [[Neovim]]
   - [[Helix]]
   - [[Emacs]]
+  - [[search-engine]]
   - [[Firefox]]
 - Misc:
   - [[fonts]]
@@ -24,10 +25,11 @@ type: index
 [terminal-tools]: ../Linux/cross-distro/terminal-tools.md "Terminal Related Tools"
 [remote/index]: remote/index.md "Remote Development"
 [cross-platform/git]: git.md "Git Usage Tips"
-[VSCode]: VSCode.md "Visual Studio Code Tips"
+[VSCode]: VSCode.md "Visual Studio Code Usage Tips"
 [Neovim]: Neovim.md "Neovim"
 [Helix]: Helix.md "Helix"
 [Emacs]: Emacs.md "Emacs"
+[search-engine]: search-engine.md "Search Engine"
 [Firefox]: Firefox.md "Firefox"
 [fonts]: fonts.md "Fonts"
 [hard-disk]: hard-disk.md "Hard Disk Manipulation"

@@ -1,6 +1,6 @@
-# Git Usage Tips
+# Git Usage
 
-Last modified: 2023/12/04 17:27:01
+Last modified: 2023/12/08 13:13:43
 
 - [Interesting posts](#interesting-posts)
 - [Git configuration](#git-configuration)
