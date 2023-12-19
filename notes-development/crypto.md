@@ -1,6 +1,6 @@
 # Crypto
 
-Last modified: 2023/11/27 17:29:12
+Last modified: 2023/12/18 16:27:15
 
 ## PKCS12
 
@@ -22,7 +22,7 @@ Last modified: 2023/11/27 17:29:12
 - [FreeKB - OpenSSL - Display the contents of a PKCS12 file](https://www.freekb.net/Article?id=2460)
 - [How to list the certificates stored in a PKCS12 keystore with keytool? - Stack Overflow](https://stackoverflow.com/questions/14375235/how-to-list-the-certificates-stored-in-a-pkcs12-keystore-with-keytool)
 - [How to create a certificate into a PKCS12 keystore with keytool? - Stack Overflow](https://stackoverflow.com/questions/14375185/how-to-create-a-certificate-into-a-pkcs12-keystore-with-keytool)
-- [How to update an expired certificate in the existing keystore? | SmartBear Software](https://support.smartbear.com/collaborator/faq/how-to-update-an-expired-certificate-in-the-existi/)
+- [How to update an expired certificate in the existing keystore? \| SmartBear Software](https://support.smartbear.com/collaborator/faq/how-to-update-an-expired-certificate-in-the-existi/)
 - [tomcat - keytool error: java.lang.Exception: Failed to establish chain from reply - Stack Overflow](https://stackoverflow.com/questions/23611688/keytool-error-java-lang-exception-failed-to-establish-chain-from-reply)
 - [openssl - How to Import CA cert to pkcs12 - Super User](https://superuser.com/questions/433236/how-to-import-ca-cert-to-pkcs12)
 - [x509certificate - Load multiple certificates into PKCS12 with openssl - Stack Overflow](https://stackoverflow.com/questions/19704950/load-multiple-certificates-into-pkcs12-with-openssl)

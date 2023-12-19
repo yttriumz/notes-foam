@@ -1,6 +1,6 @@
 # Java
 
-Last modified: 2023/12/07 19:03:21
+Last modified: 2023/12/18 16:28:49
 
 - [Interesting posts](#interesting-posts)
 - [Java version manager](#java-version-manager)
@@ -11,7 +11,7 @@ Last modified: 2023/12/07 19:03:21
 - [成为一个更好的Java程序员](https://github.com/crisxuan/bestJavaer)
 - [互联网 Java 工程师进阶知识完全扫盲](https://github.com/doocs/advanced-java)
 - [史上最简单的 IntelliJ IDEA 教程](https://github.com/guobinhit/intellij-idea-tutorial)
-- [The Oracle Java Platform Extension for Visual Studio Code | Hacker News](https://news.ycombinator.com/item?id=37929311)
+- [The Oracle Java Platform Extension for Visual Studio Code \| Hacker News](https://news.ycombinator.com/item?id=37929311)
 - [Introducing the Oracle Java Platform Extension for Visual Studio Code : java](https://www.reddit.com/r/java/comments/17ar11h/introducing_the_oracle_java_platform_extension/)
 
 ## Java version manager
@@ -20,7 +20,7 @@ Last modified: 2023/12/07 19:03:21
   - [active fork](https://github.com/shyiko/jabba/issues/845)
 - [jenv](https://github.com/jenv/jenv)
 - [SDKMAN! CLI](https://github.com/sdkman/sdkman-cli)
-- [Coursier: How to install multiple Java JDK/JVMs | alvinalexander.com](https://alvinalexander.com/scala/coursier-how-install-multiple-java-jdks-jvms/)
+- [Coursier: How to install multiple Java JDK/JVMs \| alvinalexander.com](https://alvinalexander.com/scala/coursier-how-install-multiple-java-jdks-jvms/)
 
 ## JAR manipulations
 

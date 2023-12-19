@@ -1,11 +1,11 @@
 # Rust
 
-Last modified: 2023/12/07 19:09:47
+Last modified: 2023/12/18 16:29:15
 
 - [Interesting posts](#interesting-posts)
   - [Tools](#tools)
   - [Web related](#web-related)
-    - [Tutorials](#tutorials)
+  - [Tutorials](#tutorials)
 - [VSCode](#vscode)
   - [`settings.json`](#settingsjson)
   - [`extensions.json`](#extensionsjson)
@@ -30,12 +30,18 @@ Last modified: 2023/12/07 19:09:47
 - [Why async Rust? - Without boats, dreams dry up](https://without.boats/blog/why-async-rust/)
 - [Designing futures for Rust · Aaron Turon](http://aturon.github.io/blog/2016/09/07/futures-design/)
 - [判别Fn、FnMut、FnOnce的标准 - Rust语言中文社区](https://rustcc.cn/article?id=8b6c5e63-c1e0-4110-8ae8-a3ce1d3e03b9)
-- [Compile-time checks in generic functions work, and you can use them in your code | More Stina Blog!](https://morestina.net/blog/1940/compile-time-checks-in-generic-functions-work-and-you-can-use-them-in-your-code)
+- [Compile-time checks in generic functions work, and you can use them in your code \| More Stina Blog!](https://morestina.net/blog/1940/compile-time-checks-in-generic-functions-work-and-you-can-use-them-in-your-code)
+- Rust Is Beyond Object-Oriented:
+  - [Rust Is Beyond Object-Oriented, Part 1: Intro and Encapsulation :: The Coded Message](https://www.thecodedmessage.com/posts/oop-1-encapsulation/)
+  - [Rust Is Beyond Object-Oriented, Part 2: Polymorphism :: The Coded Message](https://www.thecodedmessage.com/posts/oop-2-polymorphism/)
+  - [Rust Is Beyond Object-Oriented, Part 3: Inheritance :: The Coded Message](https://www.thecodedmessage.com/posts/oop-3-inheritance/)
 
 ### Tools
 
-- [How to clear the Cargo cache?](https://stackoverflow.com/questions/25072930/how-to-clear-the-cargo-cache)
-- [cargo clean ~/.cargo · Issue #3289 · rust-lang/cargo](https://github.com/rust-lang/cargo/issues/3289)
+- Cargo cache:
+  - [Cargo cache cleaning \| Rust Blog](https://blog.rust-lang.org/2023/12/11/cargo-cache-cleaning.html)
+  - [How to clear the Cargo cache?](https://stackoverflow.com/questions/25072930/how-to-clear-the-cargo-cache)
+  - [cargo clean ~/.cargo · Issue #3289 · rust-lang/cargo](https://github.com/rust-lang/cargo/issues/3289)
 - [Does cargo install have an equivalent update command?](https://stackoverflow.com/questions/34484361/does-cargo-install-have-an-equivalent-update-command)
 
 ### Web related
@@ -46,7 +52,7 @@ Last modified: 2023/12/07 19:09:47
 - [Axum ecosystem](https://github.com/tokio-rs/axum/blob/main/ECOSYSTEM.md)
 - [How to use “Type safe routing” of axum](https://mixi-developers.mixi.co.jp/how-to-use-type-safe-routing-of-axum-c06c1b1b1ab)
 
-#### Tutorials
+### Tutorials
 
 - [Learning by doing: An HTTP API with Rust](https://blog.frankel.ch/http-api-rust/)
 - [如何在Rust中使用ClickHouse](https://cloud.tencent.com/developer/article/1814306)
@@ -62,6 +68,8 @@ Last modified: 2023/12/07 19:09:47
   - [Building the Rust Web App — Finishing Up](https://medium.com/better-programming/building-the-rust-web-app-finishing-up-1624c9b82f80)
 - [使用 Rust 編寫更快的 React 組件](https://www.readfog.com/a/1653827465241530368)
 - [I have written a JVM in Rust · Andrea Bergia's Website](https://andreabergia.com/blog/2023/07/i-have-written-a-jvm-in-rust/)
+- [RISC-V: 跟着清华训练营从零打造OS](https://mp.weixin.qq.com/mp/appmsgalbum?action=getalbum&__biz=Mzg4Nzk4MTY3Nw==&scene=2&album_id=3162993568748208133)
+- [RustForLinux：跟着清华训练营从零打造 Linux 驱动](https://mp.weixin.qq.com/mp/appmsgalbum?__biz=Mzg4Nzk4MTY3Nw==&action=getalbum&album_id=3183255184072835074)
 
 ## VSCode
 

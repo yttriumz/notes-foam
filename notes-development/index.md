@@ -20,6 +20,7 @@ type: index
 - Domain-specific:
   - [[Android]]
   - [[containerization/index]]
+  - [[crypto]]
   - [[databases]]
   - [[decentralization]]
   - [[DevOps/index]]
@@ -46,15 +47,16 @@ type: index
 [Haskell]: Haskell.md "Haskell"
 [Java]: Java.md "Java"
 [JS-TS]: JS-TS.md "JavaScript/TypeScript"
-[LaTeX/index]: LaTeX/index.md "$\LaTeX$"
+[LaTeX/index]: LaTeX%2Findex.md "$\LaTeX$"
 [Python]: Python.md "Python"
 [Rust]: Rust.md "Rust"
 [Scala]: Scala.md "Scala"
 [Android]: Android.md "Android"
-[containerization/index]: containerization/index.md "Containerization"
+[containerization/index]: containerization%2Findex.md "Containerization"
+[crypto]: crypto.md "Crypto"
 [databases]: databases.md "Databases"
 [decentralization]: decentralization.md "Decentralization Related"
-[DevOps/index]: DevOps/index.md "DevOps Related"
+[DevOps/index]: DevOps%2Findex.md "DevOps Related"
 [ML]: ML.md "Machine Learning"
 [notes-development/networking]: networking.md "Networking"
 [SSO]: SSO.md "Single Sign-On"

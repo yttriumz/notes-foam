@@ -1,6 +1,6 @@
 # Networking
 
-Last modified: 2023/11/07 13:05:17
+Last modified: 2023/12/18 16:28:59
 
 - [CIDR](#cidr)
 - [CSRF](#csrf)
@@ -15,4 +15,4 @@ Last modified: 2023/11/07 13:05:17
 
 *References*:
 
-- [How to protect your websites and web apps with anti-CSRF tokens | Invicti](https://www.invicti.com/blog/web-security/protecting-website-using-anti-csrf-token/)
+- [How to protect your websites and web apps with anti-CSRF tokens \| Invicti](https://www.invicti.com/blog/web-security/protecting-website-using-anti-csrf-token/)
