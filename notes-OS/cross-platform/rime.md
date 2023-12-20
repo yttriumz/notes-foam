@@ -1,4 +1,4 @@
-# [RIME | 中州韻輸入法引擎](https://rime.im/)
+# RIME | 中州韻輸入法引擎
 
 ## System config
 
@@ -19,7 +19,7 @@ Check [the config folder](./attachments/rime/) for configuration files.
 
 *References*:
 
-- config repos:
+- config:
     - https://github.com/ayaka14732/awesome-rime
     - https://github.com/alswl/Rime
     - https://github.com/fkxxyz/rime-cloverpinyin

@@ -1,6 +1,6 @@
 # Fonts
 
-Last modified: 2023/11/13 16:47:52
+Last modified: 2023/12/18 16:30:41
 
 - [Test and compare fonts](#test-and-compare-fonts)
 - [Font tags](#font-tags)
@@ -36,7 +36,7 @@ Last modified: 2023/11/13 16:47:52
 
 *References*:
 
-- [Feature tags (OpenType 1.9) - Typography | Microsoft Learn](https://learn.microsoft.com/en-us/typography/opentype/spec/featuretags)
+- [Feature tags (OpenType 1.9) - Typography \| Microsoft Learn](https://learn.microsoft.com/en-us/typography/opentype/spec/featuretags)
 
 ## Mono
 

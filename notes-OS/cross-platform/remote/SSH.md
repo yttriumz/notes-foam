@@ -1,9 +1,10 @@
 # SSH Usage
 
-Last modified: 2023/11/29 14:13:33
+Last modified: 2023/12/18 16:30:35
 
 - [Create SSH key pair](#create-ssh-key-pair)
 - [Generate public key from private key](#generate-public-key-from-private-key)
+- [Automatically accept host key](#automatically-accept-host-key)
 - [Show all active SSH connections](#show-all-active-ssh-connections)
 - [Kill idle SSH sessions](#kill-idle-ssh-sessions)
 - [Remote port forwarding](#remote-port-forwarding)
@@ -25,6 +26,15 @@ Generate the public key via `ssh-keygen -f PATH_TO_PRI_KEY -y > PATH_TO_PUB_KEY`
 
 - [encryption - Create a public SSH key from the private key? - Server Fault](https://serverfault.com/questions/52285/create-a-public-ssh-key-from-the-private-key)
 
+## Automatically accept host key
+
+Use the flag `-o "StrictHostKeyChecking no"`.
+
+*References*:
+
+- [ssh - Auto accept rsa key fingerprint from command line - Server Fault](https://serverfault.com/questions/638600/auto-accept-rsa-key-fingerprint-from-command-line)
+- [scripts - ssh: automatically accept keys - Ask Ubuntu](https://askubuntu.com/questions/123072/ssh-automatically-accept-keys)
+
 ## Show all active SSH connections
 
 *References*:
@@ -43,7 +53,7 @@ Hit subsequently `Enter` + `~` + `.`.
 
 *References*:
 
-- [How to Set up SSH Tunneling (Port Forwarding) | Linuxize](https://linuxize.com/post/how-to-setup-ssh-tunneling/)
+- [How to Set up SSH Tunneling (Port Forwarding) \| Linuxize](https://linuxize.com/post/how-to-setup-ssh-tunneling/)
 - [彻底搞懂SSH端口转发命令 - 知乎](https://zhuanlan.zhihu.com/p/148825449)
 
 ### Scenario I
