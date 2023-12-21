@@ -1,10 +1,10 @@
 # Security
 
-Last modified: 2023/08/24 16:20:05
+Last modified: 2023/12/18 16:40:18
 
 ## Interesting posts
 
-- [Security and Hardening Guide | openSUSE Leap 15.5](https://doc.opensuse.org/documentation/leap/security/single-html/book-security/index.html)
+- [Security and Hardening Guide \| openSUSE Leap 15.5](https://doc.opensuse.org/documentation/leap/security/single-html/book-security/index.html)
 
 ## CPU mitigation
 

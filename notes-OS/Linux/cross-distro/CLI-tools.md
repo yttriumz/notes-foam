@@ -1,11 +1,10 @@
 # Commonly Used Command-line Tools
 
-Last modified: 2023/12/12 16:23:54
+Last modified: 2023/12/13 15:00:32
 
 - [Interesting posts](#interesting-posts)
 - [Search tools](#search-tools)
   - [`find`](#find)
-    - [Interesting posts](#interesting-posts-1)
     - [Ignore case](#ignore-case)
     - [Find only files/directories](#find-only-filesdirectories)
     - [Get rid of "Permission Denied"](#get-rid-of-permission-denied)
@@ -22,7 +21,7 @@ Last modified: 2023/12/12 16:23:54
   - [`bat` (Rust)](#bat-rust)
 - [Download from network](#download-from-network)
   - [`curl`](#curl)
-- [Move a foreground task to the background and disown it](#move-a-foreground-task-to-the-background-and-disown-it)
+- [Move a foreground task to the background and keep it running](#move-a-foreground-task-to-the-background-and-keep-it-running)
 - [`iconv`](#iconv)
 
 ## Interesting posts
@@ -65,7 +64,7 @@ Last modified: 2023/12/12 16:23:54
 
 ### `find`
 
-#### Interesting posts
+*References*:
 
 - [Ways to Use ‘find’ Command to Search Directories More Efficiently](https://www.tecmint.com/find-directory-in-linux/)
 
@@ -75,7 +74,8 @@ Use `-iname` instead of `-name`.
 
 #### Find only files/directories
 
-For files use `! -type d`; for directories use `-type d`.
+- For files, use `-type f`.
+- For directories, use `-type d`.
 
 *References*:
 
@@ -152,16 +152,18 @@ Add `2>&1 | grep -v "Permission denied"` to the end.
 
 Commonly used flags for downloading are `-fSLO`.
 
-## Move a foreground task to the background and disown it
+## Move a foreground task to the background and keep it running
 
-1. Press `Ctrl`+`Z` to suspend the process. This will pause the process and give you a new command prompt.
-2. Type `bg` and press `Enter`. This will resume the process in the background, allowing you to continue using the terminal for other commands.
+From Phind:
 
-   However, note that this will not prevent the process from being terminated when the terminal session ends. If you want to ensure the process continues running even after the terminal is closed, you should use the `nohup` command or `disown` the process.
-
-3. After moving the process to the background with bg, type `disown %1` and press Enter. Replace `1` with the job number if it's not 1, which can be checked via `jobs`. This will remove the process from the shell's job table, preventing it from receiving the HUP (hangup) signal when the terminal session ends.
-
-   If needed, you can always bring the process back to the foreground with the fg command.
+> 1. Press `Ctrl`+`Z` to suspend the process. This will pause the process and give you a new command prompt.
+> 2. Type `bg` and press `Enter`. This will resume the process in the background, allowing you to continue using the terminal for other commands.
+>
+>    However, note that this will not prevent the process from being terminated when the terminal session ends. If you want to ensure the process continues running even after the terminal is closed, you should use the `nohup` command or `disown` the process.
+>
+> 3. After moving the process to the background with `bg`, type `disown %1` and press `Enter`. Replace `1` with the job number if it's not 1, which can be checked via `jobs`. This will remove the process from the shell's job table, preventing it from receiving the `HUP` (hangup) signal when the terminal session ends.
+>
+>    If needed, you can always bring the process back to the foreground with the `fg` command.
 
 ## `iconv`
 

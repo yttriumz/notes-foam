@@ -1,11 +1,12 @@
 # File System
 
-Last modified: 2023/10/26 14:26:47
+Last modified: 2023/12/14 15:26:06
 
 - [Interesting posts](#interesting-posts)
 - [Btrfs](#btrfs)
 - [exFAT](#exfat)
-  - [openSUSE Tumbleweed](#opensuse-tumbleweed)
+  - [Utilities installation](#utilities-installation)
+- [SquashFS](#squashfs)
 
 ## Interesting posts
 
@@ -25,6 +26,12 @@ Last modified: 2023/10/26 14:26:47
 
 ## exFAT
 
-### openSUSE Tumbleweed
+### Utilities installation
 
-To manage the exFAT system, install `exfatprogs` via `zypper install exfatprogs`.
+- openSUSE Tumbleweed: Install `exfatprogs` via `zypper install exfatprogs`.
+
+## SquashFS
+
+*References*:
+
+- [The SquashFS tools exposed](https://tldp.org/HOWTO/SquashFS-HOWTO/mksqoverview.html)

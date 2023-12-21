@@ -1,6 +1,6 @@
 # Bash Usage
 
-Last modified: 2023/12/12 16:24:08
+Last modified: 2023/12/18 16:38:11
 
 - [Interesting posts](#interesting-posts)
 - [Configuration files](#configuration-files)
@@ -22,7 +22,7 @@ Last modified: 2023/12/12 16:24:08
 
 *References*:
 
-- [Difference Between .bashrc, .bash-profile, and .profile | Baeldung on Linux](https://www.baeldung.com/linux/bashrc-vs-bash-profile-vs-profile)
+- [Difference Between .bashrc, .bash-profile, and .profile \| Baeldung on Linux](https://www.baeldung.com/linux/bashrc-vs-bash-profile-vs-profile)
 - [unix - Choosing between .bashrc, .profile, .bash_profile, etc - Super User](https://superuser.com/questions/789448/choosing-between-bashrc-profile-bash-profile-etc)
 - [bash - Difference between .bashrc and .bash_profile - Super User](https://superuser.com/questions/183870/difference-between-bashrc-and-bash-profile)
 - [linux - What are the functional differences between .profile .bash_profile and .bashrc - Server Fault](https://serverfault.com/questions/261802/what-are-the-functional-differences-between-profile-bash-profile-and-bashrc)
@@ -41,8 +41,8 @@ export HISTCONTROL=ignoredups
 
 *References*:
 
-- [Remove and Avoid Duplicate Entries in Bash History | Baeldung on Linux](https://www.baeldung.com/linux/history-remove-avoid-duplicates)
-- [Bash – Using History Efficiently | Baeldung on Linux](https://www.baeldung.com/linux/bash-using-history-efficiently)
+- [Remove and Avoid Duplicate Entries in Bash History \| Baeldung on Linux](https://www.baeldung.com/linux/history-remove-avoid-duplicates)
+- [Bash – Using History Efficiently \| Baeldung on Linux](https://www.baeldung.com/linux/bash-using-history-efficiently)
 
 ## Alias
 

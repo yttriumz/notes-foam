@@ -1,6 +1,6 @@
 # Networking
 
-Last modified: 2023/11/06 18:48:21
+Last modified: 2023/12/18 16:40:03
 
 - [Add certificates](#add-certificates)
 - [Web debugging proxies](#web-debugging-proxies)
@@ -23,8 +23,8 @@ Last modified: 2023/11/06 18:48:21
 
 *References*:
 
-- [Comparing Charles Proxy, Fiddler, Wireshark, and Requestly | by Requestly | Requestly | Medium](https://medium.com/requestly/comparing-charles-proxy-fiddler-and-wireshark-5da41363d263)
-- [Wireshark is still listed, it's a lot more powerful and open source: https://cho... | Hacker News](https://news.ycombinator.com/item?id=15792354)
+- [Comparing Charles Proxy, Fiddler, Wireshark, and Requestly | by Requestly | Requestly \| Medium](https://medium.com/requestly/comparing-charles-proxy-fiddler-and-wireshark-5da41363d263)
+- [Wireshark is still listed, it's a lot more powerful and open source: https://cho... \| Hacker News](https://news.ycombinator.com/item?id=15792354)
 - [Decrypt Traffic with Mitmproxy & Wireshark — Peter Girnus](https://www.petergirnus.com/blog/decrypting-https-traffic-with-mitmproxy-amp-wireshark)
 
 ## Check open ports
