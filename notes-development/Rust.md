@@ -1,6 +1,6 @@
 # Rust
 
-Last modified: 2023/12/18 16:29:15
+Last modified: 2023/12/20 GMT+8
 
 - [Interesting posts](#interesting-posts)
   - [Tools](#tools)
@@ -35,6 +35,7 @@ Last modified: 2023/12/18 16:29:15
   - [Rust Is Beyond Object-Oriented, Part 1: Intro and Encapsulation :: The Coded Message](https://www.thecodedmessage.com/posts/oop-1-encapsulation/)
   - [Rust Is Beyond Object-Oriented, Part 2: Polymorphism :: The Coded Message](https://www.thecodedmessage.com/posts/oop-2-polymorphism/)
   - [Rust Is Beyond Object-Oriented, Part 3: Inheritance :: The Coded Message](https://www.thecodedmessage.com/posts/oop-3-inheritance/)
+- [Learning Rust, my experience so far has been mixed : rust](https://www.reddit.com/r/rust/comments/18i8y39/learning_rust_my_experience_so_far_has_been_mixed/)
 
 ### Tools
 
@@ -70,6 +71,7 @@ Last modified: 2023/12/18 16:29:15
 - [I have written a JVM in Rust · Andrea Bergia's Website](https://andreabergia.com/blog/2023/07/i-have-written-a-jvm-in-rust/)
 - [RISC-V: 跟着清华训练营从零打造OS](https://mp.weixin.qq.com/mp/appmsgalbum?action=getalbum&__biz=Mzg4Nzk4MTY3Nw==&scene=2&album_id=3162993568748208133)
 - [RustForLinux：跟着清华训练营从零打造 Linux 驱动](https://mp.weixin.qq.com/mp/appmsgalbum?__biz=Mzg4Nzk4MTY3Nw==&action=getalbum&album_id=3183255184072835074)
+- [Write a Toy VPN in Rust](https://write.yiransheng.com/vpn)
 
 ## VSCode
 
