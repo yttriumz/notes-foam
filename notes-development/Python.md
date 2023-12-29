@@ -61,7 +61,9 @@ Last modified: 2023/12/22 GMT+8
 
 ### Pyright extension
 
-For configuration, see [the official doc](https://github.com/microsoft/pyright/blob/main/docs/configuration.md).
+*References*:
+
+- [pyright/docs/configuration.md at main · microsoft/pyright](https://github.com/microsoft/pyright/blob/main/docs/configuration.md)
 
 ## Manage environment
 

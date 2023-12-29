@@ -1,6 +1,6 @@
 # Haskell
 
-Last modified: 2023/12/21 GMT+8
+Last modified: 2023/12/27 GMT+8
 
 ## Interesting posts
 
@@ -12,3 +12,4 @@ Last modified: 2023/12/21 GMT+8
 - [Real world Haskell : haskell](https://www.reddit.com/r/haskell/comments/17ydcyk/real_world_haskell/)
 - [Doctest and literate haskell? · Issue #92 · sol/doctest](https://github.com/sol/doctest/issues/92#issuecomment-66225478)
 - [haskell - Where does the name "xs" for pattern matching come from? - Stack Overflow](https://stackoverflow.com/questions/13701099/where-does-the-name-xs-for-pattern-matching-come-from)
+- [Accumulators and Folds - A. Rothuis](https://www.arothuis.nl/posts/accumulators-and-folds/)
