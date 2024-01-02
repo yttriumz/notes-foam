@@ -1,10 +1,11 @@
 # Databases
 
-Last modified: 2023/12/28 GMT+8
+Last modified: 2023/12/29 UTC
 
 - [Interesting posts](#interesting-posts)
 - [PostgreSQL](#postgresql)
 - [Elasticsearch/OpenSearch](#elasticsearchopensearch)
+  - [Kibana](#kibana)
 
 ## Interesting posts
 
@@ -26,3 +27,17 @@ Last modified: 2023/12/28 GMT+8
 *References*:
 
 - [OpenSearch Shards & Replicas: Explanations, Optimization & More](https://opster.com/blogs/opensearch-shards-and-replicas/)
+- [Version history - OpenSearch documentation](https://opensearch.org/docs/2.11/version-history/)
+
+### Kibana
+
+*References*:
+
+- [Elastic: Search Results | Elastic](https://www.elastic.co/search?q=unsafe-eval&size=n_20_n&filters%5B0%5D%5Bfield%5D=product_name&filters%5B0%5D%5Bvalues%5D%5B0%5D=Kibana&filters%5B0%5D%5Btype%5D=all&filters%5B1%5D%5Bfield%5D=website_area&filters%5B1%5D%5Bvalues%5D%5B0%5D=documentation&filters%5B1%5D%5Btype%5D=all&sort-field=%2C%20&sort-direction=)
+- [Does Kibana need the autorisation of 'unsafe-inline' or 'unsafe-eval' to work properly - Elastic Stack / Kibana - Discuss the Elastic Stack](https://discuss.elastic.co/t/does-kibana-need-the-autorisation-of-unsafe-inline-or-unsafe-eval-to-work-properly/234390)
+- [Client-side unsafe-eval Sandbox · Issue #27047 · elastic/kibana](https://github.com/elastic/kibana/issues/27047)
+- [A single content security policy error appears in browser console on load · Issue #30468 · elastic/kibana](https://github.com/elastic/kibana/issues/30468)
+- [CSP unsafe-eval auditing · Issue #36311 · elastic/kibana](https://github.com/elastic/kibana/issues/36311)
+- [\[Reporting\] Refused to execute inline script error in Kibana log when generating a report · Issue #55997 · elastic/kibana](https://github.com/elastic/kibana/issues/55997)
+- [CSP default-src 'self' · Issue #56996 · elastic/kibana](https://github.com/elastic/kibana/issues/56996)
+- [Add csp.disableUnsafeEval config option to remove the unsafe-eval CSP by watson · Pull Request #124484 · elastic/kibana](https://github.com/elastic/kibana/pull/124484)

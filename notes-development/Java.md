@@ -1,10 +1,13 @@
 # Java
 
-Last modified: 2023/12/18 16:28:49
+Last modified: 2023/12/29 UTC
 
 - [Interesting posts](#interesting-posts)
+- [Java distributions](#java-distributions)
 - [Java version manager](#java-version-manager)
 - [JAR manipulations](#jar-manipulations)
+- [Jetty](#jetty)
+- [Apache](#apache)
 
 ## Interesting posts
 
@@ -13,6 +16,12 @@ Last modified: 2023/12/18 16:28:49
 - [史上最简单的 IntelliJ IDEA 教程](https://github.com/guobinhit/intellij-idea-tutorial)
 - [The Oracle Java Platform Extension for Visual Studio Code \| Hacker News](https://news.ycombinator.com/item?id=37929311)
 - [Introducing the Oracle Java Platform Extension for Visual Studio Code : java](https://www.reddit.com/r/java/comments/17ar11h/introducing_the_oracle_java_platform_extension/)
+
+## Java distributions
+
+*References*:
+
+- [JDK Distributions - SDKMAN! the Software Development Kit Manager](https://sdkman.io/jdks)
 
 ## Java version manager
 
@@ -59,3 +68,24 @@ Last modified: 2023/12/18 16:28:49
 - [Extracting the Contents of a JAR File (The Java™ Tutorials > Deployment > Packaging Programs in JAR Files)](https://docs.oracle.com/javase/tutorial/deployment/jar/unpack.html)
 - [Updating a JAR File (The Java™ Tutorials > Deployment > Packaging Programs in JAR Files)](https://docs.oracle.com/javase/tutorial/deployment/jar/update.html)
 - [java - Can't execute jar- file: "no main manifest attribute" - Stack Overflow](https://stackoverflow.com/questions/9689793/cant-execute-jar-file-no-main-manifest-attribute)
+
+## Jetty
+
+*References*:
+
+- [Jetty not reading keystorepass and keymanagerpass from ssl.mod file · Issue #5990 · jetty/jetty.project](https://github.com/jetty/jetty.project/issues/5990)
+- [Eclipse Jetty: Operations Guide](https://eclipse.dev/jetty/documentation/jetty-10/operations-guide/index.html#og-protocols-ssl-customize)
+- [Eclipse Jetty: Programming Guide](https://eclipse.dev/jetty/documentation/jetty-10/programming-guide/index.html#pg-server-session-handler)
+
+## Apache
+
+*References*:
+
+- [Difference between the Apache HTTP Server and Apache Tomcat? - Stack Overflow](https://stackoverflow.com/questions/30632/difference-between-the-apache-http-server-and-apache-tomcat)
+- [Configuration Files - Apache HTTP Server Version 2.4](https://httpd.apache.org/docs/2.4/configuring.html)
+- [Apache Web Server Difference Between Include vs IncludeOptional Directives – CodingShower](https://codingshower.com/apache-web-server-include-vs-includeoptional/)
+- [mod_headers - Apache HTTP Server Version 2.4](https://httpd.apache.org/docs/2.4/mod/mod_headers.html#header)
+- [How to Set Samesite Cookies in Apache Web Server - Fedingo](https://fedingo.com/how-to-set-samesite-cookies-in-apache-web-server/)
+- [SameSite cookies with Apache](https://www.petefreitag.com/blog/samesite-cookies-apache/)
+- [http headers - How to set SameSite cookie attribute using Apache configuration? - Stack Overflow](https://stackoverflow.com/questions/54104573/how-to-set-samesite-cookie-attribute-using-apache-configuration)
+- [apache 2.4 - Header always edit Set-Cookie not working - Server Fault](https://serverfault.com/questions/1043924/header-always-edit-set-cookie-not-working)

@@ -1,9 +1,8 @@
 # JavaScript/TypeScript
 
-Last modified: 2023/12/18 16:23:39
+Last modified: 2023/12/29 GMT+8
 
 - [Interesting posts](#interesting-posts)
-  - [Development environment](#development-environment)
   - [Development tools](#development-tools)
   - [Language features](#language-features)
   - [Coding style](#coding-style)
@@ -18,10 +17,8 @@ Last modified: 2023/12/18 16:23:39
 
 ## Interesting posts
 
-### Development environment
-
-- [ReactJS - Environment Setup](https://www.tutorialspoint.com/reactjs/reactjs_environment_setup.htm)
-- [ReactJS Environment Setup](https://www.geeksforgeeks.org/reactjs-environment-setup/)
+- [Disallowed MIME type Error](https://hallertau.cs.gsu.edu/disallowedMIME.html):
+  > The REAL problem is that the file does not exist, or at least it's not at that location.
 - [Error message "error:0308010C:digital envelope routines::unsupported"](https://stackoverflow.com/questions/69692842/error-message-error0308010cdigital-envelope-routinesunsupported)
 - [🧐[问题]项目无法启动，error:0308010C:digital envelope routines::unsupported #9272](https://github.com/ant-design/ant-design-pro/issues/9272#issuecomment-1083276843)
 - [Cannot set headers after they are sent to the client #805](https://github.com/http-party/http-server/issues/805)
@@ -70,6 +67,8 @@ Last modified: 2023/12/18 16:23:39
 
 ### React
 
+- [ReactJS - Environment Setup](https://www.tutorialspoint.com/reactjs/reactjs_environment_setup.htm)
+- [ReactJS Environment Setup](https://www.geeksforgeeks.org/reactjs-environment-setup/)
 - [Snack - React Native in the browser](https://snack.expo.dev/)
 - [Getting Started \| Create React App](https://create-react-app.dev/docs/getting-started)
 - [TypeScript: Documentation - React](https://www.typescriptlang.org/docs/handbook/react.html)
