@@ -1,6 +1,6 @@
 # Kubernetes Usage
 
-Last modified: 2023/12/18 16:39:51
+Last modified: 2023/12/29 UTC
 
 - [Interesting posts](#interesting-posts)
 - [Management tool](#management-tool)
@@ -8,11 +8,12 @@ Last modified: 2023/12/18 16:39:51
 - [Remove nodes](#remove-nodes)
 - [Remove pods](#remove-pods)
 - [Debug pods](#debug-pods)
-- [Get a shell](#get-a-shell)
+- [Get a shell to a running container](#get-a-shell-to-a-running-container)
 - [Get files inside pods](#get-files-inside-pods)
 
 ## Interesting posts
 
+- [kubectl Usage Conventions \| Kubernetes](https://kubernetes.io/docs/reference/kubectl/conventions/)
 - [Kubernetes The Hard Way On VirtualBox](https://github.com/mmumshad/kubernetes-the-hard-way)
 - [Why is learning Kubernetes so intimidating? : devops](https://www.reddit.com/r/devops/comments/o7w9yn/why_is_learning_kubernetes_so_intimidating/)
 - [Why Is Kubernetes So Hard - 4 Reasons Why And What to do About it — Release](https://release.com/blog/why-kubernetes-is-so-hard)
@@ -51,10 +52,19 @@ Last modified: 2023/12/18 16:39:51
 
 *References*:
 
-- [Troubleshooting Applications \| Kubernetes](https://kubernetes.io/docs/tasks/debug/debug-application/)
+- [Monitoring, Logging, and Debugging \| Kubernetes](https://kubernetes.io/docs/tasks/debug/)
 - [Debug Init Containers \| Kubernetes](https://kubernetes.io/docs/tasks/debug/debug-application/debug-init-containers/)
+- [Kubectl Reference Docs](https://kubernetes.io/docs/reference/generated/kubectl/kubectl-commands#logs)
 
-## Get a shell
+## Get a shell to a running container
+
+Use the following commands:
+
+```bash
+kubectl exec -it POD_NAME -- bash
+# full form
+kubectl exec --stdin --tty POD_NAME --container CONTAINER_NAME -- /bin/bash
+```
 
 *References*:
 

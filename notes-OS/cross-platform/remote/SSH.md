@@ -1,6 +1,6 @@
 # SSH Usage
 
-Last modified: 2023/12/18 16:30:35
+Last modified: 2023/12/29 UTC
 
 - [Create SSH key pair](#create-ssh-key-pair)
 - [Generate public key from private key](#generate-public-key-from-private-key)
@@ -9,6 +9,7 @@ Last modified: 2023/12/18 16:30:35
 - [Kill idle SSH sessions](#kill-idle-ssh-sessions)
 - [Remote port forwarding](#remote-port-forwarding)
     - [Scenario I](#scenario-i)
+- [SCP](#scp)
 
 ## Create SSH key pair
 
@@ -88,3 +89,9 @@ For example, the following command will work perfectly fine on **Server B**:
 ```bash
 git clone git@ADDRESS_OF_SERVER_C:PATH/TO/REPO.git
 ```
+
+## SCP
+
+*References*:
+
+- [How to copy all files from a directory to a remote directory using scp? - Unix & Linux Stack Exchange](https://unix.stackexchange.com/questions/232946/how-to-copy-all-files-from-a-directory-to-a-remote-directory-using-scp)

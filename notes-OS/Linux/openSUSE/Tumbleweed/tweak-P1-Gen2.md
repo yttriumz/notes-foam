@@ -1,7 +1,8 @@
 # Tweak openSUSE Tumbleweed on ThinkPad P1 Gen2
 
-Last modified: 2023/12/18 16:40:31
+Last modified: 2023/12/29 UTC
 
+- [Interesting posts](#interesting-posts)
 - [Change hostname](#change-hostname)
 - [Network settings](#network-settings)
   - [WiFi](#wifi)
@@ -40,7 +41,7 @@ Last modified: 2023/12/18 16:40:31
 - [Development environment](#development-environment)
 - [Gaming](#gaming)
 
-*References*:
+## Interesting posts
 
 - https://opensuse.github.io/openSUSE-docs-revamped-temp/best_of_post/
 - https://opensuse.github.io/openSUSE-docs-revamped-temp/safety_usability/

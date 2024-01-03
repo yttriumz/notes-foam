@@ -1,10 +1,11 @@
 # Security
 
-Last modified: 2023/12/18 16:40:18
+Last modified: 2023/12/27 GMT+8
 
 ## Interesting posts
 
 - [Security and Hardening Guide \| openSUSE Leap 15.5](https://doc.opensuse.org/documentation/leap/security/single-html/book-security/index.html)
+- [Systemd-boot and Full Disk Encryption in Tumbleweed and MicroOS - openSUSE News](https://news.opensuse.org/2023/12/20/systemd-fde/)
 
 ## CPU mitigation
 
