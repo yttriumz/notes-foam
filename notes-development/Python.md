@@ -1,6 +1,6 @@
 # Python
 
-Last modified: 2023/12/29 UTC
+Last modified: 2024/01/02 UTC
 
 - [Interesting posts](#interesting-posts)
 - [VSCode](#vscode)
@@ -20,6 +20,7 @@ Last modified: 2023/12/29 UTC
 ## Interesting posts
 
 - [Status of Python versions](https://devguide.python.org/versions/)
+- [What is Pythonic? \| Secret Weblog](https://blog.startifact.com/posts/older/what-is-pythonic/)
 - [Everything you need to know about the switch to Python 3 | Kali Linux Documentation](https://www.kali.org/docs/general-use/python3-transition/)
 - [A Python Interpreter Written in Python](https://aosabook.org/en/500L/a-python-interpreter-written-in-python.html)
 
