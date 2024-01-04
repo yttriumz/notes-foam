@@ -1,10 +1,10 @@
 # Tumbleweed Package Management
 
-Last modified: 2023/12/04 12:30:59
+Last modified: 2024/01/04 UTC
 
 - [Interesting posts](#interesting-posts)
 - [Zypper](#zypper)
-  - [Add repo](#add-repo)
+  - [Add repositories](#add-repositories)
     - [Packman (essentials) and NVidia](#packman-essentials-and-nvidia)
     - [VSCode](#vscode)
     - [Container](#container)
@@ -16,8 +16,8 @@ Last modified: 2023/12/04 12:30:59
     - [Brave Browser](#brave-browser)
     - [Cloudflare WARP](#cloudflare-warp)
     - [Emulators](#emulators)
-  - [Examine repo](#examine-repo)
-    - [Some repo reference](#some-repo-reference)
+  - [Examine repositories](#examine-repositories)
+    - [Reference for some repositories](#reference-for-some-repositories)
   - [Set priority](#set-priority)
   - [Package query](#package-query)
     - [Unused Packages](#unused-packages)
@@ -42,7 +42,7 @@ Last modified: 2023/12/04 12:30:59
 - [Flatpak](#flatpak)
   - [Interesting posts](#interesting-posts-1)
   - [Install Flatpak](#install-flatpak)
-  - [Add repo](#add-repo-1)
+  - [Add repositories](#add-repositories-1)
   - [Uninstall unused packages](#uninstall-unused-packages)
 - [Become a Packager](#become-a-packager)
 
@@ -57,7 +57,7 @@ Last modified: 2023/12/04 12:30:59
 - [Package repositories - openSUSE Wiki](https://en.opensuse.org/Package_repositories)
 - [Additional package repositories - openSUSE Wiki](https://en.opensuse.org/Additional_package_repositories)
 
-### Add repo
+### Add repositories
 
 #### Packman (essentials) and NVidia
 
@@ -67,7 +67,7 @@ Open *YaST Software Repositories*, select *Add > Community Repositories*, and ch
 
 #### VSCode
 
-- Add VSCode repo (and install VSCode) via the following commands:
+- Add VSCode repository (and install VSCode) via the following commands:
 
   ```bash
   rpm --import https://packages.microsoft.com/keys/microsoft.asc
@@ -84,7 +84,7 @@ Open *YaST Software Repositories*, select *Add > Community Repositories*, and ch
 
 #### Container
 
-Add *Virtualization:containers* repo via the following commands:
+Add *Virtualization:containers* repository via the following commands:
 
 ```bash
 zypper addrepo https://download.opensuse.org/repositories/Virtualization:/containers/openSUSE_Tumbleweed/Virtualization:containers.repo
@@ -97,7 +97,7 @@ zypper addrepo https://download.opensuse.org/repositories/Virtualization:/contai
 #### NVIDIA Container Toolkit
 
 1. Install NVIDIA drivers. See [[tweak-P1-Gen2#Install driver and prime-select]].
-2. Add *NVIDIA Container Toolkit* repo via the following commands:
+2. Add *NVIDIA Container Toolkit* repository via the following commands:
 
    ```bash
    zypper addrepo https://nvidia.github.io/libnvidia-container/opensuse-leap15.5/libnvidia-container.repo
@@ -132,7 +132,7 @@ zypper addrepo https://download.opensuse.org/repositories/Virtualization:/contai
 
 #### CUDA
 
-Add *CUDA* repo via the following commands:
+Add *CUDA* repository via the following commands:
 
 ```bash
 zypper addrepo -p 100 https://developer.download.nvidia.com/compute/cuda/repos/opensuse15/x86_64/cuda-opensuse15.repo
@@ -144,7 +144,7 @@ zypper addrepo -p 100 https://developer.download.nvidia.com/compute/cuda/repos/o
 
 #### M17N (Multilingualization)
 
-Add *M17N* repo via the following commands:
+Add *M17N* repository via the following commands:
 
 ```bash
 zypper addrepo https://download.opensuse.org/repositories/M17N/openSUSE_Tumbleweed/M17N.repo
@@ -152,7 +152,7 @@ zypper addrepo https://download.opensuse.org/repositories/M17N/openSUSE_Tumblewe
 
 #### Google Chrome
 
-- Add *Google Chrome* repo and (and install *Google Chrome*) via the following commands:
+- Add *Google Chrome* repository and (and install *Google Chrome*) via the following commands:
 
   ```bash
   rpm --import https://dl.google.com/linux/linux_signing_key.pub
@@ -170,7 +170,7 @@ zypper addrepo https://download.opensuse.org/repositories/M17N/openSUSE_Tumblewe
 
 #### Microsoft Edge
 
-- Add *Microsoft Edge* repo (and install *Microsoft Edge*) via the following commands:
+- Add *Microsoft Edge* repository (and install *Microsoft Edge*) via the following commands:
 
   ```bash
   rpm --import https://packages.microsoft.com/keys/microsoft.asc
@@ -183,7 +183,7 @@ zypper addrepo https://download.opensuse.org/repositories/M17N/openSUSE_Tumblewe
 
 #### Brave Browser
 
-- Add *Brave* repo (and install *Brave*) via the following commands:
+- Add *Brave* repository (and install *Brave*) via the following commands:
 
   ```bash
   rpm --import https://brave-browser-rpm-release.s3.brave.com/brave-core.asc
@@ -200,7 +200,7 @@ zypper addrepo https://download.opensuse.org/repositories/M17N/openSUSE_Tumblewe
 
 #### Cloudflare WARP
 
-- At the time of updating (*Tumbleweed 20230718, WARP 2023.7.40*), add *WARP* repo (and install *WARP*) via the following commands:
+- At the time of updating (*Tumbleweed 20230718, WARP 2023.7.40*), add *WARP* repository (and install *WARP*) via the following commands:
 
   ```bash
   zypper addrepo https://pkg.cloudflareclient.com/cloudflare-warp-ascii.repo
@@ -218,18 +218,18 @@ See [[WARP]] for configuration.
 
 #### Emulators
 
-Add *Emulators* repo via the following commands:
+Add *Emulators* repository via the following commands:
 
 ```bash
 zypper addrepo https://download.opensuse.org/repositories/Emulators/openSUSE_Tumbleweed/Emulators.repo
 ```
 
-### Examine repo
+### Examine repositories
 
 - Use *YaST*.
 - Or use `zypper repos -P`.
 
-#### Some repo reference
+#### Reference for some repositories
 
 ![repos](attachments/Screenshot%202023-02-13%20151118.png)
 
@@ -289,7 +289,7 @@ Use `zypper install PATH_TO_RPM`.
 
 ### WezTerm
 
-At the time of writing (*WezTerm 20230326.111934.3666303c-1.1* in official repo), **if you install WezTerm using `zypper install wezterm` from openSUSE's repo**, there is a bug that WezTerm leaves a file `dhat-heap.json` in the directory where it's opened on. Directly installing the official package could solve the problem. Go to [the official site](https://wezfurlong.org/wezterm/install/linux.html#installing-on-fedora-and-rpm-based-systems) to find the latest stable version.
+At the time of writing (*WezTerm 20230326.111934.3666303c-1.1* form official site), **if you install WezTerm using `zypper install wezterm` from openSUSE's repository**, there is a bug that WezTerm leaves a file `dhat-heap.json` in the directory where it's opened on. Directly installing the official package could solve the problem. Go to [the official site](https://wezfurlong.org/wezterm/install/linux.html#installing-on-fedora-and-rpm-based-systems) to find the latest stable version.
 
 ### Zoom
 
@@ -359,9 +359,9 @@ Use `zypper install opi`.
 
 Use `zypper install flatpak`.
 
-### Add repo
+### Add repositories
 
-Use the following commands:
+Add *flathub* repository via the following commands:
 
 ```bash
 flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
@@ -385,5 +385,5 @@ Use `flatpak uninstall --unused`.
 [tweak-P1-Gen2#NVIDIA graphics card]: tweak-P1-Gen2.md "Tweak openSUSE Tumbleweed on ThinkPad P1 Gen2"
 [tweak-P1-Gen2#Install driver and prime-select]: tweak-P1-Gen2.md "Tweak openSUSE Tumbleweed on ThinkPad P1 Gen2"
 [#WARP (manually)]: packages.md "Tumbleweed Package Management"
-[WARP]: ../../../cross-platform/remote/WARP.md "Cloudflare WARP"
+[WARP]: ..%2F..%2F..%2Fcross-platform%2Fremote%2FWARP.md "Cloudflare WARP Usage"
 [//end]: # "Autogenerated link references"

@@ -1,6 +1,6 @@
 # Tweak openSUSE Tumbleweed on ThinkPad P1 Gen2
 
-Last modified: 2023/12/29 UTC
+Last modified: 2024/01/04 UTC
 
 - [Interesting posts](#interesting-posts)
 - [Change hostname](#change-hostname)
@@ -198,7 +198,7 @@ See [[terminal-tools#Zellij]].
 
 ### Install driver and prime-select
 
-1. Add NVidia's repo. See [[Tumbleweed/packages#Packman (essentials) and NVidia]].
+1. Add NVidia's repository. See [[Tumbleweed/packages#Packman (essentials) and NVidia]].
 2. Install drivers. On my machine (*ThinkPad P1 Gen2 with T2000*), I tested 2 methods:
 
    - Install legacy driver `x11-video-nvidiaG05` and `suse-prime`.
