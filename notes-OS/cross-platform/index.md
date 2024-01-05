@@ -9,6 +9,7 @@ type: index
   - [[terminal-tools]]
   - [[remote/index]]
   - [[cross-platform/git]]
+  - [[GitHub]]
   - [[VSCode]]
   - [[Neovim]]
   - [[Helix]]
@@ -26,6 +27,7 @@ type: index
 [terminal-tools]: ..%2FLinux%2Fcross-distro%2Fterminal-tools.md "Terminal Related Tools"
 [remote/index]: remote%2Findex.md "Remote Development"
 [cross-platform/git]: git.md "Git Usage"
+[GitHub]: GitHub.md "GitHub Usage"
 [VSCode]: VSCode.md "Visual Studio Code Usage"
 [Neovim]: Neovim.md "Neovim"
 [Helix]: Helix.md "Helix"

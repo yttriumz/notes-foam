@@ -76,7 +76,7 @@ sudo install minikube-linux-amd64 /usr/local/bin/minikube
 
 ## kubectl
 
-- Install kubectl from the repo via the following commands:
+- Install kubectl from the repository via the following commands:
 
   ```bash
   curl -fsSL https://packages.cloud.google.com/apt/doc/apt-key.gpg | sudo gpg --dearmor -o /etc/apt/keyrings/kubernetes-archive-keyring.gpg

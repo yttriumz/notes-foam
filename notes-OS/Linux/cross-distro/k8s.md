@@ -1,6 +1,6 @@
 # Kubernetes Usage
 
-Last modified: 2023/12/29 UTC
+Last modified: 2024/01/03 UTC
 
 - [Interesting posts](#interesting-posts)
 - [Management tool](#management-tool)
@@ -13,6 +13,7 @@ Last modified: 2023/12/29 UTC
 
 ## Interesting posts
 
+- [Error installing from official repos onto Ubuntu · Issue #3219 · kubernetes/release](https://github.com/kubernetes/release/issues/3219)
 - [kubectl Usage Conventions \| Kubernetes](https://kubernetes.io/docs/reference/kubectl/conventions/)
 - [Kubernetes The Hard Way On VirtualBox](https://github.com/mmumshad/kubernetes-the-hard-way)
 - [Why is learning Kubernetes so intimidating? : devops](https://www.reddit.com/r/devops/comments/o7w9yn/why_is_learning_kubernetes_so_intimidating/)

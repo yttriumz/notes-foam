@@ -1,6 +1,6 @@
 # Git Usage
 
-Last modified: 2023/12/18 16:30:48
+Last modified: 2024/01/04 UTC
 
 - [Interesting posts](#interesting-posts)
 - [Git configuration](#git-configuration)
@@ -8,7 +8,6 @@ Last modified: 2023/12/18 16:30:48
   - [Configure user](#configure-user)
   - [Automatic transformation (Windows)](#automatic-transformation-windows)
   - [Specify how to reconcile divergent branches](#specify-how-to-reconcile-divergent-branches)
-  - [Add SSH key to GitHub](#add-ssh-key-to-github)
   - [Use non-default SSH keys for remote connection](#use-non-default-ssh-keys-for-remote-connection)
   - [Use different keys for different repositories](#use-different-keys-for-different-repositories)
 - [Clone to a specific directory](#clone-to-a-specific-directory)
@@ -24,14 +23,8 @@ Last modified: 2023/12/18 16:30:48
 - [Push to all remotes](#push-to-all-remotes)
 - [Push an existing repository to a new remote](#push-an-existing-repository-to-a-new-remote)
 - [Hard reset remote branch](#hard-reset-remote-branch)
-- [Private fork](#private-fork)
 - [Embedded repositories](#embedded-repositories)
 - [Submodule](#submodule)
-- [墙国专属](#墙国专属)
-  - [Change `hosts`](#change-hosts)
-  - [Set proxy](#set-proxy)
-    - [Linux](#linux)
-  - [Other methods](#other-methods)
 
 ## Interesting posts
 
@@ -94,11 +87,6 @@ fatal: Need to specify how to reconcile divergent branches.
 - [How can I deal with this Git warning? "Pulling without specifying how to reconcile divergent branches is discouraged"](https://stackoverflow.com/questions/62653114/how-can-i-deal-with-this-git-warning-pulling-without-specifying-how-to-reconci)
 - ["You have divergent branches and need to specify how to reconcile them."](https://github.com/desktop/desktop/issues/14431#issuecomment-1106634672)
 
-### Add SSH key to GitHub
-
-1. (Optional) Create a new key pair. See [[SSH#Create SSH key pair]].
-2. See [the GitHub guide](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/adding-a-new-ssh-key-to-your-github-account).
-
 ### Use non-default SSH keys for remote connection
 
 *References*:
@@ -116,7 +104,7 @@ fatal: Need to specify how to reconcile divergent branches.
 
 ## Clone to a specific directory
 
-Use `git clone git@github.com:SOME_REPO TARGET_DIRECTORY`.
+Use `git clone REMOTE_REPO TARGET_DIRECTORY`.
 
 *References*:
 
@@ -223,46 +211,6 @@ git push --set-upstream origin --tags
 
 After hard resetting the local repository, use `git push -f REMOTE_REPO BRANCH_NAME` to hard reset the remote repository.
 
-## Private fork
-
-1. Create a new repository (`PRI_REPO`) via the GitHub Website.
-2. Duplicate the public repository (`PUB_REPO`) via the following commands:
-
-   ```bash
-   git clone --bare https://github.com/exampleuser/PUB_REPO.git
-   cd PUB_REPO.git
-   git push --mirror https://github.com/yourname/PRI_REPO.git
-   cd ..
-   rm -rf PUB_REPO.git
-   ```
-
-3. Clone the private repository and add `upstream` via the following commands:
-
-   ```bash
-   git clone https://github.com/yourname/PRI_REPO.git
-   cd PRI_REPO
-   git remote add upstream https://github.com/exampleuser/PUB_REPO.git
-   git remote set-url --push upstream DISABLE # Optional
-   ```
-
-   - Pull updates from `upstream` via the following commands:
-
-     ```bash
-     git pull upstream master # Creates a merge commit
-     ```
-
-   - Push to `PRI_REPO`:
-
-     ```bash
-     git push origin master
-     ```
-
-*References*:
-
-- [GitHub: How to make a fork of public repository private?](https://stackoverflow.com/questions/10065526/github-how-to-make-a-fork-of-PUB_REPOsitory-private)
-- [Create a private fork of a public repository](https://gist.github.com/0xjac/85097472043b697ab57ba1b1c7530274)
-- [Duplicating a repository](https://docs.github.com/en/repositories/creating-and-managing-repositories/duplicating-a-repository)
-
 ## Embedded repositories
 
 *References*:
@@ -276,38 +224,3 @@ After hard resetting the local repository, use `git push -f REMOTE_REPO BRANCH_N
 - [Git - Submodules](https://git-scm.com/book/en/v2/Git-Tools-Submodules)
 - [Git submodule \| Atlassian](https://www.atlassian.com/git/tutorials/git-submodule)
 - [How to change the remote repository for a git submodule? - Stack Overflow](https://stackoverflow.com/questions/913701/how-to-change-the-remote-repository-for-a-git-submodule)
-
-## 墙国专属
-
-### Change `hosts`
-
-Get `hosts` from the following sites:
-
-- https://github.com/521xueweihan/GitHub520
-- https://github.com/ineo6/hosts
-  - https://ineo6.github.io/hosts/
-- https://github.com/isevenluo/github-hosts
-
-*References*:
-
-- [修改 Hosts 解决 Github 访问失败马克](https://zhuanlan.zhihu.com/p/107334179)
-
-### Set proxy
-
-#### Linux
-
-*References*:
-
-- [Configure Git to use a proxy](https://gist.github.com/evantoli/f8c23a37eb3558ab8765)
-- [Configure Git to use a proxy (https or SSH+GIT)](https://gist.github.com/ozbillwang/005bd1dfc597a2f3a00148834ad3e551)
-- [Git设置代理服务器](https://blog.csdn.net/yanhanhui1/article/details/118769098)
-
-### Other methods
-
-*References*:
-
-- https://github.com/dotnetcore/FastGithub
-
-[//begin]: # "Autogenerated link references for markdown compatibility"
-[SSH#Create SSH key pair]: remote%2FSSH.md "SSH Usage"
-[//end]: # "Autogenerated link references"
