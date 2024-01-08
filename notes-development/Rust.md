@@ -1,6 +1,6 @@
 # Rust
 
-Last modified: 2023/12/20 GMT+8
+Last modified: 2024/01/04 UTC
 
 - [Interesting posts](#interesting-posts)
   - [Tools](#tools)
@@ -78,9 +78,6 @@ Last modified: 2023/12/20 GMT+8
 ### `settings.json`
 
 ```json
-"[rust]": {
-  "editor.formatOnSave": true,
-},
 "crates.listPreReleases": true, // Optional
 "rust-analyzer.check.command": "clippy",
 ```

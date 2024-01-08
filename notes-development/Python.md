@@ -1,6 +1,6 @@
 # Python
 
-Last modified: 2024/01/02 UTC
+Last modified: 2024/01/04 UTC
 
 - [Interesting posts](#interesting-posts)
 - [VSCode](#vscode)
@@ -29,10 +29,6 @@ Last modified: 2024/01/02 UTC
 ### `settings.json`
 
 ```json
-"[python]": {
-  "editor.formatOnSave": true,
-  "editor.formatOnType": true
-},
 "python.analysis.autoImportCompletions": true,
 "python.analysis.inlayHints.callArgumentNames": "partial",
 "python.analysis.inlayHints.functionReturnTypes": true,
@@ -40,11 +36,7 @@ Last modified: 2024/01/02 UTC
 "python.analysis.inlayHints.variableTypes": true,
 // "python.defaultInterpreterPath": "${workspaceFolder}/.venv/bin/python",
 // "python.defaultInterpreterPath": "${workspaceFolder}\\.venv\\Scripts\\python.exe",
-"python.formatting.provider": "black",
-"python.formatting.blackArgs": [
-  "--line-length",
-  "80"
-],
+// "python.formatting.provider": "black", // deprecated
 "python.linting.mypyEnabled": true,
 ```
 

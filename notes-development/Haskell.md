@@ -1,6 +1,10 @@
 # Haskell
 
-Last modified: 2024/01/02 UTC
+Last modified: 2024/01/04 UTC
+
+- [Interesting posts](#interesting-posts)
+- [VSCode](#vscode)
+  - [`settings.json`](#settingsjson)
 
 ## Interesting posts
 
@@ -14,3 +18,13 @@ Last modified: 2024/01/02 UTC
 - [haskell - Where does the name "xs" for pattern matching come from? - Stack Overflow](https://stackoverflow.com/questions/13701099/where-does-the-name-xs-for-pattern-matching-come-from):
   > You might wonder where the variable name `xs` comes from in the Haskell function. This is a common naming pattern for lists: you can read the `s` as a suffix, so the name is essentially “plural of `x`”.
 - [God, why does the best language in the world has to have the worst tooling in the world? : haskell](https://www.reddit.com/r/haskell/comments/18ubkj5/god_why_does_the_best_language_in_the_world_has/)
+
+## VSCode
+
+### `settings.json`
+
+```json
+"todo-tree.regex.regex": "((--\\s*($TAGS))|\\{-\\s($TAGS).*(\\n.*)*-})",
+// REF: https://github.com/haskell/haskell-language-server/issues/3130
+"haskell.plugin.rename.config.crossModule": true
+```
