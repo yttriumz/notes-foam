@@ -1,6 +1,6 @@
 # Docker Usage
 
-Last modified: 2023/12/29 UTC
+Last modified: 2024/01/08 UTC
 
 - [Manage Docker as a non-root user (less secure)](#manage-docker-as-a-non-root-user-less-secure)
 - [Rootless mode (more secure)](#rootless-mode-more-secure)
@@ -95,6 +95,7 @@ Check a container's IP via the following commands:
 *References*:
 
 - [How to SSH into a Running Docker Container and Run Commands](https://phoenixnap.com/kb/how-to-ssh-into-docker-container#ftoc-heading-2)
+- [How to SSH into a Docker Container \| phoenixNAP KB](https://phoenixnap.com/kb/how-to-ssh-into-docker-container#ftoc-heading-2)
 
 ## Access host's ports in containers
 
@@ -102,7 +103,7 @@ Check the `docker0` interface IP of the host via `ip addr show docker0`.
 
 *References*:
 
-- [How do I access the host port in a Docker container?](https://bright-softwares.com/blog/en/docker/how-do-i-access-the-host-port-in-a-docker-container#step-2-get-the-containers-ip)
+- [How do I access the host port in a Docker container?](https://bright-softwares.com/blog/en/docker/how-do-i-access-the-host-port-in-a-docker-container#step-1-get-the-hosts-ip-address)
 
 ## `docker save` & `docker export`
 

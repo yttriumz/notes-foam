@@ -108,6 +108,11 @@ chmod 700 get_helm.sh
 
 ## Redpanda
 
+*References*:
+
+- [Redpanda vs. Kafka: A performance comparison (2022 update)](https://redpanda.com/blog/redpanda-vs-kafka-performance-benchmark)
+- [Running Redpanda on Kubernetes - Piotr's TechBlog](https://piotrminkowski.com/2022/09/06/running-redpanda-on-kubernetes/)
+
 ### `minikube` and `docker`
 
 *References*:

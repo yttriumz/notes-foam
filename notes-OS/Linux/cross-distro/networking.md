@@ -1,7 +1,8 @@
 # Networking
 
-Last modified: 2023/12/18 16:40:03
+Last modified: 2024/01/08 UTC
 
+- [Interesting posts](#interesting-posts)
 - [Add certificates](#add-certificates)
 - [Web debugging proxies](#web-debugging-proxies)
 - [Check open ports](#check-open-ports)
@@ -9,6 +10,10 @@ Last modified: 2023/12/18 16:40:03
 - [Create Hotspot](#create-hotspot)
    - [Use `linux-wifi-hotspot`](#use-linux-wifi-hotspot)
       - [Manually install](#manually-install)
+
+## Interesting posts
+
+- [What's the meaning of `linkdown` and `onlink' in Linux Route? - Unix & Linux Stack Exchange](https://unix.stackexchange.com/questions/579087/whats-the-meaning-of-linkdown-and-onlink-in-linux-route)
 
 ## Add certificates
 
