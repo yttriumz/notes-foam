@@ -1,6 +1,6 @@
 # Python
 
-Last modified: 2024/01/04 UTC
+Last modified: 2024/01/08 UTC
 
 - [Interesting posts](#interesting-posts)
 - [VSCode](#vscode)
@@ -37,7 +37,7 @@ Last modified: 2024/01/04 UTC
 // "python.defaultInterpreterPath": "${workspaceFolder}/.venv/bin/python",
 // "python.defaultInterpreterPath": "${workspaceFolder}\\.venv\\Scripts\\python.exe",
 // "python.formatting.provider": "black", // deprecated
-"python.linting.mypyEnabled": true,
+// "python.linting.mypyEnabled": true, // deprecated
 ```
 
 ### `extension.json`

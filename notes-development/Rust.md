@@ -1,6 +1,6 @@
 # Rust
 
-Last modified: 2024/01/04 UTC
+Last modified: 2024/01/09 UTC
 
 - [Interesting posts](#interesting-posts)
   - [Tools](#tools)
@@ -39,6 +39,15 @@ Last modified: 2024/01/04 UTC
 
 ### Tools
 
+> [!NOTE]
+> This alert uses [!NOTE]
+
+> [!IMPORTANT]
+> This alert uses [!IMPORTANT]
+
+> [!WARNING]
+> This alert uses [!WARNING]
+
 - Cargo cache:
   - [Cargo cache cleaning \| Rust Blog](https://blog.rust-lang.org/2023/12/11/cargo-cache-cleaning.html)
   - [How to clear the Cargo cache?](https://stackoverflow.com/questions/25072930/how-to-clear-the-cargo-cache)
@@ -72,6 +81,7 @@ Last modified: 2024/01/04 UTC
 - [RISC-V: 跟着清华训练营从零打造OS](https://mp.weixin.qq.com/mp/appmsgalbum?action=getalbum&__biz=Mzg4Nzk4MTY3Nw==&scene=2&album_id=3162993568748208133)
 - [RustForLinux：跟着清华训练营从零打造 Linux 驱动](https://mp.weixin.qq.com/mp/appmsgalbum?__biz=Mzg4Nzk4MTY3Nw==&action=getalbum&album_id=3183255184072835074)
 - [Write a Toy VPN in Rust](https://write.yiransheng.com/vpn)
+- [Writing an OS in Rust](https://os.phil-opp.com/)
 
 ## VSCode
 
