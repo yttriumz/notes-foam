@@ -1,6 +1,6 @@
 # File System
 
-Last modified: 2023/12/14 15:26:06
+Last modified: 2024/01/11 UTC
 
 - [Interesting posts](#interesting-posts)
 - [Btrfs](#btrfs)
@@ -15,6 +15,7 @@ Last modified: 2023/12/14 15:26:06
 - [Where should a local executable be placed?](https://unix.stackexchange.com/questions/36871/where-should-a-local-executable-be-placed)
 - [Use the XDG standard bin directory on linux?](https://github.com/JuliaLang/juliaup/issues/247)
 - [What does `/opt` mean in Linux?](https://www.baeldung.com/linux/opt-directory)
+- [What happens when you delete a file in Linux? \| Enable Sysadmin](https://www.redhat.com/sysadmin/linux-delete-file-rm)
 
 ## Btrfs
 

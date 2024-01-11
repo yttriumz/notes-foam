@@ -1,6 +1,6 @@
 # Python
 
-Last modified: 2024/01/08 UTC
+Last modified: 2024/01/11 UTC
 
 - [Interesting posts](#interesting-posts)
 - [VSCode](#vscode)
@@ -9,6 +9,7 @@ Last modified: 2024/01/08 UTC
   - [Pyright extension](#pyright-extension)
 - [Manage environment](#manage-environment)
   - [Pyenv](#pyenv)
+    - [Installation](#installation)
   - [venv](#venv)
     - [Create venv environment](#create-venv-environment)
     - [Activate venv environment](#activate-venv-environment)
@@ -67,7 +68,7 @@ Last modified: 2024/01/08 UTC
 
 ### Pyenv
 
-For installation, see:
+#### Installation
 
 - openSUSE Tumbleweed: [[Tumbleweed/dev-env#Pyenv]]
 
@@ -83,7 +84,7 @@ Use `python3 -m venv --upgrade-deps PATH/TO/NEW/VENV`.
 
 #### Activate venv environment
 
-![venv_activate](attachments/venv_activate.png)
+![venv_activate](attachments/Python/venv_activate.png)
 
 *References*:
 

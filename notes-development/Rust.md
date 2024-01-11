@@ -1,6 +1,6 @@
 # Rust
 
-Last modified: 2024/01/09 UTC
+Last modified: 2024/01/10 UTC
 
 - [Interesting posts](#interesting-posts)
   - [Tools](#tools)
@@ -38,15 +38,6 @@ Last modified: 2024/01/09 UTC
 - [Learning Rust, my experience so far has been mixed : rust](https://www.reddit.com/r/rust/comments/18i8y39/learning_rust_my_experience_so_far_has_been_mixed/)
 
 ### Tools
-
-> [!NOTE]
-> This alert uses [!NOTE]
-
-> [!IMPORTANT]
-> This alert uses [!IMPORTANT]
-
-> [!WARNING]
-> This alert uses [!WARNING]
 
 - Cargo cache:
   - [Cargo cache cleaning \| Rust Blog](https://blog.rust-lang.org/2023/12/11/cargo-cache-cleaning.html)

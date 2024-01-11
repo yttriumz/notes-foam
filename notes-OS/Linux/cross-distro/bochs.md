@@ -1,10 +1,11 @@
 # bochs Usage
 
-Last modified: 2023/12/16 00:00:28
+Last modified: 2024/01/10 UTC
 
+- [Installation](#installation)
 - [Capture and release mouse](#capture-and-release-mouse)
 
-For installation, see:
+## Installation
 
 - openSUSE Tumbleweed: [[Tumbleweed/dev-env#bochs]]
 

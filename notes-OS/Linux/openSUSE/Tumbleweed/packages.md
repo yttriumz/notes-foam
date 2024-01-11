@@ -1,6 +1,6 @@
 # Tumbleweed Package Management
 
-Last modified: 2024/01/04 UTC
+Last modified: 2024/01/11 UTC
 
 - [Interesting posts](#interesting-posts)
 - [Zypper](#zypper)
@@ -231,7 +231,7 @@ zypper addrepo https://download.opensuse.org/repositories/Emulators/openSUSE_Tum
 
 #### Reference for some repositories
 
-![repos](attachments/Screenshot%202023-02-13%20151118.png)
+![repos](attachments/packages/repo_ref.png)
 
 ### Set priority
 

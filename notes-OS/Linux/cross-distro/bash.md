@@ -1,6 +1,6 @@
 # Bash Usage
 
-Last modified: 2023/12/18 16:38:11
+Last modified: 2024/01/10 UTC
 
 - [Interesting posts](#interesting-posts)
 - [Configuration files](#configuration-files)
@@ -1063,7 +1063,7 @@ Press `Alt`+`Ctrl`+`E`.
 
 *References*:
 
-- [complete-alias](https://github.com/cykerway/complete-alias)
+- [cykerway/complete-alias: automagical shell alias completion;](https://github.com/cykerway/complete-alias)
 
 ## Redirect command/script/application output
 

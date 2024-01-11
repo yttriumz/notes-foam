@@ -1,6 +1,6 @@
 # Kernel-based Virtual Machine Usage
 
-Last modified: 2023/11/06 11:15:41
+Last modified: 2024/01/11 UTC
 
 - [Start service](#start-service)
 - [Virtual network](#virtual-network)
@@ -109,11 +109,11 @@ At the time of writing (*Tumbleweed 20230727, kvm_tools 20210330-5.1, libvirt 9.
 
 1. Enable shared memory:
 
-   ![Enable shared memory](attachments/shared_mem.png)
+   ![Enable shared memory](attachments/KVM/shared_mem.png)
 
 2. Add hardware:
 
-   ![Add hardware](attachments/add_hw.png)
+   ![Add hardware](attachments/KVM/add_hw.png)
 
    Then edit XML as follows:
 
@@ -210,7 +210,7 @@ At the time of writing (*Tumbleweed 20230727, kvm_tools 20210330-5.1, libvirt 9.
 
 Note that at the time of writing (*Tumbleweed 20230727, libvirt 9.5.0-2.1*), cloning onto existing storage volume is not currently supported. But you can still change the path of the new virtual disk to be created (do **not** click that "Browse" button):
 
-![Change disk path](attachments/change_disk_path.png)
+![Change disk path](attachments/KVM/change_disk_path.png)
 
 *References*:
 
@@ -452,7 +452,7 @@ Use ~~`looking-glass-client -s -m KEY_HOME`~~ `looking-glass-client -m KEY_HOME`
 
 Forbid apps from blocking compositing (it drops framerate):
 
-![KDE compositor](attachments/compositor.png)
+![KDE compositor](attachments/KVM/compositor.png)
 
 *References*:
 

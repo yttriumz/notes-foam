@@ -1,7 +1,8 @@
 # Docker Usage
 
-Last modified: 2024/01/08 UTC
+Last modified: 2024/01/10 UTC
 
+- [Installation](#installation)
 - [Manage Docker as a non-root user (less secure)](#manage-docker-as-a-non-root-user-less-secure)
 - [Rootless mode (more secure)](#rootless-mode-more-secure)
 - [Configure automatically start behavior](#configure-automatically-start-behavior)
@@ -13,7 +14,7 @@ Last modified: 2024/01/08 UTC
 - [Run a local registry server (image server)](#run-a-local-registry-server-image-server)
 - [WARP issue](#warp-issue)
 
-For installation, see:
+## Installation
 
 - openSUSE Tumbleweed: [[Tumbleweed/dev-env#Docker]]
 

@@ -1,6 +1,6 @@
 # Networking
 
-Last modified: 2024/01/08 UTC
+Last modified: 2024/01/10 UTC
 
 - [Interesting posts](#interesting-posts)
 - [Add certificates](#add-certificates)
@@ -14,6 +14,7 @@ Last modified: 2024/01/08 UTC
 ## Interesting posts
 
 - [What's the meaning of `linkdown` and `onlink' in Linux Route? - Unix & Linux Stack Exchange](https://unix.stackexchange.com/questions/579087/whats-the-meaning-of-linkdown-and-onlink-in-linux-route)
+- [Stop using Telnet to test ports \| Enable Sysadmin](https://www.redhat.com/sysadmin/stop-using-telnet-test-port)
 
 ## Add certificates
 

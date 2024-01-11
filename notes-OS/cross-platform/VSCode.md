@@ -1,7 +1,8 @@
 # Visual Studio Code Usage
 
-Last modified: 2024/01/02 UTC
+Last modified: 2024/01/10 UTC
 
+- [Installation](#installation)
 - [Multi cursor](#multi-cursor)
 - [Cloud Changes (Edit Session)](#cloud-changes-edit-session)
 - [Regex search and replace](#regex-search-and-replace)
@@ -11,7 +12,7 @@ Last modified: 2024/01/02 UTC
 - [Extensions](#extensions)
   - [Todo Tree](#todo-tree)
 
-For installation, see:
+## Installation
 
 - openSUSE Tumbleweed: [[Tumbleweed/packages#VSCode]]
 
@@ -29,12 +30,20 @@ For installation, see:
 
 ## Regex search and replace
 
-- Use `(lib[a-z]*[0-9][0-9])` (note the parentheses here) to match `libavcodec56`, `libavcodec57`, `libavcodec58`, `libavformat56`, `libavformat57`, `libavformat58`, `libavdevice56`, `libavdevice57`, `libavdevice58` in the search field.
-- Wrap them with backtick `` ` `` using `` `$1` `` in the replace field.
+Some examples:
+
+1. Use `(lib[a-z]*[0-9][0-9])` (note the parentheses) to match `libavcodec56`, `libavcodec57`, `libavcodec58`, `libavformat56`, `libavformat57`, `libavformat58`, `libavdevice56`, `libavdevice57`, `libavdevice58` in the search field.
+
+   Refer to them using `$1` in the replace field.
+
+2. Use `\$\{([a-zA-Z_]+[a-zA-Z0-9_]*)\}` (note the parentheses) to match `${ENV_VAR}`, `${env}, ${_FOOBAR_}` in the search field.
+
+   Remove the braces (`{}`) around them (while keeping `$`) using `$$$1` in the replace field.
 
 *References*:
 
-- [VS Code: Search-and-Replace Regex](https://dev.to/rfornal/vs-code-search-and-replace-regex-mn2)
+- [VS Code: Search-and-Replace Regex - DEV Community](https://dev.to/rfornal/vs-code-search-and-replace-regex-mn2)
+- [VS Code: Search-and-Replace Regex with Dollar-Sign - DEV Community](https://dev.to/rfornal/vs-code-search-and-replace-regex-with-dollar-sign-4bph)
 - [🔎 vscode \| regex find and replace](https://www.youtube.com/watch?v=xMhKstbdr3k)
 
 ## KWallet Related

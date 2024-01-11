@@ -13,9 +13,9 @@ This machine uses BCM4312. Install `broadcom-wl` from Packman Repository to get 
 
 <details>
 
-![BCM4312_1](./attachments/BCM4312_1.png)
+![BCM4312_1](./attachments/tweak-S10-2/BCM4312_1.png)
 
-![BCM4312_2](./attachments/BCM4312_2.png)
+![BCM4312_2](./attachments/tweak-S10-2/BCM4312_2.png)
 
 </details>
 

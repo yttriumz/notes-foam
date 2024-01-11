@@ -1,7 +1,8 @@
 # Cloudflare WARP Usage
 
-Last modified: 2023/12/20 GMT+8
+Last modified: 2024/01/10 UTC
 
+- [Installation](#installation)
 - [Interesting posts](#interesting-posts)
 - [Commonly used subcommands (*warp-cli 2023.3.398*)](#commonly-used-subcommands-warp-cli-20233398)
 - [Select endpoint](#select-endpoint)
@@ -9,7 +10,7 @@ Last modified: 2023/12/20 GMT+8
 - [Troubleshooting](#troubleshooting)
   - [Unable to connect to Cloudflare WARP daemon](#unable-to-connect-to-cloudflare-warp-daemon)
 
-For installation, see:
+## Installation
 
 - Linux:
   - openSUSE Tumbleweed: [[Tumbleweed/packages#Cloudflare WARP]]

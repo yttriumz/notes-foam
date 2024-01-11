@@ -1,6 +1,6 @@
 # Tweak openSUSE Tumbleweed on ThinkPad P1 Gen2
 
-Last modified: 2024/01/04 UTC
+Last modified: 2024/01/10 UTC
 
 - [Interesting posts](#interesting-posts)
 - [Change hostname](#change-hostname)
@@ -22,6 +22,7 @@ Last modified: 2024/01/04 UTC
   - [If graphics driver or graphical desktop does not work](#if-graphics-driver-or-graphical-desktop-does-not-work)
   - [Benchmark](#benchmark)
 - [Codecs](#codecs)
+- [Touchpad gestures](#touchpad-gestures)
 - [Fingerprint](#fingerprint)
 - [IR camera](#ir-camera)
 - [Bluetooth](#bluetooth)
@@ -265,6 +266,12 @@ Refer to [the wiki](https://en.opensuse.org/SDB:Firefox_MP4/H.264_Video_Support)
 - [openSUSE Simplifies Codec Installation](https://news.opensuse.org/2023/01/24/opensuse-simplifies-codec-install/)
 - [I've been using OpenSuse Tumbleweed for 40 days. My experience. Great for gaming.](https://www.youtube.com/watch?v=owOSnus9XU0)
 - [Codecs, it's easier to install them than you think. (Opi) : openSUSE](https://www.reddit.com/r/openSUSE/comments/p6q60u/codecs_its_easier_to_install_them_than_you_think/)
+
+## Touchpad gestures
+
+*References*:
+
+- [JoseExposito/touchegg: Linux multi-touch gesture recognizer](https://github.com/JoseExposito/touchegg)
 
 ## Fingerprint
 
