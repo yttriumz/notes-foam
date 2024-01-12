@@ -1,8 +1,9 @@
 # Docker Usage
 
-Last modified: 2024/01/10 UTC
+Last modified: 2024/01/12 UTC
 
 - [Installation](#installation)
+- [Interesting posts](#interesting-posts)
 - [Manage Docker as a non-root user (less secure)](#manage-docker-as-a-non-root-user-less-secure)
 - [Rootless mode (more secure)](#rootless-mode-more-secure)
 - [Configure automatically start behavior](#configure-automatically-start-behavior)
@@ -10,13 +11,27 @@ Last modified: 2024/01/10 UTC
 - [Access containers' ports from the host](#access-containers-ports-from-the-host)
 - [Access host's ports in containers](#access-hosts-ports-in-containers)
 - [`docker save` \& `docker export`](#docker-save--docker-export)
-- [VSCode \& Docker](#vscode--docker)
 - [Run a local registry server (image server)](#run-a-local-registry-server-image-server)
+- [Container networking](#container-networking)
+  - [Default (bridge) network](#default-bridge-network)
+  - [Custom bridge network](#custom-bridge-network)
+  - [Container defined network](#container-defined-network)
+  - [No networking](#no-networking)
+- [Container storage](#container-storage)
+  - [Types of volume](#types-of-volume)
+  - [Check volume information](#check-volume-information)
+- [VSCode \& Docker](#vscode--docker)
 - [WARP issue](#warp-issue)
 
 ## Installation
 
 - openSUSE Tumbleweed: [[Tumbleweed/dev-env#Docker]]
+
+## Interesting posts
+
+- [What is containerd ? \| Docker](https://www.docker.com/blog/what-is-containerd-runtime/)
+- [Comparing Container Runtimes: containerd vs. Docker - Earthly Blog](https://earthly.dev/blog/containerd-vs-docker/)
+- [Container Guide](https://documentation.suse.com/container/all/single-html/Container-guide/)
 
 ## Manage Docker as a non-root user (less secure)
 
@@ -42,6 +57,8 @@ Last modified: 2024/01/10 UTC
 
 ## Configure automatically start behavior
 
+{% raw %}
+
 - Start containers automatically:
 
   ```bash
@@ -59,6 +76,8 @@ Last modified: 2024/01/10 UTC
   ```bash
   docker update --restart no/on-failure/always/unless-stopped CONTAINER_NAME_OR_ID
   ```
+
+{% endraw %}
 
 *References*:
 
@@ -92,6 +111,13 @@ Check a container's IP via the following commands:
   ```
 
 {% endraw %}
+
+- This is also doable:
+
+  ```bash
+  docker exec -it CONTAINER_NAME_OR_ID ip addr
+  docker exec -it CONTAINER_NAME_OR_ID ifconfig -a # If `ip` is not available.
+  ```
 
 *References*:
 
@@ -137,14 +163,6 @@ From Phind:
 - [docker save \| Docker Docs](https://docs.docker.com/engine/reference/commandline/save/)
 - [docker export \| Docker Docs](https://docs.docker.com/engine/reference/commandline/export/)
 
-## VSCode & Docker
-
-*References*:
-
-- [Docker in Visual Studio Code](https://code.visualstudio.com/docs/containers/overview)
-- [Developing inside a Container](https://code.visualstudio.com/docs/devcontainers/containers)
-- [Connect to remote Docker over SSH](https://code.visualstudio.com/docs/containers/ssh)
-
 ## Run a local registry server (image server)
 
 Use `docker run -d -p 5000:5000 --restart=always --name registry registry:2`.
@@ -153,6 +171,139 @@ Use `docker run -d -p 5000:5000 --restart=always --name registry registry:2`.
 
 - [Deploy a registry server \| Docker Docs](https://docs.docker.com/registry/deploying/#run-a-local-registry) (deprecated)
 - [Deploy a registry server \| CNCF Distribution](https://distribution.github.io/distribution/about/deploying/)
+
+## Container networking
+
+*References*:
+
+- [Introduction to Container Networking \| SUSE Communities](https://www.suse.com/c/rancher_blog/introduction-to-container-networking/)
+- [Relationship between interface "vethxxxxx" and container? - Open Source Projects / DockerEngine - Docker Community Forums](https://forums.docker.com/t/relationship-between-interface-vethxxxxx-and-container/12872/26)
+
+### Default (bridge) network
+
+Docker doesn’t create the `netns` in the default location, `ip netns list` doesn’t show this network namespace. We can create a symlink to the expected location to overcome that limitation:
+
+{% raw %}
+
+```bash
+container_id=CONTAINER_NAME_OR_ID
+container_netns=$(docker inspect ${container_id} --format '{{ .NetworkSettings.SandboxKey }}')
+mkdir -p /var/run/netns
+rm -f /var/run/netns/${container_id}
+ln -sv ${container_netns} /var/run/netns/${container_id}
+```
+
+{% endraw %}
+
+We can test to make sure the `ip` command can list the namespace now:
+
+```bash
+ip netns list
+```
+
+The other `ip` commands will now work with the namespace too:
+
+```bash
+ip netns exec CONTAINER_NAME_OR_ID ip addr
+```
+
+We can confirm that this is actually the container’s network namespace with the following command:
+
+```bash
+docker exec CONTAINER_NAME_OR_ID ip addr
+```
+
+### Custom bridge network
+
+Create a custom bridge network and create two containers that will join it, via the following commands:
+
+```bash
+docker network create CUSTOM_NETWORK
+docker run -it --rm --name=SOME_CONTAINER-a --network=CUSTOM_NETWORK registry.suse.com/bci/bci-busybox /bin/sh
+docker run -it --rm --name=SOME_CONTAINER-b --network=CUSTOM_NETWORK registry.suse.com/bci/bci-busybox /bin/sh
+```
+
+### Container defined network
+
+The following commands will launch two containers that share the same network namespace and thus share the same IP address. Services running on one container can talk to services running on the other via the `localhost` address.
+
+```bash
+docker run -it --rm --name=SOME_CONTAINER-a registry.suse.com/bci/bci-busybox /bin/sh
+docker run -it --rm --name=SOME_CONTAINER-b --network=container:SOME_CONTAINER-a registry.suse.com/bci/bci-busybox /bin/sh
+```
+
+### No networking
+
+This mode is useful when the container does not need to communicate with other containers or the outside world. No IP address will be assigned to it, nor can it publish any ports.
+
+```bash
+docker run --net=none --name=SOME_CONTAINER registry.suse.com/bci/bci-busybox ip a
+```
+
+## Container storage
+
+*References*:
+
+- [Introduction to Container Storage \| SUSE Communities](https://www.suse.com/c/rancher_blog/introduction-to-container-storage/)
+
+### Types of volume
+
+- Named volumes can be created via the following commands:
+
+  ```bash
+  docker run -v VOLUME_NAME:/PATH/IN/CONTAINER IMAGE_NAME
+  ```
+
+- Anonymous volumes can be created via the following commands:
+
+  ```bash
+  docker run -v /PATH/IN/CONTAINER IMAGE_NAME
+  ```
+
+  Note that anonymous volumes are removed if the container they are attached to gets removed. This means that you should make sure not to use the `--rm` flag when working with anonymous volumes if you want your data to persist after container shutdown.
+
+- Bind mounts can be created via the following commands:
+
+  ```bash
+  docker run -v /PATH/ON/HOST:/PATH/IN/CONTAINER IMAGE_NAME
+  ```
+
+  Bind mounts are used to mount an existing path on the host machine into a container.
+
+- Tempfs mount: Provide a writable location that specifically does not persist information after the lifetime of the container. You may be thinking, “why would that be necessary?”
+
+  In a container that does not have a volume mounted, any writes go into the thin R/W layer inserted at runtime. Any writes directed to that layer impact the filesystem as those writes are executed on the underlying host.
+
+  This is typically not a problem unless you write significant amounts of disposable data (such as logs). In that case, you may witness performance degradation as the filesystem needs to handle all of those write calls.
+
+  The `tempfs` mount was created to provide containers with a disposable write path that does not impact filesystem operations. Specifically, the `tempfs` mount is an ephemeral mount that writes directly to memory. You can create this volume by using the `--tempfs` argument.
+
+### Check volume information
+
+- Check the information of a volume via the following commands:
+
+  ```bash
+  docker volume inspect VOLUME_NAME
+  ```
+
+- Determine which container is using the specific volume via the following commands:
+
+  ```bash
+  docker ps -a --filter volume=VOLUME_NAME
+  docker ps -a --filter volume=/PATH/IN/CONTAINER
+  ```
+
+*References*:
+
+- [How to determine what containers use the docker volume? - Stack Overflow](https://stackoverflow.com/questions/42857575/how-to-determine-what-containers-use-the-docker-volume)
+
+## VSCode & Docker
+
+*References*:
+
+- [Docker in Visual Studio Code](https://code.visualstudio.com/docs/containers/overview)
+- [Developing inside a Container](https://code.visualstudio.com/docs/devcontainers/containers)
+- [Connect to remote Docker over SSH](https://code.visualstudio.com/docs/containers/ssh)
 
 ## WARP issue
 
