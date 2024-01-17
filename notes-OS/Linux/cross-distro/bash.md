@@ -1,6 +1,6 @@
 # Bash Usage
 
-Last modified: 2024/01/10 UTC
+Last modified: 2024/01/17 UTC
 
 - [Interesting posts](#interesting-posts)
 - [Configuration files](#configuration-files)
@@ -10,9 +10,10 @@ Last modified: 2024/01/10 UTC
     - [Alias expansion](#alias-expansion)
     - [Auto-completion for aliases](#auto-completion-for-aliases)
 - [Redirect command/script/application output](#redirect-commandscriptapplication-output)
-- [Syntax](#syntax)
+- [Scripting](#scripting)
     - [`[@]` and `[*]`](#-and-)
     - [`${}` and `$()`](#-and--1)
+- [Variables in paths](#variables-in-paths)
 
 ## Interesting posts
 
@@ -73,6 +74,8 @@ Press `Alt`+`Ctrl`+`E`.
 ### Auto-completion for aliases
 
 1. Save the following to `~/.bash_aliases_completion`:
+
+   {::options parse_block_html="true" /}
 
    <details>
 
@@ -1053,6 +1056,8 @@ Press `Alt`+`Ctrl`+`E`.
 
    </details>
 
+   {::options parse_block_html="false" /}
+
 2. Save the following to `.bashrc` **after** the alias section.
 
    ```bash
@@ -1075,7 +1080,7 @@ Press `Alt`+`Ctrl`+`E`.
 - [bash - echo that outputs to stderr - Stack Overflow](https://stackoverflow.com/questions/2990414/echo-that-outputs-to-stderr)
 - [linux - Echo to both stdout and stderr - Stack Overflow](https://stackoverflow.com/questions/6852969/echo-to-both-stdout-and-stderr)
 
-## Syntax
+## Scripting
 
 ### `[@]` and `[*]`
 
@@ -1136,3 +1141,11 @@ From Phind:
 > On the other hand, `$()` is used for command substitution. It runs the command inside the parentheses and replaces the command with its output. So, `$(#files[@])` would try to run `#files[@]` as a command, which is not valid syntax.
 >
 > In summary, `${}` and `$()` are used for different things in Bash. `${}` is used for parameter expansion, which includes things like getting the length of a variable or array, while `$()` is used for command substitution.
+
+## Variables in paths
+
+Use `${FOO:?}/${BAR:?}` instead of `$FOO/$BAR` to ensure this never expands to `/*`.
+
+*References*:
+
+- [ShellCheck: SC2115 – Use `"${var:?}"` to ensure this never expands to `/*` .](https://www.shellcheck.net/wiki/SC2115)

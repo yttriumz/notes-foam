@@ -1,6 +1,6 @@
 # Kernel-based Virtual Machine Usage
 
-Last modified: 2024/01/11 UTC
+Last modified: 2024/01/17 UTC
 
 - [Start service](#start-service)
 - [Virtual network](#virtual-network)
@@ -299,6 +299,8 @@ Note that the following method is **not** recommended in the LG official Discord
 
 ~~Add the following XML to the VM config:~~
 
+{::options parse_block_html="true" /}
+
 <details>
 <summary>Not recommended</summary>
 
@@ -312,6 +314,8 @@ Note that the following method is **not** recommended in the LG official Discord
 ```
 
 </details>
+
+{::options parse_block_html="false" /}
 
 *References*:
 

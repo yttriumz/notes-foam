@@ -20,6 +20,8 @@
 
 Save the following to `~/.config/wezterm/wezterm.lua`:
 
+{::options parse_block_html="true" /}
+
 <details>
 
 ```lua
@@ -64,6 +66,8 @@ return {
 ```
 
 </details>
+
+{::options parse_block_html="false" /}
 
 *References*:
 

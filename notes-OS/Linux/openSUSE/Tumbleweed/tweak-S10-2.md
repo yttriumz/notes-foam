@@ -11,6 +11,8 @@ Most of the tweaks should be the same as [[tweak-P1-Gen2]]. Below are some diffe
 
 This machine uses BCM4312. Install `broadcom-wl` from Packman Repository to get BCM4312 work.
 
+{::options parse_block_html="true" /}
+
 <details>
 
 ![BCM4312_1](./attachments/tweak-S10-2/BCM4312_1.png)
@@ -18,6 +20,8 @@ This machine uses BCM4312. Install `broadcom-wl` from Packman Repository to get 
 ![BCM4312_2](./attachments/tweak-S10-2/BCM4312_2.png)
 
 </details>
+
+{::options parse_block_html="false" /}
 
 *References*:
 
