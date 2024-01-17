@@ -18,6 +18,8 @@
 
 ### ANGLE
 
+{::options parse_block_html="true" /}
+
 <details>
 
 ```yaml
@@ -71,11 +73,15 @@ IncludeBlocks: Preserve
 
 </details>
 
+{::options parse_block_html="false" /}
+
 references:
 
 - https://chromium.googlesource.com/angle/angle/+/HEAD/.clang-format
 
 ### Chromium
+
+{::options parse_block_html="true" /}
 
 <details>
 
@@ -122,6 +128,8 @@ PPAPI_END_MESSAGE_MAP$"
 ```
 
 </details>
+
+{::options parse_block_html="false" /}
 
 *References*:
 
