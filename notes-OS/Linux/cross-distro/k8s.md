@@ -1,11 +1,11 @@
 # Kubernetes Usage
 
-Last modified: 2024/01/12 UTC
+Last modified: 2024/01/17 UTC
 
 - [Interesting posts](#interesting-posts)
-    - [Tutorials](#tutorials)
+  - [Tutorials](#tutorials)
 - [Management tool](#management-tool)
-- [Node status](#node-status)
+- [Check cluster status](#check-cluster-status)
 - [Remove nodes](#remove-nodes)
 - [Remove pods](#remove-pods)
 - [Debug pods](#debug-pods)
@@ -14,6 +14,7 @@ Last modified: 2024/01/12 UTC
 
 ## Interesting posts
 
+- [Demystifying Container Orchestration: A Beginner's Guide \| SUSE Communities](https://www.suse.com/c/rancher_blog/demystifying-container-orchestration-a-beginners-guide/)
 - [Why is learning Kubernetes so intimidating? : devops](https://www.reddit.com/r/devops/comments/o7w9yn/why_is_learning_kubernetes_so_intimidating/)
 - [Why Is Kubernetes So Hard - 4 Reasons Why And What to do About it — Release](https://release.com/blog/why-kubernetes-is-so-hard)
 - [How Kubernetes And Kafka Will Get You Fired \| by Jan Kammerath - Freedium](https://freedium.cfd/https://medium.com/@jankammerath/how-kubernetes-and-kafka-will-get-you-fired-a6dccbd36c77)
@@ -40,11 +41,15 @@ Last modified: 2024/01/12 UTC
 
 - [Kubernetes technologies: Kubeadm vs MiniKube, Kind and K3S](https://www.padok.fr/en/blog/minikube-kubeadm-kind-k3s)
 
-## Node status
+## Check cluster status
 
 *References*:
 
 - [My worker node status is Ready,SchedulingDisabled](https://stackoverflow.com/questions/55432764/my-worker-node-status-is-ready-schedulingdisabled)
+- [How to List All Pods and Its Nodes in Kubernetes \| Baeldung on Ops](https://www.baeldung.com/ops/kubernetes-list-every-pod-node)
+- [componentstatuses doesn't work when Scheduler and Controller Manager are running on secure port · Issue #93342 · kubernetes/kubernetes](https://github.com/kubernetes/kubernetes/issues/93342)
+  - [kubernetes/CHANGELOG/CHANGELOG-1.19.md at master · kubernetes/kubernetes](https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG/CHANGELOG-1.19.md#deprecation):
+    > Kube-apiserver: the componentstatus API is deprecated. This API provided status of etcd, kube-scheduler, and kube-controller-manager components, but only worked when those components were local to the API server, and when kube-scheduler and kube-controller-manager exposed unsecured health endpoints. Instead of this API, etcd health is included in the kube-apiserver health check and kube-scheduler/kube-controller-manager health checks can be made directly against those components' health endpoints.
 
 ## Remove nodes
 
