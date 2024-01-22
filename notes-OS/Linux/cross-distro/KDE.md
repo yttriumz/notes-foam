@@ -1,5 +1,7 @@
 # KDE Plasma Tweak
 
+Last modified: 2024/01/22 UTC
+
 - [Interesting posts](#interesting-posts)
 - [Widget](#widget)
 - [Autostart](#autostart)
@@ -39,8 +41,8 @@
 
 ## Recent files when right-clicking Firefox
 
-- Go to *System Settings > Workspace Behavior > Recent Files*.
-- Select *Do not remember*.
+1. Go to *System Settings > Workspace Behavior > Recent Files*.
+2. Select *Do not remember*.
 
 *References*:
 
@@ -48,18 +50,18 @@
 
 ## Window focus stealing policy
 
-- Go to *System Settings > Window Behavior > Focus > Focus stealing prevention*
-- Choose *None*
+1. Go to *System Settings > Window Behavior > Focus > Focus stealing prevention*
+2. Select *None*
 
 ## Change task switcher
 
-- Go to *System Settings > Window Management > Task Switcher*
-- Select *Thumbnails Grid*.
+1. Go to *System Settings > Window Management > Task Switcher*
+2. Select *Thumbnails Grid*.
 
 ## Virtual Desktop behavior
 
-- Go to *System Settings > Window Management > Window Behavior > Advanced > Virtual Desktop behavior*.
-- Select *Switch to that Virtual Desktop*.
+1. Go to *System Settings > Window Management > Window Behavior > Advanced > Virtual Desktop behavior*.
+2. Select *Switch to that Virtual Desktop*.
 
 **Note**: ~~At the time of writing (*Tumbleweed 20230211, KDE Plasma 5.26.5, Firefox 109.0.1*), there is a bug that Firefox does not follow the behavior.~~ At the time of updating (*Tumbleweed 20230224, KDE Plasma 5.27.1, Firefox 109.0.1*), the bug is already fixed.
 
@@ -71,8 +73,8 @@
 
 ## Hide window border
 
-- Create a window rule for the desired window/application, or go to *System Settings > Window Management > Window Rules > Add New...*.
-- Click *Add Property...* and search for *No titlebar and frame*. Select *Force* and *Yes*.
+1. Create a window rule for the desired window/application, or go to *System Settings > Window Management > Window Rules > Add New...*.
+2. Click *Add Property...* and search for *No titlebar and frame*. Select *Force* and *Yes*.
 
 *References*:
 
@@ -80,8 +82,8 @@
 
 ## Move a window to the center
 
-- Go to *System Settings > Shortcuts > KWin > Move Window to the Center*.
-- I changed the custom shortcuts to `Meta` + `Ctrl` + `C`.
+1. Go to *System Settings > Shortcuts > KWin > Move Window to the Center*.
+2. I changed the custom shortcuts to `Meta` + `Ctrl` + `C`.
 
 ## Mouse wheel scroll speed
 

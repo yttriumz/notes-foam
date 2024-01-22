@@ -1,6 +1,6 @@
 # Gaming on Linux
 
-Last modified: 2024/01/17 UTC
+Last modified: 2024/01/22 UTC
 
 - [Interesting posts](#interesting-posts)
 - [Steam (Flatpak)](#steam-flatpak)
@@ -32,6 +32,8 @@ Last modified: 2024/01/17 UTC
 ## Interesting posts
 
 - [What games do you play on openSuse?](https://www.reddit.com/r/openSUSE/comments/10ubemu/what_games_do_you_play_on_opensuse/)
+- [Nukem9/dlssg-to-fsr3: Adds AMD FSR 3 Frame Generation to games by replacing Nvidia DLSS-G Frame Generation (nvngx_dlssg).](https://github.com/Nukem9/dlssg-to-fsr3)
+- [emoose/DLSSTweaks: Tweak DLL for NVIDIA DLSS, allows forcing DLAA on DLSS-supported titles, tweaking scaling ratios & DLSS 3.1 presets, and overriding DLSS versions without overwriting game files.](https://github.com/emoose/DLSSTweaks)
 
 ## Steam (Flatpak)
 

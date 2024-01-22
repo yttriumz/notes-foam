@@ -1,6 +1,6 @@
 # Commonly Used Command-line Tools
 
-Last modified: 2023/12/13 15:00:32
+Last modified: 2024/01/22 UTC
 
 - [Interesting posts](#interesting-posts)
 - [Search tools](#search-tools)
@@ -13,7 +13,7 @@ Last modified: 2023/12/13 15:00:32
 - [File manager](#file-manager)
   - [`joshuto` (Rust)](#joshuto-rust)
   - [`ranger` (Python)](#ranger-python)
-- [`ls` alternatives](#ls-alternatives)
+- [File listing (`ls`)](#file-listing-ls)
   - [`exa` (Rust) (unmaintained)](#exa-rust-unmaintained)
   - [`eza` (Rust) (active fork of `exa`)](#eza-rust-active-fork-of-exa)
   - [`lsd` (Rust)](#lsd-rust)
@@ -21,6 +21,7 @@ Last modified: 2023/12/13 15:00:32
   - [`bat` (Rust)](#bat-rust)
 - [Download from network](#download-from-network)
   - [`curl`](#curl)
+  - [Hurl (Rust)](#hurl-rust)
 - [Move a foreground task to the background and keep it running](#move-a-foreground-task-to-the-background-and-keep-it-running)
 - [`iconv`](#iconv)
 
@@ -46,19 +47,19 @@ Last modified: 2023/12/13 15:00:32
   >   awk '{print}' "$filename"
   >   ```
   >
-  > - sed command: sed is a stream editor for filtering and transforming text. It can be used to print out a file.
+  > - `sed` command: `sed` is a stream editor for filtering and transforming text. It can be used to print out a file.
   >
   >   ```bash
   >   sed -n 'p' "$filename"
   >   ```
   >
-  > - grep command: grep is used to search text. You can use it to print out all lines in a file.
+  > - `grep` command: `grep` is used to search text. You can use it to print out all lines in a file.
   >
   >   ```bash
   >   grep . "$filename"
   >   ```
   >
-  > Please note that these commands are more complex and powerful than cat and the < operator. If all you need is to read a file's content, cat or the < operator are the simplest and most efficient options. The other commands are useful if you need to process the file's content in some way, such as filtering or transforming the text.
+  > Please note that these commands are more complex and powerful than `cat` and the `<` operator. If all you need is to read a file's content, `cat` or the `<` operator are the simplest and most efficient options. The other commands are useful if you need to process the file's content in some way, such as filtering or transforming the text.
 
 ## Search tools
 
@@ -117,7 +118,7 @@ Add `2>&1 | grep -v "Permission denied"` to the end.
 
 - [A VIM-inspired filemanager for the console](https://github.com/ranger/ranger)
 
-## `ls` alternatives
+## File listing (`ls`)
 
 ### `exa` (Rust) (unmaintained)
 
@@ -151,6 +152,12 @@ Add `2>&1 | grep -v "Permission denied"` to the end.
 ### `curl`
 
 Commonly used flags for downloading are `-fSLO`.
+
+### Hurl (Rust)
+
+*References*:
+
+- [Orange-OpenSource/hurl: Hurl, run and test HTTP requests with plain text.](https://github.com/Orange-OpenSource/hurl)
 
 ## Move a foreground task to the background and keep it running
 
