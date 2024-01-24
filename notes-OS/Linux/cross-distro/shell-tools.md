@@ -17,6 +17,8 @@ Last modified: 2024/01/24 UTC
 
 1. Save the following to `Documents\\PowerShell\\.mytheme.omp.json`:
 
+   {% raw %}
+
    ```json
    {
    "$schema": "https://raw.githubusercontent.com/JanDeDobbeleer/oh-my-posh/main/themes/schema.json",
@@ -141,17 +143,9 @@ Last modified: 2024/01/24 UTC
    }
    ```
 
-   </details>
-
    {% endraw %}
 
-   {::options parse_block_html="false" /}
-
 2. Save the following to `Documents\\PowerShell\\profile.ps1`:
-
-   {::options parse_block_html="true" /}
-
-   <details>
 
    ```powershell
    # oh-my-posh init pwsh --config ~/AppData/Local/Programs/oh-my-posh/themes/blue-owl.omp.json | Invoke-Expression
