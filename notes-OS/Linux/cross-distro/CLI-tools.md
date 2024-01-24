@@ -1,6 +1,6 @@
 # Commonly Used Command-line Tools
 
-Last modified: 2024/01/22 UTC
+Last modified: 2024/01/24 UTC
 
 - [Interesting posts](#interesting-posts)
 - [Search tools](#search-tools)
@@ -29,7 +29,6 @@ Last modified: 2024/01/22 UTC
 
 - [Rewritten in Rust: Modern Alternatives of Command-Line Tools · Zaiste Programming](https://zaiste.net/posts/shell-commands-rust/)
 - From Phind:
-
   > Yes, there are other ways to read a file's content in a shell script besides using `cat` or the `<` operator. Here are a few alternatives:
   >
   > - `read` command: The `read` command can be used in a loop to read a file line by line.

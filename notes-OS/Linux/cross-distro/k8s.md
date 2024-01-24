@@ -1,6 +1,6 @@
 # Kubernetes Usage
 
-Last modified: 2024/01/17 UTC
+Last modified: 2024/01/24 UTC
 
 - [Interesting posts](#interesting-posts)
   - [Tutorials](#tutorials)
@@ -87,6 +87,20 @@ kubectl exec --stdin --tty POD_NAME --container CONTAINER_NAME -- /bin/bash
 - [Get a Shell to a Running Container \| Kubernetes](https://kubernetes.io/docs/tasks/debug/debug-application/get-shell-running-container/)
 
 ## Get files inside pods
+
+```bash
+# Copy /tmp/foo_dir local directory to /tmp/bar_dir in a remote pod in the default namespace
+kubectl cp /tmp/foo_dir SOME_POD:/tmp/bar_dir
+
+# Copy /tmp/foo local file to /tmp/bar in a remote pod in a specific container
+kubectl cp /tmp/foo SOME_POD:/tmp/bar -c SPECIFIC_CONTAINER
+
+# Copy /tmp/foo local file to /tmp/bar in a remote pod in namespace <some-namespace>
+kubectl cp /tmp/foo SOME_NAMESPACE/SOME_POD:/tmp/bar
+
+# Copy /tmp/bar from a remote pod to /tmp/foo locally
+kubectl cp SOME_NAMESPACE/SOME_POD:/tmp/bar /tmp/foo
+```
 
 *References*:
 

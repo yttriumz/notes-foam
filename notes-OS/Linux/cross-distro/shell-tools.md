@@ -1,5 +1,12 @@
 # Shell Related Tools
 
+Last modified: 2024/01/24 UTC
+
+- [Oh My Posh](#oh-my-posh)
+  - [My Config](#my-config)
+- [Starship](#starship)
+  - [My Config](#my-config-1)
+
 ## Oh My Posh
 
 *References*:
@@ -9,12 +16,6 @@
 ### My Config
 
 1. Save the following to `Documents\\PowerShell\\.mytheme.omp.json`:
-
-   {::options parse_block_html="true" /}
-
-   {% raw %}
-
-   <details>
 
    ```json
    {
@@ -165,10 +166,6 @@
    # Invoke-Expression (&starship init powershell)
    ```
 
-   </details>
-
-   {::options parse_block_html="false" /}
-
 ## Starship
 
 *References*:
@@ -178,10 +175,6 @@
 ### My Config
 
 Save the following to `~/.config/starship.toml`:
-
-{::options parse_block_html="true" /}
-
-<details>
 
 ```toml
 # Get editor completions based on the config schema
@@ -314,7 +307,3 @@ format = "via [ Node.js $version](bold green) "
 detect_files = ["package.json", ".node-version"]
 detect_folders = ["node_modules"]
 ```
-
-</details>
-
-{::options parse_block_html="false" /}

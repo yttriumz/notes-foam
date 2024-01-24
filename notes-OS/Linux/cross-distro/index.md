@@ -9,7 +9,7 @@ type: index
   - [[security]]
   - [[file-system]]
   - [[power]]
-  - [[cross-distro/networking]]
+  - [[networking-op]]
 - Utilities:
   - [[bash]]
   - [[CLI-tools]]
@@ -34,7 +34,7 @@ type: index
 [security]: security.md "Security"
 [file-system]: file-system.md "File System"
 [power]: power.md "Power Management"
-[cross-distro/networking]: networking.md "Networking"
+[networking-op]: networking-op.md "Networking Tools & Operations"
 [bash]: bash.md "Bash Usage"
 [CLI-tools]: CLI-tools.md "Commonly Used Command-line Tools"
 [shell-tools]: shell-tools.md "Shell Related Tools"
