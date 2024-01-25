@@ -1,6 +1,6 @@
 # JavaScript/TypeScript
 
-Last modified: 2023/12/29 GMT+8
+Last modified: 2024/01/25 UTC
 
 - [Interesting posts](#interesting-posts)
   - [Development tools](#development-tools)
@@ -111,7 +111,7 @@ Last modified: 2023/12/29 GMT+8
 
 #### `settings.json`
 
-```json
+```jsonc
 "editor.formatOnSave": true,
 "[css]": {
   "editor.defaultFormatter": "esbenp.prettier-vscode",
@@ -164,7 +164,7 @@ Last modified: 2023/12/29 GMT+8
 
 #### `extensions.json`
 
-```json
+```jsonc
 "recommendations": [
   "mgmcdermott.vscode-language-babel",
   "dbaeumer.vscode-eslint",
@@ -184,7 +184,7 @@ Last modified: 2023/12/29 GMT+8
 
 ### `.eslintrc.json`
 
-```json
+```jsonc
 "rules": {
   // maybe your other rules...
   "no-unused-vars": "warn",

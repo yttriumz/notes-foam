@@ -1,6 +1,6 @@
 # Machine Learning
 
-Last modified: 2024/01/17 UTC
+Last modified: 2024/01/25 UTC
 
 - [Numpy](#numpy)
 - [TensorFlow 2 (local)](#tensorflow-2-local)
@@ -40,7 +40,7 @@ RUN apt install -y graphviz
 
 #### `devcontainer.json`
 
-```json
+```jsonc
 "name": "Tensorflow 2.11.1",
 "context": "..",
 "dockerFile": "../Dockerfile",

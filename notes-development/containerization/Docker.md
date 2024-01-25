@@ -1,11 +1,12 @@
 # Docker Application Development
 
-Last modified: 2023/12/29 UTC
+Last modified: 2024/01/24 UTC
 
 - [Dockerfile](#dockerfile)
   - [`CMD` \& `ENTRYPOINT`](#cmd--entrypoint)
 - [CentOS image](#centos-image)
   - [Interesting posts](#interesting-posts)
+- [WARP issue](#warp-issue)
 
 ## Dockerfile
 
@@ -31,3 +32,7 @@ From Phind:
 
 - [Error: Failed to download metadata for repo 'appstream': Cannot prepare internal mirrorlist: No URLs in mirrorlist](https://stackoverflow.com/questions/70963985/error-failed-to-download-metadata-for-repo-appstream-cannot-prepare-internal)
 - [yum安装时提示：This system is not registered with an entitlement server. You can use subscription-manager to register. - Ajunyu - 博客园](https://www.cnblogs.com/ajunyu/p/13297449.html)
+
+## WARP issue
+
+At the time of writing (*warp-cli 2023.7.40*), WARP may cause network trouble when building images. E.g yum cannot fetch remote repositories.

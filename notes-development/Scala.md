@@ -11,7 +11,7 @@
 
 ### `settings.json`
 
-```json
+```jsonc
 "files.watcherExclude": {
     // Scala
     "**/.bloop": true,

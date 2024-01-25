@@ -1,6 +1,6 @@
 # Flutter
 
-Last modified: 2023/11/06 12:47:02
+Last modified: 2024/01/25 UTC
 
 - [Docs](#docs)
   - [Unofficial tutorials](#unofficial-tutorials)
@@ -65,7 +65,7 @@ Use `dart format lib/*`.
 
 ## VSCode `settings.json`
 
-```json
+```jsonc
 // Causes the debug view to automatically appear when a breakpoint is hit. This
 // setting is global and not configurable per-language.
 "debug.openDebug": "openOnDebugBreak",

@@ -6,6 +6,7 @@ Last modified: 2024/01/24 UTC
 - [PostgreSQL](#postgresql)
 - [Elasticsearch/OpenSearch](#elasticsearchopensearch)
   - [Kibana](#kibana)
+  - [Tools](#tools)
 
 ## Interesting posts
 
@@ -41,3 +42,10 @@ Last modified: 2024/01/24 UTC
 - [\[Reporting\] Refused to execute inline script error in Kibana log when generating a report · Issue #55997 · elastic/kibana](https://github.com/elastic/kibana/issues/55997)
 - [CSP default-src 'self' · Issue #56996 · elastic/kibana](https://github.com/elastic/kibana/issues/56996)
 - [Add csp.disableUnsafeEval config option to remove the unsafe-eval CSP by watson · Pull Request #124484 · elastic/kibana](https://github.com/elastic/kibana/pull/124484)
+
+### Tools
+
+*References*:
+
+- [OpenSearch Monitoring Tools: A Review of Open Source Dev Tools](https://opster.com/blogs/opensearch-monitoring-tools/)
+- [Use Cerebro to access an Elasticsearch cluster - Elasticsearch - Alibaba Cloud Documentation Center](https://www.alibabacloud.com/help/en/es/use-cases/use-cerebro-to-access-an-elasticsearch-cluster)

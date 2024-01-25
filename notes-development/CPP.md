@@ -146,7 +146,7 @@ PPAPI_END_MESSAGE_MAP$"
 
 #### `settings.json` sample
 
-```json
+```jsonc
 "C_Cpp.autocomplete": "Disabled",
 "C_Cpp.intelliSenseEngine": "Disabled",
 "cmake.generator": "MinGW Makefiles",
@@ -163,7 +163,7 @@ PPAPI_END_MESSAGE_MAP$"
 
 #### `launch.json` sample
 
-```json
+```jsonc
 {
     // Use IntelliSense to learn about possible attributes.
     // Hover to view descriptions of existing attributes.
@@ -212,7 +212,7 @@ PPAPI_END_MESSAGE_MAP$"
 
 #### `tasks.json` sample
 
-```json
+```jsonc
 // https://code.visualstudio.com/docs/editor/tasks
 {
     "version": "2.0.0",

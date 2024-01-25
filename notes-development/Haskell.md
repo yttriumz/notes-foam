@@ -1,6 +1,6 @@
 # Haskell
 
-Last modified: 2024/01/04 UTC
+Last modified: 2024/01/25 UTC
 
 - [Interesting posts](#interesting-posts)
 - [VSCode](#vscode)
@@ -23,7 +23,7 @@ Last modified: 2024/01/04 UTC
 
 ### `settings.json`
 
-```json
+```jsonc
 "todo-tree.regex.regex": "((--\\s*($TAGS))|\\{-\\s($TAGS).*(\\n.*)*-})",
 // REF: https://github.com/haskell/haskell-language-server/issues/3130
 "haskell.plugin.rename.config.crossModule": true

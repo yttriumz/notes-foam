@@ -1,6 +1,6 @@
 # Rust
 
-Last modified: 2024/01/23 UTC
+Last modified: 2024/01/25 UTC
 
 - [Interesting posts](#interesting-posts)
 - [VSCode](#vscode)
@@ -72,14 +72,14 @@ Last modified: 2024/01/23 UTC
 
 ### `settings.json`
 
-```json
+```jsonc
 "crates.listPreReleases": true, // Optional
 "rust-analyzer.check.command": "clippy",
 ```
 
 ### `extensions.json`
 
-```json
+```jsonc
 "recommendations": [
   "rust-lang.rust-analyzer",
   "model-checking.kani-vscode-extension",

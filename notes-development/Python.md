@@ -1,6 +1,6 @@
 # Python
 
-Last modified: 2024/01/22 UTC
+Last modified: 2024/01/25 UTC
 
 - [Interesting posts](#interesting-posts)
 - [pip](#pip)
@@ -28,6 +28,7 @@ Last modified: 2024/01/22 UTC
 - [Everything you need to know about the switch to Python 3 | Kali Linux Documentation](https://www.kali.org/docs/general-use/python3-transition/)
 - [A Python Interpreter Written in Python](https://aosabook.org/en/500L/a-python-interpreter-written-in-python.html)
 - [Jinja2 Explained in 5 Minutes!. (Part 4: Back-end Web Framework: Flask) \| by Diva Dugar \| codeburst](https://codeburst.io/jinja-2-explained-in-5-minutes-88548486834e)
+- [What Are Python Wheels and Why Should You Care? – Real Python](https://realpython.com/python-wheels/)
 
 ## pip
 
@@ -57,7 +58,7 @@ Last modified: 2024/01/22 UTC
 
 ### `settings.json`
 
-```json
+```jsonc
 "python.analysis.autoImportCompletions": true,
 "python.analysis.inlayHints.callArgumentNames": "partial",
 "python.analysis.inlayHints.functionReturnTypes": true,
@@ -71,7 +72,7 @@ Last modified: 2024/01/22 UTC
 
 ### `extension.json`
 
-```json
+```jsonc
 "recommendations": [
   "ms-python.python",
   "ms-toolsai.jupyter",
