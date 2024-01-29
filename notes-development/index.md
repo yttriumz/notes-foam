@@ -19,11 +19,11 @@ type: index
   - [[Scala]]
 - Domain-specific:
   - [[Android]]
-  - [[containerization/index]]
+  - [[notes-development/Docker]]
   - [[crypto]]
   - [[databases]]
   - [[decentralization]]
-  - [[DevOps/index]]
+  - [[DevOps]]
   - [[ML]]
   - [[notes-development/networking]]
   - [[SSO]]
@@ -59,11 +59,11 @@ type: index
 [Rust]: Rust.md "Rust"
 [Scala]: Scala.md "Scala"
 [Android]: Android.md "Android"
-[containerization/index]: containerization/index.md "Containerization"
+[notes-development/Docker]: Docker.md "Docker Application Development"
 [crypto]: crypto.md "Crypto"
 [databases]: databases.md "Databases"
 [decentralization]: decentralization.md "Decentralization Related"
-[DevOps/index]: DevOps/index.md "DevOps Related"
+[DevOps]: DevOps.md "DevOps Related"
 [ML]: ML.md "Machine Learning"
 [notes-development/networking]: networking.md "Networking"
 [SSO]: SSO.md "Single Sign-On"
