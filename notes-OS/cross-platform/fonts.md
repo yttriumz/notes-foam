@@ -1,6 +1,6 @@
 # Fonts
 
-Last modified: 2023/12/18 16:30:41
+Last modified: 2024/01/26 UTC
 
 - [Test and compare fonts](#test-and-compare-fonts)
 - [Font tags](#font-tags)
@@ -51,19 +51,19 @@ Font variants:
 - `Cascadia Mono`: a version of Cascadia that doesn't have ligatures
 - `Cascadia (Code|Mono) PL`: a version of Cascadia that has embedded Powerline symbols
 
-Font features: The features I prefer are `"editor.fontLigatures": "'liga', 'calt', 'ss03', 'ss20', 'zero'"`. Check [the official doc](https://github.com/microsoft/cascadia-code#font-features) for more.
+Font features: My preference is `"editor.fontLigatures": "'liga', 'calt', 'ss03', 'ss20', 'zero'"`. Check [the official doc](https://github.com/microsoft/cascadia-code#font-features) for more.
 
 ### Iosevka
 
-Font features: The features I prefer are `"editor.fontLigatures": "'liga', 'calt', 'ss04'"`. Check the official doc [`stylistic-sets.md`](https://github.com/be5invis/Iosevka/blob/main/doc/stylistic-sets.md) and [character-variants.md](https://github.com/be5invis/Iosevka/blob/main/doc/character-variants.md) for more.
+Font features: My preference is `"editor.fontLigatures": "'liga', 'calt', 'ss04'"`. Check the official doc [`stylistic-sets.md`](https://github.com/be5invis/Iosevka/blob/main/doc/stylistic-sets.md) and [character-variants.md](https://github.com/be5invis/Iosevka/blob/main/doc/character-variants.md) for more.
 
 ### JuliaMono
 
-Font features: The features I prefer are `"editor.fontLigatures": "'liga', 'calt', 'cv01', 'cv03', 'ss01', 'ss08', 'ss12', 'ss13', 'ss20', 'zero'"`. Check [the official doc](https://juliamono.netlify.app/#stylistic_sets) for more.
+Font features: My preference is `"editor.fontLigatures": "'liga', 'calt', 'cv01', 'cv03', 'ss01', 'ss08', 'ss12', 'ss13', 'ss20', 'zero'"`. Check [the official doc](https://juliamono.netlify.app/#stylistic_sets) for more.
 
 ### Victor Mono
 
-Font features: The features I prefer are `"editor.fontLigatures": "'liga', 'calt', 'ss02', 'ss07'"`. Check [the official doc](https://github.com/rubjo/victor-mono#available-stylistics) for more.
+Font features: My preference is `"editor.fontLigatures": "'liga', 'calt', 'ss02', 'ss07'"`. Check [the official doc](https://github.com/rubjo/victor-mono#available-stylistics) for more.
 
 ### Fira Code (Retina)
 
@@ -79,7 +79,7 @@ Font features: Check [the official doc](https://github.com/tonsky/FiraCode/wiki/
 
 ### Monaspace
 
-Font features: The features I prefer are `"editor.fontLigatures": "'liga', 'calt', 'ss02', 'ss03', 'ss04', 'ss05', 'ss06', 'ss07', 'ss08'"`. Check [the official doc](https://github.com/githubnext/monaspace#coding-ligatures) for more.
+Font features: My preference is `"editor.fontLigatures": "'liga', 'calt', 'ss02', 'ss03', 'ss04', 'ss05', 'ss06', 'ss07', 'ss08'"`. Check [the official doc](https://github.com/githubnext/monaspace#coding-ligatures) for more.
 
 ## Non-mono
 

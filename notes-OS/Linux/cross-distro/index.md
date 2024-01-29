@@ -19,6 +19,7 @@ type: index
   - [[KDE]]
   - [[gaming]]
 - Virtualization & Containerization:
+  - [[containerd]]
   - [[cross-distro/Docker]]
   - [[Podman]]
   - [[k8s]]
@@ -42,6 +43,7 @@ type: index
 [Xorg]: Xorg.md "X.Org"
 [KDE]: KDE.md "KDE Plasma Tweak"
 [gaming]: gaming.md "Gaming on Linux"
+[containerd]: containerd.md "containerd"
 [cross-distro/Docker]: Docker.md "Docker Usage"
 [Podman]: Podman.md "Podman"
 [k8s]: k8s.md "Kubernetes Usage"
