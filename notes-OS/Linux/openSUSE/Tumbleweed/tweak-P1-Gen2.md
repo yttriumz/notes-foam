@@ -1,6 +1,6 @@
 # Tweak openSUSE Tumbleweed on ThinkPad P1 Gen2
 
-Last modified: 2024/01/26 UTC
+Last modified: 2024/01/31 UTC
 
 - [Interesting posts](#interesting-posts)
 - [Change hostname](#change-hostname)
@@ -439,8 +439,10 @@ See [[gaming]].
 
 ## HP printer
 
+It seems these packages provide drivers that cannot be searched by default. Maybe installing the exact package(s) that provide drivers is sufficient.
+
 ```log
-✗ sdz install hplip
+✗ sz install hplip
 Loading repository data...
 Reading installed packages...
 Resolving package dependencies...
@@ -456,6 +458,25 @@ The following 21 NEW packages are going to be installed:
 
 21 new packages to install.
 Overall download size: 36.4 MiB. Already cached: 0 B. After the operation, additional 85.7 MiB will be used.
+Continue? [y/n/v/...? shows all options] (y): y
+```
+
+Only installing `hplip-hpijs` is not sufficient.
+
+```log
+﬌ sz install hplip-hpijs
+Loading repository data...
+Reading installed packages...
+Resolving package dependencies...
+
+The following package is suggested, but will not be installed:
+  hplip
+
+The following 3 NEW packages are going to be installed:
+  hplip-hpijs hplip-sane hplip-udev-rules
+
+3 new packages to install.
+Overall download size: 6.5 MiB. Already cached: 0 B. After the operation, additional 10.2 MiB will be used.
 Continue? [y/n/v/...? shows all options] (y): y
 ```
 

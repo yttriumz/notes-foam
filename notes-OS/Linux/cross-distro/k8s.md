@@ -1,6 +1,6 @@
 # Kubernetes Usage
 
-Last modified: 2024/01/24 UTC
+Last modified: 2024/01/31 UTC
 
 - [Interesting posts](#interesting-posts)
   - [Tutorials](#tutorials)
@@ -11,6 +11,7 @@ Last modified: 2024/01/24 UTC
 - [Debug pods](#debug-pods)
 - [Get a shell to a running container](#get-a-shell-to-a-running-container)
 - [Get files inside pods](#get-files-inside-pods)
+- [Helm](#helm)
 
 ## Interesting posts
 
@@ -105,3 +106,9 @@ kubectl cp SOME_NAMESPACE/SOME_POD:/tmp/bar /tmp/foo
 *References*:
 
 - [azure aks - How to copy files from kubernetes Pods to local system - Stack Overflow](https://stackoverflow.com/questions/52407277/how-to-copy-files-from-kubernetes-pods-to-local-system)
+
+## Helm
+
+*References*:
+
+- [kubernetes - UPGRADE FAILED: another operation (install/upgrade/rollback) is in progress - Stack Overflow](https://stackoverflow.com/questions/71599858/upgrade-failed-another-operation-install-upgrade-rollback-is-in-progress)

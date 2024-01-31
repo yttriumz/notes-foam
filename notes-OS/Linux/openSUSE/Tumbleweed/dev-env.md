@@ -1,6 +1,6 @@
 # OpenSUSE Tumbleweed Development Environment
 
-Last modified: 2024/01/17 UTC
+Last modified: 2024/01/29 UTC
 
 - [SSH](#ssh)
 - [git](#git)
@@ -15,6 +15,7 @@ Last modified: 2024/01/17 UTC
    - [Android Studio](#android-studio)
 - [C\_Cpp](#c_cpp)
 - [Flutter](#flutter)
+- [Garmin Connect IQ](#garmin-connect-iq)
 - [Go](#go)
 - [Haskell](#haskell)
 - [Java](#java)
@@ -167,7 +168,7 @@ zypper install pattern:devel_basis # This is the same
 
 ## Flutter
 
-1. Make sure the following packages exist:
+1. Install the following dependencies:
 
    ```text
    clang-devel
@@ -184,6 +185,17 @@ zypper install pattern:devel_basis # This is the same
    ```
 
 4. Use `flutter doctor` to validate the installation.
+
+## Garmin Connect IQ
+
+1. Download the SDK from [the official site](https://developer.garmin.com/connect-iq/sdk/).
+2. Install the following dependencies:
+
+   ```text
+   libwebkit2gtk-4_0-37
+   ```
+
+3. Follow the instructions, and the SDK will be downloaded under `$HOME/.Garmin`.
 
 ## Go
 
