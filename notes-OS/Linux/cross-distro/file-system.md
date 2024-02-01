@@ -1,12 +1,13 @@
 # File System
 
-Last modified: 2024/01/17 UTC
+Last modified: 2024/01/31 UTC
 
 - [Interesting posts](#interesting-posts)
 - [Btrfs](#btrfs)
 - [exFAT](#exfat)
   - [Utilities installation](#utilities-installation)
 - [SquashFS](#squashfs)
+- [Permissions](#permissions)
 
 ## Interesting posts
 
@@ -37,3 +38,10 @@ Last modified: 2024/01/17 UTC
 *References*:
 
 - [The SquashFS tools exposed](https://tldp.org/HOWTO/SquashFS-HOWTO/mksqoverview.html)
+
+## Permissions
+
+*References*:
+
+- [Advanced File Permissions in Linux \| Baeldung on Linux](https://www.baeldung.com/linux/advanced-file-permissions)
+- [Directory permissions "r-s", chmod 655 does not change to "r-x", why? - Unix & Linux Stack Exchange](https://unix.stackexchange.com/questions/263342/directory-permissions-r-s-chmod-655-does-not-change-to-r-x-why)
