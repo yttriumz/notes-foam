@@ -1,6 +1,6 @@
 # Git Usage
 
-Last modified: 2024/01/04 UTC
+Last modified: 2024/02/02 UTC
 
 - [Interesting posts](#interesting-posts)
 - [Git configuration](#git-configuration)
@@ -91,8 +91,6 @@ fatal: Need to specify how to reconcile divergent branches.
 
 *References*:
 
-<!-- TODO: raise an issue about languagetool linter -->
-
 - [Using a non-default key name (other than id_rsa)](https://stackoverflow.com/questions/41412964/using-a-non-default-key-name-other-than-id-rsa)
 - [Working with non-default SSH key pair paths](https://gist.github.com/mynameiskreang/deb3fd3b41d7dda664ab0d3597710ef9)
 
@@ -174,7 +172,7 @@ Use `git fetch REMOTE_REPO REMOTE_BRANCH:LOCAL_BRANCH`.
 
 - Rename checked-out local branch: Use `git branch --move NEW_BRANCH_NAME`.
 - Rename unchecked-out local branch: Use `git branch --move BRANCH_NAME NEW_BRANCH_NAME`.
-- If remote branches also needs renaming, just push the renamed local branches and delete the old branches on remote.
+- If remote branches also need renaming, push the renamed local branches and delete the old branches on remote.
 
 ## Change remote origin
 
@@ -186,10 +184,10 @@ Use `git remote set-url REMOTE_NAME NEW_REMOTE_REPO`.
 
 ## Push to all remotes
 
-Make a git alias `push-all-remotes` via the following commands:
+Make a git alias `push-to-all` via the following commands:
 
 ```bash
-git config --global alias.push-all-remotes '!git remote | xargs -L1 git push --all'
+git config --global alias.push-to-all '!git remote | xargs -L1 git push --all'
 ```
 
 *References*:

@@ -10,6 +10,7 @@ type: index
   - [[file-system]]
   - [[power]]
   - [[networking-op]]
+  - [[kernel-modules]]
 - Utilities:
   - [[bash]]
   - [[CLI-tools]]
@@ -37,6 +38,7 @@ type: index
 [file-system]: file-system.md "File System"
 [power]: power.md "Power Management"
 [networking-op]: networking-op.md "Networking Tools & Operations"
+[kernel-modules]: kernel-modules.md "Kernel Modules"
 [bash]: bash.md "Bash Usage"
 [CLI-tools]: CLI-tools.md "Commonly Used Command-line Tools"
 [shell-tools]: shell-tools.md "Shell Related Tools"
