@@ -1,6 +1,6 @@
 # Git Usage
 
-Last modified: 2024/02/02 UTC
+Last modified: 2024/02/06 UTC
 
 - [Interesting posts](#interesting-posts)
 - [Git configuration](#git-configuration)
@@ -12,11 +12,12 @@ Last modified: 2024/02/02 UTC
   - [Use different keys for different repositories](#use-different-keys-for-different-repositories)
 - [Clone to a specific directory](#clone-to-a-specific-directory)
 - [Clone all remote branches](#clone-all-remote-branches)
+- [Clone a specific tag only](#clone-a-specific-tag-only)
 - [Commit message convention](#commit-message-convention)
 - [Change commit messages](#change-commit-messages)
 - [Delete tags](#delete-tags)
 - [Stash changes](#stash-changes)
-- [Discard unstaged changes](#discard-unstaged-changes)
+- [Discard non-staged changes](#discard-non-staged-changes)
 - [Update an unchecked-out local branch from remote branch](#update-an-unchecked-out-local-branch-from-remote-branch)
 - [Rename branch](#rename-branch)
 - [Change remote origin](#change-remote-origin)
@@ -114,6 +115,14 @@ Use `git clone REMOTE_REPO TARGET_DIRECTORY`.
 
 - [git - How do I clone all remote branches? - Stack Overflow](https://stackoverflow.com/questions/67699/how-do-i-clone-all-remote-branches)
 
+## Clone a specific tag only
+
+Use `git clone --depth 1 --branch TAG_NAME REMOTE_REPO`.
+
+*References*:
+
+- [How to clone a specific Git tag - Stack Overflow](https://stackoverflow.com/questions/20280726/how-to-clone-a-specific-git-tag)
+
 ## Commit message convention
 
 *References*:
@@ -151,7 +160,7 @@ Use `git clone REMOTE_REPO TARGET_DIRECTORY`.
 
 - [Git stash](https://www.atlassian.com/git/tutorials/saving-changes/git-stash)
 
-## Discard unstaged changes
+## Discard non-staged changes
 
 - Discard all: `git restore .`
 - Discard a specific file: `git restore PATH_TO_THE_FILE`

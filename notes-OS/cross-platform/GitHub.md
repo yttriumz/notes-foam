@@ -1,7 +1,8 @@
 # GitHub Usage
 
-Last modified: 2024/01/17 UTC
+Last modified: 2024/02/19 UTC
 
+- [Interesting posts](#interesting-posts)
 - [Add SSH key to GitHub](#add-ssh-key-to-github)
 - [Search for a filename in all repositories](#search-for-a-filename-in-all-repositories)
 - [Private fork](#private-fork)
@@ -10,6 +11,10 @@ Last modified: 2024/01/17 UTC
   - [Set proxy](#set-proxy)
     - [Linux](#linux)
   - [Other methods](#other-methods)
+
+## Interesting posts
+
+- [Working with advanced formatting - GitHub Docs](https://docs.github.com/en/get-started/writing-on-github/working-with-advanced-formatting)
 
 ## Add SSH key to GitHub
 

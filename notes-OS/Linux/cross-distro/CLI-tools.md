@@ -1,12 +1,13 @@
 # Commonly Used Command-line Tools
 
-Last modified: 2024/01/24 UTC
+Last modified: 2024/02/07 UTC
 
 - [Interesting posts](#interesting-posts)
 - [Search tools](#search-tools)
   - [`find`](#find)
     - [Ignore case](#ignore-case)
     - [Find only files/directories](#find-only-filesdirectories)
+    - [Exclude paths](#exclude-paths)
     - [Get rid of "Permission Denied"](#get-rid-of-permission-denied)
   - [`fd` (Rust)](#fd-rust)
   - [ripgrep (`rg`) (Rust)](#ripgrep-rg-rust)
@@ -80,6 +81,12 @@ Use `-iname` instead of `-name`.
 *References*:
 
 - [How to mark directories in the output of the `find` command?](https://unix.stackexchange.com/questions/652076/how-to-mark-directories-in-the-output-of-the-find-command)
+
+#### Exclude paths
+
+*References*:
+
+- [linux - How do I exclude a directory when using `find`? - Stack Overflow](https://stackoverflow.com/questions/4210042/how-do-i-exclude-a-directory-when-using-find)
 
 #### Get rid of "Permission Denied"
 

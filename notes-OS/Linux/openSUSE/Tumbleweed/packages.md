@@ -1,6 +1,6 @@
 # Tumbleweed Package Management
 
-Last modified: 2024/02/05 UTC
+Last modified: 2024/02/08 UTC
 
 - [Interesting posts](#interesting-posts)
 - [Zypper](#zypper)
@@ -289,6 +289,8 @@ Use `zypper install PATH_TO_RPM`.
 - [how to install RPM files](https://forums.opensuse.org/t/how-to-install-rpm-files/24479)
 
 ### Inspect an RPM
+
+- List the files in an RPM file: `rpm -qlpv PATH_TO_RPM`
 
 *References*:
 

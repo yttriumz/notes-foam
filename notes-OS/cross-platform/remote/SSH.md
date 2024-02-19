@@ -1,6 +1,6 @@
 # SSH Usage
 
-Last modified: 2024/01/31 UTC
+Last modified: 2024/02/19 UTC
 
 - [Interesting posts](#interesting-posts)
 - [Create SSH key pair](#create-ssh-key-pair)
@@ -8,6 +8,7 @@ Last modified: 2024/01/31 UTC
 - [Automatically accept host key](#automatically-accept-host-key)
 - [Show all active SSH connections](#show-all-active-ssh-connections)
 - [Kill idle SSH sessions](#kill-idle-ssh-sessions)
+- [Kill idle `sshd` sessions](#kill-idle-sshd-sessions)
 - [Remote port forwarding](#remote-port-forwarding)
     - [Scenario I](#scenario-i)
 - [SCP](#scp)
@@ -55,6 +56,14 @@ Hit subsequently `Enter` + `~` + `.`.
 
 - [How can I break out of ssh when it locks?](https://askubuntu.com/questions/29942/how-can-i-break-out-of-ssh-when-it-locks)
 
+## Kill idle `sshd` sessions
+
+Use `ps fxww | grep pts/` to determine which PID to `kill`.
+
+*References*:
+
+- [linux - Stop sshd and kill ongoing connections - Unix & Linux Stack Exchange](https://unix.stackexchange.com/questions/548710/stop-sshd-and-kill-ongoing-connections)
+
 ## Remote port forwarding
 
 *References*:
@@ -64,13 +73,13 @@ Hit subsequently `Enter` + `~` + `.`.
 
 ### Scenario I
 
-Suppose the local machine (**Host A**) can establish SSH connections with both **Server B** and **Server C**, but **Server B** and **Server C** cannot reach each other.
+The local machine (**Host A**) can establish SSH connections with both **Server B** and **Server C**, but **Server B** and **Server C** cannot reach each other.
 
-However, from **Server B**, we want to access a GitLab service on **Server C** via SSH. This is where remote port forwarding is useful.
+However, we want to access a GitLab service on **Server C** via SSH from **Server B**. This is where remote port forwarding is useful.
 
-On local machine (**Host A**), we use the following `.ssh/config`:
+On the local machine (**Host A**), we use the following `.ssh/config`:
 
-```text
+```ssh-config
 Host Server-B
     HostName ADDRESS_OF_SERVER_B
     User USERNAME_ON_SERVER_B
@@ -79,15 +88,15 @@ Host Server-B
 
 On **Server B**, we use the following `.ssh/config`:
 
-```text
+```ssh-config
 Host ADDRESS_OF_SERVER_C
     HostName 127.0.0.1
-    Port 11111
+    Port 11111(corresponding to AVAILABLE_PORT_ON_SERVER_B)
     User git
     IdentityFile PRIVATE_KEY
 ```
 
-Then, after establishing an SSH connection to **Server B** from local machine (**Host A**), we can access the git repository service on **Server C** from **Server B**.
+Then, after establishing an SSH connection to **Server B** from the local machine (**Host A**), we can access the GitLab service on **Server C** from **Server B**.
 
 For example, the following command will work perfectly fine on **Server B**:
 
