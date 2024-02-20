@@ -1,6 +1,6 @@
 # Java
 
-Last modified: 2023/12/29 UTC
+Last modified: 2024/02/05 UTC
 
 - [Interesting posts](#interesting-posts)
 - [Java distributions](#java-distributions)
@@ -8,14 +8,14 @@ Last modified: 2023/12/29 UTC
 - [JAR manipulations](#jar-manipulations)
 - [Jetty](#jetty)
 - [Apache](#apache)
+- [VSCode](#vscode)
 
 ## Interesting posts
 
 - [成为一个更好的Java程序员](https://github.com/crisxuan/bestJavaer)
 - [互联网 Java 工程师进阶知识完全扫盲](https://github.com/doocs/advanced-java)
 - [史上最简单的 IntelliJ IDEA 教程](https://github.com/guobinhit/intellij-idea-tutorial)
-- [The Oracle Java Platform Extension for Visual Studio Code \| Hacker News](https://news.ycombinator.com/item?id=37929311)
-- [Introducing the Oracle Java Platform Extension for Visual Studio Code : java](https://www.reddit.com/r/java/comments/17ar11h/introducing_the_oracle_java_platform_extension/)
+- [Stepping in 2024 with Powerful Java Language Features – Inside.java](https://inside.java/2024/01/16/wrapup-java-lang-features/)
 
 ## Java distributions
 
@@ -89,3 +89,10 @@ Last modified: 2023/12/29 UTC
 - [SameSite cookies with Apache](https://www.petefreitag.com/blog/samesite-cookies-apache/)
 - [http headers - How to set SameSite cookie attribute using Apache configuration? - Stack Overflow](https://stackoverflow.com/questions/54104573/how-to-set-samesite-cookie-attribute-using-apache-configuration)
 - [apache 2.4 - Header always edit Set-Cookie not working - Server Fault](https://serverfault.com/questions/1043924/header-always-edit-set-cookie-not-working)
+
+## VSCode
+
+*References*:
+
+- [The Oracle Java Platform Extension for Visual Studio Code \| Hacker News](https://news.ycombinator.com/item?id=37929311)
+- [Introducing the Oracle Java Platform Extension for Visual Studio Code : java](https://www.reddit.com/r/java/comments/17ar11h/introducing_the_oracle_java_platform_extension/)

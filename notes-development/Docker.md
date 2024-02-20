@@ -1,9 +1,10 @@
 # Docker Application Development
 
-Last modified: 2024/01/24 UTC
+Last modified: 2024/01/31 UTC
 
 - [Dockerfile](#dockerfile)
   - [`CMD` \& `ENTRYPOINT`](#cmd--entrypoint)
+- [GitHub Container Registry](#github-container-registry)
 - [CentOS image](#centos-image)
   - [Interesting posts](#interesting-posts)
 - [WARP issue](#warp-issue)
@@ -25,6 +26,12 @@ From Phind:
 > 2. **Combining `CMD` and `ENTRYPOINT`**: If both `CMD` and `ENTRYPOINT` are used in the same Dockerfile, `CMD` will be used as arguments to `ENTRYPOINT`. For example, if your Dockerfile has `ENTRYPOINT ["python3"]` and `CMD ["app.py"]`, the command that will be run when a container is started from the image is `python3 app.py`.
 >
 > 3. **Form**: `ENTRYPOINT` has two forms: the exec form (which is `ENTRYPOINT ["executable", "param1", "param2"]`) and the shell form (which is `ENTRYPOINT command param1 param2`). The exec form does not invoke a command shell which means it does not do variable substitution. The shell form does invoke a command shell which means it does do variable substitution.
+
+## GitHub Container Registry
+
+*References*:
+
+- [GitHub Container Registry · Codefresh \| Docs](https://codefresh.io/docs/docs/integrations/docker-registries/github-container-registry/)
 
 ## CentOS image
 

@@ -1,6 +1,6 @@
 # JavaScript/TypeScript
 
-Last modified: 2024/01/25 UTC
+Last modified: 2024/02/02 UTC
 
 - [Interesting posts](#interesting-posts)
   - [Development tools](#development-tools)
@@ -9,6 +9,7 @@ Last modified: 2024/01/25 UTC
   - [React](#react)
     - [Elastic UI](#elastic-ui)
     - [i18n](#i18n)
+- [Node environment](#node-environment)
 - [Config](#config)
   - [VSCode](#vscode)
     - [`settings.json`](#settingsjson)
@@ -104,6 +105,14 @@ Last modified: 2024/01/25 UTC
 #### i18n
 
 - [React i18n: A step-by-step guide to React-intl](https://lokalise.com/blog/react-i18n-intl/)
+
+## Node environment
+
+- For CentOS 7, the maximum version supported is 16.
+
+*References*:
+
+- [Can I install node.js 18 on Centos 7 and do I need python 3 install too? - Stack Overflow](https://stackoverflow.com/questions/72571235/can-i-install-node-js-18-on-centos-7-and-do-i-need-python-3-install-too/73272661#73272661)
 
 ## Config
 

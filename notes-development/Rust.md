@@ -1,6 +1,6 @@
 # Rust
 
-Last modified: 2024/01/25 UTC
+Last modified: 2024/02/06 UTC
 
 - [Interesting posts](#interesting-posts)
 - [VSCode](#vscode)
@@ -67,6 +67,9 @@ Last modified: 2024/01/25 UTC
   - [RustForLinux：跟着清华训练营从零打造 Linux 驱动](https://mp.weixin.qq.com/mp/appmsgalbum?__biz=Mzg4Nzk4MTY3Nw==&action=getalbum&album_id=3183255184072835074)
   - [Write a Toy VPN in Rust](https://write.yiransheng.com/vpn)
   - [Writing an OS in Rust](https://os.phil-opp.com/)
+- MISC:
+  - [Rust has been forked to the Crab Language \| Hacker News](https://news.ycombinator.com/item?id=36122270)
+  - [CrabLang : programming](https://www.reddit.com/r/programming/comments/12n0dqc/crablang/)
 
 ## VSCode
 
