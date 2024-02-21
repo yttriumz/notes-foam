@@ -1,10 +1,14 @@
 # Garmin
 
-Last modified: 2024/01/30 UTC
+Last modified: 2024/02/21 UTC
 
 - [Interesting posts](#interesting-posts)
+- [Release cycle](#release-cycle)
+  - [Fenix series](#fenix-series)
+  - [Instinct series](#instinct-series)
 - [Instinct Solar](#instinct-solar)
 - [Instinct 2X Solar](#instinct-2x-solar)
+  - [Watch faces (from Garmin)](#watch-faces-from-garmin)
 - [eTrex 32X](#etrex-32x)
 - [GPSMAP 66](#gpsmap-66)
 - [Garmin Connect](#garmin-connect)
@@ -21,12 +25,36 @@ Last modified: 2024/01/30 UTC
 - Navigation:
   - [Using a Dual Frequency/Multi-Band Outdoor Handheld \| Garmin Customer Support](https://support.garmin.com/en-US/?faq=jptru9E32f6q0zydcdtXh9)
 - Health matrices:
+  - [Top FAQs for the Pulse Ox Feature on Garmin Watches \| Garmin Customer Support](https://support.garmin.com/en-US/?faq=SK2Y9a9aBp5D6n4sXmPBG7)
   - [What is the Acute and Chronic Load Feature of My Garmin Device? \| Garmin Customer Support](https://support.garmin.com/en-US/?faq=C6iHdy0SS05RkoSVbFz066)
   - [Garmin's new Acute Load training metric explained](https://gadgetsandwearables.com/2022/09/04/garmin-acute-training-load/)
   - [Who can explain acute and chronic load to me? : GarminWatches](https://www.reddit.com/r/GarminWatches/comments/11citlg/who_can_explain_acute_and_chronic_load_to_me/)
   - [What is the Health Snapshot Feature on My Garmin Watch? \| Garmin Customer Support](https://support.garmin.com/en-US/?faq=PB1duL5p6V64IQwhNvcRK9)
   - [What's the relationship between HRV (RMSSD) and HRV (SDRR)? Should I pay closer attention to one over the other? : Garmin](https://www.reddit.com/r/Garmin/comments/s2a2qo/whats_the_relationship_between_hrv_rmssd_and_hrv/)
   - [What are HRV score, RMSSD, ln(RMSSD), SDNN and PNN50? - Elite HRV Knowledge Base](https://help.elitehrv.com/article/68-what-are-hrv-score-rmssd-ln-rmssd-sdnn-nn50-and-pnn50)
+
+## Release cycle
+
+### Fenix series
+
+1. **2012-07**: Fenix
+2. **2014-03**: Fenix 2
+3. **2015-01**: Fenix 3 (didn’t ship till 2015-03+)
+4. **2016-02**: Fenix 3 HR (the mid-point release, added optical HR, didn’t ship for months)
+5. **2017-03**: Fenix 5
+6. **2018-06**: Fenix 5 Plus (the mid-point release, added maps/music/payments to all units)
+7. **2019-08**: Fenix 6 & Fenix 6 Pro
+8. **2020-07**: Fenix 6 Solar (the mid-point release, all units got solar)
+9. **2022-01**: Fenix 7 (plus Epix Gen 2)
+10. **2023-05-31**: Fenix 7 Pro (the mid-point release, plus Epix Pro)
+
+### Instinct series
+
+1. **2018-10** Instinct
+2. **2020-07** Instinct Solar
+3. **2022-02** Instinct 2
+4. **2022-11** Instinct Crossover
+5. **2023-04** Instinct 2X Solar
 
 ## Instinct Solar
 
@@ -44,7 +72,79 @@ Last modified: 2024/01/30 UTC
 
 *References*:
 
+- [Garmin \| Product Compare](https://www.garmin.com/en-US/compare/?compareProduct=884585&compareProduct=775697)
 - [Instinct 2 Series Owner's Manual - Instinct 2 Series](https://www8.garmin.com/manuals/webhelp/GUID-31D23DBB-57C2-4DF7-A0C9-8D1A00AB4BE7/EN-US/GUID-8ED0D1EF-A3B9-4868-BDE2-BA3423F3C01C-homepage.html)
+
+### Watch faces (from Garmin)
+
+<details>
+<summary>Best ones</summary>
+
+|             | IDEAL | Bivouac | Crystal | Mountain | Typography |
+| ----------- | :---: | :-----: | :-----: | :------: | :--------: |
+| B/W         |  B&W  |    B    |    B    |    B     |     B      |
+| battery     |   %   |    *    |    %    |    *     |     %      |
+| heart rate  |   *   |    *    |    *    |    *     |     *      |
+| seconds     |   *   |         |         |          |            |
+| day of week |   *   |    *    |    *    |          |     *      |
+| month       |       |         |         |          |            |
+| Bluetooth   |   *   |    *    |    *    |    *     |            |
+| message     |       |         |    *    |          |            |
+| altitude    |   *   |    *    |    *    |    *     |            |
+| barometer   | graph |         |         |          |            |
+| solar       |       |         |         |          |     *      |
+| sunrise/set |  bar  |         |         |          |            |
+| weather     |       |         |         |          |            |
+| steps       |       |         |         |          |            |
+| floors      |       |         |         |          |            |
+
+</details>
+
+<details>
+<summary>Good ones</summary>
+
+|             | IDEAL | Bionic | Bivouac | Chatte | Crystal | Jaunty | Medal | Mountain | Stargazing | Typography |
+| ----------- | :---: | :----: | :-----: | :----: | :-----: | :----: | :---: | :------: | :--------: | :--------: |
+| B/W         |  B&W  |   B    |    B    |   B    |    B    |  B&W   |       |    B     |            |     B      |
+| battery     |   %   |   *    |    *    |   %    |    %    |   %    |   %   |    *     |     *      |     %      |
+| heart rate  |   *   |   *    |    *    |   *    |    *    |   *    |   *   |    *     |     *      |     *      |
+| seconds     |   *   |        |         |        |         |   *    |       |          |            |            |
+| day of week |   *   |   *    |    *    |   *    |    *    |   *    |   *   |          |     *      |     *      |
+| month       |       |        |         |        |         |        |       |          |            |            |
+| Bluetooth   |   *   |   *    |    *    |   *    |    *    |   *    |   *   |    *     |     *      |            |
+| message     |       |   *    |         |        |    *    |   *    |       |          |     #      |            |
+| altitude    |   *   |   *    |    *    |        |    *    |        |       |    *     |     *      |            |
+| barometer   | graph |        |         |        |         |        |       |          |            |            |
+| solar       |       |        |         |        |         |        |       |          |            |     *      |
+| sunrise/set |  bar  |        |         |        |         |        |       |          |            |            |
+| weather     |       |        |         |        |         |        |       |          |            |            |
+| steps       |       |  bar   |         |        |         |        |       |          |            |            |
+| floors      |       |  bar   |         |        |         |        |       |          |            |            |
+
+</details>
+
+<details>
+<summary>Less attractive (visual or functional) ones</summary>
+
+|             | IDEAL | ~~Digi~~ (ILLEGIBLE) | Digital Dashboard | Element | Graystone | Onyx  |  ~~Swift~~  |
+| ----------- | :---: | :------------------: | :---------------: | :-----: | :-------: | :---: | :---------: |
+| B/W         |  B&W  |          B           |                   |    B    |     B     |   B   |      B      |
+| battery     |   %   |          %           |         *         |    *    |     *     |   d   |      d      |
+| heart rate  |   *   |          *           |         *         |    *    |     *     |   *   |      *      |
+| seconds     |   *   |          *           |                   |         |           |   *   |             |
+| day of week |   *   |          *           |         *         |         |     *     |   *   |      *      |
+| month       |       |                      |                   |         |     *     |       |             |
+| Bluetooth   |   *   |          *           |         *         |    *    |     *     |       |             |
+| message     |       |          #           |                   |    #    |     #     |       |             |
+| altitude    |   *   |                      |                   |         |     *     |       |      *      |
+| barometer   | graph |                      |                   |         |   `1k`    |       |             |
+| solar       |       |                      |                   |    *    |           |   *   |      *      |
+| sunrise/set |  bar  |                      |                   |         |           |   *   | NOT WORKING |
+| weather     |       |                      |                   |         |           |   *   |      *      |
+| steps       |       |                      |         *         |    %    |           |       |             |
+| floors      |       |                      |        bar        |         |           |       |             |
+
+</details>
 
 ## eTrex 32X
 
