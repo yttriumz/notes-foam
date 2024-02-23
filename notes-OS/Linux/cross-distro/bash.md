@@ -1,6 +1,6 @@
 # Bash Usage
 
-Last modified: 2024/01/17 UTC
+Last modified: 2024/02/20 UTC
 
 - [Interesting posts](#interesting-posts)
 - [Configuration files](#configuration-files)
@@ -1072,6 +1072,8 @@ Press `Alt`+`Ctrl`+`E`.
 
 ## Redirect command/script/application output
 
+Use `SOME_COMMAND 2>&1 | tee PATH/TO/FILE`.
+
 *References*:
 
 - [I/O Redirection](https://tldp.org/LDP/abs/html/io-redirection.html)
@@ -1079,6 +1081,7 @@ Press `Alt`+`Ctrl`+`E`.
 - [terminal - Display output from command and save to file - Unix & Linux Stack Exchange](https://unix.stackexchange.com/questions/274168/display-output-from-command-and-save-to-file)
 - [bash - echo that outputs to stderr - Stack Overflow](https://stackoverflow.com/questions/2990414/echo-that-outputs-to-stderr)
 - [linux - Echo to both stdout and stderr - Stack Overflow](https://stackoverflow.com/questions/6852969/echo-to-both-stdout-and-stderr)
+- [linux - Capturing STDERR and STDOUT to file using tee - Server Fault](https://serverfault.com/questions/201061/capturing-stderr-and-stdout-to-file-using-tee)
 
 ## Scripting
 
