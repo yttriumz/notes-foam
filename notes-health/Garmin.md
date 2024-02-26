@@ -1,6 +1,6 @@
 # Garmin
 
-Last modified: 2024/02/21 UTC
+Last modified: 2024/02/25 UTC
 
 - [Interesting posts](#interesting-posts)
 - [Release cycle](#release-cycle)
@@ -17,11 +17,16 @@ Last modified: 2024/02/21 UTC
 
 ## Interesting posts
 
+- [Zulu and UTC: the story behind aviation's time zone \| Flightradar24 Blog](https://www.flightradar24.com/blog/zulu-and-utc-the-story-behind-aviations-time-zone/)
 - [Garmin GPS Revisions versus features](http://gpsinformation.net/allory/garfeat3.htm)
 - [GPSrChive](http://www.gpsrchive.com/)
-- [Can I Copy or Back Up My Information and Settings on My Garmin Device? \| Garmin Customer Support](https://support.garmin.com/en-US/?faq=AXV7LuWgc73v21nq6nbDa6)
-- [How to Reset My Garmin Outdoor Watch \| Garmin Support](https://support.garmin.com/en-MY/?faq=wxPmdnWsev1xGRUf58oDC8)
+- [Watch Wear and Care Tips \| Garmin](https://www.garmin.com/en-US/watch-fit-and-care/)
+- [Water Rating Definitions \| Garmin](https://www.garmin.com/en-US/legal/waterrating-definitions/)
 - [Deleting Your Garmin Account \| Garmin Customer Support](https://support.garmin.com/en-US/?faq=lBWQm0sVAK06RRRXFECFv6)
+- Device manipulation:
+  - [Can I Copy or Back Up My Information and Settings on My Garmin Device? \| Garmin Customer Support](https://support.garmin.com/en-US/?faq=AXV7LuWgc73v21nq6nbDa6)
+  - [Removing Activity Files to Free Up Space on a Garmin Device \| Garmin Customer Support](https://support.garmin.com/en-US/?faq=oRFoANiwdW8hd9LSqjr8X8&searchQuery=How%20to%20Delete%20the%20Activity%20Folder)
+  - [How to Reset My Garmin Outdoor Watch \| Garmin Support](https://support.garmin.com/en-MY/?faq=wxPmdnWsev1xGRUf58oDC8)
 - Navigation:
   - [Using a Dual Frequency/Multi-Band Outdoor Handheld \| Garmin Customer Support](https://support.garmin.com/en-US/?faq=jptru9E32f6q0zydcdtXh9)
 - Health matrices:
@@ -32,6 +37,9 @@ Last modified: 2024/02/21 UTC
   - [What is the Health Snapshot Feature on My Garmin Watch? \| Garmin Customer Support](https://support.garmin.com/en-US/?faq=PB1duL5p6V64IQwhNvcRK9)
   - [What's the relationship between HRV (RMSSD) and HRV (SDRR)? Should I pay closer attention to one over the other? : Garmin](https://www.reddit.com/r/Garmin/comments/s2a2qo/whats_the_relationship_between_hrv_rmssd_and_hrv/)
   - [What are HRV score, RMSSD, ln(RMSSD), SDNN and PNN50? - Elite HRV Knowledge Base](https://help.elitehrv.com/article/68-what-are-hrv-score-rmssd-ln-rmssd-sdnn-nn50-and-pnn50)
+  - [Using the Daily Suggested Workout Feature on a Garmin Watch \| Garmin Customer Support](https://support.garmin.com/en-US/?faq=oYknGZ910l1pfBNzkDHX6A)
+- Warranty:
+  - [Consumer Limited Warranty \| Garmin Hong Kong](https://www.garmin.com/en-HK/legal/consumer-limited-warranty/)
 
 ## Release cycle
 
@@ -73,6 +81,7 @@ Last modified: 2024/02/21 UTC
 *References*:
 
 - [Garmin \| Product Compare](https://www.garmin.com/en-US/compare/?compareProduct=884585&compareProduct=775697)
+- [Garmin \| Product Compare](https://www.garmin.com/en-US/compare/?compareProduct=866230&compareProduct=775697&compareProduct=884585&compareProduct=884414&compareProduct=802901)
 - [Instinct 2 Series Owner's Manual - Instinct 2 Series](https://www8.garmin.com/manuals/webhelp/GUID-31D23DBB-57C2-4DF7-A0C9-8D1A00AB4BE7/EN-US/GUID-8ED0D1EF-A3B9-4868-BDE2-BA3423F3C01C-homepage.html)
 
 ### Watch faces (from Garmin)
