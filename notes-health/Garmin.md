@@ -1,6 +1,6 @@
 # Garmin
 
-Last modified: 2024/02/25 UTC
+Last modified: 2024/02/29 UTC
 
 - [Interesting posts](#interesting-posts)
 - [Release cycle](#release-cycle)
@@ -27,16 +27,19 @@ Last modified: 2024/02/25 UTC
   - [Can I Copy or Back Up My Information and Settings on My Garmin Device? \| Garmin Customer Support](https://support.garmin.com/en-US/?faq=AXV7LuWgc73v21nq6nbDa6)
   - [Removing Activity Files to Free Up Space on a Garmin Device \| Garmin Customer Support](https://support.garmin.com/en-US/?faq=oRFoANiwdW8hd9LSqjr8X8&searchQuery=How%20to%20Delete%20the%20Activity%20Folder)
   - [How to Reset My Garmin Outdoor Watch \| Garmin Support](https://support.garmin.com/en-MY/?faq=wxPmdnWsev1xGRUf58oDC8)
-- Navigation:
+- Outdoor features:
   - [Using a Dual Frequency/Multi-Band Outdoor Handheld \| Garmin Customer Support](https://support.garmin.com/en-US/?faq=jptru9E32f6q0zydcdtXh9)
+  - ["No DEM Elevation Available" Error When Calibrating the Altimeter by Use DEM \| Garmin Customer Support](https://support.garmin.com/en-US/?faq=twfSoaCovG622VbhfPubF8)
 - Health matrices:
   - [Top FAQs for the Pulse Ox Feature on Garmin Watches \| Garmin Customer Support](https://support.garmin.com/en-US/?faq=SK2Y9a9aBp5D6n4sXmPBG7)
-  - [What is the Acute and Chronic Load Feature of My Garmin Device? \| Garmin Customer Support](https://support.garmin.com/en-US/?faq=C6iHdy0SS05RkoSVbFz066)
-  - [Garmin's new Acute Load training metric explained](https://gadgetsandwearables.com/2022/09/04/garmin-acute-training-load/)
-  - [Who can explain acute and chronic load to me? : GarminWatches](https://www.reddit.com/r/GarminWatches/comments/11citlg/who_can_explain_acute_and_chronic_load_to_me/)
   - [What is the Health Snapshot Feature on My Garmin Watch? \| Garmin Customer Support](https://support.garmin.com/en-US/?faq=PB1duL5p6V64IQwhNvcRK9)
   - [What's the relationship between HRV (RMSSD) and HRV (SDRR)? Should I pay closer attention to one over the other? : Garmin](https://www.reddit.com/r/Garmin/comments/s2a2qo/whats_the_relationship_between_hrv_rmssd_and_hrv/)
   - [What are HRV score, RMSSD, ln(RMSSD), SDNN and PNN50? - Elite HRV Knowledge Base](https://help.elitehrv.com/article/68-what-are-hrv-score-rmssd-ln-rmssd-sdnn-nn50-and-pnn50)
+- Training:
+  - [What is the Acute and Chronic Load Feature of My Garmin Device? \| Garmin Customer Support](https://support.garmin.com/en-US/?faq=C6iHdy0SS05RkoSVbFz066)
+  - [Garmin's new Acute Load training metric explained](https://gadgetsandwearables.com/2022/09/04/garmin-acute-training-load/)
+  - [Who can explain acute and chronic load to me? : GarminWatches](https://www.reddit.com/r/GarminWatches/comments/11citlg/who_can_explain_acute_and_chronic_load_to_me/)
+  - [Viewing Your Predicted Race Time in Garmin Connect \| Garmin Customer Support](https://support.garmin.com/en-US/?faq=eqGwbtBVJB0L6fZnHLCkB8)
   - [Using the Daily Suggested Workout Feature on a Garmin Watch \| Garmin Customer Support](https://support.garmin.com/en-US/?faq=oYknGZ910l1pfBNzkDHX6A)
 - Warranty:
   - [Consumer Limited Warranty \| Garmin Hong Kong](https://www.garmin.com/en-HK/legal/consumer-limited-warranty/)
