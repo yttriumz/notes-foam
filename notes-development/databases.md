@@ -1,6 +1,6 @@
 # Databases
 
-Last modified: 2024/02/02 UTC
+Last modified: 2024/02/28 UTC
 
 - [Interesting posts](#interesting-posts)
 - [PostgreSQL](#postgresql)
@@ -37,6 +37,8 @@ Last modified: 2024/02/02 UTC
 - [Compatibility matrices for Logstash and Beats](https://opensearch.org/docs/latest/tools/#compatibility-matrices)
 - [OpenSearch Shards & Replicas: Explanations, Optimization & More](https://opster.com/blogs/opensearch-shards-and-replicas/)
 - [Version history - OpenSearch documentation](https://opensearch.org/docs/2.11/version-history/)
+- [Check OpenSearch Version: A How-to Guide](https://opster.com/guides/opensearch/opensearch-operations/checking-opensearch-version/)
+- [Efficient Duplicate Prevention for Event-Based Data in Elasticsearch \| Elastic Blog](https://www.elastic.co/blog/efficient-duplicate-prevention-for-event-based-data-in-elasticsearch)
 
 ### Kibana/OpenSearch Dashboards
 
@@ -56,6 +58,10 @@ Last modified: 2024/02/02 UTC
 ### elasticdump
 
 - For version >= 6.67.0 (<= 6.110.0), node version >= 10.0.0 is required.
+
+*References*:
+
+- [A practical guide to working with Elasticdump - LogRocket Blog](https://blog.logrocket.com/a-practical-guide-to-working-with-elasticdump/)
 
 ### Tools
 

@@ -1,6 +1,6 @@
 # Python
 
-Last modified: 2024/01/25 UTC
+Last modified: 2024/03/01 UTC
 
 - [Interesting posts](#interesting-posts)
 - [pip](#pip)
@@ -26,9 +26,11 @@ Last modified: 2024/01/25 UTC
 - [Status of Python versions](https://devguide.python.org/versions/)
 - [What is Pythonic? \| Secret Weblog](https://blog.startifact.com/posts/older/what-is-pythonic/)
 - [Everything you need to know about the switch to Python 3 | Kali Linux Documentation](https://www.kali.org/docs/general-use/python3-transition/)
-- [A Python Interpreter Written in Python](https://aosabook.org/en/500L/a-python-interpreter-written-in-python.html)
-- [Jinja2 Explained in 5 Minutes!. (Part 4: Back-end Web Framework: Flask) \| by Diva Dugar \| codeburst](https://codeburst.io/jinja-2-explained-in-5-minutes-88548486834e)
 - [What Are Python Wheels and Why Should You Care? – Real Python](https://realpython.com/python-wheels/)
+- Tutorials:
+  - [A Byte of Python](https://python.swaroopch.com/)
+  - [A Python Interpreter Written in Python](https://aosabook.org/en/500L/a-python-interpreter-written-in-python.html)
+  - [Jinja2 Explained in 5 Minutes!. (Part 4: Back-end Web Framework: Flask) \| by Diva Dugar \| codeburst](https://codeburst.io/jinja-2-explained-in-5-minutes-88548486834e)
 
 ## pip
 
