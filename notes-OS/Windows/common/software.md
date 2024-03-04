@@ -8,10 +8,10 @@
 
 ## winget
 
-- `JanDeDobbeleer.OhMyPosh`. Refer to [the official doc]( https://ohmyposh.dev/docs/installation/windows#installation ). See [[shell-tools#Oh My Posh]] for config.
-- `Starship.Starship`. Refer to [the official doc]( https://starship.rs/#quick-install ). See [[shell-tools#Starship]] for config.
-- `xanderfrangos.twinkletray`. Refer to [the official doc]( https://github.com/xanderfrangos/twinkle-tray ).
-- `Microsoft.PowerShell`. Refer to [the official doc]( https://learn.microsoft.com/en-us/powershell/scripting/install/installing-powershell-on-windows?view=powershell-7.3 ) and [the release page]( https://github.com/PowerShell/PowerShell/releases ).
+- `JanDeDobbeleer.OhMyPosh`. Refer to [the official doc](https://ohmyposh.dev/docs/installation/windows#installation). See [[shell-tools#Oh My Posh]] for config.
+- `Starship.Starship`. Refer to [the official doc](https://starship.rs/#quick-install). See [[shell-tools#Starship]] for config.
+- `xanderfrangos.twinkletray`. Refer to [the official doc](https://github.com/xanderfrangos/twinkle-tray).
+- `Microsoft.PowerShell`. Refer to [the official doc](https://learn.microsoft.com/en-us/powershell/scripting/install/installing-powershell-on-windows?view=powershell-7.3) and [the release page](https://github.com/PowerShell/PowerShell/releases).
 
 ## Standalone
 

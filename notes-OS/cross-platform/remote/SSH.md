@@ -1,6 +1,6 @@
 # SSH Usage
 
-Last modified: 2024/02/19 UTC
+Last modified: 2024/02/29 UTC
 
 - [Interesting posts](#interesting-posts)
 - [Create SSH key pair](#create-ssh-key-pair)
@@ -50,7 +50,7 @@ Use the flag `-o "StrictHostKeyChecking no"`.
 
 ## Kill idle SSH sessions
 
-Hit subsequently `Enter` + `~` + `.`.
+Hit subsequently `Enter` > `~` > `.`.
 
 *References*:
 

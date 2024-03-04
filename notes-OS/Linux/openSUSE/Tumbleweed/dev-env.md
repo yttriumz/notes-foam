@@ -1,6 +1,6 @@
 # OpenSUSE Tumbleweed Development Environment
 
-Last modified: 2024/01/29 UTC
+Last modified: 2024/03/04 UTC
 
 - [SSH](#ssh)
 - [git](#git)
@@ -24,7 +24,7 @@ Last modified: 2024/01/29 UTC
       - [fnm](#fnm)
 - [PowerShell 7](#powershell-7)
 - [Python](#python)
-   - [Pyenv](#pyenv)
+   - [pyenv](#pyenv)
       - [Installation](#installation)
 - [Rust](#rust)
 - [Scala](#scala)
@@ -160,23 +160,18 @@ zypper install pattern:devel_basis # This is the same
 
 - [ ] todo
 
-1. Install some packages via the following commands:
-
-   ```bash
-   zypper install clang
-   ```
-
 ## Flutter
 
-1. Install the following dependencies:
+1. Install dependencies via the following commands:
 
-   ```text
-   clang-devel
-   ninja
-   gtk3-devel
+   ```bash
+   zypper install \
+       clang17-devel \
+       ninja \
+       gtk3-devel
    ```
 
-2. Refer to [the official doc]( https://docs.flutter.dev/get-started/install/linux ). I installed it under `$HOME/.flutter`.
+2. Refer to [the official doc](https://docs.flutter.dev/get-started/install/linux). I installed it under `$HOME/.flutter`.
 3. Add the following to `~/.bash_profile`:
 
    ```bash
@@ -283,24 +278,28 @@ Problem: nothing provides 'openssl-libs' needed by the to be installed powershel
 
 `python3` is already available upon system installation.
 
-### Pyenv
+### pyenv
 
 #### Installation
 
-1. I have the following in `~/.profile`:
+1. Install pyenv via the following commands:
 
    ```bash
+   zypper install pyenv
+   ```
+
+2. Add the following to `~/.bashrc`:
+
+   ```bash
+   # pyenv
+   # command -v pyenv >/dev/null || export PATH="$PYENV_ROOT/bin:$PATH"
+   # eval "$(pyenv init --path)"
    export PYENV_ROOT="$HOME/.pyenv"
+   [[ -d $PYENV_ROOT/bin ]] && export PATH="$PYENV_ROOT/bin:$PATH"
+   eval "$(pyenv init -)"
    ```
 
-2. I have the following in `~/.bashrc`:
-
-   ```bash
-   command -v pyenv >/dev/null || export PATH="$PYENV_ROOT/bin:$PATH"
-   eval "$(pyenv init --path)"
-   ```
-
-3. I have to manually install the following packages before building Python 3.10.13:
+3. Before building Python 3.10.13, I have to install the following packages:
 
    ```text
    readline-devel tk-devel sqlite3-devel

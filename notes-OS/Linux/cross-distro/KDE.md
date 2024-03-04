@@ -1,6 +1,6 @@
 # KDE Plasma Tweak
 
-Last modified: 2024/01/22 UTC
+Last modified: 2024/03/04 UTC
 
 - [Interesting posts](#interesting-posts)
 - [Widget](#widget)
@@ -101,8 +101,8 @@ At the time of writing (*Tumbleweed 20230225, Baloo 5.103.0*), `baloo_file` cons
 
 *References*:
 
-- [the official doc]( https://docs.kde.org/trunk5/en/kwalletmanager/kwallet5/index.html ) ([PDF version]( https://docs.kde.org/stable5/en/kwalletmanager/kwallet5/kwallet5.pdf ))
-- [KDE Wallet - ArchWiki]( https://wiki.archlinux.org/title/KDE_Wallet )
+- [the official doc](https://docs.kde.org/trunk5/en/kwalletmanager/kwallet5/index.html) ([PDF version](https://docs.kde.org/stable5/en/kwalletmanager/kwallet5/kwallet5.pdf))
+- [KDE Wallet - ArchWiki](https://wiki.archlinux.org/title/KDE_Wallet)
 
 ### Blowfish and GPG
 

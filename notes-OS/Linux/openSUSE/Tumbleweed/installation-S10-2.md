@@ -15,7 +15,7 @@
 
 ## During installation
 
-Refer to [the official Leap startup guide]( https://doc.opensuse.org/documentation/leap/startup/html/book-startup/art-opensuse-installquick.html#sec-opensuse-installquick-install ) and [the community guide]( https://opensuse.github.io/openSUSE-docs-revamped-temp/yast_installer/ ) for more. Below are a few notable points.
+Refer to [the official Leap startup guide](https://doc.opensuse.org/documentation/leap/startup/html/book-startup/art-opensuse-installquick.html#sec-opensuse-installquick-install) and [the community guide](https://opensuse.github.io/openSUSE-docs-revamped-temp/yast_installer/) for more. Below are a few notable points.
 
 ### Text mode
 

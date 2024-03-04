@@ -1,6 +1,6 @@
 # Tumbleweed Package Management
 
-Last modified: 2024/02/08 UTC
+Last modified: 2024/03/04 UTC
 
 - [Interesting posts](#interesting-posts)
 - [Zypper](#zypper)
@@ -378,7 +378,7 @@ flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flat
 
 *References*:
 
-- [The community guide]( https://opensuse.github.io/openSUSE-docs-revamped-temp/best_of_post/#setup-your-tumbleweed-for-flatpaks )
+- [The community guide](https://opensuse.github.io/openSUSE-docs-revamped-temp/best_of_post/#setup-your-tumbleweed-for-flatpaks)
 
 ### Uninstall unused packages
 
