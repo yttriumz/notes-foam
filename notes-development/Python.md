@@ -99,6 +99,10 @@ Last modified: 2024/03/01 UTC
 
 ### Pyenv
 
+*References*:
+
+- [Managing Multiple Python Versions With pyenv – Real Python](https://realpython.com/intro-to-pyenv/)
+
 #### Installation
 
 - openSUSE Tumbleweed: [[Tumbleweed/dev-env#Pyenv]]

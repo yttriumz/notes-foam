@@ -1,6 +1,6 @@
 # Flutter
 
-Last modified: 2024/01/25 UTC
+Last modified: 2024/03/04 UTC
 
 - [Docs](#docs)
   - [Unofficial tutorials](#unofficial-tutorials)
@@ -184,11 +184,11 @@ Use `dart format lib/*`.
 
 ##### Rust side
 
-1. A working `llvm` for FFI.
-   - On openSUSE I installed `clang-devel` package which satisfies it.
+1. A working LLVM for FFI.
+   - openSUSE Tumbleweed: I installed `clang17-devel` package.
 2. `cargo install flutter_rust_bridge_codegen`.
 3. `cargo install cargo-ndk` (for Android)
-4. Add cross compilation targets:
+4. Add cross-compilation targets:
 
    ```bash
    rustup target add \
@@ -225,9 +225,9 @@ cargo ndk -t x86 -o ../android/app/src/main/jniLibs build
 
 ##### Automate the build process
 
-*References*:
-
 - [ ] todo
+
+*References*:
 
 - https://stackoverflow.com/questions/69515032/how-to-integrate-flutter-apps-build-process-with-rust-code-i-e-when-building
 

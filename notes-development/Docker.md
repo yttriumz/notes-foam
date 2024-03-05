@@ -1,6 +1,6 @@
 # Docker Application Development
 
-Last modified: 2024/01/31 UTC
+Last modified: 2024/03/01 UTC
 
 - [Dockerfile](#dockerfile)
   - [`CMD` \& `ENTRYPOINT`](#cmd--entrypoint)
@@ -14,6 +14,7 @@ Last modified: 2024/01/31 UTC
 *References*:
 
 - [Dockerfile reference \| Docker Docs](https://docs.docker.com/engine/reference/builder/)
+- [shell - Why && rather than a new RUN - Stack Overflow](https://stackoverflow.com/questions/47051993/why-rather-than-a-new-run)
 
 ### `CMD` & `ENTRYPOINT`
 
