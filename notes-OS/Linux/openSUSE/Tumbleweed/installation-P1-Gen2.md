@@ -15,7 +15,7 @@ Refer to [the official Leap startup guide](https://doc.opensuse.org/documentatio
 
 ### Network settings
 
-Do **not** configure WiFi during installation.
+Skip configuring WiFi during installation.
 
 ### Disk
 

@@ -1,6 +1,6 @@
 # SSH Usage
 
-Last modified: 2024/02/29 UTC
+Last modified: 2024/03/07 UTC
 
 - [Interesting posts](#interesting-posts)
 - [Create SSH key pair](#create-ssh-key-pair)
@@ -58,7 +58,7 @@ Hit subsequently `Enter` > `~` > `.`.
 
 ## Kill idle `sshd` sessions
 
-Use `ps fxww | grep pts/` to determine which PID to `kill`.
+Use `ps fxw | grep pts/` to determine which PID to `kill`.
 
 *References*:
 

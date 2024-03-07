@@ -25,7 +25,6 @@ Last modified: 2024/03/04 UTC
 - [PowerShell 7](#powershell-7)
 - [Python](#python)
    - [pyenv](#pyenv)
-      - [Installation](#installation)
 - [Rust](#rust)
 - [Scala](#scala)
 - [Machine Learning](#machine-learning)
@@ -279,8 +278,6 @@ Problem: nothing provides 'openssl-libs' needed by the to be installed powershel
 `python3` is already available upon system installation.
 
 ### pyenv
-
-#### Installation
 
 1. Install pyenv via the following commands:
 

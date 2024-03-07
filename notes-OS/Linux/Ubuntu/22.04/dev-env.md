@@ -24,7 +24,7 @@
 Install the basic environment via the following commands:
 
 ```bash
-apt install build-essential cpu-checker curl git neovim
+apt-get install build-essential cpu-checker curl git neovim
 ```
 
 ## Docker
@@ -39,10 +39,10 @@ apt install build-essential cpu-checker curl git neovim
      "deb [arch="$(dpkg --print-architecture)" signed-by=/etc/apt/keyrings/docker.gpg] https://download.docker.com/linux/ubuntu \
      "$(. /etc/os-release && echo "$VERSION_CODENAME")" stable" | \
      sudo tee /etc/apt/sources.list.d/docker.list > /dev/null
-   sudo apt update
+   sudo apt-get update
    apt-cache madison docker-ce | awk '{ print $3 }' # List available versions.
    VERSION_STRING=5:24.0.5-1~ubuntu.22.04~jammy # Set the desired version.
-   sudo apt install docker-ce=$VERSION_STRING docker-ce-cli=$VERSION_STRING containerd.io docker-buildx-plugin docker-compose-plugin
+   sudo apt-get install docker-ce=$VERSION_STRING docker-ce-cli=$VERSION_STRING containerd.io docker-buildx-plugin docker-compose-plugin
    ```
 
 2. Verify Docker installation via the following commands:
@@ -81,8 +81,8 @@ sudo install minikube-linux-amd64 /usr/local/bin/minikube
   ```bash
   curl -fsSL https://packages.cloud.google.com/apt/doc/apt-key.gpg | sudo gpg --dearmor -o /etc/apt/keyrings/kubernetes-archive-keyring.gpg
   echo "deb [signed-by=/etc/apt/keyrings/kubernetes-archive-keyring.gpg] https://apt.kubernetes.io/ kubernetes-xenial main" | sudo tee /etc/apt/sources.list.d/kubernetes.list
-  sudo apt update
-  sudo apt install kubectl
+  sudo apt-get update
+  sudo apt-get install kubectl
   ```
 
 - Or install manually:
@@ -437,7 +437,7 @@ Delete the topic:
 - Install some helper via the following commands:
 
   ```bash
-  apt install apt-transport-https ca-certificates
+  apt-get install apt-transport-https ca-certificates
   ```
 
 ### All nodes
@@ -529,8 +529,8 @@ Delete the topic:
    touch /etc/apt/sources.list.d/kubernetes.list
    curl -fsSL "https://packages.cloud.google.com/apt/doc/apt-key.gpg" | sudo gpg --dearmor -o /etc/apt/trusted.gpg.d/kubernetes-archive-keyring.gpg
    echo 'deb https://packages.cloud.google.com/apt kubernetes-xenial main' > /etc/apt/sources.list.d/kubernetes.list
-   apt update
-   apt install kubelet=1.26.1-00 kubeadm=1.26.1-00 kubectl=1.26.1-00
+   apt-get update
+   apt-get install kubelet=1.26.1-00 kubeadm=1.26.1-00 kubectl=1.26.1-00
    apt-mark hold kubelet kubeadm kubectl
    exit # Exit root
    ```

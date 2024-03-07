@@ -1,6 +1,6 @@
 # Tumbleweed Package Management
 
-Last modified: 2024/03/04 UTC
+Last modified: 2024/03/07 UTC
 
 - [Interesting posts](#interesting-posts)
 - [Zypper](#zypper)
@@ -181,6 +181,12 @@ zypper addrepo https://download.opensuse.org/repositories/M17N/openSUSE_Tumblewe
   ```
 
 - Or use `opi msedge`.
+
+Microsoft Edge Config files are stored under the following paths.
+
+- `$HOME/.cache/microsoft-edge`
+- `$HOME/.cache/Microsoft/Edge`
+- `$HOME/.config/microsoft-edge`
 
 #### Brave Browser
 
