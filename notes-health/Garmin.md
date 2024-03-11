@@ -1,6 +1,6 @@
 # Garmin
 
-Last modified: 2024/02/29 UTC
+Last modified: 2024/03/05 UTC
 
 - [Interesting posts](#interesting-posts)
 - [Release cycle](#release-cycle)
@@ -18,6 +18,7 @@ Last modified: 2024/02/29 UTC
 ## Interesting posts
 
 - [Zulu and UTC: the story behind aviation's time zone \| Flightradar24 Blog](https://www.flightradar24.com/blog/zulu-and-utc-the-story-behind-aviations-time-zone/)
+- [In the data field settings, what does "Custom Data 1 DST" mean? As opposed to the other setting "Custom Data 1"? - Discussion - Connect IQ - Garmin Forums](https://forums.garmin.com/developer/connect-iq/f/discussion/253971/in-the-data-field-settings-what-does-custom-data-1-dst-mean-as-opposed-to-the-other-setting-custom-data-1)
 - [Garmin GPS Revisions versus features](http://gpsinformation.net/allory/garfeat3.htm)
 - [GPSrChive](http://www.gpsrchive.com/)
 - [Watch Wear and Care Tips \| Garmin](https://www.garmin.com/en-US/watch-fit-and-care/)
@@ -30,12 +31,19 @@ Last modified: 2024/02/29 UTC
 - Outdoor features:
   - [Using a Dual Frequency/Multi-Band Outdoor Handheld \| Garmin Customer Support](https://support.garmin.com/en-US/?faq=jptru9E32f6q0zydcdtXh9)
   - ["No DEM Elevation Available" Error When Calibrating the Altimeter by Use DEM \| Garmin Customer Support](https://support.garmin.com/en-US/?faq=twfSoaCovG622VbhfPubF8)
+- During activities:
+  - [Turn off Performance Condition notifications during run? - fēnix 7 Series - Wearables - Garmin Forums](https://forums.garmin.com/outdoor-recreation/outdoor-recreation/f/fenix-7-series/303185/turn-off-performance-condition-notifications-during-run)
+  - [Log HRV setting? - Forerunner 935 - Sports & Fitness Archive - Garmin Forums](https://forums.garmin.com/sports-fitness/sports-fitness/f/forerunner-935/128094/log-hrv-setting)
 - Health matrices:
   - [Top FAQs for the Pulse Ox Feature on Garmin Watches \| Garmin Customer Support](https://support.garmin.com/en-US/?faq=SK2Y9a9aBp5D6n4sXmPBG7)
+  - [battery life reduced to only 4 day when the 'Pulse Ox Mode' was set to ’All Day‘ - Instinct 2 Series - Wearables - Garmin Forums](https://forums.garmin.com/outdoor-recreation/outdoor-recreation/f/instinct-2-series/290729/battery-life-reduced-to-only-4-day-when-the-pulse-ox-mode-was-set-to-all-day)
   - [What is the Health Snapshot Feature on My Garmin Watch? \| Garmin Customer Support](https://support.garmin.com/en-US/?faq=PB1duL5p6V64IQwhNvcRK9)
   - [What's the relationship between HRV (RMSSD) and HRV (SDRR)? Should I pay closer attention to one over the other? : Garmin](https://www.reddit.com/r/Garmin/comments/s2a2qo/whats_the_relationship_between_hrv_rmssd_and_hrv/)
   - [What are HRV score, RMSSD, ln(RMSSD), SDNN and PNN50? - Elite HRV Knowledge Base](https://help.elitehrv.com/article/68-what-are-hrv-score-rmssd-ln-rmssd-sdnn-nn50-and-pnn50)
-- Training:
+  - [Using the Hydration Widget or Glance on Your Garmin Watch \| Garmin Customer Support](https://support.garmin.com/en-US/?faq=390puZ3AgO4hM3IzakFs99)
+- Training matrices:
+  - [Instinct 2 Series Owner's Manual - Conducting an FTP Test](https://www8.garmin.com/manuals/webhelp/GUID-31D23DBB-57C2-4DF7-A0C9-8D1A00AB4BE7/EN-US/GUID-C8DAC4B1-3159-4E8C-ADD9-6FA012EBA697.html?q=ftp&nav=search_pane)
+  - [Instinct 2 Series Owner's Manual - Performing a Guided Test to Determine Your Lactate Threshold](https://www8.garmin.com/manuals/webhelp/GUID-31D23DBB-57C2-4DF7-A0C9-8D1A00AB4BE7/EN-US/GUID-1B0C9B93-01CD-4A0C-A30F-B815C0347159.html?q=lactate&nav=search_pane)
   - [What is the Acute and Chronic Load Feature of My Garmin Device? \| Garmin Customer Support](https://support.garmin.com/en-US/?faq=C6iHdy0SS05RkoSVbFz066)
   - [Garmin's new Acute Load training metric explained](https://gadgetsandwearables.com/2022/09/04/garmin-acute-training-load/)
   - [Who can explain acute and chronic load to me? : GarminWatches](https://www.reddit.com/r/GarminWatches/comments/11citlg/who_can_explain_acute_and_chronic_load_to_me/)
@@ -86,6 +94,7 @@ Last modified: 2024/02/29 UTC
 - [Garmin \| Product Compare](https://www.garmin.com/en-US/compare/?compareProduct=884585&compareProduct=775697)
 - [Garmin \| Product Compare](https://www.garmin.com/en-US/compare/?compareProduct=866230&compareProduct=775697&compareProduct=884585&compareProduct=884414&compareProduct=802901)
 - [Instinct 2 Series Owner's Manual - Instinct 2 Series](https://www8.garmin.com/manuals/webhelp/GUID-31D23DBB-57C2-4DF7-A0C9-8D1A00AB4BE7/EN-US/GUID-8ED0D1EF-A3B9-4868-BDE2-BA3423F3C01C-homepage.html)
+- [Activity Profiles on Instinct Watches \| Instinct® 2X Solar \| Garmin Customer Support](https://support.garmin.com/en-US/?faq=0TO3RJerG65l5cdfcjwCW8&productID=884585&searchQuery=activities&tab=topics)
 
 ### Watch faces (from Garmin)
 

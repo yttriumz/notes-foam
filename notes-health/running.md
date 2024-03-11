@@ -1,6 +1,6 @@
 # Running
 
-Last modified: 2024/01/30 UTC
+Last modified: 2024/03/05 UTC
 
 - [Interesting posts](#interesting-posts)
 - [Pace](#pace)
@@ -15,6 +15,7 @@ Last modified: 2024/01/30 UTC
 - [The 6 Best Running Hydration Packs of 2023 \| Tested by GearLab](https://www.outdoorgearlab.com/topics/fitness/best-hydration-pack-for-running)
 - [Running Science \| Garmin Technology](https://www.garmin.com/en-US/garmin-technology/running-science/)
 - [Running Science - Entry Level \| Garmin Singapore](https://www.garmin.com.sg/minisite/garmin-technology/running/entry-level/)
+- [Which Garmin Coach Is Right for You? - Garmin Blog](https://www.garmin.com/en-SG/blog/which-garmin-coach-is-right-for-you/)
 
 ## Pace
 
