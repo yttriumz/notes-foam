@@ -1,9 +1,9 @@
 # Kubernetes Usage
 
-Last modified: 2024/02/29 UTC
+Last modified: 2024-03-18 UTC
 
 - [Interesting posts](#interesting-posts)
-  - [Tutorials](#tutorials)
+- [Installation](#installation)
 - [Management tool](#management-tool)
 - [Check cluster status](#check-cluster-status)
 - [Label nodes](#label-nodes)
@@ -11,11 +11,14 @@ Last modified: 2024/02/29 UTC
 - [Remove pods](#remove-pods)
 - [Debug pods](#debug-pods)
 - [Get a shell to a running container](#get-a-shell-to-a-running-container)
+- [Storage](#storage)
 - [Get files inside pods](#get-files-inside-pods)
 - [Helm](#helm)
 
 ## Interesting posts
 
+- [Kubernetes Node Vs. Pod Vs. Cluster: Key Differencestext](https://www.cloudzero.com/blog/kubernetes-node-vs-pod/)
+- [Head-first k8s](https://head-first-kubernetes.github.io/)
 - [Demystifying Container Orchestration: A Beginner's Guide \| SUSE Communities](https://www.suse.com/c/rancher_blog/demystifying-container-orchestration-a-beginners-guide/)
 - [Why is learning Kubernetes so intimidating? : devops](https://www.reddit.com/r/devops/comments/o7w9yn/why_is_learning_kubernetes_so_intimidating/)
 - [Why Is Kubernetes So Hard - 4 Reasons Why And What to do About it — Release](https://release.com/blog/why-kubernetes-is-so-hard)
@@ -29,13 +32,78 @@ Last modified: 2024/02/29 UTC
 - [Why disable swap on kubernetes - Server Fault](https://serverfault.com/questions/881517/why-disable-swap-on-kubernetes)
 - [Why Kubernetes Hates Linux Swap?. A typical computer system has two types… \| by Bhargav Bhikkaji \| Tailwinds-MajorDomo \| Medium](https://medium.com/tailwinds-navigator/kubernetes-tip-why-disable-swap-on-linux-3505f0250263)
 - [deployments do not support (honor) container restartPolicy · Issue #24725 · kubernetes/kubernetes](https://github.com/kubernetes/kubernetes/issues/24725)
+- Tutorials:
+  - [Learn Kubernetes and Containers \| Rancher](https://www.rancher.com/learn-the-basics)
+  - [mmumshad/kubernetes-the-hard-way: Bootstrap Kubernetes the hard way on Vagrant on Local Machine. No scripts.](https://github.com/mmumshad/kubernetes-the-hard-way)
+  - [chaseSpace/k8s-tutorial-cn: The most(might) detailed Kubernetes tutorials in Chinese. 全网最（可能）详细的Kubernetes中文教程。](https://github.com/chaseSpace/k8s-tutorial-cn)
+  - [easzlab/kubeasz: 使用Ansible脚本安装K8S集群，介绍组件交互原理，方便直接，不受国内网络环境影响](https://github.com/easzlab/kubeasz)
+  - [How to Deploy Kubernetes with Kubeadm and containerd - The New Stack](https://thenewstack.io/how-to-deploy-kubernetes-with-kubeadm-and-containerd/)
+  - [How to Install a Multi-Node Kubernetes Cluster on Ubuntu](https://www.atlantic.net/dedicated-server-hosting/how-to-set-up-three-node-kubernetes-cluster-on-ubuntu/)
 
-### Tutorials
+## Installation
 
-- [Learn Kubernetes and Containers \| Rancher](https://www.rancher.com/learn-the-basics)
-- [mmumshad/kubernetes-the-hard-way: Bootstrap Kubernetes the hard way on Vagrant on Local Machine. No scripts.](https://github.com/mmumshad/kubernetes-the-hard-way)
-- [How to Deploy Kubernetes with Kubeadm and containerd - The New Stack](https://thenewstack.io/how-to-deploy-kubernetes-with-kubeadm-and-containerd/)
-- [How to Install a Multi-Node Kubernetes Cluster on Ubuntu](https://www.atlantic.net/dedicated-server-hosting/how-to-set-up-three-node-kubernetes-cluster-on-ubuntu/)
+```bash
+# Install on Ubuntu 22.04 using apt
+K8S_VERSION="v1.29"
+K8S_TOOL_VERSION="1.29.2-1.1"
+curl -fsSL https://pkgs.k8s.io/core:/stable:/$K8S_VERSION/deb/Release.key |
+    gpg --dearmor -o /etc/apt/keyrings/kubernetes-apt-keyring.gpg >/dev/null
+chmod a+r /etc/apt/keyrings/kubernetes-apt-keyring.gpg
+echo "deb [signed-by=/etc/apt/keyrings/kubernetes-apt-keyring.gpg] https://pkgs.k8s.io/core:/stable:/$K8S_VERSION/deb/ /" |
+    tee /etc/apt/sources.list.d/kubernetes.list
+apt-get update
+apt-get --yes install \
+    kubelet=$K8S_TOOL_VERSION \
+    kubeadm=$K8S_TOOL_VERSION \
+    kubectl=$K8S_TOOL_VERSION
+apt-mark hold \
+    kubelet \
+    kubeadm \
+    kubectl
+
+# Using official binaries
+K8S_VERSION="1.28.6"
+ETCD_VERSION="3.5.10"
+INSTALL_DIR="/usr/local/bin"
+CURL_COMMON_OPTIONS=(
+    --fail
+    --location
+    --show-error
+    --silent
+)
+TAR_COMMON_OPTIONS=(
+    --extract
+    --gzip
+    --overwrite
+    --verbose
+
+    --file -
+    --directory "$INSTALL_DIR"
+)
+curl "${CURL_COMMON_OPTIONS[@]}" https://dl.k8s.io/v$K8S_VERSION/kubernetes-node-linux-amd64.tar.gz |
+    tar "${TAR_COMMON_OPTIONS[@]}" --strip-components=3 --wildcards 'kubernetes/node/bin/*'
+curl "${CURL_COMMON_OPTIONS[@]}" https://github.com/etcd-io/etcd/releases/download/v$ETCD_VERSION/etcd-v$ETCD_VERSION-linux-amd64.tar.gz |
+    tar "${TAR_COMMON_OPTIONS[@]}" --strip-components=1 --wildcards 'etcd-v*/etcd*'
+```
+
+```bash
+# Install on Ubuntu 22.04 using apt
+HELM_VERSION="3.14.2-1"
+curl https://baltocdn.com/helm/signing.asc |
+    gpg --dearmor |
+    tee /usr/share/keyrings/helm.gpg >/dev/null
+chmod a+r /usr/share/keyrings/helm.gpg
+echo "deb [arch=$(dpkg --print-architecture) signed-by=/usr/share/keyrings/helm.gpg] https://baltocdn.com/helm/stable/debian/ all main" |
+    tee /etc/apt/sources.list.d/helm-stable-debian.list
+apt-get update
+apt-get --yes install helm=$HELM_VERSION
+apt-mark hold helm
+
+# Using official binaries
+HELM_VERSION="3.13.1"
+curl "${CURL_COMMON_OPTIONS[@]}" https://get.helm.sh/helm-v$HELM_VERSION-linux-amd64.tar.gz |
+    tar "${TAR_COMMON_OPTIONS[@]}" --strip-components 1 --wildcards 'linux-amd64/helm'
+```
 
 ## Management tool
 
@@ -95,6 +163,12 @@ kubectl exec --stdin --tty POD_NAME --container CONTAINER_NAME -- /bin/bash
 *References*:
 
 - [Get a Shell to a Running Container \| Kubernetes](https://kubernetes.io/docs/tasks/debug/debug-application/get-shell-running-container/)
+
+## Storage
+
+*References*:
+
+- [`hostPath`](https://kubernetes.io/docs/concepts/storage/volumes/#hostpath)
 
 ## Get files inside pods
 

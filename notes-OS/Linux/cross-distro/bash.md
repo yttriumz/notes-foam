@@ -121,67 +121,9 @@ Use `man test` to check the exact expressions on the system.
 
 ### Shell Built-in `:`
 
-From Phind:
+*References*:
 
-> The leading `:` in shell scripts is a no-op (no operation) command that can be used in various scenarios where you want to perform operations without actually executing a command. Here are some more use case examples:
->
-> ### 1. Conditional Assignment
->
-> You can use the `:` command to conditionally assign a value to a variable if it's not already set. This is similar to the use case you've seen but can be applied in different contexts.
->
-> ```bash
-> : "${VAR:=default_value}"
-> ```
->
-> This line checks if `VAR` is set and not null. If `VAR` is unset or null, it assigns `default_value` to `VAR`.
->
-> ### 2. Conditional Execution of Commands
->
-> You can use the `:` command to conditionally execute a command based on the value of a variable. This is useful when you want to perform an action only if a certain condition is met.
->
-> ```bash
-> if [ "$DEBUG" = "true" ]; then
->     : echo "Debug mode is enabled."
-> fi
-> ```
->
-> In this example, the `echo` command is only executed if the `DEBUG` variable is set to `true`. The `:` command prevents the `echo` command from being executed directly, allowing the `if` statement to control the execution.
->
-> ### 3. Silent Parameter Expansion
->
-> You can use the `:` command to perform parameter expansions without executing a command. This is useful when you want to manipulate variables or perform operations based on their values.
->
-> ```bash
-> : "${VAR//pattern/replacement}"
-> ```
->
-> This line performs a parameter expansion that replaces `pattern` with `replacement` in `VAR`, but it doesn't execute any command. This can be useful for setting up variables or performing pre-processing steps.
->
-> ### 4. Conditional Redirection
->
-> You can use the `:` command to conditionally redirect output to a file. This is useful when you want to log output to a file only if a certain condition is met.
->
-> ```bash
-> if [ "$LOGGING" = "true" ]; then
->     : command > logfile.txt
-> fi
-> ```
->
-> In this example, the output of `command` is redirected to `logfile.txt` only if the `LOGGING` variable is set to `true`. The `:` command prevents the redirection from being applied directly, allowing the `if` statement to control the redirection.
->
-> ### 5. Conditional Evaluation of Expressions
->
-> You can use the `:` command to conditionally evaluate expressions without executing a command. This is useful when you want to perform calculations or logical operations based on certain conditions.
->
-> ```bash
-> if [ "$CONDITION" = "true" ]; then
->     : $((VAR += 1))
-> fi
-> ```
->
-> In this example, the value of `VAR` is incremented by 1 only if the `CONDITION` variable is set to `true`. The `:` command prevents the arithmetic operation from being executed directly, allowing the `if` statement to control the operation.
->
-> These examples demonstrate the versatility of the `:` command in shell scripting, allowing for conditional execution, parameter expansion, and other operations without the need to execute a command.
+- [shell - What is the purpose of the : (colon) GNU Bash builtin? - Stack Overflow](https://stackoverflow.com/questions/3224878/what-is-the-purpose-of-the-colon-gnu-bash-builtin)
 
 ### `[@]` and `[*]`
 

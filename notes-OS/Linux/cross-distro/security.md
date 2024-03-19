@@ -1,13 +1,17 @@
 # Security
 
-Last modified: 2023/12/27 GMT+8
+Last modified: 2024-03-19 UTC
 
-## Interesting posts
+- [1. Interesting posts](#1-interesting-posts)
+- [2. CPU mitigation](#2-cpu-mitigation)
+
+## 1. Interesting posts
 
 - [Security and Hardening Guide \| openSUSE Leap 15.5](https://doc.opensuse.org/documentation/leap/security/single-html/book-security/index.html)
 - [Systemd-boot and Full Disk Encryption in Tumbleweed and MicroOS - openSUSE News](https://news.opensuse.org/2023/12/20/systemd-fde/)
+- [su vs sudo -s vs sudo -i vs sudo bash - Unix & Linux Stack Exchange](https://unix.stackexchange.com/questions/35338/su-vs-sudo-s-vs-sudo-i-vs-sudo-bash)
 
-## CPU mitigation
+## 2. CPU mitigation
 
 *References*:
 

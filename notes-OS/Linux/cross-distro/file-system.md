@@ -1,13 +1,14 @@
-# File System
+# Storage & File System
 
-Last modified: 2024/01/31 UTC
+Last modified: 2024-03-15 UTC
 
 - [Interesting posts](#interesting-posts)
+- [Permissions](#permissions)
+- [Logical Volume Manager](#logical-volume-manager)
 - [Btrfs](#btrfs)
 - [exFAT](#exfat)
   - [Utilities installation](#utilities-installation)
 - [SquashFS](#squashfs)
-- [Permissions](#permissions)
 
 ## Interesting posts
 
@@ -18,6 +19,23 @@ Last modified: 2024/01/31 UTC
 - [Use the XDG standard bin directory on linux?](https://github.com/JuliaLang/juliaup/issues/247)
 - [What does `/opt` mean in Linux?](https://www.baeldung.com/linux/opt-directory)
 - [What happens when you delete a file in Linux? \| Enable Sysadmin](https://www.redhat.com/sysadmin/linux-delete-file-rm)
+- [Where do files go when the rm command is issued? - Unix & Linux Stack Exchange](https://unix.stackexchange.com/questions/10883/where-do-files-go-when-the-rm-command-is-issued)
+- [partitioning - How do I find out what filesystem my partitions are using? - Ask Ubuntu](https://askubuntu.com/questions/309047/how-do-i-find-out-what-filesystem-my-partitions-are-using)
+
+## Permissions
+
+*References*:
+
+- [Advanced File Permissions in Linux \| Baeldung on Linux](https://www.baeldung.com/linux/advanced-file-permissions)
+- [Directory permissions "r-s", chmod 655 does not change to "r-x", why? - Unix & Linux Stack Exchange](https://unix.stackexchange.com/questions/263342/directory-permissions-r-s-chmod-655-does-not-change-to-r-x-why)
+
+## Logical Volume Manager
+
+*References*:
+
+- [Logical Volume Manager (LVM) versus standard partitioning in Linux \| Enable Sysadmin](https://www.redhat.com/sysadmin/lvm-vs-partitioning)
+- [How to add an extra second hard drive on Linux LVM and increase the size of storage - nixCraft](https://www.cyberciti.biz/faq/howto-add-disk-to-lvm-volume-on-linux-to-increase-size-of-pool/)
+- [How to add a new LVM volumes for full and partial disk usage](https://www.techrepublic.com/article/how-to-new-lvm-volumes/)
 
 ## Btrfs
 
@@ -38,10 +56,3 @@ Last modified: 2024/01/31 UTC
 *References*:
 
 - [The SquashFS tools exposed](https://tldp.org/HOWTO/SquashFS-HOWTO/mksqoverview.html)
-
-## Permissions
-
-*References*:
-
-- [Advanced File Permissions in Linux \| Baeldung on Linux](https://www.baeldung.com/linux/advanced-file-permissions)
-- [Directory permissions "r-s", chmod 655 does not change to "r-x", why? - Unix & Linux Stack Exchange](https://unix.stackexchange.com/questions/263342/directory-permissions-r-s-chmod-655-does-not-change-to-r-x-why)
