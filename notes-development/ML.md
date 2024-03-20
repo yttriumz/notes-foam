@@ -1,6 +1,6 @@
 # Machine Learning
 
-Last modified: 2024/01/25 UTC
+Last modified: 2024/03/06 UTC
 
 - [Numpy](#numpy)
 - [TensorFlow 2 (local)](#tensorflow-2-local)
@@ -30,8 +30,8 @@ Last modified: 2024/01/25 UTC
 ```dockerfile
 FROM tensorflow/tensorflow:2.11.1-gpu-jupyter
 
-RUN apt update
-RUN apt install -y graphviz
+RUN apt-get update
+RUN apt-get --yes install graphviz
 # RUN mkdir /workspace
 # COPY ./requirements.txt /workspace/requirements.txt
 # RUN pip3 -q install pip --upgrade

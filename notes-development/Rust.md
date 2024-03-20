@@ -1,6 +1,6 @@
 # Rust
 
-Last modified: 2024/02/06 UTC
+Last modified: 2024/03/06 UTC
 
 - [Interesting posts](#interesting-posts)
 - [VSCode](#vscode)
@@ -49,6 +49,7 @@ Last modified: 2024/02/06 UTC
   - [Are We GUI Yet?](https://github.com/areweguiyet/areweguiyet)
   - [Why is building a UI in Rust so hard? \| Warp](https://www.warp.dev/blog/why-is-building-a-ui-in-rust-so-hard)
 - Tutorials:
+  - [Getting started - Command Line Applications in Rust](https://rust-cli.github.io/book/index.html)
   - [Learning by doing: An HTTP API with Rust](https://blog.frankel.ch/http-api-rust/)
   - [如何在Rust中使用ClickHouse](https://cloud.tencent.com/developer/article/1814306)
   - [Rust CRUD API Example with Axum Framework and MySQL](https://codevoweb.com/rust-crud-api-example-with-axum-framework-and-mysql/)

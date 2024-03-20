@@ -1,27 +1,28 @@
 # Python
 
-Last modified: 2024/03/01 UTC
+Last modified: 2024-03-15 UTC
 
-- [Interesting posts](#interesting-posts)
-- [pip](#pip)
-  - [Package version](#package-version)
-  - [Cache](#cache)
-  - [Commonly used packages](#commonly-used-packages)
-- [VSCode](#vscode)
-  - [`settings.json`](#settingsjson)
-  - [`extension.json`](#extensionjson)
-  - [Pyright extension](#pyright-extension)
-- [Manage environment](#manage-environment)
-  - [Pyenv](#pyenv)
-    - [Installation](#installation)
-  - [venv](#venv)
-    - [Create venv environment](#create-venv-environment)
-    - [Activate venv environment](#activate-venv-environment)
-  - [pipx](#pipx)
-- [Data Engineering](#data-engineering)
-- [cx\_Freeze](#cx_freeze)
+- [1. Interesting posts](#1-interesting-posts)
+- [2. pip](#2-pip)
+  - [2.1. Package version](#21-package-version)
+  - [2.2. Cache](#22-cache)
+  - [2.3. Commonly used packages](#23-commonly-used-packages)
+- [3. VSCode](#3-vscode)
+  - [3.1. `settings.json`](#31-settingsjson)
+  - [3.2. `extension.json`](#32-extensionjson)
+  - [3.3. Pyright extension](#33-pyright-extension)
+- [4. Manage environment](#4-manage-environment)
+  - [4.1. Pyenv](#41-pyenv)
+    - [4.1.1. Installation](#411-installation)
+    - [4.1.2. Install different Python versions](#412-install-different-python-versions)
+  - [4.2. venv](#42-venv)
+    - [4.2.1. Create venv environment](#421-create-venv-environment)
+    - [4.2.2. Activate venv environment](#422-activate-venv-environment)
+  - [4.3. pipx](#43-pipx)
+- [5. Data Engineering](#5-data-engineering)
+- [6. cx\_Freeze](#6-cx_freeze)
 
-## Interesting posts
+## 1. Interesting posts
 
 - [Status of Python versions](https://devguide.python.org/versions/)
 - [What is Pythonic? \| Secret Weblog](https://blog.startifact.com/posts/older/what-is-pythonic/)
@@ -32,9 +33,9 @@ Last modified: 2024/03/01 UTC
   - [A Python Interpreter Written in Python](https://aosabook.org/en/500L/a-python-interpreter-written-in-python.html)
   - [Jinja2 Explained in 5 Minutes!. (Part 4: Back-end Web Framework: Flask) \| by Diva Dugar \| codeburst](https://codeburst.io/jinja-2-explained-in-5-minutes-88548486834e)
 
-## pip
+## 2. pip
 
-### Package version
+### 2.1. Package version
 
 - Search on [PyPI · The Python Package Index](https://pypi.org/).
 - Or use `pip install SOME_PACKAGE==`, and all version numbers can be obtained from the error message similar to the following:
@@ -44,21 +45,21 @@ Last modified: 2024/03/01 UTC
   ERROR: No matching distribution found for pip-review==
   ```
 
-### Cache
+### 2.2. Cache
 
 *References*:
 
 - [How to Clear Pip Cache in Linux](https://linuxhandbook.com/clear-pip-cache/)
 
-### Commonly used packages
+### 2.3. Commonly used packages
 
 - [`black[jupyter]`](https://black.readthedocs.io/en/stable/getting_started.html#installation) for formatting
 - [`mypy`](https://mypy.readthedocs.io/en/stable/getting_started.html#installing-and-running-mypy) for linting
 - [`ipykernel`](https://ipython.readthedocs.io/en/stable/install/kernel_install.html#kernels-for-python-2-and-3) for VSCode Jupyter support
 
-## VSCode
+## 3. VSCode
 
-### `settings.json`
+### 3.1. `settings.json`
 
 ```jsonc
 "python.analysis.autoImportCompletions": true,
@@ -72,7 +73,7 @@ Last modified: 2024/03/01 UTC
 // "python.linting.mypyEnabled": true, // deprecated
 ```
 
-### `extension.json`
+### 3.2. `extension.json`
 
 ```jsonc
 "recommendations": [
@@ -85,31 +86,38 @@ Last modified: 2024/03/01 UTC
 ]
 ```
 
-### Pyright extension
+### 3.3. Pyright extension
 
 *References*:
 
 - [pyright/docs/configuration.md at main · microsoft/pyright](https://github.com/microsoft/pyright/blob/main/docs/configuration.md)
 
-## Manage environment
+## 4. Manage environment
 
 *References*:
 
 - [python - What is the difference between venv, pyvenv, pyenv, virtualenv, virtualenvwrapper, pipenv, etc? - Stack Overflow](https://stackoverflow.com/questions/41573587/what-is-the-difference-between-venv-pyvenv-pyenv-virtualenv-virtualenvwrappe)
 
-### Pyenv
+### 4.1. Pyenv
 
 *References*:
 
 - [Managing Multiple Python Versions With pyenv – Real Python](https://realpython.com/intro-to-pyenv/)
 
-#### Installation
+#### 4.1.1. Installation
 
-- openSUSE Tumbleweed: [[Tumbleweed/dev-env#Pyenv]]
+- openSUSE Tumbleweed: [[Tumbleweed/dev-env#pyenv]]
 
-### venv
+#### 4.1.2. Install different Python versions
 
-#### Create venv environment
+*References*;
+
+- [Segmentation fault when installing Python 3.6.15 on Ubuntu 22.04 · Issue #2359 · pyenv/pyenv](https://github.com/pyenv/pyenv/issues/2359#issuecomment-1127107739)
+- [python -m pip segfaults in 3.6.15 · Issue #2239 · pyenv/pyenv](https://github.com/pyenv/pyenv/issues/2239#issuecomment-1079275184)
+
+### 4.2. venv
+
+#### 4.2.1. Create venv environment
 
 Use `python3 -m venv --upgrade-deps PATH/TO/NEW/VENV`.
 
@@ -117,7 +125,7 @@ Use `python3 -m venv --upgrade-deps PATH/TO/NEW/VENV`.
 
 - [Creating virtual environments](https://docs.python.org/3/library/venv.html#creating-virtual-environments)
 
-#### Activate venv environment
+#### 4.2.2. Activate venv environment
 
 ![venv_activate](attachments/Python/venv_activate.png)
 
@@ -125,17 +133,17 @@ Use `python3 -m venv --upgrade-deps PATH/TO/NEW/VENV`.
 
 - [How venvs work](https://docs.python.org/3/library/venv.html#how-venvs-work)
 
-### pipx
+### 4.3. pipx
 
 - [pipx](https://pypa.github.io/pipx/)
 
-## Data Engineering
+## 5. Data Engineering
 
 - [Feature Engineering: Scaling, Normalization, and Standardization](https://www.analyticsvidhya.com/blog/2020/04/feature-scaling-machine-learning-normalization-standardization/)
 - [python - How do I get the row count of a Pandas DataFrame? - Stack Overflow](https://stackoverflow.com/questions/15943769/how-do-i-get-the-row-count-of-a-pandas-dataframe)
 - [利用 python 进行线性回归 - 简书](https://www.jianshu.com/p/e55a8c9e4b56)
 
-## cx_Freeze
+## 6. cx_Freeze
 
 From Phind:
 
@@ -156,5 +164,5 @@ From Phind:
 - [Setup script - cx_Freeze 6.15.12 documentation](https://cx-freeze.readthedocs.io/en/stable/setup_script.html)
 
 [//begin]: # "Autogenerated link references for markdown compatibility"
-[Tumbleweed/dev-env#Pyenv]: ../notes-OS/Linux/openSUSE/Tumbleweed/dev-env.md "OpenSUSE Tumbleweed Development Environment"
+[Tumbleweed/dev-env#pyenv]: ../notes-OS/Linux/openSUSE/Tumbleweed/dev-env.md "OpenSUSE Tumbleweed Development Environment"
 [//end]: # "Autogenerated link references"
