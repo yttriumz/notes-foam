@@ -1,6 +1,6 @@
 # Garmin
 
-Last modified: 2024/03/05 UTC
+Last modified: 2024-03-14 UTC
 
 - [Interesting posts](#interesting-posts)
 - [Release cycle](#release-cycle)
@@ -23,15 +23,21 @@ Last modified: 2024/03/05 UTC
 - [GPSrChive](http://www.gpsrchive.com/)
 - [Watch Wear and Care Tips \| Garmin](https://www.garmin.com/en-US/watch-fit-and-care/)
 - [Water Rating Definitions \| Garmin](https://www.garmin.com/en-US/legal/waterrating-definitions/)
-- [Deleting Your Garmin Account \| Garmin Customer Support](https://support.garmin.com/en-US/?faq=lBWQm0sVAK06RRRXFECFv6)
+- Account:
+  - [Updating Account Information \| Garmin Customer Support](https://support.garmin.com/en-US/?faq=aphj1n3LD0Ab6AZnyrYPH8)
+  - [How Do I Change My Email Address Used in Garmin Connect? \| Garmin Customer Support](https://support.garmin.com/en-US/?faq=ACHWaLhzGL7mnXEf6wSK46)
+  - [Deleting Your Garmin Account \| Garmin Customer Support](https://support.garmin.com/en-US/?faq=lBWQm0sVAK06RRRXFECFv6)
 - Device manipulation:
   - [Can I Copy or Back Up My Information and Settings on My Garmin Device? \| Garmin Customer Support](https://support.garmin.com/en-US/?faq=AXV7LuWgc73v21nq6nbDa6)
   - [Removing Activity Files to Free Up Space on a Garmin Device \| Garmin Customer Support](https://support.garmin.com/en-US/?faq=oRFoANiwdW8hd9LSqjr8X8&searchQuery=How%20to%20Delete%20the%20Activity%20Folder)
   - [How to Reset My Garmin Outdoor Watch \| Garmin Support](https://support.garmin.com/en-MY/?faq=wxPmdnWsev1xGRUf58oDC8)
 - Outdoor features:
+  - [中国气象数据网](http://data.cma.cn:8888/article/getLeft/id/301/keyIndex/3.html)
+  - [Why Atmospheric Pressure Peaks At 10am And 10pm In The Tropics \| ScienceDaily](https://www.sciencedaily.com/releases/2008/12/081203092437.htm)
   - [Using a Dual Frequency/Multi-Band Outdoor Handheld \| Garmin Customer Support](https://support.garmin.com/en-US/?faq=jptru9E32f6q0zydcdtXh9)
   - ["No DEM Elevation Available" Error When Calibrating the Altimeter by Use DEM \| Garmin Customer Support](https://support.garmin.com/en-US/?faq=twfSoaCovG622VbhfPubF8)
 - During activities:
+  - [Setting Up Incident Detection on a Garmin Device \| Garmin Customer Support](https://support.garmin.com/en-US/?faq=RfaXahBWkH8Q7pVFLsuUmA)
   - [Turn off Performance Condition notifications during run? - fēnix 7 Series - Wearables - Garmin Forums](https://forums.garmin.com/outdoor-recreation/outdoor-recreation/f/fenix-7-series/303185/turn-off-performance-condition-notifications-during-run)
   - [Log HRV setting? - Forerunner 935 - Sports & Fitness Archive - Garmin Forums](https://forums.garmin.com/sports-fitness/sports-fitness/f/forerunner-935/128094/log-hrv-setting)
 - Health matrices:
