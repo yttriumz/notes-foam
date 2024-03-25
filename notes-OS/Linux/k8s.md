@@ -1,21 +1,21 @@
 # Kubernetes Usage
 
-Last modified: 2024-03-18 UTC
+Last modified: 2024-03-20 UTC
 
-- [Interesting posts](#interesting-posts)
-- [Installation](#installation)
-- [Management tool](#management-tool)
-- [Check cluster status](#check-cluster-status)
-- [Label nodes](#label-nodes)
-- [Remove nodes](#remove-nodes)
-- [Remove pods](#remove-pods)
-- [Debug pods](#debug-pods)
-- [Get a shell to a running container](#get-a-shell-to-a-running-container)
-- [Storage](#storage)
-- [Get files inside pods](#get-files-inside-pods)
-- [Helm](#helm)
+- [1. Interesting posts](#1-interesting-posts)
+- [2. Installation](#2-installation)
+- [3. Management tool](#3-management-tool)
+- [4. Check cluster status](#4-check-cluster-status)
+- [5. Storage](#5-storage)
+- [6. Label nodes](#6-label-nodes)
+- [7. Remove nodes](#7-remove-nodes)
+- [8. Remove pods](#8-remove-pods)
+- [9. Debug pods](#9-debug-pods)
+- [10. Get a shell to a running container](#10-get-a-shell-to-a-running-container)
+- [11. Get files inside pods](#11-get-files-inside-pods)
+- [12. Helm](#12-helm)
 
-## Interesting posts
+## 1. Interesting posts
 
 - [Kubernetes Node Vs. Pod Vs. Cluster: Key Differencestext](https://www.cloudzero.com/blog/kubernetes-node-vs-pod/)
 - [Head-first k8s](https://head-first-kubernetes.github.io/)
@@ -32,6 +32,7 @@ Last modified: 2024-03-18 UTC
 - [Why disable swap on kubernetes - Server Fault](https://serverfault.com/questions/881517/why-disable-swap-on-kubernetes)
 - [Why Kubernetes Hates Linux Swap?. A typical computer system has two types… \| by Bhargav Bhikkaji \| Tailwinds-MajorDomo \| Medium](https://medium.com/tailwinds-navigator/kubernetes-tip-why-disable-swap-on-linux-3505f0250263)
 - [deployments do not support (honor) container restartPolicy · Issue #24725 · kubernetes/kubernetes](https://github.com/kubernetes/kubernetes/issues/24725)
+- [kubectl apply: Syntax, Examples, kubectl apply vs. create/replace](https://komodor.com/learn/kubectl-apply-syntax-examples-and-kubectl-apply-vs-create-vs-replace/)
 - Tutorials:
   - [Learn Kubernetes and Containers \| Rancher](https://www.rancher.com/learn-the-basics)
   - [mmumshad/kubernetes-the-hard-way: Bootstrap Kubernetes the hard way on Vagrant on Local Machine. No scripts.](https://github.com/mmumshad/kubernetes-the-hard-way)
@@ -40,7 +41,7 @@ Last modified: 2024-03-18 UTC
   - [How to Deploy Kubernetes with Kubeadm and containerd - The New Stack](https://thenewstack.io/how-to-deploy-kubernetes-with-kubeadm-and-containerd/)
   - [How to Install a Multi-Node Kubernetes Cluster on Ubuntu](https://www.atlantic.net/dedicated-server-hosting/how-to-set-up-three-node-kubernetes-cluster-on-ubuntu/)
 
-## Installation
+## 2. Installation
 
 ```bash
 # Install on Ubuntu 22.04 using apt
@@ -105,13 +106,13 @@ curl "${CURL_COMMON_OPTIONS[@]}" https://get.helm.sh/helm-v$HELM_VERSION-linux-a
     tar "${TAR_COMMON_OPTIONS[@]}" --strip-components 1 --wildcards 'linux-amd64/helm'
 ```
 
-## Management tool
+## 3. Management tool
 
 *References*:
 
 - [Kubernetes technologies: Kubeadm vs MiniKube, Kind and K3S](https://www.padok.fr/en/blog/minikube-kubeadm-kind-k3s)
 
-## Check cluster status
+## 4. Check cluster status
 
 *References*:
 
@@ -123,25 +124,31 @@ curl "${CURL_COMMON_OPTIONS[@]}" https://get.helm.sh/helm-v$HELM_VERSION-linux-a
 - [List All Resources in a Namespace in Kubernetes \| Baeldung on Ops](https://www.baeldung.com/ops/kubernetes-list-all-resources)
 - [kubectl - How do you find the cluster & service CIDR of a Kubernetes cluster? - Stack Overflow](https://stackoverflow.com/questions/44190607/how-do-you-find-the-cluster-service-cidr-of-a-kubernetes-cluster)
 
-## Label nodes
+## 5. Storage
+
+*References*:
+
+- [`hostPath`](https://kubernetes.io/docs/concepts/storage/volumes/#hostpath)
+
+## 6. Label nodes
 
 *References*:
 
 - [How to Label Kubernetes Nodes (and Remove it Later)](https://linuxhandbook.com/kubectl-label-node/)
 
-## Remove nodes
+## 7. Remove nodes
 
 *References*:
 
 - [How to gracefully remove a node from Kubernetes?](https://stackoverflow.com/questions/35757620/how-to-gracefully-remove-a-node-from-kubernetes)
 
-## Remove pods
+## 8. Remove pods
 
 *References*:
 
 - [Remove Daemonset pod from a node](https://stackoverflow.com/questions/48078196/remove-daemonset-pod-from-a-node)
 
-## Debug pods
+## 9. Debug pods
 
 *References*:
 
@@ -150,7 +157,7 @@ curl "${CURL_COMMON_OPTIONS[@]}" https://get.helm.sh/helm-v$HELM_VERSION-linux-a
 - [Kubectl Reference Docs](https://kubernetes.io/docs/reference/generated/kubectl/kubectl-commands#logs)
 - [Kubernetes troubleshooting: 6 ways to find and fix issues \| Enable Sysadmin](https://www.redhat.com/sysadmin/kubernetes-troubleshooting)
 
-## Get a shell to a running container
+## 10. Get a shell to a running container
 
 Use the following commands:
 
@@ -164,13 +171,7 @@ kubectl exec --stdin --tty POD_NAME --container CONTAINER_NAME -- /bin/bash
 
 - [Get a Shell to a Running Container \| Kubernetes](https://kubernetes.io/docs/tasks/debug/debug-application/get-shell-running-container/)
 
-## Storage
-
-*References*:
-
-- [`hostPath`](https://kubernetes.io/docs/concepts/storage/volumes/#hostpath)
-
-## Get files inside pods
+## 11. Get files inside pods
 
 ```bash
 # Copy /tmp/foo_dir local directory to /tmp/bar_dir in a remote pod in the default namespace
@@ -190,7 +191,7 @@ kubectl cp SOME_NAMESPACE/SOME_POD:/tmp/bar /tmp/foo
 
 - [azure aks - How to copy files from kubernetes Pods to local system - Stack Overflow](https://stackoverflow.com/questions/52407277/how-to-copy-files-from-kubernetes-pods-to-local-system)
 
-## Helm
+## 12. Helm
 
 *References*:
 

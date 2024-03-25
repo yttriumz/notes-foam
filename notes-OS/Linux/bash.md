@@ -1,6 +1,6 @@
 # Bash Usage
 
-Last modified: 2024/03/07 UTC
+Last modified: 2024-03-25 UTC
 
 - [Interesting posts](#interesting-posts)
 - [Configuration files](#configuration-files)

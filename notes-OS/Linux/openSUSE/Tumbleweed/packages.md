@@ -1,6 +1,6 @@
 # Tumbleweed Package Management
 
-Last modified: 2024/03/07 UTC
+Last modified: 2024-03-24 UTC
 
 - [Interesting posts](#interesting-posts)
 - [Zypper](#zypper)
@@ -341,7 +341,9 @@ Download from [the official site](https://im.qq.com/linuxqq/index.shtml).
 
 *References*:
 
+- [huan/docker-wechat: DoChat is a Dockerized WeChat (盒装微信) PC Windows Client for Linux](https://github.com/huan/docker-wechat)
 - [fedora 打包 wechat RPM 包](https://xuthus.cc/linux/fedora-packaged-wechat-rpm.html)
+- 典：[微信网页版 2.0 测试版发布](http://weixin.qq.com/cgi-bin/readtemplate?uin=&stype=&promote=&fr=&lang=zh_CN&ADTAG=&check=false&nav=faq&t=weixin_faq&faq=webwx_2)
 
 ### Xtreme Download Manager
 
