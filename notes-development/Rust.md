@@ -1,6 +1,6 @@
 # Rust
 
-Last modified: 2024/03/06 UTC
+Last modified: 2024-03-22 UTC
 
 - [Interesting posts](#interesting-posts)
 - [VSCode](#vscode)
@@ -32,12 +32,15 @@ Last modified: 2024/03/06 UTC
     - [Rust Is Beyond Object-Oriented, Part 2: Polymorphism :: The Coded Message](https://www.thecodedmessage.com/posts/oop-2-polymorphism/)
     - [Rust Is Beyond Object-Oriented, Part 3: Inheritance :: The Coded Message](https://www.thecodedmessage.com/posts/oop-3-inheritance/)
   - [Learning Rust, my experience so far has been mixed : rust](https://www.reddit.com/r/rust/comments/18i8y39/learning_rust_my_experience_so_far_has_been_mixed/)
+  - [Speykious/cve-rs: Blazingly 🔥 fast 🚀 memory vulnerabilities, written in 100% safe Rust. 🦀](https://github.com/Speykious/cve-rs)
+  - [想问一下，真实项目中多大概率会遇到rust一些高级的东西？ - Rust语言中文社区](https://rustcc.cn/article?id=669f55b0-f4c6-422b-b5a5-08efd7fa8e23)
 - Tooling:
   - Cargo cache:
     - [Cargo cache cleaning \| Rust Blog](https://blog.rust-lang.org/2023/12/11/cargo-cache-cleaning.html)
     - [How to clear the Cargo cache?](https://stackoverflow.com/questions/25072930/how-to-clear-the-cargo-cache)
     - [cargo clean ~/.cargo · Issue #3289 · rust-lang/cargo](https://github.com/rust-lang/cargo/issues/3289)
   - [Does cargo install have an equivalent update command?](https://stackoverflow.com/questions/34484361/does-cargo-install-have-an-equivalent-update-command)
+  - [Rust CI/CD template : r/rust](https://www.reddit.com/r/rust/comments/1bg3xgl/rust_cicd_template/)
 - Web related:
   - [Are We Web Yet?](https://github.com/rust-lang/arewewebyet)
   - [Rust web framework comparison](https://github.com/flosse/rust-web-framework-comparison)
@@ -68,6 +71,14 @@ Last modified: 2024/03/06 UTC
   - [RustForLinux：跟着清华训练营从零打造 Linux 驱动](https://mp.weixin.qq.com/mp/appmsgalbum?__biz=Mzg4Nzk4MTY3Nw==&action=getalbum&album_id=3183255184072835074)
   - [Write a Toy VPN in Rust](https://write.yiransheng.com/vpn)
   - [Writing an OS in Rust](https://os.phil-opp.com/)
+  - [Building a language interpreter](https://buildingwithrust.substack.com/archive):
+    - [Building a language interpreter - An Intro. - by Obiesie](https://buildingwithrust.substack.com/p/coming-soon)
+    - [Building a language interpreter: The Lexer.](https://buildingwithrust.substack.com/p/building-a-language-interpreter-the)
+    - [Building a language interpreter: The Parser. - by Obiesie](https://buildingwithrust.substack.com/p/building-a-language-interpreter-the-1d8)
+    - [Building an interpreter: Representing values. - by Obiesie](https://buildingwithrust.substack.com/p/building-an-interpreter-representing)
+    - [Building a language interpreter: The Execution Environment.](https://buildingwithrust.substack.com/p/building-a-language-interpreter-the-9b2)
+    - [Building a language interpreter: Evaluation I - by Obiesie](https://buildingwithrust.substack.com/p/building-a-language-interpreter-evaluation)
+    - [Building a language interpreter: Evaluation II - by Obiesie](https://buildingwithrust.substack.com/p/building-a-language-interpreter-evaluation-23e)
 - MISC:
   - [Rust has been forked to the Crab Language \| Hacker News](https://news.ycombinator.com/item?id=36122270)
   - [CrabLang : programming](https://www.reddit.com/r/programming/comments/12n0dqc/crablang/)

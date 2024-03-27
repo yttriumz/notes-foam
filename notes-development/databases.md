@@ -1,6 +1,6 @@
 # Databases
 
-Last modified: 2024/02/28 UTC
+Last modified: 2024-03-22 UTC
 
 - [Interesting posts](#interesting-posts)
 - [PostgreSQL](#postgresql)
@@ -15,6 +15,7 @@ Last modified: 2024/02/28 UTC
 - [《Designing Data-Intensive Application》DDIA中文翻译](https://github.com/Vonng/ddia)
 - [Database design with UML and SQL, 4th edition](https://web.csulb.edu/colleges/coe/cecs/dbdesign/dbdesign.php)
 - [Shard (database architecture) - Wikipedia](https://en.wikipedia.org/wiki/Shard_(database_architecture))
+- [Meilisearch vs Elasticsearch](https://blog.meilisearch.com/meilisearch-vs-elasticsearch/)
 
 ## PostgreSQL
 

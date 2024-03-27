@@ -1,6 +1,6 @@
 # Haskell
 
-Last modified: 2024/01/25 UTC
+Last modified: 2024-03-22 UTC
 
 - [Interesting posts](#interesting-posts)
 - [VSCode](#vscode)
@@ -8,6 +8,7 @@ Last modified: 2024/01/25 UTC
 
 ## Interesting posts
 
+- [Learn Haskell in Y Minutes](https://learnxinyminutes.com/docs/haskell/)
 - [Haskell Cheat Sheet](https://hackage.haskell.org/package/CheatSheet-2.9/src/CheatSheet.pdf)
 - [My Thoughts on OCaml vs Haskell/Rust in 2023 - Ecosystem - OCaml](https://discuss.ocaml.org/t/my-thoughts-on-ocaml-vs-haskell-rust-in-2023/12027)
   - [me/007-My-Thoughts-on-OCaml-vs-Haskell-Rust-2023.md at master · sidkshatriya/me](https://github.com/sidkshatriya/me/blob/master/007-My-Thoughts-on-OCaml-vs-Haskell-Rust-2023.md)

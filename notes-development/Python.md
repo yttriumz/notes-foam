@@ -1,6 +1,6 @@
 # Python
 
-Last modified: 2024-03-15 UTC
+Last modified: 2024-03-21 UTC
 
 - [1. Interesting posts](#1-interesting-posts)
 - [2. pip](#2-pip)
@@ -28,6 +28,7 @@ Last modified: 2024-03-15 UTC
 - [What is Pythonic? \| Secret Weblog](https://blog.startifact.com/posts/older/what-is-pythonic/)
 - [Everything you need to know about the switch to Python 3 | Kali Linux Documentation](https://www.kali.org/docs/general-use/python3-transition/)
 - [What Are Python Wheels and Why Should You Care? – Real Python](https://realpython.com/python-wheels/)
+- [Beyond If-Else: Leveraging Python’s Versatile “Else” Statements \| by Yang Zhou \| TechToFreedom \| Mar, 2024 \| Medium](https://medium.com/techtofreedom/beyond-if-else-leveraging-pythons-versatile-else-statements-9ac260dac102?sk=dd43f5b07431c222fb7332835c786af3)
 - Tutorials:
   - [A Byte of Python](https://python.swaroopch.com/)
   - [A Python Interpreter Written in Python](https://aosabook.org/en/500L/a-python-interpreter-written-in-python.html)

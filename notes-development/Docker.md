@@ -1,6 +1,6 @@
 # Docker Application Development
 
-Last modified: 2024/03/01 UTC
+Last modified: 2024-03-25 UTC
 
 - [Dockerfile](#dockerfile)
   - [`CMD` \& `ENTRYPOINT`](#cmd--entrypoint)
@@ -14,6 +14,8 @@ Last modified: 2024/03/01 UTC
 *References*:
 
 - [Dockerfile reference \| Docker Docs](https://docs.docker.com/engine/reference/builder/)
+- [Overview of best practices for writing Dockerfiles \| Docker Docs](https://docs.docker.com/develop/develop-images/dockerfile_best-practices/)
+  > When you run an image and generate a container, you add a new writable layer, also called the container layer, on top of the underlying layers. All changes made to the running container, such as writing new files, modifying existing files, and deleting files, are written to this writable container layer.
 - [shell - Why && rather than a new RUN - Stack Overflow](https://stackoverflow.com/questions/47051993/why-rather-than-a-new-run)
 
 ### `CMD` & `ENTRYPOINT`
