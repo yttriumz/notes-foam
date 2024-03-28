@@ -1,5 +1,7 @@
 # openSUSE Usage Tips
 
+Last modified: 2024-03-28 UTC
+
 - [Switch runlevel](#switch-runlevel)
 - [System frozen](#system-frozen)
 - [Check x86-64 microarchitecture levels](#check-x86-64-microarchitecture-levels)
@@ -10,6 +12,7 @@
 *References*:
 
 - [SDB:Switch runlevel](https://en.opensuse.org/SDB:Switch_runlevel)
+- [10.3.1 Targets compared to runlevels](https://doc.opensuse.org/documentation/leap/reference/html/book-reference/cha-systemd.html#sec-boot-systemd-targets)
 
 ## System frozen
 

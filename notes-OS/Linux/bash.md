@@ -1,19 +1,19 @@
 # Bash Usage
 
-Last modified: 2024-03-25 UTC
+Last modified: 2024-03-27 UTC
 
 - [Interesting posts](#interesting-posts)
 - [Configuration files](#configuration-files)
-- [History](#history)
-    - [Customize history](#customize-history)
+- [Customize history](#customize-history)
 - [Alias](#alias)
+    - [Customize aliases](#customize-aliases)
     - [Alias expansion](#alias-expansion)
     - [Auto-completion for aliases](#auto-completion-for-aliases)
 - [Redirect command/script/application output](#redirect-commandscriptapplication-output)
 - [Scripting](#scripting)
     - [`local` options](#local-options)
     - [Test expressions](#test-expressions)
-    - [Shell Built-in `:`](#shell-built-in-)
+    - [Shell built-in `:`](#shell-built-in-)
     - [`[@]` and `[*]`](#-and-)
     - [`${}` and `$()`](#-and--1)
 - [Variables in paths](#variables-in-paths)
@@ -31,9 +31,7 @@ Last modified: 2024-03-25 UTC
 - [bash - Difference between .bashrc and .bash_profile - Super User](https://superuser.com/questions/183870/difference-between-bashrc-and-bash-profile)
 - [linux - What are the functional differences between .profile .bash_profile and .bashrc - Server Fault](https://serverfault.com/questions/261802/what-are-the-functional-differences-between-profile-bash-profile-and-bashrc)
 
-## History
-
-### Customize history
+## Customize history
 
 I have the following configs in `.bashrc`:
 
@@ -49,6 +47,8 @@ export HISTCONTROL=ignoredups
 - [Bash – Using History Efficiently \| Baeldung on Linux](https://www.baeldung.com/linux/bash-using-history-efficiently)
 
 ## Alias
+
+### Customize aliases
 
 1. Add the following to `.bash_aliases`.
 
@@ -119,7 +119,7 @@ Use `man test` to check the exact expressions on the system.
 - [linux - What is the meaning of -n, -z, -x, -L, -d, etc... in Shell Script? - Stack Overflow](https://stackoverflow.com/questions/53319817/what-is-the-meaning-of-n-z-x-l-d-etc-in-shell-script)
 - [Ubuntu Manpage: test - check file types and compare values](https://manpages.ubuntu.com/manpages/jammy/en/man1/test.1.html)
 
-### Shell Built-in `:`
+### Shell built-in `:`
 
 *References*:
 

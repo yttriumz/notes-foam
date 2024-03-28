@@ -1,6 +1,6 @@
 # KDE Plasma Tweak
 
-Last modified: 2024/03/04 UTC
+Last modified: 2024-03-28 UTC
 
 - [Interesting posts](#interesting-posts)
 - [Widget](#widget)
@@ -11,22 +11,25 @@ Last modified: 2024/03/04 UTC
 - [Virtual Desktop behavior](#virtual-desktop-behavior)
 - [Hide window border](#hide-window-border)
 - [Move a window to the center](#move-a-window-to-the-center)
-- [Mouse wheel scroll speed](#mouse-wheel-scroll-speed)
+- [Show window geometry information](#show-window-geometry-information)
+- [Mouse wheel scroll speed (Plasma 6)](#mouse-wheel-scroll-speed-plasma-6)
+- [Disable middle click pasting](#disable-middle-click-pasting)
 - [Baloo](#baloo)
 - [KWallet](#kwallet)
   - [Blowfish and GPG](#blowfish-and-gpg)
   - [KWallet \& VSCode](#kwallet--vscode)
 - [SDDM login theme](#sddm-login-theme)
   - [Configure Sugar Candy for SDDM](#configure-sugar-candy-for-sddm)
-- [Dolphin](#dolphin)
 
 ## Interesting posts
 
-- [KDE Plasma與GNOME桌面比較，最終我還是選擇KDE](https://ivonblog.com/posts/kde-plasma-gnome-comparison/)
-- [plasmashell crash on wayland](https://www.reddit.com/r/openSUSE/comments/10v0lxl/plasmashell_crash_on_wayland/)
+- [KDE Plasma與GNOME桌面比較，最終我還是選擇KDE · Ivon的部落格](https://ivonblog.com/posts/kde-plasma-gnome-comparison/)
+- [plasmashell crash on wayland : r/openSUSE](https://www.reddit.com/r/openSUSE/comments/10v0lxl/plasmashell_crash_on_wayland/)
 - [Prayag2/konsave: A command line program written in Python to let you backup your dotfiles and switch to other ones in an instant. Works out-of-the box on KDE Plasma!](https://github.com/Prayag2/konsave/tree/master)
 
 ## Widget
+
+Plasma 5:
 
 - [Event Calendar](https://store.kde.org/p/998901)
 - [Prime Render Switch and Status](https://store.kde.org/p/1425330)
@@ -35,8 +38,8 @@ Last modified: 2024/03/04 UTC
 
 *References*:
 
-- [Autostart](https://userbase.kde.org/System_Settings/Startup_and_Shutdown#Autostart)
-- [System Settings/Autostart](https://userbase.kde.org/System_Settings/Autostart)
+- [System Settings/Startup and Shutdown - KDE UserBase Wiki](https://userbase.kde.org/System_Settings/Startup_and_Shutdown#Autostart)
+- [System Settings/Autostart - KDE UserBase Wiki](https://userbase.kde.org/System_Settings/Autostart)
 - [Autostart](https://docs.kde.org/stable5/en/plasma-workspace/kcontrol/autostart/index.html)
 
 ## Recent files when right-clicking Firefox
@@ -46,7 +49,7 @@ Last modified: 2024/03/04 UTC
 
 *References*:
 
-- https://www.reddit.com/r/kde/comments/ef17uq/dont_show_recent_documents_when_rightclicking_app/
+- [Don't Show Recent Documents When Right-Clicking App Icon in Task Manager. : r/kde](https://www.reddit.com/r/kde/comments/ef17uq/dont_show_recent_documents_when_rightclicking_app/)
 
 ## Window focus stealing policy
 
@@ -85,23 +88,40 @@ Last modified: 2024/03/04 UTC
 1. Go to *System Settings > Shortcuts > KWin > Move Window to the Center*.
 2. I changed the custom shortcuts to `Meta` + `Ctrl` + `C`.
 
-## Mouse wheel scroll speed
+## Show window geometry information
 
-- [ ] todo
+Plasma 5: Install *Window Geometry Information* from KDE store.
+
+Plasma 6:
+
+1. Download the scripts from [Richard Qian / KWin Scripts by Worldblender · GitLab](https://gitlab.com/Worldblender/kwin-scripts).
+2. Place the scripts folder for Plasma 6 under `/usr/share/kwin/scripts`.
 
 *References*:
 
-- [Mouse wheel speed](https://forum.kde.org/viewtopic.php?t=160416)
+- [Window Geometry Information - KDE Store](https://store.kde.org/p/1833846)
+  - [Richard Qian / KWin Scripts by Worldblender · GitLab](https://gitlab.com/Worldblender/kwin-scripts)
+
+## Mouse wheel scroll speed (Plasma 6)
+
+Go to *System Settings > Mouse & Touchpad > Mouse > Scrolling speed*.
+
+## Disable middle click pasting
+
+Xorg: Can only disable the whole middle click function. See [[Xorg#Disable the middle key]].
+
+Wayland: Go to *System Settings > General Behavior > Middle Click*.
 
 ## Baloo
 
-At the time of writing (*Tumbleweed 20230225, Baloo 5.103.0*), `baloo_file` constantly writes to my disk. Thus, I disabled it by `balooctl disable`.
+At the time of writing (*Tumbleweed 20230225, Baloo 5.103.0*), `baloo_file` constantly writes to my disk. So I disabled it via `balooctl disable`.
 
 ## KWallet
 
 *References*:
 
-- [the official doc](https://docs.kde.org/trunk5/en/kwalletmanager/kwallet5/index.html) ([PDF version](https://docs.kde.org/stable5/en/kwalletmanager/kwallet5/kwallet5.pdf))
+- [the official doc](https://docs.kde.org/trunk5/en/kwalletmanager/kwallet5/index.html)
+  - [PDF version](https://docs.kde.org/stable5/en/kwalletmanager/kwallet5/kwallet5.pdf)
 - [KDE Wallet - ArchWiki](https://wiki.archlinux.org/title/KDE_Wallet)
 
 ### Blowfish and GPG
@@ -113,19 +133,19 @@ Some references:
 
 ### KWallet & VSCode
 
-The simplest method: create a wallet in KWallet and use a blank password.
+The simplest method is to create a wallet in KWallet and use a blank password.
 
-**NOTE**: At the time of writing (*Tumbleweed 20230225*, *KDE Plasma 5.27.1*), if no other application uses KWallet (e.g. not encrypting any WiFi password with KWallet), then KWallet might not automatically open the wallet at user login, which will cause VSCode authentication failure. But you can still config the KWallet to auto-unlock referring to [this post](https://gist.github.com/Trucido/b788017a18e1189e6703e42315e8829c).
+At the time of writing (*Tumbleweed 20230225*, *KDE Plasma 5.27.1*), if no other application uses KWallet (e.g., not encrypting any WiFi password with KWallet), then KWallet might not automatically open the wallet at user login, which will cause VSCode authentication failure. However, according to [this post](https://gist.github.com/Trucido/b788017a18e1189e6703e42315e8829c), you can still configure the KWallet to auto-unlock, which I didn't test.
 
 *References*:
 
-- [Settings Sync#Troubleshooting keychain issues](https://code.visualstudio.com/docs/editor/settings-sync#_linux)
-- [KDE WALLET](https://github.com/microsoft/vscode/issues/104319)
+- [Troubleshooting keychain issues](https://code.visualstudio.com/docs/editor/settings-sync#_troubleshooting-keychain-issues)
+- [KDE WALLET · Issue #104319 · microsoft/vscode](https://github.com/microsoft/vscode/issues/104319)
 
 ## SDDM login theme
 
-- Go to [KDE Store](https://store.kde.org/browse?cat=101&ord=rating) to find a good one, e.g [Sugar Candy for SDDM](https://store.kde.org/p/1312658).
-- Preview the theme via `sddm-greeter --test-mode --theme /usr/share/sddm/themes/THEME_TO_BE_VIEWED`.
+- Go to [KDE Store](https://store.kde.org/browse?cat=101&ord=rating) to find a good one, e.g., [Sugar Candy for SDDM](https://store.kde.org/p/1312658).
+- Preview the theme via `sddm-greeter --test-mode --theme /usr/share/sddm/themes/THEME_TO_VIEW`.
 
 ### Configure Sugar Candy for SDDM
 
@@ -138,8 +158,6 @@ ScreenWidth="1920"
 ScreenHeight="1080"
 ```
 
-## Dolphin
-
-*References*:
-
-- [A comprehensive guide to Dolphin, a KDE file manager](https://opensource.com/life/15/8/comprehensive-guide-dolphin-file-manager)
+[//begin]: # "Autogenerated link references for markdown compatibility"
+[Xorg#Disable the middle key]: Xorg.md "X.Org"
+[//end]: # "Autogenerated link references"
