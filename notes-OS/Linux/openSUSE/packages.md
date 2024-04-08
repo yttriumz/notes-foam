@@ -30,16 +30,18 @@ Last modified: 2024-03-28 UTC
     - [Lock patterns](#lock-patterns)
     - [List locks](#list-locks)
   - [Check dependencies](#check-dependencies)
-- [Install RPM](#install-rpm)
+- [RPM Package](#rpm-package)
+  - [Install an RPM](#install-an-rpm)
   - [Inspect an RPM](#inspect-an-rpm)
-  - [WezTerm](#wezterm)
-  - [Zoom](#zoom)
-  - [WARP (manually)](#warp-manually)
-  - [QQ](#qq)
-  - [WeChat](#wechat)
-  - [Xtreme Download Manager](#xtreme-download-manager)
-  - [Motrix download manager](#motrix-download-manager)
-  - [ToDesk](#todesk)
+  - [Commonly used packages](#commonly-used-packages)
+    - [WezTerm](#wezterm)
+    - [Zoom](#zoom)
+    - [WARP (manually)](#warp-manually)
+    - [QQ](#qq)
+    - [WeChat](#wechat)
+    - [Xtreme Download Manager](#xtreme-download-manager)
+    - [Motrix download manager](#motrix-download-manager)
+    - [ToDesk](#todesk)
 - [OBS Package Installer (OPI)](#obs-package-installer-opi)
   - [Install OPI](#install-opi)
 - [Flatpak](#flatpak)
@@ -290,7 +292,9 @@ Use `zypper locks`.
 
 Verify the dependencies of installed packages via `zypper verify`.
 
-## Install RPM
+## RPM Package
+
+### Install an RPM
 
 Use `zypper install PATH_TO_RPM`.
 
@@ -307,11 +311,13 @@ Use `zypper install PATH_TO_RPM`.
 
 - [Inspecting and extracting RPM package contents with & without installing the package \| Packagecloud Blog](https://blog.packagecloud.io/inspect-extract-contents-rpm-packages/)
 
-### WezTerm
+### Commonly used packages
+
+#### WezTerm
 
 ~~At the time of writing (*WezTerm 20230326.111934.3666303c-1.1* from official site), **if you install WezTerm using `zypper install wezterm` from openSUSE's repository**, there is a bug that WezTerm leaves a file `dhat-heap.json` in the directory where it's opened on. Directly installing the official package could solve the problem. Go to [the official site](https://wezfurlong.org/wezterm/install/linux.html#installing-on-fedora-and-rpm-based-systems) to find the latest stable version.~~ At the time of updating (*WezTerm 20240203.110809.5046fc22-1.1* from openSUSE's repository), the issue is gone.
 
-### Zoom
+#### Zoom
 
 - Download from [the official site](https://zoom.us/download?os=linux).
   - `ibus` could be locked before installing.
@@ -322,7 +328,7 @@ Use `zypper install PATH_TO_RPM`.
 - [Installing or updating Zoom on Linux](https://support.zoom.us/hc/en-us/articles/204206269-Installing-or-updating-Zoom-on-Linux)
 - [Does anyone here know of a good guide for installing zoom?](https://www.reddit.com/r/openSUSE/comments/p4yhg0/does_anyone_here_know_of_a_good_guide_for/)
 
-### WARP (manually)
+#### WARP (manually)
 
 1. ~~At the time of writing (*Tumbleweed 20230518, WARP 2023.3.398*), install `setcap` via `zypper install libcap-progs`. Otherwise, the post-install script will fail to run.~~ At the time of updating (*Tumbleweed 20230718, WARP 2023.7.40*), no need to install `libcap-progs`.
    - At the time of updating (*Tumbleweed 20230718, WARP 2023.7.40*), during installation, zypper will report "nothing provides 'dbus' needed". I just ignored it.
@@ -334,33 +340,32 @@ See [[WARP]] for configuration.
 
 - [How to install Linux capabilities like setcap and getcap?](https://unix.stackexchange.com/questions/189237/how-to-install-linux-capabilities-like-setcap-and-getcap)
 
-### QQ
+#### QQ
 
 Download from [the official site](https://im.qq.com/linuxqq/index.shtml).
 
 - At the time of updating (*Tumbleweed 20231006, linuxqq 3.2.1_17153-1*), during installation, zypper will report "nothing provides 'libuuid' needed". I just ignored it.
 
-### WeChat
-
-- [ ] todo
+#### WeChat
 
 *References*:
 
+- [【国产系统】史诗级更新Linux 微信wechat-beta_1.0.0.150（快来还热乎） - 『精品软件区』 - 吾爱破解 - LCG - LSG \|安卓破解\|病毒分析\|www.52pojie.cn](https://www.52pojie.cn/thread-1896902-1-1.html)
 - [huan/docker-wechat: DoChat is a Dockerized WeChat (盒装微信) PC Windows Client for Linux](https://github.com/huan/docker-wechat)
 - [fedora 打包 wechat RPM 包](https://xuthus.cc/linux/fedora-packaged-wechat-rpm.html)
 - 典：[微信网页版 2.0 测试版发布](http://weixin.qq.com/cgi-bin/readtemplate?uin=&stype=&promote=&fr=&lang=zh_CN&ADTAG=&check=false&nav=faq&t=weixin_faq&faq=webwx_2)
 
-### Xtreme Download Manager
+#### Xtreme Download Manager
 
 Download from [the official site](https://github.com/subhra74/xdm/releases).
 
-### Motrix download manager
+#### Motrix download manager
 
 Download from [the official site](https://github.com/agalwood/Motrix/releases).
 
 **NOTE**: At the time of writing (*Tumbleweed 20230518*), it does not work. I did not further investigate.
 
-### ToDesk
+#### ToDesk
 
 Download from [the official site](https://www.todesk.com/linux.html).
 

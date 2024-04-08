@@ -1,6 +1,6 @@
 # Git Usage
 
-Last modified: 2024/02/06 UTC
+Last modified: 2024-03-28 UTC
 
 - [Interesting posts](#interesting-posts)
 - [Git configuration](#git-configuration)
@@ -13,6 +13,7 @@ Last modified: 2024/02/06 UTC
 - [Clone to a specific directory](#clone-to-a-specific-directory)
 - [Clone all remote branches](#clone-all-remote-branches)
 - [Clone a specific tag only](#clone-a-specific-tag-only)
+- [Clone a specific subdirectory](#clone-a-specific-subdirectory)
 - [Commit message convention](#commit-message-convention)
 - [Change commit messages](#change-commit-messages)
 - [Delete tags](#delete-tags)
@@ -122,6 +123,12 @@ Use `git clone --depth 1 --branch TAG_NAME REMOTE_REPO`.
 *References*:
 
 - [How to clone a specific Git tag - Stack Overflow](https://stackoverflow.com/questions/20280726/how-to-clone-a-specific-git-tag)
+
+## Clone a specific subdirectory
+
+*References*:
+
+- [How do I clone a subdirectory only of a Git repository? - Stack Overflow](https://stackoverflow.com/questions/600079/how-do-i-clone-a-subdirectory-only-of-a-git-repository/73254328#73254328)
 
 ## Commit message convention
 
