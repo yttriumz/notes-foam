@@ -4,31 +4,40 @@ type: index
 
 # Linux
 
-- Distributions:
-  - [[openSUSE/index]]
-  - [[Ubuntu/index]]
-- System:
-  - [[Linux/tips]]
-  - [[Linux/security]]
-  - [[file-system]]
-  - [[power]]
-  - [[networking-op]]
-  - [[kernel-modules]]
-- Utilities:
-  - [[bash]]
-  - [[CLI-tools]]
-  - [[shell-tools]]
-  - [[terminal-tools]]
-  - [[Xorg]]
-  - [[KDE]]
-  - [[gaming]]
-- Virtualization & Containerization:
-  - [[containerd]]
-  - [[Linux/Docker]]
-  - [[Podman]]
-  - [[k8s]]
-  - [[KVM]]
-  - [[bochs]]
+Distributions:
+
+- [[openSUSE/index]]
+- [[Ubuntu/index]]
+
+System:
+
+- [[Linux/tips]]
+- [[Linux/security]]
+- [[file-system]]
+- [[power]]
+- [[networking-op]]
+- [[kernel-modules]]
+
+Utilities:
+
+- [[bash]]
+- [[CLI-tools]]
+- [[shell-tools]]
+- [[terminal-tools]]
+- [[Xorg]]
+- [[KDE]]
+- [[Flatpak]]
+- [[gaming]]
+- [[key-remapping]]
+
+Virtualization & Containerization:
+
+- [[containerd]]
+- [[Linux/Docker]]
+- [[Podman]]
+- [[k8s]]
+- [[KVM]]
+- [[bochs]]
 
 ## Interesting Posts
 
@@ -49,12 +58,14 @@ type: index
 [networking-op]: networking-op.md "Networking Tools & Operations"
 [kernel-modules]: kernel-modules.md "Kernel Modules"
 [bash]: bash.md "Bash Usage"
-[CLI-tools]: CLI-tools.md "Commonly Used Command-line Tools"
+[CLI-tools]: CLI-tools.md "Command-line Tools"
 [shell-tools]: shell-tools.md "Shell Related Tools"
 [terminal-tools]: terminal-tools.md "Terminal Related Tools"
 [Xorg]: Xorg.md "X.Org"
 [KDE]: KDE.md "KDE Plasma Tweak"
+[Flatpak]: Flatpak.md "Flatpak"
 [gaming]: gaming.md "Gaming on Linux"
+[key-remapping]: key-remapping.md "Key Remapping"
 [containerd]: containerd.md "containerd"
 [Linux/Docker]: Docker.md "Docker Usage"
 [Podman]: Podman.md "Podman"

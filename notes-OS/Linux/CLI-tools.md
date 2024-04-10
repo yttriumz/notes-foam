@@ -1,6 +1,6 @@
-# Commonly Used Command-line Tools
+# Command-line Tools
 
-Last modified: 2024/02/07 UTC
+Last modified: 2024-04-10 UTC
 
 - [Interesting posts](#interesting-posts)
 - [Search tools](#search-tools)

@@ -1,6 +1,6 @@
 # KDE Plasma Tweak
 
-Last modified: 2024-03-28 UTC
+Last modified: 2024-04-09 UTC
 
 - [Interesting posts](#interesting-posts)
 - [Widget](#widget)
@@ -12,7 +12,7 @@ Last modified: 2024-03-28 UTC
 - [Hide window border](#hide-window-border)
 - [Move a window to the center](#move-a-window-to-the-center)
 - [Show window geometry information](#show-window-geometry-information)
-- [Mouse wheel scroll speed (Plasma 6)](#mouse-wheel-scroll-speed-plasma-6)
+- [Mouse wheel scroll speed](#mouse-wheel-scroll-speed)
 - [Disable middle click pasting](#disable-middle-click-pasting)
 - [Baloo](#baloo)
 - [KWallet](#kwallet)
@@ -102,13 +102,20 @@ Plasma 6:
 - [Window Geometry Information - KDE Store](https://store.kde.org/p/1833846)
   - [Richard Qian / KWin Scripts by Worldblender · GitLab](https://gitlab.com/Worldblender/kwin-scripts)
 
-## Mouse wheel scroll speed (Plasma 6)
+## Mouse wheel scroll speed
 
-Go to *System Settings > Mouse & Touchpad > Mouse > Scrolling speed*.
+X11: Did not find a solution.
+
+Wayland: Go to *System Settings > Mouse & Touchpad > Mouse > Scrolling speed*.
+
+*References*:
+
+- [Is there a way to increase scroll speed? : r/kde](https://www.reddit.com/r/kde/comments/u0w5kg/is_there_a_way_to_increase_scroll_speed/)
+- [Can the mouse scroll speed be configured in KDE, nowadays? I'm flabbergasted tha... \| Hacker News](https://news.ycombinator.com/item?id=33955640)
 
 ## Disable middle click pasting
 
-Xorg: Can only disable the whole middle click function. See [[Xorg#Disable the middle key]].
+X11: Can only disable the whole middle click function. See [[Xorg#Disable the middle key]].
 
 Wayland: Go to *System Settings > General Behavior > Middle Click*.
 

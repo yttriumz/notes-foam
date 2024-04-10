@@ -1,5 +1,9 @@
 # X.Org
 
+Last Modified: 2024-04-09 UTC
+
+**Note**: This post assumes X11 by default.
+
 ## `xmodmap`
 
 ### Check the current pointer map
@@ -16,17 +20,17 @@ There is no way to restore it directly.
 
 ### Disable the middle key
 
-1. putting the following contents to `~/.Xmodmap`:
+1. Put the following contents in `~/.Xmodmap` and apply the settings via `xmodmap ~/.Xmodmap`:
 
    ```text
    pointer = 1 0 3
    ```
 
-2. Then apply the settings via `xmodmap ~/.Xmodmap`. This is also auto applied every time user logs in.
+   It is also automatically applied every time the user logs in.
 
-   Note that this will completely disable the middle click function (except in KVM guest machines), which might cause problems in applications where the middle click is used, e.g., *Cyberpunk 2077*.
+   Note that this will altogether disable the middle click function (except in KVM guest machines), which might cause problems in applications where the middle click is used, e.g., *Cyberpunk 2077*.
 
-3. You can restore it by writing the following to `~/.Xmodmap-restore-middle-click` and apply via `xmodmap ~/Xmodmap-restore-middle-click`:
+2. You can restore it by writing the following to `~/.Xmodmap-restore-middle-click` and apply via `xmodmap ~/Xmodmap-restore-middle-click`:
 
    ```text
    pointer = 1 2 3

@@ -1,18 +1,19 @@
 # Kubernetes Usage
 
-Last modified: 2024-03-25 UTC
+Last modified: 2024-04-10 UTC
 
 - [Interesting posts](#interesting-posts)
 - [Installation](#installation)
 - [Management tool](#management-tool)
-- [Check cluster status](#check-cluster-status)
+- [Cluster status](#cluster-status)
 - [Storage](#storage)
-- [Label nodes](#label-nodes)
+- [Node label](#node-label)
 - [Remove nodes](#remove-nodes)
-- [Remove pods](#remove-pods)
 - [Debug pods](#debug-pods)
-- [Get a shell to a running container](#get-a-shell-to-a-running-container)
+- [Remove pods](#remove-pods)
+- [Get shells to running pods](#get-shells-to-running-pods)
 - [Get files inside pods](#get-files-inside-pods)
+- [Port forward](#port-forward)
 - [Helm](#helm)
 
 ## Interesting posts
@@ -34,13 +35,15 @@ Last modified: 2024-03-25 UTC
 - [deployments do not support (honor) container restartPolicy · Issue #24725 · kubernetes/kubernetes](https://github.com/kubernetes/kubernetes/issues/24725)
 - [kubectl apply: Syntax, Examples, kubectl apply vs. create/replace](https://komodor.com/learn/kubectl-apply-syntax-examples-and-kubectl-apply-vs-create-vs-replace/)
 - [Assign Pods to Nodes \| Kubernetes](https://kubernetes.io/docs/tasks/configure-pod-container/assign-pods-nodes/)
-- Tutorials:
-  - [Learn Kubernetes and Containers \| Rancher](https://www.rancher.com/learn-the-basics)
-  - [mmumshad/kubernetes-the-hard-way: Bootstrap Kubernetes the hard way on Vagrant on Local Machine. No scripts.](https://github.com/mmumshad/kubernetes-the-hard-way)
-  - [chaseSpace/k8s-tutorial-cn: The most(might) detailed Kubernetes tutorials in Chinese. 全网最（可能）详细的Kubernetes中文教程。](https://github.com/chaseSpace/k8s-tutorial-cn)
-  - [easzlab/kubeasz: 使用Ansible脚本安装K8S集群，介绍组件交互原理，方便直接，不受国内网络环境影响](https://github.com/easzlab/kubeasz)
-  - [How to Deploy Kubernetes with Kubeadm and containerd - The New Stack](https://thenewstack.io/how-to-deploy-kubernetes-with-kubeadm-and-containerd/)
-  - [How to Install a Multi-Node Kubernetes Cluster on Ubuntu](https://www.atlantic.net/dedicated-server-hosting/how-to-set-up-three-node-kubernetes-cluster-on-ubuntu/)
+
+Tutorials:
+
+- [Learn Kubernetes and Containers \| Rancher](https://www.rancher.com/learn-the-basics)
+- [mmumshad/kubernetes-the-hard-way: Bootstrap Kubernetes the hard way on Vagrant on Local Machine. No scripts.](https://github.com/mmumshad/kubernetes-the-hard-way)
+- [chaseSpace/k8s-tutorial-cn: The most(might) detailed Kubernetes tutorials in Chinese. 全网最（可能）详细的Kubernetes中文教程。](https://github.com/chaseSpace/k8s-tutorial-cn)
+- [easzlab/kubeasz: 使用Ansible脚本安装K8S集群，介绍组件交互原理，方便直接，不受国内网络环境影响](https://github.com/easzlab/kubeasz)
+- [How to Deploy Kubernetes with Kubeadm and containerd - The New Stack](https://thenewstack.io/how-to-deploy-kubernetes-with-kubeadm-and-containerd/)
+- [How to Install a Multi-Node Kubernetes Cluster on Ubuntu](https://www.atlantic.net/dedicated-server-hosting/how-to-set-up-three-node-kubernetes-cluster-on-ubuntu/)
 
 ## Installation
 
@@ -113,7 +116,7 @@ curl "${CURL_COMMON_OPTIONS[@]}" https://get.helm.sh/helm-v$HELM_VERSION-linux-a
 
 - [Kubernetes technologies: Kubeadm vs MiniKube, Kind and K3S](https://www.padok.fr/en/blog/minikube-kubeadm-kind-k3s)
 
-## Check cluster status
+## Cluster status
 
 *References*:
 
@@ -131,7 +134,7 @@ curl "${CURL_COMMON_OPTIONS[@]}" https://get.helm.sh/helm-v$HELM_VERSION-linux-a
 
 - [`hostPath`](https://kubernetes.io/docs/concepts/storage/volumes/#hostpath)
 
-## Label nodes
+## Node label
 
 *References*:
 
@@ -143,12 +146,6 @@ curl "${CURL_COMMON_OPTIONS[@]}" https://get.helm.sh/helm-v$HELM_VERSION-linux-a
 
 - [How to gracefully remove a node from Kubernetes?](https://stackoverflow.com/questions/35757620/how-to-gracefully-remove-a-node-from-kubernetes)
 
-## Remove pods
-
-*References*:
-
-- [Remove Daemonset pod from a node](https://stackoverflow.com/questions/48078196/remove-daemonset-pod-from-a-node)
-
 ## Debug pods
 
 *References*:
@@ -158,12 +155,20 @@ curl "${CURL_COMMON_OPTIONS[@]}" https://get.helm.sh/helm-v$HELM_VERSION-linux-a
 - [Kubectl Reference Docs](https://kubernetes.io/docs/reference/generated/kubectl/kubectl-commands#logs)
 - [Kubernetes troubleshooting: 6 ways to find and fix issues \| Enable Sysadmin](https://www.redhat.com/sysadmin/kubernetes-troubleshooting)
 
-## Get a shell to a running container
+## Remove pods
+
+*References*:
+
+- [Force Delete StatefulSet Pods | Kubernetes](https://kubernetes.io/docs/tasks/run-application/force-delete-stateful-set-pod/)
+- [Remove Daemonset pod from a node](https://stackoverflow.com/questions/48078196/remove-daemonset-pod-from-a-node)
+
+## Get shells to running pods
 
 Use the following commands:
 
 ```bash
 kubectl exec -it POD_NAME -- bash
+
 # full form
 kubectl exec --stdin --tty POD_NAME --container CONTAINER_NAME -- /bin/bash
 ```
@@ -192,8 +197,17 @@ kubectl cp SOME_NAMESPACE/SOME_POD:/tmp/bar /tmp/foo
 
 - [azure aks - How to copy files from kubernetes Pods to local system - Stack Overflow](https://stackoverflow.com/questions/52407277/how-to-copy-files-from-kubernetes-pods-to-local-system)
 
+## Port forward
+
+*References*:
+
+- [Use Port Forwarding to Access Applications in a Cluster \| Kubernetes](https://kubernetes.io/docs/tasks/access-application-cluster/port-forward-access-application-cluster/)
+- [kubernetes - how to undo a kubectl port-forward - Stack Overflow](https://stackoverflow.com/questions/37288500/how-to-undo-a-kubectl-port-forward)
+
 ## Helm
 
 *References*:
 
+- [Helm \| Getting Started](https://helm.sh/docs/chart_template_guide/getting_started/)
+- [Helm \| Helm Dependency](https://helm.sh/docs/helm/helm_dependency/)
 - [kubernetes - UPGRADE FAILED: another operation (install/upgrade/rollback) is in progress - Stack Overflow](https://stackoverflow.com/questions/71599858/upgrade-failed-another-operation-install-upgrade-rollback-is-in-progress)

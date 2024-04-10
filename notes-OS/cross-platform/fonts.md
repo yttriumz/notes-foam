@@ -1,7 +1,8 @@
 # Fonts
 
-Last modified: 2024/01/26 UTC
+Last modified: 2024-04-09 UTC
 
+- [Unicode](#unicode)
 - [Test and compare fonts](#test-and-compare-fonts)
 - [Font tags](#font-tags)
 - [Mono](#mono)
@@ -20,6 +21,12 @@ Last modified: 2024/01/26 UTC
   - [Noto Sans (Mono) CJK](#noto-sans-mono-cjk)
   - [Sarasa Mono SC](#sarasa-mono-sc)
   - [Microsoft Yahei UI](#microsoft-yahei-ui)
+
+## Unicode
+
+*References*:
+
+- [Unicode - Compart](https://www.compart.com/en/unicode/)
 
 ## Test and compare fonts
 
