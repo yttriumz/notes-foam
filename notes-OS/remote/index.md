@@ -2,7 +2,7 @@
 type: index
 ---
 
-# Remote Development
+# Remote Access
 
 - [[SSH]]
 - [[frp]]
@@ -16,7 +16,7 @@ type: index
 [SSH]: SSH.md "SSH Usage"
 [frp]: frp.md "frp"
 [file-transfer]: file-transfer.md "Cross-platform File Transfer"
-[WARP]: WARP.md "Cloudflare WARP Usage"
+[WARP]: WARP.md "Cloudflare WARP"
 [WireGuard]: WireGuard.md "WireGuard"
 [clash]: clash.md "Clash"
 [proxy-subscription]: proxy-subscription.md "Proxy Subscription"

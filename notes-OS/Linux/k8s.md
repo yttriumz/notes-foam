@@ -1,6 +1,11 @@
+---
+sitemap:
+  lastmod: 2024-04-11 +0000
+---
+
 # Kubernetes Usage
 
-Last modified: 2024-04-10 UTC
+Last modified: 2024-04-11 +0000
 
 - [Interesting posts](#interesting-posts)
 - [Installation](#installation)
