@@ -216,3 +216,4 @@ kubectl cp SOME_NAMESPACE/SOME_POD:/tmp/bar /tmp/foo
 - [Helm \| Getting Started](https://helm.sh/docs/chart_template_guide/getting_started/)
 - [Helm \| Helm Dependency](https://helm.sh/docs/helm/helm_dependency/)
 - [kubernetes - UPGRADE FAILED: another operation (install/upgrade/rollback) is in progress - Stack Overflow](https://stackoverflow.com/questions/71599858/upgrade-failed-another-operation-install-upgrade-rollback-is-in-progress)
+- [Helm 'delete' doesn't delete PVCs · Issue #5156 · helm/helm](https://github.com/helm/helm/issues/5156)

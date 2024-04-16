@@ -1,5 +1,7 @@
 ---
 type: index
+sitemap:
+  priority: 0.5
 ---
 
 # Operating System

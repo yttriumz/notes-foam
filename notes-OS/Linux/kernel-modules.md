@@ -1,6 +1,11 @@
+---
+sitemap:
+  lastmod: 2024-04-16 +0000
+---
+
 # Kernel Modules
 
-Last modified: 2024/02/05 UTC
+Last modified: 2024-04-16 +0000
 
 - [Load kernel modules](#load-kernel-modules)
 - [Check kernel modules](#check-kernel-modules)
@@ -46,3 +51,7 @@ From ChatGPT (Poe):
 > ```
 >
 > Remember to replace `<module_name>` with the actual name of the module you want to check.
+
+*References*:
+
+- [Location of Linux Kernel Module - Stack Overflow](https://stackoverflow.com/questions/4654990/location-of-linux-kernel-module)

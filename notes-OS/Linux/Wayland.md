@@ -1,6 +1,21 @@
+---
+sitemap:
+  lastmod: 2024-04-16 +0000
+---
+
 # Wayland
+
+Last modified: 2024-04-16 +0000
 
 ## Interesting posts
 
 - [Think twice about Wayland. It breaks everything!](https://gist.github.com/probonopd/9feb7c20257af5dd915e3a9f2d1f2277)
 - [Advantages of Wayland over Xorg? : r/linux](https://www.reddit.com/r/linux/comments/fbxxu6/advantages_of_wayland_over_xorg/)
+- [xorg - How can I tell if an application is using XWayland? - Ask Ubuntu](https://askubuntu.com/questions/1393618/how-can-i-tell-if-an-application-is-using-xwayland)
+
+## Fcitx 5
+
+*References*:
+
+- ['Fcitx 5' and 'Fcitx 5 Wayland Launcher', which should I choose? / Applications & Desktop Environments / Arch Linux Forums](https://bbs.archlinux.org/viewtopic.php?id=292049)
+  - [Fcitx 5.1.7](https://groups.google.com/g/fcitx-announce/c/K7W1ATH2Viw)

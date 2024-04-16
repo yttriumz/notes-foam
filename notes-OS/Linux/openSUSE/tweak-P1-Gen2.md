@@ -1,6 +1,12 @@
+---
+sitemap:
+  lastmod: 2024-04-16 +0000
+  priority: 1.0
+---
+
 # Tweak openSUSE Tumbleweed on ThinkPad P1 Gen2
 
-Last modified: 2024-04-10 UTC
+Last modified: 2024-04-16 +0000
 
 - [Interesting posts](#interesting-posts)
 - [Change hostname](#change-hostname)
@@ -18,7 +24,8 @@ Last modified: 2024-04-10 UTC
   - [Zellij](#zellij)
 - [NVIDIA graphics card](#nvidia-graphics-card)
   - [Install driver and prime-select](#install-driver-and-prime-select)
-  - [Make applications run on NVidia card](#make-applications-run-on-nvidia-card)
+  - [NVIDIA module not loaded](#nvidia-module-not-loaded)
+  - [Make applications run on NVIDIA card](#make-applications-run-on-nvidia-card)
   - [If graphics driver or graphical desktop does not work](#if-graphics-driver-or-graphical-desktop-does-not-work)
   - [Benchmark](#benchmark)
 - [Codecs](#codecs)
@@ -26,7 +33,7 @@ Last modified: 2024-04-10 UTC
 - [Fingerprint](#fingerprint)
 - [IR camera](#ir-camera)
 - [Bluetooth](#bluetooth)
-- [Font](#font)
+- [Fonts](#fonts)
 - [Locale](#locale)
 - [Input method](#input-method)
   - [Rime](#rime)
@@ -41,7 +48,8 @@ Last modified: 2024-04-10 UTC
 - [zram](#zram)
 - [Development environment](#development-environment)
 - [Gaming](#gaming)
-- [HP printer](#hp-printer)
+- [Printers](#printers)
+  - [HP](#hp)
 
 ## Interesting posts
 
@@ -55,10 +63,12 @@ Last modified: 2024-04-10 UTC
 Change the hostname via the following commands:
 
 ```bash
-sudo hostnamectl hostname NEW_HOSTNAME
+hostnamectl hostname NEW_HOSTNAME
 ```
 
 ## Network settings
+
+If in TTY mode, `nmtui` can be run for a user-friendly UI.
 
 ### WiFi
 
@@ -87,12 +97,14 @@ Hibernation is disabled by default for security reasons. You can check dracut mo
 Run the following commands:
 
 ```bash
-sudo zypper refresh
-sudo zypper dist-upgraded # optionally add "--no-recommends"
+zypper refresh
+zypper dist-upgrade
 ```
 
-- `--no-recommends` can be added to install required packages only, referring to [the Reddit post](https://www.reddit.com/r/openSUSE/comments/10rnrnu/zypper_keeps_installing_kde_games_on_update_how/) and [the blog](https://linuxkamarada.com/en/2021/04/07/what-are-recommended-packages-and-how-to-install-them-on-opensuse/).
-- Locks also can prevent unwanted packages from being installed. See [[openSUSE/package#Lock]].
+To prevent potential unwanted packages from being installed:
+
+- `--no-recommends` flag can be used for `dist-upgrade` to install required packages only, referring to [the Reddit post](https://www.reddit.com/r/openSUSE/comments/10rnrnu/zypper_keeps_installing_kde_games_on_update_how/) and [the blog](https://linuxkamarada.com/en/2021/04/07/what-are-recommended-packages-and-how-to-install-them-on-opensuse/).
+- Locks can used. See [[openSUSE/package#Lock]].
 
 *References*:
 
@@ -205,7 +217,7 @@ See [[terminal-tools#Zellij]].
 2. Install drivers. On my machine (*ThinkPad P1 Gen2 with T2000*), I tested 2 methods:
 
    - Install legacy driver `x11-video-nvidiaG05` and `suse-prime`.
-   - Install the current driver `nvidia-video-G06` (or `nvidia-drivers-G06`) and `suse-prime`. At the time of updating (*Tumbleweed 20230518, KDE Plasma 5.27.5, NV driver 525.116.04*), it may result in a black SDDM login screen with only the cursor. This could be solved by pressing `Ctrl` + `Alt` + `Backspace` twice to restart the X server.
+   - Install the current driver `nvidia-video-G06` (or `nvidia-drivers-G06`) and `suse-prime`. At the time of updating (*Tumbleweed 20230518, KDE Plasma 5.27.5, NV driver 525.116.04*), it may result in a black SDDM login screen with only the cursor, which might be solved by pressing `Ctrl` + `Alt` + `Backspace` twice to restart the X server.
 
 *References*:
 
@@ -217,7 +229,13 @@ See [[terminal-tools#Zellij]].
 - [来到opensuse15.3的世界后，我推荐你做点什么](https://www.bwsl.wang/script/129.html)
 - [Got a black screen with mouse cursor only after switching (on SDDM screen) a user session type between X11 and Wayland](https://forum.manjaro.org/t/got-a-black-screen-with-mouse-cursor-only-after-switching-on-sddm-screen-a-user-session-type-between-x11-and-wayland/87044/3)
 
-### Make applications run on NVidia card
+### NVIDIA module not loaded
+
+*References*:
+
+- [NVIDIA module not loaded : r/openSUSE](https://www.reddit.com/r/openSUSE/comments/ydfdd5/nvidia_module_not_loaded/)
+
+### Make applications run on NVIDIA card
 
 Use `__NV_PRIME_RENDER_OFFLOAD=1 __VK_LAYER_NV_optimus=NVIDIA_only __GLX_VENDOR_LIBRARY_NAME=nvidia SOME_APP_COMMAND`.
 
@@ -314,9 +332,11 @@ Refer to [the wiki](https://en.opensuse.org/SDB:Firefox_MP4/H.264_Video_Support)
 
 See [[linux/tips#Use the Same Bluetooth Device on Linux and Windows Dual Boot System]].
 
-## Font
+## Fonts
 
-See [[fonts]].
+For nicer Chinese character displaying, install some CJK fonts via `zypper install google-noto-sans-tc-fonts adobe-sourcehansans-hk-fonts adobe-sourcehanserif-hk-fonts`.
+
+For monospace fonts, see [[fonts]].
 
 ## Locale
 
@@ -437,7 +457,9 @@ See [[openSUSE/dev-env]].
 
 See [[gaming]].
 
-## HP printer
+## Printers
+
+### HP
 
 It seems these packages provide drivers that cannot be searched by default. Maybe installing the exact package(s) that provide drivers is sufficient.
 

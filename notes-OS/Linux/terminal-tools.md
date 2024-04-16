@@ -1,6 +1,11 @@
+---
+sitemap:
+  lastmod: 2024-04-11 +0000
+---
+
 # Terminal Related Tools
 
-Last modified: 2024-04-10 UTC
+Last modified: 2024-04-11 +0000
 
 - [tmux](#tmux)
 - [Zellij](#zellij)
@@ -14,6 +19,8 @@ Last modified: 2024-04-10 UTC
 *References*:
 
 - [A beginner's guide to tmux \| Enable Sysadmin](https://www.redhat.com/sysadmin/introduction-tmux-linux)
+- [tmux - ArchWiki](https://wiki.archlinux.org/title/tmux)
+- [tmux(1) - Linux manual page](https://man7.org/linux/man-pages/man1/tmux.1.html)
 
 ## Zellij
 

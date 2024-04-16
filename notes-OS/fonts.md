@@ -1,6 +1,11 @@
+---
+sitemap:
+  lastmod: 2024-04-16 +0000
+---
+
 # Fonts
 
-Last modified: 2024-04-09 UTC
+Last modified: 2024-04-16 +0000
 
 - [Unicode](#unicode)
 - [Test and compare fonts](#test-and-compare-fonts)
@@ -52,25 +57,29 @@ Last modified: 2024-04-09 UTC
 - [original](https://github.com/microsoft/cascadia-code/releases)
 - [nerd font (CaskaydiaCove)](https://github.com/ryanoasis/nerd-fonts/releases)
 
+Installation:
+
+- openSUSE Tumbleweed: `zypper install saja-cascadia-code-fonts`
+
 Font variants:
 
 - `Cascadia Code`: standard version of Cascadia
 - `Cascadia Mono`: a version of Cascadia that doesn't have ligatures
 - `Cascadia (Code|Mono) PL`: a version of Cascadia that has embedded Powerline symbols
 
-Font features: My preference is `"editor.fontLigatures": "'liga', 'calt', 'ss03', 'ss20', 'zero'"`. Check [the official doc](https://github.com/microsoft/cascadia-code#font-features) for more.
+Font features: My preference is `'liga', 'calt', 'ss03', 'ss20', 'zero'`. Check [the official doc](https://github.com/microsoft/cascadia-code#font-features) for more.
 
 ### Iosevka
 
-Font features: My preference is `"editor.fontLigatures": "'liga', 'calt', 'ss04'"`. Check the official doc [`stylistic-sets.md`](https://github.com/be5invis/Iosevka/blob/main/doc/stylistic-sets.md) and [character-variants.md](https://github.com/be5invis/Iosevka/blob/main/doc/character-variants.md) for more.
+Font features: My preference is `'liga', 'calt', 'ss04'`. Check the official doc [`stylistic-sets.md`](https://github.com/be5invis/Iosevka/blob/main/doc/stylistic-sets.md) and [character-variants.md](https://github.com/be5invis/Iosevka/blob/main/doc/character-variants.md) for more.
 
 ### JuliaMono
 
-Font features: My preference is `"editor.fontLigatures": "'liga', 'calt', 'cv01', 'cv03', 'ss01', 'ss08', 'ss12', 'ss13', 'ss20', 'zero'"`. Check [the official doc](https://juliamono.netlify.app/#stylistic_sets) for more.
+Font features: My preference is `'liga', 'calt', 'cv01', 'cv03', 'ss01', 'ss08', 'ss12', 'ss13', 'ss20', 'zero'`. Check [the official doc](https://juliamono.netlify.app/#stylistic_sets) for more.
 
 ### Victor Mono
 
-Font features: My preference is `"editor.fontLigatures": "'liga', 'calt', 'ss02', 'ss07'"`. Check [the official doc](https://github.com/rubjo/victor-mono#available-stylistics) for more.
+Font features: My preference is `'liga', 'calt', 'ss02', 'ss07'`. Check [the official doc](https://github.com/rubjo/victor-mono#available-stylistics) for more.
 
 ### Fira Code (Retina)
 
@@ -80,13 +89,19 @@ Font features: Check [the official doc](https://github.com/tonsky/FiraCode/wiki/
 
 ### Jetbrains Mono
 
+Installation:
+
+- openSUSE Tumbleweed: `zypper install jetbrains-mono-fonts`
+
+Font features: My preference is `'liga', 'calt', 'zero', 'ss19', 'cv11', 'cv12', 'cv17'`. Check [the official doc](https://github.com/JetBrains/JetBrainsMono/wiki/OpenType-features) for more.
+
 ### Meslo LG S
 
 - [nerd font (MesloLGS Nerd Font)](https://github.com/ryanoasis/nerd-fonts/tree/master/patched-fonts/Meslo)
 
 ### Monaspace
 
-Font features: My preference is `"editor.fontLigatures": "'liga', 'calt', 'ss02', 'ss03', 'ss04', 'ss05', 'ss06', 'ss07', 'ss08'"`. Check [the official doc](https://github.com/githubnext/monaspace#coding-ligatures) for more.
+Font features: My preference is `'liga', 'calt', 'ss02', 'ss03', 'ss04', 'ss05', 'ss06', 'ss07', 'ss08'`. Check [the official doc](https://github.com/githubnext/monaspace#coding-ligatures) for more.
 
 ## Non-mono
 

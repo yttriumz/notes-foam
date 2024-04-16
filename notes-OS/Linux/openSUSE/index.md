@@ -54,7 +54,7 @@ MicroOS:
 [openSUSE/tips]: tips.md "openSUSE Usage Tips"
 [openSUSE/package]: package.md "openSUSE Package Management"
 [openSUSE/dev-env]: dev-env.md "openSUSE Development Environment"
-[installation-P1-Gen2]: installation-P1-Gen2.md "Install openSUSE Tumbleweed (20230128) on ThinkPad P1 Gen2"
+[installation-P1-Gen2]: installation-P1-Gen2.md "Install openSUSE Tumbleweed on ThinkPad P1 Gen2"
 [tweak-P1-Gen2]: tweak-P1-Gen2.md "Tweak openSUSE Tumbleweed on ThinkPad P1 Gen2"
 [installation-S10-2]: installation-S10-2.md "Install openSUSE Tumbleweed (20230715) on ideapad S10-2"
 [tweak-S10-2]: tweak-S10-2.md "Tweak openSUSE Tumbleweed on ideapad S10-2"

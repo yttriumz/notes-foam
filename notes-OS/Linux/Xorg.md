@@ -1,8 +1,20 @@
+---
+sitemap:
+  lastmod: 2024-04-16 +0000
+---
+
 # X.Org
 
-Last Modified: 2024-04-09 UTC
+Last Modified: 2024-04-16 +0000
 
 **Note**: This post assumes X11 by default.
+
+- [`xmodmap`](#xmodmap)
+   - [Check the current pointer map](#check-the-current-pointer-map)
+   - [Restore `xmodmap` defaults](#restore-xmodmap-defaults)
+   - [Disable the middle click pasting](#disable-the-middle-click-paste)
+      - [Completely disable the middle click](#completely-disable-the-middle-click)
+      - [Workarounds](#workarounds)
 
 ## `xmodmap`
 
@@ -18,7 +30,9 @@ There is no way to restore it directly.
 
 - [How do I clear xmodmap settings?](https://askubuntu.com/questions/29603/how-do-i-clear-xmodmap-settings)
 
-### Disable the middle key
+### Disable the middle click pasting
+
+#### Completely disable the middle click
 
 1. Put the following contents in `~/.Xmodmap` and apply the settings via `xmodmap ~/.Xmodmap`:
 
@@ -43,3 +57,7 @@ There is no way to restore it directly.
 - [How to disable middle mouse button pasting and set for navigating?](https://forum.manjaro.org/t/how-to-disable-middle-mouse-button-pasting-and-set-for-navigating/82144/4)
 - [Disable Middle-click paste (and JUST paste)](https://www.reddit.com/r/kde/comments/7a71fa/disable_middleclick_paste_and_just_paste/)
 - [8 Swapping mouse buttons](https://wiki.archlinux.org/title/Xmodmap#Swapping_mouse_buttons)
+
+#### Workarounds
+
+- [milaq/XMousePasteBlock: Userspace tool to disable middle mouse button paste in Xorg](https://github.com/milaq/XMousePasteBlock) (not tested)
