@@ -1,12 +1,12 @@
 ---
 sitemap:
-  lastmod: 2024-04-16 +0000
+  lastmod: 2024-04-17 +0000
   priority: 1.0
 ---
 
 # Tweak openSUSE Tumbleweed on ThinkPad P1 Gen2
 
-Last modified: 2024-04-16 +0000
+Last modified: 2024-04-17 +0000
 
 - [Interesting posts](#interesting-posts)
 - [Change hostname](#change-hostname)
@@ -334,9 +334,7 @@ See [[linux/tips#Use the Same Bluetooth Device on Linux and Windows Dual Boot Sy
 
 ## Fonts
 
-For nicer Chinese character displaying, install some CJK fonts via `zypper install google-noto-sans-tc-fonts adobe-sourcehansans-hk-fonts adobe-sourcehanserif-hk-fonts`.
-
-For monospace fonts, see [[fonts]].
+See [[fonts#Chinese]] for better Chinese character support..
 
 ## Locale
 
@@ -513,7 +511,7 @@ Continue? [y/n/v/...? shows all options] (y): y
 [terminal-tools#Zellij]: ../terminal-tools.md "Terminal Related Tools"
 [openSUSE/package#Packman (essentials) and NVidia]: package.md "openSUSE Package Management"
 [linux/tips#Use the Same Bluetooth Device on Linux and Windows Dual Boot System]: ../tips.md "General Linux Usage Tips"
-[fonts]: ../../fonts.md "Fonts"
+[fonts#Chinese]: ../../fonts.md "Fonts"
 [rime#User config]: ../../rime.md "RIME | 中州韻輸入法引擎"
 [power]: ../power.md "Power Management"
 [KDE]: ../KDE.md "KDE Plasma Tweak"

@@ -1,12 +1,12 @@
 ---
 sitemap:
-  lastmod: 2024-04-16 +0000
+  lastmod: 2024-04-17 +0000
   priority: 1.0
 ---
 
 # openSUSE Package Management
 
-Last modified: 2024-04-16 +0000
+Last modified: 2024-04-17 +0000
 
 **NOTE**: This note assumes Tumbleweed by default, but most content should also apply to Leap. Some of the existing differences between Tumbleweed and Leap are mentioned in the corresponding instructions.
 
@@ -119,6 +119,8 @@ zypper addrepo https://download.opensuse.org/repositories/Virtualization:/contai
    # The following one is the same
    zypper addrepo https://nvidia.github.io/libnvidia-container/sles15.5/libnvidia-container.repo
    ```
+
+   You may want to add the [GPG key](https://nvidia.github.io/libnvidia-container/gpgkey).
 
 3. Install *NVIDIA Container Toolkit* via the following commands:
 
@@ -239,6 +241,8 @@ Microsoft Edge Config files are stored under the following paths.
    zypper refresh
    zypper install cloudflare-warp
    ```
+
+   You may want to add the [GPG key](https://pkg.cloudflareclient.com/pubkey.gpg).
 
 ~~Check also [manual installation](#warp-manually).~~
 

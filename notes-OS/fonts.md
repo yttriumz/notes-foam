@@ -1,12 +1,13 @@
 ---
 sitemap:
-  lastmod: 2024-04-16 +0000
+  lastmod: 2024-04-17 +0000
 ---
 
 # Fonts
 
-Last modified: 2024-04-16 +0000
+Last modified: 2024-04-17 +0000
 
+- [Interesting posts](#interesting-posts)
 - [Unicode](#unicode)
 - [Test and compare fonts](#test-and-compare-fonts)
 - [Font tags](#font-tags)
@@ -23,9 +24,14 @@ Last modified: 2024-04-16 +0000
 - [Non-mono](#non-mono)
   - [Fira Sans](#fira-sans)
 - [Chinese](#chinese)
-  - [Noto Sans (Mono) CJK](#noto-sans-mono-cjk)
-  - [Sarasa Mono SC](#sarasa-mono-sc)
+  - [Noto Sans (Mono) CJK HK](#noto-sans-mono-cjk-hk)
+  - [Source Han](#source-han)
+  - [Sarasa Mono](#sarasa-mono)
   - [Microsoft Yahei UI](#microsoft-yahei-ui)
+
+## Interesting posts
+
+- [繁简中文转换概说](https://ayaka.shn.hk/cc/)
 
 ## Unicode
 
@@ -112,12 +118,24 @@ Font features: My preference is `'liga', 'calt', 'ss02', 'ss03', 'ss04', 'ss05',
 
 ## Chinese
 
-### Noto Sans (Mono) CJK
+### Noto Sans (Mono) CJK HK
 
 Installation:
 
-- openSUSE: `zypper install google-noto-sans-sc-fonts-full google-noto-sans-sc-mono-fonts`
+- openSUSE Tumbleweed: `zypper install google-noto-sans-hk-fonts google-noto-sans-hk-mono-fonts`
 
-### Sarasa Mono SC
+### Source Han
+
+Installation:
+
+- openSUSE Tumbleweed: `zypper install adobe-sourcehansans-hk-fonts adobe-sourcehanserif-hk-fonts`
+
+### Sarasa Mono
+
+*References*:
+
+- [问：mono-sc和mono-slab-sc有何区别？ · Issue #159 · be5invis/Sarasa-Gothic](https://github.com/be5invis/Sarasa-Gothic/issues/159)
+- [更纱黑体（Sarasa Gothic）你下载对了么？ - Ubuntu中文论坛](https://forum.ubuntu.org.cn/viewtopic.php?t=492571)
+- [Font 介紹 - HackMD](https://hackmd.io/@Raile/HJB3WXDV3)
 
 ### Microsoft Yahei UI

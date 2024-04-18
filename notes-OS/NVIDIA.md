@@ -1,4 +1,11 @@
+---
+sitemap:
+  lastmod: 2024-04-18 +0000
+---
+
 # NVIDIA Devices
+
+Last modified: 2024-04-18 +0000
 
 ## Interesting posts
 
@@ -18,3 +25,11 @@
 *References*:
 
 - [Technical specs](https://technical.city/en/video/Quadro-T2000-mobile#characteristics)
+
+## Linux
+
+### Tools
+
+- [Frogging-Family/nvidia-all: Nvidia driver latest to 396 series AIO installer](https://github.com/Frogging-Family/nvidia-all)
+- [Askannz/optimus-manager: A Linux program to handle GPU switching on Optimus laptops.](https://github.com/Askannz/optimus-manager)
+- [Shatur/optimus-manager-qt: An interface for Optimus Manager that allows to switch GPUs on Optimus laptops.](https://github.com/Shatur/optimus-manager-qt)

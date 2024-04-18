@@ -1,11 +1,11 @@
 ---
 sitemap:
-  lastmod: 2024-04-16 +0000
+  lastmod: 2024-04-18 +0000
 ---
 
 # Kernel Modules
 
-Last modified: 2024-04-16 +0000
+Last modified: 2024-04-18 +0000
 
 - [Load kernel modules](#load-kernel-modules)
 - [Check kernel modules](#check-kernel-modules)
@@ -14,11 +14,9 @@ Last modified: 2024-04-16 +0000
 
 From ChatGPT (Poe):
 
-> The `sudo modprobe` command in Linux is used to load kernel modules into the running kernel. Kernel modules are pieces of code that can be dynamically loaded and unloaded to extend the functionality of the Linux kernel without the need to reboot the system.
+> The `modprobe` command in Linux is used to load kernel modules into the running kernel. Kernel modules are pieces of code that can be dynamically loaded and unloaded to extend the functionality of the Linux kernel without the need to reboot the system.
 >
 > Here's a breakdown of the command syntax:
->
-> - `sudo`: It stands for "superuser do" and allows a user with the necessary permissions to execute a command as the superuser or another user. The `sudo` command is often required for administrative tasks as it provides elevated privileges.
 >
 > - `modprobe`: This is the command used to manage kernel modules. It can load modules into the kernel, unload them, or perform other related operations.
 >

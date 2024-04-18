@@ -1,17 +1,19 @@
 ---
 sitemap:
-  lastmod: 2024-04-16 +0000
+  lastmod: 2024-04-17 +0000
 ---
 
 # Wayland
 
-Last modified: 2024-04-16 +0000
+Last modified: 2024-04-17 +0000
 
 ## Interesting posts
 
 - [Think twice about Wayland. It breaks everything!](https://gist.github.com/probonopd/9feb7c20257af5dd915e3a9f2d1f2277)
 - [Advantages of Wayland over Xorg? : r/linux](https://www.reddit.com/r/linux/comments/fbxxu6/advantages_of_wayland_over_xorg/)
 - [xorg - How can I tell if an application is using XWayland? - Ask Ubuntu](https://askubuntu.com/questions/1393618/how-can-i-tell-if-an-application-is-using-xwayland)
+- [On Abandoning the X Server \| Hacker News](https://news.ycombinator.com/item?id=24920183)
+- [Wayland is just bad and needs to be scrapped and rewritten. Can we have devs from KDE/GNOME/XFCE come together to make something better and new? : r/kde](https://www.reddit.com/r/kde/comments/176jzrc/wayland_is_just_bad_and_needs_to_be_scrapped_and/)
 
 ## Fcitx 5
 
