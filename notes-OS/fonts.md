@@ -1,11 +1,11 @@
 ---
 sitemap:
-  lastmod: 2024-04-17 +0000
+  lastmod: 2024-04-18 +0000
 ---
 
 # Fonts
 
-Last modified: 2024-04-17 +0000
+Last modified: 2024-04-18 +0000
 
 - [Interesting posts](#interesting-posts)
 - [Unicode](#unicode)
@@ -26,7 +26,7 @@ Last modified: 2024-04-17 +0000
 - [Chinese](#chinese)
   - [Noto Sans (Mono) CJK HK](#noto-sans-mono-cjk-hk)
   - [Source Han](#source-han)
-  - [Sarasa Mono](#sarasa-mono)
+  - [Sarasa Gothic](#sarasa-gothic)
   - [Microsoft Yahei UI](#microsoft-yahei-ui)
 
 ## Interesting posts
@@ -130,7 +130,9 @@ Installation:
 
 - openSUSE Tumbleweed: `zypper install adobe-sourcehansans-hk-fonts adobe-sourcehanserif-hk-fonts`
 
-### Sarasa Mono
+### Sarasa Gothic
+
+Installation: Download the *UiHC* and *MonoHC* from [the release page](https://github.com/be5invis/Sarasa-Gothic/releases).
 
 *References*:
 

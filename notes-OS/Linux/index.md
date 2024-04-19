@@ -1,5 +1,8 @@
 ---
 type: index
+sitemap:
+  lastmod: 2024-04-19 +0000
+  priority: 0.5
 ---
 
 # Linux
@@ -20,7 +23,7 @@ System:
 
 Utilities:
 
-- [[bash]]
+- [[Linux/Bash]]
 - [[CLI-tools]]
 - [[shell-tools]]
 - [[terminal-tools]]
@@ -57,7 +60,7 @@ Virtualization & Containerization:
 [power]: power.md "Power Management"
 [networking-op]: networking-op.md "Networking Tools & Operations"
 [kernel-modules]: kernel-modules.md "Kernel Modules"
-[bash]: bash.md "Bash Usage"
+[Linux/Bash]: Bash.md "Bash Usage"
 [CLI-tools]: CLI-tools.md "Command-line Tools"
 [shell-tools]: shell-tools.md "Shell Related Tools"
 [terminal-tools]: terminal-tools.md "Terminal Related Tools"

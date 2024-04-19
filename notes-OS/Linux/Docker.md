@@ -1,6 +1,12 @@
+---
+sitemap:
+  lastmod: 2024-04-18 +0000
+  priority: 1.0
+---
+
 # Docker Usage
 
-Last modified: 2024-03-28 UTC
+Last modified: 2024-04-18 +0000
 
 - [Installation](#installation)
 - [Interesting posts](#interesting-posts)
@@ -36,6 +42,7 @@ Last modified: 2024-03-28 UTC
   - [Demystifying Containers – Part II: Container Runtimes \| SUSE Communities](https://www.suse.com/c/demystifying-containers-part-ii-container-runtimes/)
   - [Demystifying Containers – Part III: Container Images \| SUSE Communities](https://www.suse.com/c/demystifying-containers-part-iii-container-images/)
   - [Demystifying Containers – Part IV: Container Security \| SUSE Communities](https://www.suse.com/c/demystifying-containers-part-iv-container-security/)
+- [If Docker is not a light-weight Virtual Machine, how does it simulate a different OS? : r/docker](https://www.reddit.com/r/docker/comments/zwty5q/if_docker_is_not_a_lightweight_virtual_machine/)
 
 ## Manage Docker as a non-root user (less secure)
 
