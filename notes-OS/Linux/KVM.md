@@ -309,7 +309,6 @@ Note that the following method is **not** recommended in the LG official Discord
 {::options parse_block_html="true" /}
 
 <details markdown="block">
-<summary>Not recommended</summary>
 
 ```xml
 <input type="evdev">
