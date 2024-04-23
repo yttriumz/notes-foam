@@ -1,4 +1,11 @@
+---
+sitemap:
+  lastmod: 2024-04-23 +0000
+---
+
 # Ubuntu 22.04 Development Environment
+
+Last modified: 2024-04-23 +0000
 
 - [Basic environment](#basic-environment)
 - [Docker](#docker)
@@ -126,7 +133,7 @@ chmod 700 get_helm.sh
 
 - `minikube start --namespace redpanda-k8s --nodes 4`:
 
-  <details>
+  <details markdown="block">
   <summary>Output</summary>
 
   ```text
@@ -186,7 +193,7 @@ chmod 700 get_helm.sh
 
 - `minikube start --namespace redpanda-k8s --nodes 4 --container-runtime containerd`:
 
-  <details>
+  <details markdown="block">
   <summary>Output</summary>
 
   ```text
@@ -244,7 +251,7 @@ chmod 700 get_helm.sh
 
 - `minikube start --namespace redpanda-k8s --nodes 4 --container-runtime containerd --service-cluster-ip-range "10.10.0.0/16"`:
 
-  <details>
+  <details markdown="block">
   <summary>Output</summary>
 
   ```text
@@ -315,7 +322,7 @@ helm install redpanda redpanda/redpanda \
   --set statefulset.initContainers.setDataDirOwnership.enabled=true
 ```
 
-<details>
+<details markdown="block">
 <summary>Output1</summary>
 
 ```text
@@ -345,7 +352,7 @@ https://cert-manager.io/docs/usage/ingress/
 
 </details>
 
-<details>
+<details markdown="block">
 <summary>Output2</summary>
 
 ```text

@@ -1,6 +1,12 @@
+---
+sitemap:
+  lastmod: 2024-04-23 +0000
+  priority: 1.0
+---
+
 # Kernel-based Virtual Machine Usage
 
-Last modified: 2024-03-28 UTC
+Last modified: 2024-04-23 +0000
 
 - [Installation](#installation)
 - [Start service](#start-service)
@@ -302,7 +308,7 @@ Note that the following method is **not** recommended in the LG official Discord
 
 {::options parse_block_html="true" /}
 
-<details>
+<details markdown="block">
 <summary>Not recommended</summary>
 
 ```xml

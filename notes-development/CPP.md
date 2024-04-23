@@ -1,4 +1,11 @@
+---
+sitemap:
+  lastmod: 2024-04-23 +0000
+---
+
 # C++
+
+Last modified: 2024-04-23 +0000
 
 - [`.clang-format`](#clang-format)
     - [ANGLE](#angle)
@@ -20,7 +27,7 @@
 
 {::options parse_block_html="true" /}
 
-<details>
+<details markdown="block">
 
 ```yaml
 # Defines the ANGLE style for automatic reformatting.
@@ -83,7 +90,7 @@ references:
 
 {::options parse_block_html="true" /}
 
-<details>
+<details markdown="block">
 
 ```yaml
 # Defines the Chromium style for automatic reformatting.
