@@ -1,9 +1,16 @@
+---
+sitemap:
+  lastmod: 2024-04-22 +0000
+---
+
 # Networking Tools & Operations
 
-Last modified: 2024/01/22 UTC
+Last modified: 2024-04-22 +0000
 
 - [Interesting posts](#interesting-posts)
-- [Add certificates](#add-certificates)
+- [Certificates](#certificates)
+   - [Add trusted certificates](#add-trusted-certificates)
+   - [Examine certificates](#examine-certificates)
 - [Web debugging proxies](#web-debugging-proxies)
 - [Check open ports](#check-open-ports)
 - [`ip route`](#ip-route)
@@ -16,7 +23,9 @@ Last modified: 2024/01/22 UTC
 - [What's the meaning of `linkdown` and `onlink' in Linux Route? - Unix & Linux Stack Exchange](https://unix.stackexchange.com/questions/579087/whats-the-meaning-of-linkdown-and-onlink-in-linux-route)
 - [Stop using Telnet to test ports \| Enable Sysadmin](https://www.redhat.com/sysadmin/stop-using-telnet-test-port)
 
-## Add certificates
+## Certificates
+
+### Add trusted certificates
 
 *References*:
 
@@ -24,6 +33,15 @@ Last modified: 2024/01/22 UTC
 - [update-ca-certificates(8) — ca-certificates — Debian buster — Debian Manpages](https://manpages.debian.org/buster/ca-certificates/update-ca-certificates.8.en.html)
 - [update-ca-trust(8) — Arch manual pages](https://man.archlinux.org/man/update-ca-trust.8)
 - [Trust a self signed PEM certificate](https://unix.stackexchange.com/questions/17748/trust-a-self-signed-pem-certificate/126571#126571)
+
+### Examine certificates
+
+- `curl`:
+  - Get the connection and SSL certificate details for a domain name: `curl https://example.com -vI`.
+
+*References*:
+
+- [Using curl to Check an SSL Certificate's Expiration Date and Details — Nick Janetakis](https://nickjanetakis.com/blog/using-curl-to-check-an-ssl-certificate-expiration-date-and-details)
 
 ## Web debugging proxies
 

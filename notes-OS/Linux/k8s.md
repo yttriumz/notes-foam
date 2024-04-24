@@ -1,11 +1,11 @@
 ---
 sitemap:
-  lastmod: 2024-04-11 +0000
+  lastmod: 2024-04-19 +0000
 ---
 
 # Kubernetes Usage
 
-Last modified: 2024-04-11 +0000
+Last modified: 2024-04-19 +0000
 
 - [Interesting posts](#interesting-posts)
 - [Installation](#installation)
@@ -159,12 +159,14 @@ curl "${CURL_COMMON_OPTIONS[@]}" https://get.helm.sh/helm-v$HELM_VERSION-linux-a
 - [Debug Init Containers \| Kubernetes](https://kubernetes.io/docs/tasks/debug/debug-application/debug-init-containers/)
 - [Kubectl Reference Docs](https://kubernetes.io/docs/reference/generated/kubectl/kubectl-commands#logs)
 - [Kubernetes troubleshooting: 6 ways to find and fix issues \| Enable Sysadmin](https://www.redhat.com/sysadmin/kubernetes-troubleshooting)
+- [How to Debug Kubernetes Pending Pods and Scheduling Failures \| Datadog](https://www.datadoghq.com/blog/debug-kubernetes-pending-pods/)
+- [docker - K8s cannot schedule new pods to worker nodes even though there are enough resources - Stack Overflow](https://stackoverflow.com/questions/71733396/k8s-cannot-schedule-new-pods-to-worker-nodes-even-though-there-are-enough-resour)
 
 ## Remove pods
 
 *References*:
 
-- [Force Delete StatefulSet Pods | Kubernetes](https://kubernetes.io/docs/tasks/run-application/force-delete-stateful-set-pod/)
+- [Force Delete StatefulSet Pods \| Kubernetes](https://kubernetes.io/docs/tasks/run-application/force-delete-stateful-set-pod/)
 - [Remove Daemonset pod from a node](https://stackoverflow.com/questions/48078196/remove-daemonset-pod-from-a-node)
 
 ## Get shells to running pods

@@ -1,12 +1,12 @@
 ---
 sitemap:
-  lastmod: 2024-04-18 +0000
+  lastmod: 2024-04-23 +0000
   priority: 1.0
 ---
 
 # Tweak openSUSE Tumbleweed on ThinkPad P1 Gen2
 
-Last modified: 2024-04-18 +0000
+Last modified: 2024-04-23 +0000
 
 - [Interesting posts](#interesting-posts)
 - [Change hostname](#change-hostname)
@@ -14,6 +14,7 @@ Last modified: 2024-04-18 +0000
   - [WiFi](#wifi)
 - [Swappiness](#swappiness)
 - [Hibernation](#hibernation)
+- [Kexec \& Kdump](#kexec--kdump)
 - [System upgrade](#system-upgrade)
   - [Upgrade failures](#upgrade-failures)
 - [Package management](#package-management)
@@ -91,6 +92,12 @@ Hibernation is disabled by default for security reasons. You can check dracut mo
 
 - [Hibernation, Sleep, Configuration - English / Hardware - openSUSE Forums](https://forums.opensuse.org/t/hibernation-sleep-configuration/146316/2)
 - [System Fails to Resume from Hibernation \| Support \| SUSE](https://www.suse.com/support/kb/doc/?id=000020287)
+
+## Kexec & Kdump
+
+*References*:
+
+- [Kexec and Kdump \| System Analysis and Tuning Guide \| openSUSE Leap 15.5](https://doc.opensuse.org/documentation/leap/tuning/html/book-tuning/cha-tuning-kexec.html)
 
 ## System upgrade
 
