@@ -1,6 +1,11 @@
+---
+sitemap:
+  lastmod: 2024-04-22 +0000
+---
+
 # Crypto
 
-Last modified: 2023/12/18 16:27:15
+Last modified: 2024-04-22 +0000
 
 ## PKCS12
 
@@ -31,10 +36,12 @@ Last modified: 2023/12/18 16:27:15
 - [\[JDK-8228481\] Upgrade the default PKCS12 encryption/MAC algorithms - Java Bug System](https://bugs.openjdk.org/browse/JDK-8228481)
 - [ssl - IOException in Java 8 when reading PKCS12 keystore created with keytool from OpenJDK16 - Stack Overflow](https://stackoverflow.com/questions/67766268/ioexception-in-java-8-when-reading-pkcs12-keystore-created-with-keytool-from-ope)
 
-## PEM
+## X.509 Certificate
 
 - Show expiration date: `openssl x509 -enddate -noout -in PEM_PATH`
 
 *References*:
 
+- [What Is an X.509 Certificate? - SSL.com](https://www.ssl.com/faqs/what-is-an-x-509-certificate/)
 - [linux - How to determine SSL cert expiration date from a PEM encoded certificate? - Stack Overflow](https://stackoverflow.com/questions/21297853/how-to-determine-ssl-cert-expiration-date-from-a-pem-encoded-certificate)
+- [openssl - How do I view the details of a digital certificate .cer file? - Server Fault](https://serverfault.com/questions/215606/how-do-i-view-the-details-of-a-digital-certificate-cer-file)

@@ -1,5 +1,8 @@
 ---
 type: index
+sitemap:
+  lastmod: 2024-04-23 +0000
+  priority: 0.5
 ---
 
 # Development Tips
@@ -25,6 +28,7 @@ Programming languages:
 
 Domain-specific:
 
+- [[notes-development/Bash]]
 - [[Android]]
 - [[notes-development/Docker]]
 - [[crypto]]
@@ -45,6 +49,8 @@ Miscellaneous:
 
 - [Licenses \| Choose a License](https://choosealicense.com/licenses/)
 - [Open Source Licenses: Types and Comparison \| Snyk](https://snyk.io/learn/open-source-licenses/)
+- [Langserver.org](https://langserver.org/)
+- [The Missing Semester of Your CS Education · the missing semester of your cs education](https://missing.csail.mit.edu/)
 - [Introduction · How to be a Programmer](https://braydie.gitbooks.io/how-to-be-a-programmer/content/zh/)
 - [System Design](https://github.com/karanpratapsingh/system-design)
 - [Top 7 Featured DEV Posts from the Past Week](https://dev.to/devteam/top-7-featured-dev-posts-from-the-past-week-33i3)
@@ -72,6 +78,7 @@ Miscellaneous:
 [Python]: Python.md "Python"
 [Rust]: Rust.md "Rust"
 [Scala]: Scala.md "Scala"
+[notes-development/Bash]: Bash.md "Bash Scripting"
 [Android]: Android.md "Android"
 [notes-development/Docker]: Docker.md "Docker Application Development"
 [crypto]: crypto.md "Crypto"

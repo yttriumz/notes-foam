@@ -1,6 +1,11 @@
+---
+sitemap:
+  lastmod: 2024-04-19 +0000
+---
+
 # Single Sign-On
 
-Last modified: 2023/12/29 UTC
+Last modified: 2024-04-19 +0000
 
 - [Shibboleth](#shibboleth)
   - [IDP](#idp)
@@ -13,7 +18,7 @@ Last modified: 2023/12/29 UTC
 *References*:
 
 - [Shibboleth Concepts - Confluence](https://shibboleth.atlassian.net/wiki/spaces/CONCEPT/overview)
-- [Shibboleth Login Details | NC State Shibboleth](https://docs.shib.ncsu.edu/docs/shiblogindetails.html)
+- [Shibboleth Login Details \| NC State Shibboleth](https://docs.shib.ncsu.edu/docs/shiblogindetails.html)
 
 ### IDP
 

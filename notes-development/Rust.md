@@ -1,6 +1,11 @@
+---
+sitemap:
+  lastmod: 2024-04-25 +0000
+---
+
 # Rust
 
-Last modified: 2024-04-10 UTC
+Last modified: 2024-04-25 +0000
 
 - [Interesting posts](#interesting-posts)
 - [VSCode](#vscode)
@@ -35,6 +40,8 @@ Language:
 - [Learning Rust, my experience so far has been mixed : rust](https://www.reddit.com/r/rust/comments/18i8y39/learning_rust_my_experience_so_far_has_been_mixed/)
 - [Speykious/cve-rs: Blazingly 🔥 fast 🚀 memory vulnerabilities, written in 100% safe Rust. 🦀](https://github.com/Speykious/cve-rs)
 - [想问一下，真实项目中多大概率会遇到rust一些高级的东西？ - Rust语言中文社区](https://rustcc.cn/article?id=669f55b0-f4c6-422b-b5a5-08efd7fa8e23)
+- [What are problems with C++ that persist in Rust? : r/rust](https://www.reddit.com/r/rust/comments/1cajncc/what_are_problems_with_c_that_persist_in_rust/)
+- [\[Media\] Lars Bergstrom (Google Director of Engineering): "Rust teams are twice as productive as teams using C++." : r/rust](https://www.reddit.com/r/rust/comments/1bpwmud/media_lars_bergstrom_google_director_of/)
 
 Tooling:
 
@@ -58,6 +65,10 @@ GUI related:
 
 - [Are We GUI Yet?](https://github.com/areweguiyet/areweguiyet)
 - [Why is building a UI in Rust so hard? \| Warp](https://www.warp.dev/blog/why-is-building-a-ui-in-rust-so-hard)
+
+Embedded related:
+
+- [Programming ESP32 with Rust: OTA firmware update](https://quan.hoabinh.vn/post/2024/3/programming-esp32-with-rust-ota-firmware-update)
 
 Tutorials:
 
@@ -88,11 +99,16 @@ Tutorials:
   - [Building a language interpreter: The Execution Environment.](https://buildingwithrust.substack.com/p/building-a-language-interpreter-the-9b2)
   - [Building a language interpreter: Evaluation I - by Obiesie](https://buildingwithrust.substack.com/p/building-a-language-interpreter-evaluation)
   - [Building a language interpreter: Evaluation II - by Obiesie](https://buildingwithrust.substack.com/p/building-a-language-interpreter-evaluation-23e)
+- [Digit Recognition with Rust and WASM - Part 1 \| Vaktibabat](https://vaktibabat.github.io/posts/Rust_WASM_Digit_Recognition_1/)
 
 Miscellaneous:
 
 - [Rust has been forked to the Crab Language \| Hacker News](https://news.ycombinator.com/item?id=36122270)
 - [CrabLang : programming](https://www.reddit.com/r/programming/comments/12n0dqc/crablang/)
+- [komora-io/terrors: ergonomic and precise error handling built atop type-level set arithmetic](https://github.com/komora-io/terrors)
+- [tomtomwombat/fastbloom: The fastest Bloom filter in Rust. No accuracy compromises. Compatible with any hasher.](https://github.com/tomtomwombat/fastbloom)
+- [AugmendTech/CrabGrab: 🦀 🖥️ 🦀](https://github.com/augmendtech/crabgrab)
+- [WINSDK/bite: Disassembler focused on comprehensive rust support.](https://github.com/WINSDK/bite)
 
 ## VSCode
 
