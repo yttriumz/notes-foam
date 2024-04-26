@@ -1,7 +1,7 @@
 ---
 type: index
 sitemap:
-  lastmod: 2024-04-23 +0000
+  lastmod: 2024-04-25 +0000
   priority: 0.5
 ---
 
@@ -30,7 +30,7 @@ Domain-specific:
 
 - [[notes-development/Bash]]
 - [[Android]]
-- [[notes-development/Docker]]
+- [[containerization/index]]
 - [[crypto]]
 - [[databases]]
 - [[decentralization]]
@@ -80,7 +80,7 @@ Miscellaneous:
 [Scala]: Scala.md "Scala"
 [notes-development/Bash]: Bash.md "Bash Scripting"
 [Android]: Android.md "Android"
-[notes-development/Docker]: Docker.md "Docker Application Development"
+[containerization/index]: containerization/index.md "Containerization"
 [crypto]: crypto.md "Crypto"
 [databases]: databases.md "Databases"
 [decentralization]: decentralization.md "Decentralization Related"

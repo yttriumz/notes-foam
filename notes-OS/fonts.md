@@ -1,11 +1,11 @@
 ---
 sitemap:
-  lastmod: 2024-04-18 +0000
+  lastmod: 2024-04-24 +0000
 ---
 
 # Fonts
 
-Last modified: 2024-04-18 +0000
+Last modified: 2024-04-24 +0000
 
 - [Interesting posts](#interesting-posts)
 - [Unicode](#unicode)
@@ -18,13 +18,13 @@ Last modified: 2024-04-18 +0000
   - [Victor Mono](#victor-mono)
   - [Fira Code (Retina)](#fira-code-retina)
   - [Hack](#hack)
-  - [Jetbrains Mono](#jetbrains-mono)
+  - [JetBrains Mono](#jetbrains-mono)
   - [Meslo LG S](#meslo-lg-s)
   - [Monaspace](#monaspace)
 - [Non-mono](#non-mono)
   - [Fira Sans](#fira-sans)
 - [Chinese](#chinese)
-  - [Noto Sans (Mono) CJK HK](#noto-sans-mono-cjk-hk)
+  - [Noto CJK](#noto-cjk)
   - [Source Han](#source-han)
   - [Sarasa Gothic](#sarasa-gothic)
   - [Microsoft Yahei UI](#microsoft-yahei-ui)
@@ -73,19 +73,19 @@ Font variants:
 - `Cascadia Mono`: a version of Cascadia that doesn't have ligatures
 - `Cascadia (Code|Mono) PL`: a version of Cascadia that has embedded Powerline symbols
 
-Font features: My preference is `'liga', 'calt', 'ss03', 'ss20', 'zero'`. Check [the official doc](https://github.com/microsoft/cascadia-code#font-features) for more.
+Font features: I prefer `'liga', 'calt', 'ss03', 'ss20', 'zero'`. Check [the official doc](https://github.com/microsoft/cascadia-code#font-features) for more.
 
 ### Iosevka
 
-Font features: My preference is `'liga', 'calt', 'ss04'`. Check the official doc [`stylistic-sets.md`](https://github.com/be5invis/Iosevka/blob/main/doc/stylistic-sets.md) and [character-variants.md](https://github.com/be5invis/Iosevka/blob/main/doc/character-variants.md) for more.
+Font features: I prefer `'liga', 'calt', 'ss04'`. Check the official doc [`stylistic-sets.md`](https://github.com/be5invis/Iosevka/blob/main/doc/stylistic-sets.md) and [`character-variants.md`](https://github.com/be5invis/Iosevka/blob/main/doc/character-variants.md) for more.
 
 ### JuliaMono
 
-Font features: My preference is `'liga', 'calt', 'cv01', 'cv03', 'ss01', 'ss08', 'ss12', 'ss13', 'ss20', 'zero'`. Check [the official doc](https://juliamono.netlify.app/#stylistic_sets) for more.
+Font features: I prefer `'liga', 'calt', 'cv01', 'cv03', 'ss01', 'ss08', 'ss12', 'ss13', 'ss20', 'zero'`. Check [the official doc](https://juliamono.netlify.app/#stylistic_sets) for more.
 
 ### Victor Mono
 
-Font features: My preference is `'liga', 'calt', 'ss02', 'ss07'`. Check [the official doc](https://github.com/rubjo/victor-mono#available-stylistics) for more.
+Font features: I prefer `'liga', 'calt', 'ss02', 'ss07'`. Check [the official doc](https://github.com/rubjo/victor-mono#available-stylistics) for more.
 
 ### Fira Code (Retina)
 
@@ -93,13 +93,13 @@ Font features: Check [the official doc](https://github.com/tonsky/FiraCode/wiki/
 
 ### Hack
 
-### Jetbrains Mono
+### JetBrains Mono
 
 Installation:
 
 - openSUSE Tumbleweed: `zypper install jetbrains-mono-fonts`
 
-Font features: My preference is `'liga', 'calt', 'zero', 'ss19', 'cv11', 'cv12', 'cv17'`. Check [the official doc](https://github.com/JetBrains/JetBrainsMono/wiki/OpenType-features) for more.
+Font features: I prefer `'liga', 'calt', 'zero', 'ss19', 'cv11', 'cv12', 'cv17'`. Check [the official doc](https://github.com/JetBrains/JetBrainsMono/wiki/OpenType-features) for more.
 
 ### Meslo LG S
 
@@ -107,7 +107,7 @@ Font features: My preference is `'liga', 'calt', 'zero', 'ss19', 'cv11', 'cv12',
 
 ### Monaspace
 
-Font features: My preference is `'liga', 'calt', 'ss02', 'ss03', 'ss04', 'ss05', 'ss06', 'ss07', 'ss08'`. Check [the official doc](https://github.com/githubnext/monaspace#coding-ligatures) for more.
+Font features: I prefer `'liga', 'calt', 'ss02', 'ss03', 'ss04', 'ss05', 'ss06', 'ss07', 'ss08'`. Check [the official doc](https://github.com/githubnext/monaspace#coding-ligatures) for more.
 
 ## Non-mono
 
@@ -118,7 +118,7 @@ Font features: My preference is `'liga', 'calt', 'ss02', 'ss03', 'ss04', 'ss05',
 
 ## Chinese
 
-### Noto Sans (Mono) CJK HK
+### Noto CJK
 
 Installation:
 
@@ -132,7 +132,7 @@ Installation:
 
 ### Sarasa Gothic
 
-Installation: Download the *UiHC* and *MonoHC* from [the release page](https://github.com/be5invis/Sarasa-Gothic/releases).
+Installation: Download the *UiHC* and *MonoHC* from [the official site](https://github.com/be5invis/Sarasa-Gothic/releases).
 
 *References*:
 

@@ -1,18 +1,18 @@
 ---
 sitemap:
-  lastmod: 2024-04-16 +0000
+  lastmod: 2024-04-24 +0000
 ---
 
 # X.Org
 
-Last Modified: 2024-04-16 +0000
+Last Modified: 2024-04-24 +0000
 
 **Note**: This post assumes X11 by default.
 
 - [`xmodmap`](#xmodmap)
    - [Check the current pointer map](#check-the-current-pointer-map)
    - [Restore `xmodmap` defaults](#restore-xmodmap-defaults)
-   - [Disable the middle click pasting](#disable-the-middle-click-paste)
+   - [Disable the middle click pasting](#disable-the-middle-click-pasting)
       - [Completely disable the middle click](#completely-disable-the-middle-click)
       - [Workarounds](#workarounds)
 
@@ -32,6 +32,8 @@ There is no way to restore it directly.
 
 ### Disable the middle click pasting
 
+At the time of updating (*X Server 1.21.1.12, Plasma 6.0.4*), there's no native solution.
+
 #### Completely disable the middle click
 
 1. Put the following contents in `~/.Xmodmap` and apply the settings via `xmodmap ~/.Xmodmap`:
@@ -42,7 +44,7 @@ There is no way to restore it directly.
 
    It is also automatically applied every time the user logs in.
 
-   Note that this will altogether disable the middle click function (except in KVM guest machines), which might cause problems in applications where the middle click is used, e.g., *Cyberpunk 2077*.
+   Note that this might cause problems in applications where the middle click is necessary, e.g., *Cyberpunk 2077*.
 
 2. You can restore it by writing the following to `~/.Xmodmap-restore-middle-click` and apply via `xmodmap ~/Xmodmap-restore-middle-click`:
 

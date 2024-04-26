@@ -1,8 +1,24 @@
+---
+sitemap:
+  lastmod: 2024-04-24 +0000
+  priority: 0.3
+---
+
 # Clash
+
+Last modified: 2024-04-24 +0000
+
+**NOTE**: At the time of updating (2024-04-24), this project was abandoned and deleted.
+
+- [Installation](#installation)
+  - [Windows](#windows)
+  - [Linux](#linux)
+    - [Portable executable](#portable-executable)
+    - [Flatpak](#flatpak)
 
 ## Installation
 
-Download from [the official page](https://github.com/Fndroid/clash_for_windows_pkg/releases).
+Download from [the official site](https://github.com/Fndroid/clash_for_windows_pkg/releases).
 
 ### Windows
 
@@ -24,4 +40,4 @@ Download from [the official page](https://github.com/Fndroid/clash_for_windows_p
 
 *References*:
 
-- https://flathub.org/apps/io.github.Fndroid.clash_for_windows
+- [Install Clash for Windows on Linux \| Flathub](https://flathub.org/apps/io.github.Fndroid.clash_for_windows)

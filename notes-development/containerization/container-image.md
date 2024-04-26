@@ -1,6 +1,8 @@
-# Docker Application Development
+# Container Image Development
 
-Last modified: 2024-03-25 UTC
+Last modified: 2024-04-25 +0000
+
+**NOTE**: This note assumes that images are built using Docker by default.
 
 - [Dockerfile](#dockerfile)
   - [`CMD` \& `ENTRYPOINT`](#cmd--entrypoint)

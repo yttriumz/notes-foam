@@ -1,6 +1,7 @@
 ---
 type: index
 sitemap:
+  lastmod: 2024-04-25 +0000
   priority: 0.5
 ---
 

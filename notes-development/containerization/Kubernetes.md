@@ -1,11 +1,11 @@
 ---
 sitemap:
-  lastmod: 2024-04-19 +0000
+  lastmod: 2024-04-25 +0000
 ---
 
 # Kubernetes Usage
 
-Last modified: 2024-04-19 +0000
+Last modified: 2024-04-25 +0000
 
 - [Interesting posts](#interesting-posts)
 - [Installation](#installation)
@@ -40,6 +40,7 @@ Last modified: 2024-04-19 +0000
 - [deployments do not support (honor) container restartPolicy · Issue #24725 · kubernetes/kubernetes](https://github.com/kubernetes/kubernetes/issues/24725)
 - [kubectl apply: Syntax, Examples, kubectl apply vs. create/replace](https://komodor.com/learn/kubectl-apply-syntax-examples-and-kubectl-apply-vs-create-vs-replace/)
 - [Assign Pods to Nodes \| Kubernetes](https://kubernetes.io/docs/tasks/configure-pod-container/assign-pods-nodes/)
+- [Resource Management for Pods and Containers \| Kubernetes](https://kubernetes.io/docs/concepts/configuration/manage-resources-containers/#meaning-of-cpu)
 
 Tutorials:
 

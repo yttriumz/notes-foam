@@ -1,13 +1,18 @@
+---
+sitemap:
+  lastmod: 2024-04-24 +0000
+---
+
 # Storage & File System
 
-Last modified: 2024-03-15 UTC
+Last modified: 2024-04-24 +0000
 
 - [Interesting posts](#interesting-posts)
 - [Permissions](#permissions)
 - [Logical Volume Manager](#logical-volume-manager)
 - [Btrfs](#btrfs)
 - [exFAT](#exfat)
-  - [Utilities installation](#utilities-installation)
+  - [Utility installation](#utility-installation)
 - [SquashFS](#squashfs)
 
 ## Interesting posts
@@ -47,7 +52,7 @@ Last modified: 2024-03-15 UTC
 
 ## exFAT
 
-### Utilities installation
+### Utility installation
 
 - openSUSE Tumbleweed: Install `exfatprogs` via `zypper install exfatprogs`.
 

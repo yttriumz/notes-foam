@@ -1,17 +1,16 @@
+---
+sitemap:
+  lastmod: 2024-04-25 +0000
+  priority: 1.0
+---
+
 # openSUSE Development Environment
 
-Last modified: 2024-04-10 UTC
+Last modified: 2024-04-25 +0000
 
-**NOTE**: This note is primarily based on Tumbleweed, but most should also apply to Leap. Some differences between Tumbleweed and Leap are already mentioned in the corresponding instructions.
+**NOTE**: This note assumes Tumbleweed by default, but most content should also apply to Leap. Some of the existing differences between Tumbleweed and Leap are mentioned in the corresponding instructions.
 
-- [SSH](#ssh)
 - [git](#git)
-- [VSCode](#vscode)
-- [Docker](#docker)
-   - [Build and run NVidia GPU accelerated Docker containers](#build-and-run-nvidia-gpu-accelerated-docker-containers)
-- [Kubernetes](#kubernetes)
-- [KVM](#kvm)
-- [bochs](#bochs)
 - [Basic environment](#basic-environment)
 - [Android](#android)
    - [Android Studio](#android-studio)
@@ -21,107 +20,34 @@ Last modified: 2024-04-10 UTC
 - [Go](#go)
 - [Haskell](#haskell)
 - [Java](#java)
-- [JavaScript](#javascript)
-   - [Node.js](#nodejs)
-      - [fnm](#fnm)
+- [Node.js](#nodejs)
+   - [fnm](#fnm)
 - [PowerShell 7](#powershell-7)
 - [Python](#python)
    - [pyenv](#pyenv)
 - [Rust](#rust)
 - [Scala](#scala)
+- [Docker](#docker)
+   - [Build and run NVidia GPU accelerated Docker containers](#build-and-run-nvidia-gpu-accelerated-docker-containers)
+- [Kubernetes](#kubernetes)
+- [KVM](#kvm)
+- [bochs](#bochs)
 - [Machine Learning](#machine-learning)
    - [TensorFlow 2](#tensorflow-2)
 
-## SSH
-
-See [[SSH]] for configuration.
-
 ## git
+
+It is included in the `devel_basis` pattern. See [Basic environment](#basic-environment).
 
 See [[git]] for configuration.
 
-## VSCode
-
-See [[openSUSE/package#VSCode]].
-
-## Docker
-
-For usage, see [[Linux/Docker]].
-
-1. Add *Virtualization:containers* repository. See [[openSUSE/package#Container]].
-2. Install docker and docker-compose using the following commands:
-
-   ```bash
-   zypper install docker docker-compose
-   ```
-
-3. Verify installation via the following commands:
-
-   ```bash
-   sudo docker run --rm hello-world
-   ```
-
-### Build and run NVidia GPU accelerated Docker containers
-
-See [[openSUSE/package#NVIDIA Container Toolkit]].
-
-## Kubernetes
-
-Many tools are already provided in the openSUSE official Oss repository. But still, the Kubernetes official repository `https://pkgs.k8s.io/core:/stable:/v1.29/rpm/` can be added if preferred.
-
-## KVM
-
-For KVM usage, see [[linux/KVM]].
-
-1. At the time of writing (*Tumbleweed 20230707*), install KVM-related tools via the following commands:
-
-   ```bash
-   zypper install --type pattern kvm_tools
-   zypper install libvirt
-   ```
-
-2. Verify via the following commands:
-
-   ```bash
-   virt-host-validate
-   ```
-
-   The following may be added to boot parameter depending on the output and use case:
-
-   ```text
-   cgroup_enable=cpu cgroup_enable=cpuset cgroup_enable=devices cgroup_enable=freezer cgroup_enable=blkio
-   ```
-
-*References*:
-
-- [6.2.3 Installing specific installation patterns](https://doc.opensuse.org/documentation/leap/virtualization/single-html/book-virtualization/#install-virtualization-components-pattern)
-- [32 Setting up a KVM VM Host Server](https://doc.opensuse.org/documentation/leap/virtualization/single-html/book-virtualization/#cha-qemu-host)
-- [How To Use Virtual Machines on Linux](https://www.youtube.com/watch?v=t-23HOKMer0)
-- [Setup Qemu in Debian Linux](https://christitus.com/vm-setup-in-linux/)
-- [Freezer error when installing KVM on Debian.](https://www.reddit.com/r/linuxquestions/comments/w38k31/comment/iguuy6j/?utm_source=share&utm_medium=web2x&context=3)
-
-## bochs
-
-For bochs usage, see [[bochs]].
-
-1. Add *Emulators* repository. See [[openSUSE/package#Emulators]].
-2. Install bochs via the following commands:
-
-   ```bash
-   zypper install bochs
-   ```
-
-*References*:
-
-- [Welcome to the Bochs IA-32 Emulator Project](https://bochs.sourceforge.io/)
-
 ## Basic environment
 
-Install the basic environment via the following commands:
+Install the `devel_basis` pattern via the following commands:
 
 ```bash
-zypper install -t pattern devel_basis
-zypper install pattern:devel_basis # This is the same
+zypper install --type pattern devel_basis
+zypper install pattern:devel_basis # Does the same
 ```
 
 ## Android
@@ -172,7 +98,7 @@ zypper install pattern:devel_basis # This is the same
        gtk3-devel
    ```
 
-2. Refer to [the official doc](https://docs.flutter.dev/get-started/install/linux). I installed it under `$HOME/.flutter`.
+2. Refer to [the official docs](https://docs.flutter.dev/get-started/install/linux). I installed it under `$HOME/.flutter`.
 3. Add the following to `~/.bash_profile`:
 
    ```bash
@@ -195,7 +121,7 @@ zypper install pattern:devel_basis # This is the same
 
 ## Go
 
-1. Refer to [the official doc](https://go.dev/doc/install). I installed it under `$HOME/.go`.
+1. Refer to [the official docs](https://go.dev/doc/install). I installed it under `$HOME/.go`.
 2. Add the following to `~/.bash_profile`:
 
    ```bash
@@ -209,7 +135,7 @@ zypper install pattern:devel_basis # This is the same
 
 ## Haskell
 
-Use the following commands:
+Install the Haskell toolchain via the following commands:
 
 ```bash
 curl --proto '=https' --tlsv1.2 -sSf https://get-ghcup.haskell.org | sh
@@ -221,20 +147,21 @@ curl --proto '=https' --tlsv1.2 -sSf https://get-ghcup.haskell.org | sh
 
 ## Java
 
-Use the following commands:
+- Install a specific version via the following commands:
 
-```bash
-zypper install java-17-openjdk-devel java-17-openjdk-src
-```
+  ```bash
+  zypper install java-17-openjdk-devel java-17-openjdk-src
+  ```
+
+- Use a version manager:
+  - [ ] Todo
 
 *References*:
 
 - [SDB:Installing Java](https://en.opensuse.org/SDB:Installing_Java)
 - [How to install Java Development Kit (JDK) on openSUSE and SLES](https://www.simplified.guide/java/jdk-install-suse)
 
-## JavaScript
-
-### Node.js
+## Node.js
 
 It is recommended to use a Node version manager to install Node.js and npm.
 
@@ -242,7 +169,7 @@ It is recommended to use a Node version manager to install Node.js and npm.
 
 - [Download and install node and npm](https://docs.npmjs.com/cli/v9/configuring-npm/install)
 
-#### fnm
+### fnm
 
 - Install via `curl -fsSL https://fnm.vercel.app/install | bash`.
 - Upgrade via `curl -fsSL https://fnm.vercel.app/install | bash -s -- --skip-shell`.
@@ -277,7 +204,8 @@ Problem: nothing provides 'openssl-libs' needed by the to be installed powershel
 
 ## Python
 
-`python3` is already available upon system installation.
+- `python3` is already available upon system installation.
+- Use a version manager.
 
 ### pyenv
 
@@ -326,7 +254,7 @@ export CARGO_HOME=$HOME/.rust/.cargo
 
 ## Scala
 
-1. [Installing Java](#java) can be performed before installing Scala.
+1. (Optional) [Java](#java) can be installed before Scala.
 2. I installed it under `$HOME/.coursier` by adding the following to `.bash_profile` before installation:
 
    ```bash
@@ -336,8 +264,79 @@ export CARGO_HOME=$HOME/.rust/.cargo
 
 *References*:
 
-- [Installation](https://get-coursier.io/docs/cli-installation)
-- [Installation directory](https://get-coursier.io/docs/cli-install#installation-directory)
+- [Installation · Coursier](https://get-coursier.io/docs/cli-installation)
+- [install · Coursier](https://get-coursier.io/docs/cli-install#installation-directory)
+
+## Docker
+
+1. Add *Virtualization:containers* repository. See [[openSUSE/package#Container]].
+2. Install docker and docker-compose using the following commands:
+
+   ```bash
+   zypper install docker docker-compose
+   ```
+
+3. Verify installation via the following commands:
+
+   ```bash
+   sudo docker run --rm hello-world
+   ```
+
+See [[Docker]] for usage.
+
+### Build and run NVidia GPU accelerated Docker containers
+
+See [[openSUSE/package#NVIDIA Container Toolkit]].
+
+## Kubernetes
+
+Many tools are already provided in the openSUSE official Oss repository. But still, the Kubernetes official repository `https://pkgs.k8s.io/core:/stable:/v1.29/rpm/` can be added if preferred.
+
+## KVM
+
+For KVM usage, see [[linux/KVM]].
+
+1. At the time of writing (*Tumbleweed 20230707*), install KVM-related tools via the following commands:
+
+   ```bash
+   zypper install --type pattern kvm_tools
+   zypper install libvirt
+   ```
+
+2. Verify via the following commands:
+
+   ```bash
+   virt-host-validate
+   ```
+
+   The following may be added to boot parameter depending on the output and use case:
+
+   ```text
+   cgroup_enable=cpu cgroup_enable=cpuset cgroup_enable=devices cgroup_enable=freezer cgroup_enable=blkio
+   ```
+
+*References*:
+
+- [6.2.3 Installing specific installation patterns](https://doc.opensuse.org/documentation/leap/virtualization/single-html/book-virtualization/#install-virtualization-components-pattern)
+- [32 Setting up a KVM VM Host Server](https://doc.opensuse.org/documentation/leap/virtualization/single-html/book-virtualization/#cha-qemu-host)
+- [How To Use Virtual Machines on Linux](https://www.youtube.com/watch?v=t-23HOKMer0)
+- [Setup Qemu in Debian Linux](https://christitus.com/vm-setup-in-linux/)
+- [Freezer error when installing KVM on Debian.](https://www.reddit.com/r/linuxquestions/comments/w38k31/comment/iguuy6j/?utm_source=share&utm_medium=web2x&context=3)
+
+## bochs
+
+1. Add *Emulators* repository. See [[openSUSE/package#Emulators]].
+2. Install bochs via the following commands:
+
+   ```bash
+   zypper install bochs
+   ```
+
+See [[bochs]] for usage.
+
+*References*:
+
+- [Welcome to the Bochs IA-32 Emulator Project](https://bochs.sourceforge.io/)
 
 ## Machine Learning
 
@@ -345,7 +344,7 @@ export CARGO_HOME=$HOME/.rust/.cargo
 
 It is recommended to run TensorFlow 2 in a container.
 
-1. Install docker. See [docker](#docker).
+1. Install Docker. See [Docker](#docker).
 2. Install NVIDIA Container Toolkit. See [[openSUSE/package#NVIDIA Container Toolkit]].
 3. Install TensorFlow 2 via the following commands:
 
@@ -361,19 +360,17 @@ It is recommended to run TensorFlow 2 in a container.
 
 *References*:
 
-- [Docker](https://www.tensorflow.org/install/docker)
+- [Docker  \|  TensorFlow](https://www.tensorflow.org/install/docker)
 - [Installing on SUSE 15](https://docs.nvidia.com/datacenter/cloud-native/container-toolkit/latest/install-guide.html#installing-on-suse-15)
-- [Document supported CUDA/cuDNN versions](https://github.com/tensorflow/tensorflow/issues/57000)
-- [Upgrade TF to CUDA 11.4 and cuDNN 8.2](https://github.com/tensorflow/tensorflow/issues/51659)
+- [Document supported CUDA/cuDNN versions · Issue #57000 · tensorflow/tensorflow](https://github.com/tensorflow/tensorflow/issues/57000)
+- [Upgrade TF to CUDA 11.4 and cuDNN 8.2 · Issue #51659 · tensorflow/tensorflow](https://github.com/tensorflow/tensorflow/issues/51659)
 
 [//begin]: # "Autogenerated link references for markdown compatibility"
-[SSH]: ../../cross-platform/remote/SSH.md "SSH Usage"
 [git]: ../../../notes-development/git.md "Git Usage"
-[openSUSE/package#VSCode]: package.md "openSUSE Package Management"
-[Linux/Docker]: ../Docker.md "Docker Usage"
 [openSUSE/package#Container]: package.md "openSUSE Package Management"
+[Docker]: ../../../notes-development/containerization/Docker.md "Docker Operations"
 [openSUSE/package#NVIDIA Container Toolkit]: package.md "openSUSE Package Management"
 [linux/KVM]: ../KVM.md "Kernel-based Virtual Machine Usage"
-[bochs]: ../bochs.md "bochs Usage"
 [openSUSE/package#Emulators]: package.md "openSUSE Package Management"
+[bochs]: ../bochs.md "bochs Usage"
 [//end]: # "Autogenerated link references"

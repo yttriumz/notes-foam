@@ -1,7 +1,7 @@
 ---
 type: index
 sitemap:
-  lastmod: 2024-04-23 +0000
+  lastmod: 2024-04-26 +0000
   priority: 0.5
 ---
 
@@ -13,7 +13,7 @@ sitemap:
 - [[WARP]]
 - [[WireGuard]]
 - [[V2Ray]]
-- [[clash]]
+- ~~[[clash]]~~ (project deleted)
 - [[proxy-subscription]]
 - [[remote-desktop]]
 

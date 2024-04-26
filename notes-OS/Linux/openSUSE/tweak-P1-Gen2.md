@@ -1,12 +1,12 @@
 ---
 sitemap:
-  lastmod: 2024-04-23 +0000
+  lastmod: 2024-04-25 +0000
   priority: 1.0
 ---
 
 # Tweak openSUSE Tumbleweed on ThinkPad P1 Gen2
 
-Last modified: 2024-04-23 +0000
+Last modified: 2024-04-25 +0000
 
 - [Interesting posts](#interesting-posts)
 - [Change hostname](#change-hostname)
@@ -138,35 +138,35 @@ See [[Linux/Bash#Alias]] for generic Bash alias usages. The following is my `.ba
 alias asudo='sudo '                                # able to use aliases
 alias esudo='sudo --preserve-env env "PATH=$PATH"' # able to use user PATH
 
-# systemctl related
-alias sysstatus='systemctl status'
-
 # zypper related
-alias sdz='sudo zypper'
+alias sz='sudo zypper'
 alias z='zypper'
 
 # AppImages
 APPIMAGE_DIR="$HOME/bin/AppImage"
-alias Eudic="$APPIMAGE_DIR/eudic.AppImage"
-alias Ganache="$APPIMAGE_DIR/ganache-2.7.1-linux-x86_64.AppImage"
-alias QQ="$APPIMAGE_DIR/linuxqq_3.2.3-19189_x86_64.AppImage"
+alias Eudic='$APPIMAGE_DIR/eudic.AppImage'
+alias Ganache='$APPIMAGE_DIR/ganache-2.7.1-linux-x86_64.AppImage'
+alias QQ='$APPIMAGE_DIR/QQ_3.2.7_240403_x86_64_01.AppImage'
 
 # Clash
 alias clash='$HOME/.clash/cfw'
 
 # eza
-alias e='eza -a -lFg --no-quotes --time-style iso'
-alias eT2='eza -TlFg --no-quotes --time-style iso --level 2'
+alias e='eza -lF --no-quotes -a -g --time-style iso'
+alias eT='eza -lF --no-quotes -g --time-style iso -T --level'
 
 # flatpak related
 alias fpk='flatpak'
-
-# gaming
+alias HandBrake='flatpak run fr.handbrake.ghb'
 alias OpenSpades='__NV_PRIME_RENDER_OFFLOAD=1 __VK_LAYER_NV_optimus=NVIDIA_only __GLX_VENDOR_LIBRARY_NAME=nvidia flatpak run jp.yvt.OpenSpades'
 alias Steam='flatpak run com.valvesoftware.Steam'
 
 # KVM
-alias vstart='sudo systemctl start libvirtd.service && systemctl status libvirtd.service && sudo virsh net-start default && sudo virsh net-list --all && virt-manager'
+alias vstart='sudo systemctl start libvirtd.service
+&& systemctl status libvirtd.service
+&& sudo virsh net-start default
+&& sudo virsh net-list --all
+&& virt-manager'
 alias vattach='sudo virsh attach-device'
 alias vdetach='sudo virsh detach-device'
 alias lgc='looking-glass-client -m KEY_HOME'
@@ -181,7 +181,7 @@ alias warpd='warp-cli -vvv disconnect'
 
 # misc
 alias du='du --human-readable'
-alias freetube='flatpak run io.freetubeapp.FreeTube'
+alias FreeTube='flatpak run io.freetubeapp.FreeTube'
 alias frp='$HOME/.frp/frpc --config $HOME/.frp/frpc.ini'
 alias languagetool='docker run -d --rm -p 8081:8010 --name languagetool silviof/docker-languagetool'
 alias rm='rm --interactive=once'
@@ -275,7 +275,7 @@ Use `__NV_PRIME_RENDER_OFFLOAD=1 __VK_LAYER_NV_optimus=NVIDIA_only __GLX_VENDOR_
 
 *References*:
 
-- [4 Graphics](https://wiki.archlinux.org/title/benchmarking#Graphics)
+- [Benchmarking - ArchWiki](https://wiki.archlinux.org/title/benchmarking#Graphics)
 
 ## Codecs
 
@@ -302,7 +302,7 @@ Refer to [the wiki](https://en.opensuse.org/SDB:Firefox_MP4/H.264_Video_Support)
 
 ## Fingerprint
 
-1. Check whether the device is supported from [the official page](https://fprint.freedesktop.org/supported-devices.html). Unsupported devices can be found [here](https://gitlab.freedesktop.org/libfprint/wiki/-/wikis/Unsupported%20Devices).
+1. Check whether the device is supported on [the official site](https://fprint.freedesktop.org/supported-devices.html). Unsupported devices can be found [here](https://gitlab.freedesktop.org/libfprint/wiki/-/wikis/Unsupported%20Devices).
 
    USB Device info can be checked via `lsusb` or *Info Center > Devices > USB Devices*.
 2. Install `fprintd` and `fprintd-pam`.
@@ -405,7 +405,7 @@ See [[power]] for power saving config.
 
 ## Grub2 theme
 
-1. Download a theme from [Distro themes](https://k1ng.dev/distro-grub-themes/preview).
+1. Download a theme from [*Preview / Wiki - Adrian Środoń*](https://k1ng.dev/distro-grub-themes/preview).
 2. Unpack it and place the theme folder under `/boot/grub2/themes/`.
 3. Use *YaST* to choose the `.txt` file.
 
@@ -417,7 +417,7 @@ See [[KDE]].
 
 ### Disable middle click
 
-See [[Xorg#Disable the middle key]].
+See [[Xorg#Disable the middle click pasting]].
 
 ### Scroll speed
 
@@ -522,7 +522,7 @@ Continue? [y/n/v/...? shows all options] (y): y
 [rime#User config]: ../../rime.md "RIME | 中州韻輸入法引擎"
 [power]: ../power.md "Power Management"
 [KDE]: ../KDE.md "KDE Plasma Tweak"
-[Xorg#Disable the middle key]: ../Xorg.md "X.Org"
+[Xorg#Disable the middle click pasting]: ../Xorg.md "X.Org"
 [KDE#Mouse wheel scroll speed]: ../KDE.md "KDE Plasma Tweak"
 [linux/tips#Boot Parameters]: ../tips.md "General Linux Usage Tips"
 [openSUSE/dev-env]: dev-env.md "openSUSE Development Environment"
