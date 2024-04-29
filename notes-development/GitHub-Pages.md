@@ -1,11 +1,11 @@
 ---
 sitemap:
-  lastmod: 2024-04-11 +0000
+  lastmod: 2024-04-26 +0000
 ---
 
 # GitHub Pages
 
-Last modified: 2024-04-11 +0000
+Last modified: 2024-04-26 +0000
 
 ## Interesting posts
 
@@ -25,3 +25,4 @@ Deployment:
 - [Jekyll’s site.url and baseurl - Made Mistakes](https://mademistakes.com/mastering-jekyll/site-url-baseurl/)
 - [Variables \| Jekyll • Simple, blog-aware, static sites](https://jekyllrb.com/docs/variables/#page-variables)
 - [Build and Submit a Sitemap \| Google Search Central  \|  Documentation  \|  Google for Developers](https://developers.google.com/search/docs/crawling-indexing/sitemaps/build-sitemap)
+- [Add example of using <details> tag in Markdown kitchen sink by blaylockbk · Pull Request #1297 · just-the-docs/just-the-docs](https://github.com/just-the-docs/just-the-docs/pull/1297)

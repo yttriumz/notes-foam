@@ -1,6 +1,11 @@
+---
+sitemap:
+  lastmod: 2024-04-26 +0000
+---
+
 # Git Usage
 
-Last modified: 2024-03-28 UTC
+Last modified: 2024-04-26 +0000
 
 - [Interesting posts](#interesting-posts)
 - [Git configuration](#git-configuration)
@@ -135,6 +140,7 @@ Use `git clone --depth 1 --branch TAG_NAME REMOTE_REPO`.
 *References*:
 
 - [Conventional Commits](https://www.conventionalcommits.org/en/v1.0.0/)
+- [angular/CONTRIBUTING.md at main · angular/angular](https://github.com/angular/angular/blob/main/CONTRIBUTING.md#-commit-message-format)
 
 ## Change commit messages
 

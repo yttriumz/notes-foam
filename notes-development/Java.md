@@ -1,6 +1,11 @@
+---
+sitemap:
+  lastmod: 2024-04-29 +0000
+---
+
 # Java
 
-Last modified: 2024/02/05 UTC
+Last modified: 2024-04-29 +0000
 
 - [Interesting posts](#interesting-posts)
 - [Java distributions](#java-distributions)
@@ -16,6 +21,13 @@ Last modified: 2024/02/05 UTC
 - [互联网 Java 工程师进阶知识完全扫盲](https://github.com/doocs/advanced-java)
 - [史上最简单的 IntelliJ IDEA 教程](https://github.com/guobinhit/intellij-idea-tutorial)
 - [Stepping in 2024 with Powerful Java Language Features – Inside.java](https://inside.java/2024/01/16/wrapup-java-lang-features/)
+- [java - What are the -Xms and -Xmx parameters when starting JVM? - Stack Overflow](https://stackoverflow.com/questions/14763079/what-are-the-xms-and-xmx-parameters-when-starting-jvm)
+- [java - Why does the JVM consume less memory than -Xms specified? - Stack Overflow](https://stackoverflow.com/questions/12108706/why-does-the-jvm-consume-less-memory-than-xms-specified)
+- [How can I find Java heap size and memory used (Linux)? - Stack Overflow](https://stackoverflow.com/questions/12797560/how-can-i-find-java-heap-size-and-memory-used-linux)
+- [Check/Monitor the JAVA HEAP SPACE of a JAVA process](https://knowledge.informatica.com/s/article/588051?language=en_US)
+- [How to find Java Heap Size and Memory Used (Linux)?](https://www.w3docs.com/snippets/java/how-to-find-java-heap-size-and-memory-used-linux.html)
+- [Find out your Java heap memory size - Mkyong.com](https://mkyong.com/java/find-out-your-java-heap-memory-size/)
+- [How the JVM uses and allocates memory \| Red Hat Developer](https://developers.redhat.com/articles/2021/09/09/how-jvm-uses-and-allocates-memory)
 
 ## Java distributions
 
