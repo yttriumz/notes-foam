@@ -1,12 +1,12 @@
 ---
 sitemap:
-  lastmod: 2024-04-25 +0000
+  lastmod: 2024-05-02 +0000
   priority: 1.0
 ---
 
 # openSUSE Development Environment
 
-Last modified: 2024-04-25 +0000
+Last modified: 2024-05-02 +0000
 
 **NOTE**: This note assumes Tumbleweed by default, but most content should also apply to Leap. Some of the existing differences between Tumbleweed and Leap are mentioned in the corresponding instructions.
 
@@ -22,6 +22,7 @@ Last modified: 2024-04-25 +0000
 - [Java](#java)
 - [Node.js](#nodejs)
    - [fnm](#fnm)
+- [Perl](#perl)
 - [PowerShell 7](#powershell-7)
 - [Python](#python)
    - [pyenv](#pyenv)
@@ -177,6 +178,18 @@ It is recommended to use a Node version manager to install Node.js and npm.
 *References*:
 
 - [Fast Node Manager (fnm)](https://github.com/Schniz/fnm)
+
+## Perl
+
+1. Install [Perlbrew](https://github.com/gugod/App-perlbrew/) via `zypper install perl-App-perlbrew`.
+
+   9 packages will be installed: `perl-App-perlbrew perl-Capture-Tiny perl-CPAN-Perl-Releases perl-Devel-PatchPerl perl-File-pushd perl-local-lib perl-Module-Build perl-Module-Pluggable perl-Module-Runtime`.
+2. Run `perlbrew init` to prepare it.
+3. Add the following to `$HOME/.bashrc`:
+
+   ```bash
+   source ~/perl5/perlbrew/etc/bashrc
+   ```
 
 ## PowerShell 7
 

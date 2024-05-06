@@ -1,12 +1,12 @@
 ---
 sitemap:
-  lastmod: 2024-04-17 +0000
+  lastmod: 2024-05-03 +0000
   priority: 1.0
 ---
 
 # openSUSE Package Management
 
-Last modified: 2024-04-17 +0000
+Last modified: 2024-05-03 +0000
 
 **NOTE**: This note assumes Tumbleweed by default, but most content should also apply to Leap. Some of the existing differences between Tumbleweed and Leap are mentioned in the corresponding instructions.
 
@@ -370,6 +370,8 @@ Download from [the official site](https://im.qq.com/linuxqq/index.shtml).
 
 *References*:
 
+- [WeChat - ArchWiki](https://wiki.archlinux.org/title/WeChat)
+- [web1n/wechat-universal-flatpak: Flatpak 打包微信 Linux Universal 版](https://github.com/web1n/wechat-universal-flatpak)
 - [【国产系统】史诗级更新Linux 微信wechat-beta_1.0.0.150（快来还热乎） - 『精品软件区』 - 吾爱破解 - LCG - LSG \|安卓破解\|病毒分析\|www.52pojie.cn](https://www.52pojie.cn/thread-1896902-1-1.html)
 - [huan/docker-wechat: DoChat is a Dockerized WeChat (盒装微信) PC Windows Client for Linux](https://github.com/huan/docker-wechat)
 - [fedora 打包 wechat RPM 包](https://xuthus.cc/linux/fedora-packaged-wechat-rpm.html)

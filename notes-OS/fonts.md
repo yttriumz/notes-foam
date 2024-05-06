@@ -1,11 +1,11 @@
 ---
 sitemap:
-  lastmod: 2024-04-24 +0000
+  lastmod: 2024-05-02 +0000
 ---
 
 # Fonts
 
-Last modified: 2024-04-24 +0000
+Last modified: 2024-05-02 +0000
 
 - [Interesting posts](#interesting-posts)
 - [Unicode](#unicode)
@@ -41,10 +41,10 @@ Last modified: 2024-04-24 +0000
 
 ## Test and compare fonts
 
-   aoO0il12345678g9
-  *aoO0il12345678g9*
- **aoO0il12345678g9**
-***aoO0il12345678g9***
+   aoO0il12345678g9 float
+  *aoO0il12345678g9 float*
+ **aoO0il12345678g9 float**
+***aoO0il12345678g9 float***
 == === <------> ~~ (_) |> |- -|
 
 - [Programming Fonts - Test Drive](https://www.programmingfonts.org/)
@@ -76,6 +76,10 @@ Font variants:
 Font features: I prefer `'liga', 'calt', 'ss03', 'ss20', 'zero'`. Check [the official doc](https://github.com/microsoft/cascadia-code#font-features) for more.
 
 ### Iosevka
+
+Installation:
+
+- openSUSE Tumbleweed: `zypper install iosevka-ss04-fonts`
 
 Font features: I prefer `'liga', 'calt', 'ss04'`. Check the official doc [`stylistic-sets.md`](https://github.com/be5invis/Iosevka/blob/main/doc/stylistic-sets.md) and [`character-variants.md`](https://github.com/be5invis/Iosevka/blob/main/doc/character-variants.md) for more.
 

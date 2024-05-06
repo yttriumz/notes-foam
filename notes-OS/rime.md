@@ -1,4 +1,16 @@
+---
+sitemap:
+  lastmod: 2024-04-30 +0000
+---
+
 # RIME | 中州韻輸入法引擎
+
+Last modified: 2024-04-30 +0000
+
+## Interesting posts
+
+- [Rime - ArchWiki](https://wiki.archlinux.org/title/Rime)
+- [district10/shuangpin-heatmap: 双拼键位设计分析, dvorak & shuangpin；热力图](https://github.com/district10/shuangpin-heatmap)
 
 ## System config
 

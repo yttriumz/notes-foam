@@ -1,11 +1,11 @@
 ---
 sitemap:
-  lastmod: 2024-04-24 +0000
+  lastmod: 2024-05-03 +0000
 ---
 
 # Storage & File System
 
-Last modified: 2024-04-24 +0000
+Last modified: 2024-05-03 +0000
 
 - [Interesting posts](#interesting-posts)
 - [Permissions](#permissions)
@@ -17,7 +17,8 @@ Last modified: 2024-04-24 +0000
 
 ## Interesting posts
 
-- [Filesystem Hierarchy Standard](https://refspecs.linuxfoundation.org/FHS_3.0/fhs/index.html)
+- [Filesystem Hierarchy Standard](https://www.linuxbase.org/betaspecs/fhs/fhs/index.html)
+- [FHS Referenced Specifications](https://refspecs.linuxfoundation.org/fhs.shtml)
 - [XDG Base Directory Specification](https://specifications.freedesktop.org/basedir-spec/basedir-spec-latest.html)
 - [Linux directory structure:/etc explained - The Linux Juggernaut](https://www.linuxnix.com/linux-directory-structure-explainedetc-folder/)
 - [Where should a local executable be placed?](https://unix.stackexchange.com/questions/36871/where-should-a-local-executable-be-placed)

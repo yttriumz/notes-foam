@@ -1,6 +1,12 @@
+---
+sitemap:
+  lastmod: 2024-05-03 +0000
+  priority: 1.0
+---
+
 # SSH Usage
 
-Last modified: 2024/03/07 UTC
+Last modified: 2024-05-03 +0000
 
 - [Interesting posts](#interesting-posts)
 - [Create SSH key pair](#create-ssh-key-pair)
@@ -102,6 +108,7 @@ For example, the following command will work perfectly fine on **Server B**:
 
 ```bash
 git clone git@ADDRESS_OF_SERVER_C:PATH/TO/REPO.git
+scp -P AVAILABLE_PORT_ON_SERVER_B USER@127.0.0.1:/PATH/TO/FILE ~/tmp
 ```
 
 ## SCP
