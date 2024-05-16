@@ -1,12 +1,13 @@
 ---
 sitemap:
-  lastmod: 2024-04-19 +0000
+  lastmod: 2024-04-30 +0000
 ---
 
 # Bash Scripting
 
-Last modified: 2024-04-19 +0000
+Last modified: 2024-04-30 +0000
 
+- [Interesting posts](#interesting-posts)
 - [Redirect command/script/application output](#redirect-commandscriptapplication-output)
 - [`local` options](#local-options)
 - [Test expressions](#test-expressions)
@@ -15,6 +16,11 @@ Last modified: 2024-04-19 +0000
 - [`${}` and `$()`](#-and--1)
 - [Variables in paths](#variables-in-paths)
 - [Error handling](#error-handling)
+
+## Interesting posts
+
+- [linux - What's the different between 'cat > some_file << EOF some_stuff EOF' and 'echo "some_stuff" > some_file' - Super User](https://superuser.com/questions/1434549/whats-the-different-between-cat-some-file-eof-some-stuff-eof-and-echo)
+- [What's the difference between cat /dev/null>file and echo"">file ? : r/bash](https://www.reddit.com/r/bash/comments/s397ao/whats_the_difference_between_cat_devnullfile_and/)
 
 ## Redirect command/script/application output
 

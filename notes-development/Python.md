@@ -1,8 +1,16 @@
 # Python
 
-Last modified: 2024-04-10 UTC
+Last modified: 2024-05-02 +0000
 
 - [Interesting posts](#interesting-posts)
+- [Installation \& environment](#installation--environment)
+  - [Pyenv](#pyenv)
+    - [Installation](#installation)
+    - [Install different Python versions](#install-different-python-versions)
+  - [venv](#venv)
+    - [Create venv environment](#create-venv-environment)
+    - [Activate venv environment](#activate-venv-environment)
+  - [pipx](#pipx)
 - [pip](#pip)
   - [Package version](#package-version)
   - [Cache](#cache)
@@ -11,14 +19,6 @@ Last modified: 2024-04-10 UTC
   - [`settings.json`](#settingsjson)
   - [`extension.json`](#extensionjson)
   - [Pyright extension](#pyright-extension)
-- [Manage environment](#manage-environment)
-  - [Pyenv](#pyenv)
-    - [Installation](#installation)
-    - [Install different Python versions](#install-different-python-versions)
-  - [venv](#venv)
-    - [Create venv environment](#create-venv-environment)
-    - [Activate venv environment](#activate-venv-environment)
-  - [pipx](#pipx)
 - [Data Engineering](#data-engineering)
 - [cx\_Freeze](#cx_freeze)
 
@@ -33,6 +33,51 @@ Last modified: 2024-04-10 UTC
   - [A Byte of Python](https://python.swaroopch.com/)
   - [A Python Interpreter Written in Python](https://aosabook.org/en/500L/a-python-interpreter-written-in-python.html)
   - [Jinja2 Explained in 5 Minutes!. (Part 4: Back-end Web Framework: Flask) \| by Diva Dugar \| codeburst](https://codeburst.io/jinja-2-explained-in-5-minutes-88548486834e)
+
+## Installation & environment
+
+*References*:
+
+- [python - What is the difference between venv, pyvenv, pyenv, virtualenv, virtualenvwrapper, pipenv, etc? - Stack Overflow](https://stackoverflow.com/questions/41573587/what-is-the-difference-between-venv-pyvenv-pyenv-virtualenv-virtualenvwrappe)
+
+### Pyenv
+
+*References*:
+
+- [Managing Multiple Python Versions With pyenv – Real Python](https://realpython.com/intro-to-pyenv/)
+
+#### Installation
+
+- openSUSE: See [[openSUSE/dev-env#pyenv]].
+
+#### Install different Python versions
+
+*References*;
+
+- [Segmentation fault when installing Python 3.6.15 on Ubuntu 22.04 · Issue #2359 · pyenv/pyenv](https://github.com/pyenv/pyenv/issues/2359#issuecomment-1127107739)
+- [python -m pip segfaults in 3.6.15 · Issue #2239 · pyenv/pyenv](https://github.com/pyenv/pyenv/issues/2239#issuecomment-1079275184)
+
+### venv
+
+#### Create venv environment
+
+Use `python3 -m venv --upgrade-deps PATH/TO/NEW/VENV`.
+
+*References*:
+
+- [Creating virtual environments](https://docs.python.org/3/library/venv.html#creating-virtual-environments)
+
+#### Activate venv environment
+
+![venv_activate](attachments/Python/venv_activate.png)
+
+*References*:
+
+- [How venvs work](https://docs.python.org/3/library/venv.html#how-venvs-work)
+
+### pipx
+
+- [pipx](https://pypa.github.io/pipx/)
 
 ## pip
 
@@ -92,51 +137,6 @@ Last modified: 2024-04-10 UTC
 *References*:
 
 - [pyright/docs/configuration.md at main · microsoft/pyright](https://github.com/microsoft/pyright/blob/main/docs/configuration.md)
-
-## Manage environment
-
-*References*:
-
-- [python - What is the difference between venv, pyvenv, pyenv, virtualenv, virtualenvwrapper, pipenv, etc? - Stack Overflow](https://stackoverflow.com/questions/41573587/what-is-the-difference-between-venv-pyvenv-pyenv-virtualenv-virtualenvwrappe)
-
-### Pyenv
-
-*References*:
-
-- [Managing Multiple Python Versions With pyenv – Real Python](https://realpython.com/intro-to-pyenv/)
-
-#### Installation
-
-- openSUSE: [[openSUSE/dev-env#pyenv]]
-
-#### Install different Python versions
-
-*References*;
-
-- [Segmentation fault when installing Python 3.6.15 on Ubuntu 22.04 · Issue #2359 · pyenv/pyenv](https://github.com/pyenv/pyenv/issues/2359#issuecomment-1127107739)
-- [python -m pip segfaults in 3.6.15 · Issue #2239 · pyenv/pyenv](https://github.com/pyenv/pyenv/issues/2239#issuecomment-1079275184)
-
-### venv
-
-#### Create venv environment
-
-Use `python3 -m venv --upgrade-deps PATH/TO/NEW/VENV`.
-
-*References*:
-
-- [Creating virtual environments](https://docs.python.org/3/library/venv.html#creating-virtual-environments)
-
-#### Activate venv environment
-
-![venv_activate](attachments/Python/venv_activate.png)
-
-*References*:
-
-- [How venvs work](https://docs.python.org/3/library/venv.html#how-venvs-work)
-
-### pipx
-
-- [pipx](https://pypa.github.io/pipx/)
 
 ## Data Engineering
 

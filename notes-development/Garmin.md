@@ -1,11 +1,11 @@
 ---
 sitemap:
-  lastmod: 2024-04-23 +0000
+  lastmod: 2024-05-08 +0000
 ---
 
 # Garmin Connect IQ
 
-Last modified: 2024-04-23 +0000
+Last modified: 2024-05-08 +0000
 
 ## Interesting posts
 
@@ -25,3 +25,9 @@ Projects on GitHub:
 - Apps & widgets:
   - [individual-it/BatteryGuesstimate: Battery estimation for Garmin sportwatches](https://github.com/individual-it/BatteryGuesstimate)
   - [r-smith/level: A level application for Garmin devices](https://github.com/r-smith/level)
+
+## Watch face
+
+### Online watch face builder
+
+This is a tool for quick prototyping: [Watchface Builder for Garmin – Creating your own watchface app for garmin device without coding](https://garmin.watchfacebuilder.com/).

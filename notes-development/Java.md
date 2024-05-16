@@ -1,11 +1,11 @@
 ---
 sitemap:
-  lastmod: 2024-04-29 +0000
+  lastmod: 2024-05-10 +0000
 ---
 
 # Java
 
-Last modified: 2024-04-29 +0000
+Last modified: 2024-05-10 +0000
 
 - [Interesting posts](#interesting-posts)
 - [Java distributions](#java-distributions)
@@ -17,6 +17,7 @@ Last modified: 2024-04-29 +0000
 
 ## Interesting posts
 
+- [JVM vs. JRE vs. JDK: What's the Difference? - IBM Blog](https://www.ibm.com/blog/jvm-vs-jre-vs-jdk/)
 - [成为一个更好的Java程序员](https://github.com/crisxuan/bestJavaer)
 - [互联网 Java 工程师进阶知识完全扫盲](https://github.com/doocs/advanced-java)
 - [史上最简单的 IntelliJ IDEA 教程](https://github.com/guobinhit/intellij-idea-tutorial)
@@ -33,14 +34,22 @@ Last modified: 2024-04-29 +0000
 
 *References*:
 
+- [Which Java JDK Should You Use? • 2024 • Incus Data Programming Courses](https://incusdata.com/blog/which-java-jdk-should-you-use)
 - [JDK Distributions - SDKMAN! the Software Development Kit Manager](https://sdkman.io/jdks)
 
 ## Java version manager
 
-- [jabba (unmaintained)](https://github.com/Jabba-Team/jabba)
-  - [active fork](https://github.com/shyiko/jabba/issues/845)
-- [jenv](https://github.com/jenv/jenv)
-- [SDKMAN! CLI](https://github.com/sdkman/sdkman-cli)
+- [sdkman/sdkman-cli: The SDKMAN! Command Line Interface](https://github.com/sdkman/sdkman-cli)
+- [jenv/jenv: Manage your Java environment](https://github.com/jenv/jenv)
+- [Jabba-Team/jabba: (cross-platform) Java Version Manager](https://github.com/Jabba-Team/jabba) (unmaintained)
+  - [Use updated fork · Issue #845 · shyiko/jabba](https://github.com/shyiko/jabba/issues/845)
+- Coursier
+
+*References*:
+
+- [SDKMAN vs JENV](https://gist.github.com/tfield/55064fc0c3f80fa67f624874f0b8d55e)
+- [開發者如何管理不同JDK版本. 開發者在開發中如何管理不同JDK版本 \| by Milo Chen \| Medium](https://milochen.medium.com/%E9%96%8B%E7%99%BC%E8%80%85%E5%A6%82%E4%BD%95%E7%AE%A1%E7%90%86%E4%B8%8D%E5%90%8Cjdk%E7%89%88%E6%9C%AC-602a942b0c55)
+- [Shall I use Homebrew or SDKMAN to install older versions of Java (e.g. Java 8 or 11)? : r/java](https://www.reddit.com/r/java/comments/hmc133/shall_i_use_homebrew_or_sdkman_to_install_older/)
 - [Coursier: How to install multiple Java JDK/JVMs \| alvinalexander.com](https://alvinalexander.com/scala/coursier-how-install-multiple-java-jdks-jvms/)
 
 ## JAR manipulations

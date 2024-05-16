@@ -1,7 +1,7 @@
 ---
 type: index
 sitemap:
-  lastmod: 2024-04-25 +0000
+  lastmod: 2024-05-06 +0000
   priority: 0.5
 ---
 
@@ -22,6 +22,8 @@ Programming languages:
 - [[Java]]
 - [[JS-TS]]
 - [[LaTeX/index]]
+- [[Perl]]
+- [[Prolog]]
 - [[Python]]
 - [[Rust]]
 - [[Scala]]
@@ -56,6 +58,7 @@ Miscellaneous:
 - [Top 7 Featured DEV Posts from the Past Week](https://dev.to/devteam/top-7-featured-dev-posts-from-the-past-week-33i3)
 - [Marketing for Developers: The Unconventional Guide](https://dev.to/inovak/marketing-for-developers-the-unconventional-guide-3a1j)
 - [The Architecture of a Modern Startup](https://betterprogramming.pub/architecture-of-modern-startup-abaec235c2eb) (and it's discussion)
+- [Understanding Command-Line Arguments: Exploring argv and argc in C Programming Language \| by Chux \| Medium](https://medium.com/@chuxoguh/understanding-command-line-arguments-exploring-argv-and-argc-in-c-programming-language-a198395028c9)
 - [The Login Explosion](https://blog.codinghorror.com/the-login-explosion/)
 - [You're Probably Storing Passwords Incorrectly](https://blog.codinghorror.com/youre-probably-storing-passwords-incorrectly/)
 - [Scala's Gitter to Discord migration mistake - Alexandru Nedelcu](https://alexn.org/blog/2022/04/09/scala-gitter-discord-mistake/)
@@ -75,6 +78,8 @@ Miscellaneous:
 [Java]: Java.md "Java"
 [JS-TS]: JS-TS.md "JavaScript/TypeScript"
 [LaTeX/index]: LaTeX/index.md "$\LaTeX$"
+[Perl]: Perl.md "Perl"
+[Prolog]: Prolog.md "Prolog"
 [Python]: Python.md "Python"
 [Rust]: Rust.md "Rust"
 [Scala]: Scala.md "Scala"
@@ -84,7 +89,7 @@ Miscellaneous:
 [crypto]: crypto.md "Crypto"
 [databases]: databases.md "Databases"
 [decentralization]: decentralization.md "Decentralization Related"
-[DevOps]: DevOps.md "DevOps Related"
+[DevOps]: DevOps.md "DevOps"
 [ML]: ML.md "Machine Learning"
 [notes-development/networking]: networking.md "Networking"
 [SSO]: SSO.md "Single Sign-On"

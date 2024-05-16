@@ -1,6 +1,11 @@
+---
+sitemap:
+  lastmod: 2024-04-30 +0000
+---
+
 # Networking
 
-Last modified: 2024/01/22 UTC
+Last modified: 2024-04-30 +0000
 
 - [Interesting posts](#interesting-posts)
 - [CIDR](#cidr)
@@ -10,6 +15,7 @@ Last modified: 2024/01/22 UTC
 
 - [About Networking \| Calico Documentation](https://docs.tigera.io/calico/latest/about/kubernetes-training/about-networking)
 - [Glossary](https://www.networxsecurity.org/members-area/glossary.html)
+- [Zero Trust security \| What is a Zero Trust network? \| Cloudflare](https://www.cloudflare.com/learning/security/glossary/what-is-zero-trust/)
 
 ## CIDR
 
