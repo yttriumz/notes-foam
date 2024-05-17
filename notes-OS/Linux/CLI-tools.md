@@ -1,6 +1,11 @@
+---
+sitemap:
+  lastmod: 2024-05-16 +0000
+---
+
 # Command-line Tools
 
-Last modified: 2024-04-10 UTC
+Last modified: 2024-05-16 +0000
 
 - [Interesting posts](#interesting-posts)
 - [Search tools](#search-tools)
@@ -10,6 +15,7 @@ Last modified: 2024-04-10 UTC
     - [Exclude paths](#exclude-paths)
     - [Get rid of "Permission Denied"](#get-rid-of-permission-denied)
   - [`fd` (Rust)](#fd-rust)
+- [Text manipulation](#text-manipulation)
   - [ripgrep (`rg`) (Rust)](#ripgrep-rg-rust)
 - [File manager](#file-manager)
   - [`joshuto` (Rust)](#joshuto-rust)
@@ -84,6 +90,8 @@ Use `-iname` instead of `-name`.
 
 #### Exclude paths
 
+Use `-not -path "SOME/PATH/*"`.
+
 *References*:
 
 - [linux - How do I exclude a directory when using `find`? - Stack Overflow](https://stackoverflow.com/questions/4210042/how-do-i-exclude-a-directory-when-using-find)
@@ -102,6 +110,16 @@ Add `2>&1 | grep -v "Permission denied"` to the end.
 *References*:
 
 - [A simple, fast and user-friendly alternative to 'find'](https://github.com/sharkdp/fd)
+
+## Text manipulation
+
+*References*:
+
+- [go to character in vim - Stack Overflow](https://stackoverflow.com/questions/543738/go-to-character-in-vim)
+- [unix - What does the ^M character mean in Vim? - Stack Overflow](https://stackoverflow.com/questions/5843495/what-does-the-m-character-mean-in-vim)
+- [Vim documentation: digraph](https://vimdoc.sourceforge.net/htmldoc/digraph.html#digraph-table)
+- [How to remove carriage return in Linux or Unix - nixCraft](https://www.cyberciti.biz/faq/how-to-remove-carriage-return-in-linux-or-unix/)
+- [splitting a huge line of file into multiple lines with fixed number of columns](https://www.unix.com/shell-programming-and-scripting/166969-splitting-huge-line-file-into-multiple-lines-fixed-number-columns.html)
 
 ### ripgrep (`rg`) (Rust)
 
@@ -158,6 +176,10 @@ Add `2>&1 | grep -v "Permission denied"` to the end.
 ### `curl`
 
 Commonly used flags for downloading are `-fSLO`.
+
+*References*:
+
+- [Exit code - everything curl](https://everything.curl.dev/cmdline/exitcode.html)
 
 ### Hurl (Rust)
 

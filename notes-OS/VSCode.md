@@ -1,11 +1,11 @@
 ---
 sitemap:
-  lastmod: 2024-04-16 +0000
+  lastmod: 2024-05-16 +0000
 ---
 
 # Visual Studio Code Usage
 
-Last modified: 2024-04-16 +0000
+Last modified: 2024-05-16 +0000
 
 - [Installation](#installation)
 - [Multi cursor](#multi-cursor)
@@ -52,6 +52,7 @@ Some examples:
 - [VS Code: Search-and-Replace Regex - DEV Community](https://dev.to/rfornal/vs-code-search-and-replace-regex-mn2)
 - [VS Code: Search-and-Replace Regex with Dollar-Sign - DEV Community](https://dev.to/rfornal/vs-code-search-and-replace-regex-with-dollar-sign-4bph)
 - [🔎 vscode \| regex find and replace](https://www.youtube.com/watch?v=xMhKstbdr3k)
+- [How to remove empty line in VSCode? - Manish Sharma - Medium](https://medium.com/@manish90/how-to-remove-empty-line-in-vscode-fd3716958787)
 
 ## KWallet Related
 

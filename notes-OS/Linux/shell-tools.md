@@ -1,11 +1,21 @@
+---
+sitemap:
+  lastmod: 2024-05-10 +0000
+---
+
 # Shell Related Tools
 
-Last modified: 2024/01/25 UTC
+Last modified: 2024-05-10 +0000
 
+- [Interesting posts](#interesting-posts)
 - [Oh My Posh](#oh-my-posh)
   - [My Config](#my-config)
 - [Starship](#starship)
   - [My Config](#my-config-1)
+
+## Interesting posts
+
+- [Those of you who prefer ZSH to BASH, why? : r/linuxquestions](https://www.reddit.com/r/linuxquestions/comments/p50jvl/those_of_you_who_prefer_zsh_to_bash_why/)
 
 ## Oh My Posh
 

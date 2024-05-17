@@ -1,11 +1,11 @@
 ---
 sitemap:
-  lastmod: 2024-04-19 +0000
+  lastmod: 2024-05-07 +0000
 ---
 
 # Security
 
-Last modified: 2024-04-19 +0000
+Last modified: 2024-05-07 +0000
 
 - [Interesting posts](#interesting-posts)
 - [CPU mitigation](#cpu-mitigation)
@@ -17,6 +17,8 @@ Last modified: 2024-04-19 +0000
 - [su vs sudo -s vs sudo -i vs sudo bash - Unix & Linux Stack Exchange](https://unix.stackexchange.com/questions/35338/su-vs-sudo-s-vs-sudo-i-vs-sudo-bash)
 - [SDB:Encrypted root file system - openSUSE Wiki](https://en.opensuse.org/SDB:Encrypted_root_file_system#Unattended_boot_with_TPM_2.0)
 - [What we need to take away from the XZ Backdoor - openSUSE News](https://news.opensuse.org/2024/04/12/learn-from-the-xz-backdoor/)
+- [How to read and correct SELinux denial messages \| Enable Sysadmin](https://www.redhat.com/sysadmin/selinux-denial2)
+- [8.3.8. Allowing Access: audit2allow Red Hat Enterprise Linux 6 \| Red Hat Customer Portal](https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/6/html/security-enhanced_linux/sect-security-enhanced_linux-fixing_problems-allowing_access_audit2allow)
 
 ## CPU mitigation
 

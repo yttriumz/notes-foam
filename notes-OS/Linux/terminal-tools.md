@@ -1,11 +1,11 @@
 ---
 sitemap:
-  lastmod: 2024-04-24 +0000
+  lastmod: 2024-05-11 +0000
 ---
 
 # Terminal Related Tools
 
-Last modified: 2024-04-24 +0000
+Last modified: 2024-05-11 +0000
 
 - [tmux](#tmux)
 - [Zellij](#zellij)
@@ -21,6 +21,8 @@ Last modified: 2024-04-24 +0000
 - [A beginner's guide to tmux \| Enable Sysadmin](https://www.redhat.com/sysadmin/introduction-tmux-linux)
 - [tmux - ArchWiki](https://wiki.archlinux.org/title/tmux)
 - [tmux(1) - Linux manual page](https://man7.org/linux/man-pages/man1/tmux.1.html)
+- [How can I search within the output buffer of a tmux shell? - Super User](https://superuser.com/questions/231002/how-can-i-search-within-the-output-buffer-of-a-tmux-shell)
+- [vim - How do I cycle through panes inside a window in tmux like in screen? - Unix & Linux Stack Exchange](https://unix.stackexchange.com/questions/53154/how-do-i-cycle-through-panes-inside-a-window-in-tmux-like-in-screen)
 
 ## Zellij
 

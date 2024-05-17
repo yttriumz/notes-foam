@@ -1,12 +1,12 @@
 ---
 sitemap:
-  lastmod: 2024-05-03 +0000
+  lastmod: 2024-05-10 +0000
   priority: 1.0
 ---
 
 # SSH Usage
 
-Last modified: 2024-05-03 +0000
+Last modified: 2024-05-10 +0000
 
 - [Interesting posts](#interesting-posts)
 - [Create SSH key pair](#create-ssh-key-pair)
@@ -14,7 +14,7 @@ Last modified: 2024-05-03 +0000
 - [Automatically accept host key](#automatically-accept-host-key)
 - [Show all active SSH connections](#show-all-active-ssh-connections)
 - [Kill idle SSH sessions](#kill-idle-ssh-sessions)
-- [Kill idle `sshd` sessions](#kill-idle-sshd-sessions)
+- [Kill idle `sshd`s](#kill-idle-sshds)
 - [Remote port forwarding](#remote-port-forwarding)
     - [Scenario I](#scenario-i)
 - [SCP](#scp)
@@ -22,6 +22,7 @@ Last modified: 2024-05-03 +0000
 ## Interesting posts
 
 - [ssh - Does known_hosts support comments? - Server Fault](https://serverfault.com/questions/750840/does-known-hosts-support-comments)
+- [scp with port number specified - Stack Overflow](https://stackoverflow.com/questions/10341032/scp-with-port-number-specified)
 
 ## Create SSH key pair
 
@@ -62,7 +63,7 @@ Hit subsequently `Enter` > `~` > `.`.
 
 - [How can I break out of ssh when it locks?](https://askubuntu.com/questions/29942/how-can-i-break-out-of-ssh-when-it-locks)
 
-## Kill idle `sshd` sessions
+## Kill idle `sshd`s
 
 Use `ps fxw | grep pts/` to determine which PID to `kill`.
 
