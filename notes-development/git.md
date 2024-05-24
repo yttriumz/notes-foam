@@ -1,11 +1,11 @@
 ---
 sitemap:
-  lastmod: 2024-04-26 +0000
+  lastmod: 2024-05-17 +0000
 ---
 
 # Git Usage
 
-Last modified: 2024-04-26 +0000
+Last modified: 2024-05-17 +0000
 
 - [Interesting posts](#interesting-posts)
 - [Git configuration](#git-configuration)
@@ -21,6 +21,7 @@ Last modified: 2024-04-26 +0000
 - [Clone a specific subdirectory](#clone-a-specific-subdirectory)
 - [Commit message convention](#commit-message-convention)
 - [Change commit messages](#change-commit-messages)
+- [Delete a commit but keep the changes](#delete-a-commit-but-keep-the-changes)
 - [Delete tags](#delete-tags)
 - [Stash changes](#stash-changes)
 - [Discard non-staged changes](#discard-non-staged-changes)
@@ -154,6 +155,12 @@ Use `git clone --depth 1 --branch TAG_NAME REMOTE_REPO`.
 *References*:
 
 - [Changing a commit message](https://docs.github.com/en/pull-requests/committing-changes-to-your-project/creating-and-editing-commits/changing-a-commit-message)
+
+## Delete a commit but keep the changes
+
+*References*:
+
+- [undo - Can I delete a git commit but keep the changes? - Stack Overflow](https://stackoverflow.com/questions/15772134/can-i-delete-a-git-commit-but-keep-the-changes)
 
 ## Delete tags
 

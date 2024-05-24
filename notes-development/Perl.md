@@ -1,11 +1,11 @@
 ---
 sitemap:
-  lastmod: 2024-05-16 +0000
+  lastmod: 2024-05-23 +0000
 ---
 
 # Perl
 
-Last modified: 2024-05-16 +0000
+Last modified: 2024-05-23 +0000
 
 - [Interesting posts](#interesting-posts)
 - [Development environment](#development-environment)
@@ -17,22 +17,33 @@ Last modified: 2024-05-16 +0000
 ## Interesting posts
 
 - [Why Perl? \| Hacker News](https://news.ycombinator.com/item?id=35646612)
+- [Long Live Perl!. Still the Gold Standard \| by Rob Muhlestein \| Medium](https://medium.com/@rwxrob/long-live-perl-922b0a1194ef)
 - [Why Perl is still relevant in 2022 - Stack Overflow](https://stackoverflow.blog/2022/07/06/why-perl-is-still-relevant-in-2022/)
 - [Is there any good reason not to use perl scripts in place of bash logic? : r/perl](https://www.reddit.com/r/perl/comments/tk9t75/is_there_any_good_reason_not_to_use_perl_scripts/)
+- [What are the differences between Perl, Python, AWK and sed? - Stack Overflow](https://stackoverflow.com/questions/366980/what-are-the-differences-between-perl-python-awk-and-sed)
 - [Unix shell versus Perl](https://www.perlmonks.org/?node_id=668481)
 - [What's the consensus on Perl scripting : r/linuxadmin](https://www.reddit.com/r/linuxadmin/comments/dtyhuk/whats_the_consensus_on_perl_scripting/)
-- [packaging - Bundling up a perl script with its dependencies? - Stack Overflow](https://stackoverflow.com/questions/28716807/bundling-up-a-perl-script-with-its-dependencies)
-- [In Perl, what is the difference between a .pm (Perl module) and .pl (Perl script) file? - Stack Overflow](https://stackoverflow.com/questions/3402821/in-perl-what-is-the-difference-between-a-pm-perl-module-and-pl-perl-script)
 - [Is Perl a write only language? : r/perl](https://www.reddit.com/r/perl/comments/18couta/is_perl_a_write_only_language/)
 - [What Happened to Perl 7? \| Hacker News](https://news.ycombinator.com/item?id=31515787)
 - [The Future of Perl](https://ovid.github.io/articles/the-future-of-perl.html)
-- [How to Install Perlbrew and Manage Multiple Versions of Perl 5 on CentOS 7 \| DigitalOcean](https://www.digitalocean.com/community/tutorials/how-to-install-perlbrew-and-manage-multiple-versions-of-perl-5-on-centos-7)
-- [perl - How do I get a list of installed CPAN modules? - Stack Overflow](https://stackoverflow.com/questions/115425/how-do-i-get-a-list-of-installed-cpan-modules/58114369#58114369)
 - [Anyone interested in starting/joining a Perl Discord : r/perl](https://www.reddit.com/r/perl/comments/g9tcgn/anyone_interested_in_startingjoining_a_perl/)
-- [\[Perl\]如何在 Visual Studio Code 建立 Perl 的程式開發環境 (Windows/Linux) \| Vixual](http://www.vixual.net/blog/archives/98)
-- [unicode - Why does modern Perl avoid UTF-8 by default? - Stack Overflow](https://stackoverflow.com/questions/6162484/why-does-modern-perl-avoid-utf-8-by-default/6163129#6163129)
 - [Perl first commit: a “replacement” for Awk and sed \| Hacker News](https://news.ycombinator.com/item?id=36650120)
 - [Life of a Computer Scientist: Using Perl like awk and sed](https://lifecs.likai.org/2008/10/using-perl-like-awk-and-sed.html)
+- [Most popular Perl 5 web framework? : r/perl](https://www.reddit.com/r/perl/comments/1574tx3/most_popular_perl_5_web_framework/)
+
+Language:
+
+- [Functional programming in Perl - functional-perl.org](http://functional-perl.org/)
+- [perl - Is there such a thing as a list in scalar context? - Stack Overflow](https://stackoverflow.com/questions/8232951/is-there-such-a-thing-as-a-list-in-scalar-context)
+- [unicode - Why does modern Perl avoid UTF-8 by default? - Stack Overflow](https://stackoverflow.com/questions/6162484/why-does-modern-perl-avoid-utf-8-by-default/6163129#6163129)
+- [In Perl, what is the difference between a .pm (Perl module) and .pl (Perl script) file? - Stack Overflow](https://stackoverflow.com/questions/3402821/in-perl-what-is-the-difference-between-a-pm-perl-module-and-pl-perl-script)
+
+Toolchain:
+
+- [perl - How do I get a list of installed CPAN modules? - Stack Overflow](https://stackoverflow.com/questions/115425/how-do-i-get-a-list-of-installed-cpan-modules/58114369#58114369)
+- [How to Install Perlbrew and Manage Multiple Versions of Perl 5 on CentOS 7 \| DigitalOcean](https://www.digitalocean.com/community/tutorials/how-to-install-perlbrew-and-manage-multiple-versions-of-perl-5-on-centos-7)
+- [\[Perl\]如何在 Visual Studio Code 建立 Perl 的程式開發環境 (Windows/Linux) \| Vixual](http://www.vixual.net/blog/archives/98)
+- [packaging - Bundling up a perl script with its dependencies? - Stack Overflow](https://stackoverflow.com/questions/28716807/bundling-up-a-perl-script-with-its-dependencies)
 
 Docs:
 
@@ -42,9 +53,9 @@ Docs:
 Tutorials:
 
 - [Learn Perl - www.perl.org](https://www.perl.org/learn.html)
+- [Modern Perl: a Perl Tutorial 4e Table of Contents](http://modernperlbooks.com/books/modern_perl_2016/index.html)
 - [Learn Perl in about 2 hours 30 minutes @ Things Of Interest](https://qntm.org/perl_en)
   - [Learn Perl in about 2 hours 30 minutes : r/programming](https://www.reddit.com/r/programming/comments/j5er5/learn_perl_in_about_2_hours_30_minutes/)
-- [Modern Perl: a Perl Tutorial 4e Table of Contents](http://modernperlbooks.com/books/modern_perl_2016/index.html)
 
 ## Development environment
 

@@ -1,11 +1,11 @@
 ---
 sitemap:
-  lastmod: 2024-05-02 +0000
+  lastmod: 2024-05-17 +0000
 ---
 
 # Rust
 
-Last modified: 2024-05-02 +0000
+Last modified: 2024-05-17 +0000
 
 - [Interesting posts](#interesting-posts)
 - [Development environment](#development-environment)
@@ -104,6 +104,7 @@ Tutorials:
 
 Miscellaneous:
 
+- [Scientific Computing in Rust 2024](https://scientificcomputing.rs/)
 - [Rust has been forked to the Crab Language \| Hacker News](https://news.ycombinator.com/item?id=36122270)
 - [CrabLang : programming](https://www.reddit.com/r/programming/comments/12n0dqc/crablang/)
 - [komora-io/terrors: ergonomic and precise error handling built atop type-level set arithmetic](https://github.com/komora-io/terrors)

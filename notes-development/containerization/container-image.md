@@ -1,11 +1,11 @@
 ---
 sitemap:
-  lastmod: 2024-05-09 +0000
+  lastmod: 2024-05-23 +0000
 ---
 
 # Container Image Development
 
-Last modified: 2024-05-09 +0000
+Last modified: 2024-05-23 +0000
 
 **NOTE**: This note assumes that images are built using Docker by default.
 
@@ -21,6 +21,8 @@ Last modified: 2024-05-09 +0000
 
 - [How to see docker image contents - Stack Overflow](https://stackoverflow.com/questions/44769315/how-to-see-docker-image-contents)
 - [wagoodman/dive: A tool for exploring each layer in a docker image](https://github.com/wagoodman/dive)
+- [Multi-platform images \| Docker Docs](https://docs.docker.com/build/building/multi-platform/)
+- [Multi-arch build and images, the simple way \| Docker](https://www.docker.com/blog/multi-arch-build-and-images-the-simple-way/)
 
 ## Dockerfile
 
