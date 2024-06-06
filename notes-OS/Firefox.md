@@ -1,11 +1,11 @@
 ---
 sitemap:
-  lastmod: 2024-04-16 +0000
+  lastmod: 2024-06-04 +0000
 ---
 
 # Firefox
 
-Last modified: 2024-04-16 +0000
+Last modified: 2024-06-04 +0000
 
 ## Interesting posts
 
@@ -14,8 +14,14 @@ Last modified: 2024-04-16 +0000
 - [high cpu usage by a firefox subprocess called RDD Process - Ask Ubuntu](https://askubuntu.com/questions/1483112/high-cpu-usage-by-a-firefox-subprocess-called-rdd-process)
 - [Profiles - Where Firefox stores your bookmarks, passwords and other user data \| Firefox Help](https://support.mozilla.org/en-US/kb/profiles-where-firefox-stores-user-data)
 - [Firefox has two default profiles: "default-release" and "default". Which one should I choose? - Super User](https://superuser.com/questions/1507251/firefox-has-two-default-profiles-default-release-and-default-which-one-sho)
+- [Third-party cookies and Firefox tracking protection \| Firefox Help](https://support.mozilla.org/en-US/kb/third-party-cookies-firefox-tracking-protection)
+- [Introducing Total Cookie Protection in Standard Mode \| Firefox Help](https://support.mozilla.org/en-US/kb/introducing-total-cookie-protection-standard-mode?as=u&utm_source=inproduct#firefox:linux:fx126)
+  - [Total Cookie Protection and website breakage FAQ \| Firefox Help](https://support.mozilla.org/en-US/kb/total-cookie-protection-and-website-breakage-faq)
+- [Disable the HTTP/3 (QUIC) Protocol](https://www.watchguard.com/help/docs/help-center/en-US/Content/en-US/Endpoint-Security/manage-settings/disable-http-3-protocol-for-web-access-control.html?TocPath=Troubleshooting%7C_____19)
 
 ## Disable middle click closing tabs
+
+At the time of writing (*Firefox 125.0.3*), no solution.
 
 *References*:
 

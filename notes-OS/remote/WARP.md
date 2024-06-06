@@ -1,9 +1,14 @@
+---
+sitemap:
+  lastmod: 2024-06-01 +0000
+---
+
 # Cloudflare WARP
 
-Last modified: 2024-04-26 +0000
+Last modified: 2024-06-01 +0000
 
-- [Installation](#installation)
 - [Interesting posts](#interesting-posts)
+- [Installation](#installation)
 - [Known issues](#known-issues)
 - [Commonly used subcommands (*warp-cli 2023.3.398*)](#commonly-used-subcommands-warp-cli-20233398)
 - [Select endpoint](#select-endpoint)
@@ -11,17 +16,20 @@ Last modified: 2024-04-26 +0000
 - [Troubleshooting](#troubleshooting)
   - [Unable to connect to Cloudflare WARP daemon](#unable-to-connect-to-cloudflare-warp-daemon)
 
+## Interesting posts
+
+- [The official doc](https://developers.cloudflare.com/warp-client/)
+- [How do I know Warp is running - Website, Application, Performance / Getting Started - Cloudflare Community](https://community.cloudflare.com/t/how-do-i-know-warp-is-running/202227)
+  - [https://cloudflare.com/cdn-cgi/trace](https://cloudflare.com/cdn-cgi/trace)
+  - [1.1.1.1 — Connection Information](https://one.one.one.one/help/)
+- [Android使用WARP](https://blog.tanglu.me/WARP-for-Android/)
+- [CloudFlare WARP 官方客户端详细使用教程 （持续更新）](https://blog.misaka.rest/2023/02/08/cf-warp/)
+
 ## Installation
 
 - Linux:
   - openSUSE: [[package#Cloudflare WARP]]
 - Android: Google Mobile Services might be required. Use *WireGuard* instead for convenience.
-
-## Interesting posts
-
-- [The official doc](https://developers.cloudflare.com/warp-client/)
-- [Android使用WARP](https://blog.tanglu.me/WARP-for-Android/)
-- [CloudFlare WARP 官方客户端详细使用教程 （持续更新）](https://blog.misaka.rest/2023/02/08/cf-warp/)
 
 ## Known issues
 

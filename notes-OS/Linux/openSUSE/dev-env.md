@@ -1,12 +1,12 @@
 ---
 sitemap:
-  lastmod: 2024-05-09 +0000
+  lastmod: 2024-06-04 +0000
   priority: 1.0
 ---
 
 # openSUSE Development Environment
 
-Last modified: 2024-05-09 +0000
+Last modified: 2024-06-04 +0000
 
 **NOTE**: This note assumes Tumbleweed by default, but most content should also apply to Leap. Some of the existing differences between Tumbleweed and Leap are mentioned in the corresponding instructions.
 
@@ -111,13 +111,69 @@ zypper install pattern:devel_basis # Does the same
 
 ## Garmin Connect IQ
 
-1. Download the SDK from [the official site](https://developer.garmin.com/connect-iq/sdk/).
-2. Install the following dependencies:
+1. Install the following dependencies:
 
    ```text
    libwebkit2gtk-4_0-37
    ```
 
+   ```text
+   The following 2 recommended packages were automatically selected:
+     gstreamer-plugins-bad  1.24.0-4.1  x86_64  openSUSE-Tumbleweed-Oss  openSUSE
+     openal-soft-data       1.22.2-1.8  noarch  openSUSE-Tumbleweed-Oss  openSUSE
+
+   The following 48 NEW packages are going to be installed:
+     gstreamer-libnice                0.1.21-3.6            x86_64  openSUSE-Tumbleweed-Oss                 openSUSE
+     gstreamer-plugin-openh264        1.22.2-1.suse1699.1   x86_64  Open H.264 Codec (openSUSE Tumbleweed)  obs://build.opensuse.org/openSUSE:Factory
+     gstreamer-plugins-bad            1.24.0-4.1            x86_64  openSUSE-Tumbleweed-Oss                 openSUSE
+     libavtp0                         0.2.0-2.3             x86_64  openSUSE-Tumbleweed-Oss                 openSUSE
+     libgssdp-1_6-0                   1.6.3-1.3             x86_64  openSUSE-Tumbleweed-Oss                 openSUSE
+     libgstadaptivedemux-1_0-0        1.24.0-4.1            x86_64  openSUSE-Tumbleweed-Oss                 openSUSE
+     libgstanalytics-1_0-0            1.24.0-4.1            x86_64  openSUSE-Tumbleweed-Oss                 openSUSE
+     libgstbadaudio-1_0-0             1.24.0-4.1            x86_64  openSUSE-Tumbleweed-Oss                 openSUSE
+     libgstbasecamerabinsrc-1_0-0     1.24.0-4.1            x86_64  openSUSE-Tumbleweed-Oss                 openSUSE
+     libgstcodecparsers-1_0-0         1.24.0-4.1            x86_64  openSUSE-Tumbleweed-Oss                 openSUSE
+     libgstcodecs-1_0-0               1.24.0-4.1            x86_64  openSUSE-Tumbleweed-Oss                 openSUSE
+     libgstcuda-1_0-0                 1.24.0-4.1            x86_64  openSUSE-Tumbleweed-Oss                 openSUSE
+     libgstinsertbin-1_0-0            1.24.0-4.1            x86_64  openSUSE-Tumbleweed-Oss                 openSUSE
+     libgstisoff-1_0-0                1.24.0-4.1            x86_64  openSUSE-Tumbleweed-Oss                 openSUSE
+     libgstmpegts-1_0-0               1.24.0-4.1            x86_64  openSUSE-Tumbleweed-Oss                 openSUSE
+     libgstmse-1_0-0                  1.24.0-4.1            x86_64  openSUSE-Tumbleweed-Oss                 openSUSE
+     libgstsctp-1_0-0                 1.24.0-4.1            x86_64  openSUSE-Tumbleweed-Oss                 openSUSE
+     libgsttranscoder-1_0-0           1.24.0-4.1            x86_64  openSUSE-Tumbleweed-Oss                 openSUSE
+     libgsturidownloader-1_0-0        1.24.0-4.1            x86_64  openSUSE-Tumbleweed-Oss                 openSUSE
+     libgstva-1_0-0                   1.24.0-4.1            x86_64  openSUSE-Tumbleweed-Oss                 openSUSE
+     libgstvulkan-1_0-0               1.24.0-4.1            x86_64  openSUSE-Tumbleweed-Oss                 openSUSE
+     libgstwayland-1_0-0              1.24.0-4.1            x86_64  openSUSE-Tumbleweed-Oss                 openSUSE
+     libgstwebrtc-1_0-0               1.24.0-4.1            x86_64  openSUSE-Tumbleweed-Oss                 openSUSE
+     libgstwebrtcnice-1_0-0           1.24.0-4.1            x86_64  openSUSE-Tumbleweed-Oss                 openSUSE
+     libgupnp-1_6-0                   1.6.6-3.1             x86_64  openSUSE-Tumbleweed-Oss                 openSUSE
+     libgupnp-igd-1_6-0               1.6.0-2.5             x86_64  openSUSE-Tumbleweed-Oss                 openSUSE
+     libharfbuzz-icu0                 8.5.0-1.1             x86_64  openSUSE-Tumbleweed-Oss                 openSUSE
+     libhyphen0                       2.8.8-2.31            x86_64  openSUSE-Tumbleweed-Oss                 openSUSE
+     libjavascriptcoregtk-4_0-18      2.44.2-1.1            x86_64  openSUSE-Tumbleweed-Oss                 openSUSE
+     liblrdf2                         0.6.1-1.15            x86_64  openSUSE-Tumbleweed-Oss                 openSUSE
+     libmanette-0_2-0                 0.2.7-1.1             x86_64  openSUSE-Tumbleweed-Oss                 openSUSE
+     libmicrodns1                     0.2.0+6-2.4           x86_64  openSUSE-Tumbleweed-Oss                 openSUSE
+     libmpcdec6                       r475-6.2              x86_64  openSUSE-Tumbleweed-Oss                 openSUSE
+     libnice10                        0.1.21-3.6            x86_64  openSUSE-Tumbleweed-Oss                 openSUSE
+     libopenal1                       1.22.2-1.8            x86_64  openSUSE-Tumbleweed-Oss                 openSUSE
+     libportaudio2                    190700_20210406-1.11  x86_64  openSUSE-Tumbleweed-Oss                 openSUSE
+     libraptor2-0                     2.0.16-3.1            x86_64  openSUSE-Tumbleweed-Oss                 openSUSE
+     libSoundTouch1                   2.3.3-1.1             x86_64  openSUSE-Tumbleweed-Oss                 openSUSE
+     libsoup-2_4-1                    2.74.3-3.3            x86_64  openSUSE-Tumbleweed-Oss                 openSUSE
+     libspandsp3                      3.0.0+g21-1.3         x86_64  openSUSE-Tumbleweed-Oss                 openSUSE
+     libsrtp2-1                       2.6.0-1.1             x86_64  openSUSE-Tumbleweed-Oss                 openSUSE
+     libwebkit2gtk-4_0-37             2.44.2-1.1            x86_64  openSUSE-Tumbleweed-Oss                 openSUSE
+     libwoff2common1_0_2              1.0.2-4.6             x86_64  openSUSE-Tumbleweed-Oss                 openSUSE
+     libwoff2dec1_0_2                 1.0.2-4.6             x86_64  openSUSE-Tumbleweed-Oss                 openSUSE
+     libzbar0                         0.23.93-2.3           x86_64  openSUSE-Tumbleweed-Oss                 openSUSE
+     mpg123-openal                    1.32.6-1.1            x86_64  openSUSE-Tumbleweed-Oss                 openSUSE
+     openal-soft-data                 1.22.2-1.8            noarch  openSUSE-Tumbleweed-Oss                 openSUSE
+     webkit2gtk-4_0-injected-bundles  2.44.2-1.1            x86_64  openSUSE-Tumbleweed-Oss                 openSUSE
+   ```
+
+2. Download the SDK Manager from [the official site](https://developer.garmin.com/connect-iq/sdk/).
 3. Follow the instructions, and the SDK will be downloaded under `$HOME/.Garmin`.
 
 ## Go
@@ -198,7 +254,7 @@ Go to [the official repository](https://github.com/PowerShell/PowerShell/release
 zypper install https://github.com/PowerShell/PowerShell/releases/download/v7.2.13/powershell-lts-7.2.13-1.rh.x86_64.rpm
 ```
 
-At the time of writing (*Tumbleweed 20230707, PowerShell 7.2.13*), I encountered the following issue and chose to ignore it:
+At the time of writing (*Tumbleweed 20230707, PowerShell 7.2.13*), I encountered the following issue and ignored it:
 
 ```text
 Problem: nothing provides 'openssl-libs' needed by the to be installed powershell-lts-7.2.13-1.rh.x86_64
@@ -302,7 +358,7 @@ See [[openSUSE/package#NVIDIA Container Toolkit]].
 
 ## Kubernetes
 
-Many tools are already provided in the openSUSE official Oss repository. But still, the Kubernetes official repository `https://pkgs.k8s.io/core:/stable:/v1.29/rpm/` can be added if preferred.
+See [[openSUSE/package#Kubernetes]].
 
 ## KVM
 
@@ -383,6 +439,7 @@ It is recommended to run TensorFlow 2 in a container.
 [openSUSE/package#Container]: package.md "openSUSE Package Management"
 [Docker]: ../../../notes-development/containerization/Docker.md "Docker Operations"
 [openSUSE/package#NVIDIA Container Toolkit]: package.md "openSUSE Package Management"
+[openSUSE/package#Kubernetes]: package.md "openSUSE Package Management"
 [linux/KVM]: ../KVM.md "Kernel-based Virtual Machine Usage"
 [openSUSE/package#Emulators]: package.md "openSUSE Package Management"
 [bochs]: ../bochs.md "bochs Usage"

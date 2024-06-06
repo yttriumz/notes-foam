@@ -1,23 +1,29 @@
 ---
 sitemap:
-  lastmod: 2024-05-16 +0000
+  lastmod: 2024-06-05 +0000
 ---
 
-# Visual Studio Code Usage
+# Visual Studio Code
 
-Last modified: 2024-05-16 +0000
+Last modified: 2024-06-05 +0000
 
+- [Interesting posts](#interesting-posts)
 - [Installation](#installation)
 - [Multi cursor](#multi-cursor)
 - [Cloud Changes (Edit Session)](#cloud-changes-edit-session)
 - [Regex search and replace](#regex-search-and-replace)
 - [KWallet Related](#kwallet-related)
 - [Customization](#customization)
+  - [Color customization](#color-customization)
   - [Textmate rules](#textmate-rules)
   - [Disable middle click pasting](#disable-middle-click-pasting)
 - [Extensions](#extensions)
   - [Where are extensions installed?](#where-are-extensions-installed)
   - [Todo Tree](#todo-tree)
+
+## Interesting posts
+
+- [Visual Studio Code is designed to fracture](https://ghuntley.com/fracture/)
 
 ## Installation
 
@@ -28,6 +34,7 @@ Last modified: 2024-05-16 +0000
 *References*:
 
 - [Multi cursor selection](https://code.visualstudio.com/docs/getstarted/tips-and-tricks#_multi-cursor-selection)
+- [Quick VS Code tip: skip selections when using Ctrl|Cmd + D - DEV Community](https://dev.to/codepo8/quick-vs-code-tip-skip-selections-when-using-ctrlcmd-d-36me)
 
 ## Cloud Changes (Edit Session)
 
@@ -39,13 +46,13 @@ Last modified: 2024-05-16 +0000
 
 Some examples:
 
-1. Use `(lib[a-z]*[0-9][0-9])` (note the parentheses) to match `libavcodec56`, `libavcodec57`, `libavcodec58`, `libavformat56`, `libavformat57`, `libavformat58`, `libavdevice56`, `libavdevice57`, `libavdevice58` in the search field.
+- Use `(lib[a-z]*[0-9][0-9])` (note the parentheses) to match `libavcodec56`, `libavcodec57`, `libavcodec58`, `libavformat56`, `libavformat57`, `libavformat58`, `libavdevice56`, `libavdevice57`, `libavdevice58` in the search field.
 
-   Refer to them using `$1` in the replace field.
+  Refer to them using `$1` in the replace field.
 
-2. Use `\$\{([a-zA-Z_]+[a-zA-Z0-9_]*)\}` (note the parentheses) to match `${ENV_VAR}`, `${env}, ${_FOOBAR_}` in the search field.
+- Use `\$\{([a-zA-Z_]+[a-zA-Z0-9_]*)\}` (note the parentheses) to match `${ENV_VAR}`, `${env}, ${_FOOBAR_}` in the search field.
 
-   Remove the braces (`{}`) around them (while keeping `$`) using `$$$1` in the replace field.
+  Remove the braces (`{}`) around them (while keeping `$`) using `$$$1` in the replace field.
 
 *References*:
 
@@ -59,6 +66,17 @@ Some examples:
 See [[KDE#KWallet & VSCode]].
 
 ## Customization
+
+### Color customization
+
+*References*:
+
+- [Visual Studio Code and VS Code icons and names usage guidelines](https://code.visualstudio.com/brand#brand-colors)
+- [VSCode default colors](https://github.com/microsoft/vscode/tree/main/src/vs/platform/theme/common/colors)
+- [VSCode terminal colors](https://github.com/microsoft/vscode/blob/main/src/vs/workbench/contrib/terminal/common/terminalColorRegistry.ts)
+- [VSCode default themes](https://github.com/microsoft/vscode/tree/main/extensions/theme-defaults/themes)
+  - Local path on Linux: `/usr/share/code/resources/app/extensions/theme-defaults/themes/`
+- [Colour List \| SAP Help Portal](https://wiki.scn.sap.com/wiki/display/Img/Colour+List)
 
 ### Textmate rules
 

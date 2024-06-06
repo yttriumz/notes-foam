@@ -1,12 +1,12 @@
 ---
 sitemap:
-  lastmod: 2024-05-03 +0000
+  lastmod: 2024-05-26 +0000
   priority: 1.0
 ---
 
 # openSUSE Package Management
 
-Last modified: 2024-05-03 +0000
+Last modified: 2024-05-26 +0000
 
 **NOTE**: This note assumes Tumbleweed by default, but most content should also apply to Leap. Some of the existing differences between Tumbleweed and Leap are mentioned in the corresponding instructions.
 
@@ -24,6 +24,7 @@ Last modified: 2024-05-03 +0000
     - [Brave Browser](#brave-browser)
     - [Cloudflare WARP](#cloudflare-warp)
     - [Emulators](#emulators)
+    - [Kubernetes](#kubernetes)
   - [Examine repositories](#examine-repositories)
     - [Reference for some repositories](#reference-for-some-repositories)
   - [Set priority](#set-priority)
@@ -260,6 +261,21 @@ Add *Emulators* repository via the following commands:
 zypper addrepo https://download.opensuse.org/repositories/Emulators/openSUSE_Tumbleweed/Emulators.repo
 ```
 
+#### Kubernetes
+
+- Many tools are already provided in the openSUSE official Oss repository.
+- But still, the official *Kubernetes* repository can be added via the following commands, if preferred:
+
+  ```bash
+  zypper addrepo https://pkgs.k8s.io/core:/stable:/v1.29/rpm/ "Kubernetes v1.29"
+  zypper refresh
+  zypper install kubectl
+  ```
+
+*References*:
+
+- [pkgs.k8s.io: Introducing Kubernetes Community-Owned Package Repositories \| Kubernetes](https://kubernetes.io/blog/2023/08/15/pkgs-k8s-io-introduction/)
+
 ### Examine repositories
 
 - Use *YaST*.
@@ -396,6 +412,47 @@ Download from [the official site](https://www.todesk.com/linux.html).
 ### Install OPI
 
 Use `zypper install opi`.
+
+```text
+The following recommended package was automatically selected:
+  python-rpm-generators  20240202.501440e-1.2  noarch  openSUSE-Tumbleweed-Oss  openSUSE
+
+The following 34 NEW packages are going to be installed:
+  cmake                       3.29.3-1.1             x86_64  openSUSE-Tumbleweed-Oss  openSUSE
+  cmake-full                  3.29.3-1.1             x86_64  openSUSE-Tumbleweed-Oss  openSUSE
+  cmake-man                   3.29.3-1.1             x86_64  openSUSE-Tumbleweed-Oss  openSUSE
+  debugedit                   5.0-5.9                x86_64  openSUSE-Tumbleweed-Oss  openSUSE
+  dwz                         0.15-3.2               x86_64  openSUSE-Tumbleweed-Oss  openSUSE
+  jq                          1.7.1-1.3              x86_64  openSUSE-Tumbleweed-Oss  openSUSE
+  libjq1                      1.7.1-1.3              x86_64  openSUSE-Tumbleweed-Oss  openSUSE
+  libjsoncpp25                1.9.5-2.7              x86_64  openSUSE-Tumbleweed-Oss  openSUSE
+  libjsoncpp25-x86-64-v3      1.9.5-2.7              x86_64  openSUSE-Tumbleweed-Oss  openSUSE
+  libonig5                    6.9.9-1.3              x86_64  openSUSE-Tumbleweed-Oss  openSUSE
+  libqt5-qtdeclarative-tools  5.15.13+kde30-1.2      x86_64  openSUSE-Tumbleweed-Oss  openSUSE
+  libQt6JsonRpc6              6.7.0-1.1              x86_64  openSUSE-Tumbleweed-Oss  openSUSE
+  libQt6LanguageServer6       6.7.0-1.1              x86_64  openSUSE-Tumbleweed-Oss  openSUSE
+  libQt6QmlCompiler6          6.7.0-1.1              x86_64  openSUSE-Tumbleweed-Oss  openSUSE
+  librhash1                   1.4.4-1.4              x86_64  openSUSE-Tumbleweed-Oss  openSUSE
+  librpmbuild10               4.19.1.1-3.2           x86_64  openSUSE-Tumbleweed-Oss  openSUSE
+  ninja                       1.12.0-1.1             x86_64  openSUSE-Tumbleweed-Oss  openSUSE
+  opi                         5.0.0-2.1              noarch  openSUSE-Tumbleweed-Oss  openSUSE
+  python311-cssselect         1.2.0-2.8              noarch  openSUSE-Tumbleweed-Oss  openSUSE
+  python311-lxml              5.1.0-3.2              x86_64  openSUSE-Tumbleweed-Oss  openSUSE
+  python311-packaging         24.0-1.1               noarch  openSUSE-Tumbleweed-Oss  openSUSE
+  python311-rpm               4.19.1.1-3.2           x86_64  openSUSE-Tumbleweed-Oss  openSUSE
+  python311-setuptools        69.0.3-1.4             noarch  openSUSE-Tumbleweed-Oss  openSUSE
+  python311-termcolor         2.4.0-1.5              noarch  openSUSE-Tumbleweed-Oss  openSUSE
+  python-rpm-generators       20240202.501440e-1.2   noarch  openSUSE-Tumbleweed-Oss  openSUSE
+  python-rpm-macros           20240202.501440e-1.2   noarch  openSUSE-Tumbleweed-Oss  openSUSE
+  python-rpm-packaging        20210526+a18ca48-1.11  noarch  openSUSE-Tumbleweed-Oss  openSUSE
+  qml-autoreqprov             1.4.1-1.3              noarch  openSUSE-Tumbleweed-Oss  openSUSE
+  qt6-base-common-devel       6.7.0-2.1              x86_64  openSUSE-Tumbleweed-Oss  openSUSE
+  qt6-declarative-tools       6.7.0-1.1              x86_64  openSUSE-Tumbleweed-Oss  openSUSE
+  qt6-macros                  20240131-1.2           x86_64  openSUSE-Tumbleweed-Oss  openSUSE
+  rpm-build                   4.19.1.1-3.2           x86_64  openSUSE-Tumbleweed-Oss  openSUSE
+  rpm-build-perl              4.19.1.1-3.2           x86_64  openSUSE-Tumbleweed-Oss  openSUSE
+  squashfs                    4.6.1-2.4              x86_64  openSUSE-Tumbleweed-Oss  openSUSE
+```
 
 ## Flatpak
 

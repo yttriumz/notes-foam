@@ -1,12 +1,12 @@
 ---
 sitemap:
-  lastmod: 2024-04-25 +0000
+  lastmod: 2024-05-26 +0000
   priority: 1.0
 ---
 
 # Tweak openSUSE Tumbleweed on ThinkPad P1 Gen2
 
-Last modified: 2024-04-25 +0000
+Last modified: 2024-05-26 +0000
 
 - [Interesting posts](#interesting-posts)
 - [Change hostname](#change-hostname)
@@ -279,14 +279,27 @@ Use `__NV_PRIME_RENDER_OFFLOAD=1 __VK_LAYER_NV_optimus=NVIDIA_only __GLX_VENDOR_
 
 ## Codecs
 
-Refer to [the wiki](https://en.opensuse.org/SDB:Firefox_MP4/H.264_Video_Support) to enable Firefox to play HTML5 videos.
+Some libraries are needed to enable Firefox to play HTML5 videos.
 
 - For my machine I just installed the following packages from the *Packman* repository:
-  - `libavcodec56`, `libavcodec57`, `libavcodec58`, `libavformat56`, `libavformat57`, `libavformat58`, `libavdevice56`, `libavdevice57`, `libavdevice58`
+
+  ```text
+  libavcodec56
+  libavcodec57
+  libavcodec58
+  libavformat56
+  libavformat57
+  libavformat58
+  libavdevice56
+  libavdevice57
+  libavdevice58
+  ```
+
 - Or use `opi codecs`.
 
 *References*:
 
+- [SDB:Firefox MP4/H.264 Video Support - openSUSE Wiki](https://en.opensuse.org/SDB:Firefox_MP4/H.264_Video_Support)
 - [SDB:Installing codecs from Packman repositories](https://en.opensuse.org/SDB:Installing_codecs_from_Packman_repositories)
 - https://opensuse.github.io/openSUSE-docs-revamped-temp/codecs/
 - [some youtube videos don't play on firefox](https://www.reddit.com/r/openSUSE/comments/u0myze/some_youtube_videos_dont_play_on_firefox/)
