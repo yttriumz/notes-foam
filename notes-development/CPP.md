@@ -1,12 +1,13 @@
 ---
 sitemap:
-  lastmod: 2024-04-23 +0000
+  lastmod: 2024-06-11 +0000
 ---
 
 # C++
 
-Last modified: 2024-04-23 +0000
+Last modified: 2024-06-11 +0000
 
+- [Interesting posts](#interesting-posts)
 - [`.clang-format`](#clang-format)
     - [ANGLE](#angle)
     - [Chromium](#chromium)
@@ -19,7 +20,11 @@ Last modified: 2024-04-23 +0000
         - [`compile_flags.txt` sample](#compile_flagstxt-sample)
     - [Project config](#project-config)
         - [Generate `compile_commands.json`](#generate-compile_commandsjson)
-- [`std::array` vs `std::vector` vs `std::list`](#stdarray-vs-stdvector-vs-stdlist)
+
+## Interesting posts
+
+- [现代 C++ 模板教程](https://mq-b.github.io/Modern-Cpp-templates-tutorial/)
+- [When to use arrays vs. vectors vs. lists?](https://www.reddit.com/r/cpp_questions/comments/5lqm5w/when_to_use_arrays_vs_vectors_vs_lists/)
 
 ## `.clang-format`
 
@@ -143,6 +148,10 @@ PPAPI_END_MESSAGE_MAP$"
 - https://chromium.googlesource.com/chromium/src/+/HEAD/.clang-format
 
 ## VSCode Config
+
+*References*:
+
+- [VSCode C/C++ 开发环境和调试配置：Clangd+Codelldb \| 止息的博客](https://zhangjk98.xyz/vscode-c-and-cpp-develop-and-debug-setting/)
 
 ### Simple Config
 
@@ -342,9 +351,3 @@ PPAPI_END_MESSAGE_MAP$"
 *References*:
 
 - [Getting started](https://clangd.llvm.org/installation#project-setup)
-
-## `std::array` vs `std::vector` vs `std::list`
-
-*References*:
-
-- [When to use arrays vs. vectors vs. lists?](https://www.reddit.com/r/cpp_questions/comments/5lqm5w/when_to_use_arrays_vs_vectors_vs_lists/)

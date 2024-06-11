@@ -1,11 +1,11 @@
 ---
 sitemap:
-  lastmod: 2024-04-26 +0000
+  lastmod: 2024-06-11 +0000
 ---
 
 # GitHub Pages
 
-Last modified: 2024-04-26 +0000
+Last modified: 2024-06-11 +0000
 
 ## Interesting posts
 
@@ -26,3 +26,45 @@ Deployment:
 - [Variables \| Jekyll • Simple, blog-aware, static sites](https://jekyllrb.com/docs/variables/#page-variables)
 - [Build and Submit a Sitemap \| Google Search Central  \|  Documentation  \|  Google for Developers](https://developers.google.com/search/docs/crawling-indexing/sitemaps/build-sitemap)
 - [Add example of using <details> tag in Markdown kitchen sink by blaylockbk · Pull Request #1297 · just-the-docs/just-the-docs](https://github.com/just-the-docs/just-the-docs/pull/1297)
+
+## $\LaTeX$ on GitHub Pages
+
+### Add the following code to the head of the markdown files
+
+```html
+<head>
+    <!-- <script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML" type="text/javascript"></script>
+    <script type="text/x-mathjax-config">
+        MathJax.Hub.Config({
+            tex2jax: {
+            skipTags: ['script', 'noscript', 'style', 'textarea', 'pre'],
+            inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+            displayMath: [ ['$$','$$'], ["\\[","\\]"] ],
+            }
+        });
+    </script>
+</head>
+```
+
+*References*:
+
+- [让GitHub Page支持Latex公式](https://zhuanlan.zhihu.com/p/36302775)
+- [How to support latex in GitHub-pages?](https://stackoverflow.com/questions/26275645/how-to-support-latex-in-github-pages)
+- [Using in-line configuration options](https://docs.mathjax.org/en/v2.7-latest/configuration.html#using-in-line-configuration-options)
+
+### Wrap math expressions
+
+Might need to wrap the math expressions with the following:
+
+```text
+{% raw %}
+SOME_MATH
+{% endraw %}
+```
+
+{% raw %}
+*References*:
+
+- [Liquid Exception: Liquid syntax error (line 123): Variable '{{0,1}' was not properly terminated with regexp: /\}\}/ in xxx.md #5458](https://github.com/jekyll/jekyll/issues/5458#issuecomment-252063824)
+{% endraw %}

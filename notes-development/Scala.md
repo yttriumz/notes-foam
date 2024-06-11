@@ -1,5 +1,9 @@
 # Scala
 
+## Interesting posts
+
+- [Scala's Gitter to Discord migration mistake - Alexandru Nedelcu](https://alexn.org/blog/2022/04/09/scala-gitter-discord-mistake/)
+
 ## Develop tools tips
 
 *References*:
