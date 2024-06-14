@@ -1,11 +1,11 @@
 ---
 sitemap:
-  lastmod: 2024-05-30 +0000
+  lastmod: 2024-06-13 +0000
 ---
 
-# Kubernetes Usage
+# Kubernetes
 
-Last modified: 2024-05-30 +0000
+Last modified: 2024-06-13 +0000
 
 - [Interesting posts](#interesting-posts)
 - [Installation](#installation)
@@ -23,6 +23,7 @@ Last modified: 2024-05-30 +0000
 
 ## Interesting posts
 
+- [Borg: The Predecessor to Kubernetes \| Kubernetes](https://kubernetes.io/blog/2015/04/borg-predecessor-to-kubernetes/)
 - [Kubernetes Node Vs. Pod Vs. Cluster: Key Differencestext](https://www.cloudzero.com/blog/kubernetes-node-vs-pod/)
 - [Head-first k8s](https://head-first-kubernetes.github.io/)
 - [Demystifying Container Orchestration: A Beginner's Guide \| SUSE Communities](https://www.suse.com/c/rancher_blog/demystifying-container-orchestration-a-beginners-guide/)
@@ -42,6 +43,8 @@ Last modified: 2024-05-30 +0000
 - [Assign Pods to Nodes \| Kubernetes](https://kubernetes.io/docs/tasks/configure-pod-container/assign-pods-nodes/)
 - [Resource Management for Pods and Containers \| Kubernetes](https://kubernetes.io/docs/concepts/configuration/manage-resources-containers/#meaning-of-cpu)
 - [Why K8s Secret and ConfigMap are limited to 1MiB in size \| by Able Lv \| Medium](https://able8.medium.com/why-k8s-secret-and-configmap-are-limited-to-1mib-in-size-ba79d86b0372)
+- [Using Secrets as files from a Pod - Secrets \| Kubernetes](https://kubernetes.io/docs/concepts/configuration/secret/#using-secrets-as-files-from-a-pod)
+  - [Create a Pod that has access to the secret data through a Volume - Distribute Credentials Securely Using Secrets \| Kubernetes](https://kubernetes.io/docs/tasks/inject-data-application/distribute-credentials-secure/#create-a-pod-that-has-access-to-the-secret-data-through-a-volume)
 
 Tutorials:
 
@@ -219,5 +222,8 @@ kubectl cp SOME_NAMESPACE/SOME_POD:/tmp/bar /tmp/foo
 
 - [Helm \| Getting Started](https://helm.sh/docs/chart_template_guide/getting_started/)
 - [Helm \| Helm Dependency](https://helm.sh/docs/helm/helm_dependency/)
+- All about “Helm”- The Package Manager for Kubernetes:
+  - [All about Helm- The Package Manager for Kubernetes Part 1 - BuildPiper](https://www.buildpiper.io/blogs/all-about-helm-the-package-manager-for-kubernetes-part-1/)
+  - [All about Helm- The Package Manager for Kubernetes Part 2 - BuildPiper](https://www.buildpiper.io/blogs/all-about-helm-the-package-manager-for-kubernetes-part-2/)
 - [kubernetes - UPGRADE FAILED: another operation (install/upgrade/rollback) is in progress - Stack Overflow](https://stackoverflow.com/questions/71599858/upgrade-failed-another-operation-install-upgrade-rollback-is-in-progress)
 - [Helm 'delete' doesn't delete PVCs · Issue #5156 · helm/helm](https://github.com/helm/helm/issues/5156)

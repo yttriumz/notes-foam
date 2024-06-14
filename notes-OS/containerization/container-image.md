@@ -1,11 +1,11 @@
 ---
 sitemap:
-  lastmod: 2024-05-23 +0000
+  lastmod: 2024-06-12 +0000
 ---
 
-# Container Image Development
+# Container Image
 
-Last modified: 2024-05-23 +0000
+Last modified: 2024-06-12 +0000
 
 **NOTE**: This note assumes that images are built using Docker by default.
 
