@@ -1,17 +1,18 @@
 ---
 sitemap:
-  lastmod: 2024-05-10 +0000
+  lastmod: 2024-06-14 +0000
 ---
 
 # Java
 
-Last modified: 2024-05-10 +0000
+Last modified: 2024-06-14 +0000
 
 - [Interesting posts](#interesting-posts)
 - [Java distributions](#java-distributions)
 - [Java version manager](#java-version-manager)
 - [JAR manipulations](#jar-manipulations)
 - [Jetty](#jetty)
+- [Spring Boot](#spring-boot)
 - [Apache](#apache)
 - [VSCode](#vscode)
 
@@ -29,6 +30,7 @@ Last modified: 2024-05-10 +0000
 - [How to find Java Heap Size and Memory Used (Linux)?](https://www.w3docs.com/snippets/java/how-to-find-java-heap-size-and-memory-used-linux.html)
 - [Find out your Java heap memory size - Mkyong.com](https://mkyong.com/java/find-out-your-java-heap-memory-size/)
 - [How the JVM uses and allocates memory \| Red Hat Developer](https://developers.redhat.com/articles/2021/09/09/how-jvm-uses-and-allocates-memory)
+- [Wardrobe strength: JVMs and kill signals](http://journal.thobe.org/2013/02/jvms-and-kill-signals.html)
 
 ## Java distributions
 
@@ -97,6 +99,12 @@ Last modified: 2024-05-10 +0000
 - [Jetty not reading keystorepass and keymanagerpass from ssl.mod file · Issue #5990 · jetty/jetty.project](https://github.com/jetty/jetty.project/issues/5990)
 - [Eclipse Jetty: Operations Guide](https://eclipse.dev/jetty/documentation/jetty-10/operations-guide/index.html#og-protocols-ssl-customize)
 - [Eclipse Jetty: Programming Guide](https://eclipse.dev/jetty/documentation/jetty-10/programming-guide/index.html#pg-server-session-handler)
+
+## Spring Boot
+
+*References*:
+
+- [Configuring spring boot application from tomcat to jetty - Stack Overflow](https://stackoverflow.com/questions/68767087/configuring-spring-boot-application-from-tomcat-to-jetty)
 
 ## Apache
 

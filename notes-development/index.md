@@ -1,7 +1,7 @@
 ---
 type: index
 sitemap:
-  lastmod: 2024-06-14 +0000
+  lastmod: 2024-06-17 +0000
   priority: 0.5
 ---
 
@@ -35,7 +35,7 @@ Domain-specific:
 - [[crypto]]
 - [[databases]]
 - [[decentralization]]
-- [[DevOps]]
+- [[DevOps/index]]
 - [[ML]]
 - [[notes-development/networking]]
 - [[SSO]]
@@ -92,7 +92,7 @@ Miscellaneous:
 [crypto]: crypto.md "Crypto"
 [databases]: databases.md "Databases"
 [decentralization]: decentralization.md "Decentralization Related"
-[DevOps]: DevOps.md "DevOps"
+[DevOps/index]: DevOps/index.md "DevOps"
 [ML]: ML.md "Machine Learning"
 [notes-development/networking]: networking.md "Networking"
 [SSO]: SSO.md "Single Sign-On"

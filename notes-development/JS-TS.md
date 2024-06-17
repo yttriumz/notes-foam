@@ -1,6 +1,11 @@
+---
+sitemap:
+  lastmod: 2024-06-13 +0000
+---
+
 # JavaScript/TypeScript
 
-Last modified: 2024/02/02 UTC
+Last modified: 2024-06-13 +0000
 
 - [Interesting posts](#interesting-posts)
   - [Development tools](#development-tools)
@@ -23,6 +28,7 @@ Last modified: 2024/02/02 UTC
 - [Error message "error:0308010C:digital envelope routines::unsupported"](https://stackoverflow.com/questions/69692842/error-message-error0308010cdigital-envelope-routinesunsupported)
 - [🧐[问题]项目无法启动，error:0308010C:digital envelope routines::unsupported #9272](https://github.com/ant-design/ant-design-pro/issues/9272#issuecomment-1083276843)
 - [Cannot set headers after they are sent to the client #805](https://github.com/http-party/http-server/issues/805)
+- [css - How to convert RGBA to Hex color code using javascript - Stack Overflow](https://stackoverflow.com/questions/49974145/how-to-convert-rgba-to-hex-color-code-using-javascript)
 
 ### Development tools
 

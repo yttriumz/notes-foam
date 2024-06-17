@@ -1,4 +1,14 @@
+---
+sitemap:
+  lastmod: 2024-06-13 +0000
+---
+
 # C
+
+## Interesting posts
+
+- [Any Language Closer To C In Terms Of Performance : r/C_Programming](https://www.reddit.com/r/C_Programming/comments/1dd2bz8/any_language_closer_to_c_in_terms_of_performance/)
+- [Understanding Command-Line Arguments: Exploring argv and argc in C Programming Language \| by Chux \| Medium](https://medium.com/@chuxoguh/understanding-command-line-arguments-exploring-argv-and-argc-in-c-programming-language-a198395028c9)
 
 ## VSCode Config
 
