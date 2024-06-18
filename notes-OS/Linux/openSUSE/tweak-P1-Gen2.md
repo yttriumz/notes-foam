@@ -1,12 +1,12 @@
 ---
 sitemap:
-  lastmod: 2024-05-26 +0000
+  lastmod: 2024-06-18 +0000
   priority: 1.0
 ---
 
 # Tweak openSUSE Tumbleweed on ThinkPad P1 Gen2
 
-Last modified: 2024-05-26 +0000
+Last modified: 2024-06-18 +0000
 
 - [Interesting posts](#interesting-posts)
 - [Change hostname](#change-hostname)
@@ -97,7 +97,11 @@ Hibernation is disabled by default for security reasons. You can check dracut mo
 
 *References*:
 
-- [Kexec and Kdump \| System Analysis and Tuning Guide \| openSUSE Leap 15.5](https://doc.opensuse.org/documentation/leap/tuning/html/book-tuning/cha-tuning-kexec.html)
+- [Kexec and Kdump \| System Analysis and Tuning Guide \| openSUSE Leap 15.6](https://doc.opensuse.org/documentation/leap/tuning/html/book-tuning/cha-tuning-kexec.html)
+- LUN:
+  - [The mystery behind LUN(Logical Unit Number) | Unixbhaskar's Blog](https://unixbhaskar.wordpress.com/2010/11/17/the-mystery-behind-lunlogical-unit-number/)
+  - [SQUEEZE: cat: /proc/scsi/scsi: No such file or directory](https://www.linuxquestions.org/questions/debian-26/squeeze-cat-proc-scsi-scsi-no-such-file-or-directory-805890/)
+  - [HOWTO: Add, Resize and Remove LUN without restarting SLES \| Support \| SUSE](https://www.suse.com/support/kb/doc/?id=000017762)
 
 ## System upgrade
 
@@ -222,9 +226,15 @@ See [[terminal-tools#Zellij]].
 
 1. Add NVidia's repository. See [[openSUSE/package#Packman (essentials) and NVidia]].
 2. Install drivers. On my machine (*ThinkPad P1 Gen2 with T2000*), I tested 2 methods:
-
    - Install legacy driver `x11-video-nvidiaG05` and `suse-prime`.
    - Install the current driver `nvidia-video-G06` (or `nvidia-drivers-G06`) and `suse-prime`. At the time of updating (*Tumbleweed 20230518, KDE Plasma 5.27.5, NV driver 525.116.04*), it may result in a black SDDM login screen with only the cursor, which might be solved by pressing `Ctrl` + `Alt` + `Backspace` twice to restart the X server.
+3. Disable `nvidia-powerd` service because it's for Ampere or newer GPUs:
+
+   ```bash
+   sudo systemctl stop nvidia-powerd
+   sudo systemctl disable nvidia-powerd
+   sudo systemctl mask nvidia-powerd
+   ```
 
 *References*:
 
@@ -235,6 +245,9 @@ See [[terminal-tools#Zellij]].
 - [7.4 Switching between Intel and NVIDIA Optimus GPUs with SUSE Prime](https://doc.opensuse.org/documentation/leap/reference/single-html/book-reference/index.html#sec-gui-desktop-suse-prime)
 - [来到opensuse15.3的世界后，我推荐你做点什么](https://www.bwsl.wang/script/129.html)
 - [Got a black screen with mouse cursor only after switching (on SDDM screen) a user session type between X11 and Wayland](https://forum.manjaro.org/t/got-a-black-screen-with-mouse-cursor-only-after-switching-on-sddm-screen-a-user-session-type-between-x11-and-wayland/87044/3)
+- [Chapter 23. Dynamic Boost on Linux](https://download.nvidia.com/XFree86/Linux-x86_64/550.90.07/README/dynamicboost.html)
+- [GPU Stops working randomly / Laptop Issues / Arch Linux Forums](https://bbs.archlinux.org/viewtopic.php?id=291877)
+- [/usr/bin/nvidia-powerd[1118]: SBIOS support not found for NVPCF GET_SUPPORTED function - Graphics / Linux / Linux - NVIDIA Developer Forums](https://forums.developer.nvidia.com/t/usr-bin-nvidia-powerd-1118-sbios-support-not-found-for-nvpcf-get-supported-function/220662)
 
 ### NVIDIA module not loaded
 

@@ -1,11 +1,11 @@
 ---
 sitemap:
-  lastmod: 2024-06-12 +0000
+  lastmod: 2024-06-18 +0000
 ---
 
 # Container Image
 
-Last modified: 2024-06-12 +0000
+Last modified: 2024-06-18 +0000
 
 **NOTE**: This note assumes that images are built using Docker by default.
 
@@ -23,6 +23,7 @@ Last modified: 2024-06-12 +0000
 - [wagoodman/dive: A tool for exploring each layer in a docker image](https://github.com/wagoodman/dive)
 - [Multi-platform images \| Docker Docs](https://docs.docker.com/build/building/multi-platform/)
 - [Multi-arch build and images, the simple way \| Docker](https://www.docker.com/blog/multi-arch-build-and-images-the-simple-way/)
+- [How to run a cron job inside a docker container? - Stack Overflow](https://stackoverflow.com/questions/37458287/how-to-run-a-cron-job-inside-a-docker-container)
 
 ## Dockerfile
 

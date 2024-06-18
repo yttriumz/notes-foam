@@ -1,11 +1,11 @@
 ---
 sitemap:
-  lastmod: 2024-06-05 +0000
+  lastmod: 2024-06-11 +0000
 ---
 
 # Visual Studio Code
 
-Last modified: 2024-06-05 +0000
+Last modified: 2024-06-11 +0000
 
 - [Interesting posts](#interesting-posts)
 - [Installation](#installation)
@@ -35,6 +35,7 @@ Last modified: 2024-06-05 +0000
 
 - [Multi cursor selection](https://code.visualstudio.com/docs/getstarted/tips-and-tricks#_multi-cursor-selection)
 - [Quick VS Code tip: skip selections when using Ctrl|Cmd + D - DEV Community](https://dev.to/codepo8/quick-vs-code-tip-skip-selections-when-using-ctrlcmd-d-36me)
+- [vscode 同时编辑多处，多个光标 快捷键_好菜的程序媛的博客-CSDN博客_vscode多行光标](https://blog.csdn.net/Gomeer/article/details/91417928)
 
 ## Cloud Changes (Edit Session)
 

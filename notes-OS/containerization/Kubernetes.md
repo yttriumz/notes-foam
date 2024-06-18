@@ -1,11 +1,11 @@
 ---
 sitemap:
-  lastmod: 2024-06-13 +0000
+  lastmod: 2024-06-17 +0000
 ---
 
 # Kubernetes
 
-Last modified: 2024-06-13 +0000
+Last modified: 2024-06-17 +0000
 
 - [Interesting posts](#interesting-posts)
 - [Installation](#installation)
@@ -46,6 +46,10 @@ Last modified: 2024-06-13 +0000
 - [Using Secrets as files from a Pod - Secrets \| Kubernetes](https://kubernetes.io/docs/concepts/configuration/secret/#using-secrets-as-files-from-a-pod)
   - [Create a Pod that has access to the secret data through a Volume - Distribute Credentials Securely Using Secrets \| Kubernetes](https://kubernetes.io/docs/tasks/inject-data-application/distribute-credentials-secure/#create-a-pod-that-has-access-to-the-secret-data-through-a-volume)
 
+Toolchains:
+
+- [Version Skew Policy \| Kubernetes](https://kubernetes.io/releases/version-skew-policy/)
+
 Tutorials:
 
 - [Learn Kubernetes and Containers \| Rancher](https://www.rancher.com/learn-the-basics)
@@ -54,6 +58,13 @@ Tutorials:
 - [easzlab/kubeasz: 使用Ansible脚本安装K8S集群，介绍组件交互原理，方便直接，不受国内网络环境影响](https://github.com/easzlab/kubeasz)
 - [How to Deploy Kubernetes with Kubeadm and containerd - The New Stack](https://thenewstack.io/how-to-deploy-kubernetes-with-kubeadm-and-containerd/)
 - [How to Install a Multi-Node Kubernetes Cluster on Ubuntu](https://www.atlantic.net/dedicated-server-hosting/how-to-set-up-three-node-kubernetes-cluster-on-ubuntu/)
+
+Certificates:
+
+- [Frequently Asked Questions: CKA and CKAD & CKS \| T&C DOCS (Candidate Facing Resources)](https://docs.linuxfoundation.org/tc-docs/certification/faq-cka-ckad-cks)
+- [Introduction to Kubernetes (LFS158x) - Linux Foundation - Training](https://training.linuxfoundation.org/training/introduction-to-kubernetes/)
+- [I just passed the CKA!! Here are some tips (2022) : r/kubernetes](https://www.reddit.com/r/kubernetes/comments/rzpu5i/i_just_passed_the_cka_here_are_some_tips_2022/)
+- [CKA or CKAD which one is easier? : r/kubernetes](https://www.reddit.com/r/kubernetes/comments/re37bb/cka_or_ckad_which_one_is_easier/)
 
 ## Installation
 

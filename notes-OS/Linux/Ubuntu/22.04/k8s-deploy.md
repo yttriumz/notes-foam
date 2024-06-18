@@ -1,11 +1,11 @@
 ---
 sitemap:
-  lastmod: 2024-04-23 +0000
+  lastmod: 2024-06-14 +0000
 ---
 
-# Ubuntu 22.04 Development Environment
+# Kubernetes Deployment
 
-Last modified: 2024-04-23 +0000
+Last modified: 2024-06-14 +0000
 
 - [Basic environment](#basic-environment)
 - [Docker](#docker)
@@ -13,18 +13,18 @@ Last modified: 2024-04-23 +0000
 - [kubectl](#kubectl)
 - [Helm](#helm)
 - [Redpanda](#redpanda)
-    - [`minikube` and `docker`](#minikube-and-docker)
-        - [Start the cluster](#start-the-cluster)
-        - [Install Redpanda using Helm](#install-redpanda-using-helm)
-        - [Test streaming](#test-streaming)
-    - [`kubeadm` and `containerd`](#kubeadm-and-containerd)
+  - [`minikube` and `docker`](#minikube-and-docker)
+    - [Start the cluster](#start-the-cluster)
+    - [Install Redpanda using Helm](#install-redpanda-using-helm)
+    - [Test streaming](#test-streaming)
+  - [`kubeadm` and `containerd`](#kubeadm-and-containerd)
 - [KVM](#kvm)
 - [Single-master Kubernetes installation](#single-master-kubernetes-installation)
-    - [System requirement](#system-requirement)
-    - [All nodes](#all-nodes)
-    - [Only on the control node](#only-on-the-control-node)
-    - [Only on worker nodes](#only-on-worker-nodes)
-    - [Troubleshooting](#troubleshooting)
+  - [System requirement](#system-requirement)
+  - [All nodes](#all-nodes)
+  - [Only on the control node](#only-on-the-control-node)
+  - [Only on worker nodes](#only-on-worker-nodes)
+  - [Troubleshooting](#troubleshooting)
 
 ## Basic environment
 
@@ -596,7 +596,7 @@ Run the command from the `kubeadm token create` output above.
 
 ### Troubleshooting
 
-- Node "NoteReady": `systemctl restart kubelet` solves the issue for me.
+- Node "NotReady": `systemctl restart kubelet` solves the issue for me.
 
 *References*:
 
