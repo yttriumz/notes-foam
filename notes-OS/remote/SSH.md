@@ -1,12 +1,12 @@
 ---
 sitemap:
-  lastmod: 2024-05-10 +0000
+  lastmod: 2024-06-18 +0000
   priority: 1.0
 ---
 
 # SSH Usage
 
-Last modified: 2024-05-10 +0000
+Last modified: 2024-06-18 +0000
 
 - [Interesting posts](#interesting-posts)
 - [Create SSH key pair](#create-ssh-key-pair)
@@ -103,7 +103,7 @@ Host ADDRESS_OF_SERVER_C
     IdentityFile PRIVATE_KEY
 ```
 
-Then, after establishing an SSH connection to **Server B** from the local machine (**Host A**), we can access the GitLab service on **Server C** from **Server B**.
+Then, after establishing an SSH connection to **Server B** from the local machine (**Host A**), we can access some services on **Server C** from **Server B**.
 
 For example, the following command will work perfectly fine on **Server B**:
 

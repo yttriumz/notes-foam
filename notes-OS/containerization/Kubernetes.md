@@ -1,11 +1,11 @@
 ---
 sitemap:
-  lastmod: 2024-06-17 +0000
+  lastmod: 2024-06-19 +0000
 ---
 
 # Kubernetes
 
-Last modified: 2024-06-17 +0000
+Last modified: 2024-06-19 +0000
 
 - [Interesting posts](#interesting-posts)
 - [Installation](#installation)
@@ -34,17 +34,12 @@ Last modified: 2024-06-17 +0000
   > Kubernetes connects the container runtime interface (CRI) with the container network interface (CNI) and the container storage interface (CSI), and then it provides the plumbing and glue to turn one or more containers into an application.
 - [Error installing from official repos onto Ubuntu · Issue #3219 · kubernetes/release](https://github.com/kubernetes/release/issues/3219)
 - [Demo Systems Infrastructure - Kubernetes \| GitLab](https://about.gitlab.com/handbook/customer-success/demo-systems/infrastructure/kubernetes/)
-- [Kubernetes networking model - IBM Documentation](https://www.ibm.com/docs/en/cloud-private/3.2.x?topic=networking-kubernetes-network-model)
-- [CIDR Update in Kubernetes](https://kubeops.net/blog/cidr-update-in-kubernetes)
 - [Why disable swap on kubernetes - Server Fault](https://serverfault.com/questions/881517/why-disable-swap-on-kubernetes)
 - [Why Kubernetes Hates Linux Swap?. A typical computer system has two types… \| by Bhargav Bhikkaji \| Tailwinds-MajorDomo \| Medium](https://medium.com/tailwinds-navigator/kubernetes-tip-why-disable-swap-on-linux-3505f0250263)
 - [deployments do not support (honor) container restartPolicy · Issue #24725 · kubernetes/kubernetes](https://github.com/kubernetes/kubernetes/issues/24725)
 - [kubectl apply: Syntax, Examples, kubectl apply vs. create/replace](https://komodor.com/learn/kubectl-apply-syntax-examples-and-kubectl-apply-vs-create-vs-replace/)
 - [Assign Pods to Nodes \| Kubernetes](https://kubernetes.io/docs/tasks/configure-pod-container/assign-pods-nodes/)
 - [Resource Management for Pods and Containers \| Kubernetes](https://kubernetes.io/docs/concepts/configuration/manage-resources-containers/#meaning-of-cpu)
-- [Why K8s Secret and ConfigMap are limited to 1MiB in size \| by Able Lv \| Medium](https://able8.medium.com/why-k8s-secret-and-configmap-are-limited-to-1mib-in-size-ba79d86b0372)
-- [Using Secrets as files from a Pod - Secrets \| Kubernetes](https://kubernetes.io/docs/concepts/configuration/secret/#using-secrets-as-files-from-a-pod)
-  - [Create a Pod that has access to the secret data through a Volume - Distribute Credentials Securely Using Secrets \| Kubernetes](https://kubernetes.io/docs/tasks/inject-data-application/distribute-credentials-secure/#create-a-pod-that-has-access-to-the-secret-data-through-a-volume)
 
 Toolchains:
 
@@ -52,14 +47,32 @@ Toolchains:
 
 Tutorials:
 
+- [kubernetes video Series' Articles - DEV Community](https://dev.to/techworld_with_nana/series/4349)
 - [Learn Kubernetes and Containers \| Rancher](https://www.rancher.com/learn-the-basics)
+- [Connecting Applications with Services \| Kubernetes](https://kubernetes.io/docs/tutorials/services/connect-applications-service/)
 - [mmumshad/kubernetes-the-hard-way: Bootstrap Kubernetes the hard way on Vagrant on Local Machine. No scripts.](https://github.com/mmumshad/kubernetes-the-hard-way)
 - [chaseSpace/k8s-tutorial-cn: The most(might) detailed Kubernetes tutorials in Chinese. 全网最（可能）详细的Kubernetes中文教程。](https://github.com/chaseSpace/k8s-tutorial-cn)
 - [easzlab/kubeasz: 使用Ansible脚本安装K8S集群，介绍组件交互原理，方便直接，不受国内网络环境影响](https://github.com/easzlab/kubeasz)
 - [How to Deploy Kubernetes with Kubeadm and containerd - The New Stack](https://thenewstack.io/how-to-deploy-kubernetes-with-kubeadm-and-containerd/)
 - [How to Install a Multi-Node Kubernetes Cluster on Ubuntu](https://www.atlantic.net/dedicated-server-hosting/how-to-set-up-three-node-kubernetes-cluster-on-ubuntu/)
 
-Certificates:
+API:
+
+- [Kubernetes Deprecation Policy \| Kubernetes](https://kubernetes.io/docs/reference/using-api/deprecation-policy/)
+
+Networking:
+
+- [Kubernetes networking model - IBM Documentation](https://www.ibm.com/docs/en/cloud-private/3.2.x?topic=networking-kubernetes-network-model)
+- [CIDR Update in Kubernetes](https://kubeops.net/blog/cidr-update-in-kubernetes)
+
+Storage:
+
+- [Container Storage Interface (CSI) for Kubernetes GA \| Kubernetes](https://kubernetes.io/blog/2019/01/15/container-storage-interface-ga/)
+- [Why K8s Secret and ConfigMap are limited to 1MiB in size \| by Able Lv \| Medium](https://able8.medium.com/why-k8s-secret-and-configmap-are-limited-to-1mib-in-size-ba79d86b0372)
+- [Using Secrets as files from a Pod - Secrets \| Kubernetes](https://kubernetes.io/docs/concepts/configuration/secret/#using-secrets-as-files-from-a-pod)
+  - [Create a Pod that has access to the secret data through a Volume - Distribute Credentials Securely Using Secrets \| Kubernetes](https://kubernetes.io/docs/tasks/inject-data-application/distribute-credentials-secure/#create-a-pod-that-has-access-to-the-secret-data-through-a-volume)
+
+Career Certificates:
 
 - [Frequently Asked Questions: CKA and CKAD & CKS \| T&C DOCS (Candidate Facing Resources)](https://docs.linuxfoundation.org/tc-docs/certification/faq-cka-ckad-cks)
 - [Introduction to Kubernetes (LFS158x) - Linux Foundation - Training](https://training.linuxfoundation.org/training/introduction-to-kubernetes/)
