@@ -1,11 +1,11 @@
 ---
 sitemap:
-  lastmod: 2024-04-30 +0000
+  lastmod: 2024-07-15 +0000
 ---
 
 # Bash Scripting
 
-Last modified: 2024-04-30 +0000
+Last modified: 2024-07-15 +0000
 
 - [Interesting posts](#interesting-posts)
 - [Redirect command/script/application output](#redirect-commandscriptapplication-output)
@@ -21,6 +21,7 @@ Last modified: 2024-04-30 +0000
 
 - [linux - What's the different between 'cat > some_file << EOF some_stuff EOF' and 'echo "some_stuff" > some_file' - Super User](https://superuser.com/questions/1434549/whats-the-different-between-cat-some-file-eof-some-stuff-eof-and-echo)
 - [What's the difference between cat /dev/null>file and echo"">file ? : r/bash](https://www.reddit.com/r/bash/comments/s397ao/whats_the_difference_between_cat_devnullfile_and/)
+- [ShellCheck: SC2097 – This assignment is only seen by the forked process.](https://www.shellcheck.net/wiki/SC2097)
 
 ## Redirect command/script/application output
 

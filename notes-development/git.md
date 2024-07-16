@@ -1,11 +1,11 @@
 ---
 sitemap:
-  lastmod: 2024-05-17 +0000
+  lastmod: 2024-07-16 +0000
 ---
 
 # Git Usage
 
-Last modified: 2024-05-17 +0000
+Last modified: 2024-07-16 +0000
 
 - [Interesting posts](#interesting-posts)
 - [Git configuration](#git-configuration)
@@ -251,3 +251,9 @@ After hard resetting the local repository, use `git push -f REMOTE_REPO BRANCH_N
 - [Git - Submodules](https://git-scm.com/book/en/v2/Git-Tools-Submodules)
 - [Git submodule \| Atlassian](https://www.atlassian.com/git/tutorials/git-submodule)
 - [How to change the remote repository for a git submodule? - Stack Overflow](https://stackoverflow.com/questions/913701/how-to-change-the-remote-repository-for-a-git-submodule)
+
+## `vimdiff`
+
+*References*:
+
+- [Using Vimdiff. : r/vim](https://www.reddit.com/r/vim/comments/199bkgk/using_vimdiff/)

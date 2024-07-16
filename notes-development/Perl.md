@@ -1,11 +1,11 @@
 ---
 sitemap:
-  lastmod: 2024-06-11 +0000
+  lastmod: 2024-07-03 +0000
 ---
 
 # Perl
 
-Last modified: 2024-06-11 +0000
+Last modified: 2024-07-03 +0000
 
 - [Interesting posts](#interesting-posts)
 - [Development environment](#development-environment)
@@ -37,6 +37,7 @@ Last modified: 2024-06-11 +0000
 - [Life of a Computer Scientist: Using Perl like awk and sed](https://lifecs.likai.org/2008/10/using-perl-like-awk-and-sed.html)
 - [Most popular Perl 5 web framework? : r/perl](https://www.reddit.com/r/perl/comments/1574tx3/most_popular_perl_5_web_framework/)
 - [But I can't use CPAN](https://archive.shadowcat.co.uk/blog/matt-s-trout/but-i-cant-use-cpan/)
+- [regex - What are the differences between glob-style patterns and regular expressions? - Stack Overflow](https://stackoverflow.com/questions/23702202/what-are-the-differences-between-glob-style-patterns-and-regular-expressions)
 
 Language:
 
@@ -60,6 +61,7 @@ Language:
   - [Why is the exit code 255 instead of -1 in Perl? - Stack Overflow](https://stackoverflow.com/questions/2726447/why-is-the-exit-code-255-instead-of-1-in-perl)
 - [rose db object - Perl module "did not return a true value" - Stack Overflow](https://stackoverflow.com/questions/5012665/perl-module-did-not-return-a-true-value)
 - [Perl C++ C# 使用 POST GET 存取 JSON 等網路資源 \| 人生海海](https://heavenchou.buddhason.org/node/314)
+- [The problem of "the" default shell](https://www.perlmonks.org/?node_id=1205217)
 
 Toolchain:
 
@@ -79,6 +81,14 @@ Tutorials:
 
 - [Learn Perl - www.perl.org](https://www.perl.org/learn.html)
 - [Tutorials](https://www.perlmonks.org/?node=Tutorials)
+- [perlstyle - Perl style guide - Perldoc Browser](https://perldoc.perl.org/perlstyle):
+  >
+  > ```perl
+  > $ALL_CAPS_HERE   # constants only (beware clashes with perl vars!)
+  > $Some_Caps_Here  # package-wide global/static
+  > $no_caps_here    # function scope my() or local() variables
+  > ```
+  >
 - [perl - The Perl 5 language interpreter - Perldoc Browser](https://perldoc.pl/perl#Tutorials)
 - [Modern Perl: a Perl Tutorial 4e Table of Contents](http://modernperlbooks.com/books/modern_perl_2016/index.html)
 - [Learn Perl in about 2 hours 30 minutes @ Things Of Interest](https://qntm.org/perl_en)

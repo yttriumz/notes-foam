@@ -1,6 +1,6 @@
 # Python
 
-Last modified: 2024-05-02 +0000
+Last modified: 2024-07-09 +0000
 
 - [Interesting posts](#interesting-posts)
 - [Installation \& environment](#installation--environment)
@@ -80,6 +80,10 @@ Use `python3 -m venv --upgrade-deps PATH/TO/NEW/VENV`.
 - [pipx](https://pypa.github.io/pipx/)
 
 ## pip
+
+*References*:
+
+- [Getting Started - pip documentation v24.1.2](https://pip.pypa.io/en/stable/getting-started/)
 
 ### Package version
 
