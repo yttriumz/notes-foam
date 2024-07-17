@@ -1,11 +1,11 @@
 ---
 sitemap:
-  lastmod: 2024-07-03 +0000
+  lastmod: 2024-07-17 +0000
 ---
 
 # Perl
 
-Last modified: 2024-07-03 +0000
+Last modified: 2024-07-17 +0000
 
 - [Interesting posts](#interesting-posts)
 - [Development environment](#development-environment)
@@ -38,6 +38,9 @@ Last modified: 2024-07-03 +0000
 - [Most popular Perl 5 web framework? : r/perl](https://www.reddit.com/r/perl/comments/1574tx3/most_popular_perl_5_web_framework/)
 - [But I can't use CPAN](https://archive.shadowcat.co.uk/blog/matt-s-trout/but-i-cant-use-cpan/)
 - [regex - What are the differences between glob-style patterns and regular expressions? - Stack Overflow](https://stackoverflow.com/questions/23702202/what-are-the-differences-between-glob-style-patterns-and-regular-expressions)
+- [Perl and why you use it : r/perl](https://www.reddit.com/r/perl/comments/1dzblqj/perl_and_why_you_use_it/)
+- [Why does OpenBSD still include Perl in its base installation? \| Hacker News](https://news.ycombinator.com/item?id=23360338)
+- [The Perl and Raku Conference 2024 - Las Vegas \| Keith's Krazy Web Site](https://www.kcaran.com/posts/the-perl-and-raku-conference-2024-las-vegas.html)
 
 Language:
 
@@ -120,6 +123,7 @@ Pre-installed:
 
 - [learnbyexample/learn_perl_oneliners: Example based guide for text processing with Perl from the command line](https://github.com/learnbyexample/learn_perl_oneliners)
 - [Perl one-liners](https://gist.github.com/joyrexus/7328094)
+- [Demystifying Perl One-Liners - Walter C. Mankowski - TPRC 2024 - YouTube](https://www.youtube.com/watch?v=ZqSddysHJb0)
 - [Remove carriage return in Unix - Stack Overflow](https://stackoverflow.com/questions/800030/remove-carriage-return-in-unix/35065082#35065082)
 
 ## Regex

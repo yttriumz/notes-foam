@@ -1,11 +1,11 @@
 ---
 sitemap:
-  lastmod: 2024-07-16 +0000
+  lastmod: 2024-07-17 +0000
 ---
 
 # Git Usage
 
-Last modified: 2024-07-16 +0000
+Last modified: 2024-07-17 +0000
 
 - [Interesting posts](#interesting-posts)
 - [Git configuration](#git-configuration)
@@ -27,12 +27,14 @@ Last modified: 2024-07-16 +0000
 - [Discard non-staged changes](#discard-non-staged-changes)
 - [Update an unchecked-out local branch from remote branch](#update-an-unchecked-out-local-branch-from-remote-branch)
 - [Rename branch](#rename-branch)
+- [Checkout remote branch](#checkout-remote-branch)
 - [Change remote origin](#change-remote-origin)
 - [Push to all remotes](#push-to-all-remotes)
 - [Push an existing repository to a new remote](#push-an-existing-repository-to-a-new-remote)
 - [Hard reset remote branch](#hard-reset-remote-branch)
 - [Embedded repositories](#embedded-repositories)
 - [Submodule](#submodule)
+- [`vimdiff`](#vimdiff)
 
 ## Interesting posts
 
@@ -202,6 +204,12 @@ Use `git fetch REMOTE_REPO REMOTE_BRANCH:LOCAL_BRANCH`.
 - Rename checked-out local branch: Use `git branch --move NEW_BRANCH_NAME`.
 - Rename unchecked-out local branch: Use `git branch --move BRANCH_NAME NEW_BRANCH_NAME`.
 - If remote branches also need renaming, push the renamed local branches and delete the old branches on remote.
+
+## Checkout remote branch
+
+*References*:
+
+- [git checkout - How do I check out a remote Git branch? - Stack Overflow](https://stackoverflow.com/questions/1783405/how-do-i-check-out-a-remote-git-branch)
 
 ## Change remote origin
 

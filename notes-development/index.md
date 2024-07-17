@@ -1,11 +1,13 @@
 ---
 type: index
 sitemap:
-  lastmod: 2024-06-21 +0000
+  lastmod: 2024-07-17 +0000
   priority: 0.5
 ---
 
 # Development Tips
+
+Last modified: 2024-07-17 +0000
 
 General:
 
@@ -33,7 +35,7 @@ Domain-specific:
 
 - [[Android]]
 - [[crypto]]
-- [[databases]]
+- [[database/index]]
 - [[decentralization]]
 - [[DevOps/index]]
 - [[ML]]
@@ -73,6 +75,7 @@ Miscellaneous:
 - [Magic number (programming) - Wikipedia](https://en.wikipedia.org/wiki/Magic_number_(programming))
 - [Hexspeak - Wikipedia](https://en.wikipedia.org/wiki/Hexspeak)
 - [Hex words \| Ned Batchelder](https://nedbatchelder.com/text/hexwords.html)
+- [Test Your Product On A Crappy Laptop \| CSS-Tricks](https://css-tricks.com/test-your-product-on-a-crappy-laptop/)
 
 Blogs:
 
@@ -97,7 +100,7 @@ Blogs:
 [Scala]: Scala.md "Scala"
 [Android]: Android.md "Android"
 [crypto]: crypto.md "Crypto"
-[databases]: databases.md "Databases"
+[database/index]: database/index.md "Database"
 [decentralization]: decentralization.md "Decentralization Related"
 [DevOps/index]: DevOps/index.md "DevOps"
 [ML]: ML.md "Machine Learning"

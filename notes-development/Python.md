@@ -1,6 +1,11 @@
+---
+sitemap:
+  lastmod: 2024-07-17 +0000
+---
+
 # Python
 
-Last modified: 2024-07-09 +0000
+Last modified: 2024-07-17 +0000
 
 - [Interesting posts](#interesting-posts)
 - [Installation \& environment](#installation--environment)
@@ -29,10 +34,21 @@ Last modified: 2024-07-09 +0000
 - [Everything you need to know about the switch to Python 3 | Kali Linux Documentation](https://www.kali.org/docs/general-use/python3-transition/)
 - [What Are Python Wheels and Why Should You Care? – Real Python](https://realpython.com/python-wheels/)
 - [Beyond If-Else: Leveraging Python’s Versatile “Else” Statements \| by Yang Zhou \| TechToFreedom \| Mar, 2024 \| Medium](https://medium.com/techtofreedom/beyond-if-else-leveraging-pythons-versatile-else-statements-9ac260dac102?sk=dd43f5b07431c222fb7332835c786af3)
-- Tutorials:
-  - [A Byte of Python](https://python.swaroopch.com/)
-  - [A Python Interpreter Written in Python](https://aosabook.org/en/500L/a-python-interpreter-written-in-python.html)
-  - [Jinja2 Explained in 5 Minutes!. (Part 4: Back-end Web Framework: Flask) \| by Diva Dugar \| codeburst](https://codeburst.io/jinja-2-explained-in-5-minutes-88548486834e)
+
+Tutorials:
+
+- [A Byte of Python](https://python.swaroopch.com/)
+- [A Python Interpreter Written in Python](https://aosabook.org/en/500L/a-python-interpreter-written-in-python.html)
+- [Jinja2 Explained in 5 Minutes!. (Part 4: Back-end Web Framework: Flask) \| by Diva Dugar \| codeburst](https://codeburst.io/jinja-2-explained-in-5-minutes-88548486834e)
+
+Techniques:
+
+- [python - What is the difference between `__str__` and `__repr__`? - Stack Overflow](https://stackoverflow.com/questions/1436703/what-is-the-difference-between-str-and-repr/2626364#2626364)
+- [How to Print Object Attributes in Python? (with Code)](https://favtutor.com/blogs/print-object-attributes-python)
+- [How to Print All Properties of Object in Python - EnableGeek](https://www.enablegeek.com/tutorial/python-print-all-properties-of-object/)
+- [python - Return a default value if a dictionary key is not available - Stack Overflow](https://stackoverflow.com/questions/6130768/return-a-default-value-if-a-dictionary-key-is-not-available)
+- [python - Why dict.get(key) instead of dict[key]? - Stack Overflow](https://stackoverflow.com/questions/11041405/why-dict-getkey-instead-of-dictkey)
+- [Python: How to ignore an exception and proceed? - Stack Overflow](https://stackoverflow.com/questions/574730/python-how-to-ignore-an-exception-and-proceed)
 
 ## Installation & environment
 
