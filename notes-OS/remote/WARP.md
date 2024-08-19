@@ -1,11 +1,11 @@
 ---
 sitemap:
-  lastmod: 2024-06-14 +0000
+  lastmod: 2024-06-24 +0000
 ---
 
 # Cloudflare WARP
 
-Last modified: 2024-06-14 +0000
+Last modified: 2024-06-24 +0000
 
 - [Interesting posts](#interesting-posts)
 - [Installation](#installation)
@@ -24,6 +24,7 @@ Last modified: 2024-06-14 +0000
   - [1.1.1.1 — Connection Information](https://one.one.one.one/help/)
 - [Android使用WARP](https://blog.tanglu.me/WARP-for-Android/)
 - [CloudFlare WARP 官方客户端详细使用教程 （持续更新）](https://blog.misaka.rest/2023/02/08/cf-warp/)
+- [可解锁 ChatGPT 的便宜 VPS 推荐(2024年) - P3TERX ZONE](https://p3terx.com/archives/cheap-vps-recommended-chatgpt.html)
 
 ## Installation
 

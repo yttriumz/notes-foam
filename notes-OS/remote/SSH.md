@@ -1,12 +1,12 @@
 ---
 sitemap:
-  lastmod: 2024-06-18 +0000
+  lastmod: 2024-08-19 +0000
   priority: 1.0
 ---
 
 # SSH Usage
 
-Last modified: 2024-06-18 +0000
+Last modified: 2024-08-19 +0000
 
 - [Interesting posts](#interesting-posts)
 - [Create SSH key pair](#create-ssh-key-pair)
@@ -23,6 +23,8 @@ Last modified: 2024-06-18 +0000
 
 - [ssh - Does known_hosts support comments? - Server Fault](https://serverfault.com/questions/750840/does-known-hosts-support-comments)
 - [scp with port number specified - Stack Overflow](https://stackoverflow.com/questions/10341032/scp-with-port-number-specified)
+- [linux - `ssh <host>` is a login shell, but `ssh <host> <command>` is not? - Super User](https://superuser.com/questions/1224938/ssh-host-is-a-login-shell-but-ssh-host-command-is-not)
+- [Does ssh run commands (rather than shell itself) in a login shell? - Unix & Linux Stack Exchange](https://unix.stackexchange.com/questions/744263/does-ssh-run-commands-rather-than-shell-itself-in-a-login-shell)
 
 ## Create SSH key pair
 
