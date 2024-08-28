@@ -1,12 +1,12 @@
 ---
 sitemap:
-  lastmod: 2024-06-18 +0000
+  lastmod: 2024-07-22 +0000
   priority: 1.0
 ---
 
 # Tweak openSUSE Tumbleweed on ThinkPad P1 Gen2
 
-Last modified: 2024-06-18 +0000
+Last modified: 2024-07-22 +0000
 
 - [Interesting posts](#interesting-posts)
 - [Change hostname](#change-hostname)
@@ -99,7 +99,7 @@ Hibernation is disabled by default for security reasons. You can check dracut mo
 
 - [Kexec and Kdump \| System Analysis and Tuning Guide \| openSUSE Leap 15.6](https://doc.opensuse.org/documentation/leap/tuning/html/book-tuning/cha-tuning-kexec.html)
 - LUN:
-  - [The mystery behind LUN(Logical Unit Number) | Unixbhaskar's Blog](https://unixbhaskar.wordpress.com/2010/11/17/the-mystery-behind-lunlogical-unit-number/)
+  - [The mystery behind LUN(Logical Unit Number) \| Unixbhaskar's Blog](https://unixbhaskar.wordpress.com/2010/11/17/the-mystery-behind-lunlogical-unit-number/)
   - [SQUEEZE: cat: /proc/scsi/scsi: No such file or directory](https://www.linuxquestions.org/questions/debian-26/squeeze-cat-proc-scsi-scsi-no-such-file-or-directory-805890/)
   - [HOWTO: Add, Resize and Remove LUN without restarting SLES \| Support \| SUSE](https://www.suse.com/support/kb/doc/?id=000017762)
 

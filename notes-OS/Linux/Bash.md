@@ -1,19 +1,20 @@
 ---
 sitemap:
-  lastmod: 2024-04-19 +0000
+  lastmod: 2024-08-19 +0000
 ---
 
 # Bash Usage
 
-Last modified: 2024-04-19 +0000
+Last modified: 2024-08-19 +0000
 
 - [Interesting posts](#interesting-posts)
 - [Configuration files](#configuration-files)
+- [Navigate in current command](#navigate-in-current-command)
 - [Customize history](#customize-history)
 - [Alias](#alias)
-    - [Customize aliases](#customize-aliases)
-    - [Alias expansion](#alias-expansion)
-    - [Auto-completion for aliases](#auto-completion-for-aliases)
+   - [Customize aliases](#customize-aliases)
+   - [Alias expansion](#alias-expansion)
+   - [Auto-completion for aliases](#auto-completion-for-aliases)
 - [Scripting](#scripting)
 
 ## Interesting posts
@@ -30,6 +31,13 @@ Last modified: 2024-04-19 +0000
 - [unix - Choosing between .bashrc, .profile, .bash_profile, etc - Super User](https://superuser.com/questions/789448/choosing-between-bashrc-profile-bash-profile-etc)
 - [bash - Difference between .bashrc and .bash_profile - Super User](https://superuser.com/questions/183870/difference-between-bashrc-and-bash-profile)
 - [linux - What are the functional differences between .profile .bash_profile and .bashrc - Server Fault](https://serverfault.com/questions/261802/what-are-the-functional-differences-between-profile-bash-profile-and-bashrc)
+
+## Navigate in current command
+
+*References*:
+
+- [5 ways to navigate the Linux terminal faster \| Enable Sysadmin](https://www.redhat.com/sysadmin/shortcuts-command-line-navigation)
+- [Bash keyboard shortcuts](https://gist.github.com/tuxfight3r/60051ac67c5f0445efee)
 
 ## Customize history
 
@@ -76,13 +84,13 @@ Press `Alt`+`Ctrl`+`E`.
 
 ### Auto-completion for aliases
 
-1. Save [the attached script](./attachments/bash/.bash_aliases_completion) to `~/.bash_aliases_completion`.
+1. Save [the attached script](./attachments/bash/.bash_alias_completion) to `~/.bash_alias_completion`.
 
 2. Save the following to `.bashrc` **after** the alias section.
 
    ```bash
-   if [ -f ~/.bash_aliases_completion ]; then
-       . ~/.bash_aliases_completion
+   if [ -f ~/.bash_alias_completion ]; then
+       . ~/.bash_alias_completion
    fi
    ```
 

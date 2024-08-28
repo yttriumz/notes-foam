@@ -1,11 +1,11 @@
 ---
 sitemap:
-  lastmod: 2024-06-14 +0000
+  lastmod: 2024-07-05 +0000
 ---
 
 # Kubernetes Deployment
 
-Last modified: 2024-06-14 +0000
+Last modified: 2024-07-05 +0000
 
 - [Basic environment](#basic-environment)
 - [Docker](#docker)
@@ -25,6 +25,8 @@ Last modified: 2024-06-14 +0000
   - [Only on the control node](#only-on-the-control-node)
   - [Only on worker nodes](#only-on-worker-nodes)
   - [Troubleshooting](#troubleshooting)
+- [MicroK8s](#microk8s)
+  - [Destroy cluster](#destroy-cluster)
 
 ## Basic environment
 
@@ -601,3 +603,16 @@ Run the command from the `kubeadm token create` output above.
 *References*:
 
 - [Debugging your Kubernetes nodes in the ‘not ready’ state](https://www.airplane.dev/blog/debugging-kubernetes-nodes-in-not-ready-state)
+
+## MicroK8s
+
+### Destroy cluster
+
+On each node:
+
+```bash
+sudo microk8s leave
+sudo microk8s reset --destroy-storage
+sudo microk8s stop
+sudo snap disable microk8s
+```

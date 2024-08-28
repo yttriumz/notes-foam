@@ -1,11 +1,11 @@
 ---
 sitemap:
-  lastmod: 2024-05-07 +0000
+  lastmod: 2024-07-25 +0000
 ---
 
 # Security
 
-Last modified: 2024-05-07 +0000
+Last modified: 2024-07-25 +0000
 
 - [Interesting posts](#interesting-posts)
 - [CPU mitigation](#cpu-mitigation)
@@ -19,6 +19,7 @@ Last modified: 2024-05-07 +0000
 - [What we need to take away from the XZ Backdoor - openSUSE News](https://news.opensuse.org/2024/04/12/learn-from-the-xz-backdoor/)
 - [How to read and correct SELinux denial messages \| Enable Sysadmin](https://www.redhat.com/sysadmin/selinux-denial2)
 - [8.3.8. Allowing Access: audit2allow Red Hat Enterprise Linux 6 \| Red Hat Customer Portal](https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/6/html/security-enhanced_linux/sect-security-enhanced_linux-fixing_problems-allowing_access_audit2allow)
+- [Hiding Linux Processes with Bind Mounts \| Hacker News](https://news.ycombinator.com/item?id=41058292)
 
 ## CPU mitigation
 

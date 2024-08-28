@@ -1,22 +1,17 @@
 ---
 sitemap:
-  lastmod: 2024-05-16 +0000
+  lastmod: 2024-08-28 +0000
 ---
 
 # Command-line Tools
 
-Last modified: 2024-05-16 +0000
+Last modified: 2024-08-28 +0000
 
 - [Interesting posts](#interesting-posts)
+- [Text processing](#text-processing)
 - [Search tools](#search-tools)
   - [`find`](#find)
-    - [Ignore case](#ignore-case)
-    - [Find only files/directories](#find-only-filesdirectories)
-    - [Exclude paths](#exclude-paths)
-    - [Get rid of "Permission Denied"](#get-rid-of-permission-denied)
   - [`fd` (Rust)](#fd-rust)
-- [Text manipulation](#text-manipulation)
-  - [ripgrep (`rg`) (Rust)](#ripgrep-rg-rust)
 - [File manager](#file-manager)
   - [`joshuto` (Rust)](#joshuto-rust)
   - [`ranger` (Python)](#ranger-python)
@@ -35,73 +30,32 @@ Last modified: 2024-05-16 +0000
 ## Interesting posts
 
 - [Rewritten in Rust: Modern Alternatives of Command-Line Tools · Zaiste Programming](https://zaiste.net/posts/shell-commands-rust/)
-- From Phind:
-  > Yes, there are other ways to read a file's content in a shell script besides using `cat` or the `<` operator. Here are a few alternatives:
-  >
-  > - `read` command: The `read` command can be used in a loop to read a file line by line.
-  >
-  >   ```bash
-  >   while IFS= read -r line
-  >   do
-  >     echo "$line"
-  >   done < "$filename"
-  >   ```
-  >
-  > - `awk` command: `awk` is a powerful text-processing command. It can be used to read a file.
-  >
-  >   ```bash
-  >   awk '{print}' "$filename"
-  >   ```
-  >
-  > - `sed` command: `sed` is a stream editor for filtering and transforming text. It can be used to print out a file.
-  >
-  >   ```bash
-  >   sed -n 'p' "$filename"
-  >   ```
-  >
-  > - `grep` command: `grep` is used to search text. You can use it to print out all lines in a file.
-  >
-  >   ```bash
-  >   grep . "$filename"
-  >   ```
-  >
-  > Please note that these commands are more complex and powerful than `cat` and the `<` operator. If all you need is to read a file's content, `cat` or the `<` operator are the simplest and most efficient options. The other commands are useful if you need to process the file's content in some way, such as filtering or transforming the text.
+- [How can I show lines in common (reverse diff)? - Stack Overflow](https://stackoverflow.com/questions/746458/how-can-i-show-lines-in-common-reverse-diff)
+- [How to diff large files on Linux - Super User](https://superuser.com/questions/174283/how-to-diff-large-files-on-linux)
+- [What the first five lines of Linux’s top command tell you \| Enable Sysadmin](https://www.redhat.com/sysadmin/interpret-top-output)
+- [linux - How does "cp" handle open files? - Unix & Linux Stack Exchange](https://unix.stackexchange.com/questions/50466/how-does-cp-handle-open-files)
+
+## Text processing
+
+See [[text-processing]].
 
 ## Search tools
 
 ### `find`
 
+- Ignore case: Use `-iname` instead of `-name`.
+- Find only files/directories:
+  - For files, use `-type f`.
+  - For directories, use `-type d`.
+- Exclude paths: Use `-not -path "SOME/PATH/*"`.
+- Get rid of "Permission Denied": Append `2>&1 | grep -v "Permission denied"` to the end.
+
 *References*:
 
 - [Ways to Use ‘find’ Command to Search Directories More Efficiently](https://www.tecmint.com/find-directory-in-linux/)
-
-#### Ignore case
-
-Use `-iname` instead of `-name`.
-
-#### Find only files/directories
-
-- For files, use `-type f`.
-- For directories, use `-type d`.
-
-*References*:
-
+- [In bash: How to find and delete directories containing a specific file, only if the file is older than X minutes - Super User](https://superuser.com/questions/1499291/in-bash-how-to-find-and-delete-directories-containing-a-specific-file-only-if)
 - [How to mark directories in the output of the `find` command?](https://unix.stackexchange.com/questions/652076/how-to-mark-directories-in-the-output-of-the-find-command)
-
-#### Exclude paths
-
-Use `-not -path "SOME/PATH/*"`.
-
-*References*:
-
 - [linux - How do I exclude a directory when using `find`? - Stack Overflow](https://stackoverflow.com/questions/4210042/how-do-i-exclude-a-directory-when-using-find)
-
-#### Get rid of "Permission Denied"
-
-Add `2>&1 | grep -v "Permission denied"` to the end.
-
-*References*:
-
 - [How to skip "permission denied" errors when running find in Linux? \[duplicate\]](https://unix.stackexchange.com/questions/42841/how-to-skip-permission-denied-errors-when-running-find-in-linux)
 - [How can I exclude all "permission denied" messages from "find"?](https://stackoverflow.com/questions/762348/how-can-i-exclude-all-permission-denied-messages-from-find)
 
@@ -110,23 +64,6 @@ Add `2>&1 | grep -v "Permission denied"` to the end.
 *References*:
 
 - [A simple, fast and user-friendly alternative to 'find'](https://github.com/sharkdp/fd)
-
-## Text manipulation
-
-*References*:
-
-- [go to character in vim - Stack Overflow](https://stackoverflow.com/questions/543738/go-to-character-in-vim)
-- [unix - What does the ^M character mean in Vim? - Stack Overflow](https://stackoverflow.com/questions/5843495/what-does-the-m-character-mean-in-vim)
-- [Vim documentation: digraph](https://vimdoc.sourceforge.net/htmldoc/digraph.html#digraph-table)
-- [How to remove carriage return in Linux or Unix - nixCraft](https://www.cyberciti.biz/faq/how-to-remove-carriage-return-in-linux-or-unix/)
-- [splitting a huge line of file into multiple lines with fixed number of columns](https://www.unix.com/shell-programming-and-scripting/166969-splitting-huge-line-file-into-multiple-lines-fixed-number-columns.html)
-
-### ripgrep (`rg`) (Rust)
-
-*References*:
-
-- [ripgrep recursively searches directories for a regex pattern while respecting your gitignore](https://github.com/BurntSushi/ripgrep)
-- [ripgrep is faster than {grep, ag, git grep, ucg, pt, sift}](https://blog.burntsushi.net/ripgrep/)
 
 ## File manager
 
@@ -200,8 +137,17 @@ From Phind:
 >
 >    If needed, you can always bring the process back to the foreground with the `fg` command.
 
+*References*:
+
+- [terminal - nohup vs screen -- which is better for long running process? - Stack Overflow](https://stackoverflow.com/questions/20766300/nohup-vs-screen-which-is-better-for-long-running-process)
+- [浅析Linux中使用nohup及screen运行后台任务的示例和区别-腾讯云开发者社区-腾讯云](https://cloud.tencent.com/developer/article/1722221)
+
 ## `iconv`
 
 *References*:
 
 - [libiconv - GNU Project - Free Software Foundation (FSF)](https://www.gnu.org/software/libiconv/)
+
+[//begin]: # "Autogenerated link references for markdown compatibility"
+[text-processing]: text-processing.md "Text Processing on Linux"
+[//end]: # "Autogenerated link references"

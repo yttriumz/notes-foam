@@ -1,12 +1,12 @@
 ---
 sitemap:
-  lastmod: 2024-06-14 +0000
+  lastmod: 2024-07-18 +0000
   priority: 1.0
 ---
 
 # openSUSE Development Environment
 
-Last modified: 2024-06-14 +0000
+Last modified: 2024-07-18 +0000
 
 **NOTE**: This note assumes Tumbleweed by default, but most content should also apply to Leap. Some of the existing differences between Tumbleweed and Leap are mentioned in the corresponding instructions.
 
@@ -193,7 +193,7 @@ zypper install pattern:devel_basis # Does the same
 
 ## Haskell
 
-Install the Haskell toolchain via the following commands:
+Install the Haskell toolkit via the following commands:
 
 ```bash
 curl --proto '=https' --tlsv1.2 -sSf https://get-ghcup.haskell.org | sh
@@ -414,6 +414,7 @@ For KVM usage, see [[KVM]].
 - [How To Use Virtual Machines on Linux](https://www.youtube.com/watch?v=t-23HOKMer0)
 - [Setup Qemu in Debian Linux](https://christitus.com/vm-setup-in-linux/)
 - [Freezer error when installing KVM on Debian.](https://www.reddit.com/r/linuxquestions/comments/w38k31/comment/iguuy6j/?utm_source=share&utm_medium=web2x&context=3)
+- [Unified Virtual Machine Administration using libvirt](https://documentation.suse.com/smart/virtualization-cloud/html/manage-vm-on-commandline/index.html)
 
 ## bochs
 
