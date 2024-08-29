@@ -16,6 +16,8 @@ sitemap:
 - [Vim documentation: digraph](https://vimdoc.sourceforge.net/htmldoc/digraph.html#digraph-table)
 - [How to remove carriage return in Linux or Unix - nixCraft](https://www.cyberciti.biz/faq/how-to-remove-carriage-return-in-linux-or-unix/)
 - [splitting a huge line of file into multiple lines with fixed number of columns](https://www.unix.com/shell-programming-and-scripting/166969-splitting-huge-line-file-into-multiple-lines-fixed-number-columns.html)
+- [shell - How to delete from a text file, all lines that contain a specific string? - Stack Overflow](https://stackoverflow.com/questions/5410757/how-to-delete-from-a-text-file-all-lines-that-contain-a-specific-string)
+- [linux - How to sort a file in-place? - Stack Overflow](https://stackoverflow.com/questions/29244351/how-to-sort-a-file-in-place)
 - From Phind:
   > Yes, there are other ways to read a file's content in a shell script besides using `cat` or the `<` operator. Here are a few alternatives:
   >
@@ -53,6 +55,7 @@ sitemap:
 *References*:
 
 - [grep command in Unix/Linux - GeeksforGeeks](https://www.geeksforgeeks.org/grep-command-in-unixlinux/)
+- [Grep: how to add an "OR" condition? - Unix & Linux Stack Exchange](https://unix.stackexchange.com/questions/25821/grep-how-to-add-an-or-condition)
 - [Can grep show only words that match search pattern? - Stack Overflow](https://stackoverflow.com/questions/1546711/can-grep-show-only-words-that-match-search-pattern)
 - [linux - How to 'grep' a continuous stream? - Stack Overflow](https://stackoverflow.com/questions/7161821/how-to-grep-a-continuous-stream)
 

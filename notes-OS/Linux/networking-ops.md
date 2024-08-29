@@ -1,11 +1,11 @@
 ---
 sitemap:
-  lastmod: 2024-08-15 +0000
+  lastmod: 2024-08-28 +0000
 ---
 
 # Networking Tools & Operations
 
-Last modified: 2024-08-15 +0000
+Last modified: 2024-08-28 +0000
 
 - [Interesting posts](#interesting-posts)
 - [Certificates](#certificates)
@@ -108,7 +108,7 @@ Finally, if you've changed these limits you will need to restart the associated 
 
 *References*:
 
-- [Comparing Charles Proxy, Fiddler, Wireshark, and Requestly | by Requestly | Requestly \| Medium](https://medium.com/requestly/comparing-charles-proxy-fiddler-and-wireshark-5da41363d263)
+- [Comparing Charles Proxy, Fiddler, Wireshark, and Requestly \| by Requestly \| Requestly \| Medium](https://medium.com/requestly/comparing-charles-proxy-fiddler-and-wireshark-5da41363d263)
 - [Wireshark is still listed, it's a lot more powerful and open source: https://cho... \| Hacker News](https://news.ycombinator.com/item?id=15792354)
 - [Decrypt Traffic with Mitmproxy & Wireshark — Peter Girnus](https://www.petergirnus.com/blog/decrypting-https-traffic-with-mitmproxy-amp-wireshark)
 

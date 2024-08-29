@@ -1,12 +1,12 @@
 ---
 sitemap:
-  lastmod: 2024-07-25 +0000
+  lastmod: 2024-08-28 +0000
   priority: 1.0
 ---
 
 # KDE Plasma Tweak
 
-Last modified: 2024-07-25 +0000
+Last modified: 2024-08-28 +0000
 
 - [Interesting posts](#interesting-posts)
 - [Configuration backup](#configuration-backup)
@@ -31,7 +31,7 @@ Last modified: 2024-07-25 +0000
 
 ## Interesting posts
 
-- [| Beginner here: What is the difference between a window manager and a Desktop environment? : r/unixporn](https://www.reddit.com/r/unixporn/comments/t7jnhh/beginner_here_what_is_the_difference_between_a/)
+- [\| Beginner here: What is the difference between a window manager and a Desktop environment? : r/unixporn](https://www.reddit.com/r/unixporn/comments/t7jnhh/beginner_here_what_is_the_difference_between_a/)
 - [KDE Plasma與GNOME桌面比較，最終我還是選擇KDE · Ivon的部落格](https://ivonblog.com/posts/kde-plasma-gnome-comparison/)
 - [plasmashell crash on wayland : r/openSUSE](https://www.reddit.com/r/openSUSE/comments/10v0lxl/plasmashell_crash_on_wayland/)
 - [Prayag2/konsave: A command line program written in Python to let you backup your dotfiles and switch to other ones in an instant. Works out-of-the box on KDE Plasma!](https://github.com/Prayag2/konsave/tree/master)
@@ -121,7 +121,7 @@ Plasma 6:
 
 X11: Did not find a solution.
 
-Wayland: Go to *System Settings > Mouse & Touchpad > Mouse|Touchpad > Scrolling speed*.
+Wayland: Go to *System Settings > Mouse & Touchpad > Mouse\|Touchpad > Scrolling speed*.
 
 *References*:
 
