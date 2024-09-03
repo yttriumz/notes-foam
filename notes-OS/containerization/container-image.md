@@ -1,11 +1,11 @@
 ---
 sitemap:
-  lastmod: 2024-06-18 +0000
+  lastmod: 2024-07-09 +0000
 ---
 
 # Container Image
 
-Last modified: 2024-06-18 +0000
+Last modified: 2024-07-09 +0000
 
 **NOTE**: This note assumes that images are built using Docker by default.
 
@@ -14,7 +14,6 @@ Last modified: 2024-06-18 +0000
   - [`CMD` \& `ENTRYPOINT`](#cmd--entrypoint)
 - [GitHub Container Registry](#github-container-registry)
 - [CentOS image](#centos-image)
-  - [Interesting posts](#interesting-posts-1)
 - [WARP issue](#warp-issue)
 
 ## Interesting posts
@@ -54,10 +53,19 @@ From Phind:
 
 ## CentOS image
 
-### Interesting posts
+- Update the mirror address by adding the following to `Dockerfile`:
+
+  ```dockerfile
+  RUN cd /etc/yum.repos.d/
+  RUN sed -i 's/mirrorlist/#mirrorlist/g' /etc/yum.repos.d/CentOS-*
+  RUN sed -i 's|#baseurl=http://mirror.centos.org|baseurl=http://vault.centos.org|g' /etc/yum.repos.d/CentOS-*
+  ```
+
+*References*:
 
 - [Error: Failed to download metadata for repo 'appstream': Cannot prepare internal mirrorlist: No URLs in mirrorlist](https://stackoverflow.com/questions/70963985/error-failed-to-download-metadata-for-repo-appstream-cannot-prepare-internal)
 - [yum安装时提示：This system is not registered with an entitlement server. You can use subscription-manager to register. - Ajunyu - 博客园](https://www.cnblogs.com/ajunyu/p/13297449.html)
+- [Plesk or system updates fail on CentOS 7: Could not resolve host: mirrorlist.centos.org – Plesk](https://support.plesk.com/hc/en-us/articles/24575503258647-Plesk-or-system-updates-fail-on-CentOS-7-Could-not-resolve-host-mirrorlist-centos-org)
 
 ## WARP issue
 

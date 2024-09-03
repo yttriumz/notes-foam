@@ -1,15 +1,18 @@
 ---
 sitemap:
-  lastmod: 2024-06-19 +0000
+  lastmod: 2024-07-19 +0000
 ---
 
 # Kubernetes
 
-Last modified: 2024-06-19 +0000
+Last modified: 2024-07-19 +0000
 
 - [Interesting posts](#interesting-posts)
+- [Versioning](#versioning)
 - [Installation](#installation)
 - [Management tool](#management-tool)
+- [`kubectl`](#kubectl)
+- [`kuztomize`](#kuztomize)
 - [Cluster status](#cluster-status)
 - [Storage](#storage)
 - [Node label](#node-label)
@@ -20,18 +23,17 @@ Last modified: 2024-06-19 +0000
 - [Get files inside pods](#get-files-inside-pods)
 - [Port forward](#port-forward)
 - [Helm](#helm)
+    - [Troubleshooting releases](#troubleshooting-releases)
 
 ## Interesting posts
 
 - [Borg: The Predecessor to Kubernetes \| Kubernetes](https://kubernetes.io/blog/2015/04/borg-predecessor-to-kubernetes/)
+- [Introduction - Kubernetes CSI Developer Documentation](https://kubernetes-csi.github.io/docs/)
 - [Kubernetes Node Vs. Pod Vs. Cluster: Key Differencestext](https://www.cloudzero.com/blog/kubernetes-node-vs-pod/)
-- [Head-first k8s](https://head-first-kubernetes.github.io/)
+- [A 5,5 years retrospective of working with Bare Metal Kubernetes, or To there and back \| Geek Culture](https://medium.com/geekculture/a-retrospective-of-working-with-bare-metal-kubernetes-or-to-there-and-back-1868c0356eff)
 - [Demystifying Container Orchestration: A Beginner's Guide \| SUSE Communities](https://www.suse.com/c/rancher_blog/demystifying-container-orchestration-a-beginners-guide/)
 - [Why is learning Kubernetes so intimidating? : devops](https://www.reddit.com/r/devops/comments/o7w9yn/why_is_learning_kubernetes_so_intimidating/)
 - [Why Is Kubernetes So Hard - 4 Reasons Why And What to do About it — Release](https://release.com/blog/why-kubernetes-is-so-hard)
-- [How Kubernetes And Kafka Will Get You Fired \| by Jan Kammerath - Freedium](https://freedium.cfd/https://medium.com/@jankammerath/how-kubernetes-and-kafka-will-get-you-fired-a6dccbd36c77)
-- [Kafka on Kubernetes: What could go wrong?](https://redpanda.com/blog/kafka-kubernetes-deployment-pros-cons):
-  > Kubernetes connects the container runtime interface (CRI) with the container network interface (CNI) and the container storage interface (CSI), and then it provides the plumbing and glue to turn one or more containers into an application.
 - [Error installing from official repos onto Ubuntu · Issue #3219 · kubernetes/release](https://github.com/kubernetes/release/issues/3219)
 - [Demo Systems Infrastructure - Kubernetes \| GitLab](https://about.gitlab.com/handbook/customer-success/demo-systems/infrastructure/kubernetes/)
 - [Why disable swap on kubernetes - Server Fault](https://serverfault.com/questions/881517/why-disable-swap-on-kubernetes)
@@ -40,13 +42,16 @@ Last modified: 2024-06-19 +0000
 - [kubectl apply: Syntax, Examples, kubectl apply vs. create/replace](https://komodor.com/learn/kubectl-apply-syntax-examples-and-kubectl-apply-vs-create-vs-replace/)
 - [Assign Pods to Nodes \| Kubernetes](https://kubernetes.io/docs/tasks/configure-pod-container/assign-pods-nodes/)
 - [Resource Management for Pods and Containers \| Kubernetes](https://kubernetes.io/docs/concepts/configuration/manage-resources-containers/#meaning-of-cpu)
-
-Toolchains:
-
-- [Version Skew Policy \| Kubernetes](https://kubernetes.io/releases/version-skew-policy/)
-
-Tutorials:
-
+- Mind Maps:
+  - [DevOps in Kubernetes Mind Map](https://github.com/metaleapca/metaleap-devops-in-k8s/blob/main/metaleap-devops-in-k8s.pdf)
+  - [Kubernetes Tools Mind Map](https://github.com/metaleapca/metaleap-k8s-tools/blob/main/metaleap-k8s-tools.pdf)
+  - [K8s Troubleshooting Mind Map](https://github.com/metaleapca/metaleap-k8s-troubleshooting/blob/main/metaleap-k8s-troubleshooting.pdf)
+- [Medium parser - K8s Troubleshooting — Insufficient Node Resources \| by Tony \| Geek Culture \| Medium](http://webcache.googleusercontent.com/search?q=cache:https://medium.com/geekculture/k8s-troubleshooting-insufficient-node-resources-d336968a45b0&strip=0&vwsrc=1&referer=medium-parser)
+- [How to force delete a Kubernetes Namespace \| ComputingForGeeks](https://computingforgeeks.com/how-to-force-delete-a-kubernetes-namespace/)
+- [Test an insecure registry \| CNCF Distribution](https://distribution.github.io/distribution/about/insecure/)
+- [docker - ErrImagePull: x509: certificate signed by unknown authority - Stack Overflow](https://stackoverflow.com/questions/73136370/errimagepull-x509-certificate-signed-by-unknown-authority)
+- [Red Hat OpenShift vs. OKD](https://www.redhat.com/en/topics/containers/red-hat-openshift-okd)
+- [Head-first k8s](https://head-first-kubernetes.github.io/)
 - [kubernetes video Series' Articles - DEV Community](https://dev.to/techworld_with_nana/series/4349)
 - [Learn Kubernetes and Containers \| Rancher](https://www.rancher.com/learn-the-basics)
 - [Connecting Applications with Services \| Kubernetes](https://kubernetes.io/docs/tutorials/services/connect-applications-service/)
@@ -59,6 +64,7 @@ Tutorials:
 API:
 
 - [Kubernetes Deprecation Policy \| Kubernetes](https://kubernetes.io/docs/reference/using-api/deprecation-policy/)
+- [了解 Kubernetes 中的認證機制 \| 小信豬的原始部落](https://godleon.github.io/blog/Kubernetes/k8s-API-Authentication/)
 
 Networking:
 
@@ -72,12 +78,22 @@ Storage:
 - [Using Secrets as files from a Pod - Secrets \| Kubernetes](https://kubernetes.io/docs/concepts/configuration/secret/#using-secrets-as-files-from-a-pod)
   - [Create a Pod that has access to the secret data through a Volume - Distribute Credentials Securely Using Secrets \| Kubernetes](https://kubernetes.io/docs/tasks/inject-data-application/distribute-credentials-secure/#create-a-pod-that-has-access-to-the-secret-data-through-a-volume)
 
-Career Certificates:
+Career Certifications:
 
 - [Frequently Asked Questions: CKA and CKAD & CKS \| T&C DOCS (Candidate Facing Resources)](https://docs.linuxfoundation.org/tc-docs/certification/faq-cka-ckad-cks)
 - [Introduction to Kubernetes (LFS158x) - Linux Foundation - Training](https://training.linuxfoundation.org/training/introduction-to-kubernetes/)
 - [I just passed the CKA!! Here are some tips (2022) : r/kubernetes](https://www.reddit.com/r/kubernetes/comments/rzpu5i/i_just_passed_the_cka_here_are_some_tips_2022/)
 - [CKA or CKAD which one is easier? : r/kubernetes](https://www.reddit.com/r/kubernetes/comments/re37bb/cka_or_ckad_which_one_is_easier/)
+- [How I passed Kubernetes KCNA, CKAD, CKA, and CKS exams. My experience. Exam tips and tricks.](https://gist.github.com/bakavets/05681473ca617579156de033ba40ee7a)
+- [Do I really need a CKA certification?: Naeem Gitonga](https://naeemgitonga.com/articles/do-i-need-a-cka)
+
+## Versioning
+
+*References*:
+
+- [kubernetes/CHANGELOG/CHANGELOG-1.28.md at master · kubernetes/kubernetes](https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG/CHANGELOG-1.28.md)
+- [Releases \| Kubernetes](https://kubernetes.io/releases/)
+- [Version Skew Policy \| Kubernetes](https://kubernetes.io/releases/version-skew-policy/)
 
 ## Installation
 
@@ -149,6 +165,27 @@ curl "${CURL_COMMON_OPTIONS[@]}" https://get.helm.sh/helm-v$HELM_VERSION-linux-a
 *References*:
 
 - [Kubernetes technologies: Kubeadm vs MiniKube, Kind and K3S](https://www.padok.fr/en/blog/minikube-kubeadm-kind-k3s)
+
+## `kubectl`
+
+*References*:
+
+- [Command line tool (kubectl) \| Kubernetes](https://kubernetes.io/docs/reference/kubectl/)
+- [kubectl Usage Conventions \| Kubernetes](https://kubernetes.io/docs/reference/kubectl/conventions/)
+- [Kubectl Reference Docs](https://kubernetes.io/docs/reference/generated/kubectl/kubectl-commands)
+
+## `kuztomize`
+
+*References*:
+
+- Official site: [Kustomize - Kubernetes native configuration management](https://kustomize.io/)
+- Official guide: [Kustomize \| SIG CLI](https://kubectl.docs.kubernetes.io/guides/introduction/kustomize/)
+- Official reference: [Kustomize \| SIG CLI](https://kubectl.docs.kubernetes.io/references/kustomize/)
+- [kubectl kustomize \| Kubernetes](https://kubernetes.io/docs/reference/kubectl/generated/kubectl_kustomize/)
+- [Declarative Management of Kubernetes Objects Using Kustomize \| Kubernetes](https://kubernetes.io/docs/tasks/manage-kubernetes-objects/kustomization/)
+- [Managing Secrets using Kustomize \| Kubernetes](https://kubernetes.io/docs/tasks/configmap-secret/managing-secret-using-kustomize/)
+- [Configure Kubernetes with Kustomize  \|  Config Sync  \|  Google Cloud](https://cloud.google.com/kubernetes-engine/enterprise/config-sync/docs/concepts/kustomize)
+- [A Quick Introduction to Kustomize \| by Neron Joseph \| Medium](https://neron-joseph.medium.com/a-quick-introduction-to-kustomize-172a6512beaf)
 
 ## Cluster status
 
@@ -244,10 +281,16 @@ kubectl cp SOME_NAMESPACE/SOME_POD:/tmp/bar /tmp/foo
 
 *References*:
 
-- [Helm \| Getting Started](https://helm.sh/docs/chart_template_guide/getting_started/)
+- [Helm \| Built-in Objects](https://helm.sh/docs/chart_template_guide/builtin_objects/)
 - [Helm \| Helm Dependency](https://helm.sh/docs/helm/helm_dependency/)
 - All about “Helm”- The Package Manager for Kubernetes:
   - [All about Helm- The Package Manager for Kubernetes Part 1 - BuildPiper](https://www.buildpiper.io/blogs/all-about-helm-the-package-manager-for-kubernetes-part-1/)
   - [All about Helm- The Package Manager for Kubernetes Part 2 - BuildPiper](https://www.buildpiper.io/blogs/all-about-helm-the-package-manager-for-kubernetes-part-2/)
 - [kubernetes - UPGRADE FAILED: another operation (install/upgrade/rollback) is in progress - Stack Overflow](https://stackoverflow.com/questions/71599858/upgrade-failed-another-operation-install-upgrade-rollback-is-in-progress)
 - [Helm 'delete' doesn't delete PVCs · Issue #5156 · helm/helm](https://github.com/helm/helm/issues/5156)
+- [Helm delete all releases - Stack Overflow](https://stackoverflow.com/questions/47817818/helm-delete-all-releases)
+
+### Troubleshooting releases
+
+- `helm get manifest RELEASE`
+- `helm install --debug --dry-run RELEASE ./CHART`

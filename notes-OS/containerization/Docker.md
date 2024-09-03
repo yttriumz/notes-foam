@@ -1,23 +1,24 @@
 ---
 sitemap:
-  lastmod: 2024-04-25 +0000
+  lastmod: 2024-08-07 +0000
   priority: 1.0
 ---
 
 # Docker Operations
 
-Last modified: 2024-04-25 +0000
+Last modified: 2024-08-07 +0000
 
 - [Installation](#installation)
 - [Interesting posts](#interesting-posts)
 - [Manage Docker as a non-root user (less secure)](#manage-docker-as-a-non-root-user-less-secure)
 - [Rootless mode (more secure)](#rootless-mode-more-secure)
-- [Configure automatically start behavior](#configure-automatically-start-behavior)
-- [Stop all containers](#stop-all-containers)
-- [Access containers' ports from the host](#access-containers-ports-from-the-host)
-- [Access host's ports in containers](#access-hosts-ports-in-containers)
 - [`docker save` \& `docker export`](#docker-save--docker-export)
 - [Run a local registry server (image server)](#run-a-local-registry-server-image-server)
+- [Configure automatically start behavior](#configure-automatically-start-behavior)
+- [Stop all containers](#stop-all-containers)
+- [View container logs](#view-container-logs)
+- [Access containers' ports from the host](#access-containers-ports-from-the-host)
+- [Access host's ports in containers](#access-hosts-ports-in-containers)
 - [Container networking](#container-networking)
   - [Default (bridge) network](#default-bridge-network)
   - [Custom bridge network](#custom-bridge-network)
@@ -31,6 +32,7 @@ Last modified: 2024-04-25 +0000
 ## Installation
 
 - openSUSE: [[openSUSE/dev-env#Docker]]
+- Ubuntu: [Install Docker Engine on Ubuntu \| Docker Docs](https://docs.docker.com/engine/install/ubuntu/)
 
 ## Interesting posts
 
@@ -43,6 +45,7 @@ Last modified: 2024-04-25 +0000
   - [Demystifying Containers – Part III: Container Images \| SUSE Communities](https://www.suse.com/c/demystifying-containers-part-iii-container-images/)
   - [Demystifying Containers – Part IV: Container Security \| SUSE Communities](https://www.suse.com/c/demystifying-containers-part-iv-container-security/)
 - [If Docker is not a light-weight Virtual Machine, how does it simulate a different OS? : r/docker](https://www.reddit.com/r/docker/comments/zwty5q/if_docker_is_not_a_lightweight_virtual_machine/)
+- [Verify repository client with certificates \| Docker Docs](https://docs.docker.com/engine/security/certificates/)
 
 ## Manage Docker as a non-root user (less secure)
 
@@ -65,83 +68,6 @@ Last modified: 2024-04-25 +0000
 *References*:
 
 - [Run the Docker daemon as a non-root user (Rootless mode)](https://docs.docker.com/engine/security/rootless/)
-
-## Configure automatically start behavior
-
-{% raw %}
-
-- Start containers automatically:
-
-  ```bash
-  docker run --restart no/on-failure/always/unless-stopped CONTAINER_NAME_OR_ID
-  ```
-
-- Check automatically start status:
-
-  ```bash
-  docker container ls -q | xargs docker container inspect --format '{{.Name}}: {{.HostConfig.RestartPolicy.Name}}'
-  ```
-
-- Change automatically start configs:
-
-  ```bash
-  docker update --restart no/on-failure/always/unless-stopped CONTAINER_NAME_OR_ID
-  ```
-
-{% endraw %}
-
-*References*:
-
-- [Start containers automatically \| Docker Docs](https://docs.docker.com/config/containers/start-containers-automatically/)
-- [configuration - which images dockerd starts automatically? - Server Fault](https://serverfault.com/questions/897463/which-images-dockerd-starts-automatically)
-
-## Stop all containers
-
-Use `docker stop $(docker ps -a -q)`.
-
-*References*:
-
-- [Stop and remove all docker containers](https://stackoverflow.com/questions/45357771/stop-and-remove-all-docker-containers)
-
-## Access containers' ports from the host
-
-{% raw %}
-
-Check a container's IP via the following commands:
-
-- For modern Docker engine:
-
-  ```bash
-  docker inspect -f "{{ .NetworkSettings.IPAddress }}" CONTAINER_NAME_OR_ID
-  ```
-
-- For older Docker engine (at least *20.10.10, build b485636*):
-
-  ```bash
-  docker inspect -f '{{ range.NetworkSettings.Networks }}{{ .IPAddress }}{{ end }}' CONTAINER_NAME_OR_ID
-  ```
-
-{% endraw %}
-
-- This is also doable:
-
-  ```bash
-  docker exec -it CONTAINER_NAME_OR_ID ip addr
-  docker exec -it CONTAINER_NAME_OR_ID ifconfig -a # If `ip` is not available.
-  ```
-
-*References*:
-
-- [How to SSH into a Running Docker Container and Run Commands](https://phoenixnap.com/kb/how-to-ssh-into-docker-container#ftoc-heading-2)
-- [How to SSH into a Docker Container \| phoenixNAP KB](https://phoenixnap.com/kb/how-to-ssh-into-docker-container#ftoc-heading-2)
-
-## Access host's ports in containers
-
-Check the `docker0` interface IP of the host via `ip addr show docker0`.
-
-*References*:
-
-- [How do I access the host port in a Docker container?](https://bright-softwares.com/blog/en/docker/how-do-i-access-the-host-port-in-a-docker-container#step-1-get-the-hosts-ip-address)
 
 ## `docker save` & `docker export`
 
@@ -182,6 +108,89 @@ Use `docker run -d -p 5000:5000 --restart=always --name registry registry:2`.
 
 - [Deploy a registry server \| Docker Docs](https://docs.docker.com/registry/deploying/#run-a-local-registry) (deprecated)
 - [Deploy a registry server \| CNCF Distribution](https://distribution.github.io/distribution/about/deploying/)
+
+## Configure automatically start behavior
+
+{% raw %}
+
+- Start containers automatically:
+
+  ```bash
+  docker run --restart no/on-failure/always/unless-stopped CONTAINER_NAME_OR_ID
+  ```
+
+- Check automatically start status:
+
+  ```bash
+  docker container ls -q | xargs docker container inspect --format '{{.Name}}: {{.HostConfig.RestartPolicy.Name}}'
+  ```
+
+- Change automatically start configs:
+
+  ```bash
+  docker update --restart no/on-failure/always/unless-stopped CONTAINER_NAME_OR_ID
+  ```
+
+{% endraw %}
+
+*References*:
+
+- [Start containers automatically \| Docker Docs](https://docs.docker.com/config/containers/start-containers-automatically/)
+- [configuration - which images dockerd starts automatically? - Server Fault](https://serverfault.com/questions/897463/which-images-dockerd-starts-automatically)
+
+## Stop all containers
+
+Use `docker stop $(docker ps -a -q)`.
+
+*References*:
+
+- [Stop and remove all docker containers](https://stackoverflow.com/questions/45357771/stop-and-remove-all-docker-containers)
+
+## View container logs
+
+*References*:
+
+- [View container logs \| Docker Docs](https://docs.docker.com/config/containers/logging/)
+
+## Access containers' ports from the host
+
+{% raw %}
+
+Check a container's IP via the following commands:
+
+- For modern Docker engine:
+
+  ```bash
+  docker inspect -f "{{ .NetworkSettings.IPAddress }}" CONTAINER_NAME_OR_ID
+  ```
+
+- For older Docker engine (at least *20.10.10, build b485636*):
+
+  ```bash
+  docker inspect -f '{{ range.NetworkSettings.Networks }}{{ .IPAddress }}{{ end }}' CONTAINER_NAME_OR_ID
+  ```
+
+{% endraw %}
+
+- This is also doable:
+
+  ```bash
+  docker exec -it CONTAINER_NAME_OR_ID ip addr
+  docker exec -it CONTAINER_NAME_OR_ID ifconfig -a # If `ip` is not available.
+  ```
+
+*References*:
+
+- [How to SSH into a Running Docker Container and Run Commands](https://phoenixnap.com/kb/how-to-ssh-into-docker-container#ftoc-heading-2)
+- [How to SSH into a Docker Container \| phoenixNAP KB](https://phoenixnap.com/kb/how-to-ssh-into-docker-container#ftoc-heading-2)
+
+## Access host's ports in containers
+
+Check the `docker0` interface IP of the host via `ip addr show docker0`.
+
+*References*:
+
+- [How do I access the host port in a Docker container?](https://bright-softwares.com/blog/en/docker/how-do-i-access-the-host-port-in-a-docker-container#step-1-get-the-hosts-ip-address)
 
 ## Container networking
 
@@ -317,5 +326,5 @@ docker run --net=none --name=SOME_CONTAINER registry.suse.com/bci/bci-busybox ip
 - [Connect to remote Docker over SSH](https://code.visualstudio.com/docs/containers/ssh)
 
 [//begin]: # "Autogenerated link references for markdown compatibility"
-[openSUSE/dev-env#Docker]: ../../notes-OS/Linux/openSUSE/dev-env.md "openSUSE Development Environment"
+[openSUSE/dev-env#Docker]: ../Linux/openSUSE/dev-env.md "openSUSE Development Environment"
 [//end]: # "Autogenerated link references"
