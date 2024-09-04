@@ -1,11 +1,13 @@
 ---
 type: index
 sitemap:
-  lastmod: 2024-06-17 +0000
+  lastmod: 2024-09-04 +0000
   priority: 0.5
 ---
 
 # Operating System
+
+Last modified: 2024-09-04 +0000
 
 Platforms:
 
@@ -20,9 +22,10 @@ Common Utilities:
 - [[search-engine]]
 - [[Firefox]]
 - [[VSCode]]
-- [[Neovim]]
-- [[Helix]]
+- [[Zed]]
+- [[Vim]]
 - [[Emacs]]
+- [[Helix]]
 - [[rime]]
 
 Miscellaneous:
@@ -44,9 +47,10 @@ Miscellaneous:
 [search-engine]: search-engine.md "Search Engine"
 [Firefox]: Firefox.md "Firefox"
 [VSCode]: VSCode.md "Visual Studio Code"
-[Neovim]: Neovim.md "Neovim"
-[Helix]: Helix.md "Helix"
+[Zed]: Zed.md "Zed Editor"
+[Vim]: Vim.md "Vim & Neovim"
 [Emacs]: Emacs.md "Emacs"
+[Helix]: Helix.md "Helix"
 [rime]: rime.md "RIME | 中州韻輸入法引擎"
 [fonts]: fonts.md "Fonts"
 [hard-disk]: hard-disk.md "Hard Disk Manipulation"

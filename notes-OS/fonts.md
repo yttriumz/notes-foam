@@ -1,11 +1,11 @@
 ---
 sitemap:
-  lastmod: 2024-05-02 +0000
+  lastmod: 2024-07-26 +0000
 ---
 
 # Fonts
 
-Last modified: 2024-05-02 +0000
+Last modified: 2024-07-26 +0000
 
 - [Interesting posts](#interesting-posts)
 - [Unicode](#unicode)
@@ -28,6 +28,7 @@ Last modified: 2024-05-02 +0000
   - [Source Han](#source-han)
   - [Sarasa Gothic](#sarasa-gothic)
   - [Microsoft Yahei UI](#microsoft-yahei-ui)
+- [For fun](#for-fun)
 
 ## Interesting posts
 
@@ -145,3 +146,7 @@ Installation: Download the *UiHC* and *MonoHC* from [the official site](https://
 - [Font 介紹 - HackMD](https://hackmd.io/@Raile/HJB3WXDV3)
 
 ### Microsoft Yahei UI
+
+## For fun
+
+- [Fonts](https://vicfieger.com/~font/menu.html)

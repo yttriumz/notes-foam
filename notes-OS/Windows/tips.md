@@ -1,4 +1,15 @@
+---
+sitemap:
+  lastmod: 2024-08-19 +0000
+---
+
 # Windows Usage Tips
+
+Last modified: 2024-08-19 +0000
+
+## Interesting posts
+
+- [PendMoves and MoveFile - Sysinternals \| Microsoft Learn](https://learn.microsoft.com/en-us/sysinternals/downloads/pendmoves)
 
 ## Remove recent files from WordPad
 

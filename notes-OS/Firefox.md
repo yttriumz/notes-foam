@@ -1,11 +1,11 @@
 ---
 sitemap:
-  lastmod: 2024-06-04 +0000
+  lastmod: 2024-08-02 +0000
 ---
 
 # Firefox
 
-Last modified: 2024-06-04 +0000
+Last modified: 2024-08-02 +0000
 
 ## Interesting posts
 
@@ -18,6 +18,7 @@ Last modified: 2024-06-04 +0000
 - [Introducing Total Cookie Protection in Standard Mode \| Firefox Help](https://support.mozilla.org/en-US/kb/introducing-total-cookie-protection-standard-mode?as=u&utm_source=inproduct#firefox:linux:fx126)
   - [Total Cookie Protection and website breakage FAQ \| Firefox Help](https://support.mozilla.org/en-US/kb/total-cookie-protection-and-website-breakage-faq)
 - [Disable the HTTP/3 (QUIC) Protocol](https://www.watchguard.com/help/docs/help-center/en-US/Content/en-US/Endpoint-Security/manage-settings/disable-http-3-protocol-for-web-access-control.html?TocPath=Troubleshooting%7C_____19)
+- [How do I get firefox to show the http:// in a web address? \| Firefox Support Forum \| Mozilla Support](https://support.mozilla.org/en-US/questions/881261)
 
 ## Disable middle click closing tabs
 

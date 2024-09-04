@@ -1,12 +1,12 @@
 ---
 sitemap:
-  lastmod: 2024-07-22 +0000
+  lastmod: 2024-08-30 +0000
   priority: 1.0
 ---
 
 # Tweak openSUSE Tumbleweed on ThinkPad P1 Gen2
 
-Last modified: 2024-07-22 +0000
+Last modified: 2024-08-30 +0000
 
 - [Interesting posts](#interesting-posts)
 - [Change hostname](#change-hostname)
@@ -493,6 +493,33 @@ See [[gaming]].
 ### HP
 
 It seems these packages provide drivers that cannot be searched by default. Maybe installing the exact package(s) that provide drivers is sufficient.
+
+```log
+az@az-P1-openSUSE:~> sz in hplip
+Loading repository data...
+Reading installed packages...
+Resolving package dependencies...
+
+The following 2 recommended packages were automatically selected:
+  libqt5-qtconnectivity-tools python311-reportlab
+
+The following 23 NEW packages are going to be installed:
+  hplip hplip-hpijs hplip-sane hplip-udev-rules libQt5Bluetooth5 libQt5Bluetooth5-imports libQt5Designer5 libQt5Help5
+  libQt5Location5 libQt5Multimedia5 libQt5Nfc5 libQt5Nfc5-imports libQt5OpenGL5 libQt5PositioningQuick5
+  libqt5-qtconnectivity-tools libQt5SerialPort5 libQt5WebSockets5 libQt5WebSockets5-imports python311-olefile python311-Pillow
+  python311-qt5 python311-qt5-sip python311-reportlab
+
+23 new packages to install.
+
+Package download size:    37.4 MiB
+
+Package install size change:
+              |      91.8 MiB  required by to be installed packages
+    91.8 MiB  |  -      0 B    released by to be removed packages
+
+Backend:  classic_rpmtrans
+Continue? [y/n/v/...? shows all options] (y): y
+```
 
 ```log
 ✗ sz install hplip

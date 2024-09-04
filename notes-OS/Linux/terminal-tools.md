@@ -1,11 +1,11 @@
 ---
 sitemap:
-  lastmod: 2024-08-28 +0000
+  lastmod: 2024-09-02 +0000
 ---
 
 # Terminal Related Tools
 
-Last modified: 2024-08-28 +0000
+Last modified: 2024-09-02 +0000
 
 - [tmux](#tmux)
 - [Zellij](#zellij)
@@ -51,6 +51,7 @@ From GPT-4o-Mini:
 - [A beginner's guide to tmux \| Enable Sysadmin](https://www.redhat.com/sysadmin/introduction-tmux-linux)
 - [tmux - ArchWiki](https://wiki.archlinux.org/title/tmux)
 - [tmux(1) - Linux manual page](https://man7.org/linux/man-pages/man1/tmux.1.html)
+- [tmux(1) - OpenBSD manual pages](http://man.openbsd.org/OpenBSD-current/man1/tmux.1)
 - [How can I search within the output buffer of a tmux shell? - Super User](https://superuser.com/questions/231002/how-can-i-search-within-the-output-buffer-of-a-tmux-shell)
 - [vim - How do I cycle through panes inside a window in tmux like in screen? - Unix & Linux Stack Exchange](https://unix.stackexchange.com/questions/53154/how-do-i-cycle-through-panes-inside-a-window-in-tmux-like-in-screen)
 - [Is it possible to send input to a tmux session without connecting to it? - Unix & Linux Stack Exchange](https://unix.stackexchange.com/questions/409861/is-it-possible-to-send-input-to-a-tmux-session-without-connecting-to-it)
@@ -58,6 +59,7 @@ From GPT-4o-Mini:
 - [tmux send-keys syntax - Stack Overflow](https://stackoverflow.com/questions/19313807/tmux-send-keys-syntax)
 - [cron - How to send a CTRL+C to a tmux pane using crontab? - Unix & Linux Stack Exchange](https://unix.stackexchange.com/questions/614197/how-to-send-a-ctrlc-to-a-tmux-pane-using-crontab)
 - [bash - Run command in new background tmux window and wait for process to finish - Stack Overflow](https://stackoverflow.com/questions/60365501/run-command-in-new-background-tmux-window-and-wait-for-process-to-finish)
+- [Getting command running in a tmux pane - Stack Overflow](https://stackoverflow.com/questions/46134090/getting-command-running-in-a-tmux-pane)
 - [Wait for program(s) in tmux panes to end… – select * from depesz;](https://www.depesz.com/2019/05/13/wait-for-programs-in-tmux-panes-to-end/)
 
 ## Zellij
