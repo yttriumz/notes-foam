@@ -1,11 +1,11 @@
 ---
 sitemap:
-  lastmod: 2024-08-28 +0000
+  lastmod: 2024-09-09 +0000
 ---
 
 # Command-line Tools
 
-Last modified: 2024-08-28 +0000
+Last modified: 2024-09-09 +0000
 
 - [Interesting posts](#interesting-posts)
 - [Text processing](#text-processing)

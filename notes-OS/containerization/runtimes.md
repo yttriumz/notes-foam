@@ -1,21 +1,35 @@
-# containerd
+---
+sitemap:
+  lastmod: 2024-09-11 +0000
+---
 
-Last modified: 2024/03/06 UTC
+# Container Runtimes
+
+Last modified: 2024-09-11 +0000
 
 - [Interesting posts](#interesting-posts)
-- [Installation](#installation)
-- [Manage images](#manage-images)
-- [Networking](#networking)
+- [containerd](#containerd)
+    - [Installation](#installation)
+    - [Manage images](#manage-images)
+    - [Networking](#networking)
+- [crun](#crun)
 
 ## Interesting posts
 
+- [What Is a Standard Container: Diving Into the OCI Runtime Spec](https://iximiuz.com/en/posts/oci-containers/)
+- [Container Runtimes \| Kubernetes](https://kubernetes.io/docs/setup/production-environment/container-runtimes/)
+- [Chapter 6. Selecting a container runtime \| Red Hat Product Documentation](https://docs.redhat.com/en/documentation/red_hat_enterprise_linux/8/html/building_running_and_managing_containers/selecting-a-container-runtime_building-running-and-managing-containers#selecting-a-container-runtime_building-running-and-managing-containers)
+- [Runc vs Crun in containers world: \| by Mehdi Taleghani \| Medium](https://taleghani.medium.com/runc-vs-crun-in-containers-world-62b8143fd9d3)
+- [Docker vs Containerd vs RunC. Runc and Containerd are both… \| by Bibhu Mishra \| Medium](https://medium.com/@bibhup_mishra/docker-vs-containerd-vs-runc-c39ffd4156fb)
+- [The differences between Docker, containerd, CRI-O and runc \| by Vineet Kumar \| Medium](https://vineetcic.medium.com/the-differences-between-docker-containerd-cri-o-and-runc-a93ae4c9fdac)
+
+## containerd
+
 - [containerd – An industry-standard container runtime with an emphasis on simplicity, robustness and portability](https://containerd.io/downloads/)
   - [Release: add static binaries · Issue #7296 · containerd/containerd](https://github.com/containerd/containerd/issues/7296)
-- [What Is a Standard Container: Diving Into the OCI Runtime Spec](https://iximiuz.com/en/posts/oci-containers/)
 - [nerdctl: Docker-compatible CLI for contaiNERD \| by Akihiro Suda \| nttlabs \| Medium](https://medium.com/nttlabs/nerdctl-359311b32d0e)
-- [Docker vs Containerd vs RunC. Runc and Containerd are both… \| by Bibhu Mishra \| Medium](https://medium.com/@bibhup_mishra/docker-vs-containerd-vs-runc-c39ffd4156fb)
 
-## Installation
+### Installation
 
 ```bash
 # Uninstall all conflicting packages.
@@ -94,15 +108,21 @@ curl "${CURL_COMMON_OPTIONS[@]}" https://github.com/containerd/containerd/releas
 - [How to Install Containerd Container Runtime on Ubuntu 22.04](https://www.howtoforge.com/how-to-install-containerd-container-runtime-on-ubuntu-22-04/)
 - [How to Install Containerd on Ubuntu 22.04 / Ubuntu 20.04 \| ITzGeek](https://www.itzgeek.com/how-tos/linux/ubuntu-how-tos/install-containerd-on-ubuntu-22-04.html)
 
-## Manage images
+### Manage images
 
 *References*:
 
 - [How to work with container images using ctr](https://labs.iximiuz.com/courses/containerd-cli/ctr/image-management)
 - [Manually Loading Container Images with containerD - Scott's Weblog - The weblog of an IT pro focusing on cloud computing, Kubernetes, Linux, containers, and networking](https://blog.scottlowe.org/2020/01/25/manually-loading-container-images-with-containerd/)
 
-## Networking
+### Networking
 
 Challenges to review:
 
 - [Access a Docker Container With No Published Ports \| Challenge](https://labs.iximiuz.com/challenges/access-docker-container-with-no-published-ports)
+
+## crun
+
+*References*:
+
+- [An introduction to crun, a fast and low-memory footprint container runtime \| Enable Sysadmin](https://www.redhat.com/sysadmin/introduction-crun)

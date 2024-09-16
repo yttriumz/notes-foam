@@ -1,12 +1,12 @@
 ---
 sitemap:
-  lastmod: 2024-08-30 +0000
+  lastmod: 2024-09-10 +0000
   priority: 1.0
 ---
 
 # Tweak openSUSE Tumbleweed on ThinkPad P1 Gen2
 
-Last modified: 2024-08-30 +0000
+Last modified: 2024-09-10 +0000
 
 - [Interesting posts](#interesting-posts)
 - [Change hostname](#change-hostname)
@@ -240,6 +240,7 @@ See [[terminal-tools#Zellij]].
 
 - https://opensuse.github.io/openSUSE-docs-revamped-temp/hybrid_graphics/
 - [SDB:NVIDIA drivers](https://en.opensuse.org/SDB:NVIDIA_drivers)
+- [SDB:NVIDIA the hard way - openSUSE Wiki](https://en.opensuse.org/SDB:NVIDIA_the_hard_way)
 - [SDB:NVIDIA troubleshooting](https://en.opensuse.org/SDB:NVIDIA_troubleshooting)
 - [SDB:NVIDIA SUSE Prime](https://en.opensuse.org/SDB:NVIDIA_SUSE_Prime)
 - [7.4 Switching between Intel and NVIDIA Optimus GPUs with SUSE Prime](https://doc.opensuse.org/documentation/leap/reference/single-html/book-reference/index.html#sec-gui-desktop-suse-prime)

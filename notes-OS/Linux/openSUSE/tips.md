@@ -1,11 +1,23 @@
+---
+sitemap:
+  lastmod: 2024-09-10 +0000
+---
+
 # openSUSE Usage Tips
 
-Last modified: 2024-03-28 UTC
+Last modified: 2024-09-10 +0000
 
+- [Multikernel](#multikernel)
 - [Switch runlevel](#switch-runlevel)
 - [System frozen](#system-frozen)
 - [Check x86-64 microarchitecture levels](#check-x86-64-microarchitecture-levels)
 - [Connect Android phones](#connect-android-phones)
+
+## Multikernel
+
+*References*:
+
+- [KERNEL UPDATE - DISABLE/LOCK : r/openSUSE](https://www.reddit.com/r/openSUSE/comments/151aii7/kernel_update_disablelock/)
 
 ## Switch runlevel
 

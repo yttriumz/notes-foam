@@ -1,11 +1,11 @@
 ---
 sitemap:
-  lastmod: 2024-04-17 +0000
+  lastmod: 2024-09-11 +0000
 ---
 
 # Wayland
 
-Last modified: 2024-04-17 +0000
+Last modified: 2024-09-11 +0000
 
 ## Interesting posts
 
@@ -14,6 +14,7 @@ Last modified: 2024-04-17 +0000
 - [xorg - How can I tell if an application is using XWayland? - Ask Ubuntu](https://askubuntu.com/questions/1393618/how-can-i-tell-if-an-application-is-using-xwayland)
 - [On Abandoning the X Server \| Hacker News](https://news.ycombinator.com/item?id=24920183)
 - [Wayland is just bad and needs to be scrapped and rewritten. Can we have devs from KDE/GNOME/XFCE come together to make something better and new? : r/kde](https://www.reddit.com/r/kde/comments/176jzrc/wayland_is_just_bad_and_needs_to_be_scrapped_and/)
+- [Wayland + kwin + SDDM + multiple monitors : r/kde](https://www.reddit.com/r/kde/comments/1bl2re8/wayland_kwin_sddm_multiple_monitors/)
 
 ## Fcitx 5
 

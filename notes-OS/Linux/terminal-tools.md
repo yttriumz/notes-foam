@@ -1,11 +1,11 @@
 ---
 sitemap:
-  lastmod: 2024-09-02 +0000
+  lastmod: 2024-09-09 +0000
 ---
 
 # Terminal Related Tools
 
-Last modified: 2024-09-02 +0000
+Last modified: 2024-09-09 +0000
 
 - [tmux](#tmux)
 - [Zellij](#zellij)
@@ -61,6 +61,8 @@ From GPT-4o-Mini:
 - [bash - Run command in new background tmux window and wait for process to finish - Stack Overflow](https://stackoverflow.com/questions/60365501/run-command-in-new-background-tmux-window-and-wait-for-process-to-finish)
 - [Getting command running in a tmux pane - Stack Overflow](https://stackoverflow.com/questions/46134090/getting-command-running-in-a-tmux-pane)
 - [Wait for program(s) in tmux panes to end… – select * from depesz;](https://www.depesz.com/2019/05/13/wait-for-programs-in-tmux-panes-to-end/)
+- [unix - How to close a tmux session - Super User](https://superuser.com/questions/777269/how-to-close-a-tmux-session)
+- [Super Guide to the split-window tmux Subcommand (and Beyond)](https://gist.github.com/sdondley/b01cc5bb1169c8c83401e438a652b84e)
 
 ## Zellij
 

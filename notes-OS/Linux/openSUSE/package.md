@@ -1,12 +1,12 @@
 ---
 sitemap:
-  lastmod: 2024-05-26 +0000
+  lastmod: 2024-09-10 +0000
   priority: 1.0
 ---
 
 # openSUSE Package Management
 
-Last modified: 2024-05-26 +0000
+Last modified: 2024-09-10 +0000
 
 **NOTE**: This note assumes Tumbleweed by default, but most content should also apply to Leap. Some of the existing differences between Tumbleweed and Leap are mentioned in the corresponding instructions.
 
@@ -15,7 +15,7 @@ Last modified: 2024-05-26 +0000
   - [Commonly used repositories](#commonly-used-repositories)
     - [Packman (essentials) and NVidia](#packman-essentials-and-nvidia)
     - [VSCode](#vscode)
-    - [Container](#container)
+    - [Containerization](#containerization)
     - [NVIDIA Container Toolkit](#nvidia-container-toolkit)
     - [CUDA](#cuda)
     - [M17N (Multilingualization)](#m17n-multilingualization)
@@ -93,7 +93,7 @@ Open *YaST Software Repositories*, select *Add > Community Repositories*, and ch
 
 - [Wiki](https://en.opensuse.org/Visual_Studio_Code#Install)
 
-#### Container
+#### Containerization
 
 Add *Virtualization:containers* repository via the following commands:
 
@@ -108,6 +108,8 @@ zypper addrepo https://download.opensuse.org/repositories/Virtualization:/contai
 *References*:
 
 - [docker from Virtualization:containers project](https://software.opensuse.org/download.html?project=Virtualization%3Acontainers&package=docker#manualopenSUSE)
+- [Podman on openSUSE \| SUSE Communities](https://www.suse.com/c/podman-on-opensuse/)
+- [SLE Micro 5.3 \| Podman Guide](https://documentation.suse.com/sle-micro/5.3/single-html/SLE-Micro-podman/)
 
 #### NVIDIA Container Toolkit
 

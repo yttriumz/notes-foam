@@ -1,13 +1,16 @@
 ---
 sitemap:
-  lastmod: 2024-08-28 +0000
+  lastmod: 2024-09-09 +0000
 ---
 
 # Text Processing on Linux
 
 - [Interesting posts](#interesting-posts)
+- [`awk`](#awk)
+- [`sed`](#sed)
 - [`grep`](#grep)
-- [ripgrep (`rg`) (Rust)](#ripgrep-rg-rust)
+- [ripgrep (Rust)](#ripgrep-rust)
+- [`wc`](#wc)
 
 ## Interesting posts
 
@@ -50,6 +53,23 @@ sitemap:
   >
   > Please note that these commands are more complex and powerful than `cat` and the `<` operator. If all you need is to read a file's content, `cat` or the `<` operator are the simplest and most efficient options. The other commands are useful if you need to process the file's content in some way, such as filtering or transforming the text.
 
+## `awk`
+
+*References*:
+
+- [The GNU Awk User’s Guide](https://www.gnu.org/software/gawk/manual/gawk.html)
+  - [String Functions (The GNU Awk User’s Guide)](https://www.gnu.org/software/gawk/manual/html_node/String-Functions.html)
+  - [For Statement (The GNU Awk User’s Guide)](https://www.gnu.org/software/gawk/manual/html_node/For-Statement.html)
+  - [Arrays Summary (The GNU Awk User’s Guide)](https://www.gnu.org/software/gawk/manual/html_node/Arrays-Summary.html)
+- [bash - Writing to multiple files with awk - Stack Overflow](https://stackoverflow.com/questions/26343823/writing-to-multiple-files-with-awk)
+
+## `sed`
+
+*References*:
+
+- [scripting - How can I remove the first line of a text file using bash/sed script? - Stack Overflow](https://stackoverflow.com/questions/339483/how-can-i-remove-the-first-line-of-a-text-file-using-bash-sed-script)
+- [Remove First n Lines of a Large Text File - Ask Ubuntu](https://askubuntu.com/questions/410196/remove-first-n-lines-of-a-large-text-file)
+
 ## `grep`
 
 *References*:
@@ -59,9 +79,15 @@ sitemap:
 - [Can grep show only words that match search pattern? - Stack Overflow](https://stackoverflow.com/questions/1546711/can-grep-show-only-words-that-match-search-pattern)
 - [linux - How to 'grep' a continuous stream? - Stack Overflow](https://stackoverflow.com/questions/7161821/how-to-grep-a-continuous-stream)
 
-## ripgrep (`rg`) (Rust)
+## ripgrep (Rust)
 
 *References*:
 
 - [ripgrep recursively searches directories for a regex pattern while respecting your gitignore](https://github.com/BurntSushi/ripgrep)
 - [ripgrep is faster than {grep, ag, git grep, ucg, pt, sift}](https://blog.burntsushi.net/ripgrep/)
+
+## `wc`
+
+*References*:
+
+- [bug#24532: GNU wc --lines doesn't report last line when that doesn't end](https://lists.gnu.org/archive/html/bug-coreutils/2016-09/msg00035.html)
