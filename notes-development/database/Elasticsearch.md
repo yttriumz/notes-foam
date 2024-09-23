@@ -1,11 +1,11 @@
 ---
 sitemap:
-  lastmod: 2024-07-17 +0000
+  lastmod: 2024-09-23 +0000
 ---
 
 # Elasticsearch & OpenSearch
 
-Last modified: 2024-07-17 +0000
+Last modified: 2024-09-23 +0000
 
 - [Interesting posts](#interesting-posts)
 - [Kibana/OpenSearch Dashboards](#kibanaopensearch-dashboards)
@@ -21,11 +21,16 @@ Last modified: 2024-07-17 +0000
   > Note that while the OpenSearch API is backwards compatible, some clients or tools may include code, such as version checks, that may cause the client or tool to not work with OpenSearch.
 - [ElectricBrain \| OpenSearch VS ElasticSearch](https://www.electricbrain.com.au/pages/analytics/opensearch-vs-elasticsearch.php)
 - [Frequently Asked Questions · OpenSearch](https://opensearch.org/faq/)
+- [Meilisearch vs Elasticsearch](https://blog.meilisearch.com/meilisearch-vs-elasticsearch/)
 - [Compatibility matrices for Logstash and Beats](https://opensearch.org/docs/latest/tools/#compatibility-matrices)
 - [OpenSearch Shards & Replicas: Explanations, Optimization & More](https://opster.com/blogs/opensearch-shards-and-replicas/)
 - [Version history - OpenSearch documentation](https://opensearch.org/docs/2.11/version-history/)
 - [Check OpenSearch Version: A How-to Guide](https://opster.com/guides/opensearch/opensearch-operations/checking-opensearch-version/)
 - [Efficient Duplicate Prevention for Event-Based Data in Elasticsearch \| Elastic Blog](https://www.elastic.co/blog/efficient-duplicate-prevention-for-event-based-data-in-elasticsearch)
+- [Elastic integrations \| Documentation](https://www.elastic.co/docs/current/integrations)
+- [Elasticsearch is open source, again \| Hacker News](https://news.ycombinator.com/item?id=41394797)
+- [Elasticsearch is open source, again : r/programming](https://www.reddit.com/r/programming/comments/1f4ealr/elasticsearch_is_open_source_again/)
+- [Prometheus vs Elasticsearch stack - Key concepts, features, and differences \| SigNoz](https://signoz.io/blog/prometheus-vs-elasticsearch/)
 
 ## Kibana/OpenSearch Dashboards
 
