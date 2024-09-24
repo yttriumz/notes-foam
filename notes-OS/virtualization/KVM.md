@@ -1,13 +1,14 @@
 ---
 sitemap:
-  lastmod: 2024-06-14 +0000
+  lastmod: 2024-09-23 +0000
   priority: 1.0
 ---
 
 # Kernel-based Virtual Machine
 
-Last modified: 2024-06-14 +0000
+Last modified: 2024-09-23 +0000
 
+- [Interesting posts](#interesting-posts)
 - [Installation](#installation)
 - [Start service](#start-service)
 - [Virtual network](#virtual-network)
@@ -25,7 +26,6 @@ Last modified: 2024-06-14 +0000
 - [Manage snapshots](#manage-snapshots)
 - [Manage VM storage](#manage-vm-storage)
 - [Looking Glass](#looking-glass)
-  - [Interesting posts](#interesting-posts)
   - [virtio and SPICE drivers (on guest)](#virtio-and-spice-drivers-on-guest)
   - [IVSHMEM (on host)](#ivshmem-on-host)
   - [Mouse and keyboard (on host)](#mouse-and-keyboard-on-host)
@@ -35,6 +35,10 @@ Last modified: 2024-06-14 +0000
   - [Screen tearing](#screen-tearing)
     - [KDE compositor (on host) (Plasma 5 on X11)](#kde-compositor-on-host-plasma-5-on-x11)
     - [TearFree (on host)](#tearfree-on-host)
+
+## Interesting posts
+
+- [如何在Linux系統跑Windows軟體，三種方法不同的思路 · Ivon的部落格](https://ivonblog.com/posts/how-to-run-windows-programs-on-linux/)
 
 ## Installation
 
@@ -256,10 +260,11 @@ Note that at the time of writing (*Tumbleweed 20230727, libvirt 9.5.0-2.1*), clo
 
 ## Looking Glass
 
-### Interesting posts
+*References*:
 
-- [如何在Linux系統安裝Windows 11虛擬機(QEMU/KVM) ＋ 常用技巧](https://ivonblog.com/posts/install-windows-11-qemu-kvm-on-linux/)
+- [【圖解】如何在Linux系統安裝Windows 11虛擬機(QEMU/KVM) ＋ 常用技巧 · Ivon的部落格](https://ivonblog.com/posts/install-windows-11-qemu-kvm-on-linux/)
 - [如何在Windows虛擬機玩遊戲 ～ Linux QEMU/KVM雙GPU直通 ＋ Looking Glass安裝過程](https://ivonblog.com/posts/qemu-kvm-vfio-gaming/)
+- [QEMU/KVM虛擬機繞過遊戲Easy Anti-Cheat的方法，隱藏KVM狀態 · Ivon的部落格](https://ivonblog.com/posts/qemu-kvm-bypass-easy-anti-cheat/)
 
 ### virtio and SPICE drivers (on guest)
 

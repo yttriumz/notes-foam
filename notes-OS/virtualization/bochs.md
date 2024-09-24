@@ -1,9 +1,19 @@
+---
+sitemap:
+  lastmod: 2024-09-23 +0000
+---
+
 # bochs
 
-Last modified: 2024-06-14 +0000
+Last modified: 2024-09-23 +0000
 
+- [Interesting posts](#interesting-posts)
 - [Installation](#installation)
 - [Capture and release mouse](#capture-and-release-mouse)
+
+## Interesting posts
+
+- [bochs: The Open Source IA-32 Emulation Project (Home Page)](https://bochs.sourceforge.io/)
 
 ## Installation
 
