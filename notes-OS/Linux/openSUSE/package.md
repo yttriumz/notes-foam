@@ -1,12 +1,12 @@
 ---
 sitemap:
-  lastmod: 2024-09-10 +0000
+  lastmod: 2024-09-16 +0000
   priority: 1.0
 ---
 
 # openSUSE Package Management
 
-Last modified: 2024-09-10 +0000
+Last modified: 2024-09-16 +0000
 
 **NOTE**: This note assumes Tumbleweed by default, but most content should also apply to Leap. Some of the existing differences between Tumbleweed and Leap are mentioned in the corresponding instructions.
 
@@ -384,6 +384,10 @@ Download from [the official site](https://im.qq.com/linuxqq/index.shtml).
 
 - At the time of updating (*Tumbleweed 20231006, linuxqq 3.2.1_17153-1*), during installation, zypper will report "nothing provides 'libuuid' needed". I just ignored it.
 
+*References*:
+
+- [xiyuesaves/LiteLoaderQQNT-lite_tools: LiteLoaderQQNT 插件 - 轻量工具箱 —— 轻量 · 优雅 · 高效 · 福瑞](https://github.com/xiyuesaves/LiteLoaderQQNT-lite_tools)
+
 #### WeChat
 
 *References*:
@@ -471,6 +475,7 @@ See [[Flatpak]].
 *References*:
 
 - [Frequently Asked Questions — AppImage documentation](https://docs.appimage.org/user-guide/faq.html#question-where-do-i-store-my-appimages)
+- [How can I examine the files inside an Appimage? - Ask Ubuntu](https://askubuntu.com/questions/1231597/how-can-i-examine-the-files-inside-an-appimage)
 
 ## Become a Packager
 

@@ -1,11 +1,11 @@
 ---
 sitemap:
-  lastmod: 2024-09-11 +0000
+  lastmod: 2024-09-23 +0000
 ---
 
 # Wayland
 
-Last modified: 2024-09-11 +0000
+Last modified: 2024-09-23 +0000
 
 ## Interesting posts
 
@@ -15,6 +15,7 @@ Last modified: 2024-09-11 +0000
 - [On Abandoning the X Server \| Hacker News](https://news.ycombinator.com/item?id=24920183)
 - [Wayland is just bad and needs to be scrapped and rewritten. Can we have devs from KDE/GNOME/XFCE come together to make something better and new? : r/kde](https://www.reddit.com/r/kde/comments/176jzrc/wayland_is_just_bad_and_needs_to_be_scrapped_and/)
 - [Wayland + kwin + SDDM + multiple monitors : r/kde](https://www.reddit.com/r/kde/comments/1bl2re8/wayland_kwin_sddm_multiple_monitors/)
+- [Explicit sync merged in Wayland: why it is important. : r/linux](https://www.reddit.com/r/linux/comments/1byauyb/explicit_sync_merged_in_wayland_why_it_is/)
 
 ## Fcitx 5
 

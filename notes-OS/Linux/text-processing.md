@@ -1,6 +1,6 @@
 ---
 sitemap:
-  lastmod: 2024-09-09 +0000
+  lastmod: 2024-09-23 +0000
 ---
 
 # Text Processing on Linux
@@ -11,6 +11,7 @@ sitemap:
 - [`grep`](#grep)
 - [ripgrep (Rust)](#ripgrep-rust)
 - [`wc`](#wc)
+- [`iconv`](#iconv)
 
 ## Interesting posts
 
@@ -91,3 +92,9 @@ sitemap:
 *References*:
 
 - [bug#24532: GNU wc --lines doesn't report last line when that doesn't end](https://lists.gnu.org/archive/html/bug-coreutils/2016-09/msg00035.html)
+
+## `iconv`
+
+*References*:
+
+- [libiconv - GNU Project - Free Software Foundation (FSF)](https://www.gnu.org/software/libiconv/)

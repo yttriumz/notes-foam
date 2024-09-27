@@ -1,11 +1,11 @@
 ---
 sitemap:
-  lastmod: 2024-08-19 +0000
+  lastmod: 2024-09-27 +0000
 ---
 
 # Bash Usage
 
-Last modified: 2024-08-19 +0000
+Last modified: 2024-09-27 +0000
 
 - [Interesting posts](#interesting-posts)
 - [Configuration files](#configuration-files)
@@ -20,6 +20,7 @@ Last modified: 2024-08-19 +0000
 ## Interesting posts
 
 - [What does the 'rc' in `.bashrc`, etc. mean? \[duplicate\]](https://superuser.com/questions/173165/what-does-the-rc-in-bashrc-etc-mean)
+- [bash - What are the differences between interactive, non-interactive, login, and non-login shells? - Unix & Linux Stack Exchange](https://unix.stackexchange.com/questions/50665/what-are-the-differences-between-interactive-non-interactive-login-and-non-lo)
 
 ## Configuration files
 

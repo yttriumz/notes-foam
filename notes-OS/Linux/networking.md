@@ -1,11 +1,11 @@
 ---
 sitemap:
-  lastmod: 2024-08-28 +0000
+  lastmod: 2024-09-23 +0000
 ---
 
-# Networking Tools & Operations
+# Networking
 
-Last modified: 2024-08-28 +0000
+Last modified: 2024-09-23 +0000
 
 - [Interesting posts](#interesting-posts)
 - [Certificates](#certificates)
@@ -15,12 +15,12 @@ Last modified: 2024-08-28 +0000
 - [Web debugging proxies](#web-debugging-proxies)
 - [Check open ports](#check-open-ports)
 - [`ip route`](#ip-route)
-- [Create Hotspot](#create-hotspot)
-   - [Use `linux-wifi-hotspot`](#use-linux-wifi-hotspot)
-      - [Manually install](#manually-install)
 
 ## Interesting posts
 
+- [About Networking \| Calico Documentation](https://docs.tigera.io/calico/latest/about/kubernetes-training/about-networking)
+- [Glossary](https://www.networxsecurity.org/members-area/glossary.html)
+- [Zero Trust security \| What is a Zero Trust network? \| Cloudflare](https://www.cloudflare.com/learning/security/glossary/what-is-zero-trust/)
 - [Masquerading and firewalls \| Security and Hardening Guide \| openSUSE Leap 15.6](https://doc.opensuse.org/documentation/leap/security/html/book-security/cha-security-firewall.html)
 - [iptables: The two variants and their relationship with nftables \| Red Hat Developer](https://developers.redhat.com/blog/2020/08/18/iptables-the-two-variants-and-their-relationship-with-nftables#the_kernel_api)
 - [iptables and nftables - English / Network/Internet - openSUSE Forums](https://forums.opensuse.org/t/iptables-and-nftables/147817)
@@ -28,6 +28,9 @@ Last modified: 2024-08-28 +0000
 - [Stop using Telnet to test ports \| Enable Sysadmin](https://www.redhat.com/sysadmin/stop-using-telnet-test-port)
 - [How to find your IP address in Linux \| Opensource.com](https://opensource.com/article/18/5/how-find-ip-address-linux)
 - [Traceroute vs. tracepath: What's the difference? \| Enable Sysadmin](https://www.redhat.com/sysadmin/traceroute-tracepath-network-troubleshooting)
+- [好用的開源內網穿透軟體比較，ZeroTier與Tailscale · Ivon的部落格](https://ivonblog.com/posts/foss-nat-traversal-solutions/)
+- [What are the differences between lsof and netstat on linux? - Stack Overflow](https://stackoverflow.com/questions/49381124/what-are-the-differences-between-lsof-and-netstat-on-linux)
+- [networking - Why do nmap, ss (netscan?) and lsof give different results? - Unix & Linux Stack Exchange](https://unix.stackexchange.com/questions/652556/why-do-nmap-ss-netscan-and-lsof-give-different-results)
 
 ## Certificates
 
@@ -128,29 +131,3 @@ Use `ss -tupln`.
 
 - [What's the meaning of `linkdown` and `onlink` in Linux Route?](https://unix.stackexchange.com/questions/579087/whats-the-meaning-of-linkdown-and-onlink-in-linux-route)
 - [Interface following a link](https://serverfault.com/questions/1079631/interface-following-a-link)
-
-## Create Hotspot
-
-### Use `linux-wifi-hotspot`
-
-#### Manually install
-
-- openSUSE Tumbleweed:
-
-  1. Install dependencies via the following commands:
-
-     ```bash
-     zypper install bash procps hostapd iproute2 iw haveged dnsmasq iptables
-     ```
-
-     *References*:
-
-     - https://github.com/lakinduakash/linux-wifi-hotspot/tree/master#dependencies
-
-  2. Install dependencies for building via the following commands:
-
-     ```bash
-     zypper install qrencode-devel
-     ```
-
-  3. [ ] todo
