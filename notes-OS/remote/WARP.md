@@ -1,11 +1,11 @@
 ---
 sitemap:
-  lastmod: 2024-06-24 +0000
+  lastmod: 2024-09-26 +0000
 ---
 
 # Cloudflare WARP
 
-Last modified: 2024-06-24 +0000
+Last modified: 2024-09-26 +0000
 
 - [Interesting posts](#interesting-posts)
 - [Installation](#installation)
@@ -25,6 +25,11 @@ Last modified: 2024-06-24 +0000
 - [Android使用WARP](https://blog.tanglu.me/WARP-for-Android/)
 - [CloudFlare WARP 官方客户端详细使用教程 （持续更新）](https://blog.misaka.rest/2023/02/08/cf-warp/)
 - [可解锁 ChatGPT 的便宜 VPS 推荐(2024年) - P3TERX ZONE](https://p3terx.com/archives/cheap-vps-recommended-chatgpt.html)
+- MASQUE:
+  - [Device tunnel protocol \| WARP settings \| Cloudflare Zero Trust docs](https://developers.cloudflare.com/cloudflare-one/connections/connect-devices/warp/configure-warp/warp-settings/#device-tunnel-protocol)
+  - [各平台Cloudflare WARP 支持MASQUE协议指南-出家如初，成佛有余](https://www.yeeach.com/168/)
+  - [特大喜讯：Cloudflare WARP+ 又能用了！2024年9月22日，新增MASQUE协议 \| BKT的小站](https://www.500599.xyz/posts/cf/warpplus-masque/)
+- [真的安全？Cloudflare Worker部署VLESS翻牆代理的原理和proxyIP細節研究 - by Upsangel](https://upsangel.com/security/vpn/cloudflare-worker-vless%E7%BF%BB%E7%89%86%E4%BB%A3%E7%90%86%E5%8E%9F%E7%90%86-proxyip%E7%B4%B0%E7%AF%80%E7%A0%94%E7%A9%B6/)
 
 ## Installation
 

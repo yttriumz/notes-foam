@@ -60,6 +60,8 @@ Tutorials:
 Miscellaneous:
 
 - [unix - What are file descriptors, explained in simple terms? - Stack Overflow](https://stackoverflow.com/questions/5256599/what-are-file-descriptors-explained-in-simple-terms)
+  - [What is a File Descriptor & How to Close It \| Lenovo US](https://www.lenovo.com/us/en/glossary/file-descriptor/)
+  - [Here is all you need to know about File Descriptors in linux \| by Ishan Dhar \| Medium](https://medium.com/@dhar.ishan04/here-is-all-you-need-to-know-about-file-descriptors-in-linux-d93f05166026)
 - [What is the exact difference between a 'terminal', a 'shell', a 'tty' and a 'console'?](https://unix.stackexchange.com/questions/4126/what-is-the-exact-difference-between-a-terminal-a-shell-a-tty-and-a-con)
 - [What is a Daemon? How Does Lenovo's Daemon Technology Work? \| Lenovo US](https://www.lenovo.com/us/en/glossary/what-is-a-daemon/)
 - [How Are Linux PIDs Generated? \| Baeldung on Linux](https://www.baeldung.com/linux/process-id)

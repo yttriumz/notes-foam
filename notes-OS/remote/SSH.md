@@ -1,12 +1,12 @@
 ---
 sitemap:
-  lastmod: 2024-08-28 +0000
+  lastmod: 2024-09-23 +0000
   priority: 1.0
 ---
 
 # SSH Usage
 
-Last modified: 2024-08-28 +0000
+Last modified: 2024-09-23 +0000
 
 - [Interesting posts](#interesting-posts)
 - [Create SSH key pair](#create-ssh-key-pair)
@@ -28,6 +28,7 @@ Last modified: 2024-08-28 +0000
 - [openssh - Is there a way for one SSH config file to include another one? - Super User](https://superuser.com/questions/247564/is-there-a-way-for-one-ssh-config-file-to-include-another-one)
 - [macos - What's wrong with my OpenSSH Include directive? - Super User](https://superuser.com/questions/1162387/whats-wrong-with-my-openssh-include-directive)
 - [How to create a bash script to check the SSH connection? - Stack Overflow](https://stackoverflow.com/questions/1405324/how-to-create-a-bash-script-to-check-the-ssh-connection)
+- [How to Show All Active SSH Connections in Linux - Make Tech Easier](https://www.maketecheasier.com/show-active-ssh-connections-linux/)
 
 ## Create SSH key pair
 
