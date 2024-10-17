@@ -1,13 +1,13 @@
 ---
 type: index
 sitemap:
-  lastmod: 2024-09-27 +0000
+  lastmod: 2024-10-17 +0000
   priority: 0.5
 ---
 
 # Linux
 
-Last modified: 2024-09-27 +0000
+Last modified: 2024-10-17 +0000
 
 Distributions:
 
@@ -18,6 +18,7 @@ System:
 
 - [[kernel]]
 - [[kernel-modules]]
+- [[systemd]]
 - [[Linux/tips]]
 - [[Linux/security]]
 - [[file-system]]
@@ -81,6 +82,7 @@ Miscellaneous:
 [Ubuntu/index]: Ubuntu/index.md "Ubuntu"
 [kernel]: kernel.md "Linux Kernel"
 [kernel-modules]: kernel-modules.md "Kernel Modules"
+[systemd]: systemd.md "systemd"
 [Linux/tips]: tips.md "General Linux Usage Tips"
 [Linux/security]: security.md "Security"
 [file-system]: file-system.md "Storage & File System"

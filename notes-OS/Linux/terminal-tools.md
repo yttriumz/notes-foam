@@ -1,77 +1,42 @@
 ---
 sitemap:
-  lastmod: 2024-09-23 +0000
+  lastmod: 2024-10-14 +0000
 ---
 
 # Terminal Related Tools
 
-Last modified: 2024-09-23 +0000
+Last modified: 2024-10-14 +0000
 
-- [tmux](#tmux)
-- [Zellij](#zellij)
+- [Interesting posts](#interesting-posts)
+- [Kitty](#kitty)
 - [WezTerm](#wezterm)
   - [Installation](#installation)
   - [My Config](#my-config)
   - [Default Keybinding](#default-keybinding)
+- [tmux](#tmux)
+- [Zellij](#zellij)
 
-## tmux
+## Interesting posts
 
-From GPT-4o-Mini:
+- [Which Terminal Emulator Should You Use? \| Sharp Writing](https://www.sharpwriting.net/project/best-terminal-emulator/)
+- [duplicate input to multiple panes · Issue #2658 · wez/wezterm](https://github.com/wez/wezterm/issues/2658)
+- [terminal - List of ANSI color escape sequences - Stack Overflow](https://stackoverflow.com/questions/4842424/list-of-ansi-color-escape-sequences)
+- [ANSI Escape Codes](https://gist.github.com/fnky/458719343aabd01cfb17a3a4f7296797)
 
-> To get the PID of the main process running in a tmux pane (instead of the shell itself), you can use the following command:
->
-> ```bash
-> tmux list-panes -F "#{pane_id} #{pane_pid}" | awk '{print $1}' | xargs -I{} sh -c 'ps -o pid= --ppid $(tmux display-message -p -t {} "#{pane_pid}")'
-> ```
->
-> ### Explanation
->
-> 1. **`tmux list-panes -F "#{pane_id} #{pane_pid}"`**: Lists all panes along with their IDs and PIDs.
-> 2. **`awk '{print $1}'`**: Extracts the pane IDs.
-> 3. **`xargs -I{}`**: For each pane ID, it runs the command inside the curly braces.
-> 4. **`sh -c 'ps -o pid= --ppid $(tmux display-message -p -t {} "#{pane_pid}")'`**:
->    - `tmux display-message -p -t {} "#{pane_pid}"`: Gets the PID of the shell in that pane.
->    - `ps -o pid= --ppid <shell_pid>`: Lists child processes of that shell.
->
-> ### Usage
->
-> To get the main process running in a specific pane (e.g., pane 1.0), you can also run:
->
-> ```bash
-> tmux display-message -p -t 1.0 "#{pane_pid}" | xargs -I{} ps -o pid= --ppid {}
-> ```
->
-> This will give you the PID of the process running in that pane, assuming it has child processes. If there are multiple child processes, it will list all of them.
->
-> If you want to find the most relevant child process (typically the first one), you can further refine the command.
+## Kitty
 
 *References*:
 
-- [Getting Started · tmux/tmux Wiki](https://github.com/tmux/tmux/wiki/Getting-Started)
-- [A beginner's guide to tmux \| Enable Sysadmin](https://www.redhat.com/sysadmin/introduction-tmux-linux)
-- [tmux - ArchWiki](https://wiki.archlinux.org/title/tmux)
-- [tmux(1) - Linux manual page](https://man7.org/linux/man-pages/man1/tmux.1.html)
-- [tmux(1) - OpenBSD manual pages](http://man.openbsd.org/OpenBSD-current/man1/tmux.1)
-- [tmux cheatsheet](https://gist.github.com/andreyvit/2921703)
-- [How can I search within the output buffer of a tmux shell? - Super User](https://superuser.com/questions/231002/how-can-i-search-within-the-output-buffer-of-a-tmux-shell)
-- [vim - How do I cycle through panes inside a window in tmux like in screen? - Unix & Linux Stack Exchange](https://unix.stackexchange.com/questions/53154/how-do-i-cycle-through-panes-inside-a-window-in-tmux-like-in-screen)
-- [Is it possible to send input to a tmux session without connecting to it? - Unix & Linux Stack Exchange](https://unix.stackexchange.com/questions/409861/is-it-possible-to-send-input-to-a-tmux-session-without-connecting-to-it)
-- [How to send a command to all panes in tmux? - Stack Overflow](https://stackoverflow.com/questions/16325449/how-to-send-a-command-to-all-panes-in-tmux)
-- [tmux send-keys syntax - Stack Overflow](https://stackoverflow.com/questions/19313807/tmux-send-keys-syntax)
-- [cron - How to send a CTRL+C to a tmux pane using crontab? - Unix & Linux Stack Exchange](https://unix.stackexchange.com/questions/614197/how-to-send-a-ctrlc-to-a-tmux-pane-using-crontab)
-- [bash - Run command in new background tmux window and wait for process to finish - Stack Overflow](https://stackoverflow.com/questions/60365501/run-command-in-new-background-tmux-window-and-wait-for-process-to-finish)
-- [Getting command running in a tmux pane - Stack Overflow](https://stackoverflow.com/questions/46134090/getting-command-running-in-a-tmux-pane)
-- [Wait for program(s) in tmux panes to end… – select * from depesz;](https://www.depesz.com/2019/05/13/wait-for-programs-in-tmux-panes-to-end/)
-- [unix - How to close a tmux session - Super User](https://superuser.com/questions/777269/how-to-close-a-tmux-session)
-- [Super Guide to the split-window tmux Subcommand (and Beyond)](https://gist.github.com/sdondley/b01cc5bb1169c8c83401e438a652b84e)
-
-## Zellij
-
-*References*:
-
-- [A terminal workspace with batteries included](https://github.com/zellij-org/zellij)
+- [Kitty Only uses Dark colors · Issue #197 · kovidgoyal/kitty](https://github.com/kovidgoyal/kitty/issues/197)
+- [Opacity setting persisting in Full Screen Mode on MacOS · Issue #1405 · kovidgoyal/kitty](https://github.com/kovidgoyal/kitty/issues/1405)
+- [How to set the opacity while using Kitty? : r/KittyTerminal](https://www.reddit.com/r/KittyTerminal/comments/11bskzl/how_to_set_the_opacity_while_using_kitty/)
 
 ## WezTerm
+
+*References*:
+
+- [Wezterm's transparency : r/neovim](https://www.reddit.com/r/neovim/comments/17s5xww/wezterms_transparency/)
+- [Tab bar font size not working · Issue #3800 · wez/wezterm](https://github.com/wez/wezterm/issues/3800)
 
 ### Installation
 
@@ -158,6 +123,64 @@ return config
 *References*:
 
 - [Official doc](https://wezfurlong.org/wezterm/config/default-keys.html)
+
+## tmux
+
+From GPT-4o-Mini:
+
+> To get the PID of the main process running in a tmux pane (instead of the shell itself), you can use the following command:
+>
+> ```bash
+> tmux list-panes -F "#{pane_id} #{pane_pid}" | awk '{print $1}' | xargs -I{} sh -c 'ps -o pid= --ppid $(tmux display-message -p -t {} "#{pane_pid}")'
+> ```
+>
+> ### Explanation
+>
+> 1. **`tmux list-panes -F "#{pane_id} #{pane_pid}"`**: Lists all panes along with their IDs and PIDs.
+> 2. **`awk '{print $1}'`**: Extracts the pane IDs.
+> 3. **`xargs -I{}`**: For each pane ID, it runs the command inside the curly braces.
+> 4. **`sh -c 'ps -o pid= --ppid $(tmux display-message -p -t {} "#{pane_pid}")'`**:
+>    - `tmux display-message -p -t {} "#{pane_pid}"`: Gets the PID of the shell in that pane.
+>    - `ps -o pid= --ppid <shell_pid>`: Lists child processes of that shell.
+>
+> ### Usage
+>
+> To get the main process running in a specific pane (e.g., pane 1.0), you can also run:
+>
+> ```bash
+> tmux display-message -p -t 1.0 "#{pane_pid}" | xargs -I{} ps -o pid= --ppid {}
+> ```
+>
+> This will give you the PID of the process running in that pane, assuming it has child processes. If there are multiple child processes, it will list all of them.
+>
+> If you want to find the most relevant child process (typically the first one), you can further refine the command.
+
+*References*:
+
+- [Getting Started · tmux/tmux Wiki](https://github.com/tmux/tmux/wiki/Getting-Started)
+- [Tmux Tutorial: Mastering the Basics \| Linux Training Academy](https://www.linuxtrainingacademy.com/tmux-tutorial/)
+- [A beginner's guide to tmux \| Enable Sysadmin](https://www.redhat.com/sysadmin/introduction-tmux-linux)
+- [tmux - ArchWiki](https://wiki.archlinux.org/title/tmux)
+- [tmux(1) - Linux manual page](https://man7.org/linux/man-pages/man1/tmux.1.html)
+- [tmux(1) - OpenBSD manual pages](http://man.openbsd.org/OpenBSD-current/man1/tmux.1)
+- [tmux cheatsheet](https://gist.github.com/andreyvit/2921703)
+- [How can I search within the output buffer of a tmux shell? - Super User](https://superuser.com/questions/231002/how-can-i-search-within-the-output-buffer-of-a-tmux-shell)
+- [vim - How do I cycle through panes inside a window in tmux like in screen? - Unix & Linux Stack Exchange](https://unix.stackexchange.com/questions/53154/how-do-i-cycle-through-panes-inside-a-window-in-tmux-like-in-screen)
+- [Is it possible to send input to a tmux session without connecting to it? - Unix & Linux Stack Exchange](https://unix.stackexchange.com/questions/409861/is-it-possible-to-send-input-to-a-tmux-session-without-connecting-to-it)
+- [How to send a command to all panes in tmux? - Stack Overflow](https://stackoverflow.com/questions/16325449/how-to-send-a-command-to-all-panes-in-tmux)
+- [tmux send-keys syntax - Stack Overflow](https://stackoverflow.com/questions/19313807/tmux-send-keys-syntax)
+- [cron - How to send a CTRL+C to a tmux pane using crontab? - Unix & Linux Stack Exchange](https://unix.stackexchange.com/questions/614197/how-to-send-a-ctrlc-to-a-tmux-pane-using-crontab)
+- [bash - Run command in new background tmux window and wait for process to finish - Stack Overflow](https://stackoverflow.com/questions/60365501/run-command-in-new-background-tmux-window-and-wait-for-process-to-finish)
+- [Getting command running in a tmux pane - Stack Overflow](https://stackoverflow.com/questions/46134090/getting-command-running-in-a-tmux-pane)
+- [Wait for program(s) in tmux panes to end… – select * from depesz;](https://www.depesz.com/2019/05/13/wait-for-programs-in-tmux-panes-to-end/)
+- [unix - How to close a tmux session - Super User](https://superuser.com/questions/777269/how-to-close-a-tmux-session)
+- [Super Guide to the split-window tmux Subcommand (and Beyond)](https://gist.github.com/sdondley/b01cc5bb1169c8c83401e438a652b84e)
+
+## Zellij
+
+*References*:
+
+- [A terminal workspace with batteries included](https://github.com/zellij-org/zellij)
 
 [//begin]: # "Autogenerated link references for markdown compatibility"
 [package#WezTerm]: openSUSE/package.md "openSUSE Package Management"

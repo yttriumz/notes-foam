@@ -1,12 +1,12 @@
 ---
 sitemap:
-  lastmod: 2024-08-28 +0000
+  lastmod: 2024-10-10 +0000
   priority: 1.0
 ---
 
 # KDE Plasma Tweak
 
-Last modified: 2024-08-28 +0000
+Last modified: 2024-10-10 +0000
 
 - [Interesting posts](#interesting-posts)
 - [Configuration backup](#configuration-backup)
@@ -35,6 +35,7 @@ Last modified: 2024-08-28 +0000
 - [KDE Plasma與GNOME桌面比較，最終我還是選擇KDE · Ivon的部落格](https://ivonblog.com/posts/kde-plasma-gnome-comparison/)
 - [plasmashell crash on wayland : r/openSUSE](https://www.reddit.com/r/openSUSE/comments/10v0lxl/plasmashell_crash_on_wayland/)
 - [Prayag2/konsave: A command line program written in Python to let you backup your dotfiles and switch to other ones in an instant. Works out-of-the box on KDE Plasma!](https://github.com/Prayag2/konsave/tree/master)
+- [compiz - KDE decrease opacity of active window - Ask Ubuntu](https://askubuntu.com/questions/1069565/kde-decrease-opacity-of-active-window)
 
 ## Configuration backup
 

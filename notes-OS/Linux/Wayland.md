@@ -1,11 +1,11 @@
 ---
 sitemap:
-  lastmod: 2024-09-23 +0000
+  lastmod: 2024-10-09 +0000
 ---
 
 # Wayland
 
-Last modified: 2024-09-23 +0000
+Last modified: 2024-10-09 +0000
 
 ## Interesting posts
 
@@ -16,6 +16,7 @@ Last modified: 2024-09-23 +0000
 - [Wayland is just bad and needs to be scrapped and rewritten. Can we have devs from KDE/GNOME/XFCE come together to make something better and new? : r/kde](https://www.reddit.com/r/kde/comments/176jzrc/wayland_is_just_bad_and_needs_to_be_scrapped_and/)
 - [Wayland + kwin + SDDM + multiple monitors : r/kde](https://www.reddit.com/r/kde/comments/1bl2re8/wayland_kwin_sddm_multiple_monitors/)
 - [Explicit sync merged in Wayland: why it is important. : r/linux](https://www.reddit.com/r/linux/comments/1byauyb/explicit_sync_merged_in_wayland_why_it_is/)
+- [在 Wayland 下对某会议软件的屏幕共享方案，以及一些笔记](https://blog.taoky.moe/2023-05-22/wemeet-screencast-in-wayland.html)
 
 ## Fcitx 5
 

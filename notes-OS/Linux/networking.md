@@ -1,16 +1,16 @@
 ---
 sitemap:
-  lastmod: 2024-09-23 +0000
+  lastmod: 2024-10-14 +0000
 ---
 
 # Networking
 
-Last modified: 2024-09-23 +0000
+Last modified: 2024-10-14 +0000
 
 - [Interesting posts](#interesting-posts)
 - [Certificates](#certificates)
-   - [Add trusted certificates](#add-trusted-certificates)
-   - [Examine certificates](#examine-certificates)
+  - [Add trusted certificates](#add-trusted-certificates)
+  - [Examine certificates](#examine-certificates)
 - [Socket tuning for large traffic](#socket-tuning-for-large-traffic)
 - [Web debugging proxies](#web-debugging-proxies)
 - [Check open ports](#check-open-ports)
@@ -31,6 +31,7 @@ Last modified: 2024-09-23 +0000
 - [好用的開源內網穿透軟體比較，ZeroTier與Tailscale · Ivon的部落格](https://ivonblog.com/posts/foss-nat-traversal-solutions/)
 - [What are the differences between lsof and netstat on linux? - Stack Overflow](https://stackoverflow.com/questions/49381124/what-are-the-differences-between-lsof-and-netstat-on-linux)
 - [networking - Why do nmap, ss (netscan?) and lsof give different results? - Unix & Linux Stack Exchange](https://unix.stackexchange.com/questions/652556/why-do-nmap-ss-netscan-and-lsof-give-different-results)
+- [Connection reset原因分析和解决方案-CSDN博客](https://blog.csdn.net/liyantianmin/article/details/82505734)
 
 ## Certificates
 
