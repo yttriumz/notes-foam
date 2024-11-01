@@ -1,11 +1,11 @@
 ---
 sitemap:
-  lastmod: 2024-09-11 +0000
+  lastmod: 2024-10-22 +0000
 ---
 
 # Container Runtimes
 
-Last modified: 2024-09-11 +0000
+Last modified: 2024-10-22 +0000
 
 - [Interesting posts](#interesting-posts)
 - [containerd](#containerd)
@@ -22,6 +22,8 @@ Last modified: 2024-09-11 +0000
 - [Runc vs Crun in containers world: \| by Mehdi Taleghani \| Medium](https://taleghani.medium.com/runc-vs-crun-in-containers-world-62b8143fd9d3)
 - [Docker vs Containerd vs RunC. Runc and Containerd are both… \| by Bibhu Mishra \| Medium](https://medium.com/@bibhup_mishra/docker-vs-containerd-vs-runc-c39ffd4156fb)
 - [The differences between Docker, containerd, CRI-O and runc \| by Vineet Kumar \| Medium](https://vineetcic.medium.com/the-differences-between-docker-containerd-cri-o-and-runc-a93ae4c9fdac)
+- [Benchmarking what actually drive our containers](https://henrikgerdes.me/blog/2024-07-kubernetes-cri-bench/)
+- [Best Practices for Container Runtime Security](https://rad.security/blog/container-runtime)
 
 ## containerd
 
@@ -125,4 +127,4 @@ Challenges to review:
 
 *References*:
 
-- [An introduction to crun, a fast and low-memory footprint container runtime \| Enable Sysadmin](https://www.redhat.com/sysadmin/introduction-crun)
+- [An introduction to crun, a fast and low-memory footprint container runtime](https://www.redhat.com/en/blog/introduction-crun)
