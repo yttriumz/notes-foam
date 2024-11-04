@@ -1,17 +1,26 @@
 ---
 sitemap:
-  lastmod: 2024-04-19 +0000
+  lastmod: 2024-09-11 +0000
 ---
 
 # Single Sign-On
 
-Last modified: 2024-04-19 +0000
+Last modified: 2024-09-11 +0000
 
+- [Interesting posts](#interesting-posts)
 - [Shibboleth](#shibboleth)
   - [IDP](#idp)
     - [Existing container builds](#existing-container-builds)
   - [SP](#sp)
 - [Casdoor](#casdoor)
+
+## Interesting posts
+
+- [What is SSO? \| How single sign-on works \| Cloudflare](https://www.cloudflare.com/learning/access-management/what-is-sso/)
+- [Why Is Single Sign-On (SSO) Important? \| OneLogin](https://www.onelogin.com/learn/why-sso-important)
+- [Trying to understand SSO. How is it more secure? : r/sysadmin](https://www.reddit.com/r/sysadmin/comments/16mwv9s/trying_to_understand_sso_how_is_it_more_secure/)
+- [robchahin/sso-wall-of-shame: A list of vendors that treat single sign-on as a luxury feature, not a core security requirement.](https://github.com/robchahin/sso-wall-of-shame)
+- [ssotax/ssotax: A list of vendors that treat single sign-on as a luxury feature, not a core security requirement.](https://github.com/ssotax/ssotax)
 
 ## Shibboleth
 

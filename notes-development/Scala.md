@@ -1,8 +1,25 @@
+---
+sitemap:
+  lastmod: 2024-09-16 +0000
+---
+
 # Scala
+
+Last modified: 2024-09-16 +0000
 
 ## Interesting posts
 
 - [Scala's Gitter to Discord migration mistake - Alexandru Nedelcu](https://alexn.org/blog/2022/04/09/scala-gitter-discord-mistake/)
+
+Language:
+
+Toolkit:
+
+- [Better Shell Scripting with Scala-CLI - Xebia](https://xebia.com/blog/better-shell-scripting-with-scala-cli/)
+
+Tutorials:
+
+- [Scripting with Scala - Alexandru Nedelcu](https://alexn.org/blog/2022/09/13/scripting-with-scala/)
 
 ## Develop tools tips
 

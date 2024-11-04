@@ -1,11 +1,11 @@
 ---
 sitemap:
-  lastmod: 2024-09-03 +0000
+  lastmod: 2024-10-30 +0000
 ---
 
 # Ansible
 
-Last modified: 2024-09-03 +0000
+Last modified: 2024-10-30 +0000
 
 ## Interesting posts
 
@@ -22,6 +22,7 @@ Tutorials:
 - [Ansible Tutorial for Beginners: Playbook & Examples](https://spacelift.io/blog/ansible-tutorial)
 - [Ansible Playbooks: Complete Guide with Examples](https://spacelift.io/blog/ansible-playbooks)
 - [Medium parser - Ansible Boot Camp 1 — What is Ansible \| by Tony \| Geek Culture \| Medium](http://webcache.googleusercontent.com/search?q=cache:https://medium.com/geekculture/ansible-boot-camp-1-what-is-ansible-b80abff314ac&strip=0&vwsrc=1&referer=medium-parser)
+- [Deep dive on Ansible VScode extension \| Ansible Collaborative](https://www.ansible.com/blog/deep-dive-on-ansible-vscode-extension/)
 
 Techniques:
 
@@ -31,3 +32,8 @@ Techniques:
 - [Comparing `loop` and `with_*` - Loops — Ansible Documentation](https://docs.ansible.com/ansible/2.9/user_guide/playbooks_loops.html#comparing-loop-and-with)
 - [Listing All Ansible Variables for a Host or Group \| Baeldung on Linux](https://www.baeldung.com/linux/ansible-list-variables-host-group)
 - [VS Code Ansible extension that can find all variable references or go to variable definition? : r/ansible](https://www.reddit.com/r/ansible/comments/keel3k/vs_code_ansible_extension_that_can_find_all/)
+
+## tags
+
+- [How to run only one role of an Ansible playbook? - Stack Overflow](https://stackoverflow.com/questions/47414988/how-to-run-only-one-role-of-an-ansible-playbook)
+- [How to run only one task in ansible playbook? - Stack Overflow](https://stackoverflow.com/questions/23945201/how-to-run-only-one-task-in-ansible-playbook)

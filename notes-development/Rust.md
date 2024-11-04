@@ -1,11 +1,11 @@
 ---
 sitemap:
-  lastmod: 2024-05-17 +0000
+  lastmod: 2024-09-30 +0000
 ---
 
 # Rust
 
-Last modified: 2024-05-17 +0000
+Last modified: 2024-09-30 +0000
 
 - [Interesting posts](#interesting-posts)
 - [Development environment](#development-environment)
@@ -19,6 +19,7 @@ Last modified: 2024-05-17 +0000
 
 Language:
 
+- [alilleybrinker/langs-in-rust: A list of programming languages implemented in Rust, for inspiration.](https://github.com/alilleybrinker/langs-in-rust)
 - [cheat sheet](https://cheats.rs/)
 - [How not to learn Rust](https://dystroy.org/blog/how-not-to-learn-rust/)
 - [An unofficial guide to the Rust ecosystem](https://blessed.rs/crates)
@@ -43,9 +44,13 @@ Language:
 - [想问一下，真实项目中多大概率会遇到rust一些高级的东西？ - Rust语言中文社区](https://rustcc.cn/article?id=669f55b0-f4c6-422b-b5a5-08efd7fa8e23)
 - [What are problems with C++ that persist in Rust? : r/rust](https://www.reddit.com/r/rust/comments/1cajncc/what_are_problems_with_c_that_persist_in_rust/)
 - [\[Media\] Lars Bergstrom (Google Director of Engineering): "Rust teams are twice as productive as teams using C++." : r/rust](https://www.reddit.com/r/rust/comments/1bpwmud/media_lars_bergstrom_google_director_of/)
+- [I've used (and loved) Rust for ~10 years. Here are the ways it disappoints me. : r/rust](https://www.reddit.com/r/rust/comments/1e978l7/ive_used_and_loved_rust_for_10_years_here_are_the/)
+- [Fearless Concurrency: Rust vs. Go \| Medium](https://medium.com/@AlexanderObregon/journey-to-fearless-concurrency-rust-vs-go-31d49255d6b6)
+- [Rust for Gophers - by Alex Pliutau and John Arundel](https://packagemain.tech/p/rust-for-gophers)
 
 Tooling:
 
+- [Why does rust installation require C++ build tools on windows? : r/rust](https://www.reddit.com/r/rust/comments/ui76pv/why_does_rust_installation_require_c_build_tools/)
 - Cargo cache:
   - [Cargo cache cleaning \| Rust Blog](https://blog.rust-lang.org/2023/12/11/cargo-cache-cleaning.html)
   - [How to clear the Cargo cache?](https://stackoverflow.com/questions/25072930/how-to-clear-the-cargo-cache)
@@ -66,6 +71,7 @@ GUI related:
 
 - [Are We GUI Yet?](https://github.com/areweguiyet/areweguiyet)
 - [Why is building a UI in Rust so hard? \| Warp](https://www.warp.dev/blog/why-is-building-a-ui-in-rust-so-hard)
+- [Ownership and data flow in GPUI](https://zed.dev/blog/gpui-ownership)
 
 Embedded related:
 
@@ -73,7 +79,10 @@ Embedded related:
 
 Tutorials:
 
-- [Getting started - Command Line Applications in Rust](https://rust-cli.github.io/book/index.html)
+- [Learn Rust!](https://gist.github.com/noxasaxon/7bf5ebf930e281529161e51cd221cf8a)
+- [Best Book to learn rust : r/rust](https://www.reddit.com/r/rust/comments/sjclfb/best_book_to_learn_rust/)
+- [Seven Rust books that don't suck — Bitfield Consulting](https://bitfieldconsulting.com/posts/best-rust-books)
+- [Two new Rust books just released! 🎉 - announcements - The Rust Programming Language Forum](https://users.rust-lang.org/t/two-new-rust-books-just-released/107796)
 - [Learning by doing: An HTTP API with Rust](https://blog.frankel.ch/http-api-rust/)
 - [如何在Rust中使用ClickHouse](https://cloud.tencent.com/developer/article/1814306)
 - [Rust CRUD API Example with Axum Framework and MySQL](https://codevoweb.com/rust-crud-api-example-with-axum-framework-and-mysql/)
@@ -104,7 +113,7 @@ Tutorials:
 
 Miscellaneous:
 
-- [Scientific Computing in Rust 2024](https://scientificcomputing.rs/)
+- [Scientific Computing in Rust](https://scientificcomputing.rs/)
 - [Rust has been forked to the Crab Language \| Hacker News](https://news.ycombinator.com/item?id=36122270)
 - [CrabLang : programming](https://www.reddit.com/r/programming/comments/12n0dqc/crablang/)
 - [komora-io/terrors: ergonomic and precise error handling built atop type-level set arithmetic](https://github.com/komora-io/terrors)

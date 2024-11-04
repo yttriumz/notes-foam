@@ -1,11 +1,11 @@
 ---
 sitemap:
-  lastmod: 2024-06-21 +0000
+  lastmod: 2024-09-09 +0000
 ---
 
-# Kafka
+# Apache Kafka
 
-Last modified: 2024-06-21 +0000
+Last modified: 2024-09-09 +0000
 
 ## Interesting posts
 

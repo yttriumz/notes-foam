@@ -1,11 +1,11 @@
 ---
 sitemap:
-  lastmod: 2024-06-13 +0000
+  lastmod: 2024-09-11 +0000
 ---
 
 # JavaScript/TypeScript
 
-Last modified: 2024-06-13 +0000
+Last modified: 2024-09-11 +0000
 
 - [Interesting posts](#interesting-posts)
   - [Development tools](#development-tools)
@@ -23,6 +23,7 @@ Last modified: 2024-06-13 +0000
 
 ## Interesting posts
 
+- [Should you use Bun or Node.js or Deno in 2024? \| Tharaka Romesh \| Bits and Pieces \| Bits and Pieces](https://blog.bitsrc.io/should-you-use-bun-or-node-js-or-deno-in-2024-b7c21da085ba)
 - [Disallowed MIME type Error](https://hallertau.cs.gsu.edu/disallowedMIME.html):
   > The REAL problem is that the file does not exist, or at least it's not at that location.
 - [Error message "error:0308010C:digital envelope routines::unsupported"](https://stackoverflow.com/questions/69692842/error-message-error0308010cdigital-envelope-routinesunsupported)

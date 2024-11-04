@@ -1,11 +1,11 @@
 ---
 sitemap:
-  lastmod: 2024-07-17 +0000
+  lastmod: 2024-08-28 +0000
 ---
 
 # Python
 
-Last modified: 2024-07-17 +0000
+Last modified: 2024-08-28 +0000
 
 - [Interesting posts](#interesting-posts)
 - [Installation \& environment](#installation--environment)
@@ -31,7 +31,7 @@ Last modified: 2024-07-17 +0000
 
 - [Status of Python versions](https://devguide.python.org/versions/)
 - [What is Pythonic? \| Secret Weblog](https://blog.startifact.com/posts/older/what-is-pythonic/)
-- [Everything you need to know about the switch to Python 3 | Kali Linux Documentation](https://www.kali.org/docs/general-use/python3-transition/)
+- [Everything you need to know about the switch to Python 3 \| Kali Linux Documentation](https://www.kali.org/docs/general-use/python3-transition/)
 - [What Are Python Wheels and Why Should You Care? – Real Python](https://realpython.com/python-wheels/)
 - [Beyond If-Else: Leveraging Python’s Versatile “Else” Statements \| by Yang Zhou \| TechToFreedom \| Mar, 2024 \| Medium](https://medium.com/techtofreedom/beyond-if-else-leveraging-pythons-versatile-else-statements-9ac260dac102?sk=dd43f5b07431c222fb7332835c786af3)
 
@@ -49,6 +49,10 @@ Techniques:
 - [python - Return a default value if a dictionary key is not available - Stack Overflow](https://stackoverflow.com/questions/6130768/return-a-default-value-if-a-dictionary-key-is-not-available)
 - [python - Why dict.get(key) instead of dict[key]? - Stack Overflow](https://stackoverflow.com/questions/11041405/why-dict-getkey-instead-of-dictkey)
 - [Python: How to ignore an exception and proceed? - Stack Overflow](https://stackoverflow.com/questions/574730/python-how-to-ignore-an-exception-and-proceed)
+
+Toolkit:
+
+- [Poetry installation: 'pip' vs. 'pipx' \| Python Guide](https://www.linkedin.com/pulse/poetry-installation-understanding-pip-vs-pipx-approach-shoukat-jybkf)
 
 ## Installation & environment
 
@@ -85,7 +89,7 @@ Use `python3 -m venv --upgrade-deps PATH/TO/NEW/VENV`.
 
 #### Activate venv environment
 
-![venv_activate](attachments/Python/venv_activate.png)
+![venv_activate](./attachments/Python/venv_activate.png)
 
 *References*:
 
