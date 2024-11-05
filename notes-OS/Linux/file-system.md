@@ -1,11 +1,11 @@
 ---
 sitemap:
-  lastmod: 2024-05-03 +0000
+  lastmod: 2024-11-04 +0000
 ---
 
 # Storage & File System
 
-Last modified: 2024-05-03 +0000
+Last modified: 2024-11-04 +0000
 
 - [Interesting posts](#interesting-posts)
 - [Permissions](#permissions)
@@ -23,6 +23,7 @@ Last modified: 2024-05-03 +0000
 - [Linux directory structure:/etc explained - The Linux Juggernaut](https://www.linuxnix.com/linux-directory-structure-explainedetc-folder/)
 - [Where should a local executable be placed?](https://unix.stackexchange.com/questions/36871/where-should-a-local-executable-be-placed)
 - [Use the XDG standard bin directory on linux?](https://github.com/JuliaLang/juliaup/issues/247)
+- [Where should standalone and custom-built binaries be put? In /opt/ or in $HOME/path/to/dir ? : r/debian](https://www.reddit.com/r/debian/comments/1azttn6/where_should_standalone_and_custombuilt_binaries/)
 - [What does `/opt` mean in Linux?](https://www.baeldung.com/linux/opt-directory)
 - [What happens when you delete a file in Linux? \| Enable Sysadmin](https://www.redhat.com/sysadmin/linux-delete-file-rm)
 - [Where do files go when the rm command is issued? - Unix & Linux Stack Exchange](https://unix.stackexchange.com/questions/10883/where-do-files-go-when-the-rm-command-is-issued)

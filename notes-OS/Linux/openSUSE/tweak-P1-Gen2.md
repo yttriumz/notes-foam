@@ -1,12 +1,12 @@
 ---
 sitemap:
-  lastmod: 2024-09-23 +0000
+  lastmod: 2024-11-01 +0000
   priority: 1.0
 ---
 
 # Tweak openSUSE Tumbleweed on ThinkPad P1 Gen2
 
-Last modified: 2024-09-23 +0000
+Last modified: 2024-11-01 +0000
 
 - [Interesting posts](#interesting-posts)
 - [Change hostname](#change-hostname)
@@ -245,6 +245,7 @@ See [[terminal-tools#Zellij]].
 - [SDB:NVIDIA the hard way - openSUSE Wiki](https://en.opensuse.org/SDB:NVIDIA_the_hard_way)
 - [SDB:NVIDIA troubleshooting](https://en.opensuse.org/SDB:NVIDIA_troubleshooting)
 - [SDB:NVIDIA SUSE Prime](https://en.opensuse.org/SDB:NVIDIA_SUSE_Prime)
+- [NVIDIA Open GPU kernel modules: openSUSE/SLE packages available \| Stefan’s openSUSE Blog](https://sndirsch.github.io/nvidia/2022/06/07/nvidia-opengpu.html)
 - [7.4 Switching between Intel and NVIDIA Optimus GPUs with SUSE Prime](https://doc.opensuse.org/documentation/leap/reference/single-html/book-reference/index.html#sec-gui-desktop-suse-prime)
 - [来到opensuse15.3的世界后，我推荐你做点什么](https://www.bwsl.wang/script/129.html)
 - [Got a black screen with mouse cursor only after switching (on SDDM screen) a user session type between X11 and Wayland](https://forum.manjaro.org/t/got-a-black-screen-with-mouse-cursor-only-after-switching-on-sddm-screen-a-user-session-type-between-x11-and-wayland/87044/3)

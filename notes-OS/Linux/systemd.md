@@ -1,13 +1,16 @@
 ---
 sitemap:
-  lastmod: 2024-10-17 +0000
+  lastmod: 2024-10-24 +0000
 ---
 
 # systemd
 
-Last modified: 2024-10-17 +0000
+Last modified: 2024-10-24 +0000
 
 ## Interesting posts
+
+- [boot - What is the difference between "systemctl mask" and "systemctl disable"? - Ask Ubuntu](https://askubuntu.com/questions/816285/what-is-the-difference-between-systemctl-mask-and-systemctl-disable)
+- [server - What is the difference between "service restart" and "service reload" - Ask Ubuntu](https://askubuntu.com/questions/105200/what-is-the-difference-between-service-restart-and-service-reload)
 
 ## `journalctl`
 

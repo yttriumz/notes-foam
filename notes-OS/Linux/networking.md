@@ -1,13 +1,16 @@
 ---
 sitemap:
-  lastmod: 2024-10-14 +0000
+  lastmod: 2024-11-01 +0000
 ---
 
 # Networking
 
-Last modified: 2024-10-14 +0000
+Last modified: 2024-11-01 +0000
 
 - [Interesting posts](#interesting-posts)
+- [DNS](#dns)
+- [IPv6](#ipv6)
+- [BGP](#bgp)
 - [Certificates](#certificates)
   - [Add trusted certificates](#add-trusted-certificates)
   - [Examine certificates](#examine-certificates)
@@ -20,6 +23,9 @@ Last modified: 2024-10-14 +0000
 
 - [About Networking \| Calico Documentation](https://docs.tigera.io/calico/latest/about/kubernetes-training/about-networking)
 - [Glossary](https://www.networxsecurity.org/members-area/glossary.html)
+- [OSI Model and Networking Protocols Relationship - Network Engineering Stack Exchange](https://networkengineering.stackexchange.com/questions/6380/osi-model-and-networking-protocols-relationship/6381#6381)
+- [Reserved IP addresses - Wikipedia](https://en.wikipedia.org/wiki/Reserved_IP_addresses)
+- [Difference Between Network Address Translation and Domain Name System - GeeksforGeeks](https://www.geeksforgeeks.org/difference-between-network-address-translation-and-domain-name-system/)
 - [Zero Trust security \| What is a Zero Trust network? \| Cloudflare](https://www.cloudflare.com/learning/security/glossary/what-is-zero-trust/)
 - [Masquerading and firewalls \| Security and Hardening Guide \| openSUSE Leap 15.6](https://doc.opensuse.org/documentation/leap/security/html/book-security/cha-security-firewall.html)
 - [iptables: The two variants and their relationship with nftables \| Red Hat Developer](https://developers.redhat.com/blog/2020/08/18/iptables-the-two-variants-and-their-relationship-with-nftables#the_kernel_api)
@@ -32,6 +38,28 @@ Last modified: 2024-10-14 +0000
 - [What are the differences between lsof and netstat on linux? - Stack Overflow](https://stackoverflow.com/questions/49381124/what-are-the-differences-between-lsof-and-netstat-on-linux)
 - [networking - Why do nmap, ss (netscan?) and lsof give different results? - Unix & Linux Stack Exchange](https://unix.stackexchange.com/questions/652556/why-do-nmap-ss-netscan-and-lsof-give-different-results)
 - [Connection reset原因分析和解决方案-CSDN博客](https://blog.csdn.net/liyantianmin/article/details/82505734)
+
+## DNS
+
+*References*:
+
+- [Understanding Hosts Files - What You Need to Know \| Lenovo US](https://www.lenovo.com/us/en/glossary/hosts-file/)
+- [What is DNS? How it works?. What about hosts file and resolv.conf? \| by Betul Ince \| Medium](https://medium.com/@Betulince/what-is-dns-how-it-works-12ea45b27e75)
+- [Can I create a user-specific hosts file to complement /etc/hosts? - Unix & Linux Stack Exchange](https://unix.stackexchange.com/questions/10438/can-i-create-a-user-specific-hosts-file-to-complement-etc-hosts)
+
+## IPv6
+
+*References*:
+
+- [You Thought There Was No NAT for IPv6, But NAT Still Exists](https://blogs.infoblox.com/ipv6-coe/you-thought-there-was-no-nat-for-ipv6-but-nat-still-exists/)
+- [RFC 4864 - Local Network Protection for IPv6](https://datatracker.ietf.org/doc/html/rfc4864)
+- [network - With IPv6 do we need to use NAT anymore? - Information Security Stack Exchange](https://security.stackexchange.com/questions/44065/with-ipv6-do-we-need-to-use-nat-anymore)
+
+## BGP
+
+*References*:
+
+- [What is BGP? \| BGP routing explained \| Cloudflare](https://www.cloudflare.com/learning/security/glossary/what-is-bgp/)
 
 ## Certificates
 

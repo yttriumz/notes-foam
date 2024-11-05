@@ -1,13 +1,13 @@
 ---
 type: index
 sitemap:
-  lastmod: 2024-10-17 +0000
+  lastmod: 2024-10-29 +0000
   priority: 0.5
 ---
 
 # Linux
 
-Last modified: 2024-10-17 +0000
+Last modified: 2024-10-29 +0000
 
 Distributions:
 
@@ -20,7 +20,7 @@ System:
 - [[kernel-modules]]
 - [[systemd]]
 - [[Linux/tips]]
-- [[Linux/security]]
+- [[Linux/security/index]]
 - [[file-system]]
 - [[power]]
 - [[networking]]
@@ -45,12 +45,6 @@ Virtualization & Containerization:
 - [[virtualization/index]]
 
 ## Interesting Posts
-
-Kernel:
-
-- [The Linux Kernel Archives - Releases](https://www.kernel.org/category/releases.html)
-- [Re: [PATCH 00/45] C++: Convert the kernel to C++ - H. Peter Anvin](https://lore.kernel.org/lkml/3465e0c6-f5b2-4c42-95eb-29361481f805@zytor.com/)
-  - [A 2024 Discussion Whether to Convert the Linux Kernel from C to Modern C++ \| Hacker News](https://news.ycombinator.com/item?id=38939151)
 
 Tutorials:
 
@@ -84,7 +78,7 @@ Miscellaneous:
 [kernel-modules]: kernel-modules.md "Kernel Modules"
 [systemd]: systemd.md "systemd"
 [Linux/tips]: tips.md "General Linux Usage Tips"
-[Linux/security]: security.md "Security"
+[Linux/security/index]: security/index.md "Linux Security"
 [file-system]: file-system.md "Storage & File System"
 [power]: power.md "Power Management"
 [networking]: networking.md "Networking"
