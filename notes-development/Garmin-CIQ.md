@@ -1,11 +1,11 @@
 ---
 sitemap:
-  lastmod: 2024-08-23 +0000
+  lastmod: 2024-11-12 +0000
 ---
 
 # Garmin Connect IQ
 
-Last modified: 2024-08-23 +0000
+Last modified: 2024-11-12 +0000
 
 ## Interesting posts
 
@@ -27,8 +27,10 @@ Projects:
 
 - [Code search results](https://github.com/search?q=instinct+language%3A%22Monkey+C%22+&type=code&p=1)
 - [Repository search results](https://github.com/search?q=instinct+language%3A%22Monkey+C%22+&type=repositories)
+- [bombsimon/awesome-garmin: A list of Garmin application, both for Garmin devices and other tools](https://github.com/bombsimon/awesome-garmin)
 - [acrossthekyle/garmin](https://github.com/acrossthekyle/garmin)
 - Watch faces:
+  - [shbumba/SimplePixels: Simple Pixels is a minimalist watch face for Garmin devices](https://github.com/shbumba/SimplePixels)
   - [Making a custom Garmin watch face \| Antti Viitala](https://aviitala.com/posts/garmin-watchface-tutorial/)
   - [rishubil/geektime: Geektime is a watchface for the Garmin Instinct 2](https://github.com/rishubil/geektime)
   - [wolffshots/Snout: Simple straightforward data watchface](https://github.com/wolffshots/Snout)

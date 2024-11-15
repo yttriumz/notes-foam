@@ -1,11 +1,11 @@
 ---
 sitemap:
-  lastmod: 2024-09-30 +0000
+  lastmod: 2024-11-15 +0000
 ---
 
 # Rust
 
-Last modified: 2024-09-30 +0000
+Last modified: 2024-11-15 +0000
 
 - [Interesting posts](#interesting-posts)
 - [Development environment](#development-environment)
@@ -57,6 +57,8 @@ Tooling:
   - [cargo clean ~/.cargo · Issue #3289 · rust-lang/cargo](https://github.com/rust-lang/cargo/issues/3289)
 - [Does cargo install have an equivalent update command?](https://stackoverflow.com/questions/34484361/does-cargo-install-have-an-equivalent-update-command)
 - [Rust CI/CD template : r/rust](https://www.reddit.com/r/rust/comments/1bg3xgl/rust_cicd_template/)
+- [Use Rust in shell scripts — Kurt Lawrence](https://www.kurtlawrence.info/blog/gufdjkjkq7wphfhkvrumcvmqdr4r69)
+- [Flawless scripting with Rust](https://www.niccoloforlini.com/flawless-scripting-with-rust/)
 
 Web related:
 

@@ -1,6 +1,6 @@
 # Haskell
 
-Last modified: 2024-10-17 +0000
+Last modified: 2024-11-12 +0000
 
 - [Interesting posts](#interesting-posts)
 - [VSCode](#vscode)
@@ -17,6 +17,8 @@ Last modified: 2024-10-17 +0000
 - [Doctest and literate haskell? · Issue #92 · sol/doctest](https://github.com/sol/doctest/issues/92#issuecomment-66225478)
 - [Is Haskell (potentially) good for scripting? : r/haskell](https://www.reddit.com/r/haskell/comments/u2y67u/is_haskell_potentially_good_for_scripting/)
 - [Why Haskell became my favorite scripting language](https://zignar.net/2021/07/09/why-haskell-became-my-favorite-scripting-language/)
+- [Using Haskell as my shell : r/haskell](https://www.reddit.com/r/haskell/comments/rdinq2/using_haskell_as_my_shell/)
+- [29 Awesome Open-Source Haskell Projects](https://serokell.io/blog/best-haskell-open-source-projects)
 
 Language:
 
@@ -30,6 +32,7 @@ Toolkit:
 
 Tutorials:
 
+- [Haskell MOOC](https://haskell.mooc.fi/)
 - [Learn Haskell in Y Minutes](https://learnxinyminutes.com/docs/haskell/)
 - [Functional Programming](https://klasses.cs.uchicago.edu/archive/2023/fall/22300-1/)
 

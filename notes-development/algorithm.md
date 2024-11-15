@@ -1,11 +1,11 @@
 ---
 sitemap:
-  lastmod: 2024-10-30 +0000
+  lastmod: 2024-11-12 +0000
 ---
 
 # Algorithm
 
-Last modified: 2024-10-30 +0000
+Last modified: 2024-11-12 +0000
 
 ## Interesting posts
 
@@ -17,6 +17,7 @@ Last modified: 2024-10-30 +0000
 - ["The Art of Computer Programming" (TAOCP) by Dr.Knuth time to complete. : r/computerscience](https://www.reddit.com/r/computerscience/comments/hm77qw/the_art_of_computer_programming_taocp_by_drknuth/)
 - [Ask HN: Is Knuth's TAOCP worth the time and effort? \| Hacker News](https://news.ycombinator.com/item?id=10897460)
 - [Breaking Down Breadth-First Search \| by Vaidehi Joshi \| basecs \| Medium](https://medium.com/basecs/breaking-down-breadth-first-search-cebe696709d9)
+- [algorithm - What is tail call optimization? - Stack Overflow](https://stackoverflow.com/questions/310974/what-is-tail-call-optimization)
 
 Books:
 

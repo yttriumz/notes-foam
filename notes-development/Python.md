@@ -1,11 +1,11 @@
 ---
 sitemap:
-  lastmod: 2024-08-28 +0000
+  lastmod: 2024-11-05 +0000
 ---
 
 # Python
 
-Last modified: 2024-08-28 +0000
+Last modified: 2024-11-05 +0000
 
 - [Interesting posts](#interesting-posts)
 - [Installation \& environment](#installation--environment)
@@ -25,6 +25,7 @@ Last modified: 2024-08-28 +0000
   - [`extension.json`](#extensionjson)
   - [Pyright extension](#pyright-extension)
 - [Data Engineering](#data-engineering)
+- [pydoit](#pydoit)
 - [cx\_Freeze](#cx_freeze)
 
 ## Interesting posts
@@ -167,6 +168,12 @@ Use `python3 -m venv --upgrade-deps PATH/TO/NEW/VENV`.
 - [Feature Engineering: Scaling, Normalization, and Standardization](https://www.analyticsvidhya.com/blog/2020/04/feature-scaling-machine-learning-normalization-standardization/)
 - [python - How do I get the row count of a Pandas DataFrame? - Stack Overflow](https://stackoverflow.com/questions/15943769/how-do-i-get-the-row-count-of-a-pandas-dataframe)
 - [利用 python 进行线性回归 - 简书](https://www.jianshu.com/p/e55a8c9e4b56)
+
+## pydoit
+
+*References*:
+
+- [pydoit task dependency system support - pydoit guide](https://pydoit.org/dependencies.html)
 
 ## cx_Freeze
 
