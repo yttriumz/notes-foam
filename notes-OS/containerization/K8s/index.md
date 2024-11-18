@@ -1,6 +1,6 @@
 ---
 sitemap:
-  lastmod: 2024-10-30 +0000
+  lastmod: 2024-11-04 +0000
   priority: 0.5
 ---
 

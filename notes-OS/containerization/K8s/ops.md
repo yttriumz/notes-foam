@@ -1,12 +1,13 @@
 ---
 sitemap:
-  lastmod: 2024-10-30 +0000
+  lastmod: 2024-11-18 +0000
 ---
 
 # Kubernetes Operations and Troubleshooting
 
-Last modified: 2024-10-30 +0000
+Last modified: 2024-11-18 +0000
 
+- [Interesting posts](#interesting-posts)
 - [`kubectl`](#kubectl)
 - [`kuztomize`](#kuztomize)
 - [Cluster status](#cluster-status)
@@ -20,6 +21,12 @@ Last modified: 2024-10-30 +0000
 - [Helm](#helm)
     - [Troubleshooting releases](#troubleshooting-releases)
 - [Deployment](#deployment)
+
+## Interesting posts
+
+- [What tool suggestions do you have for someone who's gonna set up an on-premise k8 cluster? Which tools do you use? : r/kubernetes](https://www.reddit.com/r/kubernetes/comments/12zg3am/what_tool_suggestions_do_you_have_for_someone/)
+- [IPVS no destination available \| Kubernetes 排障指南](https://imroc.cc/kubernetes-troubleshooting/methods/node/ipvs-no-destination-available)
+- [IPVS: rr: TCP 10.254.159.251:9004 - no destination available · Issue #415 · cloudnativelabs/kube-router](https://github.com/cloudnativelabs/kube-router/issues/415#issuecomment-386045811)
 
 ## `kubectl`
 
