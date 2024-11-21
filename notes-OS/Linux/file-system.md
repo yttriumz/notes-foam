@@ -1,11 +1,11 @@
 ---
 sitemap:
-  lastmod: 2024-11-04 +0000
+  lastmod: 2024-11-21 +0000
 ---
 
 # Storage & File System
 
-Last modified: 2024-11-04 +0000
+Last modified: 2024-11-21 +0000
 
 - [Interesting posts](#interesting-posts)
 - [Permissions](#permissions)
@@ -25,6 +25,7 @@ Last modified: 2024-11-04 +0000
 - [Use the XDG standard bin directory on linux?](https://github.com/JuliaLang/juliaup/issues/247)
 - [Where should standalone and custom-built binaries be put? In /opt/ or in $HOME/path/to/dir ? : r/debian](https://www.reddit.com/r/debian/comments/1azttn6/where_should_standalone_and_custombuilt_binaries/)
 - [What does `/opt` mean in Linux?](https://www.baeldung.com/linux/opt-directory)
+- [directory structure - What is the difference between /opt and /usr/local? - Unix & Linux Stack Exchange](https://unix.stackexchange.com/questions/11544/what-is-the-difference-between-opt-and-usr-local)
 - [What happens when you delete a file in Linux? \| Enable Sysadmin](https://www.redhat.com/sysadmin/linux-delete-file-rm)
 - [Where do files go when the rm command is issued? - Unix & Linux Stack Exchange](https://unix.stackexchange.com/questions/10883/where-do-files-go-when-the-rm-command-is-issued)
 - [partitioning - How do I find out what filesystem my partitions are using? - Ask Ubuntu](https://askubuntu.com/questions/309047/how-do-i-find-out-what-filesystem-my-partitions-are-using)

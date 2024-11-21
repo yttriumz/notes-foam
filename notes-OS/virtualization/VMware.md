@@ -1,14 +1,15 @@
 ---
 sitemap:
-  lastmod: 2024-07-19 +0000
+  lastmod: 2024-11-16 +0000
 ---
 
 # VMware
 
-Last modified: 2024-07-19 +0000
+Last modified: 2024-11-16 +0000
 
 ## Interesting posts
 
+- [VMware Fusion and Workstation Are Now Free for All Users \| Hacker News](https://news.ycombinator.com/item?id=42111314)
 - [Virtual machine hardware versions](https://knowledge.broadcom.com/external/article?legacyId=1003746)
 - [How it works&#x2026; - The Complete VMware vSphere Guide [Book]](https://www.oreilly.com/library/view/the-complete-vmware/9781838985752/635bef33-d46b-4e11-9b99-6301be7d3969.xhtml)
 - [How to Access the GRUB Menu in Virtual Machine](https://itsfoss.com/access-grub-virtual-machine/)
@@ -39,3 +40,5 @@ Installation:
 - [Is ESXi a firmware or an OS software? - Quora](https://www.quora.com/Is-ESXi-a-firmware-or-an-OS-software)
   > ![ESXi](attachments/VMware/ESXi.png)
 - [Configuring Network Settings](https://docs.vmware.com/en/VMware-vSphere/8.0/vsphere-esxi-installation/GUID-26F3BC88-DAD8-43E7-9EA0-160054954506.html)
+- [How to Export Snapshot on VMware without Losing Data](https://www.ubackup.com/enterprise-backup/export-snapshot-vmware.html)
+- [ESXi 7 - VM snapshot backup : r/vmware](https://www.reddit.com/r/vmware/comments/1d78jqd/esxi_7_vm_snapshot_backup/)

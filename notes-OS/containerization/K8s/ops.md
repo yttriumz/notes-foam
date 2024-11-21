@@ -1,11 +1,11 @@
 ---
 sitemap:
-  lastmod: 2024-11-18 +0000
+  lastmod: 2024-11-19 +0000
 ---
 
 # Kubernetes Operations and Troubleshooting
 
-Last modified: 2024-11-18 +0000
+Last modified: 2024-11-19 +0000
 
 - [Interesting posts](#interesting-posts)
 - [`kubectl`](#kubectl)
@@ -17,6 +17,7 @@ Last modified: 2024-11-18 +0000
 - [Remove pods](#remove-pods)
 - [Get shells to running pods](#get-shells-to-running-pods)
 - [Get files inside pods](#get-files-inside-pods)
+- [Security configuration](#security-configuration)
 - [etcd](#etcd)
 - [Helm](#helm)
     - [Troubleshooting releases](#troubleshooting-releases)
@@ -126,6 +127,14 @@ kubectl cp SOME_NAMESPACE/SOME_POD:/tmp/bar /tmp/foo
 *References*:
 
 - [azure aks - How to copy files from kubernetes Pods to local system - Stack Overflow](https://stackoverflow.com/questions/52407277/how-to-copy-files-from-kubernetes-pods-to-local-system)
+
+## Security configuration
+
+*References*:
+
+- [Restrict a Container's Access to Resources with AppArmor \| Kubernetes](https://kubernetes.io/docs/tutorials/security/apparmor/)
+- [Linux kernel security constraints for Pods and containers \| Kubernetes](https://kubernetes.io/docs/concepts/security/linux-kernel-security-constraints/#apparmor)
+- [Configure a Security Context for a Pod or Container \| Kubernetes](https://kubernetes.io/docs/tasks/configure-pod-container/security-context/)
 
 ## etcd
 

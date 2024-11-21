@@ -1,11 +1,11 @@
 ---
 sitemap:
-  lastmod: 2024-10-14 +0000
+  lastmod: 2024-11-18 +0000
 ---
 
 # Terminal Related Tools
 
-Last modified: 2024-10-14 +0000
+Last modified: 2024-11-18 +0000
 
 - [Interesting posts](#interesting-posts)
 - [Kitty](#kitty)
@@ -37,6 +37,7 @@ Last modified: 2024-10-14 +0000
 
 - [Wezterm's transparency : r/neovim](https://www.reddit.com/r/neovim/comments/17s5xww/wezterms_transparency/)
 - [Tab bar font size not working · Issue #3800 · wez/wezterm](https://github.com/wez/wezterm/issues/3800)
+- [Regression: Unable to set cursor to xterm: cursor not found · Issue #4681 · wez/wezterm](https://github.com/wez/wezterm/issues/4681)
 
 ### Installation
 
@@ -175,6 +176,7 @@ From GPT-4o-Mini:
 - [Wait for program(s) in tmux panes to end… – select * from depesz;](https://www.depesz.com/2019/05/13/wait-for-programs-in-tmux-panes-to-end/)
 - [unix - How to close a tmux session - Super User](https://superuser.com/questions/777269/how-to-close-a-tmux-session)
 - [Super Guide to the split-window tmux Subcommand (and Beyond)](https://gist.github.com/sdondley/b01cc5bb1169c8c83401e438a652b84e)
+- [shell - How to send commands when opening a tmux session inside another tmux session? - Stack Overflow](https://stackoverflow.com/questions/8518815/how-to-send-commands-when-opening-a-tmux-session-inside-another-tmux-session)
 
 ## Zellij
 

@@ -1,11 +1,11 @@
 ---
 sitemap:
-  lastmod: 2024-09-26 +0000
+  lastmod: 2024-10-17 +0000
 ---
 
 # Cloudflare WARP
 
-Last modified: 2024-09-26 +0000
+Last modified: 2024-10-17 +0000
 
 - [Interesting posts](#interesting-posts)
 - [Installation](#installation)
@@ -19,6 +19,7 @@ Last modified: 2024-09-26 +0000
 ## Interesting posts
 
 - [The official doc](https://developers.cloudflare.com/warp-client/)
+- [cloudflare - How to change the warp-svc 's log directory to /data/log/? - Stack Overflow](https://stackoverflow.com/questions/77524838/how-to-change-the-warp-svc-s-log-directory-to-data-log)
 - [How do I know Warp is running - Website, Application, Performance / Getting Started - Cloudflare Community](https://community.cloudflare.com/t/how-do-i-know-warp-is-running/202227)
   - [https://cloudflare.com/cdn-cgi/trace](https://cloudflare.com/cdn-cgi/trace)
   - [1.1.1.1 — Connection Information](https://one.one.one.one/help/)

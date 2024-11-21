@@ -1,13 +1,13 @@
 ---
 type: index
 sitemap:
-  lastmod: 2024-10-29 +0000
+  lastmod: 2024-11-15 +0000
   priority: 0.5
 ---
 
 # Linux
 
-Last modified: 2024-10-29 +0000
+Last modified: 2024-11-15 +0000
 
 Distributions:
 
@@ -23,7 +23,7 @@ System:
 - [[Linux/security/index]]
 - [[file-system]]
 - [[power]]
-- [[networking]]
+- [[Linux/networking]]
 
 Utilities:
 
@@ -81,7 +81,7 @@ Miscellaneous:
 [Linux/security/index]: security/index.md "Linux Security"
 [file-system]: file-system.md "Storage & File System"
 [power]: power.md "Power Management"
-[networking]: networking.md "Networking"
+[Linux/networking]: networking.md "Networking"
 [Linux/Bash]: Bash.md "Bash Usage"
 [CLI-tools]: CLI-tools.md "Command-line Tools"
 [text-processing]: text-processing.md "Text Processing on Linux"

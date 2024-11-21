@@ -1,11 +1,11 @@
 ---
 sitemap:
-  lastmod: 2024-06-11 +0000
+  lastmod: 2024-11-18 +0000
 ---
 
 # Visual Studio Code
 
-Last modified: 2024-06-11 +0000
+Last modified: 2024-11-18 +0000
 
 - [Interesting posts](#interesting-posts)
 - [Installation](#installation)
@@ -24,6 +24,24 @@ Last modified: 2024-06-11 +0000
 ## Interesting posts
 
 - [Visual Studio Code is designed to fracture](https://ghuntley.com/fracture/)
+
+Concerning issues:
+
+- [Allow to change the font size and font of the workbench · Issue #519 · microsoft/vscode](https://github.com/microsoft/vscode/issues/519)
+- [Virtual Space is not implemented. · Issue #13960 · microsoft/vscode](https://github.com/microsoft/vscode/issues/13960)
+- [Allow to control the sidebar icon size · Issue #129771 · microsoft/vscode](https://github.com/microsoft/vscode/issues/129771)
+- [Show file size and date modified in file explorer. · Issue #164033 · microsoft/vscode](https://github.com/microsoft/vscode/issues/164033)
+- [Create new built in git graph · Issue #179053 · microsoft/vscode](https://github.com/microsoft/vscode/issues/179053)
+- [Support ligatures in terminal · Issue #34103 · microsoft/vscode](https://github.com/microsoft/vscode/issues/34103)
+- [Renaming Terminal Tile does not cause title area to be refreshed · Issue #203961 · microsoft/vscode](https://github.com/microsoft/vscode/issues/203961)
+- [ctrl + click "go to definition" clashes with ctrl + click "follow link" · Issue #81520 · microsoft/vscode](https://github.com/microsoft/vscode/issues/81520)
+- [Support variables when resolving values in settings · Issue #2809 · microsoft/vscode](https://github.com/microsoft/vscode/issues/2809)
+- [Add dropdown for search input history · Issue #23099 · microsoft/vscode](https://github.com/microsoft/vscode/issues/23099)
+- [Scroll bar visibility should be configurable · Issue #66000 · microsoft/vscode](https://github.com/microsoft/vscode/issues/66000)
+- [Add setting to automatically hide the side bar · Issue #3742 · microsoft/vscode](https://github.com/microsoft/vscode/issues/3742)
+- [Can we support CR line endings as well as LF and CRLF? · Issue #35797 · microsoft/vscode](https://github.com/microsoft/vscode/issues/35797)
+- [Provide option to opt out of line ending normalisation for files · Issue #127 · microsoft/vscode](https://github.com/microsoft/vscode/issues/127)
+- [Add wordwrap indicator · Issue #47855 · microsoft/vscode](https://github.com/microsoft/vscode/issues/47855)
 
 ## Installation
 
