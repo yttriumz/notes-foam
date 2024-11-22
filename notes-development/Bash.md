@@ -1,11 +1,11 @@
 ---
 sitemap:
-  lastmod: 2024-11-04 +0000
+  lastmod: 2024-11-19 +0000
 ---
 
 # Bash Scripting
 
-Last modified: 2024-11-04 +0000
+Last modified: 2024-11-19 +0000
 
 - [Interesting posts](#interesting-posts)
 - [Redirect command/script/application output](#redirect-commandscriptapplication-output)
@@ -24,6 +24,7 @@ Last modified: 2024-11-04 +0000
 - [Bash is a terrible as a programming language, but what's the alternative ? - DEV Community](https://dev.to/jmfayard/bash-is-a-terrible-programming-language-but-whats-the-alternative--oc2)
 - [A Second Search for Bash Scripting Alternatives - Monzool's Personal Publishing](https://monzool.net/blog/2024/07/14/a-second-search-for-bash-scripting-alternatives/)
 - [what would you use to replace Bash for scripting? - Page 1](https://www.eevblog.com/forum/programming/what-would-you-use-to-replace-bash-for-scripting/)
+- [Using Go instead of Bash/Shell for deployment scripts : r/golang](https://www.reddit.com/r/golang/comments/1fyyey9/comment/lqxodn9)
 - [xonsh/xonsh: :shell: Python-powered shell. Full-featured and cross-platform.](https://github.com/xonsh/xonsh)
 
 Documentation & tutorials:

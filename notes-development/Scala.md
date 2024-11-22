@@ -1,14 +1,15 @@
 ---
 sitemap:
-  lastmod: 2024-09-16 +0000
+  lastmod: 2024-11-22 +0000
 ---
 
 # Scala
 
-Last modified: 2024-09-16 +0000
+Last modified: 2024-11-22 +0000
 
 ## Interesting posts
 
+- [switching from Clojure to Scala : r/scala](https://www.reddit.com/r/scala/comments/1ct6k38/switching_from_clojure_to_scala/)
 - [Scala's Gitter to Discord migration mistake - Alexandru Nedelcu](https://alexn.org/blog/2022/04/09/scala-gitter-discord-mistake/)
 
 Language:

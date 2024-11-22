@@ -1,11 +1,11 @@
 ---
 sitemap:
-  lastmod: 2024-11-12 +0000
+  lastmod: 2024-11-20 +0000
 ---
 
 # Algorithm
 
-Last modified: 2024-11-12 +0000
+Last modified: 2024-11-20 +0000
 
 ## Interesting posts
 
@@ -22,3 +22,7 @@ Last modified: 2024-11-12 +0000
 Books:
 
 - [Algorithms by Jeff Erickson](https://jeffe.cs.illinois.edu/teaching/algorithms/#book)
+
+Practices:
+
+- [The Algorithms](https://the-algorithms.com/)

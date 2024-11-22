@@ -1,11 +1,11 @@
 ---
 sitemap:
-  lastmod: 2024-11-15 +0000
+  lastmod: 2024-11-19 +0000
 ---
 
 # Rust
 
-Last modified: 2024-11-15 +0000
+Last modified: 2024-11-19 +0000
 
 - [Interesting posts](#interesting-posts)
 - [Development environment](#development-environment)
@@ -47,6 +47,7 @@ Language:
 - [I've used (and loved) Rust for ~10 years. Here are the ways it disappoints me. : r/rust](https://www.reddit.com/r/rust/comments/1e978l7/ive_used_and_loved_rust_for_10_years_here_are_the/)
 - [Fearless Concurrency: Rust vs. Go \| Medium](https://medium.com/@AlexanderObregon/journey-to-fearless-concurrency-rust-vs-go-31d49255d6b6)
 - [Rust for Gophers - by Alex Pliutau and John Arundel](https://packagemain.tech/p/rust-for-gophers)
+- [Functional Programming in Rust : r/rust](https://www.reddit.com/r/rust/comments/v65k50/functional_programming_in_rust/)
 
 Tooling:
 
@@ -60,7 +61,7 @@ Tooling:
 - [Use Rust in shell scripts — Kurt Lawrence](https://www.kurtlawrence.info/blog/gufdjkjkq7wphfhkvrumcvmqdr4r69)
 - [Flawless scripting with Rust](https://www.niccoloforlini.com/flawless-scripting-with-rust/)
 
-Web related:
+Web:
 
 - [Are We Web Yet?](https://github.com/rust-lang/arewewebyet)
 - [Rust web framework comparison](https://github.com/flosse/rust-web-framework-comparison)
@@ -69,18 +70,21 @@ Web related:
 - [Axum ecosystem](https://github.com/tokio-rs/axum/blob/main/ECOSYSTEM.md)
 - [How to use “Type safe routing” of axum](https://mixi-developers.mixi.co.jp/how-to-use-type-safe-routing-of-axum-c06c1b1b1ab)
 
-GUI related:
+GUI:
 
 - [Are We GUI Yet?](https://github.com/areweguiyet/areweguiyet)
 - [Why is building a UI in Rust so hard? \| Warp](https://www.warp.dev/blog/why-is-building-a-ui-in-rust-so-hard)
 - [Ownership and data flow in GPUI](https://zed.dev/blog/gpui-ownership)
 
-Embedded related:
+Embedded:
 
+- [esp-rs/awesome-esp-rust: Curated list of resources for ESP32 development in the Rust programming language](https://github.com/esp-rs/awesome-esp-rust)
 - [Programming ESP32 with Rust: OTA firmware update](https://quan.hoabinh.vn/post/2024/3/programming-esp32-with-rust-ota-firmware-update)
 
 Tutorials:
 
+- [Welcome to Comprehensive Rust 🦀 - Comprehensive Rust 🦀](https://google.github.io/comprehensive-rust/index.html)
+  - [An Example in C - Comprehensive Rust 🦀](https://comp-rust-2day.rust-edu.org/why-rust/an-example-in-c.html)
 - [Learn Rust!](https://gist.github.com/noxasaxon/7bf5ebf930e281529161e51cd221cf8a)
 - [Best Book to learn rust : r/rust](https://www.reddit.com/r/rust/comments/sjclfb/best_book_to_learn_rust/)
 - [Seven Rust books that don't suck — Bitfield Consulting](https://bitfieldconsulting.com/posts/best-rust-books)
