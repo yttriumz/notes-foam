@@ -1,11 +1,11 @@
 ---
 sitemap:
-  lastmod: 2024-11-19 +0000
+  lastmod: 2024-12-03 +0000
 ---
 
 # Rust
 
-Last modified: 2024-11-19 +0000
+Last modified: 2024-12-03 +0000
 
 - [Interesting posts](#interesting-posts)
 - [Development environment](#development-environment)
@@ -48,6 +48,7 @@ Language:
 - [Fearless Concurrency: Rust vs. Go \| Medium](https://medium.com/@AlexanderObregon/journey-to-fearless-concurrency-rust-vs-go-31d49255d6b6)
 - [Rust for Gophers - by Alex Pliutau and John Arundel](https://packagemain.tech/p/rust-for-gophers)
 - [Functional Programming in Rust : r/rust](https://www.reddit.com/r/rust/comments/v65k50/functional_programming_in_rust/)
+- [Why Dark didn't choose Rust \| Hacker News](https://news.ycombinator.com/item?id=24991848)
 
 Tooling:
 

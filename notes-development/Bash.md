@@ -1,14 +1,15 @@
 ---
 sitemap:
-  lastmod: 2024-11-19 +0000
+  lastmod: 2024-12-04 +0000
 ---
 
 # Bash Scripting
 
-Last modified: 2024-11-19 +0000
+Last modified: 2024-12-04 +0000
 
 - [Interesting posts](#interesting-posts)
 - [Redirect command/script/application output](#redirect-commandscriptapplication-output)
+- [Format numbers](#format-numbers)
 - [`local` options](#local-options)
 - [Test expressions](#test-expressions)
 - [Shell built-in `:`](#shell-built-in-)
@@ -64,6 +65,13 @@ Use `SOME_COMMAND 2>&1 | tee PATH/TO/FILE`.
 - [bash - echo that outputs to stderr - Stack Overflow](https://stackoverflow.com/questions/2990414/echo-that-outputs-to-stderr)
 - [linux - Echo to both stdout and stderr - Stack Overflow](https://stackoverflow.com/questions/6852969/echo-to-both-stdout-and-stderr)
 - [linux - Capturing STDERR and STDOUT to file using tee - Server Fault](https://serverfault.com/questions/201061/capturing-stderr-and-stdout-to-file-using-tee)
+
+## Format numbers
+
+*References*:
+
+- [how to format a number in bash](https://www.unix.com/shell-programming-and-scripting/143740-how-format-number-bash.html)
+- [Zero Padding in the Shell \| Baeldung on Linux](https://www.baeldung.com/linux/shell-zero-padding)
 
 ## `local` options
 

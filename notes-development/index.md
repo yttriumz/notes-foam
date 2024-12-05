@@ -1,13 +1,13 @@
 ---
 type: index
 sitemap:
-  lastmod: 2024-11-04 +0000
+  lastmod: 2024-12-03 +0000
   priority: 0.5
 ---
 
 # Development Tips
 
-Last modified: 2024-11-04 +0000
+Last modified: 2024-12-03 +0000
 
 General:
 
@@ -20,6 +20,7 @@ Programming languages:
 - [[notes-development/Bash]]
 - [[C]]
 - [[CPP]]
+- [[Clojure]]
 - [[Flutter]]
 - [[Haskell]]
 - [[Java]]
@@ -112,6 +113,7 @@ Fun:
 [notes-development/Bash]: Bash.md "Bash Scripting"
 [C]: C.md "C"
 [CPP]: CPP.md "C++"
+[Clojure]: Clojure.md "Clojure"
 [Flutter]: Flutter.md "Flutter"
 [Haskell]: Haskell.md "Haskell"
 [Java]: Java.md "Java"

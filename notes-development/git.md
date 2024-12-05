@@ -1,11 +1,11 @@
 ---
 sitemap:
-  lastmod: 2024-11-04 +0000
+  lastmod: 2024-12-03 +0000
 ---
 
 # Git Usage
 
-Last modified: 2024-11-04 +0000
+Last modified: 2024-12-03 +0000
 
 - [Interesting posts](#interesting-posts)
 - [Git configuration](#git-configuration)
@@ -168,6 +168,9 @@ Use `git show --summary`.
 - [Git: See my last commit - Stack Overflow](https://stackoverflow.com/questions/2231546/git-see-my-last-commit)
 
 ## Delete a commit but keep the changes
+
+- Use `git reset HEAD^` to reset head without modifying files.
+- Use `git commit --amend` to add more changes to the latest commit.
 
 *References*:
 
