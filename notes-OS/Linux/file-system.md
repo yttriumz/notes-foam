@@ -1,11 +1,11 @@
 ---
 sitemap:
-  lastmod: 2024-11-21 +0000
+  lastmod: 2024-12-11 +0000
 ---
 
 # Storage & File System
 
-Last modified: 2024-11-21 +0000
+Last modified: 2024-12-11 +0000
 
 - [Interesting posts](#interesting-posts)
 - [Permissions](#permissions)
@@ -41,9 +41,17 @@ Last modified: 2024-11-21 +0000
 
 *References*:
 
+- [Logical Volume Manager Administration \| Red Hat Product Documentation](https://docs.redhat.com/en/documentation/red_hat_enterprise_linux/7/html/logical_volume_manager_administration/index)
+- [Configuring and managing logical volumes \| Red Hat Product Documentation](https://docs.redhat.com/en/documentation/red_hat_enterprise_linux/9/html/configuring_and_managing_logical_volumes/index)
+- [How to manage logical volumes - Ubuntu Server documentation](https://documentation.ubuntu.com/server/how-to/storage/manage-logical-volumes/)
+- [About Logical Volume Management (LVM) - Ubuntu Server documentation](https://documentation.ubuntu.com/server/explanation/storage/about-lvm/)
+- [How to Create LVM Partition Step-by-Step in Linux](https://www.linuxtechi.com/how-to-create-lvm-partition-in-linux/)
+- [linux - How to change a physical partition system to LVM? - Server Fault](https://serverfault.com/questions/457831/how-to-change-a-physical-partition-system-to-lvm)
 - [Logical Volume Manager (LVM) versus standard partitioning in Linux \| Enable Sysadmin](https://www.redhat.com/sysadmin/lvm-vs-partitioning)
 - [How to add an extra second hard drive on Linux LVM and increase the size of storage - nixCraft](https://www.cyberciti.biz/faq/howto-add-disk-to-lvm-volume-on-linux-to-increase-size-of-pool/)
 - [How to add a new LVM volumes for full and partial disk usage](https://www.techrepublic.com/article/how-to-new-lvm-volumes/)
+- [\[SOLVED\] Ubuntu "live" Server 20.04 - How to create custom partition /boot + LVM ??? [Archive] - Ubuntu Forums](https://ubuntuforums.org/archive/index.php/t-2441984.html)
+- [partitioning - Ubuntu "live" Server 20.04 - How to create custom partition /boot + LVM on a single disk? - Ask Ubuntu](https://askubuntu.com/questions/1234457/ubuntu-live-server-20-04-how-to-create-custom-partition-boot-lvm-on-a-sin)
 
 ## Btrfs
 

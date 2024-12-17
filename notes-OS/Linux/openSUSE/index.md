@@ -23,6 +23,7 @@ General:
 
 - [Help:Colors](https://en.opensuse.org/Help:Colors)
 - [openSUSE Brand Guidelines](https://opensuse.github.io/branding-guidelines/)
+- [What makes you like OpenSUSE? - English / Open Chat - openSUSE Forums](https://forums.opensuse.org/t/what-makes-you-like-opensuse/174664)
 - [Why did you choose Suse over Fedora?](https://www.reddit.com/r/openSUSE/comments/10rk7wn/why_did_you_choose_suse_over_fedora/)
 - [Difference between Leap "transactional server", microos, and leap micro? : openSUSE](https://www.reddit.com/r/openSUSE/comments/x81vvs/difference_between_leap_transactional_server/)
 - [Network Manager vs Wicked? : openSUSE](https://www.reddit.com/r/openSUSE/comments/138wz5z/network_manager_vs_wicked/)

@@ -1,11 +1,11 @@
 ---
 sitemap:
-  lastmod: 2024-11-01 +0000
+  lastmod: 2024-12-06 +0000
 ---
 
 # Networking
 
-Last modified: 2024-11-01 +0000
+Last modified: 2024-12-06 +0000
 
 - [Interesting posts](#interesting-posts)
 - [DNS](#dns)
@@ -38,6 +38,8 @@ Last modified: 2024-11-01 +0000
 - [What are the differences between lsof and netstat on linux? - Stack Overflow](https://stackoverflow.com/questions/49381124/what-are-the-differences-between-lsof-and-netstat-on-linux)
 - [networking - Why do nmap, ss (netscan?) and lsof give different results? - Unix & Linux Stack Exchange](https://unix.stackexchange.com/questions/652556/why-do-nmap-ss-netscan-and-lsof-give-different-results)
 - [Connection reset原因分析和解决方案-CSDN博客](https://blog.csdn.net/liyantianmin/article/details/82505734)
+- [debian - What are the differences between iputils-ping and inetutils-ping? - Unix & Linux Stack Exchange](https://unix.stackexchange.com/questions/400351/what-are-the-differences-between-iputils-ping-and-inetutils-ping)
+- [Traceroute vs. tracepath: What's the difference?](https://www.redhat.com/en/blog/traceroute-tracepath-network-troubleshooting)
 
 ## DNS
 

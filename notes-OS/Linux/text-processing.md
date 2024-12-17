@@ -1,6 +1,6 @@
 ---
 sitemap:
-  lastmod: 2024-09-23 +0000
+  lastmod: 2024-11-25 +0000
 ---
 
 # Text Processing on Linux
@@ -8,6 +8,7 @@ sitemap:
 - [Interesting posts](#interesting-posts)
 - [`awk`](#awk)
 - [`sed`](#sed)
+  - [`sd` (Rust)](#sd-rust)
 - [`grep`](#grep)
 - [ripgrep (Rust)](#ripgrep-rust)
 - [`wc`](#wc)
@@ -70,6 +71,12 @@ sitemap:
 
 - [scripting - How can I remove the first line of a text file using bash/sed script? - Stack Overflow](https://stackoverflow.com/questions/339483/how-can-i-remove-the-first-line-of-a-text-file-using-bash-sed-script)
 - [Remove First n Lines of a Large Text File - Ask Ubuntu](https://askubuntu.com/questions/410196/remove-first-n-lines-of-a-large-text-file)
+
+### `sd` (Rust)
+
+*References*:
+
+- [chmln/sd: Intuitive find & replace CLI (sed alternative)](https://github.com/chmln/sd)
 
 ## `grep`
 
