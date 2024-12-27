@@ -1,11 +1,11 @@
 ---
 sitemap:
-  lastmod: 2024-10-30 +0000
+  lastmod: 2024-12-20 +0000
 ---
 
 # Perl
 
-Last modified: 2024-10-30 +0000
+Last modified: 2024-12-20 +0000
 
 - [Interesting posts](#interesting-posts)
 - [Development environment](#development-environment)
@@ -141,6 +141,7 @@ Pre-installed:
 
 *References*:
 
+- [ziishaned/learn-regex: Learn regex the easy way](https://github.com/ziishaned/learn-regex)
 - [Regular-Expressions.info](https://www.regular-expressions.info/refquick.html)
 - [string - Regex not operator - Stack Overflow](https://stackoverflow.com/questions/7317043/regex-not-operator)
 - [regex - Regular expression to match EOF - Stack Overflow](https://stackoverflow.com/questions/1171284/regular-expression-to-match-eof)

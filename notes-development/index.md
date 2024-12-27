@@ -1,13 +1,13 @@
 ---
 type: index
 sitemap:
-  lastmod: 2024-12-03 +0000
+  lastmod: 2024-12-27 +0000
   priority: 0.5
 ---
 
 # Development Tips
 
-Last modified: 2024-12-03 +0000
+Last modified: 2024-12-27 +0000
 
 General:
 
@@ -21,6 +21,7 @@ Programming languages:
 - [[C]]
 - [[CPP]]
 - [[Clojure]]
+- [[Elixir]]
 - [[Flutter]]
 - [[Haskell]]
 - [[Java]]
@@ -45,6 +46,7 @@ Domain-specific:
 - [[ML]]
 - [[SSO]]
 - [[web]]
+- [[JMeter]]
 
 Miscellaneous:
 
@@ -114,6 +116,7 @@ Fun:
 [C]: C.md "C"
 [CPP]: CPP.md "C++"
 [Clojure]: Clojure.md "Clojure"
+[Elixir]: Elixir.md "Elixir"
 [Flutter]: Flutter.md "Flutter"
 [Haskell]: Haskell.md "Haskell"
 [Java]: Java.md "Java"
@@ -135,6 +138,7 @@ Fun:
 [ML]: ML.md "Machine Learning"
 [SSO]: SSO.md "Single Sign-On"
 [web]: web.md "Web Development"
+[JMeter]: JMeter.md "Jmeter"
 [notes-development/GitHub-Pages]: GitHub-Pages.md "GitHub Pages"
 [Mermaid]: Mermaid.md "Mermaid"
 [Garmin-CIQ]: Garmin-CIQ.md "Garmin Connect IQ"

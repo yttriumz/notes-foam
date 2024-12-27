@@ -1,11 +1,11 @@
 ---
 sitemap:
-  lastmod: 2024-06-14 +0000
+  lastmod: 2024-12-23 +0000
 ---
 
 # Java
 
-Last modified: 2024-06-14 +0000
+Last modified: 2024-12-23 +0000
 
 - [Interesting posts](#interesting-posts)
 - [Java distributions](#java-distributions)
@@ -14,7 +14,7 @@ Last modified: 2024-06-14 +0000
 - [Jetty](#jetty)
 - [Spring Boot](#spring-boot)
 - [Apache](#apache)
-- [VSCode](#vscode)
+- [Time format](#time-format)
 
 ## Interesting posts
 
@@ -31,6 +31,11 @@ Last modified: 2024-06-14 +0000
 - [Find out your Java heap memory size - Mkyong.com](https://mkyong.com/java/find-out-your-java-heap-memory-size/)
 - [How the JVM uses and allocates memory \| Red Hat Developer](https://developers.redhat.com/articles/2021/09/09/how-jvm-uses-and-allocates-memory)
 - [Wardrobe strength: JVMs and kill signals](http://journal.thobe.org/2013/02/jvms-and-kill-signals.html)
+
+Tooling:
+
+- [The Oracle Java Platform Extension for Visual Studio Code \| Hacker News](https://news.ycombinator.com/item?id=37929311)
+- [Introducing the Oracle Java Platform Extension for Visual Studio Code : java](https://www.reddit.com/r/java/comments/17ar11h/introducing_the_oracle_java_platform_extension/)
 
 ## Java distributions
 
@@ -119,9 +124,12 @@ Last modified: 2024-06-14 +0000
 - [http headers - How to set SameSite cookie attribute using Apache configuration? - Stack Overflow](https://stackoverflow.com/questions/54104573/how-to-set-samesite-cookie-attribute-using-apache-configuration)
 - [apache 2.4 - Header always edit Set-Cookie not working - Server Fault](https://serverfault.com/questions/1043924/header-always-edit-set-cookie-not-working)
 
-## VSCode
+## Time format
 
 *References*:
 
-- [The Oracle Java Platform Extension for Visual Studio Code \| Hacker News](https://news.ycombinator.com/item?id=37929311)
-- [Introducing the Oracle Java Platform Extension for Visual Studio Code : java](https://www.reddit.com/r/java/comments/17ar11h/introducing_the_oracle_java_platform_extension/)
+- [date - How to get the current time in YYYY-MM-DD HH:MI:Sec.Millisecond format in Java? - Stack Overflow](https://stackoverflow.com/questions/1459656/how-to-get-the-current-time-in-yyyy-mm-dd-hhmisec-millisecond-format-in-java)
+- [date - How to get ISO format from time in milliseconds in Java? - Stack Overflow](https://stackoverflow.com/questions/11933137/how-to-get-iso-format-from-time-in-milliseconds-in-java)
+- [java - How Do I Convert System.currentTimeMillis To Time Format? (HH:MM:SS) - Stack Overflow](https://stackoverflow.com/questions/56007124/how-do-i-convert-system-currenttimemillis-to-time-format-hhmmss)
+- [time - How to convert Milliseconds to "X mins, x seconds" in Java? - Stack Overflow](https://stackoverflow.com/questions/625433/how-to-convert-milliseconds-to-x-mins-x-seconds-in-java)
+- [How to convert currentTimeMillis to a date in Java? - Stack Overflow](https://stackoverflow.com/questions/8237193/how-to-convert-currenttimemillis-to-a-date-in-java)
