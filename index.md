@@ -1,8 +1,11 @@
 ---
 type: index
+sitemap:
+  lastmod: 2025-02-06 +0000
+  priority: 1.0
 ---
 
-# [Alecton4](https://github.com/Alecton4)'s Notes
+# [yttriumz](https://github.com/yttriumz)'s Notes
 
 ## Index
 
@@ -13,12 +16,6 @@ type: index
 ## Interesting Posts
 
 - [Understanding Hierarchy by Translating Folgezettel and Structure Zettel](https://zettelkasten.de/posts/understanding-hierarchy-translating-folgezettel/)
-- [Development stopped? · dendronhq/dendron · Discussion #3890](https://github.com/dendronhq/dendron/discussions/3890)
-- [Getting Started with Jekyll and GitHub Pages \| Aleksandr Hovhannisyan](https://www.aleksandrhovhannisyan.com/blog/getting-started-with-jekyll-and-github-pages/)
-- [Collapsible Code Blocks in GitHub Pages \| endtoend.ai](https://www.endtoend.ai/tutorial/collapsible-code-blocks/)
-- [Jekyll Text Expand or Collapsible Markdown \| Tom Ordonez](https://tomordonez.com/jekyll-text-expand-collapsible-markdown/)
-- [my github.io page does not show up in google search](https://github.com/community/community/discussions/44421)
-- [Get Github Pages Site found in Google Search Results](https://stackoverflow.com/questions/49073043/get-github-pages-site-found-in-google-search-results)
 
 ## Credits
 
