@@ -1,11 +1,11 @@
 ---
 sitemap:
-  lastmod: 2024-12-06 +0000
+  lastmod: 2025-03-11 +0000
 ---
 
 # System Design
 
-Last modified: 2024-12-06 +0000
+Last modified: 2025-03-11 +0000
 
 ## Interesting posts
 
@@ -16,3 +16,15 @@ Last modified: 2024-12-06 +0000
 - [What exactly does “headless” mean? Like a headless CMS : r/webdev](https://www.reddit.com/r/webdev/comments/10o139p/what_exactly_does_headless_mean_like_a_headless/)
 - [The Login Explosion](https://blog.codinghorror.com/the-login-explosion/)
 - [You're Probably Storing Passwords Incorrectly](https://blog.codinghorror.com/youre-probably-storing-passwords-incorrectly/)
+
+## OpenTelemetry
+
+*References*:
+
+- [OpenTelemetry TL;DR : r/kubernetes](https://www.reddit.com/r/kubernetes/comments/tydz8v/opentelemetry_tldr/)
+
+### Collector
+
+*References*:
+
+- [Difference between otel/opentelemetry-collector-contrib vs otel/opentelemetry-collector · open-telemetry/opentelemetry-collector-contrib · Discussion #6971](https://github.com/open-telemetry/opentelemetry-collector-contrib/discussions/6971)
