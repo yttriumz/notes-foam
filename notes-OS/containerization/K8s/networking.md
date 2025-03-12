@@ -1,11 +1,11 @@
 ---
 sitemap:
-  lastmod: 2024-11-18 +0000
+  lastmod: 2025-01-06 +0000
 ---
 
 # Kubernetes Networking
 
-Last modified: 2024-11-18 +0000
+Last modified: 2025-01-06 +0000
 
 ## Interesting posts
 
@@ -36,6 +36,7 @@ Last modified: 2024-11-18 +0000
 - [Kubernetes Networking with Calico](https://www.tigera.io/blog/kubernetes-networking-with-calico/)
 - [Document interactions with firewalld · Issue #5232 · projectcalico/calico](https://github.com/projectcalico/calico/issues/5232)
 - [Secure egress access with DNS Policy and NetworkSets](https://www.tigera.io/blog/secure-egress-access-with-dns-policy-and-networksets/?utm_campaign=O%27Reilly-Nurture&utm_medium=email&utm_source=marketo&mkt_tok=ODA1LUdGSC03MzIAAAGWe0YHXP0T0tc7_hRwZ46EgqLfGQi_ryhEVhyaWlt4OguPTZS2eO3dGYGK0fNdAaHJ5TVAQWURi4hEWNKQOCiNtgkwV1AxMDsyJBaNBx-Jkg)
+- [Configure IP autodetection \| Calico Documentation](https://docs.tigera.io/calico/latest/networking/ipam/ip-autodetection)
 
 ## Host firewall
 
@@ -43,3 +44,17 @@ Last modified: 2024-11-18 +0000
 
 - [Opening Ports with firewalld \| Rancher](https://ranchermanager.docs.rancher.com/how-to-guides/advanced-user-guides/open-ports-with-firewalld)
 - [在 Firewalld 上設定 Kubernetes 的防火牆規則 \| by Patrickuuuu \| Medium](https://medium.com/@hank93513/%E5%9C%A8-firewalld-%E4%B8%8A%E8%A8%AD%E5%AE%9A-kubernetes-%E7%9A%84%E9%98%B2%E7%81%AB%E7%89%86%E8%A6%8F%E5%89%87-8691d97f909d)
+
+## K8s DNS
+
+*References*:
+
+- [DNS for Services and Pods \| Kubernetes](https://kubernetes.io/docs/concepts/services-networking/dns-pod-service/)
+- [network programming - How to resolve pod hostnames from other pods? - Stack Overflow](https://stackoverflow.com/questions/59258223/how-to-resolve-pod-hostnames-from-other-pods)
+- [Pod hostname access from cluster - Help · Issue #49270 · kubernetes/kubernetes](https://github.com/kubernetes/kubernetes/issues/49270)
+
+## Manage `/etc/hosts` in pods
+
+*References*:
+
+- [Adding entries to Pod /etc/hosts with HostAliases \| Kubernetes](https://kubernetes.io/docs/tasks/network/customize-hosts-file-for-pods/)
