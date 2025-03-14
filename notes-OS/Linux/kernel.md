@@ -1,11 +1,11 @@
 ---
 sitemap:
-  lastmod: 2024-10-24 +0000
+  lastmod: 2025-01-10 +0000
 ---
 
 # Linux Kernel
 
-Last modified: 2024-10-24 +0000
+Last modified: 2025-01-10 +0000
 
 - [Interesting posts](#interesting-posts)
 - [Kernel panic](#kernel-panic)
@@ -16,6 +16,8 @@ Last modified: 2024-10-24 +0000
 
 Miscellaneous:
 
+- [Rust in Linux lead retires rather than deal with more "nontechnical nonsense" \| Hacker News](https://news.ycombinator.com/item?id=41449554)
+- [One Of The Rust Linux Kernel Maintainers Steps Down - Cites "Nontechnical Nonsense" : r/rust](https://www.reddit.com/r/rust/comments/1f3scn1/one_of_the_rust_linux_kernel_maintainers_steps/)
 - [Getting called "Paid Actor" by Linus Torvalds \| Peter Cai — C...](https://typeblog.net/55833/getting-called-paid-actor-by-linus-torvalds)
   - [MAINTAINERS: Remove some entries due to various compliance requirements. · torvalds/linux@6e90b67](https://github.com/torvalds/linux/commit/6e90b675cf942e50c70e8394dfb5862975c3b3b2)
 - [Re: [PATCH 00/45] C++: Convert the kernel to C++ - H. Peter Anvin](https://lore.kernel.org/lkml/3465e0c6-f5b2-4c42-95eb-29361481f805@zytor.com/)

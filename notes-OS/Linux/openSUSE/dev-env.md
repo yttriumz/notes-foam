@@ -1,12 +1,12 @@
 ---
 sitemap:
-  lastmod: 2024-11-04 +0000
+  lastmod: 2025-02-28 +0000
   priority: 1.0
 ---
 
 # openSUSE Development Environment
 
-Last modified: 2024-11-04 +0000
+Last modified: 2025-02-28 +0000
 
 **NOTE**: This note assumes Tumbleweed by default, but most content should also apply to Leap. Some of the existing differences between Tumbleweed and Leap are mentioned in the corresponding instructions.
 
@@ -203,12 +203,12 @@ zypper install pattern:devel_basis # Does the same
 
 ## Go
 
-1. Refer to [the official docs](https://go.dev/doc/install). I installed it under `$HOME/.go`.
+1. Refer to [the official docs](https://go.dev/doc/install). I installed it under `$HOME/.local/go`.
 2. Add the following to `~/.bash_profile`:
 
    ```bash
    # Go environment
-   export PATH="$PATH:$HOME/.go/bin"
+   export PATH="$PATH:$HOME/.local/go/bin"
    ```
 
 *References*:

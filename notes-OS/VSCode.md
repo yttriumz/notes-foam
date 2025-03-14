@@ -1,11 +1,11 @@
 ---
 sitemap:
-  lastmod: 2024-11-18 +0000
+  lastmod: 2025-03-07 +0000
 ---
 
 # Visual Studio Code
 
-Last modified: 2024-11-18 +0000
+Last modified: 2025-03-07 +0000
 
 - [Interesting posts](#interesting-posts)
 - [Installation](#installation)
@@ -24,6 +24,8 @@ Last modified: 2024-11-18 +0000
 ## Interesting posts
 
 - [Visual Studio Code is designed to fracture](https://ghuntley.com/fracture/)
+- [Creating and Using VS Code Snippets: A Beginner's Guide - DEV Community](https://dev.to/serifcolakel/creating-and-using-vs-code-snippets-a-beginners-guide-53ae)
+- [vscode/src/vs/base/node/cpuUsage.sh at main · microsoft/vscode](https://github.com/microsoft/vscode/blob/main/src/vs/base/node/cpuUsage.sh)
 
 Concerning issues:
 
@@ -42,6 +44,8 @@ Concerning issues:
 - [Can we support CR line endings as well as LF and CRLF? · Issue #35797 · microsoft/vscode](https://github.com/microsoft/vscode/issues/35797)
 - [Provide option to opt out of line ending normalisation for files · Issue #127 · microsoft/vscode](https://github.com/microsoft/vscode/issues/127)
 - [Add wordwrap indicator · Issue #47855 · microsoft/vscode](https://github.com/microsoft/vscode/issues/47855)
+- [Support syntax highlighting with tree-sitter · Issue #50140 · microsoft/vscode](https://github.com/microsoft/vscode/issues/50140)
+- [Use fresh environment block on new terminals in Windows · Issue #47816 · microsoft/vscode](https://github.com/microsoft/vscode/issues/47816)
 
 ## Installation
 

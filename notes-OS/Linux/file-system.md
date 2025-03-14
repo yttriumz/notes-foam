@@ -1,11 +1,11 @@
 ---
 sitemap:
-  lastmod: 2024-12-11 +0000
+  lastmod: 2025-03-13 +0000
 ---
 
 # Storage & File System
 
-Last modified: 2024-12-11 +0000
+Last modified: 2025-03-13 +0000
 
 - [Interesting posts](#interesting-posts)
 - [Permissions](#permissions)
@@ -14,6 +14,7 @@ Last modified: 2024-12-11 +0000
 - [exFAT](#exfat)
   - [Utility installation](#utility-installation)
 - [SquashFS](#squashfs)
+- [Disk usage utilities](#disk-usage-utilities)
 
 ## Interesting posts
 
@@ -29,6 +30,8 @@ Last modified: 2024-12-11 +0000
 - [What happens when you delete a file in Linux? \| Enable Sysadmin](https://www.redhat.com/sysadmin/linux-delete-file-rm)
 - [Where do files go when the rm command is issued? - Unix & Linux Stack Exchange](https://unix.stackexchange.com/questions/10883/where-do-files-go-when-the-rm-command-is-issued)
 - [partitioning - How do I find out what filesystem my partitions are using? - Ask Ubuntu](https://askubuntu.com/questions/309047/how-do-i-find-out-what-filesystem-my-partitions-are-using)
+- [Quickly create a large file on a Linux system - Stack Overflow](https://stackoverflow.com/questions/257844/quickly-create-a-large-file-on-a-linux-system)
+- [filesystem - What is the rationale for the `/usr` directory? - Ask Ubuntu](https://askubuntu.com/questions/130186/what-is-the-rationale-for-the-usr-directory)
 
 ## Permissions
 
@@ -72,3 +75,9 @@ Last modified: 2024-12-11 +0000
 *References*:
 
 - [The SquashFS tools exposed](https://tldp.org/HOWTO/SquashFS-HOWTO/mksqoverview.html)
+
+## Disk usage utilities
+
+*References*:
+
+- [GUI disk usage options : r/Gentoo](https://www.reddit.com/r/Gentoo/comments/1dfjkv3/gui_disk_usage_options/)

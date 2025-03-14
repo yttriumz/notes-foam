@@ -23,6 +23,7 @@
 - [Git](https://gitforwindows.org/)
 - [Everything](https://www.voidtools.com/downloads/)
 - [f.lux](https://justgetflux.com/)
+- [Tyrrrz/LightBulb: Reduces eye strain by adjusting screen gamma based on the current time](https://github.com/Tyrrrz/LightBulb)
 - [sizer4](http://www.brianapps.net/sizer4/)
 - Zoom
 - Clash for Windows

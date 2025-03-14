@@ -1,13 +1,13 @@
 ---
 type: index
 sitemap:
-  lastmod: 2024-11-15 +0000
+  lastmod: 2025-01-09 +0000
   priority: 0.5
 ---
 
 # Linux
 
-Last modified: 2024-11-15 +0000
+Last modified: 2025-01-09 +0000
 
 Distributions:
 
@@ -54,6 +54,7 @@ Tutorials:
 
 Miscellaneous:
 
+- [linux - When does the system send a SIGTERM to a process? - Unix & Linux Stack Exchange](https://unix.stackexchange.com/questions/10231/when-does-the-system-send-a-sigterm-to-a-process)
 - [unix - What are file descriptors, explained in simple terms? - Stack Overflow](https://stackoverflow.com/questions/5256599/what-are-file-descriptors-explained-in-simple-terms)
   - [What is a File Descriptor & How to Close It \| Lenovo US](https://www.lenovo.com/us/en/glossary/file-descriptor/)
   - [Here is all you need to know about File Descriptors in linux \| by Ishan Dhar \| Medium](https://medium.com/@dhar.ishan04/here-is-all-you-need-to-know-about-file-descriptors-in-linux-d93f05166026)

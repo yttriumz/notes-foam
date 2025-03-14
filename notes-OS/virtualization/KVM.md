@@ -1,12 +1,12 @@
 ---
 sitemap:
-  lastmod: 2024-09-23 +0000
+  lastmod: 2024-11-26 +0000
   priority: 1.0
 ---
 
 # Kernel-based Virtual Machine
 
-Last modified: 2024-09-23 +0000
+Last modified: 2024-11-26 +0000
 
 - [Interesting posts](#interesting-posts)
 - [Installation](#installation)
@@ -39,6 +39,8 @@ Last modified: 2024-09-23 +0000
 ## Interesting posts
 
 - [如何在Linux系統跑Windows軟體，三種方法不同的思路 · Ivon的部落格](https://ivonblog.com/posts/how-to-run-windows-programs-on-linux/)
+- [virt-manager is deprecated in RHEL (but only RHEL) \| Cole Robinson](https://blog.wikichoon.com/2020/06/virt-manager-deprecated-in-rhel.html)
+- [Cockpit教學：用網頁瀏覽器管理QEMU/KVM虛擬機，替代Virt Manager · Ivon的部落格](https://ivonblog.com/posts/manage-qemu-kvm-vm-with-cockpit/)
 
 ## Installation
 

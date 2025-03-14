@@ -1,11 +1,11 @@
 ---
 sitemap:
-  lastmod: 2024-09-06 +0000
+  lastmod: 2025-01-20 +0000
 ---
 
 # NVIDIA Devices
 
-Last modified: 2024-09-06 +0000
+Last modified: 2025-01-20 +0000
 
 - [Interesting posts](#interesting-posts)
 - [GPUs](#gpus)
@@ -44,9 +44,6 @@ Last modified: 2024-09-06 +0000
 
 - [What's the difference between NVIDIA open source kernel and NVK vs Nouveau vs Nova vs NVIDIA proprietary??? : r/linux](https://www.reddit.com/r/linux/comments/1cqcovg/whats_the_difference_between_nvidia_open_source/)
 - [Series 550 freezes laptop - Graphics / Linux / Linux - NVIDIA Developer Forums](https://forums.developer.nvidia.com/t/series-550-freezes-laptop/284772)
-- [\[SOLVED\] Repeated kernel problems/freezes since 6.7.6 / Kernel & Hardware / Arch Linux Forums](https://bbs.archlinux.org/viewtopic.php?id=293400)
-- [Kernel panic again : r/linuxquestions](https://www.reddit.com/r/linuxquestions/comments/1brc2eg/kernel_panic_again/)
-- [For people who use NVK drivers...how good it is now? : r/linux_gaming](https://www.reddit.com/r/linux_gaming/comments/1b394d1/for_people_who_use_nvk_drivershow_good_it_is_now/)
 - [Nouveau/Mesa/NVK are getting very good : r/linux_gaming](https://www.reddit.com/r/linux_gaming/comments/1dz8kn2/nouveaumesanvk_are_getting_very_good/)
 - [\[GUIDE\] Switching From Proprietary NVIDIA Drivers to NVK · hyprwm/Hyprland · Discussion #5633](https://github.com/hyprwm/Hyprland/discussions/5633)
 

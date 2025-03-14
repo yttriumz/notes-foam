@@ -1,6 +1,6 @@
 ---
 sitemap:
-  lastmod: 2024-11-25 +0000
+  lastmod: 2025-02-18 +0000
 ---
 
 # Text Processing on Linux
@@ -86,6 +86,7 @@ sitemap:
 - [Grep: how to add an "OR" condition? - Unix & Linux Stack Exchange](https://unix.stackexchange.com/questions/25821/grep-how-to-add-an-or-condition)
 - [Can grep show only words that match search pattern? - Stack Overflow](https://stackoverflow.com/questions/1546711/can-grep-show-only-words-that-match-search-pattern)
 - [linux - How to 'grep' a continuous stream? - Stack Overflow](https://stackoverflow.com/questions/7161821/how-to-grep-a-continuous-stream)
+- [solaris - Using grep -v on multiple arguments - Unix & Linux Stack Exchange](https://unix.stackexchange.com/questions/19467/using-grep-v-on-multiple-arguments)
 
 ## ripgrep (Rust)
 
