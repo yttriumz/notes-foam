@@ -1,11 +1,15 @@
 ---
 sitemap:
-  lastmod: 2024-09-23 +0000
+  lastmod: 2025-03-07 +0000
 ---
 
 # Cryptography
 
-Last modified: 2024-09-23 +0000
+Last modified: 2025-03-07 +0000
+
+- [Interesting posts](#interesting-posts)
+- [PKCS12](#pkcs12)
+- [X.509 Certificate](#x509-certificate)
 
 ## Interesting posts
 
@@ -45,9 +49,12 @@ Last modified: 2024-09-23 +0000
 ## X.509 Certificate
 
 - Show expiration date: `openssl x509 -enddate -noout -in PEM_PATH`
+- Create self-signed certificate: `openssl req -x509 -newkey rsa:4096 -keyout key.pem -out cert.pem -sha256 -days 3650 -nodes -subj "/C=XX/ST=StateName/L=CityName/O=CompanyName/OU=CompanySectionName/CN=CommonNameOrHostname" --addext "subjectAltName=IP:0.0.0.0"`
 
 *References*:
 
 - [What Is an X.509 Certificate? - SSL.com](https://www.ssl.com/faqs/what-is-an-x-509-certificate/)
 - [linux - How to determine SSL cert expiration date from a PEM encoded certificate? - Stack Overflow](https://stackoverflow.com/questions/21297853/how-to-determine-ssl-cert-expiration-date-from-a-pem-encoded-certificate)
 - [openssl - How do I view the details of a digital certificate .cer file? - Server Fault](https://serverfault.com/questions/215606/how-do-i-view-the-details-of-a-digital-certificate-cer-file)
+- [How can I generate a self-signed SSL certificate using OpenSSL? - Stack Overflow](https://stackoverflow.com/questions/10175812/how-can-i-generate-a-self-signed-ssl-certificate-using-openssl)
+- [https - Specify Subject Alternative Name when generating a self signed certificate - Stack Overflow](https://stackoverflow.com/questions/33138148/specify-subject-alternative-name-when-generating-a-self-signed-certificate)

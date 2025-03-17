@@ -1,11 +1,11 @@
 ---
 sitemap:
-  lastmod: 2024-12-03 +0000
+  lastmod: 2025-01-20 +0000
 ---
 
 # Git Usage
 
-Last modified: 2024-12-03 +0000
+Last modified: 2025-01-20 +0000
 
 - [Interesting posts](#interesting-posts)
 - [Git configuration](#git-configuration)
@@ -120,6 +120,11 @@ Use `git clone REMOTE_REPO TARGET_DIRECTORY`.
 - [How do I clone a Git repository into a specific folder?](https://stackoverflow.com/questions/651038/how-do-i-clone-a-git-repository-into-a-specific-folder)
 
 ## Clone all remote branches
+
+Currently, git does not provide flag to clone all remote branches automatically. You have to manually clone the repo and:
+
+- Run `git branch -a` to show all branches. Then run `git checkout` to checkout specific branch.
+- Or run `for branch in $(git branch --all | grep '^\s*remotes' | egrep --invert-match '(:?HEAD|master)$'); do git checkout $(basename $branch); done` to checkout all branches.
 
 *References*:
 

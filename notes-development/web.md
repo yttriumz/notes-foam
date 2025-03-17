@@ -1,17 +1,18 @@
 ---
 sitemap:
-  lastmod: 2024-11-04 +0000
+  lastmod: 2024-12-27 +0000
 ---
 
 # Web Development
 
-Last modified: 2024-11-04 +0000
+Last modified: 2024-12-27 +0000
 
 - [Interesting posts](#interesting-posts)
 - [nginx](#nginx)
   - [OpenResty](#openresty)
 - [CIDR](#cidr)
 - [CSRF](#csrf)
+- [SAML](#saml)
 
 ## Interesting posts
 
@@ -68,3 +69,11 @@ docker run --name my-nginx -p 80:80 -v nginx.conf:/usr/local/openresty/nginx/con
 *References*:
 
 - [How to protect your websites and web apps with anti-CSRF tokens \| Invicti](https://www.invicti.com/blog/web-security/protecting-website-using-anti-csrf-token/)
+
+## SAML
+
+*References*:
+
+- [SAML - what can go wrong? Security check - Securing](https://www.securing.pl/en/saml-what-can-go-wrong-security-check/)
+- [What's the problem with SAML 2.0? : r/sysadmin](https://www.reddit.com/r/sysadmin/comments/1d305v9/whats_the_problem_with_saml_20/)
+- [SAML Is Insecure by Design \| Hacker News](https://news.ycombinator.com/item?id=28064835)

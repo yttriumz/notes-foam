@@ -22,6 +22,7 @@ Last modified: 2025-03-11 +0000
 *References*:
 
 - [OpenTelemetry TL;DR : r/kubernetes](https://www.reddit.com/r/kubernetes/comments/tydz8v/opentelemetry_tldr/)
+- [How do I convince my org to adopt Opentelemetry : r/devops](https://www.reddit.com/r/devops/comments/18hi8dp/how_do_i_convince_my_org_to_adopt_opentelemetry/)
 
 ### Collector
 

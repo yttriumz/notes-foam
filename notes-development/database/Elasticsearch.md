@@ -1,13 +1,14 @@
 ---
 sitemap:
-  lastmod: 2024-09-23 +0000
+  lastmod: 2025-02-06 +0000
 ---
 
 # Elasticsearch & OpenSearch
 
-Last modified: 2024-09-23 +0000
+Last modified: 2025-02-06 +0000
 
 - [Interesting posts](#interesting-posts)
+- [Hot-Warm-Cold Architecture](#hot-warm-cold-architecture)
 - [Kibana/OpenSearch Dashboards](#kibanaopensearch-dashboards)
 - [elasticdump](#elasticdump)
 - [Tools](#tools)
@@ -31,6 +32,15 @@ Last modified: 2024-09-23 +0000
 - [Elasticsearch is open source, again \| Hacker News](https://news.ycombinator.com/item?id=41394797)
 - [Elasticsearch is open source, again : r/programming](https://www.reddit.com/r/programming/comments/1f4ealr/elasticsearch_is_open_source_again/)
 - [Prometheus vs Elasticsearch stack - Key concepts, features, and differences \| SigNoz](https://signoz.io/blog/prometheus-vs-elasticsearch/)
+
+## Hot-Warm-Cold Architecture
+
+*References*:
+
+- [Implementing Hot-Warm-Cold in Elasticsearch with Index Lifecycle Management \| Elastic Blog](https://www.elastic.co/blog/implementing-hot-warm-cold-in-elasticsearch-with-index-lifecycle-management)
+- [Elasticsearch Multi-Tier Architecture \| Hot, Warm, Cold & Frozen](https://opster.com/guides/elasticsearch/capacity-planning/elasticsearch-hot-warm-cold-frozen-architecture/)
+- [How to move indexs from hot node to warm node? - OpenSearch - OpenSearch](https://forum.opensearch.org/t/how-to-move-indexs-from-hot-node-to-warm-node/15301)
+- [Creating a cluster - OpenSearch Documentation](https://opensearch.org/docs/latest/tuning-your-cluster/#advanced-step-7-set-up-a-hot-warm-architecture)
 
 ## Kibana/OpenSearch Dashboards
 

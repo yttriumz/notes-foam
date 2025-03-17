@@ -1,16 +1,18 @@
 ---
 sitemap:
-  lastmod: 2024-12-23 +0000
+  lastmod: 2025-01-14 +0000
 ---
 
 # Java
 
-Last modified: 2024-12-23 +0000
+Last modified: 2025-01-14 +0000
 
 - [Interesting posts](#interesting-posts)
-- [Java distributions](#java-distributions)
-- [Java version manager](#java-version-manager)
+- [Tooling](#tooling)
+  - [Java distributions](#java-distributions)
+  - [Java version manager](#java-version-manager)
 - [JAR manipulations](#jar-manipulations)
+- [Exit code](#exit-code)
 - [Jetty](#jetty)
 - [Spring Boot](#spring-boot)
 - [Apache](#apache)
@@ -31,20 +33,31 @@ Last modified: 2024-12-23 +0000
 - [Find out your Java heap memory size - Mkyong.com](https://mkyong.com/java/find-out-your-java-heap-memory-size/)
 - [How the JVM uses and allocates memory \| Red Hat Developer](https://developers.redhat.com/articles/2021/09/09/how-jvm-uses-and-allocates-memory)
 - [Wardrobe strength: JVMs and kill signals](http://journal.thobe.org/2013/02/jvms-and-kill-signals.html)
+- [Java IO vs NIO \| Baeldung](https://www.baeldung.com/java-io-vs-nio)
+- [Java NIO浅析 - 美团技术团队](https://tech.meituan.com/2016/11/04/nio.html)
+
+Language:
+
+- [What happens when we create Java objects using ‘new’? \| by Roopa Kushtagi \| Medium](https://medium.com/@roopa.kushtagi/what-happens-when-we-create-java-objects-using-new-4d75b9dd0756)
+- [performance - Is Java slow when creating Objects? - Stack Overflow](https://stackoverflow.com/questions/21055218/is-java-slow-when-creating-objects)
+- [Should we avoid object creation in Java? - Software Engineering Stack Exchange](https://softwareengineering.stackexchange.com/questions/149563/should-we-avoid-object-creation-in-java)
+- [Curly Braces #6: Recursion and tail-call optimization](https://blogs.oracle.com/javamagazine/post/curly-braces-java-recursion-tail-call-optimization)
 
 Tooling:
 
 - [The Oracle Java Platform Extension for Visual Studio Code \| Hacker News](https://news.ycombinator.com/item?id=37929311)
 - [Introducing the Oracle Java Platform Extension for Visual Studio Code : java](https://www.reddit.com/r/java/comments/17ar11h/introducing_the_oracle_java_platform_extension/)
 
-## Java distributions
+## Tooling
+
+### Java distributions
 
 *References*:
 
 - [Which Java JDK Should You Use? • 2024 • Incus Data Programming Courses](https://incusdata.com/blog/which-java-jdk-should-you-use)
 - [JDK Distributions - SDKMAN! the Software Development Kit Manager](https://sdkman.io/jdks)
 
-## Java version manager
+### Java version manager
 
 - [sdkman/sdkman-cli: The SDKMAN! Command Line Interface](https://github.com/sdkman/sdkman-cli)
 - [jenv/jenv: Manage your Java environment](https://github.com/jenv/jenv)
@@ -96,6 +109,13 @@ Tooling:
 - [Extracting the Contents of a JAR File (The Java™ Tutorials > Deployment > Packaging Programs in JAR Files)](https://docs.oracle.com/javase/tutorial/deployment/jar/unpack.html)
 - [Updating a JAR File (The Java™ Tutorials > Deployment > Packaging Programs in JAR Files)](https://docs.oracle.com/javase/tutorial/deployment/jar/update.html)
 - [java - Can't execute jar- file: "no main manifest attribute" - Stack Overflow](https://stackoverflow.com/questions/9689793/cant-execute-jar-file-no-main-manifest-attribute)
+
+## Exit code
+
+*References*:
+
+- [intellij idea - Java program exit with code "130" - Stack Overflow](https://stackoverflow.com/questions/29887088/java-program-exit-with-code-130)
+- [shutdown - Java - programmatically set exit code from SIGTERM - Stack Overflow](https://stackoverflow.com/questions/14144619/java-programmatically-set-exit-code-from-sigterm)
 
 ## Jetty
 

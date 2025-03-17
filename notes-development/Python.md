@@ -1,11 +1,11 @@
 ---
 sitemap:
-  lastmod: 2024-11-05 +0000
+  lastmod: 2025-03-10 +0000
 ---
 
 # Python
 
-Last modified: 2024-11-05 +0000
+Last modified: 2025-03-10 +0000
 
 - [Interesting posts](#interesting-posts)
 - [Installation \& environment](#installation--environment)
@@ -42,7 +42,7 @@ Tutorials:
 - [A Python Interpreter Written in Python](https://aosabook.org/en/500L/a-python-interpreter-written-in-python.html)
 - [Jinja2 Explained in 5 Minutes!. (Part 4: Back-end Web Framework: Flask) \| by Diva Dugar \| codeburst](https://codeburst.io/jinja-2-explained-in-5-minutes-88548486834e)
 
-Techniques:
+Language:
 
 - [python - What is the difference between `__str__` and `__repr__`? - Stack Overflow](https://stackoverflow.com/questions/1436703/what-is-the-difference-between-str-and-repr/2626364#2626364)
 - [How to Print Object Attributes in Python? (with Code)](https://favtutor.com/blogs/print-object-attributes-python)
@@ -50,10 +50,13 @@ Techniques:
 - [python - Return a default value if a dictionary key is not available - Stack Overflow](https://stackoverflow.com/questions/6130768/return-a-default-value-if-a-dictionary-key-is-not-available)
 - [python - Why dict.get(key) instead of dict[key]? - Stack Overflow](https://stackoverflow.com/questions/11041405/why-dict-getkey-instead-of-dictkey)
 - [Python: How to ignore an exception and proceed? - Stack Overflow](https://stackoverflow.com/questions/574730/python-how-to-ignore-an-exception-and-proceed)
+- [python - How do I check if a variable exists? - Stack Overflow](https://stackoverflow.com/questions/843277/how-do-i-check-if-a-variable-exists)
+- [python - How can I import a module dynamically given the full path? - Stack Overflow](https://stackoverflow.com/questions/67631/how-can-i-import-a-module-dynamically-given-the-full-path)
 
-Toolkit:
+Tooling:
 
 - [Poetry installation: 'pip' vs. 'pipx' \| Python Guide](https://www.linkedin.com/pulse/poetry-installation-understanding-pip-vs-pipx-approach-shoukat-jybkf)
+- [python - How to install packages offline? - Stack Overflow](https://stackoverflow.com/questions/11091623/how-to-install-packages-offline)
 
 ## Installation & environment
 

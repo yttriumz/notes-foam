@@ -1,13 +1,13 @@
 ---
 type: index
 sitemap:
-  lastmod: 2024-12-27 +0000
+  lastmod: 2025-03-11 +0000
   priority: 0.5
 ---
 
 # Development Tips
 
-Last modified: 2024-12-27 +0000
+Last modified: 2025-03-11 +0000
 
 General:
 
@@ -35,7 +35,7 @@ Programming languages:
 
 Domain-specific:
 
-- [[system]]
+- [[sys-design]]
 - [[Android]]
 - [[cryptography]]
 - [[database/index]]
@@ -59,6 +59,9 @@ Miscellaneous:
 Surveys and reports:
 
 - [2024 Stack Overflow Developer Survey](https://survey.stackoverflow.co/2024/)
+  - [Developers want more, more, more: the 2024 results from Stack Overflow’s Annual Developer Survey - Stack Overflow](https://stackoverflow.blog/2025/01/01/developers-want-more-more-more-the-2024-results-from-stack-overflow-s-annual-developer-survey/)
+- [Octoverse: AI leads Python to top language as the number of global developers surges - The GitHub Blog](https://github.blog/news-insights/octoverse/octoverse-2024/)
+- [Software Developers Statistics 2024 - State of Developer Ecosystem Report \| JetBrains: Developer Tools for Professionals and Teams](https://www.jetbrains.com/lp/devecosystem-2024/)
 
 Non-technical:
 
@@ -127,7 +130,7 @@ Fun:
 [Python]: Python.md "Python"
 [Rust]: Rust.md "Rust"
 [Scala]: Scala.md "Scala"
-[system]: system.md "System Design"
+[sys-design]: sys-design.md "System Design"
 [Android]: Android.md "Android"
 [cryptography]: cryptography.md "Cryptography"
 [database/index]: database/index.md "Database"

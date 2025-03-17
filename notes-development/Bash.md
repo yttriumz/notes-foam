@@ -1,13 +1,14 @@
 ---
 sitemap:
-  lastmod: 2024-12-04 +0000
+  lastmod: 2025-02-03 +0000
 ---
 
 # Bash Scripting
 
-Last modified: 2024-12-04 +0000
+Last modified: 2025-02-03 +0000
 
 - [Interesting posts](#interesting-posts)
+- [Exit code](#exit-code)
 - [Redirect command/script/application output](#redirect-commandscriptapplication-output)
 - [Format numbers](#format-numbers)
 - [`local` options](#local-options)
@@ -36,6 +37,7 @@ Documentation & tutorials:
   - [Pattern Matching (Bash Reference Manual)](https://www.gnu.org/software/bash/manual/html_node/Pattern-Matching.html)
 - [ShellCheck: SC2097 – This assignment is only seen by the forked process.](https://www.shellcheck.net/wiki/SC2097)
 - [Intro – Modern Bash (Zsh) Scripting](https://www.mulle-kybernetik.com/modern-bash-scripting/)
+- [BashPitfalls - Greg's Wiki](https://mywiki.wooledge.org/BashPitfalls)
 
 - Miscellaneous:
 
@@ -51,6 +53,12 @@ Documentation & tutorials:
 - [shell script - Parallelize a Bash FOR Loop - Unix & Linux Stack Exchange](https://unix.stackexchange.com/questions/103920/parallelize-a-bash-for-loop)
 - [Exporting an array in bash script - Stack Overflow](https://stackoverflow.com/questions/5564418/exporting-an-array-in-bash-script)
 - [How to Get the Directory Where a Bash Script is Located \| Saturn Cloud Blog](https://saturncloud.io/blog/how-to-get-the-directory-where-a-bash-script-is-located/)
+
+## Exit code
+
+*References*:
+
+- [Bash Shell Exit Status Tutorial with Practical Examples](https://www.thegeekstuff.com/2010/03/bash-shell-exit-status/)
 
 ## Redirect command/script/application output
 

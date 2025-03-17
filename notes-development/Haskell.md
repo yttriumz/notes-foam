@@ -1,6 +1,6 @@
 # Haskell
 
-Last modified: 2024-11-12 +0000
+Last modified: 2024-12-27 +0000
 
 - [Interesting posts](#interesting-posts)
 - [VSCode](#vscode)
@@ -19,6 +19,9 @@ Last modified: 2024-11-12 +0000
 - [Why Haskell became my favorite scripting language](https://zignar.net/2021/07/09/why-haskell-became-my-favorite-scripting-language/)
 - [Using Haskell as my shell : r/haskell](https://www.reddit.com/r/haskell/comments/rdinq2/using_haskell_as_my_shell/)
 - [29 Awesome Open-Source Haskell Projects](https://serokell.io/blog/best-haskell-open-source-projects)
+- [1 Year With Haskell, Part I \| Russell Waterhouse](https://www.rwater.house/post/haskell-1-year/)
+- [Haskell Reflections Part 2: What Haskell Taught Me \| Russell Waterhouse](https://www.rwater.house/post/haskell-2-teachings/)
+- [Why does everyone hate Haskell, jazz, and pure math? \| Hacker News](https://news.ycombinator.com/item?id=41158918)
 
 Language:
 
