@@ -1,20 +1,21 @@
 ---
 sitemap:
-  lastmod: 2025-03-13 +0000
+  lastmod: 2025-03-14 +0000
 ---
 
 # Storage & File System
 
-Last modified: 2025-03-13 +0000
+Last modified: 2025-03-14 +0000
 
 - [Interesting posts](#interesting-posts)
-- [Permissions](#permissions)
-- [Logical Volume Manager](#logical-volume-manager)
+- [Partitioning](#partitioning)
+  - [Logical Volume Manager](#logical-volume-manager)
 - [Btrfs](#btrfs)
 - [exFAT](#exfat)
-  - [Utility installation](#utility-installation)
+  - [Utilities](#utilities)
 - [SquashFS](#squashfs)
 - [Disk usage utilities](#disk-usage-utilities)
+- [Permissions](#permissions)
 
 ## Interesting posts
 
@@ -29,18 +30,17 @@ Last modified: 2025-03-13 +0000
 - [directory structure - What is the difference between /opt and /usr/local? - Unix & Linux Stack Exchange](https://unix.stackexchange.com/questions/11544/what-is-the-difference-between-opt-and-usr-local)
 - [What happens when you delete a file in Linux? \| Enable Sysadmin](https://www.redhat.com/sysadmin/linux-delete-file-rm)
 - [Where do files go when the rm command is issued? - Unix & Linux Stack Exchange](https://unix.stackexchange.com/questions/10883/where-do-files-go-when-the-rm-command-is-issued)
-- [partitioning - How do I find out what filesystem my partitions are using? - Ask Ubuntu](https://askubuntu.com/questions/309047/how-do-i-find-out-what-filesystem-my-partitions-are-using)
 - [Quickly create a large file on a Linux system - Stack Overflow](https://stackoverflow.com/questions/257844/quickly-create-a-large-file-on-a-linux-system)
 - [filesystem - What is the rationale for the `/usr` directory? - Ask Ubuntu](https://askubuntu.com/questions/130186/what-is-the-rationale-for-the-usr-directory)
 
-## Permissions
+## Partitioning
 
 *References*:
 
-- [Advanced File Permissions in Linux \| Baeldung on Linux](https://www.baeldung.com/linux/advanced-file-permissions)
-- [Directory permissions "r-s", chmod 655 does not change to "r-x", why? - Unix & Linux Stack Exchange](https://unix.stackexchange.com/questions/263342/directory-permissions-r-s-chmod-655-does-not-change-to-r-x-why)
+- [An Introduction to Disk Partitions :: Fedora Docs](https://docs.fedoraproject.org/en-US/fedora/f36/install-guide/appendixes/Disk_Partitions)
+- [partitioning - How do I find out what filesystem my partitions are using? - Ask Ubuntu](https://askubuntu.com/questions/309047/how-do-i-find-out-what-filesystem-my-partitions-are-using)
 
-## Logical Volume Manager
+### Logical Volume Manager
 
 *References*:
 
@@ -66,9 +66,9 @@ Last modified: 2025-03-13 +0000
 
 ## exFAT
 
-### Utility installation
+### Utilities
 
-- openSUSE Tumbleweed: Install `exfatprogs` via `zypper install exfatprogs`.
+- openSUSE Tumbleweed: `zypper install exfatprogs`
 
 ## SquashFS
 
@@ -81,3 +81,10 @@ Last modified: 2025-03-13 +0000
 *References*:
 
 - [GUI disk usage options : r/Gentoo](https://www.reddit.com/r/Gentoo/comments/1dfjkv3/gui_disk_usage_options/)
+
+## Permissions
+
+*References*:
+
+- [Advanced File Permissions in Linux \| Baeldung on Linux](https://www.baeldung.com/linux/advanced-file-permissions)
+- [Directory permissions "r-s", chmod 655 does not change to "r-x", why? - Unix & Linux Stack Exchange](https://unix.stackexchange.com/questions/263342/directory-permissions-r-s-chmod-655-does-not-change-to-r-x-why)

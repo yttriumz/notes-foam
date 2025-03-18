@@ -1,6 +1,6 @@
 # General Linux Usage Tips
 
-Last modified: 2025-03-11 +0000
+Last modified: 2025-03-14 +0000
 
 ## Boot
 
@@ -35,12 +35,3 @@ To solve [the "wrong efi variable" problem](https://discord.com/channels/3669854
 
 - Change username: `usermod -l NEW_USERNAME OLD_USERNAME`
 - Change user's home directory: `usermod -d PATH_TO_NEW_HOME -m USER`
-
-## Trusted Platform Module
-
-### Check support
-
-*References*:
-
-- [2.1 Checking support](https://wiki.archlinux.org/title/Trusted_Platform_Module#Checking_support)
-- [How to determine if computer has TPM (Trusted Platform Module) available](https://unix.stackexchange.com/questions/341629/how-to-determine-if-computer-has-tpm-trusted-platform-module-available)

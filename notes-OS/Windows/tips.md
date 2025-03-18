@@ -1,11 +1,11 @@
 ---
 sitemap:
-  lastmod: 2025-03-13 +0000
+  lastmod: 2025-03-16 +0000
 ---
 
 # Windows Usage Tips
 
-Last modified: 2025-03-13 +0000
+Last modified: 2025-03-16 +0000
 
 ## Interesting posts
 
@@ -35,6 +35,7 @@ Use `chkdsk C: /r`.
 
 *References*:
 
+- [Enable verbose startup, shutdown, logon, and logoff status messages in Windows Server 2003 - Windows Server \| Microsoft Learn](https://learn.microsoft.com/en-us/troubleshoot/windows-server/performance/enable-verbose-startup-shutdown-logon-logoff-status-messages)
 - [Advanced troubleshooting for Windows boot problems](https://learn.microsoft.com/en-us/troubleshoot/windows-client/performance/windows-boot-issues-troubleshooting)
 - [Windows 10 log info when starting](https://superuser.com/questions/1140309/windows-10-log-info-when-starting)
 - [How to force Win10 to show text rather than circle while loading](https://www.tenforums.com/general-support/133620-how-force-win10-show-text-rather-than-circle-while-loading.html)

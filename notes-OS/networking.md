@@ -1,11 +1,11 @@
 ---
 sitemap:
-  lastmod: 2024-12-06 +0000
+  lastmod: 2025-03-17 +0000
 ---
 
 # Networking
 
-Last modified: 2024-12-06 +0000
+Last modified: 2025-03-17 +0000
 
 - [Interesting posts](#interesting-posts)
 - [DNS](#dns)
@@ -14,7 +14,7 @@ Last modified: 2024-12-06 +0000
 - [Certificates](#certificates)
   - [Add trusted certificates](#add-trusted-certificates)
   - [Examine certificates](#examine-certificates)
-- [Socket tuning for large traffic](#socket-tuning-for-large-traffic)
+- [Linux socket tuning for large traffic](#linux-socket-tuning-for-large-traffic)
 - [Web debugging proxies](#web-debugging-proxies)
 - [Check open ports](#check-open-ports)
 - [`ip route`](#ip-route)
@@ -33,12 +33,21 @@ Last modified: 2024-12-06 +0000
 - [What's the meaning of `linkdown` and `onlink' in Linux Route? - Unix & Linux Stack Exchange](https://unix.stackexchange.com/questions/579087/whats-the-meaning-of-linkdown-and-onlink-in-linux-route)
 - [Stop using Telnet to test ports \| Enable Sysadmin](https://www.redhat.com/sysadmin/stop-using-telnet-test-port)
 - [How to find your IP address in Linux \| Opensource.com](https://opensource.com/article/18/5/how-find-ip-address-linux)
-- [Traceroute vs. tracepath: What's the difference? \| Enable Sysadmin](https://www.redhat.com/sysadmin/traceroute-tracepath-network-troubleshooting)
-- [好用的開源內網穿透軟體比較，ZeroTier與Tailscale · Ivon的部落格](https://ivonblog.com/posts/foss-nat-traversal-solutions/)
 - [What are the differences between lsof and netstat on linux? - Stack Overflow](https://stackoverflow.com/questions/49381124/what-are-the-differences-between-lsof-and-netstat-on-linux)
 - [networking - Why do nmap, ss (netscan?) and lsof give different results? - Unix & Linux Stack Exchange](https://unix.stackexchange.com/questions/652556/why-do-nmap-ss-netscan-and-lsof-give-different-results)
 - [Connection reset原因分析和解决方案-CSDN博客](https://blog.csdn.net/liyantianmin/article/details/82505734)
+
+Tooling:
+
+- [security - What is the difference between Burp Suite and Wireshark? - Stack Overflow](https://stackoverflow.com/questions/53870791/what-is-the-difference-between-burp-suite-and-wireshark)
+- [Burp Suite community vs OWASP ZAP : r/Pentesting](https://www.reddit.com/r/Pentesting/comments/1ioaj2u/burp_suite_community_vs_owasp_zap/)
+- [Burp Suite vs OWASP ZAP — a Comparison series \| by Ekene Joseph Onyeagusi \| Medium](https://medium.com/@Ekenejoseph/burp-suite-vs-owasp-zap-a-comparison-series-8e34162c42e6)
+- [安全测试工具OWASP ZAP与Burp Suite - 学习笔记 - 爱测-测试人社区](https://ceshiren.com/t/topic/31996)
+- [How long does it generally take to learn Burp Suite : r/cybersecurity](https://www.reddit.com/r/cybersecurity/comments/jwpaiq/how_long_does_it_generally_take_to_learn_burp/)
+- [OWASP-ZAP-Fuzzer is it a great alternative for Burp-Suite Intruder? \| Cloufish's Blog](https://cloufish.github.io/blog/posts/OWASP-ZAP-as-a-great-fuzzing-tool/)
+- [好用的開源內網穿透軟體比較，ZeroTier與Tailscale · Ivon的部落格](https://ivonblog.com/posts/foss-nat-traversal-solutions/)
 - [debian - What are the differences between iputils-ping and inetutils-ping? - Unix & Linux Stack Exchange](https://unix.stackexchange.com/questions/400351/what-are-the-differences-between-iputils-ping-and-inetutils-ping)
+- [Traceroute vs. tracepath: What's the difference? \| Enable Sysadmin](https://www.redhat.com/sysadmin/traceroute-tracepath-network-troubleshooting)
 - [Traceroute vs. tracepath: What's the difference?](https://www.redhat.com/en/blog/traceroute-tracepath-network-troubleshooting)
 
 ## DNS
@@ -83,7 +92,7 @@ Last modified: 2024-12-06 +0000
 
 - [Using curl to Check an SSL Certificate's Expiration Date and Details — Nick Janetakis](https://nickjanetakis.com/blog/using-curl-to-check-an-ssl-certificate-expiration-date-and-details)
 
-## Socket tuning for large traffic
+## Linux socket tuning for large traffic
 
 For servers that are handling large numbers of concurrent sessions, some TCP options should probably be tweaked.
 
