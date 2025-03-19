@@ -1,11 +1,17 @@
 ---
 sitemap:
-  lastmod: 2024-06-11 +0000
+  lastmod: 2025-03-19 +0000
 ---
 
 # GitHub Pages
 
-Last modified: 2024-06-11 +0000
+Last modified: 2025-03-19 +0000
+
+- [Interesting posts](#interesting-posts)
+- [Put code block in collapsible](#put-code-block-in-collapsible)
+- [$\\LaTeX$ on GitHub Pages](#latex-on-github-pages)
+    - [Add the following code to the head of the markdown files](#add-the-following-code-to-the-head-of-the-markdown-files)
+    - [Wrap math expressions](#wrap-math-expressions)
 
 ## Interesting posts
 
@@ -26,6 +32,20 @@ Deployment:
 - [Variables \| Jekyll • Simple, blog-aware, static sites](https://jekyllrb.com/docs/variables/#page-variables)
 - [Build and Submit a Sitemap \| Google Search Central  \|  Documentation  \|  Google for Developers](https://developers.google.com/search/docs/crawling-indexing/sitemaps/build-sitemap)
 - [Add example of using <details> tag in Markdown kitchen sink by blaylockbk · Pull Request #1297 · just-the-docs/just-the-docs](https://github.com/just-the-docs/just-the-docs/pull/1297)
+
+## Put code block in collapsible
+
+Like the following:
+
+{::options parse_block_html="true" /}
+<details markdown="block">
+
+```text
+Code Block
+```
+
+</details>
+{::options parse_block_html="false" /}
 
 ## $\LaTeX$ on GitHub Pages
 
@@ -55,13 +75,11 @@ Deployment:
 
 ### Wrap math expressions
 
-Might need to wrap the math expressions with the following:
+Might need to wrap the math expressions like the following:
 
-```text
 {% raw %}
 SOME_MATH
 {% endraw %}
-```
 
 {% raw %}
 *References*:

@@ -1,11 +1,11 @@
 ---
 sitemap:
-  lastmod: 2024-09-11 +0000
+  lastmod: 2025-03-18 +0000
 ---
 
 # JavaScript/TypeScript
 
-Last modified: 2024-09-11 +0000
+Last modified: 2025-03-18 +0000
 
 - [Interesting posts](#interesting-posts)
   - [Development tools](#development-tools)
@@ -15,6 +15,7 @@ Last modified: 2024-09-11 +0000
     - [Elastic UI](#elastic-ui)
     - [i18n](#i18n)
 - [Node environment](#node-environment)
+- [Bun scripting](#bun-scripting)
 - [Config](#config)
   - [VSCode](#vscode)
     - [`settings.json`](#settingsjson)
@@ -23,13 +24,21 @@ Last modified: 2024-09-11 +0000
 
 ## Interesting posts
 
-- [Should you use Bun or Node.js or Deno in 2024? \| Tharaka Romesh \| Bits and Pieces \| Bits and Pieces](https://blog.bitsrc.io/should-you-use-bun-or-node-js-or-deno-in-2024-b7c21da085ba)
+- [Node vs. Deno2 vs. Bun in 2025 : r/node](https://www.reddit.com/r/node/comments/1jd8kv7/node_vs_deno2_vs_bun_in_2025/)
+- [Node.js vs Deno vs Bun: A Developer’s Guide to Modern JavaScript Runtimes \| by Ahmet Eren Lapanta \| Jan, 2025 \| Medium](https://medium.com/@ahmet-eren-lapanta/node-js-vs-deno-vs-bun-a-developers-guide-to-modern-javascript-runtimes-f7ed6d6a12a7)
+- [Microsoft Rewriting TypeScript in Go : r/golang](https://www.reddit.com/r/golang/comments/1j8shzb/microsoft_rewriting_typescript_in_go/)
+
+Techniques:
+
+- [css - How to convert RGBA to Hex color code using javascript - Stack Overflow](https://stackoverflow.com/questions/49974145/how-to-convert-rgba-to-hex-color-code-using-javascript)
+
+Troubleshooting:
+
 - [Disallowed MIME type Error](https://hallertau.cs.gsu.edu/disallowedMIME.html):
   > The REAL problem is that the file does not exist, or at least it's not at that location.
 - [Error message "error:0308010C:digital envelope routines::unsupported"](https://stackoverflow.com/questions/69692842/error-message-error0308010cdigital-envelope-routinesunsupported)
 - [🧐[问题]项目无法启动，error:0308010C:digital envelope routines::unsupported #9272](https://github.com/ant-design/ant-design-pro/issues/9272#issuecomment-1083276843)
 - [Cannot set headers after they are sent to the client #805](https://github.com/http-party/http-server/issues/805)
-- [css - How to convert RGBA to Hex color code using javascript - Stack Overflow](https://stackoverflow.com/questions/49974145/how-to-convert-rgba-to-hex-color-code-using-javascript)
 
 ### Development tools
 
@@ -120,6 +129,10 @@ Last modified: 2024-09-11 +0000
 *References*:
 
 - [Can I install node.js 18 on Centos 7 and do I need python 3 install too? - Stack Overflow](https://stackoverflow.com/questions/72571235/can-i-install-node-js-18-on-centos-7-and-do-i-need-python-3-install-too/73272661#73272661)
+
+## Bun scripting
+
+To get intellisense, run `bun i @types/bun -d`.
 
 ## Config
 

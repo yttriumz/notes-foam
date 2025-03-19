@@ -1,11 +1,11 @@
 ---
 sitemap:
-  lastmod: 2025-01-14 +0000
+  lastmod: 2025-03-19 +0000
 ---
 
 # Java
 
-Last modified: 2025-01-14 +0000
+Last modified: 2025-03-19 +0000
 
 - [Interesting posts](#interesting-posts)
 - [Tooling](#tooling)
@@ -42,6 +42,9 @@ Language:
 - [performance - Is Java slow when creating Objects? - Stack Overflow](https://stackoverflow.com/questions/21055218/is-java-slow-when-creating-objects)
 - [Should we avoid object creation in Java? - Software Engineering Stack Exchange](https://softwareengineering.stackexchange.com/questions/149563/should-we-avoid-object-creation-in-java)
 - [Curly Braces #6: Recursion and tail-call optimization](https://blogs.oracle.com/javamagazine/post/curly-braces-java-recursion-tail-call-optimization)
+- [Java 为什么无法实现真正的泛型？ \| 二哥的Java进阶之路](https://javabetter.cn/basic-extra-meal/true-generic.html)
+- [如何理解Java中的泛型是伪泛型？-CSDN博客](https://blog.csdn.net/m0_68948067/article/details/138668341)
+- [这一文，关于 Java 泛型的点点滴滴 - 知乎](https://zhuanlan.zhihu.com/p/711354755)
 
 Tooling:
 
