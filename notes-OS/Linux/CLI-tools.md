@@ -1,28 +1,27 @@
 ---
 sitemap:
-  lastmod: 2024-12-11 +0000
+  lastmod: 2025-03-25 +0000
 ---
 
 # Command-line Tools
 
-Last modified: 2024-12-11 +0000
+Last modified: 2025-03-25 +0000
 
 - [Interesting posts](#interesting-posts)
 - [Text processing](#text-processing)
-- [Search tools](#search-tools)
-  - [`find`](#find)
-  - [`fd` (Rust)](#fd-rust)
-- [File manager](#file-manager)
-  - [`joshuto` (Rust)](#joshuto-rust)
-  - [`ranger` (Python)](#ranger-python)
-- [File listing (`ls`)](#file-listing-ls)
-  - [`exa` (Rust) (unmaintained)](#exa-rust-unmaintained)
-  - [`eza` (Rust) (active fork of `exa`)](#eza-rust-active-fork-of-exa)
-  - [`lsd` (Rust)](#lsd-rust)
-- [`cat` alternatives](#cat-alternatives)
-  - [`bat` (Rust)](#bat-rust)
+- [Process management](#process-management)
+  - [htop](#htop)
+- [File search](#file-search)
+  - [find](#find)
+  - [fd (Rust)](#fd-rust)
+- [TUI File manager](#tui-file-manager)
+  - [joshuto (Rust)](#joshuto-rust)
+  - [ranger (Python)](#ranger-python)
+- [ls](#ls)
+  - [eza (Rust)](#eza-rust)
+  - [lsd (Rust)](#lsd-rust)
 - [Download from network](#download-from-network)
-  - [`curl`](#curl)
+  - [curl](#curl)
   - [Hurl (Rust)](#hurl-rust)
 - [Archive and compress](#archive-and-compress)
 - [Move a foreground task to the background and keep it running](#move-a-foreground-task-to-the-background-and-keep-it-running)
@@ -38,11 +37,19 @@ Last modified: 2024-12-11 +0000
 
 ## Text processing
 
-See [[text-processing]].
+See [[text-processing]] for `awk`, `cat`, `grep`, `sed`, etc.
 
-## Search tools
+## Process management
 
-### `find`
+### htop
+
+*References*:
+
+- [你一定用過 htop，但你有看懂每個欄位嗎？. 身為一個工程師，不管你寫的是前端、後端、全端還是什麼端，一定多少用過… \| by Larry Lu \| Starbugs Weekly 星巴哥技術專欄 \| Medium](https://medium.com/starbugs/do-you-understand-htop-ffb72b3d5629)
+
+## File search
+
+### find
 
 - Ignore case: Use `-iname` instead of `-name`.
 - Find only files/directories:
@@ -50,6 +57,10 @@ See [[text-processing]].
   - For directories, use `-type d`.
 - Exclude paths: Use `-not -path "SOME/PATH/*"`.
 - Get rid of "Permission Denied": Append `2>&1 | grep -v "Permission denied"` to the end.
+- Find links to a file:
+  - `find -L / -samefile PATH/TO/FILE`
+  - `find / -lname FILE`
+  - `find . -lname \*FILE`
 
 *References*:
 
@@ -59,59 +70,47 @@ See [[text-processing]].
 - [linux - How do I exclude a directory when using `find`? - Stack Overflow](https://stackoverflow.com/questions/4210042/how-do-i-exclude-a-directory-when-using-find)
 - [How to skip "permission denied" errors when running find in Linux? \[duplicate\]](https://unix.stackexchange.com/questions/42841/how-to-skip-permission-denied-errors-when-running-find-in-linux)
 - [How can I exclude all "permission denied" messages from "find"?](https://stackoverflow.com/questions/762348/how-can-i-exclude-all-permission-denied-messages-from-find)
+- [linux - symbolic link: find all files that link to this file - Stack Overflow](https://stackoverflow.com/questions/6184849/symbolic-link-find-all-files-that-link-to-this-file)
 
-### `fd` (Rust)
+### fd (Rust)
 
 *References*:
 
 - [A simple, fast and user-friendly alternative to 'find'](https://github.com/sharkdp/fd)
 
-## File manager
+## TUI File manager
 
-### `joshuto` (Rust)
+### joshuto (Rust)
 
 *References*:
 
 - [ranger-like terminal file manager written in Rust](https://github.com/kamiyaa/joshuto)
 
-### `ranger` (Python)
+### ranger (Python)
 
 *References*:
 
 - [A VIM-inspired filemanager for the console](https://github.com/ranger/ranger)
 
-## File listing (`ls`)
+## ls
 
-### `exa` (Rust) (unmaintained)
-
-*References*:
-
-- [A modern replacement for ‘ls’.](https://github.com/ogham/exa)
-- [Which Ls Replacement Will I Keep Around Exa vs Ls Deluxe](https://www.youtube.com/watch?v=PDu1e6S_gWw)
-
-### `eza` (Rust) (active fork of `exa`)
+### eza (Rust)
 
 *References*:
 
 - [A modern, maintained replacement for ls](https://github.com/eza-community/eza)
+- [A modern replacement for ‘ls’.](https://github.com/ogham/exa)
+- [Which Ls Replacement Will I Keep Around Exa vs Ls Deluxe](https://www.youtube.com/watch?v=PDu1e6S_gWw)
 
-### `lsd` (Rust)
+### lsd (Rust)
 
 *References*:
 
 - [The next gen ls command](https://github.com/lsd-rs/lsd)
 
-## `cat` alternatives
-
-### `bat` (Rust)
-
-*References*:
-
-- [A cat(1) clone with wings.](https://github.com/sharkdp/bat)
-
 ## Download from network
 
-### `curl`
+### curl
 
 Commonly used flags for downloading are `-fSLO`.
 

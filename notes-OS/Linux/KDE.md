@@ -1,21 +1,23 @@
 ---
 sitemap:
-  lastmod: 2025-02-17 +0000
+  lastmod: 2025-03-28 +0000
   priority: 1.0
 ---
 
 # KDE Plasma Tweak
 
-Last modified: 2025-02-17 +0000
+Last modified: 2025-03-28 +0000
 
 - [Interesting posts](#interesting-posts)
 - [Configuration backup](#configuration-backup)
+- [Wallpaper](#wallpaper)
 - [Widget](#widget)
 - [Autostart](#autostart)
 - [Recent files when right-clicking Firefox](#recent-files-when-right-clicking-firefox)
 - [Window focus stealing policy](#window-focus-stealing-policy)
 - [Change task switcher](#change-task-switcher)
 - [Virtual Desktop behavior](#virtual-desktop-behavior)
+- [Window title bar](#window-title-bar)
 - [Hide window border](#hide-window-border)
 - [Move a window to the center](#move-a-window-to-the-center)
 - [Show window geometry information](#show-window-geometry-information)
@@ -25,18 +27,22 @@ Last modified: 2025-02-17 +0000
 - [KWallet](#kwallet)
   - [Blowfish and GPG](#blowfish-and-gpg)
   - [KWallet \& VSCode](#kwallet--vscode)
-- [SDDM](#sddm)
-  - [Greeter theme](#greeter-theme)
-    - [Configure Sugar Candy for SDDM](#configure-sugar-candy-for-sddm)
 - [Tiling](#tiling)
+- [SDDM](#sddm)
 
 ## Interesting posts
 
+- [desktop environments - What is KDE, GTK, GTK+, QT, and/or GNOME? - Ask Ubuntu](https://askubuntu.com/questions/249150/what-is-kde-gtk-gtk-qt-and-or-gnome)
 - [\| Beginner here: What is the difference between a window manager and a Desktop environment? : r/unixporn](https://www.reddit.com/r/unixporn/comments/t7jnhh/beginner_here_what_is_the_difference_between_a/)
 - [KDE Plasma與GNOME桌面比較，最終我還是選擇KDE · Ivon的部落格](https://ivonblog.com/posts/kde-plasma-gnome-comparison/)
 - [plasmashell crash on wayland : r/openSUSE](https://www.reddit.com/r/openSUSE/comments/10v0lxl/plasmashell_crash_on_wayland/)
 - [Prayag2/konsave: A command line program written in Python to let you backup your dotfiles and switch to other ones in an instant. Works out-of-the box on KDE Plasma!](https://github.com/Prayag2/konsave/tree/master)
 - [compiz - KDE decrease opacity of active window - Ask Ubuntu](https://askubuntu.com/questions/1069565/kde-decrease-opacity-of-active-window)
+- [How to disable ALL animations : r/kde](https://www.reddit.com/r/kde/comments/1by7gpg/how_to_disable_all_animations/)
+
+Concerning issues:
+
+- [No fingerprint unlock option after waking from sleep - Help - KDE Discuss](https://discuss.kde.org/t/no-fingerprint-unlock-option-after-waking-from-sleep/29903)
 
 ## Configuration backup
 
@@ -44,12 +50,21 @@ Last modified: 2025-02-17 +0000
 
 - [Config File To Backup Taskbar Settings? - Support / KDE Plasma - Manjaro Linux Forum](https://forum.manjaro.org/t/config-file-to-backup-taskbar-settings/147366)
 
+## Wallpaper
+
+Check `$HOME/.config/plasmarc` to find the user wallpapers.
+
+*References*:
+
+- [Where is my current wallpaper stored? : r/kde](https://www.reddit.com/r/kde/comments/j5miau/where_is_my_current_wallpaper_stored/)
+
 ## Widget
 
 Plasma 5:
 
 - [Event Calendar](https://store.kde.org/p/998901)
 - [Prime Render Switch and Status](https://store.kde.org/p/1425330)
+- [luisbocanegra/plasma-panel-colorizer: Latte-Dock and WM status bar customization features for the default KDE Plasma panel](https://github.com/luisbocanegra/plasma-panel-colorizer)
 
 ## Autostart
 
@@ -90,6 +105,13 @@ Plasma 5:
 - [Firefox 108.0 jumps to different desktop](https://askubuntu.com/questions/1445505/firefox-108-0-jumps-to-different-desktop)
 - [Prevent a browser window from changing virtual desktops when an application on another desktop opens a link?](https://www.reddit.com/r/kde/comments/zm6gag/prevent_a_browser_window_from_changing_virtual/)
 - [Windows do not stay on the virtual desktop they are on](https://bugs.kde.org/show_bug.cgi?id=462996)
+
+## Window title bar
+
+*References*:
+
+- [Title Bar Color - Brainstorm - KDE Discuss](https://discuss.kde.org/t/title-bar-color/10401)
+- [Titlebar Color change? - Help - KDE Discuss](https://discuss.kde.org/t/titlebar-color-change/17231)
 
 ## Hide window border
 
@@ -139,12 +161,16 @@ Wayland: Go to *System Settings > General Behavior > Middle Click*. However, not
 Application specific:
 
 - Firefox: See [[Firefox#Disable middle click pasting]].
-- VSCode: See [[VSCode#Disable middle click pasting]]
+- VSCode: See [[vscode/tips#Disable middle click pasting]]
 - WezTerm: See [[terminal-tools#WezTerm]].
 
 ## Baloo
 
 At the time of writing (*Tumbleweed 20230225, Baloo 5.103.0*), `baloo_file` constantly writes to my disk. So I disabled it via `balooctl disable`.
+
+*References*:
+
+- [Will KDE 6 finally ditch baloo for something better? : r/kde](https://www.reddit.com/r/kde/comments/1atta90/will_kde_6_finally_ditch_baloo_for_something/)
 
 ## KWallet
 
@@ -172,40 +198,20 @@ At the time of writing (*Tumbleweed 20230225*, *KDE Plasma 5.27.1*), if no other
 - [Troubleshooting keychain issues](https://code.visualstudio.com/docs/editor/settings-sync#_troubleshooting-keychain-issues)
 - [KDE WALLET · Issue #104319 · microsoft/vscode](https://github.com/microsoft/vscode/issues/104319)
 
-## SDDM
-
-*References*:
-
-- [How to not install xorg or x11 server while installing tumbleweed and just have wayland only? : r/openSUSE](https://www.reddit.com/r/openSUSE/comments/1bbbbm1/how_to_not_install_xorg_or_x11_server_while/)
-- [openSUSE:DisplayManagerRework - openSUSE Wiki](https://en.opensuse.org/openSUSE:DisplayManagerRework)
-- [Changes/WaylandByDefaultForSDDM - Fedora Project Wiki](https://fedoraproject.org/wiki/Changes/WaylandByDefaultForSDDM)
-- [SDDM running on Wayland and Hyprland / Newbie Corner / Arch Linux Forums](https://bbs.archlinux.org/viewtopic.php?id=289612)
-
-### Greeter theme
-
-- Go to [KDE Store](https://store.kde.org/browse?cat=101&ord=rating) to find a good one, e.g., [Sugar Candy for SDDM](https://store.kde.org/p/1312658).
-- Preview the theme via `sddm-greeter --test-mode --theme /usr/share/sddm/themes/THEME_TO_VIEW`.
-
-#### Configure Sugar Candy for SDDM
-
-On my machine, I changed `/usr/share/sddm/themes/sugar-candy/theme.conf.user` according to the following:
-
-```properties
-[General]
-Background="/usr/share/wallpapers/default-1920x1080.jpg"
-ScreenWidth="1920"
-ScreenHeight="1080"
-```
-
 ## Tiling
 
 *References*:
 
 - [Tiling in Plasma 6 : r/kde](https://www.reddit.com/r/kde/comments/1b99iok/tiling_in_plasma_6/)
 
+## SDDM
+
+See [[sddm]].
+
 [//begin]: # "Autogenerated link references for markdown compatibility"
 [Xorg#Disable the middle click pasting]: Xorg.md "X.Org"
 [Firefox#Disable middle click pasting]: ../Firefox.md "Firefox"
-[VSCode#Disable middle click pasting]: ../VSCode.md "Visual Studio Code"
+[vscode/tips#Disable middle click pasting]: ../../notes-development/vscode/tips.md "General Visual Studio Code Usage Tips"
 [terminal-tools#WezTerm]: terminal-tools.md "Terminal Related Tools"
+[sddm]: sddm.md "SDDM"
 [//end]: # "Autogenerated link references"

@@ -1,11 +1,13 @@
 ---
 sitemap:
-  lastmod: 2025-02-18 +0000
+  lastmod: 2025-03-25 +0000
 ---
 
 # Text Processing on Linux
 
 - [Interesting posts](#interesting-posts)
+- [`cat`](#cat)
+  - [`bat` (Rust)](#bat-rust)
 - [`awk`](#awk)
 - [`sed`](#sed)
   - [`sd` (Rust)](#sd-rust)
@@ -23,37 +25,48 @@ sitemap:
 - [splitting a huge line of file into multiple lines with fixed number of columns](https://www.unix.com/shell-programming-and-scripting/166969-splitting-huge-line-file-into-multiple-lines-fixed-number-columns.html)
 - [shell - How to delete from a text file, all lines that contain a specific string? - Stack Overflow](https://stackoverflow.com/questions/5410757/how-to-delete-from-a-text-file-all-lines-that-contain-a-specific-string)
 - [linux - How to sort a file in-place? - Stack Overflow](https://stackoverflow.com/questions/29244351/how-to-sort-a-file-in-place)
-- From Phind:
-  > Yes, there are other ways to read a file's content in a shell script besides using `cat` or the `<` operator. Here are a few alternatives:
-  >
-  > - `read` command: The `read` command can be used in a loop to read a file line by line.
-  >
-  >   ```bash
-  >   while IFS= read -r line
-  >   do
-  >     echo "$line"
-  >   done < "$filename"
-  >   ```
-  >
-  > - `awk` command: `awk` is a powerful text-processing command. It can be used to read a file.
-  >
-  >   ```bash
-  >   awk '{print}' "$filename"
-  >   ```
-  >
-  > - `sed` command: `sed` is a stream editor for filtering and transforming text. It can be used to print out a file.
-  >
-  >   ```bash
-  >   sed -n 'p' "$filename"
-  >   ```
-  >
-  > - `grep` command: `grep` is used to search text. You can use it to print out all lines in a file.
-  >
-  >   ```bash
-  >   grep . "$filename"
-  >   ```
-  >
-  > Please note that these commands are more complex and powerful than `cat` and the `<` operator. If all you need is to read a file's content, `cat` or the `<` operator are the simplest and most efficient options. The other commands are useful if you need to process the file's content in some way, such as filtering or transforming the text.
+- [linux - How to turn off word-wrap in less - Super User](https://superuser.com/questions/272818/how-to-turn-off-word-wrap-in-less)
+
+## `cat`
+
+From Phind:
+
+> Yes, there are other ways to read a file's content in a shell script besides using `cat` or the `<` operator. Here are a few alternatives:
+>
+> - `read` command: The `read` command can be used in a loop to read a file line by line.
+>
+>   ```bash
+>   while IFS= read -r line
+>   do
+>     echo "$line"
+>   done < "$filename"
+>   ```
+>
+> - `awk` command: `awk` is a powerful text-processing command. It can be used to read a file.
+>
+>   ```bash
+>   awk '{print}' "$filename"
+>   ```
+>
+> - `sed` command: `sed` is a stream editor for filtering and transforming text. It can be used to print out a file.
+>
+>   ```bash
+>   sed -n 'p' "$filename"
+>   ```
+>
+> - `grep` command: `grep` is used to search text. You can use it to print out all lines in a file.
+>
+>   ```bash
+>   grep . "$filename"
+>   ```
+>
+> Please note that these commands are more complex and powerful than `cat` and the `<` operator. If all you need is to read a file's content, `cat` or the `<` operator are the simplest and most efficient options. The other commands are useful if you need to process the file's content in some way, such as filtering or transforming the text.
+
+### `bat` (Rust)
+
+*References*:
+
+- [A cat(1) clone with wings.](https://github.com/sharkdp/bat)
 
 ## `awk`
 

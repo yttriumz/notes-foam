@@ -1,12 +1,12 @@
 ---
 sitemap:
-  lastmod: 2024-10-30 +0000
+  lastmod: 2025-03-27 +0000
   priority: 0.5
 ---
 
 # Linux Security
 
-Last modified: 2024-10-30 +0000
+Last modified: 2025-03-27 +0000
 
 - [[hardware]]
 - [[firewall]]
@@ -22,6 +22,7 @@ Last modified: 2024-10-30 +0000
 - [How to read and correct SELinux denial messages \| Enable Sysadmin](https://www.redhat.com/sysadmin/selinux-denial2)
 - [8.3.8. Allowing Access: audit2allow Red Hat Enterprise Linux 6 \| Red Hat Customer Portal](https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/6/html/security-enhanced_linux/sect-security-enhanced_linux-fixing_problems-allowing_access_audit2allow)
 - [Hiding Linux Processes with Bind Mounts \| Hacker News](https://news.ycombinator.com/item?id=41058292)
+- [Secure Boot and SELinux/Apparmor : r/linux4noobs](https://www.reddit.com/r/linux4noobs/comments/1j26wpm/secure_boot_and_selinuxapparmor/)
 
 Tutorials:
 

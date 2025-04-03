@@ -1,6 +1,13 @@
+---
+sitemap:
+  lastmod: 2025-03-25 +0000
+---
+
 # Power Management
 
-*References*:
+Last modified: 2025-03-25 +0000
+
+## Interesting posts
 
 - [Power management - ArchWiki](https://wiki.archlinux.org/title/Power_management)
 - [Laptop Mode Tools - ArchWiki](https://wiki.archlinux.org/title/Laptop_Mode_Tools)

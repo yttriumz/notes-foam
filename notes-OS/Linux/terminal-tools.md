@@ -1,17 +1,17 @@
 ---
 sitemap:
-  lastmod: 2024-11-18 +0000
+  lastmod: 2025-03-26 +0000
 ---
 
 # Terminal Related Tools
 
-Last modified: 2024-11-18 +0000
+Last modified: 2025-03-26 +0000
 
 - [Interesting posts](#interesting-posts)
 - [Kitty](#kitty)
 - [WezTerm](#wezterm)
   - [Installation](#installation)
-  - [My Config](#my-config)
+  - [Config](#config)
   - [Default Keybinding](#default-keybinding)
 - [tmux](#tmux)
 - [Zellij](#zellij)
@@ -38,6 +38,7 @@ Last modified: 2024-11-18 +0000
 - [Wezterm's transparency : r/neovim](https://www.reddit.com/r/neovim/comments/17s5xww/wezterms_transparency/)
 - [Tab bar font size not working · Issue #3800 · wez/wezterm](https://github.com/wez/wezterm/issues/3800)
 - [Regression: Unable to set cursor to xterm: cursor not found · Issue #4681 · wez/wezterm](https://github.com/wez/wezterm/issues/4681)
+- [Ability to switch pane layouts · Issue #3516 · wezterm/wezterm](https://github.com/wezterm/wezterm/issues/3516)
 
 ### Installation
 
@@ -47,77 +48,14 @@ Last modified: 2024-11-18 +0000
 
 - [A GPU-accelerated cross-platform terminal emulator and multiplexer written by @wez and implemented in Rust](https://github.com/wez/wezterm)
 
-### My Config
-
-Save the following to `~/.config/wezterm/wezterm.lua`:
-
-```lua
-local wezterm = require "wezterm"
-local config = {}
-
-config.enable_scroll_bar = true
-config.font = wezterm.font_with_fallback {
-  { family = "Cascadia Code", harfbuzz_features = { "liga", "calt", "ss03", "ss20", "zero" }, },
-  { family = "Sarasa Mono HC", },
-  { family = "MesloLGS Nerd Font", },
-}
-config.font_size = 10
-config.inactive_pane_hsb = {
-  saturation = 0.60,
-  brightness = 0.60,
-}
-config.initial_cols = 128
-config.initial_rows = 32
-config.window_background_opacity = 0.75
-
--- ================================
--- custom colors
--- ================================
-config.colors = {
-  -- Use `AnsiColor` to specify one of the ansi color palette values
-  -- (index 0-15) using one of the names
-  -- "Black", "Maroon", "Green", "Olive", "Navy", "Purple", "Teal", "Silver",
-  -- "Grey", "Red", "Lime", "Yellow", "Blue", "Fuchsia", "Aqua" or "White".
-  ansi = { "#000000", "#CD3131", "#4E9A06", "#FFCC00", "#01A0E4", "#9F00FF", "#80CBC4", "#E5E5E5", },
-  brights = { "#707880", "#F14C4C", "#A6E22E", "#FDED02", "#89DDFF", "#CF8DFB", "#A1EFE4", "#FFFFFF", },
-  -- The default text color
-  foreground = "#FFFFFF",
-  -- The default background color
-  background = "#000000",
-  -- Overrides the cell background color when the current cell is occupied by the
-  -- cursor and the cursor style is set to Block
-  cursor_bg = "#FFA31A",
-  -- Overrides the text color when the current cell is occupied by the cursor
-  cursor_fg = "#000000",
-  -- Specifies the border color of the cursor when the cursor style is set to Block,
-  -- or the color of the vertical or horizontal bar when the cursor style is set to
-  -- Bar or Underline.
-  cursor_border = "#52AD70",
-  -- The color of the scrollbar "thumb"; the portion that represents the current viewport
-  scrollbar_thumb = "#808080",
-  -- The color of the split lines between panes
-  split = "#808080",
-}
-
--- ================================
--- custom key bindings
--- ================================
-config.mouse_bindings = {
-  {
-    event = { Down = { streak = 1, button = "Middle" } },
-    mods = "NONE",
-    action = wezterm.action.Nop,
-  },
-}
-
-return config
-```
+### Config
 
 *References*:
 
 - [Configuration - Wez's Terminal Emulator](https://wezfurlong.org/wezterm/config/files.html)
 - [Font Shaping - Wez's Terminal Emulator](https://wezfurlong.org/wezterm/config/font-shaping.html)
 - [Configuring wezterm (Wez’s Terminal Emulator)](https://www.sharpwriting.net/project/configuring-wezterm/)
+- [dot-files/wezterm at master · haphamdev/dot-files](https://github.com/haphamdev/dot-files/tree/master/wezterm)
 
 ### Default Keybinding
 
