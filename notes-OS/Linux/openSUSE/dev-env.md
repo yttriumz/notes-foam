@@ -1,12 +1,12 @@
 ---
 sitemap:
-  lastmod: 2025-02-28 +0000
+  lastmod: 2025-04-09 +0000
   priority: 1.0
 ---
 
 # openSUSE Development Environment
 
-Last modified: 2025-02-28 +0000
+Last modified: 2025-04-09 +0000
 
 **NOTE**: This note assumes Tumbleweed by default, but most content should also apply to Leap. Some of the existing differences between Tumbleweed and Leap are mentioned in the corresponding instructions.
 
@@ -92,21 +92,26 @@ zypper install pattern:devel_basis # Does the same
 
 ## Clojure
 
-1. Install Java. See [[#Java]].
-2. Install dependencies via `zypper install rlwrap`.
-3. Install Clojure into `$HOME/.clojure`:
+- the Clojure CLI
+  1. Install Java. See [[#Java]].
+  2. Install dependencies via `zypper install rlwrap`.
+  3. Install Clojure into `$HOME/.clojure`:
 
-   ```bash
-   curl -L -O https://github.com/clojure/brew-install/releases/latest/download/linux-install.sh
-   chmod +x linux-install.sh
-   ./linux-install.sh --prefix ~/.clojure
-   ```
+     ```bash
+     curl -L -O https://github.com/clojure/brew-install/releases/latest/download/linux-install.sh
+     chmod +x linux-install.sh
+     ./linux-install.sh --prefix ~/.clojure
+     ```
 
-4. Add the following to `$HOME/.profile`:
+  4. Add the following to `$HOME/.profile`:
 
-   ```bash
-   export PATH=$PATH:/home/az/.clojure/bin
-   ```
+     ```bash
+     export PATH=$PATH:/home/az/.clojure/bin
+     ```
+
+- Babashka
+  - Directly download the binary from the [GitHub release page](https://github.com/babashka/babashka/releases).
+  - Use brew: `brew install borkdude/brew/babashka`
 
 *References*:
 

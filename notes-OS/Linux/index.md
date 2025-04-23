@@ -1,13 +1,13 @@
 ---
 type: index
 sitemap:
-  lastmod: 2025-03-25 +0000
+  lastmod: 2025-04-15 +0000
   priority: 0.5
 ---
 
 # Linux
 
-Last modified: 2025-03-25 +0000
+Last modified: 2025-04-15 +0000
 
 Distributions:
 
@@ -19,6 +19,7 @@ System:
 
 - [[kernel]]
 - [[kernel-modules]]
+- [[ebpf]]
 - [[grub2]]
 - [[systemd]]
 - [[Linux/tips]]
@@ -80,6 +81,7 @@ Miscellaneous:
 [Ubuntu/index]: Ubuntu/index.md "Ubuntu"
 [kernel]: kernel.md "Linux Kernel"
 [kernel-modules]: kernel-modules.md "Kernel Modules"
+[ebpf]: ebpf.md "eBPF"
 [grub2]: grub2.md "GRUB2 Bootloader"
 [systemd]: systemd.md "systemd"
 [Linux/tips]: tips.md "General Linux Usage Tips"

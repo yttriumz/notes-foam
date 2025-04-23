@@ -1,11 +1,11 @@
 ---
 sitemap:
-  lastmod: 2024-12-27 +0000
+  lastmod: 2025-04-14 +0000
 ---
 
 # Kubernetes Operations and Troubleshooting
 
-Last modified: 2024-12-27 +0000
+Last modified: 2025-04-14 +0000
 
 - [Interesting posts](#interesting-posts)
 - [`kubectl`](#kubectl)
@@ -27,6 +27,7 @@ Last modified: 2024-12-27 +0000
 - [What tool suggestions do you have for someone who's gonna set up an on-premise k8 cluster? Which tools do you use? : r/kubernetes](https://www.reddit.com/r/kubernetes/comments/12zg3am/what_tool_suggestions_do_you_have_for_someone/)
 - [IPVS no destination available \| Kubernetes 排障指南](https://imroc.cc/kubernetes-troubleshooting/methods/node/ipvs-no-destination-available)
 - [IPVS: rr: TCP 10.254.159.251:9004 - no destination available · Issue #415 · cloudnativelabs/kube-router](https://github.com/cloudnativelabs/kube-router/issues/415#issuecomment-386045811)
+- [How to force delete a Kubernetes Namespace \| ComputingForGeeks](https://computingforgeeks.com/how-to-force-delete-a-kubernetes-namespace/)
 
 ## `kubectl`
 
@@ -98,7 +99,6 @@ Use the following commands:
 
 ```bash
 kubectl exec -it POD_NAME -- bash
-
 # full form
 kubectl exec --stdin --tty POD_NAME --container CONTAINER_NAME -- /bin/bash
 ```

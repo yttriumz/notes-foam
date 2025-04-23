@@ -1,11 +1,11 @@
 ---
 sitemap:
-  lastmod: 2025-03-17 +0000
+  lastmod: 2025-04-10 +0000
 ---
 
 # Networking
 
-Last modified: 2025-03-17 +0000
+Last modified: 2025-04-10 +0000
 
 - [Interesting posts](#interesting-posts)
 - [DNS](#dns)
@@ -36,6 +36,7 @@ Last modified: 2025-03-17 +0000
 - [What are the differences between lsof and netstat on linux? - Stack Overflow](https://stackoverflow.com/questions/49381124/what-are-the-differences-between-lsof-and-netstat-on-linux)
 - [networking - Why do nmap, ss (netscan?) and lsof give different results? - Unix & Linux Stack Exchange](https://unix.stackexchange.com/questions/652556/why-do-nmap-ss-netscan-and-lsof-give-different-results)
 - [Connection reset原因分析和解决方案-CSDN博客](https://blog.csdn.net/liyantianmin/article/details/82505734)
+- [What exactly is the difference between an ICMP ping, TCP ping, and UDP ping?? : r/AskNetsec](https://www.reddit.com/r/AskNetsec/comments/84gcpb/what_exactly_is_the_difference_between_an_icmp/)
 
 Tooling:
 
