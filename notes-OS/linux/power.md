@@ -1,11 +1,11 @@
 ---
 sitemap:
-  lastmod: 2025-03-25 +0000
+  lastmod: 2025-04-25 +0000
 ---
 
 # Power Management
 
-Last modified: 2025-03-25 +0000
+Last modified: 2025-04-25 +0000
 
 ## Interesting posts
 
@@ -16,6 +16,7 @@ Last modified: 2025-03-25 +0000
 - [Laptop Mode Tools README](https://github.com/rickysarraf/laptop-mode-tools)
 - [TLP conflict with tuned - English / Install/Boot/Login - openSUSE Forums](https://forums.opensuse.org/t/tlp-conflict-with-tuned/175203)
 - [Update impossible because tlp conflict - English / Applications - openSUSE Forums](https://forums.opensuse.org/t/update-impossible-because-tlp-conflict/175252)
+- [intel/intel-lpmd](https://github.com/intel/intel-lpmd)
 
 ## TLP
 

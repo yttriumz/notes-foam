@@ -1,11 +1,11 @@
 ---
 sitemap:
-  lastmod: 2024-10-09 +0000
+  lastmod: 2025-04-28 +0000
 ---
 
 # Wayland
 
-Last modified: 2024-10-09 +0000
+Last modified: 2025-04-28 +0000
 
 ## Interesting posts
 
@@ -17,10 +17,3 @@ Last modified: 2024-10-09 +0000
 - [Wayland + kwin + SDDM + multiple monitors : r/kde](https://www.reddit.com/r/kde/comments/1bl2re8/wayland_kwin_sddm_multiple_monitors/)
 - [Explicit sync merged in Wayland: why it is important. : r/linux](https://www.reddit.com/r/linux/comments/1byauyb/explicit_sync_merged_in_wayland_why_it_is/)
 - [在 Wayland 下对某会议软件的屏幕共享方案，以及一些笔记](https://blog.taoky.moe/2023-05-22/wemeet-screencast-in-wayland.html)
-
-## Fcitx 5
-
-*References*:
-
-- ['Fcitx 5' and 'Fcitx 5 Wayland Launcher', which should I choose? / Applications & Desktop Environments / Arch Linux Forums](https://bbs.archlinux.org/viewtopic.php?id=292049)
-  - [Fcitx 5.1.7](https://groups.google.com/g/fcitx-announce/c/K7W1ATH2Viw)

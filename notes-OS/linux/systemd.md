@@ -1,11 +1,11 @@
 ---
 sitemap:
-  lastmod: 2025-03-31 +0000
+  lastmod: 2025-06-26 +0000
 ---
 
 # systemd
 
-Last modified: 2025-03-31 +0000
+Last modified: 2025-06-26 +0000
 
 ## Interesting posts
 
@@ -15,6 +15,7 @@ Last modified: 2025-03-31 +0000
 Troubleshooting:
 
 - [systemctl --user disable should warn if unit is still enabled in --global scope · Issue #18271 · systemd/systemd](https://github.com/systemd/systemd/issues/18271)
+- [`systemctl mask foo` doesn't work when foo is a service configured "locally" · Issue #12084 · systemd/systemd](https://github.com/systemd/systemd/issues/12084)
 
 ## `journalctl`
 

@@ -1,11 +1,11 @@
 ---
 sitemap:
-  lastmod: 2025-03-25 +0000
+  lastmod: 2025-04-25 +0000
 ---
 
 # Linux Kernel
 
-Last modified: 2025-03-25 +0000
+Last modified: 2025-04-25 +0000
 
 - [Interesting posts](#interesting-posts)
 - [Kernel parameters](#kernel-parameters)
@@ -14,6 +14,7 @@ Last modified: 2025-03-25 +0000
 ## Interesting posts
 
 - [The Linux Kernel Archives - Releases](https://www.kernel.org/category/releases.html)
+- [Updated Intel Meteor Lake Tuning For Linux Shows Huge Performance/Power Improvements - Phoronix](https://www.phoronix.com/news/Intel-MTL-EPP-Tuning-64)
 
 Miscellaneous:
 

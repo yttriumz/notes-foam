@@ -1,12 +1,12 @@
 ---
 sitemap:
-  lastmod: 2025-03-25 +0000
+  lastmod: 2025-04-28 +0000
   priority: 1.0
 ---
 
 # Tweak openSUSE Tumbleweed on ThinkPad P1 Gen2
 
-Last modified: 2025-03-25 +0000
+Last modified: 2025-04-28 +0000
 
 - [Interesting posts](#interesting-posts)
 - [Change hostname](#change-hostname)
@@ -388,38 +388,8 @@ Change the system lock screen time format to 24H by adding `LC_TIME=C.UTF-8` to 
 
 ### Rime
 
-1. Use `zypper install fcitx5-rime` to install.
-2. See [[rime#User config]] for configuration.
-
-**Note**:
-
-- `fcitx5-rime` is not responsible for the front end, which means `fcitx5.custom.yaml` does not control the look of the skin.
-- At the time of writing (*Tumbleweed 20230322, KDE Plasma 5.27.3*), in order to display emojis correctly in the candidate list, add the following content to `~/.config/fontconfig/fonts.conf`:
-
-  ```xml
-  <match target="font">
-      <test name="family" compare="contains">
-          <string>Emoji</string>
-      </test>
-      <edit name="hinting" mode="assign">
-          <bool>true</bool>
-      </edit>
-      <edit name="hintstyle" mode="assign">
-          <const>hintslight</const>
-      </edit>
-      <edit name="embeddedbitmap" mode="assign">
-          <bool>true</bool>
-      </edit>
-  </match>
-  ```
-
-*References*:
-
-- [下載及安裝](https://rime.im/download/)
-- [RIME support for Fcitx](https://github.com/fcitx/fcitx-rime)
-- [arch + fcitx5 不显示emoji？ #50](https://github.com/fkxxyz/rime-cloverpinyin/issues/50#issuecomment-835390794)
-- [Bug 104542 - Color emojis are not displayed](https://bugs.freedesktop.org/show_bug.cgi?id=104542)
-- [fonts-conf](https://www.freedesktop.org/software/fontconfig/fontconfig-user.html)
+1. Install via `zypper install fcitx5-rime`.
+2. See [[rime]] for configuration.
 
 ## Power management
 
@@ -585,7 +555,7 @@ Continue? [y/n/v/...? shows all options] (y): y
 [openSUSE/package#Packman (essentials) and NVidia]: package.md "openSUSE Package Management"
 [linux/tips#Use the Same Bluetooth Device on Linux and Windows Dual Boot System]: ../tips.md "General Linux Usage Tips"
 [fonts#Chinese]: ../../fonts.md "Fonts"
-[rime#User config]: ../../rime.md "RIME | 中州韻輸入法引擎"
+[rime]: ../../rime.md "RIME | 中州韻輸入法引擎"
 [power]: ../power.md "Power Management"
 [grub2#Themes]: ../grub2.md "GRUB2 Bootloader"
 [KDE]: ../KDE.md "KDE Plasma Tweak"

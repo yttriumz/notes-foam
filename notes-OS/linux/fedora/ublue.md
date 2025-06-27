@@ -1,11 +1,11 @@
 ---
 sitemap:
-  lastmod: 2025-03-25 +0000
+  lastmod: 2025-06-27 +0000
 ---
 
 # Universal Blue
 
-Last modified: 2025-03-25 +0000
+Last modified: 2025-06-27 +0000
 
 ## Interesting posts
 
@@ -28,6 +28,8 @@ Concerning issues:
 - [/etc/default/grub is missing on Silverblue 41 fresh install - Fedora Discussion](https://discussion.fedoraproject.org/t/etc-default-grub-is-missing-on-silverblue-41-fresh-install/135344)
 
 ## Crypto policy
+
+An error "ssh_dispatch_run_fatal: Connection to xxx.xxx.xxx.xxx port xxxx: error in libcrypto" may appear if the remote host is using ssh-rsa key type. Workaround via `update-crypto-policies --set LEGACY`.
 
 *References*:
 
