@@ -1,17 +1,16 @@
 ---
 sitemap:
-  lastmod: 2025-03-16 +0000
+  lastmod: 2025-06-27 +0000
 ---
 
 # Windows Usage Tips
 
-Last modified: 2025-03-16 +0000
+Last modified: 2025-06-27 +0000
 
 ## Interesting posts
 
 - [PendMoves and MoveFile - Sysinternals \| Microsoft Learn](https://learn.microsoft.com/en-us/sysinternals/downloads/pendmoves)
 - [ChrisTitusTech/winutil: Chris Titus Tech's Windows Utility - Install Programs, Tweaks, Fixes, and Updates](https://github.com/ChrisTitusTech/winutil)
-- [Installation - Atlas Documentation](https://docs.atlasos.net/getting-started/installation/)
 
 ## Remove recent files from WordPad
 
