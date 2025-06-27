@@ -1,12 +1,12 @@
 ---
 sitemap:
-  lastmod: 2024-09-23 +0000
+  lastmod: 2025-06-27 +0000
   priority: 1.0
 ---
 
 # SSH Usage
 
-Last modified: 2024-09-23 +0000
+Last modified: 2025-06-27 +0000
 
 - [Interesting posts](#interesting-posts)
 - [Create SSH key pair](#create-ssh-key-pair)
@@ -18,6 +18,8 @@ Last modified: 2024-09-23 +0000
 - [Remote port forwarding](#remote-port-forwarding)
     - [Scenario I](#scenario-i)
 - [SCP](#scp)
+- [Troubleshooting](#troubleshooting)
+    - ["Unable to negotiate with xxx.xxx.xxx.xxx port xxxx: no matching host key type found. Their offer: ssh-rsa"](#unable-to-negotiate-with-xxxxxxxxxxxx-port-xxxx-no-matching-host-key-type-found-their-offer-ssh-rsa)
 
 ## Interesting posts
 
@@ -124,3 +126,14 @@ scp -P AVAILABLE_PORT_ON_SERVER_B USER@127.0.0.1:/PATH/TO/FILE ~/tmp
 
 - [How to copy all files from a directory to a remote directory using scp? - Unix & Linux Stack Exchange](https://unix.stackexchange.com/questions/232946/how-to-copy-all-files-from-a-directory-to-a-remote-directory-using-scp)
 - [time - Why is scp so slow and how to make it faster? - Unix & Linux Stack Exchange](https://unix.stackexchange.com/questions/238152/why-is-scp-so-slow-and-how-to-make-it-faster)
+
+## Troubleshooting
+
+### "Unable to negotiate with xxx.xxx.xxx.xxx port xxxx: no matching host key type found. Their offer: ssh-rsa"
+
+Add the following lines to SSH config (based on Fedora 42):
+
+```SSH
+    HostKeyAlgorithms +ssh-rsa
+    PubkeyAcceptedAlgorithms +ssh-rsa
+```
