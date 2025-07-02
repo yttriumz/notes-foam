@@ -1,23 +1,24 @@
 ---
 sitemap:
-  lastmod: 2025-06-27 +0000
+  lastmod: 2025-07-02 +0000
 ---
 
 # WSL 2
 
-Last modified: 2025-06-27 +0000
+Last modified: 2025-07-02 +0000
 
 This post is based on *Windows 11 Pro 24H2* and *WSL 2.5.9.0*, using distro *FedoraLinux-42*.
 
 ## Interesting posts
 
 - [双系统的终极方案 - WSL2 - 虾说全栈](http://xiashuo.xyz/posts/devops/linux/wsl/)
+- [Back up, restore and duplicate Ubuntu WSL instances - Ubuntu on WSL documentation](https://documentation.ubuntu.com/wsl/latest/howto/backup-and-restore/)
 
 ## Repos to add
 
 ```bash
 dnf install https://download1.rpmfusion.org/free/fedora/rpmfusion-free-release-$(rpm -E %fedora).noarch.rpm
-sudo dnf install --nogpgcheck --repofrompath 'terra,https://repos.fyralabs.com/terra$releasever' terra-release
+dnf install --nogpgcheck --repofrompath 'terra,https://repos.fyralabs.com/terra$releasever' terra-release
 ```
 
 ## Packages to install
@@ -59,6 +60,14 @@ options="metadata"
 
 - [chmod doesn't work? · Issue #81 · microsoft/WSL](https://github.com/microsoft/WSL/issues/81#issuecomment-796798258)
 - [Advanced settings configuration in WSL \| Microsoft Learn](https://learn.microsoft.com/en-us/windows/wsl/wsl-config#automount-options)
+
+### Cannot create directory
+
+On Windows, open *File Explorer* and open *Properties* of the target folder. On *Security* tab, add the target user and give *Full control* to the user.
+
+*References*:
+
+- [mkdir: cannot create directory ‘a’: Permission denied · Issue #4836 · microsoft/WSL](https://github.com/microsoft/WSL/issues/4836)
 
 ### Case sensitivity
 
