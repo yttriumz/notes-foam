@@ -1,13 +1,13 @@
 ---
 type: index
 sitemap:
-  lastmod: 2025-03-11 +0000
+  lastmod: 2025-07-08 +0000
   priority: 0.5
 ---
 
 # Development Tips
 
-Last modified: 2025-03-11 +0000
+Last modified: 2025-07-08 +0000
 
 General:
 
@@ -17,10 +17,10 @@ General:
 
 Programming languages:
 
-- [[notes-development/Bash]]
+- [[notes-development/bash]]
 - [[C]]
 - [[CPP]]
-- [[Clojure]]
+- [[clojure/index]]
 - [[Elixir]]
 - [[Flutter]]
 - [[Haskell]]
@@ -28,6 +28,7 @@ Programming languages:
 - [[JS-TS]]
 - [[LaTeX]]
 - [[Perl]]
+- [[powershell]]
 - [[Prolog]]
 - [[Python]]
 - [[Rust]]
@@ -35,6 +36,7 @@ Programming languages:
 
 Domain-specific:
 
+- [[ai/index]]
 - [[sys-design]]
 - [[Android]]
 - [[cryptography]]
@@ -83,6 +85,7 @@ Business and license:
 
 Miscellaneous:
 
+- [terminology - What is a Shim? - Stack Overflow](https://stackoverflow.com/questions/2116142/what-is-a-shim)
 - [ALEEEHU/Awesome-Text2X-Resources: This is an open collection of state-of-the-art (SOTA), novel Text to X (X can be everything) methods (papers, codes and datasets).](https://github.com/ALEEEHU/Awesome-Text2X-Resources)
 - [Langserver.org](https://langserver.org/)
 - [The Missing Semester of Your CS Education · the missing semester of your cs education](https://missing.csail.mit.edu/)
@@ -115,10 +118,10 @@ Fun:
 [notes-development/tips]: tips.md "General Development Tips"
 [git]: git.md "Git Usage"
 [GitHub]: GitHub.md "GitHub Usage"
-[notes-development/Bash]: Bash.md "Bash Scripting"
+[notes-development/bash]: bash.md "Bash Scripting"
 [C]: C.md "C"
 [CPP]: CPP.md "C++"
-[Clojure]: Clojure.md "Clojure"
+[clojure/index]: clojure/index.md "Clojure"
 [Elixir]: Elixir.md "Elixir"
 [Flutter]: Flutter.md "Flutter"
 [Haskell]: Haskell.md "Haskell"
@@ -126,10 +129,12 @@ Fun:
 [JS-TS]: JS-TS.md "JavaScript/TypeScript"
 [LaTeX]: LaTeX.md "$\LaTeX$"
 [Perl]: Perl.md "Perl"
+[powershell]: powershell.md "Windows PowerShell"
 [Prolog]: Prolog.md "Prolog"
 [Python]: Python.md "Python"
 [Rust]: Rust.md "Rust"
 [Scala]: Scala.md "Scala"
+[ai/index]: ai/index.md "Artificial Intelligence"
 [sys-design]: sys-design.md "System Design"
 [Android]: Android.md "Android"
 [cryptography]: cryptography.md "Cryptography"

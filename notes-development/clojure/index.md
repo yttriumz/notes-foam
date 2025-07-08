@@ -1,22 +1,17 @@
 ---
+type: index
 sitemap:
-  lastmod: 2025-02-24 +0000
+  lastmod: 2025-07-08 +0000
+  priority: 0.5
 ---
 
 # Clojure
 
-Last modified: 2025-02-24 +0000
+Last modified: 2025-07-08 +0000
 
-- [Interesting posts](#interesting-posts)
-- [Coding style](#coding-style)
-- [`deps.edn`](#depsedn)
-- [Namespace](#namespace)
-- [Get paths](#get-paths)
-- [Return value](#return-value)
-- [Time format](#time-format)
-- [Macro](#macro)
-- [States](#states)
-- [Babashka](#babashka)
+- [[clojure/tips]]
+- [[clojure/bb]]
+- [[clojure/csv]]
 
 ## Interesting posts
 
@@ -73,11 +68,12 @@ Tooling:
 - [An Architect's View: deps.edn and monorepos](https://corfield.org/blog/2021/02/23/deps-edn-monorepo/)
 - [Migrating from Leiningen to tools.deps · metabase/metabase Wiki](https://github.com/metabase/metabase/wiki/Migrating-from-Leiningen-to-tools.deps)
 
-babashka:
+Babashka:
 
 - [Babashka: Fast native Clojure scripting runtime \| Hacker News](https://news.ycombinator.com/item?id=39121392)
 - [Is Clojure good for one off “dev task” sorts of scripting? : r/Clojure](https://www.reddit.com/r/Clojure/comments/1d31wx2/comment/l64rkw5/?utm_source=share&utm_medium=web3x&utm_name=web3xcss&utm_term=1&utm_content=share_button)
 - [m3tti.github.io/borkweb-babashkas-first-webframework.md at master · m3tti/m3tti.github.io](https://github.com/m3tti/m3tti.github.io/blob/master/borkweb-babashkas-first-webframework.md)
+- [When is Clojure "the right tool for the job"?](https://gist.github.com/didibus/6e5ff960b25fdc1a5f8f97acede614b0)
 
 Surveys:
 
@@ -100,69 +96,9 @@ Community:
 - [Open source is not about you (2018) \| Hacker News](https://news.ycombinator.com/item?id=31957554)
 - [Contributing to Clojure](https://gist.github.com/halgari/c17f378718cbd2fd82324002133ef678)
 
-## Coding style
-
-*References*:
-
-- [do’s and don’ts – Digital Digressions by Stuart Sierra](https://stuartsierra.com/tag/dos-and-donts)
-- [bbatsov/clojure-style-guide: A community coding style guide for the Clojure programming language](https://github.com/bbatsov/clojure-style-guide)
-- [Metabase Clojure Style Guide · metabase/metabase Wiki](https://github.com/metabase/metabase/wiki/Metabase-Clojure-Style-Guide)
-
-## `deps.edn`
-
-- The Clojure CLI can use any version of Clojure. See [How to declare a super specific version of Clojure in the deps.edn? - Questions & Help / How to? - ClojureVerse](https://clojureverse.org/t/how-to-declare-a-super-specific-version-of-clojure-in-the-deps-edn/6751/2).
-
-## Namespace
-
-*References*:
-
-- [How to ns – Digital Digressions by Stuart Sierra](https://stuartsierra.com/2016/08/27/how-to-ns)
-- [Splitting a Clojure namespace over multiple files - Stack Overflow](https://stackoverflow.com/questions/4690758/splitting-a-clojure-namespace-over-multiple-files)
-- [Clojure's keyword namespacing convention Considered Harmful : r/Clojure](https://www.reddit.com/r/Clojure/comments/hhyb26/clojures_keyword_namespacing_convention/)
-
-## Get paths
-
-- Use `(System/getProperty "user.dir")` or `(-> "." java.io.File. .getAbsolutePath)` to get the working directory.
-- Use `(System/getProperty "java.class.path")` or `clj -Spath` to get classpath.
-
-## Return value
-
-*References*:
-
-- [Should the clojure "-main" function have a return value? - Community Center / Beginners - ClojureVerse](https://clojureverse.org/t/should-the-clojure-main-function-have-a-return-value/7089/4)
-
-## Time format
-
-*References*:
-
-- [date - Clojure: what's the way to have current time string with babashka with least dependency? - Stack Overflow](https://stackoverflow.com/questions/62969992/clojure-whats-the-way-to-have-current-time-string-with-babashka-with-least-dep)
-- See also [[Java#Time format]].
-
-## Macro
-
-*References*:
-
-- [I do not use macros, am I doing it wrong? : r/Clojure](https://www.reddit.com/r/Clojure/comments/97cprw/i_do_not_use_macros_am_i_doing_it_wrong/)
-- [When To Use a Macro in Clojure](https://ericnormand.me/mini-guide/when-to-use-a-macro-in-clojure)
-
-## States
-
-*References*:
-
-- [Clojure differences between Ref, Var, Agent, Atom, with examples - Stack Overflow](https://stackoverflow.com/questions/9132346/clojure-differences-between-ref-var-agent-atom-with-examples)
-
-## Babashka
-
-Compare the following:
-
-- Bash: `for node in {1..10}; do ssh -o 'StrictHostKeyChecking no' "ecs-ewalker-loadtest-$(printf %02d $node)" hostname && sleep 1; done`
-- Babashka: `(run! #(babashka.process/shell {:continue true} (format "ssh -o 'StrictHostKeyChecking no' ecs-ewalker-loadtest-%02d hostname && sleep 1" %)) (range 1 11))`
-
-*References*:
-
-- [tty - How to run an interactive CLI program from within Clojure? - Stack Overflow](https://stackoverflow.com/questions/56541688/how-to-run-an-interactive-cli-program-from-within-clojure)
-- [Upload files to SharePoint using Babashka · Jacob Emcken](https://www.emcken.dk/programming/2024/04/07/sharepoint-upload-file-with-app-only-principal-and-babashka/)
 
 [//begin]: # "Autogenerated link references for markdown compatibility"
-[Java#Time format]: Java.md "Java"
+[clojure/tips]: tips.md "Clojure Tips"
+[clojure/bb]: bb.md "Babashka"
+[clojure/csv]: csv.md "Handle CSV in Clojure"
 [//end]: # "Autogenerated link references"
