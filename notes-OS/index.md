@@ -1,13 +1,13 @@
 ---
 type: index
 sitemap:
-  lastmod: 2025-06-27 +0000
+  lastmod: 2025-07-16 +0000
   priority: 0.5
 ---
 
 # Operating System
 
-Last modified: 2025-06-27 +0000
+Last modified: 2025-07-16 +0000
 
 Platforms:
 
@@ -47,7 +47,7 @@ Miscellaneous:
 [remote/index]: remote/index.md "Remote Access"
 [search-engine]: search-engine.md "Search Engine"
 [firefox]: firefox.md "Firefox"
-[vscode/index]: ../notes-development/vscode/index.md "Visual Studio Code"
+[vscode/index]: ../notes-dev/vscode/index.md "Visual Studio Code"
 [zed]: zed.md "Zed Editor"
 [vim]: vim.md "Vim & Neovim"
 [emacs]: emacs.md "Emacs"

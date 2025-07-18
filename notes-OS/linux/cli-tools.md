@@ -1,11 +1,11 @@
 ---
 sitemap:
-  lastmod: 2025-03-25 +0000
+  lastmod: 2025-06-27 +0000
 ---
 
 # Command-line Tools
 
-Last modified: 2025-03-25 +0000
+Last modified: 2025-06-27 +0000
 
 - [Interesting posts](#interesting-posts)
 - [Text processing](#text-processing)
@@ -125,6 +125,8 @@ Commonly used flags for downloading are `-fSLO`.
 - [Orange-OpenSource/hurl: Hurl, run and test HTTP requests with plain text.](https://github.com/Orange-OpenSource/hurl)
 
 ## Archive and compress
+
+- Compress using highest level: `tar -I 'gzip --best' -cvf COMPRESSED.tar.gz FILE1 FILE2 DIR1`
 
 *References*:
 
