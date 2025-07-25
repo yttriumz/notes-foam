@@ -1,17 +1,19 @@
 ---
 sitemap:
-  lastmod: 2025-07-08 +0000
+  lastmod: 2025-07-25 +0000
 ---
 
 # Bash Scripting
 
-Last modified: 2025-07-08 +0000
+Last modified: 2025-07-25 +0000
 
 - [Interesting posts](#interesting-posts)
 - [Exit code](#exit-code)
 - [Redirect command/script/application output](#redirect-commandscriptapplication-output)
+- [Batch rename file extensions](#batch-rename-file-extensions)
 - [Format numbers](#format-numbers)
 - [Format time](#format-time)
+- [Create a soft link to a program](#create-a-soft-link-to-a-program)
 - [`local` options](#local-options)
 - [Test expressions](#test-expressions)
 - [Shell built-in `:`](#shell-built-in-)
@@ -75,6 +77,13 @@ Use `SOME_COMMAND 2>&1 | tee PATH/TO/FILE`.
 - [linux - Echo to both stdout and stderr - Stack Overflow](https://stackoverflow.com/questions/6852969/echo-to-both-stdout-and-stderr)
 - [linux - Capturing STDERR and STDOUT to file using tee - Server Fault](https://serverfault.com/questions/201061/capturing-stderr-and-stdout-to-file-using-tee)
 
+## Batch rename file extensions
+
+```bash
+# Can also deal with file names starting with `-`.
+for file in *.OLD; do mv -- "$file" "${file%.OLD}.NEW"; done
+```
+
 ## Format numbers
 
 *References*:
@@ -87,6 +96,12 @@ Use `SOME_COMMAND 2>&1 | tee PATH/TO/FILE`.
 ```bash
 # ISO format
 date +'%Y-%m-%dT%H:%M:%S'
+```
+
+## Create a soft link to a program
+
+```bash
+ln -s $(readlink -f $(which SOME_PROGRAM)) SOME_PROGRAM
 ```
 
 ## `local` options
