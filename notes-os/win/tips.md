@@ -1,11 +1,11 @@
 ---
 sitemap:
-  lastmod: 2025-06-27 +0000
+  lastmod: 2025-07-30 +0000
 ---
 
 # Windows Usage Tips
 
-Last modified: 2025-06-27 +0000
+Last modified: 2025-07-30 +0000
 
 ## Interesting posts
 
@@ -38,3 +38,20 @@ Use `chkdsk C: /r`.
 - [Advanced troubleshooting for Windows boot problems](https://learn.microsoft.com/en-us/troubleshoot/windows-client/performance/windows-boot-issues-troubleshooting)
 - [Windows 10 log info when starting](https://superuser.com/questions/1140309/windows-10-log-info-when-starting)
 - [How to force Win10 to show text rather than circle while loading](https://www.tenforums.com/general-support/133620-how-force-win10-show-text-rather-than-circle-while-loading.html)
+
+## Clear and reset external display cache
+
+Use the following registry config:
+
+```reg
+Windows Registry Editor Version 5.00
+
+[-HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\GraphicsDrivers\Configuration]
+[-HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\GraphicsDrivers\Connectivity]
+[-HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\GraphicsDrivers\MonitorDataStore]
+[-HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\GraphicsDrivers\ScaleFactors]
+```
+
+*References*:
+
+- [Clear and Reset External Display Cache in Windows 10 \| Tutorials](https://www.tenforums.com/tutorials/137225-clear-reset-external-display-cache-windows-10-a.html)

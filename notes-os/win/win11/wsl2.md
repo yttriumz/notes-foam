@@ -1,37 +1,32 @@
 ---
 sitemap:
-  lastmod: 2025-07-02 +0000
+  lastmod: 2025-07-22 +0000
 ---
 
 # WSL 2
 
-Last modified: 2025-07-02 +0000
+Last modified: 2025-07-22 +0000
 
-This post is based on *Windows 11 Pro 24H2* and *WSL 2.5.9.0*, using distro *FedoraLinux-42*.
+This post was originally based on *Windows 11 Pro 24H2* and *WSL 2.5.9.0*, with distro *FedoraLinux-42*.
+
+- [Interesting posts](#interesting-posts)
+- [Install to a different location](#install-to-a-different-location)
+- [Networking](#networking)
+- [File system](#file-system)
+   - [File permissions](#file-permissions)
+   - [Cannot create directory](#cannot-create-directory)
+   - [Case sensitivity](#case-sensitivity)
+   - [File system performance](#file-system-performance)
+- [FedoraLinux-42 tweaks](#fedoralinux-42-tweaks)
+   - [Repos to add](#repos-to-add)
+   - [Packages to install](#packages-to-install)
 
 ## Interesting posts
 
 - [双系统的终极方案 - WSL2 - 虾说全栈](http://xiashuo.xyz/posts/devops/linux/wsl/)
 - [Back up, restore and duplicate Ubuntu WSL instances - Ubuntu on WSL documentation](https://documentation.ubuntu.com/wsl/latest/howto/backup-and-restore/)
 
-## Repos to add
-
-```bash
-dnf install https://download1.rpmfusion.org/free/fedora/rpmfusion-free-release-$(rpm -E %fedora).noarch.rpm
-dnf install --nogpgcheck --repofrompath 'terra,https://repos.fyralabs.com/terra$releasever' terra-release
-```
-
-## Packages to install
-
-```txt
-crypto-policies-scripts
-fd-find
-gcc
-gcc-c++
-git
-make
-rlwrap
-```
+## Install to a different location
 
 ## Networking
 
@@ -89,3 +84,30 @@ On Windows, open *File Explorer* and open *Properties* of the target folder. On 
 *References*:
 
 - [Case Sensitivity \| Microsoft Learn](https://learn.microsoft.com/en-us/windows/wsl/case-sensitivity#changing-the-case-sensitivity-on-a-drive-mounted-to-a-wsl-distribution)
+
+### File system performance
+
+*References*:
+
+- [\[wsl2\] filesystem performance is much slower than wsl1 in /mnt · Issue #4197 · microsoft/WSL](https://github.com/microsoft/WSL/issues/4197#issuecomment-604592340)
+
+## FedoraLinux-42 tweaks
+
+### Repos to add
+
+```bash
+dnf install https://download1.rpmfusion.org/free/fedora/rpmfusion-free-release-$(rpm -E %fedora).noarch.rpm
+dnf install --nogpgcheck --repofrompath 'terra,https://repos.fyralabs.com/terra$releasever' terra-release
+```
+
+### Packages to install
+
+```txt
+crypto-policies-scripts
+fd-find
+gcc
+gcc-c++
+git
+make
+rlwrap
+```
