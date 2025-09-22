@@ -1,11 +1,11 @@
 ---
 sitemap:
-  lastmod: 2025-07-18 +0000
+  lastmod: 2025-08-23 +0000
 ---
 
 # Rust
 
-Last modified: 2025-07-18 +0000
+Last modified: 2025-08-23 +0000
 
 - [Interesting posts](#interesting-posts)
 - [Development environment](#development-environment)
@@ -49,6 +49,10 @@ Language:
 - [Rust for Gophers - by Alex Pliutau and John Arundel](https://packagemain.tech/p/rust-for-gophers)
 - [Functional Programming in Rust : r/rust](https://www.reddit.com/r/rust/comments/v65k50/functional_programming_in_rust/)
 - [Why Dark didn't choose Rust \| Hacker News](https://news.ycombinator.com/item?id=24991848)
+
+Tricks:
+
+- [Scripting in rust with self-interpreting source code \| The NeoSmart Files](https://neosmart.net/blog/self-compiling-rust-code/)
 
 Tooling:
 

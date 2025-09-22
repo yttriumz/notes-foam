@@ -1,11 +1,11 @@
 ---
 sitemap:
-  lastmod: 2024-10-17 +0000
+  lastmod: 2025-08-13 +0000
 ---
 
 # C
 
-Last modified: 2024-10-17 +0000
+Last modified: 2025-08-13 +0000
 
 ## Interesting posts
 
@@ -23,6 +23,10 @@ Documentation:
 
 - [Where do I find the current C or C++ standard documents? - Stack Overflow](https://stackoverflow.com/questions/81656/where-do-i-find-the-current-c-or-c-standard-documents/83763#83763)
 - [Why does ISO/IEC charge for the C and C++ standards instead of providing them for free? - Stack Overflow](https://stackoverflow.com/questions/2734884/why-does-iso-iec-charge-for-the-c-and-c-standards-instead-of-providing-them-fo)
+
+Tutorials:
+
+- [Mustafa on X: "a senior programmer with ~10 years of experience as a low-level engineer suggested that I read this book https://t.co/ufoi7xUwpk" / X](https://x.com/oprydai/status/1954190271261954225)
 
 ## C in Linux
 

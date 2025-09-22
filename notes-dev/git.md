@@ -1,11 +1,11 @@
 ---
 sitemap:
-  lastmod: 2025-01-20 +0000
+  lastmod: 2025-09-20 +0000
 ---
 
 # Git Usage
 
-Last modified: 2025-01-20 +0000
+Last modified: 2025-09-20 +0000
 
 - [Interesting posts](#interesting-posts)
 - [Git configuration](#git-configuration)
@@ -16,19 +16,19 @@ Last modified: 2025-01-20 +0000
   - [Use non-default SSH keys for remote connection](#use-non-default-ssh-keys-for-remote-connection)
   - [Use different keys for different repositories](#use-different-keys-for-different-repositories)
 - [Clone to a specific directory](#clone-to-a-specific-directory)
-- [Clone all remote branches](#clone-all-remote-branches)
 - [Clone a specific tag only](#clone-a-specific-tag-only)
 - [Clone a specific subdirectory](#clone-a-specific-subdirectory)
 - [Commit message convention](#commit-message-convention)
 - [Change commit messages](#change-commit-messages)
 - [Check last commit](#check-last-commit)
-- [Delete a commit but keep the changes](#delete-a-commit-but-keep-the-changes)
+- [Undo a commit but keep the changes](#undo-a-commit-but-keep-the-changes)
 - [Delete tags](#delete-tags)
 - [Stash changes](#stash-changes)
 - [Discard non-staged changes](#discard-non-staged-changes)
 - [Update an unchecked-out local branch from remote branch](#update-an-unchecked-out-local-branch-from-remote-branch)
 - [Rename branch](#rename-branch)
 - [Checkout remote branch](#checkout-remote-branch)
+  - [Checkout all remote branches](#checkout-all-remote-branches)
 - [Change remote origin](#change-remote-origin)
 - [Push to all remotes](#push-to-all-remotes)
 - [Push an existing repository to a new remote](#push-an-existing-repository-to-a-new-remote)
@@ -119,17 +119,6 @@ Use `git clone REMOTE_REPO TARGET_DIRECTORY`.
 
 - [How do I clone a Git repository into a specific folder?](https://stackoverflow.com/questions/651038/how-do-i-clone-a-git-repository-into-a-specific-folder)
 
-## Clone all remote branches
-
-Currently, git does not provide flag to clone all remote branches automatically. You have to manually clone the repo and:
-
-- Run `git branch -a` to show all branches. Then run `git checkout` to checkout specific branch.
-- Or run `for branch in $(git branch --all | grep '^\s*remotes' | egrep --invert-match '(:?HEAD|master)$'); do git checkout $(basename $branch); done` to checkout all branches.
-
-*References*:
-
-- [git - How do I clone all remote branches? - Stack Overflow](https://stackoverflow.com/questions/67699/how-do-i-clone-all-remote-branches)
-
 ## Clone a specific tag only
 
 Use `git clone --depth 1 --branch TAG_NAME REMOTE_REPO`.
@@ -172,7 +161,7 @@ Use `git show --summary`.
 
 - [Git: See my last commit - Stack Overflow](https://stackoverflow.com/questions/2231546/git-see-my-last-commit)
 
-## Delete a commit but keep the changes
+## Undo a commit but keep the changes
 
 - Use `git reset HEAD^` to reset head without modifying files.
 - Use `git commit --amend` to add more changes to the latest commit.
@@ -180,6 +169,7 @@ Use `git show --summary`.
 *References*:
 
 - [undo - Can I delete a git commit but keep the changes? - Stack Overflow](https://stackoverflow.com/questions/15772134/can-i-delete-a-git-commit-but-keep-the-changes)
+- [New to git, advice needed. Revert commit but keep changes : r/git](https://www.reddit.com/r/git/comments/17y2v5i/new_to_git_advice_needed_revert_commit_but_keep/)
 
 ## Delete tags
 
@@ -232,6 +222,23 @@ Use `git fetch REMOTE_REPO REMOTE_BRANCH:LOCAL_BRANCH`.
 *References*:
 
 - [git checkout - How do I check out a remote Git branch? - Stack Overflow](https://stackoverflow.com/questions/1783405/how-do-i-check-out-a-remote-git-branch)
+
+### Checkout all remote branches
+
+Currently, git does not provide flag to clone all remote branches automatically. You have to manually clone the repo and:
+
+- Run `git branch -a` to show all branches. Then run `git checkout` to checkout specific branch.
+- Or use the following script to checkout all branches:
+
+  ```bash
+  for branch in $(git branch --all | grep '^\s*remotes' | egrep --invert-match '(:?HEAD|master)$'); do git checkout $(basename $branch); done
+  # Or
+  for branch in $(git branch --remotes | grep -v '\->'); do git branch --track ${branch#origin/} $branch; done
+  ```
+
+*References*:
+
+- [git - How do I clone all remote branches? - Stack Overflow](https://stackoverflow.com/questions/67699/how-do-i-clone-all-remote-branches)
 
 ## Change remote origin
 

@@ -1,11 +1,11 @@
 ---
 sitemap:
-  lastmod: 2025-07-25 +0000
+  lastmod: 2025-08-07 +0000
 ---
 
 # General Development Tips
 
-Last modified: 2025-07-25 +0000
+Last modified: 2025-08-07 +0000
 
 - [Folder naming convention](#folder-naming-convention)
 - [Git commit message convention](#git-commit-message-convention)
@@ -30,10 +30,10 @@ This set is designed for maximum compatibility and clarity.
 
 | Symbol | Meaning               | Example                                            |
 | :----- | :-------------------- | :------------------------------------------------- |
-| `[*]`  | **Information**       | `[*] System check complete. All services running.` |
 | `[+]`  | **Success / Added**   | `[+] User 'jdoe' successfully created.`            |
 | `[-]`  | **Removal / Deleted** | `[-] Cache file '/var/tmp/c_123' removed.`         |
 | `[>]`  | **Start / Action**    | `[>] Beginning database backup...`                 |
+| `[*]`  | **Information**       | `[*] System check complete. All services running.` |
 | `[!]`  | **Warning**           | `[!] API rate limit approaching.`                  |
 | `[X]`  | **Error / Failure**   | `[X] Connection to Redis server failed.`           |
 | `[?]`  | **Debug**             | `[?] Querying user ID: 5150`                       |

@@ -1,13 +1,13 @@
 ---
 type: index
 sitemap:
-  lastmod: 2025-07-16 +0000
+  lastmod: 2025-09-22 +0000
   priority: 0.5
 ---
 
 # Development Tips
 
-Last modified: 2025-07-16 +0000
+Last modified: 2025-09-22 +0000
 
 General:
 
@@ -53,6 +53,7 @@ Domain-specific:
 
 Miscellaneous:
 
+- [[mise]]
 - [[github-pages]]
 - [[Mermaid]]
 - [[garmin-ciq]]
@@ -149,6 +150,7 @@ Fun:
 [ml]: ml.md "Machine Learning"
 [web]: web.md "Web Development"
 [load-test/index]: load-test/index.md "Load Test"
+[mise]: mise.md "Use mise-en-place to Manage Development Environment"
 [github-pages]: github-pages.md "GitHub Pages"
 [Mermaid]: mermaid.md "Mermaid"
 [garmin-ciq]: garmin-ciq.md "Garmin Connect IQ"

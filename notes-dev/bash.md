@@ -1,11 +1,11 @@
 ---
 sitemap:
-  lastmod: 2025-07-25 +0000
+  lastmod: 2025-09-01 +0000
 ---
 
 # Bash Scripting
 
-Last modified: 2025-07-25 +0000
+Last modified: 2025-09-01 +0000
 
 - [Interesting posts](#interesting-posts)
 - [Exit code](#exit-code)
@@ -25,24 +25,32 @@ Last modified: 2025-07-25 +0000
 
 ## Interesting posts
 
-- [console - How does one output bold text in Bash? - Stack Overflow](https://stackoverflow.com/questions/2924697/how-does-one-output-bold-text-in-bash)
+- [Using Go instead of Bash/Shell for deployment scripts : r/golang](https://www.reddit.com/r/golang/comments/1fyyey9/comment/lqxodn9)
 - [Bash is a terrible as a programming language, but what's the alternative ? - DEV Community](https://dev.to/jmfayard/bash-is-a-terrible-programming-language-but-whats-the-alternative--oc2)
 - [A Second Search for Bash Scripting Alternatives - Monzool's Personal Publishing](https://monzool.net/blog/2024/07/14/a-second-search-for-bash-scripting-alternatives/)
 - [what would you use to replace Bash for scripting? - Page 1](https://www.eevblog.com/forum/programming/what-would-you-use-to-replace-bash-for-scripting/)
-- [Using Go instead of Bash/Shell for deployment scripts : r/golang](https://www.reddit.com/r/golang/comments/1fyyey9/comment/lqxodn9)
 - [xonsh/xonsh: :shell: Python-powered shell. Full-featured and cross-platform.](https://github.com/xonsh/xonsh)
 
-Documentation & tutorials:
+Tricks:
+
+- [console - How does one output bold text in Bash? - Stack Overflow](https://stackoverflow.com/questions/2924697/how-does-one-output-bold-text-in-bash)
+
+Documentation:
 
 - [Top (Bash Reference Manual)](https://www.gnu.org/software/bash/manual/html_node/)
   - [Brace Expansion (Bash Reference Manual)](https://www.gnu.org/software/bash/manual/html_node/Brace-Expansion.html)
   - [Shell Parameter Expansion (Bash Reference Manual)](https://www.gnu.org/software/bash/manual/html_node/Shell-Parameter-Expansion.html)
   - [Pattern Matching (Bash Reference Manual)](https://www.gnu.org/software/bash/manual/html_node/Pattern-Matching.html)
 - [ShellCheck: SC2097 – This assignment is only seen by the forked process.](https://www.shellcheck.net/wiki/SC2097)
+
+Tutorials:
+
+- [BashGuide - Greg's Wiki](http://mywiki.wooledge.org/BashGuide)
 - [Intro – Modern Bash (Zsh) Scripting](https://www.mulle-kybernetik.com/modern-bash-scripting/)
 - [BashPitfalls - Greg's Wiki](https://mywiki.wooledge.org/BashPitfalls)
+  - [你是不是也和我一样，对于 Bash 是半桶水_哔哩哔哩_bilibili](https://www.bilibili.com/video/BV1fhb5zbE9C)
 
-- Miscellaneous:
+Miscellaneous:
 
 - [linux - What's the different between 'cat > some_file << EOF some_stuff EOF' and 'echo "some_stuff" > some_file' - Super User](https://superuser.com/questions/1434549/whats-the-different-between-cat-some-file-eof-some-stuff-eof-and-echo)
 - [What's the difference between cat /dev/null>file and echo"">file ? : r/bash](https://www.reddit.com/r/bash/comments/s397ao/whats_the_difference_between_cat_devnullfile_and/)
@@ -65,7 +73,7 @@ Documentation & tutorials:
 
 ## Redirect command/script/application output
 
-Use `SOME_COMMAND 2>&1 | tee PATH/TO/FILE`.
+Use `unbuffer SOME_COMMAND 2>&1 | tee PATH/TO/FILE`.
 
 *References*:
 
