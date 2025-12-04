@@ -1,11 +1,20 @@
 ---
 sitemap:
-  lastmod: 2025-01-06 +0000
+  lastmod: 2025-12-04 +0000
 ---
 
 # Kubernetes Networking
 
-Last modified: 2025-01-06 +0000
+Last modified: 2025-12-04 +0000
+
+- [Interesting posts](#interesting-posts)
+- [Port forward](#port-forward)
+- [Flannel](#flannel)
+- [Calico](#calico)
+- [MetalLB](#metallb)
+- [Host firewall](#host-firewall)
+- [K8s DNS](#k8s-dns)
+- [Manage `/etc/hosts` in pods](#manage-etchosts-in-pods)
 
 ## Interesting posts
 
@@ -37,6 +46,12 @@ Last modified: 2025-01-06 +0000
 - [Document interactions with firewalld · Issue #5232 · projectcalico/calico](https://github.com/projectcalico/calico/issues/5232)
 - [Secure egress access with DNS Policy and NetworkSets](https://www.tigera.io/blog/secure-egress-access-with-dns-policy-and-networksets/?utm_campaign=O%27Reilly-Nurture&utm_medium=email&utm_source=marketo&mkt_tok=ODA1LUdGSC03MzIAAAGWe0YHXP0T0tc7_hRwZ46EgqLfGQi_ryhEVhyaWlt4OguPTZS2eO3dGYGK0fNdAaHJ5TVAQWURi4hEWNKQOCiNtgkwV1AxMDsyJBaNBx-Jkg)
 - [Configure IP autodetection \| Calico Documentation](https://docs.tigera.io/calico/latest/networking/ipam/ip-autodetection)
+
+## MetalLB
+
+*References*:
+
+- [IP address sharing](https://metallb.universe.tf/usage/#ip-address-sharing)
 
 ## Host firewall
 
